@@ -1,0 +1,32 @@
+\usepackage[french]{babel} % le document est en français
+\usepackage[T1]{fontenc} % encodage de la police
+\usepackage[utf8]{inputenc} % encodage des caractères
+\usepackage{mathtools} % macros pour les maths
+\usepackage{frenchmath} % conventions française pour les maths
+\usepackage{cmbright} % la police de caractère
+\usepackage{fourier} % police pour les maths
+\usepackage{calrsfs} % pour les beaux C de cercles avec la commande \mathcal{C}
+\usepackage{tasks} % pour personnaliser les listes
+\usepackage{fontawesome5} % plein de petites icones
+
+\usepackage{graphicx} % insérer des images
+\usepackage{tabularray} % pour les tableaux
+\usepackage[small]{cwpuzzle} % pour le mots croisé
+\usepackage[group-minimum-digits=3, locale=FR]{siunitx} % unités
+\usepackage{xsim} % pour la création d'exercices et des solutions
+\xsimsetup{
+    blank/blank-style = \dotuline{#1},
+}
+\usepackage[normalem]{ulem} % pour les soulignement
+\usepackage{calc} % pour faire des calculs sur les longueurs
+\usepackage{xparse} % créer des macros évoluées
+\usepackage{tikz} % pour le dessin
+\usepackage{multicol} % pour créer des colonnes
+\usepackage{enumitem} % pour personnaliser les listes
+\setlist[enumerate]{label=\textbf{\arabic*)}}
+\SetEnumitemKey{cols}
+{
+    before = \begin{multicols}{#1},
+    after = \end{multicols}
+}
+\usepackage{subfiles} % permet de générer un pdf par chapitre 

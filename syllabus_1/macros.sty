@@ -1,0 +1,17 @@
+% Cette commande permet de créer des pointillés pour que les élèves puissent répondre.
+% Il y a deux possibilités :
+% 1) on veut juste n lignes de pointillés : \dotsforanswer{n}
+% 2) on veut n lignes de pointillés mais avec du texte au début : \dotsforanswer{n}[mon texte]
+
+\NewDocumentCommand{\dotsforanswer}{m o O{1ex}}%
+{%
+    \IfNoValueTF{#2}%
+    {
+        \foreach \i in {1,...,#1}{\dotfill\vskip #3}
+    }
+    {
+        #2\dotfill\vskip #3
+        \foreach \i in {2,...,#1}{\dotfill\vskip #3}
+    }
+
+}
