@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A,4/0/B,2/2/D,6/2/C,3/1/M,3/6.5/H}
+    %base
+    \tkzDrawSegments(A,B B,C)
+    \tkzDrawSegments[dashed](C,D D,A)
+    %arètes de la pyramide
+    \tkzDrawSegments(A,H B,H C,H)
+    \tkzDrawSegments[dashed](D,H M,H A,C B,D)
+
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[right](C)
+    \tkzLabelPoints[left](D)
+    \tkzLabelPoints[below](M)
+    \tkzLabelPoints[above](H)
+
+    \tkzLabelSegment[left](A,H){$7$ cm}
+    \tkzLabelSegment[below](A,B){$4$ cm}
+
+    \tkzDrawPoints(A,B,C,D,M,H)
+\end{tikzpicture}

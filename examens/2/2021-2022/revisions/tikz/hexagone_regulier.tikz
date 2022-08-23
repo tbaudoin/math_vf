@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){G}
+    \tkzDefPoint(-70:2){A}
+    \tkzDefRegPolygon[center=G,sides=6](G,A)
+    \tkzDrawPolygon(P1,P...,P6)
+    \tkzLabelPoint[below](P1){A}
+    \tkzLabelPoint[right](P2){B}
+    \tkzLabelPoint[above](P3){C}
+    \tkzLabelPoint[above](P4){D}
+    \tkzLabelPoint[left](P5){E}
+    \tkzLabelPoint[below](P6){F}
+    \tkzLabelPoint[below](G){G}
+    \tkzDrawPoints(P1,P...,P6)
+    \tkzDrawPoints(G)
+\end{tikzpicture}

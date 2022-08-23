@@ -1,0 +1,17 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=1]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(20:4){B}
+    \tkzDefTriangle[two angles=20 and 90](A,B)
+    \tkzDefPointsBy[symmetry=center B](tkzPointResult){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[below](A,C)
+    \tkzMarkRightAngle(C,B,A)
+    \tkzDrawSegment(A,C)
+    % \tkzLabelSegment[below](A,C){$a$}
+    \tkzLabelSegment[above](B,A){$4$}
+    \tkzMarkAngle[mark=none, size=1.5](C,A,B)
+    \tkzLabelAngle[pos=1.2](C,A,B){\scriptsize$20\degres$}
+    \tkzDrawPoints(A,B,C)
+
+\end{tikzpicture}

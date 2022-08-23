@@ -1,0 +1,18 @@
+\begin{tikzpicture}[baseline=(current bounding box.east), scale=.6]
+    \tkzInit[xmin=0, xmax =6,
+    ymin=0,ymax=7]
+    \tkzGrid
+    \tkzDrawX[right, label=Durée (jours)]
+    \tkzLabelX
+    \tkzDrawY[above, label=Hauteur (mm)]
+    \tkzLabelY
+    
+    \tkzFct[domain=0:6,line width=1pt]{(-0.5*\x+6)}
+    \tkzDefPointByFct(6)
+    \tkzLabelPoint[above right](tkzPointResult){A}
+
+    \tkzFct[domain=0:6,line width=1pt]{(-0.25*\x+4)}
+    \tkzDefPointByFct(6)
+    \tkzLabelPoint[below right](tkzPointResult){B}
+    
+\end{tikzpicture}

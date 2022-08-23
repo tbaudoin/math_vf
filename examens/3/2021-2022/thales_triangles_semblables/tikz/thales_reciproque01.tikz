@@ -1,0 +1,29 @@
+\begin{tikzpicture}[scale=.7]
+    \tkzDefPoints{0/0/A,1/0/B,1/5/C,0/5/D}
+    \tkzDrawPolygon[pattern = bricks](A,B,C,D)
+    %
+    \tkzDefPoints{15/0/E,16/0/F,16/2/G,15/2/H}
+    \tkzDrawPolygon[pattern = bricks](E,F,G,H)
+    %
+    % \tkzDrawSegment[style=dashed](B,H)
+    % \tkzDrawSegment[style=dashed](E,C)
+    \tkzInterLL(C,E)(B,H)\tkzGetPoint{I}
+    %
+    \draw[dashed] (C) -- (I)node[midway, sloped, fill=white]{\scriptsize\SI{3,5}{m}};
+    \draw[dashed] (E) -- (I)node[midway, sloped, fill=white]{\scriptsize\SI{1,4}{m}};
+    \draw[dashed] (B) -- (I)node[midway, sloped, fill=white]{\scriptsize\SI{3}{m}};
+    \draw[dashed] (H) -- (I)node[midway, sloped, fill=white]{\scriptsize\SI{1,2}{m}};
+    % \tkzLabelSegment[sloped](C,I){\SI{3,5}{m}}
+    % \tkzLabelSegment[sloped,below](E,I){\SI{1,4}{m}}
+    % \tkzLabelSegment[sloped,below,fill=white](B,I){\SI{3}{m}}
+    % \tkzLabelSegment[sloped,above,fill=white](H,I){\SI{1,2}{m}}
+    %
+    \tkzDrawLine(A,F)
+    %
+    \tkzLabelPoint[above](C){$A$}
+    \tkzLabelPoint[below](B){$B$}
+    \tkzLabelPoint[above](H){$C$}
+    \tkzLabelPoint[below](E){$D$}
+    \tkzDrawPoints(C,H,E,B,I)
+    
+    \end{tikzpicture}

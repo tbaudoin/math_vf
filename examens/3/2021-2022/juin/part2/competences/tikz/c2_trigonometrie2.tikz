@@ -1,0 +1,18 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoints{0/0/A,4/0/B}
+    \tkzDefMidPoint(A,B)\tkzGetPoint{M} %milieu de AB
+    \tkzDefPoint(62:1){I} % point intermédiaire
+    \tkzInterLC(A,I)(M,B)\tkzGetPoints{X}{C}
+    
+    \tkzMarkRightAngle(A,C,B)
+
+    \tkzFillAngle[fill=blue!20, size=0.6](B,A,C)
+    \tkzLabelAngle[pos=1](B,A,C){$62\degres$}
+    
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below](A,B)
+    \tkzLabelPoints[above](C)
+
+    \tkzLabelSegment[above=5pt](B,C){$8$}
+    \tkzLabelSegment[above left](A,C){$x$}
+\end{tikzpicture}

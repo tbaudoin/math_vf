@@ -1,0 +1,16 @@
+\begin{tikzpicture}[baseline=(current bounding box.east), scale=0.5]
+    \begin{scope}[rotate=90]
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(0,3){B}
+    \end{scope}
+    \tkzDrawTriangle[pythagore](B,A)
+    \tkzGetPoint{C}
+    \tkzLabelPoints[above](A,B)
+    \tkzLabelPoints[below](C)
+    \tkzMarkRightAngle[size=.5](B,A,C)
+    \tkzLabelSegment[below](B,C){$a$}
+    \tkzLabelSegment[right](C,A){$b$}
+    \tkzLabelSegment[above](A,B){$c$}
+    \tkzDrawPoints(A,B,C)
+
+\end{tikzpicture}

@@ -1,0 +1,55 @@
+\newcommand{\mydate}{13/12/2021}
+\newcommand{\examtitle}{Examen de Mathématiques}
+\newcommand{\examsubtitle}{UAA2}
+\newcommand{\examyear}{2021-2022}
+\newcommand{\examclass}{3 \dots}
+\newcommand{\examsession}{Décembre}
+\newcommand{\examteacher}{}
+\newcommand{\examdate}{Lundi \mydate, 8h20 à 10h30}
+\newcommand{\exammatos}{équerre, calculatrice}
+\newcommand{\examneeded}{feuille de brouillon, feuille à en-tête}
+\newcommand{\examnote}{\textbf{/\TotalExerciseGoal{points}}\,$\rightarrow$\textbf{\phantom{XX}/10}}
+
+\newcommand{\entete}%
+{%
+    \includegraphics[width=\linewidth]{img/entete.pdf}
+    \vspace{\smallskipamount}
+    \begin{tblr}{%
+            width=\textwidth,%
+            colspec={|XXX|},%
+            cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+            cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+            cell{5}{1}={r=1,c=2}{l},
+            cell{5}{3}={r=4,c=1}{r},
+            cell{6}{1}={r=1,c=3}{l},%
+            cell{7}{1}={r=1,c=3}{l},%
+            cell{8}{1}={r=1,c=3}{l},%
+            rowsep=1ex%
+        }%
+        \hline
+        % cell1
+        \examtitle &&\\
+        % cell2
+        \examsubtitle &&\\
+        \hline
+        % cell3
+        Nom : && Classe : \examclass\\
+        % cell4
+        Prénom : && Numéro :  \\
+        \hline
+        % cell5
+        Professeur : \examteacher &&\examnote\\
+        % cell6
+        Date et heure: \examdate\\
+        % cell7
+        Matériel autorisé : \exammatos\\
+        % cell8
+        Matériel à distribuer : \examneeded\\
+        \hline
+    \end{tblr}%
+    \vspace{\smallskipamount}
+    \begin{scriptsize}%
+        Rue de linthout, 30 - 1030 Bruxelles%
+    \end{scriptsize}%
+    \par%
+}

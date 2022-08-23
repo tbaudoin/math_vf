@@ -1,0 +1,44 @@
+\documentclass[a4paper, 12pt, parskip=half-]{scrartcl}
+\usepackage[margin=1in]{geometry}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[dvipsnames]{xcolor}
+%\usepackage{showframe}
+\usepackage{mathtools}
+\usepackage{tabularray}
+\usepackage{cmbright}
+\usepackage{tikz, tkz-euclide}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage[use-aux, use-files]{xsim}
+\usepackage{ulem}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,xparse}
+% contient le code relatif à l'en tête
+\input{entete.tex}
+% contient le code relatif au modèle utilisé pour les questions
+\input{xsim_template.tex}
+\xsimsetup{
+    path=xsim,
+    exercise/template = math-exam,
+    solution/template = math-exam,
+    exercise/name = question,
+    blank/blank-style = \dotuline{#1},
+    blank/scale=2,
+}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\textbf{\alph*)}, itemsep=1ex}
+% création d'un nouveau paramètre pour les listes de type <enumerate>. Pour afficher le contenu de la liste en plusieurs colonnes, utiliser [cols=<nombre de colonne>]
+\SetEnumitemKey{cols}
+{
+    before = \begin{multicols}{#1},
+    after =  \end{multicols}
+}
+% création d'une liste <qcm> dont les labels sont des carrés vides afin de simuler des cases à cocher
+\newlist{qcm}{itemize}{1}
+\setlist[qcm]{label=\faIcon[regular]{square}}
+% figcolor est la couleur des solutions pour les constructions (transformations du plan)
+\newcommand{\figcolor}{white}

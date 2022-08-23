@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=2]
+    \tkzDefPoints{-.5/0/A,0/5/B,0/1/C,2/1/D, 0/4/E,3/4/F}
+    \draw (A) rectangle (B);
+    \tkzDrawSegments(C,D E,F)
+    \tkzDrawSegments[dashed](C,F D,E)
+    \tkzInterLL(C,F)(D,E)
+    \tkzGetPoint{G}
+    \tkzDrawPoints(C,D,E,F,G)
+    \tkzLabelSegment[fill=white,anchor=center, sloped](C,G){\SI{25}{cm}}
+    \tkzLabelSegment[fill=white,anchor=center, sloped](D,G){\SI{20}{cm}}
+    \tkzLabelSegment[fill=white,anchor=center, sloped](E,G){\SI{30}{cm}}
+    \tkzLabelSegment[fill=white,anchor=center, sloped](F,G){\SI{35}{cm}}
+\end{tikzpicture}

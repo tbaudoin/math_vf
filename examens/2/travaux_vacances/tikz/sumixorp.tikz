@@ -1,0 +1,8 @@
+\begin{tikzpicture}[scale=0.7]
+    \tkzDefPoints{0/0/A, 5/4/B, 7/-2/C}
+    %\tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[below](C)
+    \tkzDrawPoints[shape=cross](A,B,C)
+\end{tikzpicture}

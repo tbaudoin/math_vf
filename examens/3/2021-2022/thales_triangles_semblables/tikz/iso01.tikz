@@ -1,0 +1,14 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), rotate=90, scale=.5]
+    \tkzDefPoints{0/0/A, 3/0/B, -1/2/D}
+    \tkzDefPointsBy[symmetry=center B](A,D){C,E}
+    \tkzDrawPolygon(A,B,D) 
+    \tkzDrawPolygon(B,C,E)
+    \tkzMarkSegments[mark=|](D,B B,E)
+    \tkzMarkSegments[mark=||](A,B B,C)
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[right](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[below](D)
+    \tkzLabelPoints[above](E)
+\end{tikzpicture}

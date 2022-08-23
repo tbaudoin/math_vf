@@ -1,0 +1,6 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 7/0/B}
+    \tkzDrawSegment(A,B)
+    \tkzDrawPoints(A,B)
+    \tkzLabelPoints[below](A,B)
+\end{tikzpicture}

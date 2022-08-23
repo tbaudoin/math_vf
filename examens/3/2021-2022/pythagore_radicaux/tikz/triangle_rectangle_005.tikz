@@ -1,0 +1,21 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=0.7]
+    \tkzDefPoint(0,0){K}
+    \tkzDefPoint(4,0){L}
+    \tkzDefShiftPoint[L](0,3){M}
+    \tkzDefShiftPoint[L](0,6){N}
+    \tkzDrawPolygon(K,L,M)
+    \tkzDrawPolygon(K,L,N)
+
+    \tkzMarkRightAngle[size=.5](K,L,N)
+    %\tkzMarkAngle[mark=none, size=2](M,K,N)
+    \tkzLabelAngle[pos=2.5](M,K,N){$\beta$}
+    \tkzFillAngle[fill=black, size=2](M,K,N)
+    \tkzMarkSegments[mark=||](N,M M,L)
+    \tkzLabelSegment[below](K,L){4}
+    \tkzLabelSegment[right=1ex](L,M){3}
+    \tkzLabelPoints[below](K,L)
+    \tkzLabelPoints[right](M)
+    \tkzLabelPoints[above](N)
+
+    \tkzDrawPoints(K,L,M,N)
+\end{tikzpicture}

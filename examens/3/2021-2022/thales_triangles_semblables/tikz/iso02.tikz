@@ -1,0 +1,20 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tikzmath{
+        \r = 2;
+    }
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0:\r){B}
+    \tkzDefPoint(-70:\r){C}
+    \tkzDefPoint(80:\r){D}
+    \tkzDefPoint(80+70:\r){E}
+    \tkzDrawCircle(A,B)
+    \tkzDrawPolygon(A,D,E)
+    \tkzDrawPolygon(A,B,C)
+    \tkzMarkSegments[mark=||](E,D B,C)
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[right](B)
+    \tkzLabelPoints[below](C)
+    \tkzLabelPoints[above](D)
+    \tkzLabelPoints[above left](E)
+\end{tikzpicture}

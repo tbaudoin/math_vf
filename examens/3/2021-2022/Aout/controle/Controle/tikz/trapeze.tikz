@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=1]
+    \tkzDefPoints{0/0/P, 5/0/A, 5/4/R, 0/3/T, 2/0/M}
+    \tkzDrawPolygon(T,R,A,P)
+    \tkzDrawPolygon(T,M,R)
+    \tkzLabelPoints[below](A,P,M)
+    \tkzLabelPoints[above](T,R)
+    \tkzLabelSegment[above](P,M){$x$}
+    % mesures
+    \draw[|-|] ([xshift=-10pt]P) -- ([xshift=-10pt]T)node[sloped,midway,fill=white]{\SI{3}{cm}};
+    \draw[|-|] ([yshift=-25pt]P) -- ([yshift=-25pt]A)node[sloped,midway,fill=white]{\SI{5}{cm}};
+    \draw[|-|] ([xshift=10pt]A) -- ([xshift=10pt]R)node[sloped,midway,fill=white]{\SI{4}{cm}};
+\end{tikzpicture}

@@ -1,0 +1,27 @@
+\begin{tikzpicture}[scale=1]
+    \tkzDefPoints{0/0/E, 1.5/0/A, 7/0/B, 7/3/C}
+    \tkzDefLine[parallel=through E](A,C)
+    \tkzInterLL(B,C)(E,tkzPointResult)
+    \tkzGetPoint{D}
+    %limon
+    \tkzDrawPolygon[fill=gray](A,C,D,E)
+    \tkzDrawLine(E,B)
+    \tkzDrawSegment[dashed](B,C)
+    \tkzMarkRightAngle(E,B,C)
+    \tkzDefPointWith[colinear=at C](A,B)
+    \tkzGetPoint{X}
+    \tkzDefPointWith[colinear=at D](A,B)
+    \tkzGetPoint{Y}
+    \tkzDefPointWith[colinear=at B](A,B)
+    \tkzGetPoint{Z}
+    \tkzDrawLines[add=0 and 20pt](C,X D,Y B,Z)
+    %marquer les longueurs
+    \draw[<->, >=latex] ($(E)+(0,-1)$) -- ($(B)+(0,-1)$)node[midway, fill=white]{360 cm};
+    \draw[<->, >=latex] ($(D)+(1,0)$) -- ($(C)+(1,0)$)node[midway,right]{20 cm};
+    \draw[<->, >=latex] ($(B)+(1,0)$) -- ($(C)+(1,0)$)node[midway, fill=white]{250 cm};
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzLabelPoints[below](E,A,B)
+    \tkzLabelPoints(C)
+    \tkzLabelPoints[above](D)
+    \draw (current bounding box.north)node{$AC \sslash ED$};
+\end{tikzpicture}

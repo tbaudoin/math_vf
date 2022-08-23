@@ -1,0 +1,26 @@
+\DeclareExerciseEnvironmentTemplate{math-exam}%
+{%
+    \GetExerciseHeadingF{\subsection*}%
+    {%
+        \XSIMmixedcase{\GetExerciseName}\nobreakspace
+        \GetExerciseProperty{counter}%
+        \IfInsideSolutionF
+        {%
+            \GetExercisePropertyT{subtitle}
+            {{\normalfont\itshape\PropertyValue}}%
+        }%
+    }
+    \GetExercisePropertyT{points}
+    {%
+        \marginpar
+        {%
+            \IfInsideSolutionTF{}{\textbf{\slash}}%
+            \textbf{\printgoal{\PropertyValue}}
+            \GetExercisePropertyT{bonus-points}%
+            {%
+                ~(+\printgoal{\PropertyValue})
+            }%
+        }%
+    }%
+}
+{\par}

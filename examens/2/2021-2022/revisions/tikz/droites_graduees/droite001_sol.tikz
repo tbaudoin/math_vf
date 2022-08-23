@@ -1,0 +1,27 @@
+\begin{tikzpicture}[>=latex, x=3cm]
+    \tikzmath{
+        \xmin=-2;
+        \xmax=2;
+        \xstep=1/7;
+        \firstmainstep=\xmin + 1;
+        \firststep=\xmin + \xstep;
+        \laststep=\xmax - \xstep;
+        \secondaryticks = 2pt;
+        \primaryticks = 4pt;}
+    % droite
+    \draw[->] (\xmin,0) -- (\xmax+\xstep,0)node[right]{$x$};
+    % graduations secondaires
+    \foreach \x in {\xmin, \firststep, ..., \laststep}
+        {\draw (\x,\secondaryticks pt) -- (\x, -\secondaryticks pt);};
+    % graduations principales (changer les valeurs à la main)
+    \foreach \x in {\xmin,\firstmainstep,...,\xmax}
+        {\draw[fill=black] (\x,\primaryticks pt) -- (\x, -\primaryticks pt) node[below]{\pgfmathprintnumber{\x}};};
+
+    %
+    
+    \draw (2*\xstep,0)node[above=1ex]{$A$};
+    \draw (\xstep,0)node[above=1ex]{$B$};
+    \draw (-1*\xstep,0)node[above=1ex]{$C$};
+    \draw (-12*\xstep,0)node[above=1ex]{$D$};
+    \draw (2,0)node[above=1ex]{$E$};
+\end{tikzpicture}

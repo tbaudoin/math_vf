@@ -1,0 +1,14 @@
+\begin{tikzpicture}[rotate=135, baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0,-4){B}
+    \tkzDefPoint(3,-4){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[right](B)
+    \tkzLabelSegment(A,C){$x$}
+    \tkzLabelSegment[below right](A,B){$81$} 
+    \tkzLabelSegment[above right](B,C){$49$}
+    \tkzDrawPoints(A,B,C)
+    \tkzMarkRightAngle[size=.5](A,B,C)
+\end{tikzpicture}

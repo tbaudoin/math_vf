@@ -1,0 +1,25 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), rotate=0, scale=0.7]
+
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(2,-5){B}
+    \tkzDefPoint(0,-5){D}
+    \tkzDefPoint(-2,-5){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzDrawSegment(A,D)
+
+    \tkzDrawPoints(A,B,C,D)
+    \tkzDrawSegments(A,B A,D C,D A,C D,B)
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[below left](C)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[below](D)
+    
+    %\tkzMarkSegments[mark=|](A,B D,C)
+    %\tkzMarkSegments[mark=||](A,C A,B)
+    %\tkzMarkSegments[mark=|||](D,E E,B)
+
+    \tkzMarkAngle(C,A,D)
+    \tkzMarkAngle(D,A,B)
+
+
+\end{tikzpicture}

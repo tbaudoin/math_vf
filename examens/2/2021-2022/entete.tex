@@ -1,0 +1,43 @@
+\newcommand{\mydate}{15/12/2021}
+\newcommand{\examtitle}{Examen de Mathématiques}
+\newcommand{\examsubtitle}{Partie 1 - Géométrie}
+\newcommand{\examyear}{2021-2022}
+\newcommand{\examclass}{2 \dots}
+\newcommand{\examsession}{Décembre}
+\newcommand{\examteacher}{}
+\newcommand{\examdate}{Mercredi \mydate, 9h10 à 10h30}
+\newcommand{\exammatos}{équerre, compas}
+\newcommand{\examneeded}{feuille de brouillon}
+\newcommand{\examnote}{\textbf{\dots/20}}
+\newcommand{\entete}%
+{%
+    \includegraphics[width=\linewidth]{img/entete.pdf}%
+    \vspace{\smallskipamount}
+    \begin{tblr}{%
+            colspec={|XXX|},%
+            cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+            cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+            cell{5}{2}={r=1,c=2}{r},
+            cell{6}{1}={r=1,c=3}{l},
+            cell{7}{1}={r=1,c=2}{l},
+            cell{7}{3}={r},
+            rowsep=1ex,%
+        }%
+    \hline
+    \examtitle &&\\
+    \examsubtitle &&\\
+    \hline
+    Nom : && Classe : \examclass\\
+    Prénom : && Numéro :  \\
+    \hline
+    Professeur : \examteacher & Date et heure: \examdate&\\
+    Matériel autorisé : \exammatos&&\\
+    Matériel à distribuer : \examneeded&&\examnote\\
+    \hline
+    \end{tblr}%
+    \vspace{\smallskipamount}
+    \begin{scriptsize}%
+        Rue de linthout, 30 - 1030 Bruxelles%
+    \end{scriptsize}%
+    \par%
+}%

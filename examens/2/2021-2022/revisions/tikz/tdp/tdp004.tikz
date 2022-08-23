@@ -1,0 +1,17 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(-30:2){B}
+    \tkzDefCircle(A,B)
+
+    \tkzDefPointsBy[symmetry=center B](A,B){}
+    \tkzDrawCircle[color=\figcolor](A',B')
+    \tkzDrawPoints[color=\figcolor](A',B')
+    \tkzLabelPoints[color=\figcolor](A',B')
+    \tkzLabelCircle[color=\figcolor,below right](A',B')(180){\textcursive{C}}
+
+    \tkzDrawCircle(A,B)
+    \tkzLabelCircle[above left](A,B)(180){\textcursive{C}}
+    \tkzDrawPoints(A,B)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+\end{tikzpicture}

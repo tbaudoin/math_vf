@@ -1,0 +1,72 @@
+\usepackage[french]{babel}
+\usepackage[margin=1in]{geometry}
+% FONT
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome5}
+\faStyle{regular}
+\usepackage{cmbright}
+\usepackage{mathpazo}
+\usepackage{frenchmath}
+\usepackage{textcomp}
+\usepackage{subfiles}
+% MATH
+\usepackage{mathtools}
+
+% DRAWING
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.8}
+\usepackage{tikz}
+\usetikzlibrary{math, babel}
+
+\usepackage[normalem]{ulem}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\setlist[enumerate]%
+{
+    label=\emph{\alph*)}
+}
+
+\usepackage{tasks}
+\NewTasksEnvironment[label=\faSquare, label-width=12pt]{QCM}[\choice](1)
+
+\usepackage{siunitx}
+\DeclareSIUnit{\EUR}{\text{€}}
+\sisetup{
+    locale=FR,
+    group-minimum-digits=4,
+}
+
+\usepackage{tabularray}
+
+\usepackage[use-aux, use-files]{xsim}
+
+\xsimsetup{
+    load-style=math-exam,
+    path=xsim,% stocker les fichiers auxiliaires dans ce dossier
+    %solution/print=true, % afficher les solutions en dessous des questions
+    blank/style=\dotuline{#1},
+    exercise/template = math-exam,
+    solution/template = math-exam,
+    exercise/name = Question,
+}
+
+\usepackage{etoolbox}
+\newrobustcmd*\sectionpoints{%
+    \def\thissectionpoints{0}%
+    \ForEachUsedExerciseByID{%
+        \ifnumcomp
+{\ExercisePropertyGet{##1}{##2}{section-value}+0}={\value{section}}
+            {\edef\thissectionpoints{\thissectionpoints+##5}}
+            {}%
+    }%
+    \marginpar%
+    {%
+        \large
+        \bfseries
+        \slash
+        \printgoal%
+        {\thissectionpoints}
+    }
+}

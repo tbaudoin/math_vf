@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/C,7/0/B}
+    \tkzDefPoint(50:4){A}
+    \tkzDrawPolygon(A,B,C)
+    
+    \tkzDefLine[perpendicular = through A](B,C)
+    \tkzInterLL(B,C)(A,tkzPointResult)
+    \tkzGetPoint{D}
+
+    \tkzDefMidPoint(A,B)
+    \tkzGetPoint{E}
+    
+    \tkzDefLine[mediator](A,B)
+    \tkzInterLL(C,B)(tkzFirstPointResult,tkzSecondPointResult)
+    \tkzGetPoint{F}
+
+    \tkzDefLine[bisector](E,B,F)
+    \tkzInterLL(A,C)(B,tkzPointResult)
+    \tkzGetPoint{G}
+
+    \tkzMarkRightAngles(C,A,B B,D,A F,E,B)
+    \tkzMarkSegments[mark=||](A,E E,B)
+    \tkzMarkAngles[mark=|](A,B,G G,B,C)
+
+    \tkzDrawLines(B,G E,F A,D)
+
+    \tkzDrawPoints(A,B,C,D,E,F,G)
+    \tkzLabelPoints[below](C,F,B)
+    \tkzLabelPoints[above](G,E)
+    \tkzLabelPoints[above left](A)
+    \tkzLabelPoints[below left](D)
+
+\end{tikzpicture}

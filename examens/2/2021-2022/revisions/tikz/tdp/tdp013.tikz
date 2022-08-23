@@ -1,0 +1,16 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(80:3){B}
+    \tkzDefPoint(-20:2){C}
+
+    \tkzDefPointsBy[rotation=center C angle -60](A,B,C){}
+    \tkzDrawPolygon[color=\figcolor](A',B',C')
+    \tkzDrawPoints[color=\figcolor](A',B',C')
+    \tkzLabelPoints[color=\figcolor](A',B',C')
+
+    \tkzDrawPolygon(A,B,C)
+    \tkzDrawPoints(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[below right](C)
+\end{tikzpicture}

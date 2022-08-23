@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+            \begin{axis} [
+                ybar,
+                height=6cm,
+                width=8cm,
+                xlabel={Note},
+                ylabel={Effectif},
+                ymin=0,
+                xtick distance = 1,
+                ytick distance = 1,
+                %xtick={8,...,15},
+                %ytick={1,...,7},
+                ymajorgrids,
+                xtick pos=bottom,
+                ytick pos=left,
+                bar width=1pt]
+                \addplot coordinates {
+                    (8,2)
+                    (9,5)
+                    (10,2)
+                    (11,2)
+                    (12,3)
+                    (13,2)
+                    (14,7)
+                    (15,2)
+                };
+                \end{axis}
+        \end{tikzpicture}

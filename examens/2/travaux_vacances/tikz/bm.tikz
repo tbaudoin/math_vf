@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    % sol
+    \draw (0,0) rectangle (6,-5pt);
+    % sommets
+    \coordinate (H1) at (1,2.5);
+    \coordinate (H2) at (3,2);
+    \coordinate (H3) at (5,1.6);
+    % trajectoire
+    \draw[dashed] (H1) parabola (2,0)
+    parabola bend(H2)(4,0) parabola [bend at end](H3);
+    % balle
+    \foreach \x/\l in {1/{2,5 cm},2/{?},3/{?}}
+    {
+        \draw[fill=black] (H\x) circle (2pt);
+        \draw (H\x) -- (H\x |- 0,0)node[midway,below,sloped]{\l};
+    }
+  \end{tikzpicture}

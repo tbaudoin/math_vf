@@ -1,0 +1,965 @@
+\documentclass[a4paper,fontsize=12pt, parskip=half]{scrartcl}
+\input{preamble.tex}
+\begin{document}
+\includepdf[pages=-]{entete.pdf}
+\setcounter{page}{1}
+\begin{exercise}
+    \begin{tasks}(2)
+        \task Qui est l'opposé de $6$?
+        \task Qui est l'inverse de $0,001$?
+        \task Qui est l'inverse de $\dfrac{-2}{3}$?
+        \task Qui est l'opposé de $\dfrac{-3}{4}$?
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}(4)
+        \task $-6$
+        \task $\np{1000}$
+        \task $-\dfrac{3}{2}$
+        \task $\dfrac{3}{4}$
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Résous les équations suivantes en notant toutes les étapes.
+    \begin{tasks}(2)
+        \task $3x-8=12x+2$
+        \task $-2x+8=2x$
+        \task $4x-10(x+10)=7x-10-4x+4$%\vspace*{\inter}%\columnbreak
+        \task $x-3(x-3)+6=x-8(x+5)$
+        \task $-9 x-14=-2 (x-4)+7 x-4$
+        \task $-8(x-6)+8 x-6=6 x-3(x+1)-3$
+        \task $7 (x-7)-10 x-3=8 x+5$
+        \task $\dfrac{8 x}{3}+\dfrac{1}{4}+2x=\dfrac{11 x}{6}-9$
+        \task $-3 x+\dfrac{1}{4}=7 x+\dfrac{x}{6}$
+        \task $\dfrac{1}{4} (-2 x+3)+5x=-\dfrac{10 x}{3}+5$
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}(2)
+        \task
+        $\begin{WithArrows}
+                3x-8  & = 12x+2
+                \Arrow{-12x}\\
+                -9x-8 & = 2
+                \Arrow{$+8$}\\
+                -9x   & = 10
+                \Arrow{$\div (-9)$}\\
+                x     & = -\dfrac{10}{9}
+            \end{WithArrows}$
+        \task
+        $\begin{WithArrows}
+                -2x+8 &= 2x
+                \Arrow{$+2x$}\\
+                8 &= 4x
+                \Arrow{$\div 4$}\\
+                2 &= x
+            \end{WithArrows}$
+        \task*
+        $\begin{WithArrows}
+                4x-10(x+10)&=7x-10-4x+4
+                \Arrow[jump=2]{Réduire chaque membre}\\
+                4x-10x-100 &= 3x -6\\
+                -6x -100 &= 3x-6
+                \Arrow{$-3x$}\\
+                -9x -100 &= -6
+                \Arrow{$+100$}\\
+                -9x &= 94
+                \Arrow{$\div (-9)$}\\
+                x &= -\dfrac{94}{9}
+            \end{WithArrows}$
+        \task*
+        $\begin{WithArrows}
+                x-3(x-3)+6 &=x-8(x+5)
+                \Arrow[jump=2]{Réduire chaque membre}\\
+                x-3x+9+6 &= x-8x-40\\
+                -2x + 15 &= -7x -40
+                \Arrow{$+7x$}\\
+                5x + 15 &= -40
+                \Arrow{$-15$}\\
+                5x &= -55
+                \Arrow{$\div 5$}\\
+                x &= -11
+            \end{WithArrows}$
+        \task*
+        $\begin{WithArrows}
+                -9 x-14     &=-2 (x-4)+7 x-4
+                \Arrow[jump=2]{Réduire le membre de droite}\\
+                -9x -14     &= -2x + 8 + 7x -4\\
+                -9x -14     &= 5x + 4
+                \Arrow{$-5x$}\\
+                -14x - 14   &= 4
+                \Arrow{$+14$}\\
+                -14x        &= 18
+                \Arrow{$\div -14$}\\
+                x           &= -\dfrac{18}{14}
+                \Arrow{Simplifier}\\
+                x           &= -\dfrac{9}{7}
+            \end{WithArrows}$
+        \task*
+        $\begin{WithArrows}
+                -8(x-6) + 8 x - 6   &= 6x - 3(x+1) - 3
+                \Arrow{Réduire les deux membres}\\
+                -8x + 48 + 8x - 6   &= 6x - 3x - 3 - 3\\
+                42                  &= 3x - 6
+                \Arrow{$+6$}\\
+                48                  &= 3x
+                \Arrow{$\div 3$}\\
+                16                  &= x
+            \end{WithArrows}$
+        \task*
+        $\begin{WithArrows}
+                7(x-7) - 10x - 3    &= 8x + 5
+                \Arrow[jump=2]{Réduire le membre de gauche}\\
+                7x - 49 - 10x - 3   &= 8x + 5\\
+                -3x - 52            &= 8x + 5
+                \Arrow{$-8x$}\\
+                -11x - 52           &= 5
+                \Arrow{$+52$}\\
+                -11x                &= 57
+                \Arrow{$\div (-11)$}\\
+                x                   &= -\dfrac{57}{11}
+            \end{WithArrows}$
+        \task*
+        $\begin{WithArrows}
+                \dfrac{8x}{3} + \dfrac{1}{4} + 2x &= \dfrac{11x}{6} - 9
+                \Arrow{Mettre tous les termes au même dénominateur}\\
+                \dfrac{32x}{12} + \dfrac{3}{12} + \dfrac{24x}{12}
+                &= \dfrac{22x}{12} - \dfrac{108}{12}
+                \Arrow{$\cdot 12$}\\
+                32x + 3 + 24x &= 22x - 108
+                \Arrow{Réduire le terme de gauche}\\
+                56x + 3 &= 22x - 108
+                \Arrow{$-22x$}\\
+                34x + 3 &= -108
+                \Arrow{$-3$}\\
+                34x &= -111
+                \Arrow{$\div 34$}\\
+                x &= -\dfrac{111}{34}
+            \end{WithArrows}$
+        \task*
+        $\begin{WithArrows}
+                -3x + \dfrac{1}{4} &=7x + \dfrac{x}{6}
+                \Arrow{Mettre tous les termes au même dénominateur}\\
+                -\dfrac{36x}{12} + \dfrac{3}{12}
+                &= \dfrac{84x}{12} + \dfrac{2x}{12}
+                \Arrow{$\cdot 12$}\\
+                -36x + 3 &= 84x + 2x
+                \Arrow{Réduire le membre de droite}\\
+                -36x + 3 &= 86x
+                \Arrow{$+36x$}\\
+                3 &= 122x
+                \Arrow{$\div 122$}\\
+                \dfrac{3}{122} &= x
+            \end{WithArrows}$
+        \task*
+        $\begin{WithArrows}
+                \dfrac{1}{4}(-2 x+3) + 5x &= -\dfrac{10x}{3} + 5
+                \Arrow{Mettre tous les termes au même dénominateur}\\
+                \dfrac{3}{12}(-2 x+3) + \dfrac{60x}{12}
+                &= -\dfrac{40x}{12} + \dfrac{60}{12}
+                \Arrow{$\cdot 12$}\\
+                3(-2x+3) + 60x &= -40x + 60
+                \Arrow{Réduire le membre de gauche}\\
+                -6x + 9 + 60x &= -40x + 60\\
+                54x + 9 &= -40x + 60
+                \Arrow{$+40x$}\\
+                94x + 9 &= 60
+                \Arrow{$-9$}\\
+                94x &= 51
+                \Arrow{$\div 94$}\\
+                x &= \dfrac{54}{91}
+            \end{WithArrows}$
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Résous. N'oublie pas de présenter ta réponse sous forme d'une fraction irréductible.
+    \begin{tasks}(2)
+        \task $\dfrac{121}{-8}\cdot\dfrac{72}{11}$
+        \task $\dfrac{-1}{3}+\dfrac{3}{4}$
+        \task $\dfrac{3}{7}\cdot\dfrac{35}{9}$
+        \task $\dfrac{7}{2}+\dfrac{1}{8}-\dfrac{-4}{-12}$
+        \task $\dfrac{11}{14} - \dfrac{3}{-21}$
+        \task $-\dfrac{-2}{18}+\dfrac{-6}{-27}$
+        \task $\dfrac{-35}{24}\cdot \dfrac{-8}{9} \cdot \dfrac{-6}{25}$
+        \task $\left(\dfrac{1}{2}+\dfrac{3}{4}\right)\cdot \left(\dfrac{1}{5}+\dfrac{3}{10}\right)$
+        \task $\dfrac{2}{15}-\dfrac{2}{3}:\dfrac{1}{4}$
+        \task $\dfrac{3}{5}\cdot \left(\dfrac{-2}{3}\right)^2$
+        %\task $\left(\dfrac{-1}{2}\cdot \dfrac{3}{5}\right)^2 \cdot \left(-2-\dfrac{1}{2}\right)^3$
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}(2)
+        \task
+        $\begin{aligned}[t]
+                \dfrac{\simpup{121}{11}}{\simpdown*{-8}{-1}}
+                \cdot
+                \dfrac{\simpup*{72}{9}}{\simpdown{11}{1}}
+                 & = -99
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                \dfrac{-1}{3}+\dfrac{3}{4} & = \dfrac{-4}{12} + \dfrac{9}{12} \\
+                                           & = \dfrac{5}{12}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                \dfrac{\simpup{3}{1}}{\simpdown*{7}{1}}
+                \cdot
+                \dfrac{\simpup*{35}{5}}{\simpdown{9}{3}}
+                 & = \dfrac{5}{3}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                \dfrac{7}{2}+\dfrac{1}{8}-\dfrac{-4}{-12}
+                 & = \dfrac{7}{2} + \dfrac{1}{8}
+                - \dfrac{\simpup{4}{1}}{\simpdown{12}{3}}           \\
+                 & = \dfrac{84}{24} + \dfrac{3}{24} - \dfrac{8}{24} \\
+                 & = \dfrac{79}{24}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                \dfrac{11}{14} - \dfrac{3}{-21}
+                 & = \dfrac{11}{14} + \dfrac{\simpup{3}{1}}{\simpdown{21}{7}} \\
+                 & = \dfrac{11}{14} + \dfrac{2}{14}                           \\
+                 & = \dfrac{13}{14}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                -\dfrac{-2}{18}+\dfrac{-6}{-27}
+                 & = \dfrac{\simpup{2}{1}}{\simpdown{18}{9}} + \dfrac{6}{27} \\
+                 & = \dfrac{3}{27} + \dfrac{6}{27}                           \\
+                 & = -\dfrac{\simpup{9}{1}}{\simpdown{27}{3}}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                \dfrac{-35}{24}\cdot \dfrac{-8}{9} \cdot \dfrac{-6}{25}
+                 & =
+                -\dfrac{\simpup{35}{7}}{\simpdown*{24}{4}}\cdot \dfrac{8}{9}
+                \cdot \dfrac{\simpup*{6}{1}}{\simpdown{25}{5}}                \\
+                 & = -\dfrac{7}{\simpdown{4}{1}}\cdot\dfrac{\simpup{8}{2}}{9}
+                \cdot\dfrac{1}{5}                                             \\
+                 & = -\dfrac{14}{45}
+            \end{aligned}$
+        \task!
+        $\begin{aligned}[t]
+                \left(\dfrac{1}{2}+\dfrac{3}{4}\right)
+                \cdot
+                \left(\dfrac{1}{5}+\dfrac{3}{10}\right)
+                 & =
+                \left(\dfrac{2}{4}+\dfrac{3}{4}\right)
+                \cdot
+                \left(\dfrac{2}{10}+\dfrac{3}{10}\right)                        \\
+                 & = \dfrac{5}{4} \cdot \dfrac{\simpup{5}{1}}{\simpdown{10}{2}} \\
+                 & = \dfrac{5}{8}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                \dfrac{2}{15}-\dfrac{2}{3}:\dfrac{1}{4}
+                 & = \dfrac{2}{15} - \dfrac{2}{3} \cdot \dfrac{4}{1} \\
+                 & = \dfrac{2}{15} - \dfrac{8}{3}                    \\
+                 & = \dfrac{2}{15} - \dfrac{40}{15}                  \\
+                 & = -\dfrac{38}{15}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                \dfrac{3}{5}\cdot \left(\dfrac{-2}{3}\right)^2
+                 & = \dfrac{3}{5}\cdot\dfrac{(-2)^2}{3^2}                    \\
+                 & = \dfrac{\simpup{3}{1}}{5}\cdot\dfrac{4}{\simpdown{9}{3}} \\
+                 & = \dfrac{4}{15}
+            \end{aligned}$
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Résous en écrivant tout ton raisonnement.
+    \begin{tasks}(2)
+        \task $8ab+2a-6ab-a+3ab-ab$%4ab+a$
+        \task $(2a-6)(b-2)$
+        \task $ (a-2b)^2$
+        \task $(3a-2)(3a+2)$
+        \task $-6ab(10a+b^2)$%-60a^2b-6ab^3$
+        \task $-7(10a+2)-5(5-4a)$%-90a+11$
+        \task $2(a+2) - (3a-6)$
+        \task $(a-2)^2+(3a-5)(a+2)$
+        \task $ 7\left(\dfrac{3a}{2}-\dfrac{3}{8}\right)$%
+        \task $5+\dfrac{7-4 a}{10}$%\dfrac{57-4 a}{10}$
+        \task $-7+\dfrac{10+a}{2}$ %$\dfrac{a-4}{2}$
+        \task $-5(a-3)(a+3)$
+        %\task $\dfrac{2-a}{5}+\dfrac{a}{2}$
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}(2)
+        \task*
+        $\begin{aligned}[t]
+                \uwave{8ab}+\uline{2a}-\uwave{6ab}-\uline{a}+\uwave{3ab}-\uwave{ab}%4ab+a$
+                 & = 4ab + a
+            \end{aligned}$
+        \task*
+        $\begin{aligned}[t]
+                (2a-6)(b-2) & = 2ab - 4a - 6b + 12
+            \end{aligned}$
+        \task*
+        $\begin{aligned}[t]
+                (a-2b)^2 & = a^2 - 2 \cdot a \cdot 2b + (2b)^2 \\
+                         & = a^2 - 4ab + 4b^2
+            \end{aligned}$
+        \task*
+        $\begin{aligned}[t]
+                (3a-2)(3a+2) & = (3a)^2 - 2^2 \\
+                             & = 9a^2 - 4
+            \end{aligned}$
+        \task*
+        $\begin{aligned}[t]
+                -6ab(10a+b^2) & = -60a^2b - 6ab^3
+            \end{aligned}$
+        \task*
+        $\begin{aligned}[t]
+                -7(10a+2)-5(5-4a)
+                 & = \uline{-70a} - \uwave{14} - \uwave{25} + \uline{20a} \\
+                 & = -50a - 39
+            \end{aligned}$
+        \task*
+        $\begin{aligned}[t]
+                2(a+2) - (3a-6)
+                 & = \uline{2a} + \uwave{4} - \uline{3a} + \uwave{6} \\
+                 & = -a + 10
+            \end{aligned}$
+        \task*
+        $\begin{aligned}[t]
+                (a-2)^2+(3a-5)(a+2)
+                 & = a^2 - 2\cdot a \cdot 2 + 2^2 + 3a^2 + 6a - 5a - 10   \\
+                 & = \uuline{a^2} -\uwave{4a} + \uline{4} + \uuline{3a^2}
+                + \uwave{6a} - \uwave{5a} - \uline{10}                    \\
+                 & = 4a^2 - 3a - 6
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                7\left(\dfrac{3a}{2}-\dfrac{3}{8}\right)
+                 & = 7\left(\dfrac{12a}{8}-\dfrac{3}{8}\right) \\
+                 & = 7\cdot\dfrac{12a-3}{8}                    \\
+                 & = \dfrac{7(12a-3)}{8}                       \\
+                 & = \dfrac{84a - 21}{8}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                5+\dfrac{7-4 a}{10}
+                 & = \dfrac{50}{10} + \dfrac{7-4 a}{10} \\
+                 & = \dfrac{50+(7-4a)}{10}              \\
+                 & = \dfrac{57-4a}{10}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                -7+\dfrac{10+a}{2}
+                 & = \dfrac{-14}{2} + \dfrac{10+a}{2} \\
+                 & = \dfrac{-14+(10+a)}{2}            \\
+                 & = \dfrac{-4+a}{2}
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                -5(a-3)(a+3)
+                 & = -5(a^2 - 3^2) \\
+                 & = -5(a^2 - 9)   \\
+                 & = -5a^2 + 45
+            \end{aligned}$
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Développe les expressions ci-dessous.
+    \begin{tasks}(2)
+        \task $(5x+1)^2$
+        \task $(2x-3)^2$
+        \task $(4a-3)(4a+3)$
+        \task $(4x+2)^2$
+        \task $(2x-2)(2x+2)$
+        \task $(3x-2)^2$
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}(2)
+        \task
+        $\begin{aligned}[t]
+                (5x+1)^2
+                 & = (5x)^2 + 2\cdot 5x \cdot 1 + 1^2 \\
+                 & = 25x^2 + 10x + 1
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                (2x-3)^2
+                 & = (2x)^2 - 2\cdot 2x \cdot 3 + 3^2 \\
+                 & = 4x^2 - 12x + 9
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                (4a-3)(4a+3)
+                 & = (4a)^2 - 3^2 \\
+                 & = 16a^2 - 9
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                (4x+2)^2
+                 & = (4x)^2 + 2\cdot 4x \cdot 2 + 2^2 \\
+                 & = 16x^2 + 16x + 4
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                (2x-2)(2x+2)
+                 & = (2x)^2 - 2^2 \\
+                 & = 4x^2 - 4
+            \end{aligned}$
+        \task
+        $\begin{aligned}[t]
+                (3x-2)^2
+                 & = (3x)^2 - 2\cdot 3x\cdot 2+2^2 \\
+                 & = 9x^2 - 12x + 4
+            \end{aligned}$
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+
+    Un stade de football propose deux formules tarifaires. Combien de fois
+    faut-il aller au stade pour que la seconde formule soit aussi intéressante
+    que la première ?
+    \begin{center}
+        \begin{tabularx}{.9\linewidth}{YY}
+            \toprule
+            \textbf{Formule 1} & \textbf{Formule 2}               \\
+            \midrule
+            Entrée : 20 €      & Carte de membre annuelle : 100 € \\
+                               & Entrée : 15 €                    \\
+            \bottomrule
+        \end{tabularx}
+    \end{center}
+\end{exercise}
+\begin{solution}
+    \begin{itemize}[label=\faAngleRight]
+        \item $x$ : le nombre d'entrée au stade
+        \item $F_1$ : le prix payé avec la formule 1, $20x$
+        \item $F_2$ : le prix payé avec la formule 2, $100 + 15x$
+    \end{itemize}
+    Que doit valoir $x$ pour que $F_1=F_2$ ?
+    \begin{align*}
+        F_1 & = F2      \\
+        20x & = 100+15x \\
+        5x  & = 100     \\
+        x   & = 20
+    \end{align*}
+    Pour que les deux formules soient aussi intéressantes l'une que l'autre,
+    il faut aller 20 fois au stade.
+\end{solution}
+
+\begin{exercise}
+    Un groupe de 60 élèves de deuxième année part au théâtre avec 4 enseignants
+    et 2 éducateurs. Une place adulte est 6 euros plus chère qu’une place
+    étudiant. L’école a payé 564 euros au total.\par
+    Quel est le prix d’une place étudiant et d’une place adulte ?
+\end{exercise}
+\begin{solution}
+    \begin{itemize}[label=\faAngleRight]
+        \item $x$ : le prix d'une place étudiante
+        \item $x+6$ : le prix d'une place adulte
+        \item $E$ : le prix pour les élèves, $60x$
+        \item $A$ : le prix pour les adultes, $6(x+6)$
+    \end{itemize}
+    \begin{align*}
+        60x + 6(x+6)  & = 564 \\
+        60x + 6x + 36 & = 564 \\
+        66x + 36      & = 564 \\
+        66x           & = 528 \\
+        x             & = 8
+    \end{align*}
+    Une place étudiant coûte 8€ et une place adulte coûte 14€.
+\end{solution}
+
+\begin{exercise}
+    Un marchand dispose de $\np{1600}$ pommes qu'il doit partager
+    pour 3 de ses clients.\\
+    Le 3\ieme client à demandé 300 pommes de plus que le 2\ieme.\\
+    Le 2\ieme en a demandé 200 de plus que le 1\ier.\par
+    Combien de pommes doit-il donner au 1\ier client ?
+\end{exercise}
+\begin{solution}
+    \begin{itemize}[label=\faAngleRight]
+        \item $x$ : le nombre de pomme donné au premier client
+        \item $x+200$ : le nombre de pomme donné au deuxième client
+        \item $x+500$ : le nombre de pomme donné au troisième client
+    \end{itemize}
+    \begin{align*}
+        x+(x+200)+(x+500) & =\np{1600}  \\
+        3x + 700          & = \np{1600} \\
+        3x                & = 900       \\
+        x                 & = 300
+    \end{align*}
+    Le marchand doit donnée 300 pommes au premier client.
+\end{solution}
+
+\begin{exercise}
+    Trois soeurs : Marine, Laurence et Klaudia ont ensemble 60 ans.\\
+    Laurence a le triple de l'âge de Marine.\\
+    Klaudia a 10 ans de moins que Laurence.\par
+    Détermine l'âge de chacune des s{\oe}urs.
+\end{exercise}
+\begin{solution}
+    \begin{itemize}[label=\faAngleRight]
+        \item $x$ : l'âge de Marine
+        \item $3x$ : l'âge de Laurence
+        \item $3x-10$ : l'age de Klaudia
+    \end{itemize}
+    \begin{align*}
+        x + 3x + (3x-10) & = 60 \\
+        7x - 10          & = 60 \\
+        7x               & = 70 \\
+        x                & = 10
+    \end{align*}
+    Marine a 10 ans, Laurence a 30 ans et Klaudia a 20 ans.
+\end{solution}
+
+\begin{exercise}
+    Ikram a consommé les $\dfrac{3}{4}$ de son abonnement gsm
+    la première quinzaine du mois de juin.
+    Elle consomme les $\dfrac{2}{5}$ de ce qu'il reste du forfait
+    la seconde quinzaine.
+    \begin{tasks}
+        \task Calcule la part de son abonnement qu'elle a consommée durant tout
+        son mois.
+        \task Calcule la part de son abonnement qu'elle n'a pas consommée.
+        \task Il lui reste 12 minutes à la fin du mois. Quel est le nombre de
+        minutes disponibles au début du mois de juin ?
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}
+        \task La première quinzaine elle a consommé $\dfrac{3}{4}$ de son
+        abonemment, il lui reste donc $\dfrac{1}{4}$. La deuxième quinzaine,
+        elle a consommé $\dfrac{2}{5}$ de ce qu'il lui restait, c'est-à-dire,
+        \begin{equation*}
+            \dfrac{2}{5}\cdot\dfrac{1}{4} = \dfrac{1}{10}
+        \end{equation*}
+        Elle aura donc consommée durant tout le mois,
+        \begin{equation*}
+            \dfrac{3}{4} + \dfrac{1}{10} = \dfrac{17}{20}
+        \end{equation*}
+
+        \task Il lui reste $\dfrac{3}{20}$ non consommé.
+        \task En utilisant la règle de trois,
+        \begin{align*}
+            \dfrac{3}{20}  & \longrightarrow \SI{12}{min} \\
+            \dfrac{1}{20}  & \longrightarrow \SI{4}{min}  \\
+            \dfrac{20}{20} & \longrightarrow \SI{80}{min}
+        \end{align*}
+        Au début du mois de juin \SI{80}{min} sont disponibles.
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Marcel voudrait faire un potager; il compte utiliser $\dfrac{4}{5}$
+    de sa pelouse pour le faire. Les $\dfrac{2}{3}$ de ce potager seront
+    consacrés aux pommes de terre.
+    \begin{tasks}
+        \task Que reste-t-il comme part de pelouse ?
+        \task Quelle est la part réservée aux pommes de terre dans le potager ?
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}(2)
+        \task Si il utilise $\dfrac{4}{5}$ pour le potager, il lui reste
+        $\dfrac{1}{5}$ de sa pelouse.
+        \task Les $\dfrac{2}{3}$
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Une balle magique rebondit des quatre cinquièmes de la hauteur de lancement,
+    à chaque fois qu'elle touche le sol. Géraldine la laisse tomber d'une
+    hauteur de \SI{2,5}{m}.\par
+    À quelle hauteur (en cm) remontera-t-elle après avoir touché deux fois le
+    sol ?
+\end{exercise}
+\begin{solution}
+    \begin{center}
+        \inputtikz{bm}
+    \end{center}
+    Après le premier rebond, la balle remonte de,
+    \begin{equation*}
+        \simpup{2,5}{0,5}\cdot\dfrac{4}{\simpdown{5}{1}} = \SI{2}{cm}
+    \end{equation*}
+    Après le deuxième rebond, la balle démarre cette fois-ci d'une hauteur de
+    \SI{2}{cm}, elle remonte donc de,
+    \begin{equation*}
+        2\cdot\dfrac{4}{5} = \dfrac{8}{5} = \SI{1,6}{cm}
+    \end{equation*}
+    Après avoir touché deux fois le sol, la balle remonte à une hauteur de
+    \SI{1,6}{cm}
+\end{solution}
+
+\begin{exercise}
+    Représente les deux angles demandés.
+    \begin{tasks}(2)
+        \task Opposés par le sommet\\
+        \inputtikz{drawing_two_angles}
+        \task Alternes internes\\
+        \inputtikz{drawing_two_angles}
+        \task Correspondants\\
+        \inputtikz{drawing_two_angles}
+        \task Alternes externes\\
+        \inputtikz{drawing_two_angles}
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}(2)
+        \task Opposés par le sommet\\\inputtikz{opp_sommet_sol}
+        \task Alternes internes\\\inputtikz{alt_int_sol}
+        \task Correspondants\\\inputtikz{corr_sol}
+        \task Alternes externes\\\inputtikz{alt_ext_sol}
+    \end{tasks}
+    \pagebreak
+\end{solution}
+
+\begin{exercise}
+    \parbox{.3\linewidth}{\inputtikz{knowing_two_angles}}
+    \parbox{.7\linewidth}{%
+        \begin{tasks}
+            \task Les angles $\widehat{A_1}$ et \dotfill\ sont supplémentaires.
+            \task Les angles $\widehat{A_2}$ et \dotfill\ sont alternes internes.
+            \task Les angles $\widehat{B_1}$ et \dotfill\ sont opposés par le sommet.
+            \task Les angles $\widehat{B_4}$ et \dotfill\ sont correspondants.
+            \task Les angles $\widehat{A_4}$ et \dotfill\ sont alternes externes.
+            \task Les angles $\widehat{B_2}$ et $\widehat{B_4}$ sont \dotfill\,.
+            \task Les angles $\widehat{A_2}$ et $\widehat{B_2}$ sont \dotfill\,.
+            \task les angles $\widehat{B_3}$ et $\widehat{A_2}$ sont \dotfill\,.
+        \end{tasks}}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}
+        \task Les angles $\widehat{A_1}$ et $\widehat{A_2}$ ou $\widehat{A_4}$
+        sont supplémentaires.
+        \task Les angles $\widehat{A_2}$ et $\widehat{A_4}$ sont
+        alternes internes.
+        \task Les angles $\widehat{B_1}$ et $\widehat{B_3}$ sont opposés par
+        le sommet.
+        \task Les angles $\widehat{B_4}$ et $\widehat{A_4}$ sont correspondants.
+        \task Les angles $\widehat{A_4}$ et $\widehat{B_2}$ sont
+        alternes externes.
+        \task Les angles $\widehat{B_2}$ et $\widehat{B_4}$ sont
+        opposés par le sommet.
+        \task Les angles $\widehat{A_2}$ et $\widehat{B_2}$ sont
+        correspondants.
+        \task les angles $\widehat{B_3}$ et $\widehat{A_2}$ sont impossible
+        à déterminer car il n'est pas dit que $d_1\sslash d_2$.
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Détermine l'amplitude de l'angle demandé en justifiant ta réponse.
+    \begin{tasks}(2)
+        \task $\widehat{A_1}=40\degres$, $\widehat{A_2} = ?$.\\\inputtikz{angle_1}
+        \task $\widehat{A_1}=60\degres$, $\widehat{B_1} = ?$.
+        \\$d_1\sslash d_2$\\\inputtikz{angle_2}
+            \task $\widehat{A_1}=45\degres$, $\widehat{B_2} = ?$, $\widehat{C_1}=?$.
+            \\$ABCD$ est un parallélogramme\\\inputtikz{angle_3}
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}
+        \task
+        $\widehat{A_1}$ et $\widehat{A_2}$ forment un angle plat, donc
+        \begin{align*}
+            \widehat{A_2} & = 180\degres - \widehat{A_1} \\
+            \widehat{A_2} & = 180\degres - 40\degres     \\
+            \widehat{A_2} & = 140\degres                 \\
+        \end{align*}
+        \task
+        Soit $\widehat{B_2}$ l'angle correspondant à $\widehat{A_1}$.
+        $d_1\sslash d_2$ donc,
+        \begin{equation*}
+            \widehat{B_2} = \widehat{A_1} = 60\degres
+        \end{equation*}
+        $\widehat{B_2}$ et $\widehat{B_1}$ forment un angle plat, donc
+        \begin{align*}
+            \widehat{B_1} & = 180\degres - \widehat{B_2} \\
+            \widehat{B_1} & = 180\degres - 60\degres     \\
+            \widehat{B_1} & = 120\degres                 \\
+        \end{align*}
+        \task
+        $\widehat{A_1}$ et $\widehat{B_2}$ sont correspondants et
+        $AD\sslash BC$ (propriétés d'un parallélogramme), donc
+        \begin{equation*}
+            \widehat{B_2}=\widehat{A_1}=45\degres
+        \end{equation*}
+        $\widehat{B_1}$ et $\widehat{B_2}$ forment un angle plat, donc
+        \begin{align*}
+            \widehat{B_1} & = 180\degres - \widehat{B_2} \\
+            \widehat{B_1} & = 180\degres - 45\degres     \\
+            \widehat{B_1} & = 135\degres                 \\
+        \end{align*}
+        $\widehat{B_1}$ et $\widehat{C_1}$ sont correspondants et
+        $AB\sslash DC$ (propriétés d'un parallélogramme), donc
+        \begin{equation*}
+            \widehat{C_1}=\widehat{B_1}=135\degres
+        \end{equation*}
+    \end{tasks}
+    \pagebreak
+\end{solution}
+
+\begin{exercise}
+    La figure suivante est-elle un trapèze ? Justifie ton raisonnement.
+    \begin{center}
+        \inputtikz{trapeze}
+    \end{center}
+\end{exercise}
+\begin{solution}
+    $ABCD$ est un trapèze s'il possède deux côtés parallèles.
+
+    $\widehat{A_1}$ et $\widehat{A_2}$ forment un angle plat, donc
+    \begin{align*}
+        \widehat{A_2} & = 180\degres - \widehat{A_1} \\
+        \widehat{A_2} & = 180\degres - 100\degres    \\
+        \widehat{A_2} & = 80\degres                  \\
+    \end{align*}
+    $\widehat{A_2}$ et $\widehat{D_1}$ sont alternes internes et de même
+    amplitude, donc $DC\sslash AB$. Par conséquent, $ABCD$ est un trapèze.
+\end{solution}
+
+\begin{exercise}
+    Sumixorp veut placer une nouvelle antenne téléphonique. Où doivent-ils la
+    placer pour qu'elle soit à la même distance des trois villes $A$, $B$ et $C$ ?
+    Laisse tes constructions visibles.
+    \begin{center}
+        \inputtikz{sumixorp}
+    \end{center}
+\end{exercise}
+\begin{solution}
+    \inputtikz{sumixorp_sol}
+\end{solution}
+
+\begin{exercise}
+    Factorise au maximum les expressions algébriques ci-dessous à l'aide
+    de la mise en évidence.
+    \begin{tasks}(2)
+        \task $3a-3b$
+        \task $6abc+12ab$
+        \task $24bc+36cd$
+        \task $2ab-2ac$
+        \task $16a+40b$
+        \task $25x-15y$
+        \task $4a+4c$
+        \task $18a+24b$
+        \task $55ab+11a$
+        \task $12rst-2r$
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}(4)
+        \task $3 (a - b)$
+        \task $6ab (2 + c)$
+        \task $12c (2 b + 3 d)$
+        \task $2a (b - c)$
+        \task $8 (2 a + 5 b)$
+        \task $5 (5 x - 3 y)$
+        \task $4 (a + c)$
+        \task $6 (3 a + 4 b)$
+        \task $11a ( 1+ 5 b)$
+        \task $- 2r (1 - 6 st)$
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Complète les phrases à l'aide de la figure suivante.
+    \begin{center}
+        \inputtikz{triangle}
+    \end{center}
+    \begin{tasks}
+        \task La droite $GB$ est une \dotfill du triangle $ABC$.
+        \task La droite $AD$ est une \dotfill du triangle $ABC$.
+        \task La droite $EF$ est une \dotfill du triangle $ABC$.
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}
+        \task La droite $GB$ est une bissectrice du triangle $ABC$.
+        \task La droite $AD$ est une hauteur du triangle $ABC$.
+        \task La droite $EF$ est une médiatrice du triangle $ABC$.
+    \end{tasks}
+\end{solution}
+
+\pagebreak
+
+\begin{exercise}
+    \begin{wrapfigure}{r}{.3\linewidth}
+        \includegraphics[width=\linewidth]{images/cocktail.jpg}
+    \end{wrapfigure}
+    Un délicieux jus de fruits frais est composé de :
+    \begin{itemize}
+        \item $\dfrac{2}{3}$ de jus d'oranges.
+        \item $\dfrac{1}{3}$ de jus de pamplemousses.
+    \end{itemize}
+
+    Il faut presser \SI{1}{kg} d'oranges pour obtenir \SI{40}{cl} de jus et
+    \SI{1}{kg} de pamplemousses pour obtenir \SI{25}{cl} de jus.\par
+    Dans le commerce tu peux trouver des oranges et des pamplemousses au prix
+    suivant :
+    \begin{description}
+        \item[Oranges] 12€/\SI{5}{kg}
+        \item[Pamplemousses] 10,80€/\SI{4}{kg}
+    \end{description}
+    Que coûte la préparation de \SI{4,5}{l} de ce cocktail de fruis frais si
+    tu achètes la quantité exacte de fruis ?
+\end{exercise}
+\begin{solution}
+    Si je veux préparer \SI{4,5}{l} de cocktail dans les proportions données,
+    il me faut,
+    \begin{align*}
+         & \text{Jus d'orange}                               &  & \text{Jus de pamplemousse}                         \\
+         & \dfrac{2}{3}\cdot 4,5  = \SI{3}{l} = \SI{300}{cl} &  & \dfrac{1}{3}\cdot 4,5 = \SI{1,5}{l} = \SI{150}{cl} \\
+    \end{align*}
+    Déterminons maintenant le nombre de kilogrammes à acheter pour chaque fruit,
+    \begin{align*}
+         & \text{Orange}                                                                        &  & \text{Pamplemousse}                                                                \\
+         & \SI{40}{cl}\longrightarrow\SI{1}{kg}                                                 &  & \SI{25}{cl}\longrightarrow\SI{1}{kg}                                               \\
+         & \SI{1}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{1}{40}}{kg}                  &  & \SI{1}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{1}{25}}{kg}                \\
+         & \SI{300}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{300}{40}}{kg}=\SI{7,5}{kg} &  & \SI{150}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{150}{25}}{kg}=\SI{6}{kg} \\
+    \end{align*}
+    Par la même logique, nous pouvons calculer le prix pour chaque fruit
+    \begin{align*}
+         & \text{Orange}                         &  & \text{Pamplemousse}                   \\
+         & \SI{5}{kg}\longrightarrow\SI{12}{€}   &  & \SI{4}{kg}\longrightarrow\SI{10,8}{€} \\
+         & \SI{2,5}{kg}\longrightarrow\SI{6}{€}  &  & \SI{2}{kg}\longrightarrow\SI{5,4}{€}  \\
+         & \SI{7,5}{kg}\longrightarrow\SI{18}{€} &  & \SI{6}{kg}\longrightarrow\SI{16,2}{€}
+    \end{align*}
+    Préparer \SI{4,5}{l} de ce cocktail coûtera donc $18+16,2=\SI{34,2}{€}$.
+\end{solution}
+
+\begin{exercise}
+    Dans la classe de 3\ieme\ de Christophe, la question suivante a été posée :
+    \og Que regardez-vous principalement à la télé ?\fg.
+
+    Les 24 élèves ne pouvaient voter qu'une seule foit et avaient le choix
+    entre les réponses suivantes :
+    \begin{center}
+        Films d'actions - Animés - Documentaires - Films romantiques - Séries
+        - Autres
+    \end{center}
+    12 élèves ont répondus des animés, 3 élèves des films romantiques, les
+    documentaires n'ont pas été choisis, 4 personnes ont voté pour les films
+    d'actions et le reste a choisi la catégorie autres.
+    \begin{tasks}
+        \task Quel est le mode ?
+        \task Quel est l’effectif total ?
+        \task Quelle est la variable ?
+        \task Quelle est la population ?
+        \task Quel est le type de variable ?
+        \task Dresse un tableau reprenant les variables, les effectifs et
+        les fréquences.
+        \task Quel est le pourcentage d’élèves qui a répondu \og films
+        d’actions \fg\ ou \og films romantiques \fg ?
+        \task Christophe a choisi la catégorie qui a été choisie par un sixième
+        de la classe. Quelle est-elle ? Justifie.
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    \begin{tasks}
+        \task Les animés.
+        \task 24.
+        \task Les catégories de programme télévisé.
+        \task Les élèves de la classe de Christophe.
+        \task Qualitative.
+        \task
+        \begin{tabular}[t]{lcc}
+            \toprule
+            Modalités         & Effectifs & Fréquences (\%) \\
+            \midrule
+            Films d'actions   & 4         & 16,67           \\
+            Animés            & 12        & 50              \\
+            Documentaires     & 0         & 0               \\
+            Films romantiques & 3         & 12,5            \\
+            Séries            & 0         & 0               \\
+            Autres            & 5         & 20,83           \\
+            \bottomrule
+        \end{tabular}
+        \task $16,67 + 12,5 = 29,17$.
+        \task Films d'actions.
+    \end{tasks}
+\end{solution}
+
+\begin{exercise}
+    Marco a demandé à un certain nombre d’élèves de répondre à la question
+    \og combien de goals vont être marqués par la Belgique lors du premier
+    match du mondial ? \fg.
+    Voici les réponses obtenues :
+    \begin{center}
+        \begin{scriptsize}
+            \begin{tabular}{*{25}{|c}|}
+                \hline
+                2 & 1 & 0 & 1 & 2 & 3 & 4 & 2 & 1 & 0 & 1 & 2 & 0 &
+                2 & 1 & 3 & 2 & 1 & 3 & 0 & 1 & 3 & 2 & 4 & 1       \\
+                \hline
+            \end{tabular}
+        \end{scriptsize}
+    \end{center}
+    Représente les réponses sous forme d’un diagramme circulaire.\\
+    Laisse toutes tes étapes visibles.
+\end{exercise}
+\begin{solution}
+    \begin{tabular}{ccc}
+        \toprule
+        Modalités & Effectifs & Degrés \\
+        \midrule
+        0         & 4         & 58     \\
+        1         & 8         & 115    \\
+        2         & 7         & 101    \\
+        3         & 4         & 58     \\
+        4         & 2         & 29     \\
+        \bottomrule
+    \end{tabular}
+    \hfil
+    \tikzexternaldisable
+    \begin{tikzpicture}[baseline=(current bounding box.east)]
+        \pie[sum=auto, text=legend]
+        {
+            4/0,
+            8/1,
+            7/2,
+            4/3,
+            2/4
+        }
+    \end{tikzpicture}
+\end{solution}
+
+\begin{exercise}
+    Ziane va faire un cocktail pour ses amies fin de journée.
+    Elle est tombée sur cette recette pour 2 personnes :
+    \begin{itemize}[label=\faCocktail]
+        \item 30cl de jus d’orange
+        \item 2cl de grenadine
+        \item 50g de glaçons
+        \item 150cl d’eau pétillante
+    \end{itemize}
+    Elle va préparer la même boisson pour 15 personnes.
+    Détermine la quantité de chaque aliment.\\
+    Laisse ta démarche visible.
+\end{exercise}
+\begin{solution}
+    \tikzexternaldisable
+    \begin{tabular}{lcc}
+        \toprule
+        Nombre de personnes & \tikzmarknode[inner sep=2pt]{a}{2} & \tikzmarknode[inner sep=2pt]{b}{15} \\
+        \midrule
+        Jus d’orange        & \SI{30}{cl}                        & \SI{225}{cl}                        \\
+        Grenadine           & \SI{2}{cl}                         & \SI{15}{cl}                         \\
+        Glaçons             & \SI{50}{g}                         & \SI{375}{g}                         \\
+        Eau pétillante      & \SI{150}{cl}                       & \SI{1125}{cl}                       \\
+        \bottomrule
+    \end{tabular}
+    \begin{tikzpicture}[overlay, remember picture, >=latex]
+        \draw[->] (a.north)  to[bend left=90] node[midway, above]{$\cdot\frac{15}{2}$} (b.north) ;
+    \end{tikzpicture}
+    \tikzexternalenable
+\end{solution}
+\newpage
+\setcounter{page}{1}
+\printsolutions
+\end{document}

@@ -1,0 +1,6 @@
+\begin{tikzpicture}[scale=.5]
+    \tkzDefPoints{0/0/A, 3/6/B, 3/0/C, 6/6/D, 0/6/E, 6/0/F}
+    \tkzDrawSegments(A,B C,D E,F)
+    \tkzInterLL(A,B)(E,F)\tkzGetPoint{X}
+    \tkzInterLL(C,D)(E,F)\tkzGetPoint{Y}
+\end{tikzpicture}

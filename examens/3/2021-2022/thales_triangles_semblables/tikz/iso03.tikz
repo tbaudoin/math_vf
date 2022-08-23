@@ -1,0 +1,28 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0:3){C}
+    \tkzDefPoint(-70:2){B}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelSegment[left](A,B){17,5}
+    \tkzLabelSegment[below right](B,C){40,5}
+    \tkzMarkAngle[mark=, size=0.5](B,A,C)
+    \tkzLabelAngle(B,A,C){70\degres}
+    \tkzDrawPoints(A,B,C)
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[above](C)
+    \begin{scope}[yshift=-3cm, xshift=3cm, xscale=-1]
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(0:3){C}
+        \tkzDefPoint(-70:2){B}
+        \tkzDrawPolygon(A,B,C)
+        \tkzLabelSegment[right](A,B){17,5}
+        \tkzLabelSegment[below left](B,C){40,5}
+        \tkzMarkAngle[mark=, size=0.5](C,B,A)
+        \tkzLabelAngle(C,B,A){70\degres}
+        \tkzDrawPoints(A,B,C)
+        \tkzLabelPoint[above](A){D}
+        \tkzLabelPoint[below](B){E}
+        \tkzLabelPoint[above](C){F}
+    \end{scope}
+\end{tikzpicture}

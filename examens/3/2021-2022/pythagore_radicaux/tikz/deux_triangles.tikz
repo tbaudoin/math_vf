@@ -1,0 +1,18 @@
+\begin{tikzpicture}[scale=1]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(5,3){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzDefShiftPoint[C](0,3){D}
+    \tkzDefShiftPoint[B](7,0){E}
+    \tkzDrawPolygon(B,E,D)
+    \tkzLabelPoints[below](A,B,E)
+    \tkzLabelPoints[above left](C)
+    \tkzLabelPoints[above](D)
+    \tkzLabelSegment[below](A,B){5}
+    \tkzLabelSegment[below](B,E){7}
+    \tkzLabelSegment[above left](A,C){$\sqrt{34}$}
+    \tkzLabelSegment[left](C,D){3}
+    \tkzDrawPoints(A,B,C,D)
+
+\end{tikzpicture}

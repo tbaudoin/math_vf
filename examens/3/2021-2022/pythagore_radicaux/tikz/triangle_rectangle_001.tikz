@@ -1,0 +1,13 @@
+\begin{tikzpicture}[baseline=(current bounding box.east), scale=1]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(4,0){B}
+    \tkzDrawTriangle[pythagore](A,B)
+    \tkzGetPoint{C}
+    \tkzLabelPoints[below](C)
+    \tkzLabelPoints[above](A,B)
+    \tkzMarkRightAngle[size=.5](C,B,A)
+    \tkzLabelSegment[right](C,B){$a$}
+    \tkzLabelSegment[below](A,C){$b$}
+    \tkzLabelSegment[above](B,A){$c$}
+    \tkzDrawPoints(A,B,C)
+\end{tikzpicture}

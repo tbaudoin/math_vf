@@ -1,0 +1,27 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), rotate=0, scale=0.7]
+
+    \tkzDefPoint(-2,2){A}
+    \tkzDefPoint(2,2){B}
+    \tkzDefPoint(-2,-2){D}
+    \tkzDefPoint(2,-2){C}
+    \tkzDefPoint(0,1){E}
+
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawPolygons[fill=gray](A,D,E B,E,C)
+    \tkzLabelPoints[above left](A)
+    \tkzLabelPoints[below right](C)
+    \tkzLabelPoints[above right](B)
+    \tkzLabelPoints[below left](D)
+    \tkzLabelPoints[above](E)
+
+    %\tkzMarkSegments[mark=|](A,B D,C)
+    % enlever les marques car c'est dit dans l'énoncé.
+    %\tkzMarkSegments[mark=||](A,D D,E D,C E,C B,C)
+    %\tkzMarkSegments[mark=|||](D,E E,B)
+
+    % \tkzMarkAngle(E,D,A)
+    % \tkzMarkAngle(B,C,E)
+
+
+\end{tikzpicture}

@@ -1,0 +1,38 @@
+\begin{tikzpicture}[scale=0.7]
+    \tkzDefPoints{0/0/A, 5/4/B, 7/-2/C}
+    %\tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[below](C)
+    \tkzDrawPoints[shape=cross](A,B,C)
+    % mediatrice de AB
+    \tkzDrawSegment[dotted](A,B)
+    \tkzDefLine[mediator](A,B)\tkzGetPoints{D}{E}
+    \tkzDrawLine[add = .1 and .1, dashed](D,E)
+    \tkzInterLL(D,E)(A,B)\tkzGetPoint{F}
+    \tkzCompasss[color=red](B,D B,E A,D A,E)
+    \tkzMarkSegments[mark=||](A,F F,B)
+    \tkzMarkRightAngle(A,F,D)
+    % mediatrice de BC
+    \tkzDrawSegment[dotted](B,C)
+    \tkzDefLine[mediator](B,C)\tkzGetPoints{G}{H}
+    \tkzDrawLine[add = .1 and .1, dashed](G,H)
+    \tkzInterLL(G,H)(B,C)\tkzGetPoint{I}
+    \tkzCompasss[color=red](B,G B,H C,G C,H)
+    \tkzMarkSegments[mark=||](B,I I,C)
+    \tkzMarkRightAngle(B,I,G)
+    % mediatrice de AC
+    \tkzDrawSegment[dotted](A,C)
+    \tkzDefLine[mediator](A,C)\tkzGetPoints{J}{K}
+    \tkzDrawLine[add = .1 and .1, dashed](J,K)
+    \tkzInterLL(J,K)(A,C)\tkzGetPoint{L}
+    \tkzCompasss[color=red](C,J C,K A,J A,K)
+    \tkzMarkSegments[mark=||](C,L L,A)
+    \tkzMarkRightAngle(C,L,K)
+    % intersection des médiatrices
+    \tkzInterLL(D,E)(G,H)\tkzGetPoint{X}
+    \tkzDrawPoint(X)
+    \tkzLabelPoint[below=1ex, fill=white](X){Antenne}
+    \tkzDrawPoints(D,E,G,H,J,K)
+    \tkzDrawPoints(D,E,G,H,J,K)
+\end{tikzpicture}

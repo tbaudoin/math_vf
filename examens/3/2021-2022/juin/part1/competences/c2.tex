@@ -1,0 +1,162 @@
+\documentclass[../partie1.tex]{subfiles}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}[points=11]
+    Résous les équations suivantes.
+    \begin{enumerate}[cols=2]
+        \item %4 pts
+              $x^{3}+4x^{2}-3x -18=0$
+        \item %2pts
+              $9x^{2}+1=6x$
+        \item %3 pts
+              $3x^{3}-27x=0$
+        \item %2 pts
+              $x^{2}+2x-8 =0$
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    \begin{enumerate}
+        \item Évaluation : 
+        \begin{itemize}
+            \item Trouver une racine de $P(x)$\hfill 1
+            \item Factoriser avec Horner\hfill 1
+            \item Factoriser avec les produits remarquables\hfill 1
+            \item Solutions \hfill 1 
+        \end{itemize} 
+        $x^{3}+4x^{2}-3x -18 = (x-2)(x+3)^2=0 \Leftrightarrow x = 2\text{~ou~} x= -3$
+        
+        \item Évaluation :
+        \begin{itemize}
+            \item Factoriser avec les produits remarquables\hfill 1
+            \item Solution\hfill 1
+        \end{itemize}
+        $9x^2-6x+1 = (3x-1)^2 =0\Leftrightarrow x = \dfrac{1}{3}$
+
+        \item 
+        \begin{itemize}
+            \item Factoriser avec la mise en évidence \hfill 1
+            \item Factoriser avec les produits remarquables\hfill 1
+            \item Solutions \hfill 1
+        \end{itemize}
+        $3x^3-27x = 3x(x-3)(x+3)=0 \Leftrightarrow x=0 \text{~ou~}x=3\text{~ou~}x=-3$
+        
+        \item 
+        \begin{itemize}
+            \item Factoriser avec somme produit\hfill 1
+            \item Solution \hfill 1
+        \end{itemize}
+        $x^2+2x-8 = (x+4)(x-2) = 0\Leftrightarrow x=-4 \text{~ou~}x=2$
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}[points=5]
+    Effectue les opérations ci-dessous. Simplifie au maximum ta réponse finale et n'oublie pas les conditions d'existence.
+    \begin{enumerate}[cols=2]
+        \item %3 pts
+              $\dfrac{4}{3x+x^2} \div \dfrac{x-3}{x^2-9}$
+        \item %2 pts
+              $\dfrac{x+1}{x-2}\cdot\dfrac{x^2-4x+4}{x}$
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    \begin{enumerate}
+        \item
+        Évaluation :
+        \begin{itemize}
+            \item Factorisation \hfill 1
+            \item Condition d'existence \hfill 1
+            \item Simplification \hfill 0,5
+        \end{itemize} 
+              $\begin{aligned}[t]
+                      \dfrac{4}{x(3+x)}\div\dfrac{x-3}{(x-3)(x+3)} & = \dfrac{4}{3+x}\cdot (x+3)
+                      \qquad\text{ C.E. : }x\ne 3\text{ et } x\ne -3\\
+                                                                   & = 4
+                  \end{aligned}$
+        \item
+        Évaluation :
+        \begin{itemize}
+            \item Factorisation \hfill 1
+            \item Condition d'existence \hfill 1
+            \item Simplification \hfill 0,5
+        \end{itemize} 
+        $\begin{aligned}[t]
+            \dfrac{x+1}{x-2} \cdot \dfrac{(x-2)^2}{x} 
+            &= \dfrac{(x+1)(x-2)}{x}\qquad\text{C.E. : }x\ne 2 \text{ et } x \ne 0\\
+        \end{aligned}$
+    \end{enumerate}
+\end{solution}
+% EXERCICE
+\begin{exercise}[points=6]
+    Détermine l'expression analytique des fonctions suivantes à l'aide des informations fournies.
+    \begin{enumerate}
+        \item La fonction $f_1$ passe par les points $A(1;11)$ et $B(-2;2)$.
+              %\item La fonction $f_2$ est linéaire et passe par le point $C(2;-8)$
+        \item Le graphe de la fonction $f_2$ est le suivant. \input{tikz/m_p_fct01.tikz}
+        \item La racine de $f_3$ est $-2$ et son graphe est parallèle à celui de la fonction $g(x) = 2x + 2$.
+              %\item Un tableau de valeur de $f_5$ est le suivant.
+              %   $\begin{tblr}{hlines,vlines,columns={1cm,c}}
+              %           x    & 4  & 2    & -8 \\
+              %           f(x) & 13 & 12,5 & 4
+              %       \end{tblr}$
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Pente \hfill 1
+        \item Ordonnée à l'origine \hfill 1
+    \end{itemize}
+    \begin{enumerate}[cols=3]
+        \item $f_1(x) = 3x + 8$
+        \item $f_2(x) = 3x - 5$
+        \item $f_3(x) = 2x + 4$
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}[points=1]
+    Écris les expressions ci-dessous sans dénominateur en utilisant les propriétés des puissances.
+    \begin{enumerate}[cols=2]
+        \item $\dfrac{15x^{-2}}{5y^7}$
+        \item $\dfrac{x^7 y^{-2}}{x^{-2}y^5}$
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Expression correcte \hfill 0,5
+    \end{itemize}
+\begin{enumerate}[cols=2]
+    \item $3x^{-2}y^{-7}$
+    \item $x^9y^{-7}$
+\end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}[points=3]
+    Effectue les opérations demandées. Simplifie au maximum ta réponse.
+    \begin{enumerate}[cols=3]
+        \item $\sqrt{35}\cdot\sqrt{20}$
+        \item $\sqrt{45}-\sqrt{80}$
+        \item $\left(3 + 2\sqrt{2}\right)^2$
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item L'expression est correcte \hfill 1
+    \end{itemize}
+\begin{enumerate}[cols=3]
+    \item $10 \sqrt{7}$
+    \item $-\sqrt{5}$
+    \item $17+12\sqrt{2}$
+\end{enumerate}
+\end{solution}
+\end{document}

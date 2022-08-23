@@ -1,0 +1,22 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=0.7]
+    \tkzDefPoint(0,0){G}
+    \tkzDefPoint(0,4){E}
+    \tkzDefPoint(6,0){F}
+    \tkzDrawPolygon(G,E,F)
+    \tkzDrawTriangle[pythagore](E,F)
+    \tkzGetPoint{D}
+    % \tkzMarkAngle[mark=none](F,E,D)
+    \tkzFillAngle[fill=black](F,E,D)
+    \tkzLabelAngle[pos=1.5](F,E,D){$\alpha$}
+    \tkzMarkRightAngles(F,G,E E,F,D)
+    \tkzLabelSegment[above](E,D){8}
+    \tkzLabelSegment[below right](D,F){$d$}
+    \tkzLabelSegment[below](F,G){6}
+    \tkzLabelSegment[left](G,E){4}
+    \tkzLabelPoints[below](G,F)
+    \tkzLabelPoints[above](E,D)
+    \tkzDrawSegment[line width=2pt](D,F)
+
+    \tkzDrawPoints(D,E,F,G)
+
+\end{tikzpicture}

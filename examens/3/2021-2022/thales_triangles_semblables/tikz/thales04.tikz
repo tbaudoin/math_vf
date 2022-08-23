@@ -1,0 +1,37 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=.8]
+    \tikzmath{
+        \angle = 40;
+        \a = 2;
+        \b = 2.5;
+        \k = 3;
+    }
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(\a,0){B}
+    \tkzDefPoint(\angle:\b){C}
+    \tkzDefPointBy[homothety=center A ratio \k](B)
+    \tkzGetPoint{D}
+    \tkzDefLine[parallel= through D](B,C)
+    \tkzInterLL(A,C)(D,tkzPointResult)
+    \tkzGetPoint{E}
+
+    \tkzDrawLines[add=0pt and 10 pt](A,E A,D)
+    \tkzDrawLines[add=0 and 0](B,C D,E)
+    \tkzDrawPoints(A,B,C,D,E)
+    %labels
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[below](D)
+    \tkzLabelPoints[above](E)
+    %valeurs
+    \tkzLabelSegment[right](B,C){4}
+    \draw[dashed] (A) to [bend right=40pt] (D);
+    \tkzLabelSegment[below=25pt](A,D){11}
+    \draw[dashed] (A) to [bend left=40pt] (E);
+    \tkzLabelSegment[above=40pt](A,E){10}
+    \tkzLabelSegment[right](D,E){$x$}
+    \tkzLabelSegment[below](A,B){6}
+
+    \draw (current bounding box.north)node{$CB\sslash ED$};
+
+\end{tikzpicture}

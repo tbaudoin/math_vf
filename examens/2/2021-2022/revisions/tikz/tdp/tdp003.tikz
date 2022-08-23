@@ -1,0 +1,18 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(90:3){B}
+    \tkzDefSquare(B,A)
+    \tkzGetPoints{D}{C}
+
+    \tkzDefPointsBy[reflection=over A--D](A,B,C,D){}
+    \tkzDrawPolygon[color=\figcolor](A',B',C',D')
+    \tkzDrawPoints[color=\figcolor](A',B',C',D')
+    \tkzLabelPoints[color=\figcolor](A',B',C',D')
+
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawPoints(A,B,C,D)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](D)
+    \tkzLabelPoints[above left](B)
+    \tkzLabelPoints[above right](C)
+\end{tikzpicture}

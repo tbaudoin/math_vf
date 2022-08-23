@@ -1,0 +1,257 @@
+\documentclass[a4paper, 12pt, parskip=half-]{scrartcl}
+% marge
+\usepackage[margin=1in]{geometry}
+% langue
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+% police
+\usepackage{cmbright}
+% math utils
+\usepackage{mathtools, amssymb}
+% image
+\usepackage{graphicx}
+% dessin
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{tasks}
+\usetikzlibrary{babel}
+% plusieurs colonnes
+\usepackage{multicol}
+% soulignements différents
+\usepackage{ulem}
+% gestion des imports
+\usepackage{import}
+% tableaux
+\usepackage{tabularray}
+% personnaliser les listes
+\usepackage{enumitem}
+%% mettre les labels sous forme de lettre en gras
+\setlist[enumerate]{
+    label=\textbf{\alph*)},
+    itemsep=1ex}
+%% nouveau paramètre pour mettre les listes sur plusieurs colonnes
+\SetEnumitemKey{cols}{%
+    itemsep = 1\itemsep,
+    parsep = 1\parsep,
+    before = \raggedcolumns\begin{multicols}{#1},
+    after = \end{multicols}}
+% exercice
+% use-files -> xsim utilise mets chaque exercice dans un fichier séparé
+% use-aux -> xsim utilise le fichier aux de latex au lien d'en créer un nouveau
+\usepackage[use-files,use-aux]{xsim}
+\input{xsim_template.tex}
+\xsimsetup{
+    path=xsim,% stocker les fichiers auxiliaires dans ce dossier
+    %solution/print=true, % afficher les solutions en dessous des questions
+    blank/style=\dotuline{#1},
+    exercise/template=math-exam,
+    solution/template=math-exam
+}
+\input{entete.tex}
+\begin{document}
+\entete
+\minisec{Quelques consignes}
+\begin{itemize}
+    \item Note ton raisonnement pour chaque exercice. La calculatrice étant autorisée, toute réponse sans raisonnement ne rapportera pas de points.
+    \item Arrondis tes réponses finales au centième.
+    \item Relis bien ton examen avant de le rendre afin d'éviter les pénalités (arrondis, notations, mention du triangle rectangle, unités).
+\end{itemize}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1 par justification ou explication
+\begin{exercise}[points=5]
+    Les propositions suivantes sont-elle vraies ou fausses? Justifie dans les deux cas.
+    \begin{enumerate}
+        \item $\dfrac{1}{\sqrt{2}}=\dfrac{\sqrt{2}}{2}$
+        \item \input{tikz/triangle_rectangle_vrai_faux.tikz} $\Rightarrow c^2 = a^2+b^2$
+        \item Deux nombres opposés ont la même racine carrée.
+        \item $\sqrt{a} + \sqrt{b} = \sqrt{a+b}$
+        \item $2\sqrt{3} + 4\sqrt{3} = \sqrt{108}$
+    \end{enumerate}
+\end{exercise}
+
+\begin{solution}
+    \begin{enumerate}
+        \item Vrai, $\dfrac{1}{\sqrt{2}}\cdot\dfrac{\sqrt{2}}{\sqrt{2}} = \dfrac{\sqrt{2}}{2}$
+        \item Faux, $c^2 = a^2 - b^2$
+        \item Faux, un nombre négatif n'admet pas de racine carré dans $\mathbb{R}$.
+        \item Faux, $\sqrt{4} + \sqrt{16} = 6$ et $6\ne \sqrt{4+16}=\sqrt{20}$
+        \item Vrai. $2\sqrt{3} + 4\sqrt{3} = 6\sqrt{3} = \sqrt{3\cdot 36} = \sqrt{108}$
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1 point par exercice. Je rajouterais juste un ex sur des racines pas carrées avec radicand négatif
+\begin{exercise}[points=4]
+    Si possible, effectue les calculs suivants
+    \begin{enumerate}[cols=2]
+        \item $(\sqrt{2}+\sqrt{3})^2$
+        \item $(1-\sqrt{2})^2$
+        \item $\sqrt{5}\left(\sqrt{20} - \sqrt{5}\right)$
+        \item $(3\sqrt{6}+\sqrt{2}).(\sqrt{2}-3\sqrt{6})$
+    \end{enumerate}
+\end{exercise}
+
+\begin{solution}
+    \begin{enumerate}[cols=2]
+        \item $5+2\sqrt{6}$
+        \item $-1$
+        \item $5$
+        \item $-50$
+    \end{enumerate}
+\end{solution}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}[points=2]
+    Rends rationnel les dénominateurs des fractions suivantes.
+    \begin{enumerate}[cols=2]
+        \item $\dfrac{3}{\sqrt{5}}$
+        \item $\dfrac{1}{4-\sqrt{2}}$
+     %   \item $\dfrac{3+\sqrt{5}}{2\sqrt{5}}$
+    \end{enumerate}
+\end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item $\dfrac{3\sqrt{5}}{5}$
+        \item $\dfrac{4 + \sqrt{2}}{14}$
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 1 pt par exercice
+\begin{exercise}[points=5]
+    Pour le triangle ci dessous, recopie les énoncés et complète les pointillés sur ta feuille à en-tête.
+    \begin{center}
+        \input{tikz/triangle_rectangle_001.tikz}
+    \end{center}
+    \bigbreak
+    \begin{enumerate}[cols=2]
+        \item $\sin \widehat{A} = \blank[width=2cm]{}$
+        \item $ \blank[width=2cm]{} = \dfrac{c}{\cos \widehat{A}}$
+        \item $ \blank[width=2cm]{} + \blank[width=2cm]{} = 1$
+        \item $ \sin \blank[width=2cm]{} = \cos \blank[width=2cm]{}$
+        \item $ \dfrac{\sin\widehat{C}}{\cos\widehat{C}} = \blank[width=2cm]{}$
+    \end{enumerate}   
+\end{exercise}
+\begin{solution}
+    \begin{tasks}[label=\textbf{\alph*)}](3)
+        \task $\dfrac{a}{b}$
+        \task $b$
+        \task $\sin^2 \widehat{A} + \cos^2 \widehat{A}$
+        \task $\sin \widehat{A} = \cos\widehat{C}$
+        \task $\tan\widehat{C}$
+    \end{tasks}
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2pts pour vérifier que l'angle est droit par pythagore, 1 pt pour pythagore dans BDE
+\begin{exercise}[points=3]
+    Sur le dessin ci-dessous, les points $A$, $B$ et $E$ sont alignés et $C$ est le milieu de $[BD]$. Calculer $\left| ED \right|$.
+    \begin{center}
+        \input{tikz/deux_triangles.tikz}
+    \end{center}
+\end{exercise}
+\begin{solution}
+    $|CB| = 3$ car $C$ est le milieu de $[DB]$ et que $|DC| = 3$.
+
+    Par conséquent, le triangle $ABC$ est rectangle par la réciproque du théorème de Pythagore. En effet,
+    \begin{align*}
+        \sqrt{34}^2 &= 5^2 + 3^2\\
+        34 &= 25 + 9
+    \end{align*}
+
+    Les point $ABE$ sont alignés et $|\widehat{ABC}| = 90\degres$. Donc, $|\widehat{EBD}| = 90\degres$. Par conséquent, le triangle $ABE$ est aussi rectangle.
+
+    En appliquant le théorème de Pythagore dans ce triangle on trouve,
+    $|DE| = \sqrt{85}$
+    \newpage
+\end{solution}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1pt pour a, 2pts pour b et 1 pour alpha
+\begin{exercise}[points=8]
+    Détermine toutes les inconnues (cotés et angles).
+    \begin{enumerate}[cols=2]
+        \item \input{tikz/triangle_rectangle_002.tikz}
+        \item \input{tikz/triangle_rectangle_004.tikz}
+    \end{enumerate}   
+\end{exercise}
+\begin{solution}
+    \begin{tasks}
+        \task
+        $ABC$ est un triangle rectangle en $B$. Donc,
+        \begin{itemize}
+            \item $|BC| = 4\tan(20\degres) = 1,46$
+            \item $|AC| = \dfrac{4}{\cos(20\degres)} = 4,26$
+            \item $|\widehat{C}| = 90\degres- 20\degres = 70\degres$
+        \end{itemize}
+        \task
+        $HIJ$ est un triangle rectangle en $I$. Donc,
+        \begin{itemize}
+            \item $|HJ| = \sqrt{71}$ par le théorème de Pythagore.
+            \item $|\widehat{H}| = \arctan\left(\dfrac{8}{\sqrt{7}}\right)=71,7\degres$.
+            \item $|\widehat{J}| = \arctan\left(\dfrac{\sqrt{7}}{8}\right)=18,3\degres$.
+        \end{itemize}
+    \end{tasks}
+   
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1pts pour trouver l'angle, 1pt pour le pourcentage. Marquer que la maison est d'aplomb pour éviter les 
+% "on ne sait pas si le triangle est rectangle" ?
+% \begin{exercise}[points=2]
+%     Le sol du garage de la maison de Boris se trouve à 2,30m sous le rez-de-chaussée. 
+%     La maison est en recul de 7m par rapport au trottoir. Le croquis ci-dessous illustre 
+%     cette situation. Calcule l'amplitude de l'angle de la rampe d'accès au garage et exprime la pente 
+%     de cette rampe en pourcentage. Ecris ton raisonnement.\\
+%     \begin{center}
+%         \import{img/}{drawing.pdf_tex}
+%     \end{center}
+% \end{exercise}
+\begin{exercise}[points=3]
+    Voici une photo aérienne du parc de Jamblinne. En sachant que la vitesse de marche moyenne est de 1,5 m/s, détermine le temps gagné (en seconde) par un piéton s'il coupe à travers le parc.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{img/dejamblinne.png}
+    \end{center}
+\end{exercise}
+\begin{solution}
+    Si le piéton contourne le parc il parcours : $28,45 + 30,87 = 59,23$~m. Il mettra donc $\dfrac{59,23}{1,5}=39,55$~s pour parourir cette distance.
+
+    Si le piéton coupe par le parc il parcours : $\sqrt{28,45^2 + 30,87^2}=41,98$~m (Théorème de pythagore). Il mettra donc $\dfrac{41,98}{1,5} = 27,99$~s.
+
+    Le piéton qui coupe par le parc gagne donc $39,55 - 27,99 = 11,56$~s.
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}[points=3]
+    Madame Regout vient à l'école en vélo. Elle voudrait qu'on installe une rampe d'accès sur les marches pour monter facilement son vélo sur le seuil de la porte d'entrée qui se situe à 40 cm du sol. Devant l'école un espace de 1,5 m est disponible pour installer cette rampe. Si la rampe mesure 1,5 m :
+    \begin{itemize}
+        \item Quelle sera l'amplitude de l'angle d'inclinaison entre la rampe et le sol ?
+        \item Y aura-t-il assez d'espace devant l'école pour placer la rampe ?
+    \end{itemize}
+\end{exercise}
+\begin{solution}
+    \begin{itemize}
+        \item 
+        L'amplitude de l'angle d'inclinaison vaut $\arcsin\left(\dfrac{40}{150}\right)=15,47\degres$.
+        \item 
+        Place occupée par la rampe : $\sqrt{150^2 - 40^2} = 144,57$~m. La rampe occuper $144,57$~cm il y aura donc assez d'espace avec $150$~cm.
+    \end{itemize}
+\end{solution}
+% Je ne vois pas de façon directe donc je dirais. 1pt pour la demi diagonale valant 2 racine de 2,
+%1 point pour le raisonnement puis 1pts pour la hauteur.
+
+%\begin{exercise}[points=3]
+ %   Ci-dessous, une pyramide régulière à base carrée. Les côtés du carré mesurent 4cm et les arêtes de la pyramide mesurent 7cm. Détermine la hauteur de cette pyramide.\\
+   % \begin{center}
+   %     \input{tikz/pyramide.tikz}
+   % \end{center}
+% \end{exercise} 
+\newpage
+\printsolutions
+\end{document}
+

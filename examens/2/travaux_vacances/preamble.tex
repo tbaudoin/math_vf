@@ -1,0 +1,57 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage[french]{babel}
+\usepackage{cmbright}
+\usepackage{fontawesome5}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{tcolorbox}
+\usepackage[autolanguage,np]{numprint}
+\usepackage{siunitx}
+\sisetup{locale = FR,mode=text}
+\usepackage{array, tabularx, booktabs}
+\usepackage{stmaryrd}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\setlength{\extrarowheight}{4pt}
+\usepackage{enumitem, tasks}
+\settasks{
+  after-item-skip={1em},
+  label-width = 12pt
+}
+\usepackage{xcolor}
+\usepackage[use-files, use-aux]{xsim}
+\xsimsetup{
+  path = xsim,
+  blank/filled-style=\textcolor{red}{#1},
+}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usetikzlibrary{external, babel, tikzmark}
+% \tikzexternalize[prefix=figures/]
+%\tikzset{external/mode=graphics if exists}
+\usepackage{witharrows}
+\usepackage{pgf-pie}
+
+\newcommand{\inputtikz}[1]{%
+  \tikzsetnextfilename{#1}%
+  \input{tikz/#1.tikz}%
+}
+
+\setlength{\jot}{1em}
+
+%prevent crash when WithArrows is use with externalize
+\usepackage{etoolbox} 
+\AtBeginEnvironment{WithArrows}{\tikzexternaldisable}
+\AtEndEnvironment{WithArrows}{\tikzexternalenable}
+
+\usepackage{cancel}
+\usepackage{xparse}
+\NewDocumentCommand{\simpup}{s m m}
+{\IfBooleanTF{#1}{\overset{#3}{\bcancel{#2}}}{\overset{#3}{\cancel{#2}}}}
+\NewDocumentCommand{\simpdown}{s m m}
+{\IfBooleanTF{#1}{\underset{#3}{\bcancel{#2}}}{\underset{#3}{\cancel{#2}}}}
+
+\usepackage{ulem}

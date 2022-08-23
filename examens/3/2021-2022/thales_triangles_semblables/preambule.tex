@@ -1,0 +1,70 @@
+%====================================================================
+% PACKAGES
+%====================================================================
+% marge
+\usepackage[margin=1in]{geometry}
+% langue
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+% police
+\usepackage{cmbright}
+\usepackage[frenchmath]{mathastext}
+% math utils
+\usepackage{mathtools}
+% image
+\usepackage{graphicx}
+% dessin
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+% plusieurs colonnes
+\usepackage{multicol}
+% soulignements différents
+\usepackage{ulem}
+% tableaux
+\usepackage{tabularray}
+% personnaliser les listes
+\usepackage{enumitem}
+\usepackage{tasks}
+% unités
+\usepackage[locale=FR]{siunitx}
+% symbole parallèle incliné
+\usepackage{stmaryrd}
+% exercice
+% use-files -> xsim utilise mets chaque exercice dans un fichier séparé
+% use-aux -> xsim utilise le fichier aux de latex au lien d'en créer un nouveau
+\usepackage[use-files,use-aux]{xsim}
+%====================================================================
+% SETTINGS
+%====================================================================
+% XSIM
+\input{xsim_template.tex} % TODO: à changer par la commande de xsim appropriée
+\xsimsetup{
+    path=xsim,% stocker les fichiers auxiliaires dans ce dossier
+    %solution/print=true, % afficher les solutions en dessous des questions
+    blank/style=\dotuline{#1},
+    exercise/template=math-exam,
+    exercise/name=Question
+}
+
+% ENUMITEM
+% mettre les labels sous forme de lettre en gras
+\setlist[enumerate]{
+    label=\textbf{\alph*)},
+    itemsep=1ex}
+% nouveau paramètre pour mettre les listes sur plusieurs colonnes
+\SetEnumitemKey{cols}{%
+    itemsep = 1\itemsep,
+    parsep = 1\parsep,
+    before = \raggedcolumns\begin{multicols}{#1},
+    after = \end{multicols}}
+% TIKZ
+\usetikzlibrary{babel, math, patterns, calc}
+%TASKS
+\settasks{
+    label = \textbf{\alph*)},
+    label-width = 12pt
+}
+%====================================================================
+% PERSONNAL MACRO
+%====================================================================

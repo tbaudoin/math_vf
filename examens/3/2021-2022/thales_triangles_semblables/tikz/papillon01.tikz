@@ -1,0 +1,30 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), rotate=0, scale=0.7]
+
+    \tkzDefPoint(-3,2){A}
+    \tkzDefPoint(-4,-2){B}
+    \tkzDefPoint(3,-2){D}
+    \tkzDefPoint(4,2){C}
+    \tkzDefPoint(0,0){E}
+    
+    \fill[color=gray!40] (A) -- (E) -- (B) -- cycle;
+    \fill[color=gray!40] (D) -- (E) -- (C) -- cycle;
+
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzDrawSegments(A,B C,D B,E A,E D,E C,E)
+    \tkzLabelPoints[above left](A)
+    \tkzLabelPoints[above right](C)
+    \tkzLabelPoints[below left](B)
+    \tkzLabelPoints[below right](D)
+    \tkzLabelPoints[above](E)
+
+    %\tkzMarkSegments[mark=|](A,B D,C)
+    \tkzMarkSegments[mark=||](B,E E,C)
+    %\tkzMarkSegments[mark=|||](D,E E,B)
+
+    \tkzMarkAngle(A,E,B)
+    \tkzMarkAngle(D,E,C)
+
+    \tkzMarkAngle[double](E,B,A)
+    \tkzMarkAngle[double](E,C,D)
+
+\end{tikzpicture}

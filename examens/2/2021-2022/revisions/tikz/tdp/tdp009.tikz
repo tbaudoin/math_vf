@@ -1,0 +1,13 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(-10:5){B}
+
+    \tkzDefPointsBy[rotation=center B angle 90](A,B){}
+    \tkzDrawLine[color=\figcolor](A',B')
+    \tkzDrawPoints[color=\figcolor](A',B')
+    \tkzLabelPoints[color=\figcolor](A',B')
+
+    \tkzDrawLine(A,B)
+    \tkzDrawPoints(A,B)
+    \tkzLabelPoints[above](A,B)
+\end{tikzpicture}

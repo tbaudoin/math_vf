@@ -1,0 +1,83 @@
+\documentclass{article}
+%====================================================================
+% PACKAGES
+%====================================================================
+% marge
+% \usepackage[margin=1in]{geometry}
+% % langue
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+% % police
+\usepackage{cmbright}
+\usepackage[frenchmath]{mathastext}
+% % math utils
+\usepackage{mathtools}
+% % image
+% \usepackage{graphicx}
+% % dessin
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+% % plusieurs colonnes
+% \usepackage{multicol}
+% % soulignements différents
+% \usepackage{ulem}
+% % tableaux
+% \usepackage{tabularray}
+% % personnaliser les listes
+% \usepackage{enumitem}
+% % exercice
+% % use-files -> xsim utilise mets chaque exercice dans un fichier séparé
+% % use-aux -> xsim utilise le fichier aux de latex au lien d'en créer un nouveau
+% \usepackage[use-files,use-aux]{xsim}
+% %====================================================================
+% % SETTINGS
+% %====================================================================
+% % XSIM
+% \input{xsim_template.tex} % TODO: à changer par la commande de xsim appropriée
+% \xsimsetup{
+%     path=xsim,% stocker les fichiers auxiliaires dans ce dossier
+%     %solution/print=true, % afficher les solutions en dessous des questions
+%     blank/style=\dotuline{#1},
+%     exercise/template=math-exam
+% }
+
+% % ENUMITEM
+% % mettre les labels sous forme de lettre en gras
+% \setlist[enumerate]{
+%     label=\textbf{\alph*)},
+%     itemsep=1ex}
+% % nouveau paramètre pour mettre les listes sur plusieurs colonnes
+% \SetEnumitemKey{cols}{%
+%     itemsep = 1\itemsep,
+%     parsep = 1\parsep,
+%     before = \raggedcolumns\begin{multicols}{#1},
+%     after = \end{multicols}}
+
+% TIKZ
+\usetikzlibrary{babel, math}
+%====================================================================
+% PERSONNAL MACRO
+%====================================================================
+\begin{document}
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tikzmath{
+        \angle = 30;
+        \a = 1;
+        \b = 2;
+        \k = 3;
+    }
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(\a,0){B}
+    \tkzDefPoint(\angle:\b){C}
+    \tkzDefPointBy[homothety=center A ratio \k](B)
+    \tkzGetPoint{D}
+    \tkzDefLine[parallel= through D](B,C)
+    \tkzInterLL(A,C)(D,tkzPointResult)
+    \tkzGetPoint{E}
+
+    \tkzDrawLines(A,E A,D)
+    \tkzDrawLines(B,C D,E)
+    \tkzDrawPoints(A,B,C,D,E)
+\end{tikzpicture}
+\end{document}

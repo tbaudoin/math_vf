@@ -1,0 +1,103 @@
+\documentclass[../partie1.tex]{subfiles}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}[points=3]
+    \begin{minipage}{.48\linewidth}
+        \input{tikz/trapeze.tikz}
+    \end{minipage}
+    \begin{minipage}{.48\linewidth}
+        $TRAP$ est un trapèze rectangle en $A$ et en $P$ tel que :\\
+    $|TP| = \SI{3}{cm}$, $|PA| = \SI{5}{cm}$ et $|AR|=\SI{4}{cm}$.\medbreak
+    $M$ est un point mobile du segment $[PA]$ et on note $x$ la longueur du segment $[PM]$ en cm.
+    \end{minipage}
+    
+    \begin{enumerate}[series=mine]
+        \item Montre, grâce au dessin, que l'aire du triangle $PTM$ est $1,5x$ et que l'aire du triangle $ARM$ est $-2x+10$.
+    \end{enumerate}
+
+    Les droites ci-dessous sont les représentations graphique des fonctions $f$ et $g$ qui associent respectivement :
+    \begin{itemize}[label=]
+        \item $x$ à l'aire du triangle $ARM$ ($\color{blue}f:x\mapsto y= -2x+10$).
+        \item $x$ à l'aire du triangle $PTM$ ($\color{red}g:x\mapsto y=1,5x$).
+    \end{itemize}
+
+    \input{tikz/graphe_trapeze.tikz}
+
+    \begin{enumerate}[resume=mine]
+        \item Pour quelle valeur de $x$ l'aire du triangle $ARM$ est-elle égale à \SI{8}{cm^2} ?
+        \item Lorsque $x$ est égal à \SI{4}{cm}, quelle est l'aire du triangle $ARM$ ?
+        \item Montre par calcul que la valeur de $x$ pour laquelle les deux aires sont égales est $\dfrac{20}{7}$.
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Aire de PTM \hfill 0,5
+        \item Aire de ARM \hfill 0,5
+        \item $x=1$ \hfill 0,5
+        \item $y=2$ \hfill 0,5
+        \item La résolution est correcte \hfill 1
+    \end{itemize}
+    Formule générale pour l'aire d'un triangle : $\dfrac{b \cdot h}{2}$.
+    \begin{enumerate}[cols=2]
+        \item 
+        $A_{PTM} = \dfrac{3x}{2} = 1,5x$\\
+        $A_{ARM} = \dfrac{4(5-x)}{2} = 2(5-x) = 10-2x$
+        \item $1$
+        \item $2$
+        \item 
+        $\begin{aligned}[t]
+            1,5 x &= -2x + 10\\
+            3,5x &= 10\\
+            x &= \dfrac{10}{3,5}\\
+            x &= \dfrac{100}{35}\\
+            x &= \dfrac{20}{7}    
+        \end{aligned}$
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}[points=4]
+    Voici un triangle $ABC$ rectangle en $A$.
+    \begin{center}
+        \input{tikz/c3_triangle_rectangle.tikz}
+    \end{center}
+    \begin{enumerate}
+        \item % 2pts
+         Montre que l'équation qui lie les trois côtés de ce triangle est $x^2-100x = 0$.
+        \item %1 pt
+        Résous cette équation.
+        \item %1 pt
+        Quelles sont les longueurs des côtés de ce triangle ?
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Trouver l'équation \hfill 1
+        \item Factoriser \hfill 1
+        \item Résoudre \hfill 1
+        \item Interpréter \hfill 1 
+    \end{itemize}
+    \begin{enumerate}
+        \item Comme le triangle $ABC$ est rectangle en $A$, le théorème de Pythagore me permet d'écrire,
+        \begin{align*}
+            (x+1)^2 &= (x-1)^2 +  \left(\dfrac{x}{5}\right)^2\\
+            x^2+2x+1 &= x^2 - 2x + 1 + \dfrac{x^2}{25}\\
+            -4x + \dfrac{x^2}{25} &=0\\
+            x^2 -100x &= 0
+        \end{align*}
+        \item Résolvons cette équation (mise en évidence et règle du produit nul)
+        \begin{align*}
+            x^2 - 100x &= 0\\
+            x(x-100) &= 0\\
+            x = 0 &\text{ ou }x=100
+        \end{align*}
+        \item Dans ce contexte, la solution $x=0$ est a rejetée car la longueur de côté d'un triangle ne peut être nul ou négative. Par conséquent, les longueurs des côtés de ce triangle sont \numlist{20;99;101}.
+    \end{enumerate}
+   
+\end{solution}
+\end{document}

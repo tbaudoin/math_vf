@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){O}
+    
+    \tkzDrawPoints(O)
+    \draw (0,0) circle (1.5) ;
+
+\end{tikzpicture}

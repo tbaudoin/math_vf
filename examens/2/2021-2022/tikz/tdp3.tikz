@@ -1,0 +1,22 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), >=latex]
+    % Points
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(-150:2){D}
+    \tkzDefPoint(-20:3){C}
+    \tkzDefPoint(-40:3){B}
+    % Vector
+    \tkzDefPoint(-130:3){X}
+    \tkzDefShiftPoint[X](-40:5){Y}
+    \tkzDrawSegment[->](X,Y)
+    \tkzLabelSegment[above](X,Y){$\overrightarrow{v}$}
+    % Image
+    \tkzDefPointsBy[translation=from X to Y](A,B,C,D){}
+    \tkzDrawPolygon[\figcolor](A',B',C',D')
+    % Polygon
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawPoints(A,B,C,D)
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[left](D)
+    \tkzLabelPoints[below](B)
+\end{tikzpicture}

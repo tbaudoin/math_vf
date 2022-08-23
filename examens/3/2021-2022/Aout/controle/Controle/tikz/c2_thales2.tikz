@@ -1,0 +1,35 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tikzmath{
+        \myangle = 30;
+        \a = 1;
+        \b = 1.5;
+        \k = -3;
+    }
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(\a,0){B}
+    \tkzDefPoint(\myangle:\b){C}
+    \tkzDefPointBy[homothety=center A ratio \k](B)
+    \tkzGetPoint{D}
+    \tkzDefLine[parallel= through D](B,C)
+    \tkzInterLL(A,C)(D,tkzPointResult)
+    \tkzGetPoint{E}
+
+    \tkzDefCentroid(A,D,E)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.4](D)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](E)
+    \tkzDefCentroid(A,B,C)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=1](B)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.5](C)
+    \tkzLabelPoints[below](A)
+    % \tkzDrawPoints(A,B,C,D,E)
+
+    \tkzDrawPolygons(E,D,A B,A,C)
+
+    \tkzLabelSegment[swap](A,B){$7$}
+    %\tkzLabelSegment[swap](B,C){$5$}
+    \tkzLabelSegment(A,C){$10$}
+    %\tkzLabelSegment[swap](A,D){$16,8$}
+    \tkzLabelSegment(A,E){$24$}
+    \tkzLabelSegment[swap](D,E){$12$}
+
+\end{tikzpicture}

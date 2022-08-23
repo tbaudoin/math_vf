@@ -1,0 +1,25 @@
+\begin{tikzpicture}[baseline=(current bounding box.north),>=latex, x=2cm]
+    \tikzmath{
+        \xmin=-3;
+        \xmax=3;
+        \xstep=1/5;
+        \firstmainstep=\xmin + 1;
+        \firststep=\xmin + \xstep;
+        \laststep=\xmax - \xstep;
+        \secondaryticks = 2pt;
+        \primaryticks = 4pt;}
+    % droite
+    \draw[->] (\xmin,0) -- (\xmax+\xstep,0)node[right]{$x$};
+    % graduations secondaires
+    \foreach \x in {\xmin, \firststep, ..., \laststep}
+        {\draw (\x,\secondaryticks pt) -- (\x, -\secondaryticks pt);};
+    % graduations principales
+    \foreach \x in {\xmin,\firstmainstep,...,\xmax}
+        {\draw[fill=black] (\x,\primaryticks pt) -- (\x, -\primaryticks pt) node[below]{\pgfmathprintnumber{\x}};};
+    % points spéciaux
+    \draw (-2.6,0)node[above]{$A$};
+    \draw (-1.2,0)node[above]{$B$};
+    \draw (0.4,0)node[above]{$C$};
+    \draw (2.2,0)node[above]{$D$};
+    \draw (-0.6,0)node[above]{$E$};
+\end{tikzpicture}

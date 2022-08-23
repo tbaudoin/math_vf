@@ -1,0 +1,404 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[frenchb]{babel}
+\usepackage{numprint}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xsim}
+\usepackage{ifthen}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[squaren,Gray]{SIunits}%unités internationales
+\usepackage[explicit]{titlesec}
+\usepackage{ulem}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[top=2cm, bottom=2cm,left=1.5cm, right=1.5cm]{geometry}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\textbf{\alph*)}, itemsep=1ex}
+% création d'un nouveau paramètre pour les listes de type <enumerate>. Pour afficher le contenu de la liste en plusieurs colonnes, utiliser [cols=<nombre de colonne>]
+\SetEnumitemKey{cols}
+{
+    before = \begin{multicols}{#1},
+    after =  \end{multicols}
+}
+\usepackage{xlop}
+\usepackage{pgf,tikz}
+\usepackage[tikz]{bclogo}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{eurosym}%symbole euro
+\usepackage{setspace}%interligne
+\usepackage{tablists}%exercices sur plusieurs colonnes
+\setlength{\parindent}{0pt}
+\newcounter{nexo}
+\setcounter{nexo}{1}
+
+
+\begin{document}
+
+Nom : \\
+Prénom : \\ 
+Classe : \\
+
+\vspace{2cm}
+
+\begin{center}
+	\Huge{\textbf{DOSSIER DE RÉVISIONS}}\\
+	\huge{\textbf{1ères - Noël 2021}}
+\end{center}
+	
+\normalsize
+	\section{Calcul mental}
+		\subsection{Distributivité simple}	
+			\begin{bclogo}[arrondi=0.3, logo=\bccle]{Définition}
+				Pour multiplier une somme/une différence, il faut multiplier chaque terme de la somme par ce nombre et additionner/soustraire les résultats obtenus.\\
+				Exemples :
+				\parbox[t]{0.3\textwidth}{
+					\begin{align*}
+						6\cdot (10+7) &= 6\cdot 10 + 6\cdot 7\\
+						& = 60 + 42\\
+						& = 102
+					\end{align*}}
+				\parbox[t]{0.3\textwidth}{
+					\begin{align*}
+						6\cdot (10-7) &= 6\cdot 10 - 6\cdot 7\\
+						& = 60 - 42\\
+						& = 18
+					\end{align*}}\\
+			\end{bclogo}
+
+\begin{exercise}
+Calcule en appliquant la distributivité simple.
+	\begin{enumerate}[cols=5]
+		\item $18\cdot (10+2)$
+		\item $19\cdot (20-1)$
+		\item $19\cdot (30+1)$
+		\item $12\cdot (20+6)$
+		\item $4\cdot 28$
+		\item $3\cdot 17$
+		\item $8\cdot 22$
+		\item $11\cdot 35$
+		\item $10\cdot 8$
+		\item $7\cdot 12$
+	\end{enumerate}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\subsection{Priorités des opérations}
+		\begin{bclogo}[arrondi=0.3, logo=\bccle]{Définition}
+			Dans un calcul, on effectue en priorité :
+			\begin{enumerate}
+				\item les calculs entre parenthèses (\textbf{P} pour parenthèse)
+				\item les puissances (\textbf{E} pour exposant)
+				\item dans l'ordre d'apparition, les produits et les quotients (\textbf{M} pour multiplication et \textbf{D} pour division)
+				\item dans l'ordre d'apparition, les sommes et les différences (\textbf{A} pour addition et \textbf{S} pour soustraction)
+			\end{enumerate}
+			Moyen mnémotechnique : \textbf{PEMDAS}	
+		\end{bclogo}
+
+\pagebreak
+\begin{exercise}
+	Effectue les calculs ci-dessous en respectant la priorité des opérations.
+			\begin{enumerate}[cols=2]
+				\item $8\cdot 13-(6+12):3+11$
+				\item $4\cdot (11-2)+10:5+9$
+				\item $12\cdot 2-(7+9)+9:3$
+				\item $12:2\cdot 13-13+12+9$
+				\item $4+3\cdot 11+3:(6-5)$
+				\item $9-5\cdot (5+1)$
+				\item $5\cdot 2+12+11:(13-2)$
+				\item $2+4:4+8\cdot 8-5$
+				\item $12\cdot 4-(2+10):6+12$
+				\item $5\cdot 11:5+2-4+9$
+			\end{enumerate}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Diviseurs et multiples}
+	\subsection{Diviseurs et multiples}
+		\begin{bclogo}[arrondi=0.3, logo=\bccle]{Définitions}
+			\begin{enumerate}
+				\item L'ensemble des diviseurs d'un nombre $a$ se note $div\ a$.\\
+				Exemple : $div\ 12=\{1,2,3,4,6,12\}$
+				\item L'ensemble des multiples d'un nombre $a$ se note $a\ \mathbb{N}$.\\
+				Exemple : $12\ \mathbb{N}=\{0,12,24,36,48,60,72,84,96,108,120, 132, ...\}$
+			\end{enumerate}
+		\end{bclogo}
+
+\begin{exercise}
+	Établis la liste de diviseurs et des 5 premiers multiples des nombres ci-dessous.
+	\begin{enumerate}[cols=5]
+		\item $20$
+		\item $150$
+		\item $100$
+		\item $40$
+		\item $144$
+		\item $16$
+		\item $8$
+		\item $12$
+	\end{enumerate}
+\end{exercise} 
+
+	\subsection{Puissance d'un nombre}
+		\begin{bclogo}[arrondi=0.3, logo=\bccle]{Définition}
+			Lorsque les facteurs d'un produit sont égaux, on convient d'écrire ce produit sous une forme abrégée : une puissance.
+			\begin{center}
+				\includegraphics[scale=0.5]{puissance.jpg}
+			\end{center}
+			Exemples : 
+			\begin{itemize}[label=$\bullet$]
+				\item $2\cdot 2\cdot 2 = 2^3$\\
+				\item $3 \cdot 3\cdot 3\cdot 3 = 3^4$
+			\end{itemize}
+			
+		\end{bclogo}
+	
+\begin{exercise}
+	Écris les produits suivants en utilisant des puissances. Ne calcule pas le résultat.
+	\begin{enumerate}[cols=4]
+		\item $3\cdot 3\cdot 3\cdot 3\cdot 3$
+		\item $4\cdot 4\cdot 4$
+		\item $5\cdot 5$
+		\item $2\cdot 2\cdot 2\cdot 3\cdot 3$
+		\item $4\cdot 5\cdot 5\cdot 5$
+		\item $2\cdot 2\cdot 2\cdot 7\cdot 7$
+		\item $3\cdot 3\cdot 16\cdot 16$
+		\item $10\cdot 10\cdot 10\cdot 3$
+		\item $2021\cdot 2021\cdot 2021$
+	\end{enumerate}	
+\end{exercise}
+
+\begin{exercise}
+	Calcule les puissances suivantes.
+			\begin{enumerate}[cols=6]
+				\item $3^4$
+				\item $12^2$
+				\item $6^2$
+				\item $2^4$
+				\item $4^2$
+				\item $1^24$
+				\item $3^3$
+				\item $20^2$
+				\item $5^3$
+				\item $10^6$
+			\end{enumerate}
+\end{exercise}
+
+\section{Les nombres entiers}
+	 \subsection{Opérations sur les entiers}
+		\begin{bclogo}[arrondi=0.3,logo=\bccle]{Opérations sur les entiers}
+			\begin{enumerate}[label=\arabic*)]
+				\item Somme de deux nombres entiers :
+				\begin{enumerate}
+					\item Pour additionner deux nombres entiers de \textbf{même signe}, on \textbf{conserve} le signe et on \textbf{additionne} les valeurs absolues.\\
+					Exemples : 
+					\parbox{0.3\linewidth}{$(+2)+(+3)=+5$}
+					\parbox{0.3\linewidth}{$(-2)+(-5)=-7$}
+					\item Pour additionner deux nombres entiers de \textbf{signes différents}, on \textbf{donne} à la somme le \textbf{signe du terme} ayant la plus \textbf{grande valeur absolue} et on \textbf{soustrait} les valeurs absolues (la plus grandes moins la plus petite)\\
+					Exemples :
+					\parbox{0.3\linewidth}{$(-6)+(+2)=-4$}
+					\parbox{0.3\linewidth}{$(-2)+(+5)=+3$}
+				\end{enumerate}
+				\item Règle des signes successifs :
+				\begin{enumerate}
+					\item On remplace deux signes successifs \textbf{identiques} par un signe \textbf{$+$}.
+					\item On remplace deux signes successifs \textbf{opposés} par un signe \textbf{$-$}
+				\end{enumerate}
+			\end{enumerate}
+		\end{bclogo}
+
+\begin{exercise}
+	Donne les abscisses des points suivants. \\
+	\includegraphics{droitegradd.png}
+\end{exercise}
+
+\begin{exercise}
+	Donne les abscisses des points suivants. \\
+	\includegraphics{droitegrad.png}
+\end{exercise}
+
+\begin{exercise}
+	Applique la règle des signes successifs puis calcule.
+	\begin{enumerate}[cols=3]
+		\item $(-10)-(+33)$
+		\item $(+68)+(-70)$
+		\item $(+14)+(+65)$
+		\item $(-57)-(+3)$
+		\item $(+98)+(-20)$
+		\item $(-47)-(+11)$
+		\item $(+25)-(+17)$
+		\item $(+75)+(-11)$
+		\item $(+14)-(+100)$
+		\item $(-20)+(+68)$
+	\end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+	Effectue.
+		\begin{enumerate}[cols=4]
+		\item $8^2 - 7 \cdot 5$
+		\item $(6^2 + 3^0)\cdot 2$
+		\item $45-10\cdot2^2$
+		\item $(4^2 - 2\cdot 3)^3$
+		\item $50:5\cdot2 - 7^2$
+		\item $(-5)+4^2$
+		\item $5^3 - 3^3 - 9^2$
+		\item $4+(8^2 - 3 \cdot2^2 \cdot5)$
+		\item $40:5\cdot2 : 4 + 2^4$
+		\item $-3 + (-2) - 5^2$
+		\end{enumerate}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%SOLUTIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\footnotesize
+\setcounter{nexo}{1}
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\multicolsep\itemsep
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item $18\cdot 17+18\cdot 2=306+36=342$
+		\item $19\cdot 4+19\cdot 5=76+95=171$
+		\item $19\cdot 19+19\cdot 17=361+323=684$
+		\item $17\cdot 15+17\cdot 6=255+102=357$
+		\item $4\cdot 7+4\cdot 17=28+68=96$
+		
+		\item $3\cdot 9-3\cdot 15=27-45=-18$
+		\item $8\cdot 11-8\cdot 15=88-120=-32$
+		\item $11\cdot 3-11\cdot 20=33-220=-187$
+		\item $10\cdot 14-10\cdot 7=140-70=70$
+		\item $7\cdot 7-7\cdot 20=49-140=-91$
+	\end{enumerate}
+\end{multicols}
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\begin{multicols}{5}
+	\begin{enumerate}[label=\alph*)]
+		\item $109$
+		\item $47$
+		\item $11$
+		\item $86$
+		\item $40$
+		%5
+		\item $2$
+		\item $23$
+		\item $62$
+		\item $58$
+		\item $18$
+	\end{enumerate}
+\end{multicols}
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\begin{enumerate}[label=\alph*)]
+	\item $div\ 20=\{1,2,4,5,10,20\}$\\
+	$20\ \mathbb{N}=\{0,20,40,60,80,100,120,140,160,180,200,220,\ldots\}$
+	\item $div\ 129=\{1,3,43,129\}$\\
+	$129\ \mathbb{N}=\{0,129,258,387,516,645,774,903,1032,1161,1290,1419,\ldots\}$
+	\item $div\ 118=\{1,2,59,118\}$\\
+	$118\ \mathbb{N}=\{0,118,236,354,472,590,708,826,944,1062,1180,1298,\ldots\}$
+	\item $div\ 79=\{1,79\}$\\
+	$79\ \mathbb{N}=\{0,79,158,237,316,395,474,553,632,711,790,869,\ldots\}$
+	\item $div\ 135=\{1,3,5,9,15,27,45,135\}$\\
+	$135\ \mathbb{N}=\{0,135,270,405,540,675,810,945,1080,1215,1350,1485,\ldots\}$
+	\item $div\ 84=\{1,2,3,4,6,7,12,14,21,28,42,84\}$\\
+	$84\ \mathbb{N}=\{0,84,168,252,336,420,504,588,672,756,840,924,\ldots\}$
+	\item $div\ 26=\{1,2,13,26\}$\\
+	$26\ \mathbb{N}=\{0,26,52,78,104,130,156,182,208,234,260,286,\ldots\}$
+	\item $div\ 127=\{1,127\}$\\
+	$127\ \mathbb{N}=\{0,127,254,381,508,635,762,889,1016,1143,1270,1397,\ldots\}$
+	\item $div\ 85=\{1,5,17,85\}$\\
+	$85\ \mathbb{N}=\{0,85,170,255,340,425,510,595,680,765,850,935,\ldots\}$
+	\item $div\ 128=\{1,2,4,8,16,32,64,128\}$\\
+	$128\ \mathbb{N}=\{0,128,256,384,512,640,768,896,1024,1152,1280,1408,\ldots\}$
+\end{enumerate}
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item $PGCD(63,99)=9$ et $PPCM(63,99)=693$
+		\item $PGCD(56,24)=8$ et $PPCM(56,24)=168$
+		\item $PGCD(40,16)=8$ et $PPCM(40,16)=80$
+		\item $PGCD(24,56)=8$ et $PPCM(24,56)=168$
+		\item $PGCD(14,4)=2$ et $PPCM(14,4)=28$
+		\item $PGCD(35,25)=5$ et $PPCM(35,25)=175$
+		\item $PGCD(77,21)=7$ et $PPCM(77,21)=231$
+		\item $PGCD(56,24)=8$ et $PPCM(56,24)=168$
+		\item $PGCD(15,9)=3$ et $PPCM(15,9)=45$
+		\item $PGCD(10,15)=5$ et $PPCM(10,15)=30$
+	\end{enumerate}
+\end{multicols}
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\begin{multicols}{5}
+	\begin{enumerate}[label=\alph*)]
+		\item $3^5$
+		\item $4^3$
+		\item $5^2$
+		\item $2^3\cdot 3^2$
+		\item $4\cdot 5^3$
+		\item $2^3\cdot 7^2$
+		\item $3^2\cdot 16^2$
+		\item $10^3\cdot 3$
+		\item $2016^3$
+	\end{enumerate}
+\end{multicols}
+
+
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\begin{multicols}{5}
+	\begin{enumerate}[label=\alph*)]
+		\item $243$
+		\item $225$
+		\item $36$
+		\item $1296$
+		\item $16$
+		\item $1$
+		\item $27$
+		\item $8000$
+		\item $4$
+		\item $289$
+	\end{enumerate}
+\end{multicols}
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\begin{multicols}{5}
+	\begin{enumerate}[label=\alph*)]
+		\item $-43$
+		\item $138$
+		\item $79$
+		\item $-60$
+		\item $78$
+		\item $-58$
+		\item $8$
+		\item $64$
+		\item $-79$
+		\item $48$ 
+	\end{enumerate}
+\end{multicols}
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\begin{multicols}{5}
+	\begin{enumerate}[label=\alph*)]
+		\item $208$
+		\item $-119$
+		\item $-126$
+		\item $-208$
+		\item $-126$
+		\item $36$
+		\item $-144$
+		\item $-306$
+		\item $361$
+		\item $28$
+	\end{enumerate}
+\end{multicols}
+\textbf{Exercice \thenexo} \stepcounter{nexo}
+\begin{multicols}{5}
+	\begin{enumerate}[label=\alph*)]
+		\item $21$
+		\item $-2$
+		\item $401$
+		\item $33$
+		\item $675$
+		\item $25$
+		\item $29$
+		\item $1+2^{2016}$
+	\end{enumerate}
+\end{multicols}
+\end{document}

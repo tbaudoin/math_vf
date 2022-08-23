@@ -1,0 +1,336 @@
+\documentclass[a4paper, 12pt, parskip=half-]{scrartcl}
+\input{preambule.tex}
+\begin{document}
+\renewcommand{\examteacher}{M. Tanghe}
+\entete
+\minisec{Quelques consignes}
+\begin{itemize}
+    \item Rends une copie soignée (titre et question soulignés à la latte).
+    \item N'oublie pas de remplir l'en-tête de l'examen et de chaque feuille à en-tête.
+    \item Vérifie ton orthographe.
+    \item Pour les vrais ou faux, sois précis dans tes justifications, je ne dois rien déduire, tout dois être dit explicitement.
+    \item Structure tes raisonnements.
+    \item Respecte les conventions mathématiques et les notations.
+    \item Pour les problèmes, n'oublie pas de formuler ta réponse finale et de noter tout ton raisonnement.
+\end{itemize}
+\newpage
+\section*{\fbox{C1} Expliciter les savoirs et les procédures}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[points=2]
+    Pour chaque graphe ci-dessous. Détermine s'il s'agit d'une fonction ou d'une relation.
+    \begin{tasks}(4)
+        \task \input{tikz/fct_or_relation04.tikz}
+        \task \input{tikz/fct_or_relation02.tikz}
+        \task \input{tikz/fct_or_relation01.tikz}
+        \task \input{tikz/fct_or_relation03.tikz}
+    \end{tasks}
+\end{exercise}
+\begin{solution}
+    0,5 point par bonne réponse
+    \begin{tasks}(4)
+        \task Fonction
+        \task Relation
+        \task Fonction
+        \task Relation
+    \end{tasks}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[points=4]
+    Les affirmations suivantes sont-elles vraies ou fausses. Justifie dans les deux cas.
+    \begin{enumerate}
+        \item Le point $(2;10)$ appartient au graphe de la fonction $f(x)=3x+4$.
+        \item $f(x) = 2x$ est une fonction linéaire.
+        \item L'ordonnée à l'origine d'une fonction est le point d'intersection de la fonction avec l'axe des ordonnées.
+        \item $3$ est la racine de la fonction $f(x)=-2x-6$
+    \end{enumerate}
+\end{exercise}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    1 point par justification correcte.
+    \begin{enumerate}
+        \item Vrai.
+              $\begin{aligned}[t]
+                      10 & \stackrel{?}{=} 3\cdot 2 + 4 \\
+                      10 & \stackrel{?}{=} 6 + 4        \\
+                      10 & \ne 10
+                  \end{aligned}$
+        \item Vrai. Le graphe de cette fonction passe par $(0;0)$ car $f(x) = 2\cdot 0 = 0$.
+        \item Faux. L'ordonnée à l'origine d'une fonction est l'ordonnée du point d'intersection de la fonction avec l'axe des ordonnées.
+        \item Faux. La racine est la valeur de $x$ qui annule $f(x)$. Or $-2\cdot 3 - 6 = 12 \ne 0$.
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[points=3]
+    Après avoir lu la légende, complète le tableau sur cette feuille.
+
+    Type de fonction \hfill A : affine \hfill L : linéaire \hfill C : constante
+
+    Croissance de la fonction \hfill $\nearrow$  : croissante \hfill $\searrow$ : décroissante \hfill C : constante
+
+    \begin{tblr}{hlines,
+            vlines,
+            columns = {2cm,c},
+            rows={.9cm,m},
+            column{1} = {3cm, l},
+            cell{1}{1} = {c},
+            rowsep=1ex}
+        Expression analytique & Type de fonction & Pente & Croissance & Racine & Ordonnée à l'origine \\
+        $f(x) = -3$                                                                                   \\
+        $f(x) = x-4$                                                                                  \\
+        $f(x) = -5-3x$                                                                                \\
+        $f(x) =3x$                                                                                    \\
+        $f(x) = -\dfrac{1}{2}x+5$                                                                     \\
+        $f(x) = \dfrac{x}{4}$
+    \end{tblr}
+\end{exercise}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    0,5 point par ligne correcte.
+
+    \begin{tblr}{hlines,
+            vlines,
+            columns = {2cm,c},
+            rows={1cm, m},
+            column{1} = {3cm, l},
+            cell{1}{1} = {c},
+            rowsep=1ex}
+        Expression analytique     & Type de fonction & Pente           & Croissance & Racines         & Ordonnée à l'origine \\
+        $f(x) = -3$               & C                & $0$             & C          & /               & $-3$                 \\
+        $f(x) =x-4$               & A                & $1$             & $\nearrow$ & $4$             & $-4$                 \\
+        $f(x) = -5-3x$            & A                & $-3$            & $\searrow$ & $-\dfrac{3}{5}$ & $-5$                 \\
+        $f(x) =3x$                & L                & $3$             & $\nearrow$ & $0$             & $0$                  \\
+        $f(x) = -\dfrac{1}{2}x+5$ & A                & $-\dfrac{1}{2}$ & $\searrow$ & $10$            & $5$                  \\
+        $f(x) = \dfrac{x}{4}$     & L                & $\dfrac{1}{4}$  & $\nearrow$ & $0$             & $0$
+    \end{tblr}
+    \newpage
+\end{solution}
+\newpage
+\section*{\fbox{C2} Appliquer une procédure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[points=10]
+    \begin{center}
+        \input{tikz/analyse_fct04.tikz}
+    \end{center}
+    Pour la fonction $f$ ci-dessus, détermine les éléments suivants,
+    \begin{tasks}(2)
+        \task son domaine;
+        \task son ensemble image;
+        \task son ordonnée à l'origine;
+        \task ses racines;
+        \task son tableau de signes;
+        \task son tableau de variation;
+        \task l'image de $-4$;
+        \task le nombre d'antécédents de $2$.
+    \end{tasks}
+\end{exercise}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    1 point par bonne réponse.
+    2 point pour le tableau de signe.
+    2 point pour le tableau de variation.
+    -1 point par erreur dans les tableaux de signes et de variations.
+    \begin{tasks}(2)
+        \task $\textrm{dom }f=[-9,-6[~\cup~[-5,3[$
+        \task $\textrm{im }f=[-2,3]$
+        \task $-2$
+        \task $\lbrace -7;-2;2 \rbrace$
+        \task!
+        \begin{tikzpicture}[baseline=(current bounding box.north)]
+            \tkzTabInit[espcl=1.5]%
+            {$x$/1, $f(x)$/1}%
+            {$-9$,$-7$,$-6$,$-5$,$-2$,$2$,$3$}
+            \tkzTabLine{-,-,z,+,d,h,+,+,z,-,z,+,d}
+        \end{tikzpicture}
+        \task!
+        \begin{tikzpicture}[baseline=(current bounding box.north)]
+            \tkzTabInit[espcl=1.5]%
+            {$x$/1, $f(x)$/1.5}%
+            {$-9$,$-6$,$-5$,$0$,$3$}
+            \tkzTabVar{-/$-2$,+DH/,+/$3$,-/$-2$,+D/}
+        \end{tikzpicture}
+        \task $1$
+        \task $2$
+    \end{tasks}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[points=10]
+    Détermine l'expression analytique des fonctions suivantes grâce aux informations données. Note ton raisonnement et n'oublie pas d'écrire l'expression complète de la fonction.
+    \begin{enumerate}
+        \item
+              $A(4;1)$ et $B(8;9)$ appartiennent à la fonction $f_1$.
+        \item
+              Voici un tableau de valeur de la fonction $f_2$
+              \hfil
+              $\begin{tblr}{hlines, vline{1,2,5},columns={c}}
+                      x    & 1 & 8   & -2  \\
+                      f(x) & 0 & 21 & -9
+                  \end{tblr}$
+                  \newpage
+        \item
+              La racine de la fonction $f_3$ est $-5$ et son graphe est parallèle à celui de la fonction $g(x)=-2x + 10$.
+        \item
+              La fonction $f_4$ est linéaire et passe par $(2;8)$.
+        \item
+              Le graphe de la fonction $f_5$ est le suivant\hfil \input{tikz/m_p_fct01.tikz}
+    \end{enumerate}
+\end{exercise}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    1 point pour $m$ et 1 point pour $p$.\\
+    -0,5 point si l'expression entière n'est pas notée.
+    \raggedcolumns
+    \begin{enumerate}
+        \item $f_1(x) = 4x-7$
+
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $m=\dfrac{9-1}{8-4}=\dfrac{8}{2}=4$
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $\begin{aligned}[t]
+                          A(4;1)\in f_1 \Rightarrow 1 & = 2\cdot 4 + p \\
+                          p                           & = -7
+                      \end{aligned}$
+              \end{multicols}
+        \item $f_2(x) = -3x-3$
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $m=\dfrac{21-0}{8-1}=\dfrac{21}{7}=3$
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $\begin{aligned}[t]
+                          (1;0)\in f_2 \Rightarrow 0 & = 3\cdot 1 + p \\
+                          p                             & = -3
+                      \end{aligned}$
+              \end{multicols}
+        \item $f_3(x) = -2x - 10$
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $G_f \parallel G_g \Rightarrow m = -2$
+                  \columnbreak
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $\begin{aligned}[t]
+                          \text{La racine est }-5\Rightarrow 0 & = -2\cdot (-5) + p \\
+                          p                                    & = -10
+                      \end{aligned}$
+              \end{multicols}
+        \item $f_4(x) = 4x$
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $f_4$ est linéaire $\Rightarrow (0;0) \in f_4$
+                  \medbreak
+                  $m = \dfrac{8-0}{2-0} = \dfrac{8}{2} = 4$
+                  \columnbreak
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $f_4$ est linéaire $\Rightarrow p=0$
+              \end{multicols}
+        \item $f_5 = -\dfrac{1}{4}x + 1 $
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $m=\dfrac{-1}{4}$
+                  \columnbreak
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $p=1$
+              \end{multicols}
+    \end{enumerate}
+    \newpage
+\end{solution}
+\section*{\fbox{C3} Résoudre un problème}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[points=4]
+    Le graphique ci-dessous représente l'évolution du prix de deux congélateurs (AEG et BOSCH) en fonction de leur coût énergétique annuel. 
+    
+    Un congélateur consomme de l'électricité, il y a donc un coût annuel à ajouter au prix d'achat pour le fonctionnement de l'appareil.
+    
+    À l'aide des ces informations, réponds aux questions suivantes en expliquant ton raisonnement.
+    \begin{enumerate}
+        \item Quel est le prix initial des deux congélateurs ?
+        \item Quelle est le coût énergétique annuel (en €/an) de chaque congélateur ?
+        \item En estimant la durée de vie d'un congélateur à dix ans. Quel sera le congélateur le plus avantageux économiquement parlant ?
+    \end{enumerate}
+    \begin{center}
+        \input{tikz/congelateurs.tikz}
+    \end{center}
+\end{exercise}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    \begin{enumerate}
+        \item Le BOSCH coûte 700~€ et l'AEG 500~€. Il faut regarder le prix pour 0 années.
+        \item Le BOSCH coûte 200~€ sur 4 ans. Il coûte donc 50~€/an.\\
+        Le AEG coûte 300~€ sur 4 ans. Il coûte donc 75~€/an.
+        \item Après 10 ans le BOSCH aura coûté $700 + 50\cdot 10 = 1200~€$ et le AEG $500 + 75\cdot 10 = 1250~€$. Le BOSCH est donc économiquement plus avantageux.
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{exercise}[points=4]
+    Une salle de musculation propose 15 séances d'entraînements.
+    Trois tarifs sont proposés:
+    \begin{description}
+        \item[Tarif simple] aucun versement au départ, mais chaque séance coûte $\bm{a}$ euros.
+        \item[Tarif membre] une carte de membre de $\bm{b}$ euros qui permet de payer $\bm{c}$ euros par séance.
+        \item[Tarif abonné] un prix fixe de $\bm{d}$ euros qui permet d'assister à toutes les séances.
+    \end{description}
+    Voici les graphiques qui représentent les tarifs proposés.
+    \begin{center}
+        \input{tikz/tarifs.tikz}
+    \end{center}
+    \begin{enumerate}
+        \item Par lecture graphique, quelles sont les valeurs des coûts $\bm{a}, \bm{b}, \bm{c}$ et $\bm{d}$~?
+        \item Pour éviter les dépense inutiles, quel tarif devrais-tu choisir si tu sais que tu n'assistera qu'à 6 séances ?
+        \item Ton amie est certaine d'assiter à plus de 8 séances. Quel tarif lui conseilles-tu pour dépenser un minimum ?
+    \end{enumerate}
+\end{exercise}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    0,5 point par valeur correcte.\\
+    1 point par tarif correct.
+    \begin{enumerate}
+        \item $\bm{a} = 10$~€\hfill
+              $\bm{b} = 20$~€\hfill
+              $\bm{c} = 5$~€\hfill
+              $\bm{d} = 60$~€
+        \item Le tarif membre
+        \item Le tarif abonné
+    \end{enumerate}
+\end{solution}
+% Affichage des solution
+\newpage
+\printsolutions
+\bigbreak
+\minisec{Points par chapitre}
+Approche graphique de fonction : Question 1, 4 et 7 \dotfill 16 points.\\
+Premier degré : Question 2,3,5 et 6 \dotfill 21 points.
+\minisec{Points par compétence}
+C1 : 9 points - 24\%\\
+C2 : 20 points - 54\%\\
+C3 : 8 points - 22\%
+\end{document}
+
