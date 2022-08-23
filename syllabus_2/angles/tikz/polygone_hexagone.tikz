@@ -1,0 +1,4 @@
+\begin{tikzpicture}[baseline=(current bounding box.east)]
+    \tkzDefPoints{0/1/A, 1/0/B, 2/0/C, 3/2/D, 2.5/4/E, 1/3/F}
+    \tkzDrawPolygon(A,B,C,D,E,F)
+\end{tikzpicture}

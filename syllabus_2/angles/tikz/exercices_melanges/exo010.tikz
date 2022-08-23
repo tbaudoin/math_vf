@@ -1,0 +1,30 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(4,0){B}
+    \tkzDefPoint(32:1){X}
+    \tkzDefShiftPoint[B](180-48:1){Y}
+    \tkzInterLL(A,X)(B,Y)\tkzGetPoint{E}
+    \tkzDefPointBy[symmetry=center E](B)
+    \tkzGetPoint{D}
+    \tkzDefPointBy[symmetry=center E](A)
+    \tkzGetPoint{C}
+    \tkzDefShiftPoint[C](32:1){Z}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawSegments(A,Z D,B)
+
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[below right](C)
+    \tkzLabelPoints[above left](D)
+    \tkzLabelPoints[below left = 0 and -.25](E)
+
+    \begin{scriptsize}
+        \tkzLabelAngle[pos=.7](B,A,E){$32\degres$}
+        \tkzLabelAngle[pos=.5](B,E,C){$80\degres$}
+        \tkzLabelAngle[pos=.7](B,D,C){$48\degres$}
+        \tkzLabelAngle[pos=.4](E,B,A){?}
+        \tkzLabelAngle[pos=.4](C,E,D){?}
+        \tkzLabelAngle[pos=.3](Z,C,D){?}
+    \end{scriptsize}
+
+\end{tikzpicture}

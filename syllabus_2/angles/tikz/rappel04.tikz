@@ -1,0 +1,11 @@
+    \begin{tikzpicture}[baseline=(current bounding box.east), scale=.6]
+    \tkzDefPoint(0,0){B}
+    \tkzDefPoint(80:2){A}
+    \tkzDefPoint(140:2){A'}
+    \tkzDrawLines[add=0 and .3](B,A B,A')
+    \tkzMarkAngle[mark=none, size=0.5](A',B,A)
+    \tkzDrawPoints(A,A',B)
+    \tkzLabelPoints[right](A)
+    \tkzLabelPoints[below](A')
+    \tkzLabelPoints[below](B)
+\end{tikzpicture}

@@ -1,0 +1,721 @@
+\tikzsetfigurename{fractions}
+
+\chapter{Ensemble des rationnels}
+\faIcon{book} Théorie pages 117 à 123
+\section{Ensembles de nombres}
+Les nombres peuvent être regroupés en fonction de leurs caractéristiques. On distingue alors plusieurs \emph{ensembles} de nombres.
+\begin{description}
+  \item[Nombres naturels]
+    Les nombres sans virgule positifs et le nombre zéro. Ces nombres sont également appelés des entiers naturels. Ce sont les nombres tels qu'on les trouve dans la nature.
+
+    \[\mathbb{N} = \lbrace 0;1;2;3;\dots\rbrace\]
+
+  \item[Nombres entiers]
+    Les nombres sans virgule positifs ($\mathbb{N}$) et négatifs. Ces nombres sont également appelés des entiers relatifs. En effet, le signe positif ou négatif indique la position par rapport à zéro. Le symbole $\mathbb{Z}$ vient de Zalh qui veut dire nombre en allemand.
+
+    \[\mathbb{Z} = \lbrace \dots; -3; -2; -1; 0; 1; 2; 3; \dots\rbrace\]
+
+  \item[Nombre rationnels]
+    Les nombres qui peuvent s'exprimer comme le quotient d'un nombre entier (le numérateur) par un nombre entier non nul (le dénominateur). On y retrouve donc tous les entiers ainsi que les nombres à virgule dont les décimales se répètent de façon périodique.
+
+    \[\mathbb{Q}=\lbrace \dots; -\frac{1}{2}; -0;1,333; \frac{18}{5}; \dots \rbrace\]
+
+  \item[Nombres irrationnels]
+    Les nombres à virgules qui ne peuvent pas s'écrire comme un quotient de deux entiers. C'est-à-dire, les nombres à virgules dont les décimales ne se répètent pas de façon périodique.
+    \medbreak
+
+  \item[Nombres réels]
+    Tous les ensembles précédents sont englobés dans l'ensemble des nombres réels. En effet, il existe encore d'autres types de nombres que l'on nomme des nombres imaginaires ou complexes et que tu découvriras plus tard dans ta formation.
+
+    \[\mathbb{R}=\lbrace \dots; -2 ; \dfrac{3}{4} ; \sqrt{2}; \pi; e;\dots\rbrace\]
+
+\end{description}
+%Schéma des ensembles
+\includegraphics[width=\linewidth]{fractions/img/ensembles_de_nombres.pdf}
+
+\bigbreak
+
+\begin{exercise}
+  Donne un exemple de nombre qui a les caractéristiques demandées.
+  \medbreak
+  \begin{enumerate}[itemsep=2em]
+    \item
+          Un nombre qui appartient à $\mathbb{Q}$ mais pas à $\mathbb{Z}$ :
+    \item
+          Un nombre qui appartient à $\mathbb{Q}$ et à $\mathbb{Z}$ :
+    \item
+          Un nombre qui appartient à $\mathbb{Z}$ mais pas à $\mathbb{N}$ :
+    \item
+          Un nombre qui appartient à $\mathbb{R}$ mais pas aux autres ensembles :
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  Place les nombres suivants dans le diagramme.
+
+  \[3 \quad \sqrt{2} \quad \varphi \quad -\frac{3}{4} \quad \quad 0,2 \quad 0,\overline{9} \quad\frac{1}{3} \quad -3 \quad 0 \quad \pi \]
+
+  \includegraphics[width=\linewidth]{fractions/img/ensembles_de_nombres_vide.pdf}
+\end{exercise}
+
+\section{Les nombres rationnels}
+Le moyen conventionnel pour représenter les nombres rationnels est de les écrire sous forme d'une fraction.
+
+\[\dfrac{16}{27}\]
+
+\adf[Une fraction est un]{2}
+
+%Une fraction est une division non effectuée entre deux nombres entiers relatifs n et d ≠ 0. 
+% Le nombre du haut, noté n, s'appelle le numérateur.
+% Le nombre du bas, noté d, s'appelle le dénominateur.
+% Le trait ou barre de fraction ou vinculum signifie que l'on divise le numérateur par le dénominateur.
+
+\exemples
+\begin{enumerate}[cols=4]
+  \item $0,5 =$
+  \item $0,1 =$
+  \item Un quart :
+  \item $0,2 = $
+\end{enumerate}
+
+\begin{exercise}
+  Qui suis-je ?
+  \begin{enumerate}[itemsep=1em]
+    \item Je suis une fraction dont le numérateur est $5$ et le dénominateur vaut le triple du numérateur. Je suis :
+    \item Je suis un nombre rationnel qui peut s'écrire sous la forme d'un quotient de l'opposé de $18$ par $3$. Je suis :
+  \end{enumerate}
+\end{exercise}
+
+\subsection{De la forme fractionnaire à la forme décimale}
+Pour convertir des fractions en nombres décimaux, nous pouvons effectuer la division écrite.
+\exemples
+\begin{enumerate}[cols=2]
+  \item $\dfrac{8}{5}=1,6$\medbreak\opdiv[displayintermediary=all, voperator=bottom]{8}{5}
+        \columnbreak
+
+  \item $\dfrac{1}{3}=0,\overline{3}$\medbreak\opdiv[displayintermediary=all, voperation=top, voperator=bottom, maxdivstep=3]{1}{3}
+\end{enumerate}
+
+\begin{exercise}
+  Donne l'écriture décimale des nombres suivants.
+  \begin{enumerate}[cols=2]
+    \item $\dfrac{9}{5}$
+    \item $\dfrac{254}{8}$
+  \end{enumerate}
+  \vspace{4cm}
+\end{exercise}
+
+\newpage
+\subsection{De la forme décimale à la forme fractionnaire}
+Tous les nombres décimaux sous formés en divisant un nombre entier par une puissance de $10$.
+
+\exemple
+Le nombre $3,2$ est obtenu en divisant $32$ par $10$. Donc, \[3,2 = \dfrac{32}{10}\]
+
+La fraction qui correspond au nombre décimal a donc les caractéristiques suivantes :
+\begin{itemize}[label=\faIcon{angle-right},itemsep=1em]
+  \item son numérateur est composé des mêmes chiffres que le nombre à convertir mais sans la virgule.
+  \item son dénominateur est une puissance de $10$ et le nombre de zéro est déterminé par le nombre de chiffres après la virgule.
+\end{itemize}
+\exemple $6,42 = $
+
+\begin{exercise}
+  Donne l'écriture fractionnaire des nombres suivants.
+  \begin{enumerate}[cols=2]
+    \item $8,562=$
+    \item $0,04=$
+  \end{enumerate}
+\end{exercise}
+
+\section{Fractions équivalentes et fractions irréductibles}
+
+Plusieurs fractions peuvent représenter le même nombre. Par exemple, $\dfrac{1}{2}$ et $\dfrac{2}{4}$ représentent la même valeur.
+\begin{center}
+  \includegraphics[width=.4\linewidth]{fractions/img/fractions_equivalentes.pdf}
+\end{center}
+
+On appelle cela des fractions équivalentes.
+
+\adf[Des fractions sont équivalentes si]{3}
+
+\newpage
+\begin{exercise}
+  Parmi les fractions suivantes, entoure de la même couleur les fractions équivalentes.
+  \begin{enumerate}[label=,cols=4, itemsep=1em]
+    \item  $\dfrac{3}{2}$
+    \item $\dfrac{1}{2}$
+    \item $\dfrac{6}{4}$
+    \item $\dfrac{5}{15}$
+    \item $\dfrac{21}{14}$
+    \item $\dfrac{5}{10}$
+    \item $\dfrac{2}{6}$
+    \item $\dfrac{30}{20}$
+    \item $\dfrac{1}{3}$
+    \item $\dfrac{100}{300}$
+    \item $\dfrac{33}{22}$
+    \item $\dfrac{2}{3}$
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Complète les égalités.
+  \begin{enumerate}[cols=2, itemsep=2cm]
+    \item $\dfrac{3}{6} = \dfrac{\ldots}{12}$
+    \item $\dfrac{5}{\ldots} = \dfrac{50}{80}$
+    \item $\dfrac{9}{15} = \dfrac{27}{\ldots}$
+    \item $\dfrac{81}{9} = \dfrac{\ldots}{1} = \ldots$
+    \item $\dfrac{7}{28} = \dfrac{\ldots}{4} = \dfrac{\ldots}{16}$
+    \item $\dfrac{36}{6} = \dfrac{\ldots}{20}$
+  \end{enumerate}
+\end{exercise}
+
+\adf[Une fraction irréductible est, comme son nom l'indique, une fraction]{3}
+
+Pour rendre une fraction irréductible, tu dois diviser le numérateur et le dénominateur par leur PGCD.
+
+\exemples
+\begin{enumerate}[itemsep = 2 em]
+  \item $\dfrac{150}{45}=$
+  \item $\dfrac{54}{144} =$
+\end{enumerate}
+
+\newpage
+\begin{exercise}
+  Entoure les fractions irréductibles.
+  \begin{enumerate}[label=,cols=4]
+    \item $\dfrac{14}{8}$
+    \item $\dfrac{9}{7}$
+    \item $\dfrac{18}{27}$
+    \item $\dfrac{3}{1}$
+    \item $\dfrac{55}{79}$
+    \item $\dfrac{1}{6}$
+    \item $\dfrac{8}{8}$
+    \item $\dfrac{4}{9}$
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Simplifie au maximum les fractions suivantes.
+  \begin{enumerate}[cols=3, itemsep=2.5 cm]
+    \item $\dfrac{72}{36}=$
+    \item $\dfrac{260}{130}=$
+    \item $\dfrac{3}{9}=$
+    \item $\dfrac{27}{144}=$
+    \item $\dfrac{25}{16}=$
+    \item $\dfrac{666}{126}=$
+  \end{enumerate}
+  \vspace*{1cm}
+\end{exercise}
+
+\section{Signe d'une fraction}
+La fraction est un quotient entre deux nombres entiers. Dès lors, tout comme pour les produits :
+\begin{itemize}
+  \item[\faIcon{plus-square}] Une fraction est positive si son numérateur et son dénominateur ont le même signe.
+    \[\dfrac{-2}{-3} = \dfrac{2}{3}\]
+  \item[\faIcon{minus-square}] Une fraction est négative si son numérateur et son dénominateur ont des signes différents.
+    \[\dfrac{-2}{3} = \dfrac{2}{-3} = -\dfrac{2}{3}\]
+\end{itemize}
+\smallbreak
+\faIcon{exclamation-triangle} Par convention, on ne laissera jamais de nombre négatif au dénominateur lorsqu'on écrit une fraction.
+
+\bigbreak
+\exemples
+\begin{enumerate}
+  \item $\dfrac{6}{7}$ est \blank[scale=2]{positive} car
+  \item $\dfrac{- 3}{4}$ est \blank[scale=2]{négative} car
+\end{enumerate}
+
+\begin{exercise}
+  Détermine le signe des fractions ci-dessous.
+
+  \begin{tblr}%
+    {%
+      rowsep=1ex,
+      width=\linewidth,
+      colspec={X|X|X|X|X|X|X|X|X|X},
+      row{1}={font=\scriptsize, c},
+    }
+    &
+    $\dfrac{- 3}{7}$ &
+    $\dfrac{9}{18}$ &
+    $\dfrac{- 5}{- 15}$ &
+    $\dfrac{5}{- 55}$ &
+    $\dfrac{- ( - 7)}{- 8}$ &
+    $\dfrac{1}{- 5}$ &
+    $\dfrac{47}{3}$ &
+    $\dfrac{- ( - 15)}{- ( - 9)}$ &
+    $- \dfrac{5}{8}$ \\
+    \hline
+    Signes &&&&&&&&&\\
+  \end{tblr}
+\end{exercise}
+
+\section{Fractions particulières}
+\faIcon{book} Théorie page 120
+\begin{exercise}
+  Écris rapidement le nombre entier que représente la lettre présente dans chaque égalité.
+  \begin{enumerate}[cols=3]
+    \item $\dfrac{a}{4}=1 \Rightarrow a = $
+    \item $\dfrac{-14}{a}=-1 \Rightarrow a = $
+    \item $\dfrac{t}{7}=0 \Rightarrow t= $
+    \item $\dfrac{a}{1}=-15 \Rightarrow a= $
+    \item $\dfrac{12}{a}=12 \Rightarrow a= $
+    \item $\dfrac{-6}{x}=1 \Rightarrow x= $
+    \item $\dfrac{1}{y}=-1 \Rightarrow y=$
+    \item $\dfrac{-24}{a}=-24 \Rightarrow a= $
+    \item $\dfrac{a}{2}=-1 \Rightarrow a=$
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Écris le nombre entier que représente la lettre présente dans chaque égalité.
+  \begin{enumerate}[cols=2]
+    \item $\dfrac{-4+a}{6}=0 \Rightarrow a =$
+    \item $\dfrac{a+5}{3}=1 \Rightarrow a =$
+    \item $\dfrac{a-2}{1}=10 \Rightarrow a =$
+    \item $\dfrac{5a}{20}=1 \Rightarrow a =$
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Dans chaque cas, que peux-tu dire des nombres $a$ et $b$ si \dots
+  \begin{enumerate}[itemsep=2em]
+    \item $\dfrac{a}{b}=0 ~? \Rightarrow$ \dotfill
+    \item $\dfrac{a}{b}=1 ~?\Rightarrow$ \dotfill
+    \item $\dfrac{a}{b}=-1 ~?\Rightarrow$ \dotfill
+    \item $\dfrac{a}{b}=a ~?\Rightarrow$ \dotfill
+    \item $\dfrac{a}{b}=b ~?\Rightarrow$ \dotfill
+  \end{enumerate}
+\end{exercise}
+
+\section{Placer une fraction sur une droite graduée}
+
+Lorsque l'on repère un point sur une droite graduée, on le repère grâce à un nombre, appelé dans ce contexte l'abscisse du point.
+
+\exemple Le point $F$ sur la droite graduée suivante a comme abscisse $0,25$ qui sera notée $abs~F = 0,25$ sous sa forme décimale ou $abs~F=\dfrac{1}{4}$ sous sa forme fractionnaire.
+\begin{center}
+  \input{fractions/tikz/droite_graduee_001.tikz}
+\end{center}
+
+\begin{exercise}
+  Donne, en fraction, les abscisses des lettres suivantes~:
+  \begin{enumerate}[cols=3]
+    \item $abs~A=$
+    \item $abs~T=$
+    \item $abs~N=$
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Place, sur la droite graduée, les points dont voici les abscisses.
+  \begin{enumerate}[cols=4]
+    \item $abs~R = \dfrac{1}{2}$
+    \item $abs~P = \dfrac{6}{8}$
+    \item $abs~I = \dfrac{6}{4}$
+    \item $abs~U = \dfrac{8}{8}$
+  \end{enumerate}
+  \begin{center}
+    \input{fractions/tikz/droite_graduee_002.tikz}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  Place, sur cette droite graduée, les points $D$,$E$,$F$ et $G$ si tu sais que leurs abscisses valent respectivement $-3$,$-\dfrac{7}{2}$, $2,5$, $-1,5$.
+  \begin{center}
+    \input{fractions/tikz/droite_graduee_003.tikz}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  Donne une fraction irréductible correspondant aux points nommés.
+  \begin{center}
+    \input{fractions/tikz/droite_graduee_004.tikz}
+  \end{center}
+  \begin{enumerate}[cols=5]
+    \item $abs~A =$
+    \item $abs~B =$
+    \item $abs~C =$
+    \item $abs~D =$
+    \item $abs~E =$
+  \end{enumerate}
+  \begin{center}
+    \input{fractions/tikz/droite_graduee_005.tikz}
+  \end{center}
+  \enlargethispage{2\baselineskip}
+  \begin{enumerate}[cols=3]
+    \item $abs~A =$
+    \item $abs~B =$
+    \item $abs~C = $
+  \end{enumerate}
+\end{exercise}
+
+% FIXME: les schéma doivent être expliqué. À retravailler
+\section{Comparaison de fractions}
+Pour comparer des fractions, nous allons puiser dans quatre méthodes différentes qui sont résumées par les schémas suivants :
+\begin{center}
+  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{fractions/img/comparaison1.pdf}}
+
+  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{fractions/img/comparaison2.pdf}}
+
+  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{fractions/img/comparaison3.pdf}}
+\end{center}
+
+\begin{exercise}
+  Complète par $>$, $<$ ou $=$.
+  \begin{enumerate}[cols=4]
+    \item $\dfrac{4}{4}~\ldots~\dfrac{3}{3}$
+    \item $0,2~\ldots~\dfrac{1}{2}$
+    \item $\dfrac{3}{2}~\ldots~\dfrac{3}{4}$
+    \item $\dfrac{11}{7}~\ldots~\dfrac{9}{7}$
+    \item $\dfrac{2}{7}~\ldots~\dfrac{1}{5}$
+    \item $4~\ldots~\dfrac{34}{8}$
+    \item $- \dfrac{8}{3}~\ldots~ - \dfrac{9}{3}$
+    \item $\dfrac{- 9}{12}~\ldots~\dfrac{- 12}{12}$
+    \item $\dfrac{- 2}{3}~\ldots~\dfrac{- 2}{- 3}$
+    \item $- \dfrac{7}{8}~\ldots~ - 0,8$
+    \item $\dfrac{7}{8}~\ldots~\dfrac{16}{18}$
+    \item $- 3,2~\ldots~\dfrac{- 16}{5}$
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Classe les fractions suivantes par ordre croissant.
+  \begin{enumerate}[label=, cols=5]
+    \item $\dfrac{1}{2}$
+    \item $\dfrac{38}{100}$
+    \item $\dfrac{16}{40}$
+    \item $\dfrac{3}{5}$
+    \item $\dfrac{11}{20}$
+  \end{enumerate}
+  Classement~:
+\end{exercise}
+
+\section{Encadrement de fractions}
+
+Encadrer une fraction à un rang donné, c'est déterminer entre quels décimaux successifs la fraction se trouve.
+
+\exemples
+\begin{itemize}[label=$\bullet$]
+  \item Avec une fraction positive : $\dfrac{17}{6} = \numprint{2,8333333}$
+
+        \begin{tblr}{lrclr}
+          À l'unité :& $2$ & $<\dfrac{17}{6}<$ & $3$& \input{fractions/tikz/droite_graduee_006.tikz}\\
+          Au dixième :& $2,8$ & $<\dfrac{17}{6}<$ & $2,9$&\input{fractions/tikz/droite_graduee_007.tikz}\\
+          Au centième :& $2,83$ & $<\dfrac{17}{6}<$ & $2,84$&\input{fractions/tikz/droite_graduee_008.tikz}
+        \end{tblr}
+
+  \item Avec une fraction négative : $\dfrac{-3}{17} = - \numprint{0,17647058}$
+
+        \begin{tblr}{lrclr}
+          À l'unité :& $-1$ & $<\dfrac{-3}{17}<$ & $0$ &\input{fractions/tikz/droite_graduee_009.tikz} \\
+          Au dixième :& $-0,2$ & $<\dfrac{-3}{17}<$ & $-0,1$&\input{fractions/tikz/droite_graduee_010.tikz}\\
+          Au centième :& $-0,18$ & $<\dfrac{-3}{17}<$ & $-0,17$&\input{fractions/tikz/droite_graduee_011.tikz}
+        \end{tblr}
+\end{itemize}
+
+\newpage
+\begin{exercise}
+  Sans utiliser la calculatrice, encadre les fractions suivantes \dots
+  \begin{tasks}
+    \task $\dfrac{28}{3}$ à l'unité près~:
+    \task $\dfrac{8}{200}$ au dixième près~:
+    \task $\dfrac{- 79}{8}$ à l'unité près~:
+    \task $\dfrac{\numprint{2159}}{\numprint{10000}}$ au millième près~:
+  \end{tasks}
+\end{exercise}
+
+\bigbreak
+\begin{exercise}
+  Combien faut-il au minimum de boîtes de $6$ pour ranger les $83$ {\oe}ufs de la pâtisserie~? Est-ce une valeur approchée par excès ou par défaut ?
+\end{exercise}
+\vspace*{8cm}
+
+\begin{exercise}
+  En utilisant la calculatrice, encadre les fractions suivantes\dots
+  \begin{tasks}
+    \task $\dfrac{82}{7}$ au centième près :
+    \task $\dfrac{-28}{3}$ au dixième près :
+    \task $-\dfrac{11}{18}$ au centième près :
+  \end{tasks}
+\end{exercise}
+
+\newpage
+\section{Exercices mélangés}
+
+\begin{exercise}
+  Simplifie au maximum ces fractions.
+
+  Série A
+  \begin{enumerate}[cols=3]
+    \item $\dfrac{9}{6}$
+    \item $\dfrac{12}{48}$
+    \item $\dfrac{-8}{10}$
+    \item $\dfrac{8}{-8}$
+    \item $\dfrac{0}{7}$
+    \item $\dfrac{-50}{-70}$
+    \item $\dfrac{35}{28}$
+    \item $\dfrac{36}{1}$
+    \item $-\dfrac{4}{20}$
+  \end{enumerate}
+
+  Série B
+  \begin{enumerate}[cols=3]
+    \item $\dfrac{25}{100}$
+    \item $\dfrac{1}{62}$
+    \item $-\dfrac{-28}{10}$
+    \item $\dfrac{7}{-1}$
+    \item $\dfrac{75}{5}$
+    \item $-\dfrac{56}{-72}$
+    \item $\dfrac{90}{12}$
+    \item $\dfrac{-24}{58}$
+    \item $-\dfrac{121}{22}$
+  \end{enumerate}
+
+  Série C
+  \begin{enumerate}[cols=3]
+    \item $\dfrac{175}{525}$
+    \item $\dfrac{- 128}{16}$
+    \item $\dfrac{78}{144}$
+    \item $\dfrac{- 88}{- 121}$
+    \item $\dfrac{90}{180}$
+    \item $\dfrac{- 13}{- 9}$
+    \item $\dfrac{3 + 7}{15}$
+    \item $\dfrac{- ( - 93)}{- 63}$
+    \item $\dfrac{( - 3) + 15}{48}$
+  \end{enumerate}
+\end{exercise}
+\begin{solution}
+  Série A
+  \begin{enumerate}[cols=3]
+    \item \(\dfrac{9}{6}\)
+    \item \(\dfrac{1}{4}\)
+    \item \(-\dfrac{4}{5}\)
+    \item \(-1\)
+    \item \(0\)
+    \item \(-\dfrac{5}{7}\)
+    \item \(\dfrac{5}{4}\)
+    \item \(36\)
+    \item \(-\dfrac{1}{5}\)
+  \end{enumerate}
+
+  Série B
+  \begin{enumerate}
+    \item \(\dfrac{25}{100}\)
+    \item \(\dfrac{1}{62}\)
+    \item \(\dfrac{14}{5}\)
+    \item \(-7\)
+    \item \(15\)
+    \item \(\dfrac{7}{9}\)
+    \item \(\dfrac{15}{2}\)
+    \item \(-\dfrac{12}{28}\)
+    \item \(-\dfrac{11}{2}\)
+  \end{enumerate}
+
+  Série C
+  \begin{enumerate}
+    \item \(\dfrac{1}{3}\)
+    \item \(-8\)
+    \item \(\dfrac{13}{24}\)
+    \item \(\dfrac{8}{11}\)
+    \item \(\dfrac{1}{2}\)
+    \item \(\dfrac{13}{9}\)
+    \item \(\dfrac{2}{3}\)
+    \item \(-\dfrac{31}{21}\)
+    \item \(\dfrac{1}{4}\)
+  \end{enumerate}
+\end{solution}
+
+\begin{exercise}
+  Transforme en douzièmes.
+  \begin{enumerate}[cols=3]
+    \item $\dfrac{9}{6}$
+    \item $\dfrac{8}{3}$
+    \item $\dfrac{9}{9}$
+    \item $\dfrac{14}{24}$
+    \item $\dfrac{27}{9}$
+    \item $\dfrac{72}{32}$
+  \end{enumerate}
+\end{exercise}
+\begin{solution}
+  \begin{enumerate}[cols=3]
+    \item $\dfrac{18}{12}$
+    \item $\dfrac{32}{12}$
+    \item $\dfrac{12}{12}$
+    \item $\dfrac{7}{12}$
+    \item $\dfrac{36}{12}$
+    \item $\dfrac{27}{12}$
+  \end{enumerate}
+\end{solution}
+
+\newpage
+\begin{exercise}
+  Quel nombre entier représente $a$ dans les égalités suivantes ?
+  \begin{enumerate}[cols=3]
+    \item $\dfrac{a}{5}=0$
+    \item $\dfrac{a+8}{10}=1$
+    \item $\dfrac{a}{1}=7$
+    \item $\dfrac{a+5}{2}=0$
+    \item $\dfrac{a}{4}=1$
+    \item $\dfrac{a}{1}=-10$
+    \item $\dfrac{a-4}{7}=1$
+    \item $\dfrac{a}{7}=1$
+    \item $\dfrac{25-a}{3}=0 $
+  \end{enumerate}
+\end{exercise}
+\begin{solution}
+  \begin{enumerate}[cols=3]
+    \item \(a=0\)
+    \item \(a=2\)
+    \item \(a=7\)
+    \item \(a=-5\)
+    \item \(a=4\)
+    \item \(a=-10\)
+    \item \(a=11\)
+    \item \(a=7\)
+    \item \(a=25\)
+    \end{enumerate}
+\end{solution}
+
+% FIXME: mille trois millième ambigu
+\begin{exercise}
+  Écris sous forme de fraction.
+  \begin{enumerate}[cols=3]
+    \item Trois demis
+    \item Six quart
+    \item Mille trois millièmes
+    \item Six neuvièmes
+    \item $1,68$
+    \item $\numprint{0,003}$
+  \end{enumerate}
+\end{exercise}
+% FIXME: probleme avec la compilation.
+% \begin{solution}
+%   \begin{enumerate}
+%     \item $\dfrac{3}{2$
+%     \item $\dfrac{6}{4}$
+%     \item $\dfrac{1000}{3000}$
+%     \item $\dfrac{6}{9}$
+%     \item $\dfrac{168}{100}$
+%     \item $\dfrac{3}{1000}$
+%   \end{enumerate}
+% \end{solution}
+
+\begin{exercise}
+  Trouve la fraction équivalente à $\dfrac{21}{27}$ et dont le numérateur vaut $14$.
+\end{exercise}
+\begin{solution}
+  $\dfrac{21}{27} = \dfrac{7}{9} = \dfrac{14}{18}$ 
+\end{solution}
+
+\begin{exercise}
+  Trouve la fraction égale à $1,25$ et dont le dénominateur vaut $12$.
+\end{exercise}
+\begin{solution}
+  $1,25=\dfrac{125}{100}=\dfrac{5}{4}=\dfrac{15}{12}$
+\end{solution}
+
+\begin{exercise}
+  Encadre les fractions suivantes au rang demandé. La calculatrice est autorisée.
+  \begin{enumerate}[cols=2]
+    \item $\dfrac{3}{10}$ à l'unité près
+    \item $- \dfrac{9}{7}$ au dixième près
+    \item $\dfrac{394}{87}$ au millième près
+    \item $\dfrac{- 94}{189}$ au centième près
+    \item $\dfrac{18}{8}$ à l'unité près
+    \item $-\dfrac{17}{3}$ au millième près
+  \end{enumerate}
+\end{exercise}
+\begin{solution}
+  \begin{enumerate}
+    \item $0<\dfrac{3}{10}<1$
+    \item $-1,29<-\dfrac{9}{7}<-1,28$
+    \item $4,528 < \dfrac{394}{87} < 4,529$
+    \item $-0,50<\dfrac{-94}{189}<-0,49$
+    \item $2<\dfrac{18}{8}<3$
+    \item $-5,667<\dfrac{17}{3}<-5,666$
+  \end{enumerate}
+\end{solution}
+
+\begin{exercise}
+  Quelle est la plus petite fraction équivalente à $\dfrac{7}{21}$ dont le dénominateur est supérieur à $30$?
+\end{exercise}
+\begin{solution}
+  $\dfrac{7}{21} = \dfrac{1}{3} = \dfrac{11}{33}$
+\end{solution}
+
+\begin{exercise}
+  Dans l'égalité $\dfrac{27}{9} = \dfrac{a}{21}$, que vaut $a?$
+\end{exercise}
+\begin{solution}
+  $a=3\cdot 21=63$
+\end{solution}
+
+\begin{exercise}
+  Explique pourquoi $\dfrac{27}{18}$ n'est pas une fraction
+  irréductible.
+\end{exercise}
+\begin{solution}
+  Car $27$ et $18$ ne sont pas premiers entre eux, ils sont divisibles par $9$.
+\end{solution}
+
+\pagebreak
+
+\begin{exercise}
+  Trouve la valeur de $a$ dans les égalités suivantes.
+  \begin{enumerate}[cols=3]
+    \item $\dfrac{a}{7} = \dfrac{98}{49}$
+    \item $\dfrac{- 9}{8} = \dfrac{- 18}{a}$
+    \item $\dfrac{- 8}{10} = \dfrac{a}{15}$
+          %\item $\dfrac{16}{20} = \dfrac{100}{a}$
+    \item $\dfrac{a}{42} = \dfrac{48}{63}$
+    \item $\dfrac{- 7}{21} = \dfrac{a}{- 9}$
+    \item $\dfrac{a}{-5}=\dfrac{-15}{25}$
+    \item $\dfrac{18}{a}=2$
+    \item $\dfrac{a+2}{4}=0$
+    \item $\dfrac{-5}{a-2}=\dfrac{10}{-6}$
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Classe les fractions suivantes par ordre croissant.
+
+  $\dfrac{-14}{17}$\hfill
+  $\dfrac{17}{13}$\hfill
+  $0$\hfill
+  $\dfrac{14}{18}$\hfill
+  $\dfrac{-13}{18}$\hfill
+  $\dfrac{-17}{14}$\hfill
+  $\dfrac{14}{17}$\hfill
+  $1$
+\end{exercise}
+
+\begin{exercise}
+  Quelle est la fraction représentée par la partie hachurée ?
+  \begin{tasks}(2)
+    \task \includegraphics[valign=t,width=.3\linewidth]{fractions/img/img_01.png}
+    \task \includegraphics[valign=t,width=.3\linewidth]{fractions/img/img_02.png}
+  \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+  Hamza décide d'aggrandir une photo de sa classe qu'il apprécie, pour l'afficher. Les dimensions de base de la photo sont données comme ceci : $\dfrac{9}{16}$ (pour rappel, $\dfrac{9}{16}$ désigne le rapport entre la longueur et la largeur de la photo). \\
+  Le marchand lui propose plusieurs autres dimensions ci-dessous. Seulement, une erreur s'y trouve : une des dimensions proposées ne conserve pas le rapport des mesures de base. \\
+  Quelle est-elle? Justifie ta réponse.
+  \begin{align*}
+    \dfrac{18}{32} &  & \dfrac{81}{128} &  & \dfrac{63}{112}
+  \end{align*}
+\end{exercise}
+
+\begin{exercise}
+  Trace une droite graduée et places-y les valeurs suivantes.\\
+  Échelle : 1 unité $=\SI{3}{cm}$.
+  \begin{enumerate}[cols=3]
+    \item  $\dfrac{- 5}{6}$
+    \item  $\dfrac{3}{6}$
+    \item  $\dfrac{10}{6}$
+    \item  $\dfrac{100}{50}$
+    \item  $\dfrac{- 1}{3}$
+    \item  $\dfrac{5}{3}$
+  \end{enumerate}
+\end{exercise}

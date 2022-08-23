@@ -1,0 +1,580 @@
+\tikzsetfigurename{transformation-du-plan}
+\chapter{Les transformations du plan}
+% \section{Rappel du vocabulaire et des notations géométriques}
+% \subsection{Un point}
+% Un point se note à l'aide \emph{d'une lettre majuscule}.
+
+% \illu
+
+% \subsection{Une droite}
+% Une droite se note à l'aide soit \emph{d'une lettre minuscule}, soit
+% \emph{de deux lettres majuscules}. Dans ce cas-là, nous nommons la
+% droite par deux points de passage de cette droite.
+
+% \illu
+
+% \subsection{Une demi-droite}
+
+% Une demi-droite se note à l'aide \emph{de deux lettres majuscules}.
+% Nous nommons alors la demi-droite à l'aide de son \emph{origine}
+% (marquée d'un crochet) et \emph{d'un point de passage} de cette
+% demi-droite.
+
+% \illu
+
+% \subsection{Un segment de droite}
+
+% Un segment de droite se note à l'aide de \emph{deux lettres
+%     majuscules}. Nous nommons le segment à l'aide des \emph{deux
+%     extrémités du segment}, marquées par des crochets.
+
+% La longueur du segment $[BP]$ s'écrit \dotfill
+
+% \illu
+
+% \subsection{Droites parallèles}
+
+% Deux droites parallèles sont des droites qui n'ont aucun point commun,
+% autrement dit qui n'auront aucun point d'intersection. Cela se note à
+% l'aide du symbole \dotfill
+
+% \illu
+
+% \subsection{Droites sécantes}
+
+% Deux droites sécantes sont des droites qui ont un point commun,
+% autrement dit qui ont un point d'intersection. Si deux droites ne sont
+% pas parallèles, alors elles sont sécantes. Cela se note à l'aide du
+% symbole \dotfill
+
+% \illu
+
+% \subsection{Droites perpendiculaires}
+
+% Deux droites perpendiculaires sont deux droites sécantes qui se coupent
+% en formant quatre angles droits (= $90\degres$). Cela se note à
+% l'aide du symbole \dotfillbox[3cm].
+
+% \illu
+
+% \subsection{Notion d'appartenance}
+
+% Un point appartient à une droite (ou à un segment, à une demi-droite,
+% \dots) s'il fait partie de cette droite.
+
+% Cela se note à l'aide des symboles $\in$ (appartient à) et $\notin$
+% (n'appartient pas à).
+
+% \illu
+
+% \newpage
+\begin{landscape}
+
+    \section{Découverte des transformations du plan}
+    Quel est le verbe utilisé pour décrire le mouvement qui envoie la
+    voiture \no 1 sur les autres voitures ?
+
+    \begin{minipage}{.25\linewidth}
+        \includegraphics[width=\linewidth]{transformation-du-plan/img/voiture.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.7\linewidth}
+        \begin{tblr}{hlines,vlines,columns={c},colspec={cX},rowsep=4pt}
+            Figure \no \dots\ sur figure \no \dots\ & Verbe de mouvement \\
+            \no 1 sur \no 2                       &                    \\
+            \no 1 sur \no 3                       &                    \\
+            \no 1 sur \no 4                       &                    \\
+            \no 1 sur \no 5                       &                    \\
+            \no 1 sur \no 6                       &                    \\
+            \no 1 sur \no 7                       &                    \\
+            \no 1 sur \no 8                       &                    \\
+            \no 1 sur \no 9                       &                    \\
+            \no 1 sur \no 10                      &                    \\
+        \end{tblr}
+    \end{minipage}
+
+    Parmi les exemples précédents, quels sont les numéros des voitures qui
+    ont subi une transformation du plan qui conserve la forme et les
+    mesures~?
+
+    \adf{2}
+
+    Ces transformations du plan qui conservent les mesures (longueurs de
+    côtés, amplitudes des angles, nature de la figure, alignement des
+    points, \ldots) s'appellent des \emph{isométries.} Il en existe quatre
+    différentes.
+
+\end{landscape}
+
+\newpage
+\begin{exercise}
+    Barre, parmi les transformations du plan suivantes, celles qui ne
+    représentent pas une isométrie par rapport à la figure de base.
+
+    \includegraphics[width=\linewidth]{transformation-du-plan/img/isometrie_v2.png}
+\end{exercise}
+
+\begin{landscape}
+    \section{Les quatre isométries}
+    \begin{tabularx}{\linewidth}{|c|*{4}{>{\centering}p{3cm}|}Y|}
+        \hline
+        Images                                                                                & Nom & Verbe de mouvement & Éléments caractéristiques & Notation & Lecture \\
+        \hline
+        \centering\includegraphics[height=2.6cm]{transformation-du-plan/img/maggie_trans.eps} &     &                    &                           &          &         \\
+        \hline
+        \includegraphics[height=2.6cm]{transformation-du-plan/img/maggie_sc.eps}              &     &                    &                           &          &         \\
+        \hline
+        \includegraphics[height=2.6cm]{transformation-du-plan/img/maggie_so.eps}              &     &                    &                           &          &         \\
+        \hline
+        \includegraphics[height=2.6cm]{transformation-du-plan/img/maggie_rot.eps}             &     &                    &                           &          &         \\
+        \hline
+    \end{tabularx}
+
+    \emph{Remarque : la symétrie centrale est une rotation de $180\degres$}
+\end{landscape}
+
+\begin{exercise}
+    Voici différents mouvements effectués dans l'espace. À quelle
+    transformation du plan peux-tu les associer~?
+    \begin{enumerate}[itemsep=1.5em]
+        \item Un train qui avance : \dotfill
+        \item Un tiroir qu'on ouvre : \dotfill
+        \item Un cheval de bois sur un carrousel : \dotfill
+        \item Un ascenseur qui monte : \dotfill
+        \item Le coffre d'une voiture qui s'ouvre : \dotfill
+        \item L'aiguille des minutes après une demi-heure : \dotfill
+        \item L'aiguille des minutes après un quart d'heure : \dotfill
+        \item Un reflet dans un miroir : \dotfill
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Détermine l'isométrie qui applique chacune des figures sur son image et nomme son élément caractéristique.
+
+    \includegraphics[width=\linewidth]{transformation-du-plan/img/isometrie.png}
+\end{exercise}
+
+
+
+\newpage
+\section{Constructions}
+% est-ce encore utile de donner de la théorie alors que tout est dans le 
+% manuel de théorie ?
+\subsection{La translation}
+Une translation est une transformation du plan qui déplace tout point~:
+
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item dans une \emph{même direction},
+    \item dans un \emph{même sens},
+    \item et de \emph{même distance} que la longueur du vecteur.
+\end{itemize}
+L'élément caractéristique d'une translation est un segment orienté (symbolisé
+par une flèche) appelée \emph{vecteur}.
+
+Exemple de notation : \(t_{\overrightarrow{GH}}(A,B,C,D,E) = A',B',C',D',E'\)
+
+
+% Pour construire l'image d'une figure par une translation, refère-toi aux pages 81 et 82 de ton manuel de théorie.
+
+\begin{exercise}
+    À l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images
+    soient clairement dessinées.
+    \begin{tasks}[after-item-skip=2cm](2)
+        \task $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/t01.tikz}
+            \tikzspace
+        \end{center}
+        \task $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/t02.tikz}
+            \tikzspace
+        \end{center}
+        \task $t_{\overrightarrow{BA}}(ABCD)=A'B'C'D'$
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/t03.tikz}
+            \tikzspace
+        \end{center}
+        \task $t_{\overrightarrow{FG}}(ABCDE)=A'B'C'D'E'$
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/t04.tikz}
+            \tikzspace
+        \end{center}
+    \end{tasks}
+\end{exercise}
+
+\subsection{La symétrie orthogonale}
+Une symétrie orthogonale est une transformation du plan qui envoie tout
+point~:
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item de \emph{l'autre côté} de l'axe,
+    \item sur la droite \emph{perpendiculaire} à l'axe passant par ce point,
+    \item et à une \emph{même distance} de l'axe.
+\end{itemize}
+L'élément caractéristique d'une symétrie orthogonale est une droite
+appelée \emph{axe.}
+
+Exemple de notation : \(S_{a}\ (A,B,C,D,E) = \ A',B',C',D',E'\)
+
+% Pour construire l'image d'une figure par une symétrie orthogonale, refère-toi à la page 80 de ton manuel de théorie.
+
+\begin{exercise}
+    À l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images
+    soient clairement dessinées.
+    \begin{tasks}[after-item-skip=2cm](2)
+        \task \(S_{f}(ABC)=A'B'C'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/so01.tikz}
+            \tikzspace
+        \end{center}
+        \task \(S_{a}(CDEF)=C'D'E'F'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/so03.tikz}
+            \tikzspace
+        \end{center}
+        \task \(S_{AC}(ABC)=A'B'C'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/so02.tikz}
+            \tikzspace
+        \end{center}
+        \task \(S_{BD}(fig.~1)=fig.~1'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/so04.tikz}
+            \tikzspace
+        \end{center}
+    \end{tasks}
+\end{exercise}
+
+\subsection{La symétrie centrale}
+Une symétrie centrale est une transformation du plan qui déplace tout
+point~:
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item de \emph{l'autre côté} du centre,
+    \item sur la droite passant par le point et le centre,
+    \item et à une \emph{même distance} du centre.
+\end{itemize}
+
+L'élément caractéristique d'une symétrie centrale est un point appelé
+\emph{centre de symétrie}.
+
+Exemple de notation :\(S_{O}\ (A,B,C,D,E) = \ A',B',C',D',E'\)
+
+% Pour construire l'image d'une figure par une symétrie centrale, refère-toi à la page 81 de ton manuel de théorie.
+\begin{exercise}
+    A l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images
+    soient clairement dessinées.
+    \begin{tasks}[after-item-skip=2cm](2)
+        \task \(S_{D}(ABC)=A'B'C'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/sc01.tikz}
+            \tikzspace
+        \end{center}
+        \task \(S_{C}(ABC)=A'B'C'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/sc02.tikz}
+            \tikzspace
+        \end{center}
+        \task \(S_{E}(ABCD)=A'B'C'D'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/sc03.tikz}
+            \tikzspace
+        \end{center}
+        \task \(S_{F}(fig.~2)=fig.~2'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/sc04.tikz}
+            \tikzspace
+        \end{center}
+    \end{tasks}
+\end{exercise}
+
+\subsection{La rotation}
+Une rotation est une transformation du plan qui déplace tout point~:
+
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item à la \emph{même distance} par rapport au centre
+    \item selon \emph{une amplitude} donnée
+    \item selon \emph{un sens} donné
+\end{itemize}
+
+Les éléments caractéristiques d'une rotation sont 
+\emph{un centre, une amplitude} et \emph{un sens}.
+
+Le sens est donné par le signe de l'amplitude. S'il est positif, on tourne dans 
+le sens anti-horloger. S'il est négatif, on tourne dans le sens horloger.
+\begin{center}
+    \begin{tikzpicture}[>=latex, -latex]
+        \tkzDefPoints{0/0/O}
+        \tkzDefPoint(100:1){A}
+        \tkzDefPoint(80:1){B}
+        \tkzDrawArc[->, black](O,A)(B)
+        \tkzLabelPoint[anchor=center](O){$+$}
+        \tkzDefPoint(90:1){Label}
+        \tkzLabelPoint[above](Label){sens anti-horloger}
+    \end{tikzpicture}
+    \hfil
+    \begin{tikzpicture}[>=latex, -latex]
+        \tkzDefPoints{0/0/O}
+        \tkzDefPoint(100:1){A}
+        \tkzDefPoint(80:1){B}
+        \tkzDrawArc[<-, black](O,A)(B)
+        \tkzLabelPoint[anchor=center](O){$-$}
+        \tkzDefPoint(90:1){Label}
+        \tkzLabelPoint[above](Label){sens horloger}
+    \end{tikzpicture}
+\end{center}
+
+Exemple de notation : \(r_{A;- 45\degres}\left(\lbrack BC \rbrack\right) = \lbrack B'C'\rbrack \)
+
+\newpage
+% Pour construire l'image d'une figure par une rotation, refère-toi à la page 105 de ton manuel de théorie.
+\begin{exercise}
+    A l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images
+    soient clairement dessinées.
+    \begin{tasks}[after-item-skip=2cm](2)
+        \task \(r_{D,-60\degres}(ABC)=A'B'C'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/r01.tikz}
+            \tikzspace
+        \end{center}
+        \task \(r_{A,45\degres}(ABC)=A'B'C'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/r02.tikz}
+            \tikzspace
+        \end{center}
+        \task \(r_{E,-120\degres}(ABCD)=A'B'C'D'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/r03.tikz}
+            \tikzspace
+        \end{center}
+        \task \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/r04.tikz}
+            \tikzspace
+        \end{center}
+    \end{tasks}
+\end{exercise}
+\raggedbottom
+
+\section{Effets des transformations du plan sur les coordonnées}
+\subsection{Rappel sur le repérage dans un plan}
+\begin{center}
+    \input{transformation-du-plan/tikz/repere.tikz}
+\end{center}
+\begin{exercise}
+    \begin{enumerate}
+        \item Quelle est l'abscisse du point $A$ ?
+        \item Quelle est l'ordonnée du point $B$ ?
+    \end{enumerate}
+\end{exercise}
+\begin{exercise}
+    Place les points suivants sur le repère ci-dessus.
+    \begin{enumerate}
+        \item $C(-4;5)$
+        \item $D$ tel que son abscisse vaut celle de $B$ et son ordonnée est l'opposée de celle de $A$.
+        \item $E$ tel que son abscisse est négative et son ordonnée positive.
+        \item $F$ tel qu'il soit l'image du point $A$ par une symétrie orthogonale d'axe $x$.
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\subsection{Effets des transformations du plan}
+Lors d'un jeu télévisé, des aventuriers débarquent sur une île en bateau.
+Le présentateur les conduit au point de départ ($D$). À cet endroit précis il
+distribue à chaque participant une carte ainsi qu'une consigne précise qui doit
+les mener jusqu'à l'endroit où ils devront touver un collier afin de ne pas
+être éliminés.
+
+Seuls les trois premiers qui reviendront à l'endroit de départ avec le collier
+pourront disputer l'épreuve ultime.
+
+Voici les consignes que reçoivent les participants.
+
+\begin{scriptsize}
+    \begin{tblr}%
+        {
+            hlines,
+            vlines,
+            columns={c,m},
+            colspec={XXXXXX},
+            rowsep=4pt
+        }
+        Participants & Consignes reçues au départ de $D$ & Point d'arrivée au départ de $D$ & Consignes reçues au départ de $S$ & Point d'arrivée au départ de $S$ & Point d'arrivée au départ de $(x;y)$ \\
+        Laurent      & $S_y(D)=L$                        &                                                 & $S_y(S)=L'$                       &                                                 &                                                    \\
+        Nathan       & $S_x(D)=N$                        &                                                 & $S_x(S)=N'$                       &                                                 &                                                    \\
+        Mickael      & $S_O(D)=M$                        &                                                 & $S_O(S)=M'$                       &                                                 &                                                    \\
+        Élodie       & $t_{\overrightarrow{OP}}(D)=E$    &                                                 & $t_{\overrightarrow{OP}}(S)=E'$   &                                                 &                                                    \\
+        Albert       & $r_{O;-90\degres}(D)=A$           &                                                 & $r_{O;-90\degres}(S)=A'$          &                                                 &                                                    \\
+        Frédéric     & $r_{O;90\degres}(D)=F$            &                                                 & $r_{O;90\degres}(S)=F'$           &                                                 &                                                    \\
+    \end{tblr}
+\end{scriptsize}
+
+\begin{itemize}
+    \item Trace sur la carte ci-dessous l'endroit où les aventuriers sont
+          censés retrouver leur collier d'immunité et complète le tableau.
+    \item Trace sur la carte l'endroit où les aventuriers auraient dû se
+          se retrouver si le point de départ avait été le point $S$ et complète le
+          tableau
+    \item Retrouve les coordonnées de chaque participant si les coordonnées de
+          départ étaient $(x;y)$ et complète le tableau.
+\end{itemize}
+\begin{center}
+    \includegraphics[width=.9\linewidth]{transformation-du-plan/img/map.jpg}
+\end{center}
+
+\section{Exercices mélangés}
+\begin{exercise}
+    Identifie la transformation du plan qui applique la figure 1 sur les autres triangle.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{transformation-du-plan/img/ex01.png}
+    \end{center}
+    \begin{enumerate}[cols=2]
+        \item Triangle 1 sur triangle 2
+        \item Triangle 1 sur triangle 3
+        \item Triangle 1 sur triangle 4
+        \item Triangle 1 sur triangle 5
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    À partir du rectangle $ADLI$, réponds aux questions ci-dessous.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{transformation-du-plan/img/ex02.png}
+    \end{center}
+    \begin{enumerate}
+        \item Quelle est l'image de $A$ par la symétrie d'axe $BJ$ ?
+        \item Quelle est l'image de $F$ par la symétrie de centre $G$ ?
+        \item Si $G$ est l'image de $I$ par une translation alors quelle est l'image de $K$ par cette même translation ?
+        \item Quelle est l'image de $K$ par la symétrie d'axe $IC$ ?
+        \item Quelle est l'image de $K$ si il subit la translation qui applique $G$ sur $B$ ?
+        \item Quel est le centre de la symétrie centrale qui applique $J$ sur $D$.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    À partir de la figure ci-dessous, complète les égalités, en sachant que $M$ représente le milieu de $\lbrack BC \rbrack$.
+
+    \begin{minipage}{.3\linewidth}
+        \includegraphics[width=\linewidth]{transformation-du-plan/img/ex03.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.6\linewidth}
+        \begin{enumerate}[cols=2]
+            \item $S_{M}(ABC)=?$
+            \item $S_{AC}(B) = ?$
+            \item $t_{\overrightarrow{EF}}(\left\lbrack JK\rbrack)\right) = ?$
+            \item $S_{BK}(G) = ? $
+            \item $t_{\overrightarrow{HB}}(?) =  ABC$
+            \item $S_{?}(C) = H$
+            \item $S_{FB}(?)=  HGF$
+            \item $S_{M}(\left\lbrack EG \right\rbrack) = ? $
+        \end{enumerate}
+    \end{minipage}
+\end{exercise}
+
+
+\begin{exercise}
+    Cette figure schématise un système d'engrenages de plusieurs roues dentées. Le nombre de dents est indiqué à côté de chaque roue. Deux disques concentriques représentent des roues solidaires du même axe.
+
+    Si $A$ tourne dans le sens négatif, dans quel sens tourne la roue $B$
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{transformation-du-plan/img/ex04.png}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Sans utiliser de compas, construis l'image de chaque triangle par la rotation de centre $A$ et de $+ 90\degres$.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{transformation-du-plan/img/exo05.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Construis l'image des figures suivantes par la symétrie orthogonale d'axe~$d$.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{transformation-du-plan/img/quadrillage_ortho.png}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Construis l'image des figures suivantes par la translation de vecteur~$\overrightarrow{AB}$.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{transformation-du-plan/img/quadrillage_trans.png}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Construis l'image des figures suivantes par la rotation de centre $O$ et d'amplitude $75\degres$.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{transformation-du-plan/img/construction_rot.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Réalise les constructions demandées. Veille à ton soin, ta précision et ta lisibilité.
+    \begin{tasks}[after-item-skip=2cm](2)
+        \task \(S_{C}(ABCD)=A'B'C'D'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/tdp01.tikz}
+            \tikzspace
+        \end{center}
+
+        \task \(r_{B,-60\degres}(ABCD)=A'B'C'D'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/tdp02.tikz}
+            \tikzspace
+        \end{center}
+
+        \task \(S_{CD}([AB])=[A'B']\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/tdp03.tikz}
+            \tikzspace
+        \end{center}
+
+        \task \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/tdp04.tikz}
+            \tikzspace
+        \end{center}
+
+        \task \(t_{\overrightarrow{AA'}}(ABCD)=A'B'C'D'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/tdp05.tikz}
+            \tikzspace
+        \end{center}
+
+        \task \(S_{d}(fig.~1)=fig.~1'\)
+        \begin{center}
+            \tikzspace
+            \input{transformation-du-plan/tikz/tdp06.tikz}
+            \tikzspace
+        \end{center}
+    \end{tasks}
+
+\end{exercise}

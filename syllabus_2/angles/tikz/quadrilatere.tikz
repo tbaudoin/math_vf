@@ -1,0 +1,17 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoints{0/0/D, 5/0/C, 7/0/E}
+    \tkzDefPoint(105:3){A}
+    \tkzDefShiftPoint[C](135:1){X}
+    \tkzDefShiftPoint[A](7:1){Y}
+    \tkzInterLL(A,Y)(C,X)\tkzGetPoint{B}
+    \tkzLabelAngles[pos=.7](B,C,D){?}
+    \tkzLabelAngles[pos=.4](E,C,B){?}
+    \tkzLabelAngle[pos=.5](C,D,A){$105\degres$}
+    \tkzLabelAngle[pos=.5](D,A,B){$82\degres$}
+    \tkzLabelAngle[pos=.5](A,B,C){$128\degres$}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawLine(C,E)
+    \tkzDrawPoint(E)
+    \tkzLabelPoints[below](D,C,E)
+    \tkzLabelPoints[above](A,B)
+\end{tikzpicture}

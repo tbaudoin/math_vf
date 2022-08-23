@@ -1,0 +1,11 @@
+\begin{tikzpicture}[>=latex]
+        \tkzDefPoints{0/0/A, 2/1/B, 2/-2/C, 4/0/L}
+        \tkzDrawLines[add=0 cm and .5 cm](A,B A,C)
+        \tkzMarkAngle[mark=](C,A,B)
+        \tkzFillAngle[fill=blue!20](C,A,B)
+        \tkzDrawPoints(A,B,C)
+        \tkzLabelPoints[left](A)
+        \tkzLabelPoints[above](B)
+        \tkzLabelPoints[below](C)
+        \draw[<-, shorten <=2pt] (A) to[bend right] ++ (-1,.5)node[left]{sommet};
+\end{tikzpicture}

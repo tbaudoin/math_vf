@@ -1,0 +1,13 @@
+\begin{tikzpicture}[>=latex]
+    \tkzDefPoints{0/0/E, -2/0/D}
+    \tkzDefPoint(-30:2){F}
+
+    \tkzFillAngle[fill=blue!20](D,E,F)
+    \tkzMarkAngle[mark=](D,E,F)
+    \tkzLabelAngle[pos=1.4](D,E,F){$150\degres$}
+
+
+    \tkzDrawLines[add=0 cm and .5 cm](E,D E,F)
+    \tkzDrawPoints(D,E,F)
+    \tkzLabelPoints[above](D,E,F)
+\end{tikzpicture}

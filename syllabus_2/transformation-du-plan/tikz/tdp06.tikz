@@ -1,0 +1,26 @@
+\begin{tikzpicture}[x=1cm, y=1cm,scale=.7]
+    \tkzDefPoints{0/0/A}
+    \tkzDefPoint(150:3){C1}
+    \tkzDefPoint(210:3){C2}
+    \tkzDefPoint(150:3.5){Y1}
+    \tkzDefPoint(210:3.5){Y2}
+    \tkzDefPoint(150:2.5){X1}
+    \tkzDefPoint(210:2.5){X2}
+    %axe
+    \tkzDefPoint(60:3.5){d1}
+    \tkzDefPoint(-60:3.5){d2}
+    \tkzDrawLine(d1,d2)
+    %image
+    \tkzDefPointsBy[reflection=over d1--d2](C1,C2,A){}
+    \tkzDrawArc[line width=1cm, color=\corcolor](A',C1')(C2')
+    %fill the arc
+    \tkzDrawArc[line width=1cm, color=black](A,C2)(C1)
+    %\tkzDrawPoints(Y1,Y2,X1,X2,A)
+    \tkzDrawPoint(A)
+    % \tkzLabelPoint[left=-2ex](Y1){$A$}
+    % \tkzLabelPoint[left=-2ex](Y2){$B$}
+    % \tkzLabelPoint[right=-2ex](X1){$C$}
+    % \tkzLabelPoint[right=-2ex](X2){$D$}
+    \tkzLabelPoint[below=-2ex](A){$O$}
+    \tkzLabelLine[pos=-0.25](d1,d2){$d$}
+\end{tikzpicture}

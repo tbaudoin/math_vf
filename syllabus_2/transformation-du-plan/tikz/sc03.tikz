@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A}
+    \tkzDefPoint(-60:2){B}
+    \tkzDefPoint(-10:4){C}
+    \tkzDefPoint(-25:1.5){D}
+    \tkzDefPoint(-60:4){E}
+    \tkzDefPointsBy[symmetry= center E](A,B,C,D){}
+    \tkzDrawPolygon[color=\corcolor](A',B',C',D')
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzLabelPoints[above](A,D,C,E)
+    \tkzLabelPoints[below](B)
+\end{tikzpicture}

@@ -1,0 +1,385 @@
+\chapter{Distances et lieux}
+\faIcon{book} Théorie pages 141 à 146 et 152 à 156.
+\section{Rappels : triangles, quadrilatères, cercles et droites remarquables}
+
+\faIcon{book} Théorie page 54 et suivantes.
+
+\begin{exercise}
+  Donne la nature des triangles suivants.
+  \tikzexternaldisable
+  \begin{tcolorbox}[enhanced,sidebyside, frame hidden, interior hidden,segmentation hidden]
+    \includegraphics[height=4cm]{distances/img/nature_triangles.png} 
+    \tcblower
+    \begin{enumerate}
+      \item Triangle 1 : \dotfill
+      \item Triangle 2 : \dotfill
+      \item Triangle 3 : \dotfill
+      \item Triangle 4 : \dotfill 
+    \end{enumerate}
+  \end{tcolorbox}
+  \tikzexternalenable
+\end{exercise}  
+
+\begin{exercise}
+  Complète par le vocabulaire adéquat.
+  \tikzexternaldisable
+  \begin{tcolorbox}[enhanced,sidebyside, frame hidden, interior hidden,segmentation hidden, righthand width=4cm]
+    \begin{enumerate}
+      \item $O$ est le \dotfill du cercle $\mathcal{C}$. 
+      \item $[AD]$ est un \dotfill du cercle $\mathcal{C}$.
+      \item $[OE]$ est un \dotfill du cercle $\mathcal{C}$.
+      \item $ [BC]$ est une \dotfill du cercle $\mathcal{C}$.
+      \item \dotfill est un arc du cercle $\mathcal{C}$.
+    \end{enumerate}
+    \tcblower
+    \centering
+    \includegraphics[height=4 cm]{distances/img/voc_cercle.png}\\
+    Colorie en vert le disque, et en rouge le cercle.
+  \end{tcolorbox}
+  \tikzexternalenable
+\end{exercise}
+\newpage
+
+\begin{exercise}
+  Dans ces deux quadrilatères, trace les médianes en vert et les diagonales en rouge. Code ton dessin.\\
+  \begin{center}
+    \includegraphics[]{distances/img/quadri.png}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  Trace la médiane relative à $[AB]$ en bleu, la hauteur issue de $B$ en vert et la médiatrice relative à $[BC]$ au crayon.\\ 
+  Code ton dessin.
+ \begin{center}
+   \includegraphics[]{distances/img/triangleABC.png}
+ \end{center}
+\end{exercise}
+
+\begin{exercise}
+  Trace la bissectrice de l'angle ci-dessous, au compas. Code ton dessin. \\
+  \begin{center}
+    \includegraphics[]{distances/img/angleA.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+
+\section{Inégalité triangulaire}
+
+Matéo demande à Lucie de tracer le triangle $MAT$ dont les dimensions sont respectivement de $6$ cm, $3$ cm et $2$ cm. Trace le triangle $MAT$.
+ 
+\vspace*{3cm}
+
+À quelles conditions peut-on construire un triangle? \\
+\adf[Pour qu'un triangle soit constructible, il faut]{3}
+
+\begin{exercise}
+  Pour chacun des cas ci-dessous, détermine si nous pourrions tracer le triangle demandé.
+  Justifie par une (in)égalité.
+  \begin{enumerate}
+    \item Soit le triangle $ABC$ tel que $|AB| = 7~\textrm{cm}$, $|AC| = 4~\textrm{cm}$ et $|BC| = 13~\textrm{cm}$ 
+    \vspace*{2cm}
+    \item Soit le triangle $ABC$ tel que $|AB| =7~\textrm{cm}$, $|AC| = 7~\textrm{cm}$ et $|BC| = 3~\textrm{cm}$ 
+    \vspace*{2cm}
+    \item Soit le triangle suivant \\
+    \includegraphics[]{distances/img/tri1.png}
+    \item Soit le triangle suivant \\
+    \includegraphics[]{distances/img/tri2.png}
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Kylhian veut tracer un triangle isocèle dont un des côtés mesure $7cm$ et un autre $3cm$. Il dit alors qu'il a le choix pour la longueur de son dernier côté. Caleb lui dit que son dernier côté doit obligatoirement mesurer $7cm$. \\
+  Qui a raison~? Justifie.
+\vspace*{4cm}
+\end{exercise}
+
+\section{Positions relatives d'une droite et d'un cercle}
+
+Quelles sont les différentes positions d'une droite et d'un cercle~? \\
+
+\tikzexternaldisable
+  \begin{tabularx}{\linewidth}{|Y|Y|Y|}
+      \hline
+       Le cercle et la droite n'ont aucun point d'intersection & Le cercle et la droite ont un point d'intersection & Le cercle et la droite ont deux points d'intersection  \\
+      \hline
+      &&\\
+      \input{distances/Tikz/Cercle.tikz} & \input{distances/Tikz/Cercle.tikz} & \input{distances/Tikz/Cercle.tikz} \\
+      \hline
+      La droite est \textbf{extérieure} au cercle & La droite est \textbf{tangente} au cercle & La droite est \textbf{sécante} au cercle \\
+      \hline
+  \end{tabularx}
+
+Note : Comment tracer la droite tangente à un cercle en $A$ ? 
+\begin{enumerate}[label=\arabic*, cols=2]
+  \item On trace le rayon $r$ joignant le centre du cercle au point $A$.
+  \item On trace $d$, la droite perpendiculaire au rayon $r$ passant par $A$.
+  \item [\label=] \input{distances/Tikz/Cercle.tikz}
+\end{enumerate}
+\tikzexternalenable
+
+\newpage
+\begin{exercise}
+  Complète le tableau suivant. \\
+
+  {\renewcommand{\arraystretch}{1.7}
+  \begin{tabularx}{\linewidth}{|X|X|X|X|}
+      \hline
+      \textbf{Rayon du cercle (cm)}        & \textbf{Distance entre le centre du cercle et la droite $d$ (cm)} & \textbf{Conditions} & \textbf{Position relative de la droite et du cercle}\\
+      \hline
+      $3$ & $2$ & & \\
+      \hline
+      $4$ & $6$ & & \\
+      \hline
+        & $5$ & & tangente \\
+      \hline
+      $2$ &  & & sécante \\
+      \hline  
+  \end{tabularx}}\\
+
+  Si tu en as besoin pour visualiser les situations, utilise le bas de cette page comme brouillon.
+  \begin{tblr}{hlines, vlines, rowsep=4cm}
+  \end{tblr}
+\end{exercise}
+
+\newpage
+\section{Positions relatives de deux cercles}
+
+Quelles sont les différentes positions possibles de deux cercles~? \\
+
+Sur base de leur définition, détermine à quel terme chaque situation correspond:\\
+\textbf{tangents intérieurs} - \textbf{disjoints extérieurs} - \textbf{concentriques} - \textbf{tangents extérieurs} -\\
+\textbf{sécants} - \textbf{disjoints intérieurs}  \\
+
+\tikzexternaldisable
+{\renewcommand{\arraystretch}{2.7}
+  \begin{tabularx}{\linewidth}{|Y|Y|Y|}
+      \hline
+       Les cercles n'ont aucun point d'intersection et sont extérieurs l'un à l'autre & Les cercles ont un point d'intersection et sont extérieurs l'un à l'autre & Les cercles ont deux points d'intersection  \\
+      \hline
+      \input{distances/Tikz/DisjExt.tikz} & \input{distances/Tikz/TanExt.tikz} & \input{distances/Tikz/Sécants.tikz} \\
+      \hline
+       & & \\
+      \hline
+      \hline
+      Les cercles ont un point d'intersection et sont intérieurs l'un à l'autre & Les cercles n'ont pas de point d'intersection et sont intérieurs l'un à l'autre & Les cercles ont le même centre \\
+      \hline
+      \input{distances/Tikz/TanInt.tikz} & \input{distances/Tikz/DisInt.tikz} & \input{distances/Tikz/Concentriques.tikz} \\
+      \hline
+      & & \\
+      \hline
+  \end{tabularx}}
+  \tikzexternalenable
+
+  \newpage
+\begin{exercise}
+  Complète le tableau suivant. \\
+
+  {\renewcommand{\arraystretch}{1.7}
+  \begin{tabularx}{\linewidth}{|X|X|X|X|}
+      \hline
+      \textbf{Distance entre les deux centres (cm)}        & \textbf{Rayon 1 (cm)} & \textbf{Rayon 2 (cm)} & \textbf{Position relative des deux cercles}\\
+      \hline
+      $4$  & $2$  &  $3$  & \\
+      \hline
+      $6$ & $2$ &  $3$ & \\
+      \hline
+        & $3$ & $1$ & concentriques \\
+      \hline
+       & $3$ & $5$ & tangents intérieurs \\
+      \hline  
+  \end{tabularx}}
+\end{exercise}
+
+\begin{exercise}
+  Trace un cercle de centre $O$ et de rayon $2$cm. Place un point $T$ sur le cercle. Trace ensuite la droite $D$ tangente au cercle passant par le point $T$.
+\end{exercise}
+
+\vspace*{7cm}
+
+\begin{exercise}
+  Trace deux cercles tangents intérieurs dont la distance entre les centres vaut $1$cm.
+\end{exercise}
+
+\newpage
+\section{Distance dans le plan par rapport à un point}
+
+La distance par rapport à un point se trouve à l'aide \dotfill
+
+\begin{exercise}
+  Place, à l'intérieur des cadres, en vert, le lieu des points situés \dots 
+  \begin{enumerate}[cols=2]
+    \item \dots exactement à $3$ cm de $A$.
+    \includegraphics[width=8cm]{distances/img/pointA.png}
+    \item \dots à moins de $2$ cm de $B$.
+    \includegraphics[width=8cm]{distances/img/pointB.png}
+    \item [\label=]
+    \item \dots à minimum $2$ cm de $D$.
+    \includegraphics[width=8cm]{distances/img/pointD.png}
+    \item \dots à exactement $3$ cm de $B$ et exactement $2,5$ cm de $C$.
+    \includegraphics[width=8cm]{distances/img/pointsBetC.png}
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Distance dans le plan par rapport à deux points}
+
+La distance par rapport à deux points se trouve à l'aide \dotfill
+
+\adf[Définition : ]{1}
+\adf[Propriété : ]{2}
+
+\begin{exercise}
+  Place, à l'intérieur des cadres, en vert, le lieu des points situés \dots 
+  \begin{enumerate}
+    \item \dots à égale distance de $A$ et de $B$.\\
+    \includegraphics[width=9cm]{distances/img/pointsAetB.png}
+    \item \dots plus proche de $E$ que de $B$ et à exactement $3$ cm de $B$. \\
+    \includegraphics[width=9cm]{distances/img/pointsEetB.png}
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Distance dans le plan par rapport à une droite}
+
+\adf[La distance par rapport à une droite se trouve à l'aide]{1} 
+
+\begin{exercise}
+  Place, à l'intérieur des cadres, en vert, le lieu des points situés \dots 
+  \begin{enumerate}
+    \item \dots à $3$ cm de $d$.\\
+    \includegraphics[]{distances/img/droited.png}
+    \item \dots à moins de $2,5$ cm de $d$.\\
+    \includegraphics[]{distances/img/droited2.png}
+    \item \dots à $2$ cm ou plus de $d$ et plus proche de $A$ que de $B$.\\
+    \includegraphics[height=5cm]{distances/img/droitedAB.png}
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Distance dans le plan par rapport à deux droites sécantes}
+
+La distance par rapport à un point se trouve à l'aide \dotfill \\
+\adf[Définition :]{1}
+\adf[Propriété : ]{1}
+
+\begin{exercise}
+  Place, à l'intérieur des cadres, en vert, le lieu des points situés \dots 
+  \begin{enumerate}
+    \item \dots à égale distance des droites $f$ et $d$.\\
+    \includegraphics[]{distances/img/droitesdetf.png}
+    \item \dots à moins de $3$ cm de $A$, et à égale distance entre $f$ et $d$.\\
+    \includegraphics[]{distances/img/droitesdetfA.png}
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Cercles inscrits, cercles circonscrits}
+
+Pour tracer un \textbf{cercle inscrit} dans un triangle, autrement dit un cercle tangent aux trois côtés de ce triangle, il faut tracer les bissectrices des trois angles de ce triangle.
+\begin{itemize}[label=$\triangle$]
+  \item Son centre est l'intersection des bissectrices
+  \item Son rayon est la distance entre le centre et l'un des côtés.
+\end{itemize}
+
+\begin{center}
+  \tikzexternaldisable
+  \input{distances/Tikz/Triangle pas rectangle.tikz}\\
+  \tikzexternalenable
+\end{center}
+
+
+Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cercle passant par les trois sommets de ce triangle, il faut tracer les médiatrices des trois côtés de ce triangle.
+
+\begin{itemize}[label=$\triangle$]
+  \item Son centre est l'intersection des médiatrices
+  \item Son rayon est la distance entre le centre et l'un des sommets.
+\end{itemize}
+\vspace*{3,5cm}
+\tikzexternaldisable
+\begin{center}
+  \input{distances/Tikz/Triangle pas rectangle.tikz}\\
+\end{center}
+\vspace*{2cm}
+\tikzexternalenable
+\newpage
+\section{Exercices issus de CE1D}
+
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/CE1D1a.png} \\
+    \includegraphics[]{distances/img/Ce1D1b.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D2a.png}\\
+    \includegraphics[]{distances/img/Ce1D2b.png}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D3.png}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D4.png}
+  \end{center}
+\end{exercise}
+
+
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D5.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D6a.png}\\
+    \includegraphics[]{distances/img/Ce1D6b.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D7.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D8.png}    
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D9.png}    
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/Ce1D10.png}    
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  \begin{center}
+    \includegraphics[]{distances/img/ce1D11a.png}\\
+    \includegraphics[]{distances/img/Ce1D11b.png}    
+  \end{center}
+\end{exercise}
+
+

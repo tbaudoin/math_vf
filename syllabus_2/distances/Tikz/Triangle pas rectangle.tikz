@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(6,0){C}
+    \tkzDefPoint(2,3){B}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[right](C)
+    \tkzLabelPoints[above](B)
+    %\tkzLabelSegment(A,C){$24$} 
+    %\tkzLabelSegment[below](B,C){$14$} 
+    %\tkzLabelSegment[left](A,B){$5$}
+    \tkzDrawPoints(A,B,C)
+    %\tkzMarkRightAngle[size=.5](A,B,C)
+    %\tkzMarkAngle[mark=20, size=.5](A,C,B)
+    %\tkzLabelAngle(A,C,B){$18\degres$}
+
+\end{tikzpicture}

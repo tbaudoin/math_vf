@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 3/0/B}
+    \tkzDefTriangle[two angles=40 and 40](A,B)\tkzGetPoint{C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzMarkAngles[mark=|, size=.5](C,B,A B,A,C)
+    \tkzMarkSegments[mark=||](A,C B,C)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[below](A,B)
+\end{tikzpicture}

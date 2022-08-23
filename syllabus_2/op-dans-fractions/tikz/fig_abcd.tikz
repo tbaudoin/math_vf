@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0,-4){B}
+    \tkzDefPoint(2,-4){C}
+    \tkzDefPoint(2,0){D}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzLabelPoints[above left](A)
+    \tkzLabelPoints[above right](D)
+    \tkzLabelPoints[below right](C)
+    \tkzLabelPoints[below left](B)
+    \tkzLabelSegment(A,D){$\dfrac{2}{7}$} 
+    \tkzLabelSegment[right](C,D){$\dfrac{1}{3}$} 
+    \tkzDrawPoints(A,B,C,D)
+\end{tikzpicture}
