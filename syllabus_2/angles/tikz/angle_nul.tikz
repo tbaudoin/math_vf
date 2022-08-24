@@ -1,6 +1,0 @@
-\begin{tikzpicture}[baseline=(current bounding box.east)]
-    \tkzDefPoints{0/0/A, 2/0/B, 3/0/C}
-    \tkzDrawLine[add=0 and .5](A,C)
-    \tkzDrawPoints(A,B,C)
-    \tkzLabelPoints[below](A,B,C)
-\end{tikzpicture}

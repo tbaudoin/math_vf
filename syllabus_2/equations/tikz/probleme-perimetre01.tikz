@@ -1,3 +1,0 @@
-\begin{tikzpicture}[scale=0.7, baseline=(current bounding box.north)]
-    \draw (0,0) -- (4,0) -- (4,2)node[midway, sloped]{W}node[midway, right=1ex]{$5$} -- (2,2)node[midway,sloped]{W} -- (2,5)node[midway, right=1ex]{$b$} -- (0,5)node[midway, sloped]{W} -- cycle; 
-\end{tikzpicture}

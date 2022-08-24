@@ -1,3 +1,0 @@
-\begin {tikzpicture}
-\draw(0,0) circle [radius=1.5];
-\end {tikzpicture}
