@@ -14,16 +14,23 @@
 \usepackage[small]{cwpuzzle} % pour le mots croisé
 \usepackage[group-minimum-digits=3, locale=FR]{siunitx} % unités
 \usepackage{xsim} % pour la création d'exercices et des solutions
-\xsimsetup{
+\xsimsetup{%
+    path = xsim,
+    load-style = syllabus-template,
+    print-solutions/chapter=true,
+    exercise/template = mytemplate,
+    exercise/within = chapter,
+    exercise/the-counter= \arabic{exercise},
     blank/blank-style = \dotuline{#1},
 }
 \usepackage[normalem]{ulem} % pour les soulignement
 \usepackage{calc} % pour faire des calculs sur les longueurs
 \usepackage{xparse} % créer des macros évoluées
 \usepackage{tikz} % pour le dessin
+\usepackage[many]{tcolorbox} % pour les boîtes stylées
 \usepackage{multicol} % pour créer des colonnes
 \usepackage{enumitem} % pour personnaliser les listes
-\setlist[enumerate]{label=\textbf{\arabic*)}}
+\setlist[enumerate]{label=\textbf{\alph*)}}
 \SetEnumitemKey{cols}
 {
     before = \begin{multicols}{#1},
