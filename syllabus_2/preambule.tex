@@ -31,13 +31,16 @@
     after = \end{multicols},
 }
 \usepackage{stmaryrd} %\sslash pour faire le symbole du parallélisme //
-\usepackage{tikz, tkz-euclide}
-\usetikzlibrary{external, backgrounds, math, calc,positioning,decorations.pathmorphing, tikzmark}
+\usepackage{tikz}
+\usetikzlibrary{external, backgrounds, math, calc,positioning,decorations.pathmorphing, tikzmark, babel}
 \tikzexternalize[prefix=figures/]
+\usepackage{tkz-base}
+\usepackage{tkz-euclide}
 \pgfkeys{/pgf/number format/.cd,
 use comma,
 /pgf/number format/fixed}
 \usepackage[many]{tcolorbox}
+\tcbset{shield externalize}
 \usepackage{xparse}
 \usepackage{centernot}
 \usepackage[normalem]{ulem}
@@ -225,3 +228,6 @@ use comma,
         %\draw (current bounding box.north west) rectangle (current bounding box.south east);
     \end{tikzpicture}
 }
+
+
+\usepackage{subfiles}
