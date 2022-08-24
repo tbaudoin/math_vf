@@ -1,0 +1,23 @@
+\begin{tikzpicture}[baseline=(current bounding box.north),]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(3,0){B}
+    \tkzDefTriangle[equilateral](A,B)
+    \tkzGetPoint{D}
+    \tkzDefShiftPoint[D](-90+30+31:1){X}
+    \tkzInterLL(A,B)(D,X)\tkzGetPoint{C}
+    
+    \tkzDrawPolygon(A,B,D)
+    \tkzDrawPolygon(B,C,D)
+    
+    \tkzMarkSegments[mark=|](A,D D,B B,A)
+    \begin{scriptsize}
+        \tkzLabelAngle[pos=.8](B,D,C){$31\degres$}
+        \tkzLabelAngle[pos=.8](D,C,B){$27\degres$}
+    \end{scriptsize}
+
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[below](C)
+    \tkzLabelPoints[above](D)
+    
+\end{tikzpicture}

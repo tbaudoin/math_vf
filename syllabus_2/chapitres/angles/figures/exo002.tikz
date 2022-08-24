@@ -1,0 +1,48 @@
+
+\begin{tikzpicture}
+    \tikzmath{
+        \orientation = 50;
+        \distance = 3;
+        \figangle = -20;
+    }
+    \begin{scope}[rotate=\figangle]
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(0:1){RA}
+        \tkzDefPoint(180:1){LA}
+        \tkzDefPoint(-180+\orientation:1){BA}
+        \tkzDefPoint(\orientation:1){TA}
+        \tkzDefPoint(\orientation:\distance){B}
+        \tkzDefShiftPoint[B](0:1){RB}
+        \tkzDefShiftPoint[B](180:1){LB}
+        \tkzDefShiftPoint[B](-180+\orientation:1){BB}
+        \tkzDefShiftPoint[B](\orientation:1){TB}
+        \tkzDrawLines[add= 0.5 and 0.5](LA,RA LB,RB A,B)
+        \tkzLabelLine[pos=1.6](LA, RA){$a$}
+        \tkzLabelLine[pos=1.6](LB, RB){$b$}
+        \tkzLabelLine[pos=1.6](A,B){$s$}
+        \tkzDrawPoints(A,B)
+        % les angles
+        \begin{scriptsize}
+            \tkzLabelPoints[below, font=\scriptsize](A)
+            \tkzLabelPoints[below, font=\scriptsize](B)
+            %A
+            \tkzMarkAngle[mark=none, size=0.7](RA,A,TA)
+            \tkzLabelAngle[pos=0.9](RA,A,TA){2}
+            \tkzMarkAngle[mark=none, size=0.5](TA,A,LA)
+            \tkzLabelAngle[pos=0.7](TA,A,LA){3}
+            \tkzMarkAngle[mark=none, size=0.7](LA,A,BA)
+            \tkzLabelAngle[pos=0.97](LA,A,BA){4}
+            \tkzMarkAngle[mark=none, size=0.5](BA,A,RA)
+            \tkzLabelAngle[pos=0.7](BA,A,RA){1}
+            %B
+            \tkzMarkAngle[mark=none, size=0.7](RB,B,TB)
+            \tkzLabelAngle[pos=0.9](RB,B,TB){2}
+            \tkzMarkAngle[mark=none, size=0.5](TB,B,LB)
+            \tkzLabelAngle[pos=0.7](TB,B,LB){3}
+            \tkzMarkAngle[mark=none, size=0.7](LB,B,BB)
+            \tkzLabelAngle[pos=0.9](LB,B,BB){4}
+            \tkzMarkAngle[mark=none, size=0.5](BB,B,RB)
+            \tkzLabelAngle[pos=0.7](BB,B,RB){1}
+        \end{scriptsize}
+    \end{scope}
+\end{tikzpicture}

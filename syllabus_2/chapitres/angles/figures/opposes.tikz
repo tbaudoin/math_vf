@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A,3/1/B,3/-1/C,-3/-1/D,-3/1/E}
+    \tkzFillAngles[fill=blue!20](C,A,B E,A,D)
+    \tkzMarkAngles(C,A,B E,A,D)
+
+    \tkzFillAngles[fill=red!20, size=0.8](D,A,C B,A,E)
+    \tkzMarkAngles[size=0.8, mark= ||](D,A,C B,A,E)
+    \tkzDrawLines(B,D C,E)
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzLabelPoints[below](D,A,C)
+    \tkzLabelPoints[above](B,E)
+\end{tikzpicture}

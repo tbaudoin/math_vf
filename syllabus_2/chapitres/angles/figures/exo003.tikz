@@ -1,0 +1,11 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(3,0){B}
+    \tkzDrawTriangle[equilateral](A,B)
+    \tkzGetPoint{C}
+    \tkzMarkSegments[mark=||](A,B B,C A,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelAngles[pos=.5](B,A,C A,C,B C,B,A){?}
+\end{tikzpicture}

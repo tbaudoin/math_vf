@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){C}
+    \tkzDefPoint(0,2){A}
+    \tkzDrawCircle(C,A)
+    \tkzDrawPoint(C)
+    \tkzLabelPoints(C)
+\end{tikzpicture}

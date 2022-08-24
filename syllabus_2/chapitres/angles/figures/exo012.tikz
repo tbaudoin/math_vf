@@ -1,0 +1,23 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(3,0){B}
+    \tkzDefPoint(-36:1){X}
+    \tkzDefShiftPoint[B](180+24:1){Y}
+    \tkzInterLL(A,X)(B,Y)\tkzGetPoint{E}
+    \tkzDefShiftPoint[B](180+24:5){C}
+    \tkzDefPoint(-36:3.5){D}
+    \tkzDefShiftPoint[C](180:1){Z}
+    \tkzDefShiftPoint[B](180+24:6){W}
+ 
+     \tkzDrawLines[add=0.4 and 0.4](A,D B,C A,B C,D)
+     \tkzLabelPoints[above](A)
+     \tkzLabelPoints[above](B)
+     \tkzLabelPoints[below](C)
+     \tkzLabelPoints[below](D)
+     \tkzLabelPoints[below](E)
+     \begin{scriptsize}
+     \tkzLabelAngle[pos=0.3](B,E,A){$120\degres$}
+     \tkzLabelAngle[pos=0.7](E,A,B){$36\degres$}
+     \tkzLabelAngle[pos=0.7](Z,C,W){$36\degres$}
+     \end{scriptsize}
+ \end{tikzpicture}

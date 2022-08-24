@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){C};
+    \tkzDrawPoints(C);
+    %\tkzLabelPoints(C);
+    \tkzDefPoint(0.6,-0.6){A};
+    \tkzDrawPoints(A);
+    \draw (0,0) circle (2) ;
+    \draw (0.6,-0.6) circle (0.5) ;
+\end{tikzpicture}
