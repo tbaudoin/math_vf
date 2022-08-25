@@ -1,5 +1,6 @@
-\documentclass[syllabus_1.tex]{subfiles}
+\documentclass[../../syllabus_1.tex]{subfiles}
 \begin{document}
+
 \chapter{Calcul mental}
 \section{Un peu de français}
 \begin{Puzzle}{26}{16}
@@ -63,7 +64,7 @@ Sur ces nombres nous pouvons effectuer des opérations. Chacune utilise son voca
             vlines,
             columns={3cm, c},
             rows={1cm, m},
-            row{1}={gray!60},
+            row{1}={gray!40, font=\bfseries},
         }
         Opération & Signe & Nom du premier élement & Nom du deuxième élément & Nom du résultat \\
                   &       &                        &                         &                 \\
@@ -162,7 +163,8 @@ Exemples :
 
 \newpage
 
-%mise en évidence avec des phrases? "Paul mange et Paul joue" devient "Paul mange et joue" ? 
+% mise en évidence avec des phrases? "Paul mange et Paul joue" devient "Paul mange et joue" ? 
+% sésamath 5 - N1 - Acti 5
 \section{Mise en évidence}
 \begin{exercise}
     Soit les trois rectangles ci-dessous.
@@ -207,7 +209,8 @@ Exemples~:
 \(5 \cdot 8 + 5 \cdot 2 =\)
 \hfil
 \(12 \cdot 3 + 6 \cdot 5 =\)
-\vspace*{3cm}
+
+\newpage
 
 \begin{exercise}
     Sans calculer le résulat, transforme ces sommes en produits grâce à la mise en évidence.
@@ -222,36 +225,57 @@ Exemples~:
 
 
 \section{Priorité des opérations}
+Le calcul suivant a été proposé aux 23 élèves d'une classe de 1\iere : \(3 + 6 \cdot 7\).
 
-Lorsque nous avons \emph{plusieurs opérations différentes} à effectuer
-dans un même calcul, nous devons respecter un certain ordre.
+Voici les résultats obtenus :
 
-Pour se rappeler de cet ordre, nous pouvons retenir \og PEMDAS \fg.
-\begin{center}
-    \begin{tikzpicture}
-        \draw (0,0) -- (1,0) -- (1,-1) -- (2,-1) -- (2,-2) -- (3,-2) -- (3,-3) -- (4,-3) -- (4,-4);
-    \end{tikzpicture}
-\end{center}
+    \begin{tblr}{hlines,vlines,columns={c, .25\linewidth},column{1}={gray!40, font=\bfseries}}
+        Résultat & 45 & 63 & Autres\\
+        Nombre d'élèves & 11 & 10 & \\
+    \end{tblr}
+    
+\begin{enumerate}
+    \item Combien d'élèves ont trouvé une autre réponse que 45 et 63 ? Complète le tableau avec ta réponse.
+    \item Essaie d'expliquer comment les élèves ont trouvé les résultats 45 et 63.\vspace*{3cm}
+    \item En observant les quatres calculs ci-dessous, qui sont corrects, énonce la règle de priorité.
+    \begin{itemize}[cols=2, label=\faIcon{bolt}]
+        \item \(15 - 2 \cdot 3 = 9\)
+        \item \(7 \cdot 8 + 10 = 66\)
+        \item \(27 + 35 : 5 = 34\)
+        \item \(60 - 12 : 4 = 57\)
+    \end{itemize}
+\end{enumerate}
+
+Lorsqu'un calcul contient différentes opérations, on doit toujours appliquer la priorité des opérations. On effectue en priorité les calculs entres parenthèses, puis les exposants, puis les multiplications et divisions (de gauche à droite) et enfin les additions et soustractions (de gauche à droite).
+
+\vfil
 
 Exemple~:
 
-\(28 + 12:4 - (3 + 7) =\)
-\vspace*{5cm}
+\(28 + 12:4 - \left((3^2 + 7) \cdot 2\right) =\)
 
+\newpage
+
+% Pour la barre de fraction faire quelques exemples à l'oral. Cf : sésamath 5 - N1 - acti 3.
 \begin{exercise}
-    Effectue les calculs suivants en respectant la priorité des opérations. Veille à présenter correctement tes étapes~!
-    \begin{enumerate}[cols=2, itemsep=3cm]
+    Calcule le résulat en respectant la priorité des opérations
+    \footnote{L'écriture \(\dfrac{10}{2+3}\) correspond à \( 10 : (2 + 3)\).}.
+
+    \begin{enumerate}[cols=2, itemsep=4cm]
         \item \(30 - 6:2 =\)
         \item \(200 - 4 \cdot 16 + 5 =\)
         \item \(2 + 5 \cdot (6 + 9) =\)
+        \item \(13 - 4 : 2 \cdot 4=\)
         \item \((3 \cdot 12 + 5) - 10 =\)
-        \item $\dfrac{7+13}{2}=$
-        \item $6 + \dfrac{15}{3+1+1}=$
+        \item \(\dfrac{7+13}{2}=\)
+        \item \(6 + \dfrac{15}{3+1+1}=\)
+        \item \(3\cdot(5 + 6 : 3) + 0 \cdot 10=\)
     \end{enumerate}
-    \vspace*{3cm}
+    \vspace*{4cm}
 \end{exercise}
 
 %\TODO: mettre une petite note pour dire ce que représente la barre de fraction, ou c'est trop tot?
+\newpage
 
 \section{Codage et décodage}
 
@@ -259,22 +283,22 @@ Exemple~:
 une expression en français.
 
 Exemple : La somme de 3 et de 9 vaut 12 se code par
-\(\mathbf{3 + 9 = 12}\)
-\vspace*{0.5cm}
+\(3 + 9 = 12\)
 
 \textbf{Décoder} une expression, c'est traduire une expression
 mathématique en français.
 
-Exemple : \(\mathbf{72:8 = 9}\) se traduit par le
+Exemple : \(72:8 = 9\) se traduit par le
 quotient de 72 par 8 vaut 9.
 
 \begin{tblr}{
         hlines,
         vlines,
-        row{1}={c,gray!60},
-        column{1}={c,gray!60},
+        row{1}={c,gray!40, font=\bfseries},
+        column{1}={c,gray!40, font=\bfseries},
         cell{1}{3}={c=2}{c},
-        cell{4}{1}={r=3}{}
+        cell{4}{1}={r=3}{},
+        rowsep=1ex
     }
     Opération     & Traduction en français             & Exemple                                 \\
     Addition       & La somme de \dots et \dots         & $5 + 3$     & La somme de 5 et de 3      \\
@@ -307,7 +331,78 @@ quotient de 72 par 8 vaut 9.
     \end{enumerate}
 \end{exercise}
 
-\section{Exercices mélangés}
+\section{Time to \faIcon{train}!}
+\begin{exercise}
+    Recopie chaque égalité en la complétant par le signe opératoire qui convient.
+    \begin{enumerate}[cols=3]
+        \item \(3 + 7 ? 2 = 17\)
+        \item \(25 + 75 ? 5 = 40\)
+        \item \(78 - 24 ? 2 = 30\)
+        \item \(11 ? 7 - 4 = 0\)
+        \item \(4 ? 6 - 4 = 20\)
+        \item \(18 ? 6 : 3 = 1\)
+    \end{enumerate}
+\end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item \(3 + 7 \cdot 2 = 17\)
+        \item \(25 + 75 \div 5 = 40\)
+        \item \(78 - 24 \cdot 2 = 30\)
+        \item \(11 - 7 - 4 = 0\)
+        \item \(4 \cdot 6 - 4 = 20\)
+        \item \(18 \div 6 \div 3 = 1\)
+    \end{enumerate}
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}
+    Calcule astucieusement.
+    \begin{enumerate}[cols=3]
+        \item \(27 + 19 + 3 + 11\)
+        \item \(5 \cdot 25 \cdot 2 \cdot 4\)
+        \item \(4,2 + 6,1 + 3,4 + 2,8 + 5,6\)
+        \item \(12,5 \cdot 2,5 \cdot 8 \cdot 2  \cdot 4,4 \cdot 4\)
+        \item \(8,3 + 8 + 6 + 1,7\)
+        \item \(7 \cdot 0,5 \cdot 3 \cdot 20\)
+        \item \(\left(20 \cdot 5 + 11\right) : \left(20  \cdot 5 + 11\right)\)
+        \item \(\left(14 \cdot 31 - 21 \cdot 17\right) \cdot \left( 2 \cdot 12 - 24\right)\)
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE - ex. 13
+\begin{exercise}
+    Indique si chacune des expressions est une somme, une différence, un produit ou un quotient. N'effectue pas le calcul.
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE - ex. 24
+\begin{exercise}
+    Si cela est nécessaire, place des parenthèses pour que les égalités ci-dessous soient vraies. Attention, ne mets pas de parenthèses inutiles !
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE - ex. 61
+\begin{exercise}
+    
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    
+\end{solution}
 \begin{exercise}
     Vrai ou faux~? Justifie dans les deux cas.
     \begin{enumerate}
@@ -390,20 +485,15 @@ quotient de 72 par 8 vaut 9.
         \item \(1 \cdot 3 \cdot 322  =  3 \cdot 322\)
         \item \(8 \cdot (2 \cdot 7) =  (8 \cdot 2) \cdot 7\)
         \item \(0  +  14  =  14\)
-        \item \(7 \cdot (8  +  12) =  (8  +  12) \cdot 7\)
-        \item[]
     \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
-    Dalya et sa sœur font des courses avec l'argent qu'elles ont gagné en
-    faisant des petits jobs. Elles ont 40€ en tout. Elles veulent acheter
-    un pantalon chacune, à 15 € chaque pantalon, Dalya veut acheter 3
-    paires de chaussettes à 6 € la paire, et sa s\oe{}ur craque sur un collier
-    à 8 €. Combien leur coutent les courses~? Écris ton calcul en une seule
-    égalité.
+    Dalya et sa s\oe{}ur font des courses avec l'argent qu'elles ont gagné en faisant des petits jobs. Elles ont 40~€ en tout. Elles veulent acheter
+    un pantalon chacune, à 15~€ chaque pantalon, Dalya veut acheter 3 paires de chaussettes à 6~€ la paire, et sa s\oe{}ur craque sur un collier
+    à 8~€. Combien leur coutent les courses~? Écris ton calcul en une seule égalité.
 
-    Ont-elles assez avec les 40€ qu'elles ont pour payer les courses~?
+    Ont-elles assez avec les 40~€ qu'elles ont pour payer les courses~?
 \end{exercise}
 
 \begin{exercise}
@@ -414,9 +504,9 @@ quotient de 72 par 8 vaut 9.
 
 \begin{exercise}
     Marc va au marché et fait des petites courses. Il achète 3 bananes à
-    0,40€ pièce, 500gr de fraises au prix de 1€ pour 100gr. Ensuite, il
-    rajoute une bouteille de coca à 0,90€. Le marchand lui fait cadeau de
-    0,50€. Note, en un seul calcul, ce que Marc va devoir payer, puis
+    0,40~€ pièce, 500~gr de fraises au prix de 1~€ pour 100~gr. Ensuite, il
+    rajoute une bouteille de coca à 0,90~€. Le marchand lui fait cadeau de
+    0,50~€. Note, en un seul calcul, ce que Marc va devoir payer, puis
     effectue.
 \end{exercise}
 
