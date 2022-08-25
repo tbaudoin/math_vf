@@ -1,0 +1,33 @@
+\begin{tikzpicture}[scale=.7]
+    \tkzDefPoints{%
+        0/0/A,
+        1.2/0/B,
+        1.2/1.5/C,
+        2.8/1.5/D,
+        2.8/2.7/E,
+        1.2/2.7/F,
+        1.2/4.2/G,
+        4.2/4.2/H,
+        4.2/5.4/I,
+        0/5.4/J,
+        0/4.2/K,
+        2.8/0/X}
+    \tkzDrawPolygon(A,B,C,D,E,F,G,H,I,J,K)
+    \tkzMarkSegments[mark=|](A,B E,D I,H)
+    \path (A)+(-10pt,0) coordinate (A');
+    \path (A)+(0,-10pt) coordinate (A'');
+    \path (K)+(-10pt,0) coordinate (K');
+    \path (B)+(0,-10pt) coordinate (B');
+    \path (D)+(0,-1.5cm-10pt) coordinate (D');
+    \path (J)+(0,+10pt) coordinate (J');
+    \path (I)+(0,+10pt) coordinate (I');
+    \draw[dashed] (A) -- (A');
+    \draw[dashed] (G) -- (K');
+    \draw[dashed] (B) -- (B');
+    \draw[dashed] (D) -- (D');
+    \draw[dashed] (A) -- (A'');
+    \draw[<->, >=latex] (A') -- node[left]{4,2}(K');
+    \draw[<->, >=latex] (B') -- node[below]{1,6}(D');
+    \draw[<->, >=latex] (A'') -- node[below]{1,2}(B');
+    \draw[<->, >=latex] (J') -- node[above]{4,2}(I');
+\end{tikzpicture}
