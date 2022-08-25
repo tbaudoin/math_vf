@@ -27,6 +27,8 @@
 \usepackage{calc} % pour faire des calculs sur les longueurs
 \usepackage{xparse} % créer des macros évoluées
 \usepackage{tikz} % pour le dessin
+\usetikzlibrary{babel, mindmap}
+\usepackage{tkz-euclide} % surcouche de tikz
 \usepackage[many]{tcolorbox} % pour les boîtes stylées
 \usepackage{multicol} % pour créer des colonnes
 \usepackage{enumitem} % pour personnaliser les listes
@@ -36,4 +38,7 @@
     before = \begin{multicols}{#1},
     after = \end{multicols}
 }
+\usepackage{tcolorbox} % des boîtes stylées
+\tcbuselibrary{skins,xparse}
+
 \usepackage{subfiles} % permet de générer un pdf par chapitre 

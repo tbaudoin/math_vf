@@ -106,7 +106,29 @@ Sur ces nombres nous pouvons effectuer des opérations. Chacune utilise son voca
 
 \faIcon{book-open} page 32
 
-schéma à insérer
+\begin{tikzpicture}[
+        concept/.append style={fill={none}},
+        small mindmap,
+        circle connection bar,
+        grow cyclic,
+        every node/.style=concept,
+        every node/.append style={scale=.9},
+        align=flush center,
+        text width=2.5cm,
+        level 1/.style={level distance=3.5cm, sibling angle=180},
+        level 2/.style={level distance=3.5cm, sibling angle=60}]
+
+    \node{Propriétés}[clockwise from=0]
+    child{node{Multiplication}[clockwise from =90]
+            child{node{Commutativité}}
+            child{node{Associativité}}
+            child{node{Élément neutre}}
+            child{node{Élément absorbant}}}
+    child{node{Addition}[clockwise from =-120]
+            child{node{Commutativité}}
+            child{node{Associativité}}
+            child{node{Élement neutre}}};
+\end{tikzpicture}
 
 \begin{exercise}
     Relie chaque égalité avec le nom de la propriété utilisée.
@@ -144,7 +166,7 @@ schéma à insérer
 
 Pour effectuer une multiplication tu peux recourier à la distributivité simple. Elle consiste à transformer un des facteurs en une somme ou en une différence. Puis à multplier chaque terme obtenu.
 
-Exemples : 
+Exemples :
 
 \(7 \cdot 18 =\)\hfil\( 7 \cdot 18 =\)
 \vspace*{4cm}
@@ -229,21 +251,21 @@ Le calcul suivant a été proposé aux 23 élèves d'une classe de 1\iere : \(3 
 
 Voici les résultats obtenus :
 
-    \begin{tblr}{hlines,vlines,columns={c, .25\linewidth},column{1}={gray!40, font=\bfseries}}
-        Résultat & 45 & 63 & Autres\\
-        Nombre d'élèves & 11 & 10 & \\
-    \end{tblr}
-    
+\begin{tblr}{hlines,vlines,columns={c, .25\linewidth},column{1}={gray!40, font=\bfseries}}
+    Résultat        & 45 & 63 & Autres \\
+    Nombre d'élèves & 11 & 10 &        \\
+\end{tblr}
+
 \begin{enumerate}
     \item Combien d'élèves ont trouvé une autre réponse que 45 et 63 ? Complète le tableau avec ta réponse.
     \item Essaie d'expliquer comment les élèves ont trouvé les résultats 45 et 63.\vspace*{3cm}
     \item En observant les quatres calculs ci-dessous, qui sont corrects, énonce la règle de priorité.
-    \begin{itemize}[cols=2, label=\faIcon{bolt}]
-        \item \(15 - 2 \cdot 3 = 9\)
-        \item \(7 \cdot 8 + 10 = 66\)
-        \item \(27 + 35 : 5 = 34\)
-        \item \(60 - 12 : 4 = 57\)
-    \end{itemize}
+          \begin{itemize}[cols=2, label=\faIcon{bolt}]
+              \item \(15 - 2 \cdot 3 = 9\)
+              \item \(7 \cdot 8 + 10 = 66\)
+              \item \(27 + 35 : 5 = 34\)
+              \item \(60 - 12 : 4 = 57\)
+          \end{itemize}
 \end{enumerate}
 
 Lorsqu'un calcul contient différentes opérations, on doit toujours appliquer la priorité des opérations. On effectue en priorité les calculs entres parenthèses, puis les exposants, puis les multiplications et divisions (de gauche à droite) et enfin les additions et soustractions (de gauche à droite).
@@ -300,7 +322,7 @@ quotient de 72 par 8 vaut 9.
         cell{4}{1}={r=3}{},
         rowsep=1ex
     }
-    Opération     & Traduction en français             & Exemple                                 \\
+    Opération      & Traduction en français             & Exemple                                  \\
     Addition       & La somme de \dots et \dots         & $5 + 3$     & La somme de 5 et de 3      \\
     Soustraction   & La différence entre \dots et \dots & $5 - 3$     & La différence entre 5 et 3 \\
     Multiplication & Le produit de \dots par \dots      & $5 \cdot 3$ & Le produit de 5 par 3      \\
@@ -333,14 +355,14 @@ quotient de 72 par 8 vaut 9.
 
 \section{Time to \faIcon{train}!}
 \begin{exercise}
-    Recopie chaque égalité en la complétant par le signe opératoire qui convient.
+    Corrige le bug (\faIcon{bug}) dans chaque égalité en la complétant par le signe opératoire qui convient.
     \begin{enumerate}[cols=3]
-        \item \(3 + 7 ? 2 = 17\)
-        \item \(25 + 75 ? 5 = 40\)
-        \item \(78 - 24 ? 2 = 30\)
-        \item \(11 ? 7 - 4 = 0\)
-        \item \(4 ? 6 - 4 = 20\)
-        \item \(18 ? 6 : 3 = 1\)
+        \item \(3 + 7 \invi 2 = 17\)
+        \item \(25 + 75 \invi 5 = 40\)
+        \item \(78 - 24 \invi 2 = 30\)
+        \item \(11 \invi 7 - 4 = 0\)
+        \item \(4 \invi 6 - 4 = 20\)
+        \item \(18 \invi 6 : 3 = 1\)
     \end{enumerate}
 \end{exercise}
 \begin{solution}
@@ -371,7 +393,7 @@ quotient de 72 par 8 vaut 9.
 \end{exercise}
 % SOLUTION
 \begin{solution}
-    
+
 \end{solution}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -381,28 +403,42 @@ quotient de 72 par 8 vaut 9.
 \end{exercise}
 % SOLUTION
 \begin{solution}
-    
+
 \end{solution}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EXERCICE - ex. 24
 \begin{exercise}
     Si cela est nécessaire, place des parenthèses pour que les égalités ci-dessous soient vraies. Attention, ne mets pas de parenthèses inutiles !
+    \begin{enumerate}[cols=3]
+        \item \(4 \cdot 3 - 5 - 2 = 5\)
+        \item \(8 - 3 \cdot 6 + 4 = 50\)
+        \item \(3 + 16 \cdot 8 : 2 = 76\)
+        \item \(12 + 4 \cdot 7 : 2 = 20\)
+        \item \(14 \cdot 4 + 7 : 2 = 77\)
+        \item \(7 - 5 \cdot 7 \cdot 5 : 5 = 14\)
+    \end{enumerate}
 \end{exercise}
 % SOLUTION
 \begin{solution}
-    
+    \begin{enumerate}
+        \item \(4 \cdot 3 - 5 - 2 = 5\)
+        \item \( (8 - 3) \cdot (6 + 4) = 50\)
+        \item \( (3 + 16) \cdot 8 : 2 = 76\)
+        \item \( (12 + 4 \cdot 7) : 2 = 20\)
+        \item \(14 \cdot (4 + 7) : 2 = 77\)
+        \item \((7 - 5) \cdot 7 \cdot 5 : 5 = 14\)
+    \end{enumerate}
 \end{solution}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EXERCICE - ex. 61
-\begin{exercise}
-    
-\end{exercise}
-% SOLUTION
-\begin{solution}
-    
-\end{solution}
+
+\tcbsidebyside[ sidebyside adapt=right, blanker, sidebyside align=top seam]
+{\begin{exercise}
+        Écris l'aire de cette figure sous la forme d'une somme et sous la forme d'un produit. Effectue les deux calculs pour vérifier que tu obtiens la même aire.
+    \end{exercise}}
+{\input{figures/f.tikz}}
 \begin{exercise}
     Vrai ou faux~? Justifie dans les deux cas.
     \begin{enumerate}
