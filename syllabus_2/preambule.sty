@@ -27,7 +27,7 @@
 \SetEnumitemKey{cols}
 {
     itemsep= 1em,
-    before = \raggedcolumns\begin{multicols}{#1},
+    before = \begin{multicols}{#1},
     after = \end{multicols},
 }
 \usepackage{stmaryrd} %\sslash pour faire le symbole du parallélisme //
@@ -136,10 +136,18 @@ use comma,
 %==============================================================================
 % boite pour les définitions.
 %==============================================================================
-\newtcbox{\mybox}[1][black]{on line,
-    arc=7pt,colback=#1!10!white,colframe=#1!50!black,
-    before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt,
-    boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
+\newtcbox{\mybox}{
+    on line,
+    arc=7pt,
+    colback=white,
+    colframe=black,
+    before upper={\rule[-3pt]{0pt}{10pt}},
+    boxrule=1pt,
+    boxsep=10pt,
+    left=6pt,
+    right=6pt,
+    top=2pt,
+    bottom=2pt}
 %==============================================================================
 % style des chapitres et retrait du numéro de chapitre devant les sections.
 %==============================================================================
@@ -228,4 +236,10 @@ use comma,
 }
 
 
+\newcommand*{\etai}{}
+
+% \usepackage{setspace}
+% \onehalfspacing
+%\AfterTOCHead{\singlespacing}
 \usepackage{subfiles}
+
