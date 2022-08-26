@@ -4,7 +4,7 @@
 \chapter{Calcul mental}
 \section{Un peu de français}
 \begin{Puzzle}{26}{16}
-    |[5]F|[1]A|C|T|E|U|R|S|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|.
+    |[5]F|[1]A|C|T|E|U|R|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|.
     |{}|D|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|.
     |{}|D|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|.
     |{}|I|{}|[3]P|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|[12]D|{}|{}|{}|.
@@ -21,7 +21,7 @@
     |{}|{}|{}|{}|{}|[10]S|O|M|M|E|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|.
     |{}|{}|{}|{}|{}|{}|N|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|.
 \end{Puzzle}
-\begin{enumerate}[cols=2]
+\begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
     \item Effectuer $4 + 3$, c'est effectuer une \dots
     \item Dans le calcul $4 + 3 = 7$, les nombres 4 et 3 s'appellent les \dots
     \item Le résultat d'une multiplication est un \dots
@@ -231,19 +231,19 @@ Exemples~:
 \hfil
 \(12 \cdot 3 + 6 \cdot 5 =\)
 
-\vspace{6em}
+\newpage
 
 \begin{exercise}
     Sans calculer le résulat, transforme ces sommes en produits grâce à la mise en évidence.
-    \begin{enumerate}[cols=2, itemsep=1.1cm]
+    \begin{enumerate}[cols=2, itemsep=2cm]
         \item \(8 \cdot 6 + 7 \cdot 6 =\)
         \item \(7 \cdot 21 + 3 \cdot 21 =\)
         \item \(110 \cdot 8 + 14 \cdot 8 =\)
         \item \(0,3 \cdot 7 + 7 \cdot 0,7 =\)
     \end{enumerate}
+    \vspace*{2cm}
 \end{exercise}
 
-\newpage
 
 \section{Priorité des opérations}
 Le calcul suivant a été proposé aux 23 élèves d'une classe de 1\iere : \(3 + 6 \cdot 7\).
@@ -266,8 +266,6 @@ Voici les résultats obtenus :
               \item \(60 - 12 : 4 = 57\)
           \end{itemize}
 \end{enumerate}
-
-\vspace{3em}
 
 Lorsqu'un calcul contient différentes opérations, on doit toujours appliquer la priorité des opérations. On effectue en priorité les calculs entres parenthèses, puis les exposants, puis les multiplications et divisions (de gauche à droite) et enfin les additions et soustractions (de gauche à droite).
 
@@ -350,10 +348,14 @@ quotient de 72 par 8 vaut 9.
         \item \dotsforanswer{2}[\(26:2 = 13 \rightarrow \)]
         \item \dotsforanswer{2}[\(2 \cdot 7 + 6 = 20 \rightarrow \)]
         \item \dotsforanswer{2}[\(35 - 3 \cdot 9 = 8 \rightarrow \)]
+        \item \dotsforanswer{2}[\(60 : 15 = 4 \rightarrow \)]
     \end{enumerate}
 \end{exercise}
 
 \section{À toi de jouer ! (petite rèf à Yugiho)}
+
+\setcounter{exercise}{0}
+
 \begin{exercise}
     Corrige le bug (\faIcon{bug}) dans chaque égalité en la complétant par le signe opératoire qui convient.
     \begin{enumerate}[cols=3]
@@ -380,10 +382,10 @@ quotient de 72 par 8 vaut 9.
 % EXERCICE
 \begin{exercise}
     Calcule astucieusement.
-    \begin{enumerate}[cols=3]
+    \begin{enumerate}[cols=2]
         \item \(27 + 19 + 3 + 11\)
         \item \(5 \cdot 25 \cdot 2 \cdot 4\)
-        \item \(4,2 + 6,1 + 3,4 + 2,8 + 5,6\)
+        \item \(3,2 + 6,1 + 3,4 + 2,8 + 5,6\)
         \item \(12,5 \cdot 2,5 \cdot 8 \cdot 2  \cdot 4,4 \cdot 4\)
         \item \(8,3 + 8 + 6 + 1,7\)
         \item \(7 \cdot 0,5 \cdot 3 \cdot 20\)
@@ -393,17 +395,40 @@ quotient de 72 par 8 vaut 9.
 \end{exercise}
 % SOLUTION
 \begin{solution}
-
+    \begin{enumerate}
+        \item 60
+        \item \num{1000}
+        \item 21,1
+        \item \num{8800}
+        \item 24
+        \item 210
+        \item 0
+    \end{enumerate}
 \end{solution}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EXERCICE - ex. 13
 \begin{exercise}
     Indique si chacune des expressions est une somme, une différence, un produit ou un quotient. N'effectue pas le calcul.
+
+    \begin{enumerate}[cols=2]
+        \item \( (3 + 7) : 2 \)
+        \item \( 4 + +(7 \cdot 8) \)
+        \item \( (36 : 6) + 5 \)
+        \item \( 10 \cdot (19 - 4) \)
+        \item \( (13 - 4) : 3 \)
+        \item \( (5 \cdot 2,6) + 3,7 \)
+    \end{enumerate}
 \end{exercise}
 % SOLUTION
 \begin{solution}
-
+    \begin{enumerate}
+        \item C'est le quotient de $3 + 7$ par 2.
+        \item C'est la somme de 4 et de $7 \cdot 8$.
+        \item C'est la somme de $36 : 6$ et de 5.
+        \item C'est le produit de 10 par $19 - 4$.
+        \item C'est le quotient de $13 - 4$ par 3.
+        \item C'est la somme de $5 \cdot 2,6$ et de 3,7
+    \end{enumerate}
 \end{solution}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -439,18 +464,15 @@ quotient de 72 par 8 vaut 9.
         Écris l'aire de cette figure sous la forme d'une somme et sous la forme d'un produit. Effectue les deux calculs pour vérifier que tu obtiens la même aire.
     \end{exercise}}
 {\input{figures/f.tikz}}
+\begin{solution}
+    \begin{itemize}[label=]
+        \item  Sous la forme d'une somme $4,2 \cdot 1,2 + 4,2 \cdot 1,2 + 1,6 \cdot 1,2$
+        \item Sous la forme d'un produit : $(4,2 + 4,2 + 1,6) \cdot 1,2$
+    \end{itemize}
 
-\begin{exercise}
-    Calcule en t'aidant de la distributivité simple. Laisse tes calculs visibles.
-    \begin{enumerate}[cols=4]
-        \item \(75 \cdot 7\)
-        \item \(23 \cdot 21 \)
-        \item $15 \cdot 7$
-        \item $11 \cdot 13$
-    \end{enumerate}
-\end{exercise}
+\end{solution}
 
-\newpage 
+\newpage
 \begin{exercise}
     Vrai ou faux~? Justifie dans les deux cas.
     \begin{enumerate}
@@ -461,46 +483,104 @@ quotient de 72 par 8 vaut 9.
         \item Dans le calcul \(9\ :3 = 3\), \(9\) est appelé le diviseur.
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item Vrai, c'est une des propriétés de l'addition. On peut grouper les nombres comme on le désire.
+        \item Faux, les nombres naturels sont des nombers positifs or $-3$ est négatif.
+        \item Faux, l'élément absorbant de la multiplication est 0.
+        \item Vrai, c'est une des propriété de l'addition. Ajouter 0 ne change rien au résultat.
+        \item Faux, 9 est appelé le dividende.
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Code ou décode les expressions suivantes. Ne calcule pas le résultat.
     \begin{enumerate}
-        \item Le quotient de 225 par 15~
-        \item Le produit de 4 par la différence entre 5 et 1
-        \item La somme du triple de 2 et du double de 5
-        \item \(10 - 6 = 4\)~
-        \item \(2 \cdot 10 + 3 = 23\)~
-        \item \((10 : 2) \cdot 3 = 15\)~
+        \item Le quotient de 225 par 15.
+        \item Le produit de 4 par la différence entre 5 et 1.
+        \item La somme du triple de 2 et du double de 5.
+        \item \(10 - 6\).
+        \item \(2 \cdot 10 + 3\).
+        \item \((10 : 2) \cdot 3\).
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item $225 : 15$.
+        \item $4 \cdot (5 - 1)$.
+        \item $3 \cdot 2 + 2 \cdot 5$.
+        \item La différence entre 10 et 6.
+        \item La somme de 3 et du produit de 2 par 10.
+        \item Le produit du quotient de 10 par 2 et de 3.
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Écris le calcul qui décompose le nombre \(50\) en  \dots
     \begin{enumerate}
-        \item \dots une somme de deux termes égaux
-        \item \dots une différence de deux termes
-        \item \dots un produit dont le premier facteur est 5
-        \item \dots un quotient dont le dividende est 200~
+        \item \dots une somme de deux termes égaux.
+        \item \dots une différence dont le premier terme est 82.
+        \item \dots un produit dont le premier facteur est 5.
+        \item \dots un quotient dont le dividende est 200.
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item $25 + 25$
+        \item $82 - 32$
+        \item $5 \cdot 10$
+        \item $200 : 4$
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Margaux a écrit comme calcul \og \(3 \cdot 0 \cdot 4 = 12\)\fg.
     Cyprien, à côté d'elle, lui dit qu'elle a oublié une propriété
     fondamentale de la multiplication. Qui a raison~? Explique.
 \end{exercise}
+\begin{solution}
+    Cyprien a raison. Margaux a oublié que 0 est l'élément absorbant de la multiplication. Par conséquent, le résultat de son calcul est 0.
+\end{solution}
+
+\begin{exercise}
+    Calcule en t'aidant de la distributivité simple. Laisse tes calculs visibles.
+    \begin{enumerate}[cols=4]
+        \item \(75 \cdot 7\)
+        \item \(23 \cdot 21 \)
+        \item $15 \cdot 7$
+        \item $11 \cdot 13$
+    \end{enumerate}
+\end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item $525$
+        \item $483$
+        \item $105$
+        \item $143$
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Écris.
     \begin{enumerate}
         \item  Le plus grand naturel que l'on peut écrire à l'aide de quatre chiffres différents.
-        \item  en utilisant les chiffres 1, 8 et 7 une fois chacun, le plus petit nombre pair.
+        \item  En utilisant les chiffres 1, 8 et 7 une fois chacun, le plus petit nombre pair.
         \item  Le plus grand naturel que l'on peut écrire à l'aide de chiffres différents.
-        \item  \(108,090\) en supprimant un \og \(0\)\fg pour que la valeur du nombre ne change pas.
-        \item  \(108,090\) en supprimant un \og \(0\)\fg pour que la valeur du nombre devienne la plus grande possible.
-        \item  \(108,090\) en supprimant un \og \(0\)\fg pour que la valeur du nombre devienne la plus petite possible.
+        \item  \num{108,090} en supprimant un 0 pour que la valeur du nombre ne change pas.
+        \item  \num{108,090} en supprimant un 0 pour que la valeur du nombre devienne la plus grande possible.
+        \item  \num{108,090} en supprimant un 0 pour que la valeur du nombre devienne la plus petite possible.
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item \num{9876}
+        \item 178
+        \item \num{9876543210}
+        \item \num{108,09}
+        \item \num{108,90}
+        \item \num{18,09}
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     À chaque étape du calcul, identifie la propriété ou la règle utilisée.
@@ -512,8 +592,16 @@ quotient de 72 par 8 vaut 9.
          & = 500                     \\
     \end{align*}
 \end{exercise}
+\begin{solution}
+    \begin{align*}
+        54 + 125 + 246 + 75
+         & = 54 + 246 + 125 + 75     &  & \text{Commutativité} \\
+         & = (54 + 246) + (125 + 75) &  & \text{Associativité} \\
+         & = 300 + 200                                         \\
+         & = 500                                               \\
+    \end{align*}
+\end{solution}
 
-\newpage
 \begin{exercise}
     Donne le nom de la propriété utilisée dans chacune des égalités. Sois précis~!
     \begin{enumerate}[cols=2]
@@ -525,6 +613,17 @@ quotient de 72 par 8 vaut 9.
         \item \(0  +  14  =  14\)
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item Associativité.
+        \item Commutativité.
+        \item Élément absorbant de la multiplication.
+        \item Élément neutre de la multiplication.
+        \item Associativité.
+        \item Élément neutre de l'addition.
+    \end{enumerate}
+\end{solution}
+
 
 \begin{exercise}
     Dalya et sa s\oe{}ur font des courses avec l'argent qu'elles ont gagné en faisant des petits jobs. Elles ont 40~€ en tout. Elles veulent acheter
@@ -533,24 +632,34 @@ quotient de 72 par 8 vaut 9.
 
     Ont-elles assez avec les 40~€ qu'elles ont pour payer les courses~?
 \end{exercise}
+\begin{solution}
+    Prix des courses : $2 \cdot 15 + 3 \cdot 6 + 8 = 56$. Elles n'ont donc pas assez d'argent avec leur 40~€.
+\end{solution}
 
 \begin{exercise}
     Un artisan doit réaliser cent plaques de rues numérotées de 1 à 100.
     Combien de fois devra-t-il écrire le chiffre 9 ? Explique ta réponse
     en écrivant tout ton raisonnement.
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item Tous les nombres dont l'unité est 9 : 10 nombres
+        \item Tous les nombers dont la dizaine est 9 : 10 nombres
+    \end{enumerate}
+    Au total il aura donc besoin 20 fois du chiffre 9.
+\end{solution}
 
 \begin{exercise}
     Marc va au marché et fait des petites courses. Il achète 3 bananes à
-    0,40~€ pièce, 500~gr de fraises au prix de 1~€ pour 100~gr. Ensuite, il
-    rajoute une bouteille de coca à 0,90~€. Le marchand lui fait cadeau de
-    0,50~€. Note, en un seul calcul, ce que Marc va devoir payer, puis
-    effectue.
+    0,40~€ pièce, 500~gr de fraises au prix de 1~€ pour 100~gr. Ensuite, il rajoute une bouteille de coca à 0,90~€. Le marchand lui fait cadeau de 0,50~€. Note, en un seul calcul, ce que Marc va devoir payer, puis  effectue.
 \end{exercise}
+\begin{solution}
+    $3 \cdot 0,4 + 1 \cdot 5 + 0,9 - 0,5 = 6,6$. Marc devra payer 6,6~€.
+\end{solution}
 
 \begin{exercise}
     Effectue en respectant la priorité des opérations.
-    \begin{enumerate}[cols=4]
+    \begin{enumerate}[cols=2]
         \item \(13 + 9 - 5 \cdot 2\)
         \item \((6 + 2 \cdot 3) :2\)
         \item \(27 : 9 + 7 - (3 + 1)\)
@@ -561,5 +670,19 @@ quotient de 72 par 8 vaut 9.
         \item $24 : 4 \cdot 2 + 2$
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item $12$
+        \item $6$
+        \item $6$
+        \item $28$
+        \item $22$
+        \item $5$
+        \item $7$
+        \item $14$
+    \end{enumerate}
+\end{solution}
 
+\newpage
+\printsolutions
 \end{document}

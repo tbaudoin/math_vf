@@ -5,7 +5,7 @@
 \usepackage{mathtools} % macros pour les maths
 \usepackage{frenchmath} % conventions française pour les maths
 \usepackage{cmbright} % la police de caractère
-\usepackage{fourier} % police pour les maths
+%\usepackage{fourier} % police pour les maths
 \usepackage{calrsfs} % pour les beaux C de cercles avec la commande \mathcal{C}
 \usepackage{tasks} % pour personnaliser les listes
 \usepackage{fontawesome5} % plein de petites icones
@@ -18,8 +18,8 @@
 \xsimsetup{%
     path = xsim,
     load-style = syllabus-template,
-    print-solutions/chapter=true,
     exercise/template = mytemplate,
+    solution/template = mytemplate,
     exercise/within = chapter,
     exercise/the-counter= \arabic{exercise},
     blank/blank-style = \dotuline{#1},
