@@ -1,0 +1,14 @@
+\begin{tikzpicture}[rotate=-79, baseline=(current bounding box.north)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0,-4){B}
+    \tkzDefPoint(3,-4){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[right](A)
+    \tkzLabelPoints[below](C)
+    \tkzLabelPoints[left](B)
+    \tkzLabelSegment(A,C){$x$}
+    \tkzLabelSegment[above](A,B){$\sqrt{40}$} 
+    \tkzLabelSegment[left](B,C){$\sqrt{24}$}
+    \tkzDrawPoints(A,B,C)
+    \tkzMarkRightAngle[size=.5](A,B,C)
+\end{tikzpicture}

@@ -1,0 +1,30 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), rotate=30, scale=0.7]
+
+    \tkzDefPoint(0,0){P}
+    \tkzDefPoint(0,-4){A}
+    \tkzDefPoint(3,-4){S}
+    \tkzDefPoint(0,-6){R}
+    \tkzDefPoint(4.5,-6){C}
+
+    \fill[pattern=north east lines] (A) -- (S) -- (C) -- (R) -- cycle ;
+
+    \tkzDrawPoints(P,A,S,R,C)
+    \tkzDrawSegments(P,A A,R P,S S,C A,S R,C)
+
+    \tkzDefCentroid(P,R,C)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.1](P)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](A)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.3](S)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.1](C)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](R)
+
+    % \tkzLabelPoints[above](P)
+    % \tkzLabelPoints[left](A)
+    % \tkzLabelPoints[left](R)
+    % \tkzLabelPoints[above right](S)
+    % \tkzLabelPoints[right](C)
+
+    \tkzMarkRightAngle[size=.5](P,A,S)
+    \tkzMarkRightAngle[size=.5](A,R,C)
+
+\end{tikzpicture}

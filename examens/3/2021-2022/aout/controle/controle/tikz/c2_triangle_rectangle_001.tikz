@@ -1,0 +1,15 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=1, rotate=60]
+    \tkzDefPoint(0,0){B}
+    \tkzDefPoint(3,0){A}
+    \tkzDefPoint(0,4){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzDefCentroid(A,B,C)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.1](A,C)
+    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](B)
+    \tkzMarkRightAngle[size=.5](C,B,A)
+    \tkzLabelSegment[swap](C,B){$\sqrt{32}$}
+    \tkzLabelSegment(A,B){$\sqrt{17}$}
+    % \tkzLabelSegment[swap](A,C){$x$}
+    \tkzMarkAngles(B,C,A)
+    % \tkzLabelAngle[pos=1.3](B,C,A){$\alpha$}
+\end{tikzpicture}
