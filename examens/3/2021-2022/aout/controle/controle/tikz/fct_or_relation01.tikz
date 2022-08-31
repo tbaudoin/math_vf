@@ -1,8 +1,0 @@
-\begin{tikzpicture}[baseline=(current bounding box.north), scale=.5]
-    % AXES + GRILLES
-    \tkzInit[xmin=-2, xmax=2, ymin=-2,ymax=2]
-    \tkzDrawX[noticks,right=1pt]
-    \tkzDrawY[noticks,above=1pt]
-    % POINTS
-    \tkzFctPar{(-0.45*t-0.89*cos(t))}{(0.89*t - 0.45*cos(t))}
-\end{tikzpicture}
