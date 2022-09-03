@@ -1,89 +1,70 @@
 \documentclass[../../syllabus_1.tex]{subfiles}
 \begin{document}
-\chapter{Divisuers et multiples}
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\item
-  Découverte des diviseurs
-\end{enumerate}
 
-Représente dans le quadrillage ci-dessous l'ensemble des rectangles
-possédant exactement \textbf{24} petits carrés.
+\chapter{Diviseurs et multiples}
+
+\section{Découverte des diviseurs}
+
+Représente dans le quadrillage ci-dessous l'ensemble des rectangles possédant exactement 24 petits carrés.
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        % grille 12 x 30
+        \draw (0,0) grid (30,12);
+    \end{tikzpicture}
+\end{center}
+
+Dimensions possibles de chaque rectangle : \dotsforanswer{1}
+
+Fais de même avec 26 petits carrés.
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        % grille 12 x 30
+        \draw (0,0) grid (30,12);
+    \end{tikzpicture}
+\end{center}
+
+Dimensions possibles de chaque rectangle : \dotsforanswer{1}
 
 
-Dimensions possibles de chaque rectangle~:
+\begin{exercise}
+    Quelles sont les dimensions possibles d'un rectangle constitué du nombre de carrés ci-dessous.
+    \begin{enumerate}
+        \item 8 carrés ?
+        \item 15 carrés ?
+        \item 50 carrés ?
+        \item 48 carrés ?
+    \end{enumerate}
+\end{exercise}
+\begin{solution}
 
-Fais de même avec \textbf{26} petits carrés.
+\end{solution}
 
-
-Dimensions possibles~de chaque rectangle :
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  ~Quelles sont les dimensions possibles d'un rectangle constitué de
-  \ldots{}
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \ldots{} 8 carrés~?
-\item
-  \ldots{} 15 carrés~?
-\item
-  \ldots{} 50 carrés~?
-\item
-  \ldots{} 48 carrés~?
-\end{enumerate}
-
+%TODO: Je n'ai pas compris cette question ou ce qui est attendu.
 Que représentent les dimensions possibles pour un rectangle constitué de
-\(a\) carrés~?
+\(a\) carrés ?
 
-Notation~:
+Notation :
 
-\emph{Exemples~: }
+Exemples :
 
-\emph{}
+\begin{exercise}
+    Détermine les éléments des ensembles ci-dessous.
+    \begin{enumerate}
+        \item \(\text{div } 9 = \lbrace \)
+        \item \(\text{div } 7 = \lbrace \)
+        \item \(\text{div } 100 = \lbrace \)
+        \item \(\text{div } 1 = \lbrace \)
+        \item \(\text{div } 12 = \lbrace \)
+    \end{enumerate}
+\end{exercise}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\item
-  Détermine les éléments des ensembles ci-dessous.
-\end{enumerate}
+\begin{exercise}
+    Vrai ou faux ? Plus un nombre naturel est grand, plus il admet de diviseurs.
+\end{exercise}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \(div.\ 9 =\)
-\item
-  \(div.\ 7 =\)
-\item
-  \(div.\ 100 =\)
-\item
-  \(div.\ 1 =\)
-\item
-  \(div.\ 12 =\)
-\end{enumerate}
+\section{Nombres particuliers}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\item
-  ~Vrai ou faux~? Plus un nombre naturel est grand, plus il admet de
-  diviseurs.
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\item
-  Nombres particuliers
-\end{enumerate}
-
-2.2.1. Nombres premiers
+\subsection{Nombres premiers}
 
 Dans le quadrillage ci-dessous, trace en bleu tous les rectangles
 constitués de 13 carrés, et en vert tous les rectangles constitués de 7
@@ -91,7 +72,7 @@ carrés.
 
 
 
-Que remarques-tu~?
+Que remarques-tu ?
 
 Un nombre premier est
 
@@ -99,34 +80,34 @@ Pour
 trouver les nombres premiers plus petits que 100, Eratosthène (IIIème
 siècle avant JC) avait dicté une règle très simple, un \emph{crible.}
 
-Il commençait comme ceci~:
+Il commençait comme ceci :
 
 \begin{itemize}
-\item
-  Le premier nombre premier est 2. Entoure 2 et barre ensuite tous les
-  multiples de 2 puisqu'ils ne sont pas premiers.
-\item
-  Le nombre premier qui suit est 3. Entoure 3 puis barre ensuite tous
-  les multiples de 3.
+    \item
+          Le premier nombre premier est 2. Entoure 2 et barre ensuite tous les
+          multiples de 2 puisqu'ils ne sont pas premiers.
+    \item
+          Le nombre premier qui suit est 3. Entoure 3 puis barre ensuite tous
+          les multiples de 3.
 \end{itemize}
 
 Poursuis ce travail jusqu'à ce que tu sois sûr d'avoir découvert tous
 les nombres premiers du tableau.
 
 
-Les nombres premiers inférieurs à 100 sont~:
+Les nombres premiers inférieurs à 100 sont :
 
-Attention~: ne pas confondre~!
+Attention : ne pas confondre !
 
 On dit aussi de certains nombres qu'ils sont premiers \textbf{entre
-eux,} ce qui n'est pas du tout la même chose qu'\textbf{UN} nombre
+    eux,} ce qui n'est pas du tout la même chose qu'\textbf{UN} nombre
 premier
 
 Par exemple, on dit que \(25\ \)et \(7\) sont des nombres
 \textbf{premiers entre eux}, mais par contre, \(25\) et \(5\) ne sont
-pas premiers entre eux. À ton avis, qu'est-ce que cela veut dire~?
+pas premiers entre eux. À ton avis, qu'est-ce que cela veut dire ?
 
-Donne deux autres exemples de nombres premier entre eux~: 
+Donne deux autres exemples de nombres premier entre eux :
 
 
 
@@ -136,170 +117,170 @@ Construis tous les rectangles possibles constitués de 9 carrés en bleu,
 et de 16 carrés en vert.
 
 
-Que remarques-tu~?
+Que remarques-tu ?
 
 Un nombre carré est
 
 Donne les 10 premiers nombres carrés, ainsi qu'une de leurs racines
 carrées comme dans l'exemple.
 
-Complète les ensembles suivants~:
+Complète les ensembles suivants :
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \(div.\ 8 =\)
-\item
-  \(div.\ 36 = \ \)
-\item
-  \(div.\ 77 =\)
-\item
-  \(div.\ 16 =\)
-\item
-  \(div.\ 64 = \ \)
-\item
-  \(div.\ 5 =\)
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \(div.\ 8 =\)
+    \item
+          \(div.\ 36 = \ \)
+    \item
+          \(div.\ 77 =\)
+    \item
+          \(div.\ 16 =\)
+    \item
+          \(div.\ 64 = \ \)
+    \item
+          \(div.\ 5 =\)
 \end{enumerate}
 
 \begin{quote}
-Observe le nombre de diviseurs de chaque nombre ci-dessus. Que
-remarques-tu~?
+    Observe le nombre de diviseurs de chaque nombre ci-dessus. Que
+    remarques-tu ?
 \end{quote}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\item
-  Vrai ou faux~? Justifie dans les deux cas.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{3}
+    \item
+          Vrai ou faux ? Justifie dans les deux cas.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  1 est un nombre premier.
-\item
-  Tous les nombres impairs sont des nombres premiers.
-\item
-  La différence entre deux nombres premiers vaut toujours deux.
-\item
-  Il n'existe aucun nombre premier qui soit pair.
-\item
-  \(125\) et \(17\) sont des nombres premiers entre eux.
-\item
-  Si un nombre naturel \(a\) admet un nombre pair de diviseurs, alors
-  c'est que le nombre naturel \(a\) est un nombre premier.
-\item
-  Il n'existe pas de nombres premiers consécutifs.
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          1 est un nombre premier.
+    \item
+          Tous les nombres impairs sont des nombres premiers.
+    \item
+          La différence entre deux nombres premiers vaut toujours deux.
+    \item
+          Il n'existe aucun nombre premier qui soit pair.
+    \item
+          \(125\) et \(17\) sont des nombres premiers entre eux.
+    \item
+          Si un nombre naturel \(a\) admet un nombre pair de diviseurs, alors
+          c'est que le nombre naturel \(a\) est un nombre premier.
+    \item
+          Il n'existe pas de nombres premiers consécutifs.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\item
-  ~Josette explique à son petit frère~: «~Il n'existe aucun nombre
-  premier qui termine par 5~». Est-ce vrai~? Explique.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{4}
+    \item
+          Josette explique à son petit frère : « Il n'existe aucun nombre
+          premier qui termine par 5 ». Est-ce vrai ? Explique.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\item
-  Décomposition en facteurs premiers
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{3}
+    \item
+          Décomposition en facteurs premiers
 \end{enumerate}
 
 \begin{quote}
-Décomposer un naturel en facteurs premiers, c'est
+    Décomposer un naturel en facteurs premiers, c'est
 
-Pour ce faire, on peut utiliser la technique en colonne~: nous allons
-diviser le nombre de départ en n'utilisant dans la colonne de droite que
-des diviseurs nombres premiers.
+    Pour ce faire, on peut utiliser la technique en colonne : nous allons
+    diviser le nombre de départ en n'utilisant dans la colonne de droite que
+    des diviseurs nombres premiers.
 \end{quote}
 
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\item
-  Puissance d'un nombre
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{4}
+    \item
+          Puissance d'un nombre
 \end{enumerate}
 
-Qu'est-ce que la puissance d'un nombre~?
+Qu'est-ce que la puissance d'un nombre ?
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
-\item
-  Décompose les nombres naturels suivants en produit de facteurs
-  premiers, et écris-les ensuite en produits de puissances de facteurs
-  premiers.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{5}
+    \item
+          Décompose les nombres naturels suivants en produit de facteurs
+          premiers, et écris-les ensuite en produits de puissances de facteurs
+          premiers.
 \end{enumerate}
 
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\item
-  ~Calcule les puissances suivantes.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{6}
+    \item
+          Calcule les puissances suivantes.
 
-  \begin{enumerate}
-  \def\labelenumii{\alph{enumii}.}
-  \item
-  \item
-    \(7^{2} =\)
-  \item
-    \(3^{3} =\)
-  \item
-    \(1^{5} =\)
-  \item
-    \(2^{4} =\)
-  \item
-    \(6^{2} =\)
-  \item
-    \(5^{3} =\)
-  \end{enumerate}
-\item
-\item
-  La décomposition en un produit de facteurs premiers d'un naturel est
-  \(2^{3}.\ 3\ .\ 5\)
+          \begin{enumerate}
+              \def\labelenumii{\alph{enumii}.}
+              \item
+              \item
+                    \(7^{2} =\)
+              \item
+                    \(3^{3} =\)
+              \item
+                    \(1^{5} =\)
+              \item
+                    \(2^{4} =\)
+              \item
+                    \(6^{2} =\)
+              \item
+                    \(5^{3} =\)
+          \end{enumerate}
+    \item
+    \item
+          La décomposition en un produit de facteurs premiers d'un naturel est
+          \(2^{3}.\ 3\ .\ 5\)
 \end{enumerate}
 
 Parmi les nombres ci-dessous, lequel n'est pas un diviseur de ce
-naturel~? Justifie.
+naturel ? Justifie.
 
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
-\item
-  Multiples d'un naturel
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{5}
+    \item
+          Multiples d'un naturel
 \end{enumerate}
 
 Note les 10 premiers multiples des nombres naturels ci-dessous.
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \(6\mathbb{N} =\)
-\item
-  \(7\mathbb{N} =\)
-\item
-  \(20\mathbb{N} =\)
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \(6\mathbb{N} =\)
+    \item
+          \(7\mathbb{N} =\)
+    \item
+          \(20\mathbb{N} =\)
 \end{enumerate}
 
 \begin{quote}
-Comment note-t-on l'ensemble des multiples d'un naturel \emph{a}~?
+    Comment note-t-on l'ensemble des multiples d'un naturel \emph{a} ?
 \end{quote}
 
-Propriété des multiples d'un naturel~:
+Propriété des multiples d'un naturel :
 
-\emph{Exemple~:}
+\emph{Exemple :}
 
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\item
-  Les caractères de divisibilité
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{6}
+    \item
+          Les caractères de divisibilité
 \end{enumerate}
 
 Les caractères de divisibilité permettent de reconnaitre si un nombre
@@ -316,583 +297,583 @@ Un nombre est divisible \textbf{par 3 (}ou par 9) si
 Un nombre est divisible \textbf{par 10 (}ou par 100, ou par 1000) si
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
-\item
-  ~À quelle(s) condition(s) un nombre naturel est-il divisible par 6~?
-\item
-  Réponds en justifiant.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{9}
+    \item
+          À quelle(s) condition(s) un nombre naturel est-il divisible par 6 ?
+    \item
+          Réponds en justifiant.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \(52\ 035\) est-il divisible par \(5\ \)?
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \(52\ 035\) est-il divisible par \(5\ \)?
 \end{enumerate}
 
 \begin{quote}
-OUI / NON car
+    OUI / NON car
 \end{quote}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{1}
-\item
-  \(100\ 000\ 3\) est-il divisible par \(3\ \)?
+    \def\labelenumi{\alph{enumi}.}
+    \setcounter{enumi}{1}
+    \item
+          \(100\ 000\ 3\) est-il divisible par \(3\ \)?
 \end{enumerate}
 
 \begin{quote}
-OUI / NON car
+    OUI / NON car
 \end{quote}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{2}
-\item
-  \(819\) est-il divisible par \(9\ \)?
+    \def\labelenumi{\alph{enumi}.}
+    \setcounter{enumi}{2}
+    \item
+          \(819\) est-il divisible par \(9\ \)?
 \end{enumerate}
 
 \begin{quote}
-OUI / NON car
+    OUI / NON car
 \end{quote}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{3}
-\item
-  \(35\ 150\) est-il divisible par 25~?
+    \def\labelenumi{\alph{enumi}.}
+    \setcounter{enumi}{3}
+    \item
+          \(35\ 150\) est-il divisible par 25 ?
 \end{enumerate}
 
 \begin{quote}
-OUI / NON car
+    OUI / NON car
 \end{quote}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{4}
-\item
-  \(5\ 014\) est-il divisible par 4~?
+    \def\labelenumi{\alph{enumi}.}
+    \setcounter{enumi}{4}
+    \item
+          \(5\ 014\) est-il divisible par 4 ?
 \end{enumerate}
 
 \begin{quote}
-OUI / NON car
+    OUI / NON car
 \end{quote}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
-\item
-  ~En utilisant les chiffres \(3,\ 8,\ 9,\ 1\ \)et\(\ 6\) une seule fois
-  chacun, forme, si possible\ldots{}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{11}
+    \item
+          En utilisant les chiffres \(3,\ 8,\ 9,\ 1\ \)et\(\ 6\) une seule fois
+          chacun, forme, si possible
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \ldots{} le plus petit nombre naturel multiple de 3~:
-\item
-  \ldots{} le plus grand nombre naturel divisible par 8~:
-\item
-  \ldots{} le plus petit nombre naturel multiple de 5~:
-\item
-  \ldots{} le plus petit nombre naturel divisible par 2 et par 3~:
-\item
-  \ldots{} le plus grand nombre divisible par 6, mais pas par 2~:
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          le plus petit nombre naturel multiple de 3 :
+    \item
+          le plus grand nombre naturel divisible par 8 :
+    \item
+          le plus petit nombre naturel multiple de 5 :
+    \item
+          le plus petit nombre naturel divisible par 2 et par 3 :
+    \item
+          le plus grand nombre divisible par 6, mais pas par 2 :
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{12}
-\item
-  Complète le tableau ci-dessous en cochant d'une croix les cases pour
-  lesquelles les divisions sont vérifiées.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{12}
+    \item
+          Complète le tableau ci-dessous en cochant d'une croix les cases pour
+          lesquelles les divisions sont vérifiées.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{13}
-\item
-  \(236\) athlètes peuvent-ils défiler en rangs de 3 de fronts~?
-  Justifie.
-\item
-  Par quel(s) chiffre(s) peut-on remplacer le symbole  pour que les
-  divisibilités soient vérifiées ?
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{13}
+    \item
+          \(236\) athlètes peuvent-ils défiler en rangs de 3 de fronts ?
+          Justifie.
+    \item
+          Par quel(s) chiffre(s) peut-on remplacer le symbole  pour que les
+          divisibilités soient vérifiées ?
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \(264\) est divisible par \(4\) si  =
-\item
-  \(736\) est divisible par \(3\) si  =
-\item
-  \(742\) est divisible par \(5\) si  =
-\item
-  \(177\) est divisible par \(9\) si  =
-\item
-  \(2861\) est divisible par \(6\) si  =
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \(264\) est divisible par \(4\) si  =
+    \item
+          \(736\) est divisible par \(3\) si  =
+    \item
+          \(742\) est divisible par \(5\) si  =
+    \item
+          \(177\) est divisible par \(9\) si  =
+    \item
+          \(2861\) est divisible par \(6\) si  =
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
-\item
-  Propriétés fondamentales de la divisibilité
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{7}
+    \item
+          Propriétés fondamentales de la divisibilité
 \end{enumerate}
 
-Propriété 1~:
+Propriété 1 :
 
-\emph{Exemples~: } \(147\ :7 =\)
+\emph{Exemples : } \(147\ :7 =\)
 
 \emph{}\(938\ :7 =\)
 
-Propriété 2~:
+Propriété 2 :
 
-\emph{Exemples~: }
-
-\emph{}
-
-Propriété 3~:
-
-\emph{Exemples~: }
+\emph{Exemples : }
 
 \emph{}
 
+Propriété 3 :
+
+\emph{Exemples : }
+
+\emph{}
+
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{15}
-\item
-  ~Effectue les divisions suivantes en te servant des propriétés. Écris
-  tes étapes.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{15}
+    \item
+          Effectue les divisions suivantes en te servant des propriétés. Écris
+          tes étapes.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \begin{quote}
-  \(168\ :6 =\)
-  \end{quote}
-\item
-  \begin{quote}
-  \(225\ :6 =\)
-  \end{quote}
-\item
-  \begin{quote}
-  \(735\ :7 =\)
-  \end{quote}
-\item
-  \begin{quote}
-  \(204\ :3 =\)
-  \end{quote}
-\item
-  \begin{quote}
-  \(441\ :9 =\)
-  \end{quote}
-\item
-  \begin{quote}
-  \(97\ :7 =\)
-  \end{quote}
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \begin{quote}
+              \(168\ :6 =\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(225\ :6 =\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(735\ :7 =\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(204\ :3 =\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(441\ :9 =\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(97\ :7 =\)
+          \end{quote}
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{16}
-\item
-  ~Entoure l'intru dans chaque ligne.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{16}
+    \item
+          Entoure l'intru dans chaque ligne.
 \end{enumerate}
 K
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{17}
-\item
-  Complète les phrases suivantes avec les mots \emph{diviseurs} ou
-  \emph{multiples.}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{17}
+    \item
+          Complète les phrases suivantes avec les mots \emph{diviseurs} ou
+          \emph{multiples.}
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \(3\) est un
-  \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.de
-  \(12\)
-\item
-  \(150\) est un
-  \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
-  de \(1\)
-\item
-  \(8\) est un
-  \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
-  de \(4\)
-\item
-  \(20\) est un
-  \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
-  de \(5\) et de \(10\)
-\item
-  \(0\) est un
-  \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
-  de \(17\)
-\item
-  \(1\) est un
-  \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
-  de
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \(3\) est un
+          \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.de
+          \(12\)
+    \item
+          \(150\) est un
+          \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
+          de \(1\)
+    \item
+          \(8\) est un
+          \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
+          de \(4\)
+    \item
+          \(20\) est un
+          \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
+          de \(5\) et de \(10\)
+    \item
+          \(0\) est un
+          \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
+          de \(17\)
+    \item
+          \(1\) est un
+          \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
+          de
 \end{enumerate}
 
 tous les naturels
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{6}
-\item
-  \(13\) est un
-  \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
-  de \(26\)
+    \def\labelenumi{\alph{enumi}.}
+    \setcounter{enumi}{6}
+    \item
+          \(13\) est un
+          \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots.
+          de \(26\)
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{18}
-\item
-  Vrai ou faux ? Justifie dans les deux cas.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{18}
+    \item
+          Vrai ou faux ? Justifie dans les deux cas.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  Tous les multiples de \(8\) sont des multiples de \(4\).
-\item
-  Tous les multiples de \(3\) sont des multiples de \(9\).
-\item
-  Tous les diviseurs de \(15\) sont des diviseurs de \(5\).
-\item
-  Il n'y a aucun multiple \(7\) qui soit divisible par \(4\).
-\item
-  Si on multiplie un multiple de \(5\) par \(7,\) on obtient un multiple
-  de \(5\).
-\item
-  Si un nombre est divisible par \(2\), alors il est également divisible
-  par \(10\).
-\item
-  Si un nombre est un multiple de \(4\), alors il est également multiple
-  de \(8\).
-\item
-  Si un nombre divise \(4\), alors il divise aussi \(16\).
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          Tous les multiples de \(8\) sont des multiples de \(4\).
+    \item
+          Tous les multiples de \(3\) sont des multiples de \(9\).
+    \item
+          Tous les diviseurs de \(15\) sont des diviseurs de \(5\).
+    \item
+          Il n'y a aucun multiple \(7\) qui soit divisible par \(4\).
+    \item
+          Si on multiplie un multiple de \(5\) par \(7,\) on obtient un multiple
+          de \(5\).
+    \item
+          Si un nombre est divisible par \(2\), alors il est également divisible
+          par \(10\).
+    \item
+          Si un nombre est un multiple de \(4\), alors il est également multiple
+          de \(8\).
+    \item
+          Si un nombre divise \(4\), alors il divise aussi \(16\).
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{19}
-\item
-  ~Trouve un multiple de \(6\ \)et de \(8\) qui soit compris entre
-  \(80\) et \(100.\)
-\item
-  C'est la saison des châtaignes, Maxime en ramasse un grand panier. Il
-  estime avoir entre \(150\) et \(200\) châtaignes. S'il les compte par
-  \(3\), par \(4\) ou par \(5\), il n'en reste aucune. Combien de
-  châtaignes possède Maxime ? Écris tous tes calculs.
-\item
-  Cite, si possible, tous les naturels qui sont \ldots{}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{19}
+    \item
+          Trouve un multiple de \(6\ \)et de \(8\) qui soit compris entre
+          \(80\) et \(100.\)
+    \item
+          C'est la saison des châtaignes, Maxime en ramasse un grand panier. Il
+          estime avoir entre \(150\) et \(200\) châtaignes. S'il les compte par
+          \(3\), par \(4\) ou par \(5\), il n'en reste aucune. Combien de
+          châtaignes possède Maxime ? Écris tous tes calculs.
+    \item
+          Cite, si possible, tous les naturels qui sont
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \ldots{} des diviseurs de \(24\) et qui sont inférieurs à \(12\) :
-\item
-  \ldots{} des multiples de \(4\) et qui sont inférieurs à \(20\) :
-\item
-  \ldots{} des diviseurs impairs de \(12\) :
-\item
-  \ldots{} des multiples de \(5\), qui sont impairs et inférieurs à
-  \(30\) :
-\item
-  \ldots{} des diviseurs pairs de \(15\) :
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          des diviseurs de \(24\) et qui sont inférieurs à \(12\) :
+    \item
+          des multiples de \(4\) et qui sont inférieurs à \(20\) :
+    \item
+          des diviseurs impairs de \(12\) :
+    \item
+          des multiples de \(5\), qui sont impairs et inférieurs à
+          \(30\) :
+    \item
+          des diviseurs pairs de \(15\) :
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{22}
-\item
-  ~Retrouve ton chemin en te déplaçant uniquement horizontalement ou
-  verticalement.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{22}
+    \item
+          Retrouve ton chemin en te déplaçant uniquement horizontalement ou
+          verticalement.
 \end{enumerate}
 
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{23}
-\item
-  Fatima
-  doit trouver le code d'un coffre-fort où Marc a caché son cadeau pour
-  la Saint-Valentin. Il lui a donné les indices suivants~:
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{23}
+    \item
+          Fatima
+          doit trouver le code d'un coffre-fort où Marc a caché son cadeau pour
+          la Saint-Valentin. Il lui a donné les indices suivants :
 
-  \begin{itemize}
-  \item
-    Le code est composé de trois chiffres distincts.
-  \item
-    Ce nombre est divisible par \(2,\ 4,\ 5\) et \(8.\)
-  \item
-    Ce nombre est le plus grand possible.
-  \end{itemize}
+          \begin{itemize}
+              \item
+                    Le code est composé de trois chiffres distincts.
+              \item
+                    Ce nombre est divisible par \(2,\ 4,\ 5\) et \(8.\)
+              \item
+                    Ce nombre est le plus grand possible.
+          \end{itemize}
 \end{enumerate}
 
 \begin{quote}
-Aide Fatima à trouver le code secret et à récupérer son cadeau. Écris
-tout ton raisonnement.
+    Aide Fatima à trouver le code secret et à récupérer son cadeau. Écris
+    tout ton raisonnement.
 \end{quote}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
-\item
-  Priorité des opérations
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{8}
+    \item
+          Priorité des opérations
 \end{enumerate}
 
-Rappelle-toi de la priorité dans les opérations~:
+Rappelle-toi de la priorité dans les opérations :
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{24}
-\item
-  ~Effectue sur une feuille annexe en respectant la priorité des
-  opérations. Veille à écrire toutes tes étapes.
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \begin{quote}
-  \(9\ \ .\ \ (2\  + \ 8)\)
-  \end{quote}
-\item
-  \begin{quote}
-  \(5\  + \ 2\ \ .\ \ 2\  + \ 3\ \)
-  \end{quote}
-\item
-  \begin{quote}
-  \(9\ \ .\ \ 5\  + \ 8\)
-  \end{quote}
-\item
-  \begin{quote}
-  \((5\  + \ 2)\ \ .\ \ (2\  + \ 3)\)
-  \end{quote}
-\item
-  \(\ \ \ (5\  + \ 3)\ \ .\ \ 8\)
-\item
-  \begin{quote}
-  \(2\  + \ 3^{2}\)
-  \end{quote}
-\item
-  \begin{quote}
-  \((2\ \ .\ \ 5)^{2}\)
-  \end{quote}
-\item
-  \begin{quote}
-  \(2\ \ .\ \ 5^{2}\)
-  \end{quote}
-\item
-  \begin{quote}
-  \((2\  + \ 3)\ \ .\ \ 7\  + \ 3\)
-  \end{quote}
-\item
-  \(\ \ \ 2\  + \ 3\ \ .\ \ (7\  + \ 3)\)
-\item
-  \begin{quote}
-  \(2\  + \ 3\ \ .\ \ 7\  + \ 3\)
-  \end{quote}
-\item
-  \begin{quote}
-  \((3\  + \ 7)\ \ .\ \ (2\  + \ 3)\)
-  \end{quote}
-\item
-  \begin{quote}
-  \(3\ \ .\ \ (7\  + \ 2\ \ .\ \ 3)\)
-  \end{quote}
-\item
-  \begin{quote}
-  \((3\  + \ 7)\ \ .\ \ 2\  + \ 3\)
-  \end{quote}
-\item
-  \(\ \ \ (3\  + \ 7\ \ .\ \ 2)\  + \ 3\)
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{24}
+    \item
+          Effectue sur une feuille annexe en respectant la priorité des
+          opérations. Veille à écrire toutes tes étapes.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{25}
-\item
-  ~Effectue sur une feuille annexe. Veille à écrire toutes tes étapes.
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \begin{quote}
+              \(9\ \ .\ \ (2\  + \ 8)\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(5\  + \ 2\ \ .\ \ 2\  + \ 3\ \)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(9\ \ .\ \ 5\  + \ 8\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \((5\  + \ 2)\ \ .\ \ (2\  + \ 3)\)
+          \end{quote}
+    \item
+          \(\ \ \ (5\  + \ 3)\ \ .\ \ 8\)
+    \item
+          \begin{quote}
+              \(2\  + \ 3^{2}\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \((2\ \ .\ \ 5)^{2}\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(2\ \ .\ \ 5^{2}\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \((2\  + \ 3)\ \ .\ \ 7\  + \ 3\)
+          \end{quote}
+    \item
+          \(\ \ \ 2\  + \ 3\ \ .\ \ (7\  + \ 3)\)
+    \item
+          \begin{quote}
+              \(2\  + \ 3\ \ .\ \ 7\  + \ 3\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \((3\  + \ 7)\ \ .\ \ (2\  + \ 3)\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \(3\ \ .\ \ (7\  + \ 2\ \ .\ \ 3)\)
+          \end{quote}
+    \item
+          \begin{quote}
+              \((3\  + \ 7)\ \ .\ \ 2\  + \ 3\)
+          \end{quote}
+    \item
+          \(\ \ \ (3\  + \ 7\ \ .\ \ 2)\  + \ 3\)
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \((2\  + \ 8)^{2}\ \ .\ \ 2\  + \ 7\)
-\item
-  \(2\  + \ 8^{2}\ \ .\ \ 2\  + \ 7\)
-\item
-  \(2\  + \ (8\  + \ 2)^{2}\  + \ 7\)
-\item
-  \(1\  + \ 10^{2}\ \ .\ \ 5\  + \ 7\)
-\item
-  \(1\  + \ \left( 10^{2}\  + \ 5 \right)\ \ .\ \ 7\)
-\item
-  \(5\ \ .\ \ (3\ \ .\ \ \ 4\  - \ 7)\  - \ (2\  + \ 3)\)
-\item
-  \(5\ \ .\ \ \left( 5^{2}\  - \ 5\ \ .\ \ 4 \right)\)
-\item
-  \(2\ \ .\ \ 7\  + \ 3\  - \ 32\ \ :\ 8\ \ .\ \ 4\)
-\item
-  \(\left( 2^{5}\  - \ 3^{2}\ \ .\ \ 2 \right)\ \ .\ \ \left( 2^{3}\  - \ 7 \right)^{3}\)
-\item
-  \(\left( 6\  + \ 1^{2} \right)\  - \ 2^{2}\  + \ 4^{0}\ \ .\ \ 5\)
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{25}
+    \item
+          Effectue sur une feuille annexe. Veille à écrire toutes tes étapes.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
-\item
-  Exercices mélangés
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \((2\  + \ 8)^{2}\ \ .\ \ 2\  + \ 7\)
+    \item
+          \(2\  + \ 8^{2}\ \ .\ \ 2\  + \ 7\)
+    \item
+          \(2\  + \ (8\  + \ 2)^{2}\  + \ 7\)
+    \item
+          \(1\  + \ 10^{2}\ \ .\ \ 5\  + \ 7\)
+    \item
+          \(1\  + \ \left( 10^{2}\  + \ 5 \right)\ \ .\ \ 7\)
+    \item
+          \(5\ \ .\ \ (3\ \ .\ \ \ 4\  - \ 7)\  - \ (2\  + \ 3)\)
+    \item
+          \(5\ \ .\ \ \left( 5^{2}\  - \ 5\ \ .\ \ 4 \right)\)
+    \item
+          \(2\ \ .\ \ 7\  + \ 3\  - \ 32\ \ :\ 8\ \ .\ \ 4\)
+    \item
+          \(\left( 2^{5}\  - \ 3^{2}\ \ .\ \ 2 \right)\ \ .\ \ \left( 2^{3}\  - \ 7 \right)^{3}\)
+    \item
+          \(\left( 6\  + \ 1^{2} \right)\  - \ 2^{2}\  + \ 4^{0}\ \ .\ \ 5\)
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  ~Donne l'ensemble des diviseurs des nombres suivants. Attention à la
-  notation~!
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{9}
+    \item
+          Exercices mélangés
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-\item
-  \(16\)
-\item
-  \(50\)
-\item
-  \(120\)
-\item
-  \(10\)
-\item
-  \(81\)
-\item
-  \(1\)
+    \def\labelenumi{\arabic{enumi}.}
+    \item
+          Donne l'ensemble des diviseurs des nombres suivants. Attention à la
+          notation !
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\item
-  ~Donne, si possible, les 11 premiers multiples des nombres suivants.
-  Attention à la notation~!
+    \def\labelenumi{\alph{enumi}.}
+    \item
+    \item
+          \(16\)
+    \item
+          \(50\)
+    \item
+          \(120\)
+    \item
+          \(10\)
+    \item
+          \(81\)
+    \item
+          \(1\)
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-\item
-  \(0\)
-\item
-  \(1\)
-\item
-  \(8\)
-\item
-  \(20\)
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{1}
+    \item
+          Donne, si possible, les 11 premiers multiples des nombres suivants.
+          Attention à la notation !
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\item
-  ~Calcule les puissances ci-dessous.
+    \def\labelenumi{\alph{enumi}.}
+    \item
+    \item
+          \(0\)
+    \item
+          \(1\)
+    \item
+          \(8\)
+    \item
+          \(20\)
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-\item
-  ~\(3^{2}\)
-\item
-  \(4^{3}\)
-\item
-  \(7^{2}\)
-\item
-  \(1^{12}\)
-\item
-  \(0^{3}\)
-\item
-  \(3^{3}\)
-\item
-  \(2^{4}\)
-\item
-  \(5^{3}\)
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{2}
+    \item
+          Calcule les puissances ci-dessous.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\item
-  ~Cite\ldots{}
+    \def\labelenumi{\alph{enumi}.}
+    \item
+    \item
+          \(3^{2}\)
+    \item
+          \(4^{3}\)
+    \item
+          \(7^{2}\)
+    \item
+          \(1^{12}\)
+    \item
+          \(0^{3}\)
+    \item
+          \(3^{3}\)
+    \item
+          \(2^{4}\)
+    \item
+          \(5^{3}\)
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \ldots{} un nombre premier compris entre 15 et 20.
-\item
-  \ldots{} deux nombres premiers entre eux, mais pas premiers.
-\item
-  \ldots{} deux nombres premiers consécutifs.
-\item
-  \ldots{} un multiple de 5 et de 8 strictement compris entre 150 et
-  200.
-\item
-  \ldots{} les diviseurs communs à 48 et 16.
-\item
-  \ldots{} un nombre multiple de 7 et de 5, mais pas de 10.
-\end{enumerate}
-
-~
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\item
-  ~Soit le nombre naturel décomposé comme étant \(11\ .\ 13\ .\ 2\)
-\end{enumerate}
-
-Combien a-t-il de diviseurs~? Écris tous tes calculs.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
-\item
-  ~Effectue~en décomposant les dividendes:
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{3}
+    \item
+          Cite
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-\item
-  \(114\ :6\ \)
-\item
-  \(98\ :7\)
-\item
-  \(198\ :11\)
-\item
-  \(138\ :3\)
-\item
-  \(292\ :4\)
-\item
-  \(325\ :5\)
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          un nombre premier compris entre 15 et 20.
+    \item
+          deux nombres premiers entre eux, mais pas premiers.
+    \item
+          deux nombres premiers consécutifs.
+    \item
+          un multiple de 5 et de 8 strictement compris entre 150 et
+          200.
+    \item
+          les diviseurs communs à 48 et 16.
+    \item
+          un nombre multiple de 7 et de 5, mais pas de 10.
+\end{enumerate}
+
+
+
+\begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{4}
+    \item
+          Soit le nombre naturel décomposé comme étant \(11\ .\ 13\ .\ 2\)
+\end{enumerate}
+
+Combien a-t-il de diviseurs ? Écris tous tes calculs.
+
+\begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{5}
+    \item
+          Effectue en décomposant les dividendes:
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
-\item
-  Margaux, Jeanne et Noah se sont retrouvés à la piscine ce mercredi
-  afin de préparer le championnat interscolaire. Margaux décide d'y
-  revenir tous les deux jours, Jeanne tous les quatre jours et Noah ne
-  pourra s'y rendre qu'une fois par semaine, le mercredi.
+    \def\labelenumi{\alph{enumi}.}
+    \item
+    \item
+          \(114\ :6\ \)
+    \item
+          \(98\ :7\)
+    \item
+          \(198\ :11\)
+    \item
+          \(138\ :3\)
+    \item
+          \(292\ :4\)
+    \item
+          \(325\ :5\)
+\end{enumerate}
+
+\begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{6}
+    \item
+          Margaux, Jeanne et Noah se sont retrouvés à la piscine ce mercredi
+          afin de préparer le championnat interscolaire. Margaux décide d'y
+          revenir tous les deux jours, Jeanne tous les quatre jours et Noah ne
+          pourra s'y rendre qu'une fois par semaine, le mercredi.
 \end{enumerate}
 
 Au bout de combien de jours, les trois enfants auront-ils, à nouveau, la
@@ -900,82 +881,82 @@ possibilité de s'entrainer ensemble à la piscine ? Écris tous tes
 calculs.
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
-\item
-  ~Enonce la propriété qui permet de justifier l'énoncé suivant~: « si 4
-  divise 20 et 8 , alors 4 divise forcément 28~».
-\item
-  ~Le nombre \(a = \left( 8\ .\ 3^{2} \right) - 36\) est-il multiple de
-  \(3\ \)? Explique.
-\item
-  ~Dans la liste suivante, détermine le nombre qui est multiple de
-  \(25\) et de \(6\). Justifie ton choix.~
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{7}
+    \item
+          Enonce la propriété qui permet de justifier l'énoncé suivant : « si 4
+          divise 20 et 8 , alors 4 divise forcément 28 ».
+    \item
+          Le nombre \(a = \left( 8\ .\ 3^{2} \right) - 36\) est-il multiple de
+          \(3\ \)? Explique.
+    \item
+          Dans la liste suivante, détermine le nombre qui est multiple de
+          \(25\) et de \(6\). Justifie ton choix.
 \end{enumerate}
 
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{10}
-\item
-  ~Effectue. Écris tous tes calculs.
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{10}
+    \item
+          Effectue. Écris tous tes calculs.
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-\item
-  \((5 + 3) - 2^{2}\)
-\item
-  \(3\ .\ 2 - 5\)
-\item
-  \(3\ .\ (15 - 7)\)
-\item
-  \(\left( \ 5\ .\ (9 - 4) + 1 \right) - 16\)
-\item
-  \(\left( 5^{2} - 3\ .\ 8 \right)^{2}\)
-\item
-  \((25 + 36)\ .\ (15 - 7\ .\ 2)\)
-\item
-  \(25 + 3\ .\ 6 - 7\ .\ 2\)
+    \def\labelenumi{\alph{enumi}.}
+    \item
+    \item
+          \((5 + 3) - 2^{2}\)
+    \item
+          \(3\ .\ 2 - 5\)
+    \item
+          \(3\ .\ (15 - 7)\)
+    \item
+          \(\left( \ 5\ .\ (9 - 4) + 1 \right) - 16\)
+    \item
+          \(\left( 5^{2} - 3\ .\ 8 \right)^{2}\)
+    \item
+          \((25 + 36)\ .\ (15 - 7\ .\ 2)\)
+    \item
+          \(25 + 3\ .\ 6 - 7\ .\ 2\)
 \end{enumerate}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{11}
-\item
-  ~Matthis veut carreler sa salle de bain. Celle-ci fait \(7m\) sur
-  \(3,5m\). Il souhaite mettre des carreaux carrés les plus grands
-  possibles. Quelles doivent être les dimensions en centimètres de ces
-  carreaux~? Laisse ta démarche visible.
-\item
-  ~Pourquoi ne pourrais-tu pas écrire tous les multiples de 6~?~
-\item
-  Souviens-toi des codages et décodages\ldots{}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{11}
+    \item
+          Matthis veut carreler sa salle de bain. Celle-ci fait \(7m\) sur
+          \(3,5m\). Il souhaite mettre des carreaux carrés les plus grands
+          possibles. Quelles doivent être les dimensions en centimètres de ces
+          carreaux ? Laisse ta démarche visible.
+    \item
+          Pourquoi ne pourrais-tu pas écrire tous les multiples de 6 ?
+    \item
+          Souviens-toi des codages et décodages
 \end{enumerate}
 
 Traduis en français les expressions mathématiques, et vice-versa.
-Attention, sois précis~!
+Attention, sois précis !
 
 \begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \((4 + 3)\ .\ 2\)
-\item
-  \(3^{2}\ .\ 5 = 45\)
-\item
-  \(2\ .\ 8 + 3 = 19\)
-\item
-  Le carré de la somme de 20 et 3 vaut 529.
-\item
-  Le produit de la somme de 4 et de 5 par le cube de 7.
-\item
-  La différence entre 7 et 3 vaut 4.
-\item
-  La somme du triple de 6 et du cube de 6.
-\item
-  La différence entre la somme de 8 et du double de 8 et 2 vaut 22.
-\item
-  \(3^{3} - 9\ .\ 2 =\)
+    \def\labelenumi{\alph{enumi}.}
+    \item
+          \((4 + 3)\ .\ 2\)
+    \item
+          \(3^{2}\ .\ 5 = 45\)
+    \item
+          \(2\ .\ 8 + 3 = 19\)
+    \item
+          Le carré de la somme de 20 et 3 vaut 529.
+    \item
+          Le produit de la somme de 4 et de 5 par le cube de 7.
+    \item
+          La différence entre 7 et 3 vaut 4.
+    \item
+          La somme du triple de 6 et du cube de 6.
+    \item
+          La différence entre la somme de 8 et du double de 8 et 2 vaut 22.
+    \item
+          \(3^{3} - 9\ .\ 2 =\)
 \end{enumerate}
 \end{document}
