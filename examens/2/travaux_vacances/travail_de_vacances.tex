@@ -1,7 +1,38 @@
 \documentclass[a4paper,fontsize=12pt, parskip=half]{scrartcl}
 \input{preamble.tex}
 \begin{document}
-\includepdf[pages=-]{entete.pdf}
+\pagestyle{empty}
+\renewcommand{\arraystretch}{1.5}
+\includegraphics[width=\linewidth]{entete.pdf}\\
+{\scriptsize 14 Place de Jamblinne de Meux - 1030 Bruxelles}
+
+\begin{tabularx}{\linewidth}{|X X X|}
+    \hline
+    \multicolumn{3}{|c|}{\bfseries\Large TRAVAIL DE REMISE À NIVEAU}                         \\
+    \multicolumn{3}{|c|}{\bfseries\Large Mathématiques}                                      \\
+    \hline
+    \multicolumn{3}{|c|}{Baudoin, Janssens, Regout, Tanghe}                                 \\
+    Année : 2021 - 2022 & Classe : \dotfill                      & Numéro d'ordre : \dotfill \\
+                        & \multicolumn{2}{l|}{Nom : \dotfill}                                \\
+    Session : août      & \multicolumn{2}{l|}{Prénom : \dotfill}                             \\
+    \hline
+    \multicolumn{3}{|l|}{Type de contrôle : écrit}                                           \\
+    \hline
+\end{tabularx}
+
+\vfil
+
+\begin{tcolorbox}[sharp corners=all, colback=white,colframe=black, boxrule=0.4pt]
+    \textbf{Consignes importantes pour le travail de vacances :}
+    \medbreak
+    Le travail est à réaliser sur feuille à en tête.
+    \medbreak
+    Il sera déposer à l’accueil dans une 
+    enveloppe le jeudi 26 ou le vendredi 29 août, de 9h00 à 15h30, contre 
+    accusé de réception.
+\end{tcolorbox}
+\newpage~
+
 \setcounter{page}{1}
 \begin{exercise}
     \begin{tasks}(2)
@@ -955,11 +986,12 @@
         \bottomrule
     \end{tabular}
     \begin{tikzpicture}[overlay, remember picture, >=latex]
-        \draw[->] (a.north)  to[bend left=90] node[midway, above]{$\cdot\frac{15}{2}$} (b.north) ;
+        \draw[->] (a.north) to[bend left=90]node[midway, above]{$\cdot \dfrac{15}{2}$} (b.north);
     \end{tikzpicture}
     \tikzexternalenable
 \end{solution}
 \newpage
+\section{Solutions}
 \setcounter{page}{1}
 \printsolutions
 \end{document}
