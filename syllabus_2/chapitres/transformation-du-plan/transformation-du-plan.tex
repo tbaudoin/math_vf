@@ -1,7 +1,7 @@
 \documentclass[../../syllabus_2.tex]{subfiles}
 \begin{document}
 \chapter{Les transformations du plan}
-\faBookOpen~pages 103 à 108.
+\faBookOpen~Pages 103 à 108.
 
 % \begin{landscape}
 
@@ -94,6 +94,23 @@
 % \newpage
 % est-ce encore utile de donner de la théorie alors que tout est dans le 
 % manuel de théorie ?
+
+\section{Rappel sur les isométries}
+
+\dotsforanswer{2}[Une isométrie est ]
+
+\begin{exercise}
+     Barre, parmi les transformations du plan suivantes, celles qui ne représentent pas une isométrie par rapport à la figure de base. \\
+     \begin{center}
+        \includegraphics[width=9cm]{img/isometrie_v2.png}
+     \end{center}
+\end{exercise}
+
+\dotsforanswer{2}[Les quatre isométries vues l'année passée sont]
+
+\faBookOpen~Arbre des transformations du plan pour rappel à la page ???
+
+\newpage
 \section{La translation}
 
 Une translation est un isométrie qui déplace tout point~:
@@ -107,30 +124,30 @@ Une translation est un isométrie qui déplace tout point~:
 L'élément caractéristique d'une translation est un segment orienté (symbolisé
 par une flèche) appelée \emph{vecteur}.
 
-Exemple de notation : \(t_{\overrightarrow{GH}}(A,B,C,D,E) = A',B',C',D',E'\)
+Exemple de notation : \(t_{\overrightarrow{GH}}(ABC) = A'B'C'\)
 
 
 \begin{exercise}
     À l'aide de tes instruments, réalise les constructions demandées.
     Veille à laisser tes constructions visibles et à ce que tes images soient clairement dessinées.
-    \begin{tasks}[after-item-skip=2cm](2)
-        \task $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+    \begin{enumerate}[cols=2, itemsep = 3em]
+        \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
         \begin{center}
             \input{figures/t01.tikz}
         \end{center}
-        \task $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+        \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
         \begin{center}
             \input{figures/t02.tikz}
         \end{center}
-        \task $t_{\overrightarrow{BA}}(ABCD)=A'B'C'D'$
+        \item $t_{\overrightarrow{BA}}(ABCD)=A'B'C'D'$
         \begin{center}
             \input{figures/t03.tikz}
         \end{center}
-        \task $t_{\overrightarrow{FG}}(ABCDE)=A'B'C'D'E'$
+        \item $t_{\overrightarrow{FG}}(ABCDE)=A'B'C'D'E'$
         \begin{center}
             \input{figures/t04.tikz}
         \end{center}
-    \end{tasks}
+    \end{enumerate}
 \end{exercise}
 
 \section{La symétrie orthogonale}
@@ -144,7 +161,7 @@ point~:
 L'élément caractéristique d'une symétrie orthogonale est une droite
 appelée \emph{axe.}
 
-Exemple de notation : \(S_{a}\ (A,B,C,D,E) = \ A',B',C',D',E'\)
+Exemple de notation : \(S_{a}\ ([AB]) = \ [A'B']\)
 
 % Pour construire l'image d'une figure par une symétrie orthogonale, refère-toi à la page 80 de ton manuel de théorie.
 
@@ -152,26 +169,27 @@ Exemple de notation : \(S_{a}\ (A,B,C,D,E) = \ A',B',C',D',E'\)
     À l'aide de tes instruments, réalise les constructions demandées.
     Veille à laisser tes constructions visibles et à ce que tes images
     soient clairement dessinées.
-    \begin{tasks}[after-item-skip=2cm](2)
-        \task \(S_{f}(ABC)=A'B'C'\)
+    \begin{enumerate}[cols=2, itemsep=3em]
+        \item \(S_{f}(ABC)=A'B'C'\)
         \begin{center}
             \input{figures/so01.tikz}
         \end{center}
-        \task \(S_{a}(CDEF)=C'D'E'F'\)
+        \item \(S_{a}(CDEF)=C'D'E'F'\)
         \begin{center}
             \input{figures/so03.tikz}
         \end{center}
-        \task \(S_{AC}(ABC)=A'B'C'\)
+        \item \(S_{AC}(ABC)=A'B'C'\)
         \begin{center}
             \input{figures/so02.tikz}
         \end{center}
-        \task \(S_{BD}(fig.~1)=fig.~1'\)
+        \item \(S_{BD}(fig.~1)=fig.~1'\)
         \begin{center}
             \input{figures/so04.tikz}
         \end{center}
-    \end{tasks}
+    \end{enumerate}
 \end{exercise}
 
+\newpage
 \section{La symétrie centrale}
 Une symétrie centrale est un isométrie qui déplace tout
 point~:
@@ -191,26 +209,27 @@ Exemple de notation :\(S_{O}\ (A,B,C,D,E) = \ A',B',C',D',E'\)
     A l'aide de tes instruments, réalise les constructions demandées.
     Veille à laisser tes constructions visibles et à ce que tes images
     soient clairement dessinées.
-    \begin{tasks}[after-item-skip=2cm](2)
-        \task \(S_{D}(ABC)=A'B'C'\)
+    \begin{enumerate}[cols=2, itemsep=2em]
+        \item \(S_{D}(ABC)=A'B'C'\)
         \begin{center}
             \input{figures/sc01.tikz}
         \end{center}
-        \task \(S_{C}(ABC)=A'B'C'\)
+        \item \(S_{C}(ABC)=A'B'C'\)
         \begin{center}
             \input{figures/sc02.tikz}
         \end{center}
-        \task \(S_{E}(ABCD)=A'B'C'D'\)
+        \item \(S_{E}(ABCD)=A'B'C'D'\)
         \begin{center}
             \input{figures/sc03.tikz}
         \end{center}
-        \task \(S_{F}(fig.~2)=fig.~2'\)
+        \item \(S_{F}(fig.~2)=fig.~2'\)
         \begin{center}
             \input{figures/sc04.tikz}
         \end{center}
-    \end{tasks}
+    \end{enumerate}
 \end{exercise}
 
+\newpage
 \section{La rotation}
 Une rotation est un isométrie qui déplace tout point~:
 
@@ -247,31 +266,31 @@ le sens anti-horloger. S'il est négatif, on tourne dans le sens horloger.
     \end{tikzpicture}
 \end{center}
 
-Exemple de notation : \(r_{A;- 45\degres}\left(\lbrack BC \rbrack\right) = \lbrack B'C'\rbrack \)
+Exemple de notation : \(r_{A;- 45\degres}\left(\lbrack BC\right) = \lbrack B'C' \)
 
 % Pour construire l'image d'une figure par une rotation, refère-toi à la page 105 de ton manuel de théorie.
 \begin{exercise}
     A l'aide de tes instruments, réalise les constructions demandées.
     Veille à laisser tes constructions visibles et à ce que tes images
     soient clairement dessinées.
-    \begin{tasks}[after-item-skip=2cm](2)
-        \task \(r_{D,-60\degres}(ABC)=A'B'C'\)
+    \begin{enumerate}[cols=2, itemsep=2em]
+        \item \(r_{D,-60\degres}(ABC)=A'B'C'\)
         \begin{center}
             \input{figures/r01.tikz}
         \end{center}
-        \task \(r_{A,45\degres}(ABC)=A'B'C'\)
+        \item \(r_{A,45\degres}(ABC)=A'B'C'\)
         \begin{center}
             \input{figures/r02.tikz}
         \end{center}
-        \task \(r_{E,-120\degres}(ABCD)=A'B'C'D'\)
+        \item \(r_{E,-120\degres}(ABCD)=A'B'C'D'\)
         \begin{center}
             \input{figures/r03.tikz}
         \end{center}
-        \task \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
+        \item \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
         \begin{center}
             \input{figures/r04.tikz}
         \end{center}
-    \end{tasks}
+    \end{enumerate}
 \end{exercise}
 
 \begin{landscape}
@@ -323,6 +342,7 @@ Exemple de notation : \(r_{A;- 45\degres}\left(\lbrack BC \rbrack\right) = \lbra
         \item $D$ tel que son abscisse vaut celle de $B$ et son ordonnée est l'opposée de celle de $A$.
         \item $E$ tel que son abscisse est négative et son ordonnée positive.
         \item $F$ tel qu'il soit l'image du point $A$ par une symétrie orthogonale d'axe $x$.
+        \item $G$ tel qu'il soit l'image du point B par symétrie centrale dont le centre est l'origine du repère.
     \end{enumerate}
 \end{exercise}
 
@@ -348,42 +368,39 @@ Voici les consignes que reçoivent les participants.
             colspec={XXXXXX},
             rowsep=4pt
         }
-        Participants & Consignes reçues au départ de $D$ & Point d'arrivée au départ de $D$ & Consignes reçues au départ de $S$ & Point d'arrivée au départ de $S$ & Point d'arrivée au départ de $(x;y)$ \\
-        Laurent      & $S_y(D)=L$                        &                                  & $S_y(S)=L'$                       &                                  &                                      \\
-        Nathan       & $S_x(D)=N$                        &                                  & $S_x(S)=N'$                       &                                  &                                      \\
-        Mickael      & $S_O(D)=M$                        &                                  & $S_O(S)=M'$                       &                                  &                                      \\
-        Élodie       & $t_{\overrightarrow{OP}}(D)=E$    &                                  & $t_{\overrightarrow{OP}}(S)=E'$   &                                  &                                      \\
-        Albert       & $r_{O;-90\degres}(D)=A$           &                                  & $r_{O;-90\degres}(S)=A'$          &                                  &                                      \\
-        Frédéric     & $r_{O;90\degres}(D)=F$            &                                  & $r_{O;90\degres}(S)=F'$           &                                  &                                      \\
+        Participants & Consignes reçues au départ de $D$ & Point d'arrivée au départ de $D$ & Point d'arrivée au départ de $(x;y)$ \\
+        Laurent      & $S_y(D)=L$                           &                                   &                                      \\
+        Nathan       & $S_x(D)=N$                        &                                  &                                       \\
+        Mickael      & $S_O(D)=M$                        &                                  &                                       \\
+        Élodie       & $t_{\overrightarrow{OP}}(D)=E$    &                                  &                                       \\
+        Albert       & $r_{O;-90\degres}(D)=A$           &                                  &                                      \\
+        Frédéric     & $r_{O;90\degres}(D)=F$            &                                  &                                       \\
     \end{tblr}
 \end{scriptsize}
 
 \begin{itemize}
     \item Trace sur la carte ci-dessous l'endroit où les aventuriers sont
           censés retrouver leur collier d'immunité et complète le tableau.
-    \item Trace sur la carte l'endroit où les aventuriers auraient dû se
-          se retrouver si le point de départ avait été le point $S$ et complète le
-          tableau
     \item Retrouve les coordonnées de chaque participant si les coordonnées de
           départ étaient $(x;y)$ et complète le tableau.
 \end{itemize}
 \begin{center}
-    \includegraphics[width=.9\linewidth]{img/map.jpg}
+    \includegraphics[width=\linewidth]{img/map.jpg}
 \end{center}
 
 \section{Exercices mélangés}
-\begin{exercise}
-    Identifie la transformation du plan qui applique la figure 1 sur les autres triangle.
-    \begin{center}
-        \includegraphics[width=.5\linewidth]{img/ex01.png}
-    \end{center}
-    \begin{enumerate}[cols=2]
-        \item Triangle 1 sur triangle 2
-        \item Triangle 1 sur triangle 3
-        \item Triangle 1 sur triangle 4
-        \item Triangle 1 sur triangle 5
-    \end{enumerate}
-\end{exercise}
+%\begin{exercise}
+%    Identifie la transformation du plan qui applique la figure 1 sur les autres triangle.
+%    \begin{center}
+%        \includegraphics[width=.5\linewidth]{img/ex01.png}
+%    \end{center}
+%    \begin{enumerate}[cols=2]
+%        \item Triangle 1 sur triangle 2
+%        \item Triangle 1 sur triangle 3
+%        \item Triangle 1 sur triangle 4
+%        \item Triangle 1 sur triangle 5
+%    \end{enumerate}
+%\end{exercise}
 
 \begin{exercise}
     À partir du rectangle $ADLI$, réponds aux questions ci-dessous.
@@ -400,27 +417,28 @@ Voici les consignes que reçoivent les participants.
     \end{enumerate}
 \end{exercise}
 
-\begin{exercise}
-    À partir de la figure ci-dessous, complète les égalités, en sachant que $M$ représente le milieu de $\lbrack BC \rbrack$.
+%\begin{exercise}
+%    À partir de la figure ci-dessous, complète les égalités, en sachant que $M$ représente le milieu de $\lbrack BC \rbrack$.
+%
+%    \begin{minipage}{.3\linewidth}
+%        \includegraphics[width=\linewidth]{img/ex03.png}
+%    \end{minipage}
+%    \hfill
+%    \begin{minipage}{.6\linewidth}
+%        \begin{enumerate}[cols=2]
+%            \item $S_{M}(ABC)=?$
+%            \item $S_{AC}(B) = ?$
+%            \item $t_{\overrightarrow{EF}}(\left\lbrack JK\rbrack)\right) = ?$
+%            \item $S_{BK}(G) = ? $
+%            \item $t_{\overrightarrow{HB}}(?) =  ABC$
+%            \item $S_{?}(C) = H$
+%            \item $S_{FB}(?)=  HGF$
+%            \item $S_{M}(\left\lbrack EG \right\rbrack) = ? $
+%        \end{enumerate}
+%    \end{minipage}
+%\end{exercise}
 
-    \begin{minipage}{.3\linewidth}
-        \includegraphics[width=\linewidth]{img/ex03.png}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{.6\linewidth}
-        \begin{enumerate}[cols=2]
-            \item $S_{M}(ABC)=?$
-            \item $S_{AC}(B) = ?$
-            \item $t_{\overrightarrow{EF}}(\left\lbrack JK\rbrack)\right) = ?$
-            \item $S_{BK}(G) = ? $
-            \item $t_{\overrightarrow{HB}}(?) =  ABC$
-            \item $S_{?}(C) = H$
-            \item $S_{FB}(?)=  HGF$
-            \item $S_{M}(\left\lbrack EG \right\rbrack) = ? $
-        \end{enumerate}
-    \end{minipage}
-\end{exercise}
-
+\vspace{2em}
 
 \begin{exercise}
     Cette figure schématise un système d'engrenages de plusieurs roues dentées. Le nombre de dents est indiqué à côté de chaque roue. Deux disques concentriques représentent des roues solidaires du même axe.
@@ -438,7 +456,6 @@ Voici les consignes que reçoivent les participants.
     \end{center}
 \end{exercise}
 
-\newpage
 \begin{exercise}
     Construis l'image des figures suivantes par la symétrie orthogonale d'axe~$d$.
     \begin{center}
@@ -449,44 +466,44 @@ Voici les consignes que reçoivent les participants.
 \begin{exercise}
     Construis l'image des figures suivantes par la translation de vecteur~$\overrightarrow{AB}$.
     \begin{center}
-        \includegraphics[width=.5\linewidth]{img/quadrillage_trans.png}
+        \includegraphics[width=.6\linewidth]{img/quadrillage_trans.png}
     \end{center}
 \end{exercise}
 
 \newpage
 \begin{exercise}
     Réalise les constructions demandées. Veille à ton soin, ta précision et ta lisibilité.
-    \begin{tasks}[after-item-skip=2cm](2)
-        \task \(S_{C}(ABCD)=A'B'C'D'\)
+    \begin{enumerate}[cols=2, itemsep=3em]
+        \item \(S_{C}(ABCD)=A'B'C'D'\)
         \begin{center}
             \input{figures/tdp01.tikz}
         \end{center}
 
-        \task \(r_{B,-60\degres}(ABCD)=A'B'C'D'\)
+        \item \(r_{B,-60\degres}(ABCD)=A'B'C'D'\)
         \begin{center}
             \input{figures/tdp02.tikz}
         \end{center}
 
-        \task \(S_{CD}([AB])=[A'B']\)
+        \item \(S_{CD}([AB])=[A'B']\)
         \begin{center}
             \input{figures/tdp03.tikz}
         \end{center}
 
-        \task \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
+        \item \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
         \begin{center}
             \input{figures/tdp04.tikz}
         \end{center}
 
-        \task \(t_{\overrightarrow{AA'}}(ABCD)=A'B'C'D'\)
+        \item \(t_{\overrightarrow{AA'}}(ABCD)=A'B'C'D'\)
         \begin{center}
             \input{figures/tdp05.tikz}
         \end{center}
 
-        \task \(S_{d}(fig.~1)=fig.~1'\)
+        \item \(S_{d}(fig.~1)=fig.~1'\)
         \begin{center}
             \input{figures/tdp06.tikz}
         \end{center}
-    \end{tasks}
+    \end{enumerate}
 
 \end{exercise}
 \end{document}

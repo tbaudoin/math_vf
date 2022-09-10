@@ -107,7 +107,19 @@ use comma,
     }%
 }
 \newcommand{\nparallelsum}{\bnot{\parallelsum}}
+%==================================================
+\NewDocumentCommand{\dotsforanswer}{m o O{1ex}}%
+{%
+    \IfNoValueTF{#2}%
+    {
+        \foreach \i in {1,...,#1}{\dotfill\vskip #3}
+    }
+    {
+        #2\dotfill\vskip #3
+        \foreach \i in {2,...,#1}{\dotfill\vskip #3}
+    }
 
+}
 %===============================================================================
 % \adf est l'abréviation de answer dotfill. La commande permet de créer une zone
 % de réponse pour les élèves
