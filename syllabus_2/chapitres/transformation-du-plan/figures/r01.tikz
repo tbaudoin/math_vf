@@ -1,4 +1,4 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2]
     \tkzDefPoints{0/0/A, 4/0.5/D}
     \tkzDefPoint(-80:2){B}
     \tkzDefPoint(70:2){C}

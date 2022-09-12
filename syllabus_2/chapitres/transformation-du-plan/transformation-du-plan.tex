@@ -95,14 +95,15 @@
 % est-ce encore utile de donner de la théorie alors que tout est dans le 
 % manuel de théorie ?
 
-\section{Rappel sur les isométries}
+\section{Rappels}
+\subsection{Isométries}
 
 \dotsforanswer{2}[Une isométrie est ]
 
 \begin{exercise}
      Barre, parmi les transformations du plan suivantes, celles qui ne représentent pas une isométrie par rapport à la figure de base. \\
      \begin{center}
-        \includegraphics[width=9cm]{img/isometrie_v2.png}
+        \includegraphics[width=8cm]{img/isometrie_v2.png}
      \end{center}
 \end{exercise}
 
@@ -111,7 +112,7 @@
 \faBookOpen~Arbre des transformations du plan pour rappel à la page 103
 
 \newpage
-\section{La translation}
+\subsection{La translation}
 
 Une translation est un isométrie qui déplace tout point~:
 
@@ -125,33 +126,35 @@ L'élément caractéristique d'une translation est un segment orienté (symbolis
 par une flèche) appelée \emph{vecteur}.
 
 Exemple de notation : \(t_{\overrightarrow{GH}}(ABC) = A'B'C'\)
-\vspace{3em}
+
+%TODO: ajouter une figure pour rappeler la construction
+\newpage 
 
 \begin{exercise}
     À l'aide de tes instruments, réalise les constructions demandées.
     Veille à laisser tes constructions visibles et à ce que tes images soient clairement dessinées.
-        \begin{enumerate}[itemsep = 3em, cols=2]
+        \begin{enumerate}[itemsep=\fill]
             \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
-            \medbreak
-                \includegraphics[height=5cm]{figures/t01}
-            \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
-            \medbreak
-                \includegraphics[height=5cm]{figures/t02}
-            \item $t_{\overrightarrow{BA}}(ABCD)=A'B'C'D'$
-            \medbreak
             \begin{center}
-                \includegraphics[height=5cm]{figures/t03}
+                \includegraphics[height=.15\paperheight]{figures/t01}
+            \end{center}
+            \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+            \begin{center}
+                \includegraphics[height=.15\paperheight]{figures/t02}
+            \end{center}
+            \item $t_{\overrightarrow{BA}}(ABCD)=A'B'C'D'$
+            \begin{center}
+                \includegraphics[height=.15\paperheight]{figures/t03}
             \end{center}
             \item $t_{\overrightarrow{FG}}(ABCDE)=A'B'C'D'E'$
-            \medbreak
             \begin{center}
-                \includegraphics[height=5cm]{figures/t04}
+                \includegraphics[height=.15\paperheight]{figures/t04}
             \end{center}
         \end{enumerate}
 \end{exercise}
 
 \newpage
-\section{La symétrie orthogonale}
+\subsection{La symétrie orthogonale}
 Une symétrie orthogonale est un isométrie qui envoie tout
 point~:
 \begin{itemize}[label=\faIcon{angle-right}]
@@ -163,22 +166,23 @@ L'élément caractéristique d'une symétrie orthogonale est une droite
 appelée \emph{axe.}
 
 Exemple de notation : \(S_{a}\ ([AB]) = \ [A'B']\)
+%TODO: figure d'exemple de symétrie orthogonale
 
 % Pour construire l'image d'une figure par une symétrie orthogonale, refère-toi à la page 80 de ton manuel de théorie.
-\vspace{2em}
 
+\newpage
 \begin{exercise}
     À l'aide de tes instruments, réalise les constructions demandées.
     Veille à laisser tes constructions visibles et à ce que tes images
     soient clairement dessinées.
-    \begin{enumerate}[cols=2, itemsep=4em]
+    \begin{enumerate}[itemsep=\fill]
         \item \(S_{f}(ABC)=A'B'C'\)
         \begin{center}
             \includegraphics[height=5cm]{figures/So01}
         \end{center}
         \item \(S_{a}(CDEF)=C'D'E'F'\)
         \begin{center}
-             \includegraphics[height=3cm]{figures/So03}   
+             \includegraphics[height=5cm]{figures/So03}   
         \end{center}
         \item \(S_{AC}(ABC)=A'B'C'\)
         \begin{center}
@@ -186,13 +190,13 @@ Exemple de notation : \(S_{a}\ ([AB]) = \ [A'B']\)
         \end{center}
         \item \(S_{BD}(fig.~1)=fig.~1'\)
         \begin{center}
-            \includegraphics[height=3cm]{figures/So04}
+            \includegraphics[height=5cm]{figures/So04}
         \end{center}
     \end{enumerate}
 \end{exercise}
 
 \newpage
-\section{La symétrie centrale}
+\subsection{La symétrie centrale}
 Une symétrie centrale est un isométrie qui déplace tout
 point~:
 \begin{itemize}[label=\faIcon{angle-right}]
@@ -206,14 +210,15 @@ L'élément caractéristique d'une symétrie centrale est un point appelé
 
 Exemple de notation :\(S_{O}\ (A,B,C,D,E) = \ A',B',C',D',E'\)
 
-\vspace{2em}
+%TODO: figure d'exemple pour la symétrie centrale
 
 % Pour construire l'image d'une figure par une symétrie centrale, refère-toi à la page 81 de ton manuel de théorie.
+\newpage
 \begin{exercise}
     A l'aide de tes instruments, réalise les constructions demandées.
     Veille à laisser tes constructions visibles et à ce que tes images
     soient clairement dessinées.
-    \begin{enumerate}[cols=2, itemsep=2em]
+    \begin{enumerate}[itemsep=\fill]
         \item \(S_{D}(ABC)=A'B'C'\)
         \begin{center}
             \includegraphics[height=5cm]{figures/Sc01}
@@ -272,64 +277,66 @@ le sens anti-horloger. S'il est négatif, on tourne dans le sens horloger.
 
 Exemple de notation : \(r_{A;- 45\degres}\left(\lbrack BC\right) = \lbrack B'C' \)
 
-\vspace{2em}
+%TODO: figure d'exemple de rotation
 
 % Pour construire l'image d'une figure par une rotation, refère-toi à la page 105 de ton manuel de théorie.
+\newpage
 \begin{exercise}
     A l'aide de tes instruments, réalise les constructions demandées.
     Veille à laisser tes constructions visibles et à ce que tes images
     soient clairement dessinées.
-    \begin{enumerate}[cols=2, itemsep=3em]
+    \begin{enumerate}[itemsep=\fill]
         \item \(r_{D,-60\degres}(ABC)=A'B'C'\)
-
-            \includegraphics[height=5cm]{figures/r01}
+        \begin{center}
+            \includegraphics[height=10cm]{figures/r01}
+        \end{center}
         \item \(r_{A,45\degres}(ABC)=A'B'C'\)
         \begin{center}
-            \includegraphics[height=5cm]{figures/r02}
+            \includegraphics[height=10cm]{figures/r02}
         \end{center}
         \newpage
         \item \(r_{E,-120\degres}(ABCD)=A'B'C'D'\)
         \begin{center}
-            \includegraphics[height=5cm]{figures/r03}
+            \includegraphics[height=10cm]{figures/r03}
         \end{center}
         \item \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
         \begin{center}
-            \includegraphics[height=5cm]{figures/r04}
+            \includegraphics[height=10cm]{figures/r04}
         \end{center}
     \end{enumerate}
 \end{exercise}
 
-\begin{landscape}
-    \section{Les quatre isométries}µ
-%     \begin{tblr}{
-%         hlines,
-%         vlines,
-%         row{1} = {gray!20, font=\bfseries, c},
-%         columns = {.23\linewidth}
-%     }
-%     Exemple                                                        & Nom & Verbe de mouvement & Éléments caractéristiques \\
-%     \centering\includegraphics[height=2.6cm]{img/maggie_trans.eps} &     &                    &                           \\
-%     \centering\includegraphics[height=2.6cm]{img/maggie_sc.eps}    &     &                    &                           \\
-%     \centering\includegraphics[height=2.6cm]{img/maggie_so.eps}    &     &                    &                           \\
-%     \centering\includegraphics[height=2.6cm]{img/maggie_rot.eps}   &     &                    &                           \\
-% \end{tblr}
-    \begin{tabularx}{\linewidth}{|c|*{4}{>{\centering}p{3cm}|}Y|}
-        \hline
-        Images                                                         & Nom & Verbe de mouvement & Éléments caractéristiques & Notation & Lecture \\
-        \hline
-        \centering\includegraphics[height=2.6cm]{img/maggie_trans.eps} &     &                    &                           &          &         \\
-        \hline
-        \includegraphics[height=2.6cm]{img/maggie_sc.eps}              &     &                    &                           &          &         \\
-        \hline
-        \includegraphics[height=2.6cm]{img/maggie_so.eps}              &     &                    &                           &          &         \\
-        \hline
-        \includegraphics[height=2.6cm]{img/maggie_rot.eps}             &     &                    &                           &          &         \\
-        \hline
-    \end{tabularx}
+\newpage
+    \section{Les quatre isométries}
 
+\begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={4cm, c},
+            rows={2.6cm, m},
+            row{1}={gray!40, font=\bfseries},
+        }
+        Image & Nom & Verbe de mouvement & Élément caractéristique  \\
+        \centering\includegraphics[height=2cm]{img/maggie_trans.eps} &       &                        &                         \\
+        \includegraphics[height=2cm]{img/maggie_sc.eps} &       &                        &                          \\
+        \includegraphics[height=2cm]{img/maggie_so.eps}  &       &                        &                         \\
+        \includegraphics[height=2cm]{img/maggie_rot.eps} &       &                        &                         \\
+    \end{tblr}
+\end{center}
     \emph{Remarque : la symétrie centrale est une rotation de $180\degres$}
-\end{landscape}
 
+\begin{exercise}
+    Décode les expressions suivantes.
+    \begin{enumerate}
+        \item \dotsforanswer{2}[\(r_{D;- 70\degres}\left(ABC\right) = A'B'C'\)]
+        \item \dotsforanswer{2}[\(S_{P}(M)=M'\)]
+        \item \dotsforanswer{2}[$t_{\overrightarrow{TE}}(ABCD)=A'B'C'D'$]
+        \item \dotsforanswer{2}[\(S_{b}([CD])=[C'D']\)]
+    \end{enumerate}
+\end{exercise}
+
+\newpage
 \section{Effets des transformations du plan sur les coordonnées}
 \subsection{Rappel sur le repérage dans un plan}
 \begin{center}
@@ -480,35 +487,35 @@ Voici les consignes que reçoivent les participants.
 \newpage
 \begin{exercise}
     Réalise les constructions demandées. Veille à ton soin, ta précision et ta lisibilité.
-    \begin{enumerate}[cols=2, itemsep=10em]
+    \begin{enumerate}[itemsep=\fill]
         \item \(S_{C}(ABCD)=A'B'C'D'\)
         \begin{center}
-            \input{figures/tdp01.tikz}
+            \includegraphics[height=6cm]{figures/tdp01}
         \end{center}
 
         \item \(r_{B,-60\degres}(ABCD)=A'B'C'D'\)
         \begin{center}
-            \input{figures/tdp02.tikz}
+            \includegraphics[height=6cm]{figures/tdp02}
         \end{center}
-
+        
         \item \(S_{CD}([AB])=[A'B']\)
         \begin{center}
-            \input{figures/tdp03.tikz}
+            \includegraphics[height=6cm]{figures/tdp03}
         \end{center}
-
+\newpage
         \item \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
         \begin{center}
-            \input{figures/tdp04.tikz}
+            \includegraphics[height=6cm]{figures/tdp04}
         \end{center}
 
         \item \(t_{\overrightarrow{AA'}}(ABCD)=A'B'C'D'\)
         \begin{center}
-            \input{figures/tdp05.tikz}
+            \includegraphics[height=6cm]{figures/tdp05}
         \end{center}
 
         \item \(S_{d}(fig.~1)=fig.~1'\)
         \begin{center}
-            \input{figures/tdp06.tikz}
+            \includegraphics[height=6cm]{figures/tdp06}
         \end{center}
     \end{enumerate}
 
