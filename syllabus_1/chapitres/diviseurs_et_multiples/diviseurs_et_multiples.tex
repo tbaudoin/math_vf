@@ -3,6 +3,85 @@
 
 \chapter{Diviseurs et multiples}
 
+\section{Rappel des caractères de divisibilité}
+
+Les caractères de divisibilité permettent de reconnaitre si un nombre est divisible par un autre sans devoir effectuer de division.
+
+\dotsforanswer{2}[Un nombre est divisible \textbf{par 2} (ou par 5) si]
+
+\dotsforanswer{2}[Un nombre est divisible \textbf{par 4} (ou par 25) si]
+
+\dotsforanswer{2}[Un nombre est divisible \textbf{par 8} (ou par 125) si]
+
+\dotsforanswer{3}[Un nombre est divisible \textbf{par 3} (ou par 9) si]
+
+\dotsforanswer{2}[Un nombre est divisible \textbf{par 10} (ou par 100, ou par 1000) si]
+
+
+\begin{exercise}
+      À quelle(s) condition(s) un nombre naturel est-il divisible par 6 ?
+\end{exercise}
+\vspace{3cm}
+
+\begin{exercise}
+      Réponds en justifiant.
+      \begin{enumerate}
+            \item \dotsforanswer{2}[\(52\ 035\) est-il divisible par \(5\ \)? ]
+            \item \dotsforanswer{2}[\(100\ 000\ 3\) est-il divisible par \(3\ \)?]
+            \item \dotsforanswer{2}[\(819\) est-il divisible par \(9\ \)?]
+            \item \dotsforanswer{2}[\(35\ 150\) est-il divisible par 25 ?]
+            \item \dotsforanswer{2}[\(5\ 014\) est-il divisible par 4 ?]
+      \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+      En utilisant les chiffres \(3,\ 8,\ 9,\ 1\ \)et\(\ 6\) une seule fois chacun, forme, si possible
+      \begin{enumerate}
+            \item le plus petit nombre naturel multiple de 3 :
+            \item le plus grand nombre naturel divisible par 8 :
+            \item le plus petit nombre naturel multiple de 5 :
+            \item le plus petit nombre naturel divisible par 2 et par 3 :
+            \item le plus grand nombre divisible par 6, mais pas par 2 :
+      \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+      Complète le tableau ci-dessous en cochant d'une croix les cases pour lesquelles les divisions sont vérifiées.
+      \begin{center}
+            \begin{tblr}{
+                    hlines,
+                    vlines,
+                    columns={.9cm, c},
+                    rows={.7cm, m},
+                    row{1}={gray!40, font=\bfseries},
+                    column{1}={gray!40, font=\bfseries},
+                }
+                & 2 & 3 & 4 & 5 & 8 & 9 & 24 & 125 \\
+                560 & & & & & & & &  \\
+                750 & & & & & & & &  \\
+                1125 & & & & & & & & \\
+                3072 & & & & & & & & \\
+            \end{tblr}
+        \end{center}
+\end{exercise}
+
+\begin{exercise}
+      \(236\) athlètes peuvent-ils défiler en rangs de 3 de fronts ? \\ Justifie.
+      \vspace{3em}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+      Par quel(s) chiffre(s) peut-on remplacer le symbole (\faIcon{bicycle}) pour que les divisibilités soient vérifiées ?
+      \begin{enumerate}[itemsep=1em]
+            \item \(26$\faIcon{bicycle}$4\) est divisible par \(4\) si  \faIcon{bicycle}=
+            \item \(73$\faIcon{bicycle}$6\) est divisible par \(3\) si  \faIcon{bicycle}=
+            \item \(74$\faIcon{bicycle}$2\) est divisible par \(5\) si  \faIcon{bicycle}=
+            \item \(17$\faIcon{bicycle}$7\) est divisible par \(9\) si  \faIcon{bicycle}=
+            \item \(2861$\faIcon{bicycle}$\) est divisible par \(6\) si  \faIcon{bicycle}=
+      \end{enumerate}
+\end{exercise}
+
 \section{Découverte des diviseurs}
 
 Représente dans le quadrillage ci-dessous l'ensemble des rectangles possédant exactement 24 petits carrés.
@@ -10,7 +89,7 @@ Représente dans le quadrillage ci-dessous l'ensemble des rectangles possédant 
     \begin{tikzpicture}[scale=0.5]
         % grille 12 x 30
         % pour la taille de la grille : ultra thin, very thin, thin, thick, ...
-        \draw[color=gray!70, thick] (0,0) grid (30,12);
+        \draw[color=gray!70, thick] (0,0) grid (30,10);
     \end{tikzpicture}
 \end{center}
 
@@ -20,95 +99,175 @@ Fais de même avec 26 petits carrés.
 \begin{center}
     \begin{tikzpicture}[scale=0.5]
         % grille 12 x 30
-        \draw (0,0) grid (30,12);
+        \draw [color=gray!70, thick] (0,0) grid (30,10);
     \end{tikzpicture}
 \end{center}
 
 Dimensions possibles de chaque rectangle : \dotsforanswer{1}
 
-
+\newpage
 \begin{exercise}
     Quelles sont les dimensions possibles d'un rectangle constitué du nombre de carrés ci-dessous.
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=1em]
         \item 8 carrés ?
         \item 15 carrés ?
         \item 50 carrés ?
         \item 48 carrés ?
     \end{enumerate}
 \end{exercise}
-\begin{solution}
 
-\end{solution}
-
-%TODO: Je n'ai pas compris cette question ou ce qui est attendu.
-Que représentent les dimensions possibles pour un rectangle constitué de
-\(a\) carrés ?
+\vspace{3em}
+Que représentent les dimensions possibles pour un rectangle constitué de \(a\) carrés ? 
+\vspace{3em}
 
 Notation :
 
 Exemples :
 
+\vspace{3em}
 \begin{exercise}
     Détermine les éléments des ensembles ci-dessous.
-    \begin{enumerate}
-        \item \(\text{div } 9 = \lbrace \)
-        \item \(\text{div } 7 = \lbrace \)
-        \item \(\text{div } 100 = \lbrace \)
-        \item \(\text{div } 1 = \lbrace \)
-        \item \(\text{div } 12 = \lbrace \)
+    \begin{enumerate}[cols=2, itemsep=3em]
+        \item \(\text{div } 9 : \)
+        \item \(\text{div } 7 : \)
+        \item \(\text{div } 100 : \)
+        \item \(\text{div } 1 : \)
+        \item \(\text{div } 12 : \)
+        \item \(\text{div } 49 : \)
     \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
     Vrai ou faux ? Plus un nombre naturel est grand, plus il admet de diviseurs.
+
+    \vspace{5em}
 \end{exercise}
 
+\newpage
 \section{Nombres particuliers}
 
 \subsection{Nombres premiers}
 
-Dans le quadrillage ci-dessous, trace en bleu tous les rectangles
-constitués de 13 carrés, et en vert tous les rectangles constitués de 7
-carrés.
+Dans le quadrillage ci-dessous, trace en bleu tous les rectangles constitués de 13 carrés, et en vert tous les rectangles constitués de 7 carrés.
+\begin{center}
+      \begin{tikzpicture}[scale=0.5]
+          % grille 12 x 30
+          % pour la taille de la grille : ultra thin, very thin, thin, thick, ...
+          \draw[color=gray!70, thick] (0,0) grid (30,10);
+      \end{tikzpicture}
+  \end{center}
+\dotsforanswer{3}[Que remarques-tu ?]
 
-Que remarques-tu ?
+\dotsforanswer{2}[Un nombre premier est]
 
-Un nombre premier est
+%Pour
+%trouver les nombres premiers plus petits que 100, Eratosthène (IIIème
+%siècle avant JC) avait dicté une règle très simple, un \emph{crible.}
+%
+%Il commençait comme ceci :
+%
+%\begin{itemize}
+%    \item
+%          Le premier nombre premier est 2. Entoure 2 et barre ensuite tous les
+%          multiples de 2 puisqu'ils ne sont pas premiers.
+%    \item
+%          Le nombre premier qui suit est 3. Entoure 3 puis barre ensuite tous
+%          les multiples de 3.
+%\end{itemize}
+%
+%Poursuis ce travail jusqu'à ce que tu sois sûr d'avoir découvert tous
+%les nombres premiers du tableau.
+%Les nombres premiers inférieurs à 100 sont :
 
-Pour
-trouver les nombres premiers plus petits que 100, Eratosthène (IIIème
-siècle avant JC) avait dicté une règle très simple, un \emph{crible.}
+\vspace{2em}
+\textbf{Attention : ne pas confondre !}
 
-Il commençait comme ceci :
-
-\begin{itemize}
-    \item
-          Le premier nombre premier est 2. Entoure 2 et barre ensuite tous les
-          multiples de 2 puisqu'ils ne sont pas premiers.
-    \item
-          Le nombre premier qui suit est 3. Entoure 3 puis barre ensuite tous
-          les multiples de 3.
-\end{itemize}
-
-Poursuis ce travail jusqu'à ce que tu sois sûr d'avoir découvert tous
-les nombres premiers du tableau.
-
-
-Les nombres premiers inférieurs à 100 sont :
-
-Attention : ne pas confondre !
-
-On dit aussi de certains nombres qu'ils sont premiers \textbf{entre
-    eux,} ce qui n'est pas du tout la même chose qu'\textbf{UN} nombre
-premier
+On dit aussi de certains nombres qu'ils sont premiers \textbf{entre eux,} ce qui n'est pas du tout la même chose qu'\textbf{UN} nombre premier.
 
 Par exemple, on dit que \(25\ \)et \(7\) sont des nombres
-\textbf{premiers entre eux}, mais par contre, \(25\) et \(5\) ne sont
-pas premiers entre eux. À ton avis, qu'est-ce que cela veut dire ?
+premiers entre eux, mais par contre, \(25\) et \(15\) ne sont pas premiers entre eux. À ton avis que sont des nombres \textbf{premiers entre eux} ? 
+\dotsforanswer{3}
 
 Donne deux autres exemples de nombres premier entre eux :
+\vspace{4em}
+
+\newpage
+\begin{exercise}
+      Vrai ou faux ? Justifie dans les deux cas.
+      \begin{enumerate}
+            \item \dotsforanswer{2}[1 est un nombre premier.]
+            \item \dotsforanswer{2}[Tous les nombres impairs sont des nombres premiers.]
+            \item \dotsforanswer{2}[La différence entre deux nombres premiers vaut toujours deux.]
+            \item \dotsforanswer{2}[Il n'existe aucun nombre premier qui soit pair.]
+            \item \dotsforanswer{2}[\(125\) et \(17\) sont des nombres premiers entre eux.]
+            \item \dotsforanswer{2}[Il n'existe pas de nombres premiers consécutifs.]
+      \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+      Josette explique à son petit frère : « Il n'existe aucun nombre premier qui termine par 5 ». Est-ce vrai ? Explique.
+      \vspace{5em}
+\end{exercise}
+
+\newpage
+\section{Décomposition en facteurs premiers}
+      
+    \dotsforanswer{3}[Décomposer un naturel en facteurs premiers, c'est]
+
+    Pour ce faire, on peut utiliser la technique en colonne : nous allons diviser le nombre de départ en n'utilisant dans la colonne de droite que des diviseurs nombres premiers.
+
+\vspace{15em}
+
+Dans la décomposition en facteurs premiers, nous découvrons un nouvel élément mathématique : les puissances. 
+
+\dotsforanswer{4}[Qu'est-ce que la puissance d'un nombre?]
+
+\vspace{5em}
+
+\newpage
+\begin{exercise}
+      Écris-les ensuite en produits de puissances de facteurs premiers, en utilisant la décomposition en facteurs premiers.
+      \begin{enumerate}[cols=5, label=\ ]
+            \item $128$
+            \item $216$
+            \item $144$
+            \item $600$
+            \item $475$
+      \end{enumerate}
+      \vspace{15em}
+\end{exercise}
 
 
+\begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{6}
+    \item
+          Calcule les puissances suivantes.
+
+          \begin{enumerate}
+              \def\labelenumii{\alph{enumii}.}
+              \item
+              \item
+                    \(7^{2} =\)
+              \item
+                    \(3^{3} =\)
+              \item
+                    \(1^{5} =\)
+              \item
+                    \(2^{4} =\)
+              \item
+                    \(6^{2} =\)
+              \item
+                    \(5^{3} =\)
+          \end{enumerate}
+    \item
+    \item
+          La décomposition en un produit de facteurs premiers d'un naturel est
+          \(2^{3}.\ 3\ .\ 5\)
+\end{enumerate}
+
+Parmi les nombres ci-dessous, lequel n'est pas un diviseur de ce
+naturel ? Justifie.
 
 2. 2. 2. Nombres carrés
 
@@ -145,108 +304,6 @@ Complète les ensembles suivants :
     Observe le nombre de diviseurs de chaque nombre ci-dessus. Que
     remarques-tu ?
 \end{quote}
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{3}
-    \item
-          Vrai ou faux ? Justifie dans les deux cas.
-\end{enumerate}
-
-\begin{enumerate}
-    \def\labelenumi{\alph{enumi}.}
-    \item
-          1 est un nombre premier.
-    \item
-          Tous les nombres impairs sont des nombres premiers.
-    \item
-          La différence entre deux nombres premiers vaut toujours deux.
-    \item
-          Il n'existe aucun nombre premier qui soit pair.
-    \item
-          \(125\) et \(17\) sont des nombres premiers entre eux.
-    \item
-          Si un nombre naturel \(a\) admet un nombre pair de diviseurs, alors
-          c'est que le nombre naturel \(a\) est un nombre premier.
-    \item
-          Il n'existe pas de nombres premiers consécutifs.
-\end{enumerate}
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{4}
-    \item
-          Josette explique à son petit frère : « Il n'existe aucun nombre
-          premier qui termine par 5 ». Est-ce vrai ? Explique.
-\end{enumerate}
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{3}
-    \item
-          Décomposition en facteurs premiers
-\end{enumerate}
-
-\begin{quote}
-    Décomposer un naturel en facteurs premiers, c'est
-
-    Pour ce faire, on peut utiliser la technique en colonne : nous allons
-    diviser le nombre de départ en n'utilisant dans la colonne de droite que
-    des diviseurs nombres premiers.
-\end{quote}
-
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{4}
-    \item
-          Puissance d'un nombre
-\end{enumerate}
-
-Qu'est-ce que la puissance d'un nombre ?
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{5}
-    \item
-          Décompose les nombres naturels suivants en produit de facteurs
-          premiers, et écris-les ensuite en produits de puissances de facteurs
-          premiers.
-\end{enumerate}
-
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{6}
-    \item
-          Calcule les puissances suivantes.
-
-          \begin{enumerate}
-              \def\labelenumii{\alph{enumii}.}
-              \item
-              \item
-                    \(7^{2} =\)
-              \item
-                    \(3^{3} =\)
-              \item
-                    \(1^{5} =\)
-              \item
-                    \(2^{4} =\)
-              \item
-                    \(6^{2} =\)
-              \item
-                    \(5^{3} =\)
-          \end{enumerate}
-    \item
-    \item
-          La décomposition en un produit de facteurs premiers d'un naturel est
-          \(2^{3}.\ 3\ .\ 5\)
-\end{enumerate}
-
-Parmi les nombres ci-dessous, lequel n'est pas un diviseur de ce
-naturel ? Justifie.
-
-
 \begin{enumerate}
     \def\labelenumi{\arabic{enumi}.}
     \setcounter{enumi}{5}
@@ -273,145 +330,6 @@ Note les 10 premiers multiples des nombres naturels ci-dessous.
 Propriété des multiples d'un naturel :
 
 \emph{Exemple :}
-
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{6}
-    \item
-          Les caractères de divisibilité
-\end{enumerate}
-
-Les caractères de divisibilité permettent de reconnaitre si un nombre
-est divisible par un autre sans devoir effectuer de division.
-
-Un nombre est divisible \textbf{par 2} (ou par 5) si
-
-Un nombre est divisible \textbf{par 4} (ou par 25) si
-
-Un nombre est divisible \textbf{par 8} (ou par 125) si
-
-Un nombre est divisible \textbf{par 3 (}ou par 9) si
-
-Un nombre est divisible \textbf{par 10 (}ou par 100, ou par 1000) si
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{9}
-    \item
-          À quelle(s) condition(s) un nombre naturel est-il divisible par 6 ?
-    \item
-          Réponds en justifiant.
-\end{enumerate}
-
-\begin{enumerate}
-    \def\labelenumi{\alph{enumi}.}
-    \item
-          \(52\ 035\) est-il divisible par \(5\ \)?
-\end{enumerate}
-
-\begin{quote}
-    OUI / NON car
-\end{quote}
-
-\begin{enumerate}
-    \def\labelenumi{\alph{enumi}.}
-    \setcounter{enumi}{1}
-    \item
-          \(100\ 000\ 3\) est-il divisible par \(3\ \)?
-\end{enumerate}
-
-\begin{quote}
-    OUI / NON car
-\end{quote}
-
-\begin{enumerate}
-    \def\labelenumi{\alph{enumi}.}
-    \setcounter{enumi}{2}
-    \item
-          \(819\) est-il divisible par \(9\ \)?
-\end{enumerate}
-
-\begin{quote}
-    OUI / NON car
-\end{quote}
-
-\begin{enumerate}
-    \def\labelenumi{\alph{enumi}.}
-    \setcounter{enumi}{3}
-    \item
-          \(35\ 150\) est-il divisible par 25 ?
-\end{enumerate}
-
-\begin{quote}
-    OUI / NON car
-\end{quote}
-
-\begin{enumerate}
-    \def\labelenumi{\alph{enumi}.}
-    \setcounter{enumi}{4}
-    \item
-          \(5\ 014\) est-il divisible par 4 ?
-\end{enumerate}
-
-\begin{quote}
-    OUI / NON car
-\end{quote}
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{11}
-    \item
-          En utilisant les chiffres \(3,\ 8,\ 9,\ 1\ \)et\(\ 6\) une seule fois
-          chacun, forme, si possible
-\end{enumerate}
-
-\begin{enumerate}
-    \def\labelenumi{\alph{enumi}.}
-    \item
-          le plus petit nombre naturel multiple de 3 :
-    \item
-          le plus grand nombre naturel divisible par 8 :
-    \item
-          le plus petit nombre naturel multiple de 5 :
-    \item
-          le plus petit nombre naturel divisible par 2 et par 3 :
-    \item
-          le plus grand nombre divisible par 6, mais pas par 2 :
-\end{enumerate}
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{12}
-    \item
-          Complète le tableau ci-dessous en cochant d'une croix les cases pour
-          lesquelles les divisions sont vérifiées.
-\end{enumerate}
-
-\begin{enumerate}
-    \def\labelenumi{\arabic{enumi}.}
-    \setcounter{enumi}{13}
-    \item
-          \(236\) athlètes peuvent-ils défiler en rangs de 3 de fronts ?
-          Justifie.
-    \item
-          Par quel(s) chiffre(s) peut-on remplacer le symbole  pour que les
-          divisibilités soient vérifiées ?
-\end{enumerate}
-
-\begin{enumerate}
-    \def\labelenumi{\alph{enumi}.}
-    \item
-          \(264\) est divisible par \(4\) si  =
-    \item
-          \(736\) est divisible par \(3\) si  =
-    \item
-          \(742\) est divisible par \(5\) si  =
-    \item
-          \(177\) est divisible par \(9\) si  =
-    \item
-          \(2861\) est divisible par \(6\) si  =
-\end{enumerate}
 
 \begin{enumerate}
     \def\labelenumi{\arabic{enumi}.}
@@ -937,7 +855,7 @@ calculs.
 Traduis en français les expressions mathématiques, et vice-versa.
 Attention, sois précis !
 
-\begin{enumerate}
+      \begin{enumerate}
     \def\labelenumi{\alph{enumi}.}
     \item
           \((4 + 3)\ .\ 2\)
@@ -957,5 +875,5 @@ Attention, sois précis !
           La différence entre la somme de 8 et du double de 8 et 2 vaut 22.
     \item
           \(3^{3} - 9\ .\ 2 =\)
-\end{enumerate}
+      \end{enumerate}
 \end{document}
