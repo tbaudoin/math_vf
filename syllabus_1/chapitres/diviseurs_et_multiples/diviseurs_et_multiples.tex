@@ -3,39 +3,30 @@
 
 \chapter{Diviseurs et multiples}
 
+\faBookOpen~ pages 34 à 40.
+
 \section{Rappel des caractères de divisibilité}
 
+%TODO: Refaire mais de façons schématique
 Les caractères de divisibilité permettent de reconnaitre si un nombre est divisible par un autre sans devoir effectuer de division.
 
-\dotsforanswer{2}[Un nombre est divisible \textbf{par 2} (ou par 5) si]
+\includegraphics[width=1\linewidth]{figures/Caractrères de divisibilité.pdf}
 
-\dotsforanswer{2}[Un nombre est divisible \textbf{par 4} (ou par 25) si]
-
-\dotsforanswer{2}[Un nombre est divisible \textbf{par 8} (ou par 125) si]
-
-\dotsforanswer{3}[Un nombre est divisible \textbf{par 3} (ou par 9) si]
-
-\dotsforanswer{2}[Un nombre est divisible \textbf{par 10} (ou par 100, ou par 1000) si]
-
-
-\begin{exercise}
-      À quelle(s) condition(s) un nombre naturel est-il divisible par 6 ?
-\end{exercise}
-\vspace{3cm}
+\newpage
 
 \begin{exercise}
       Réponds en justifiant.
       \begin{enumerate}
-            \item \dotsforanswer{2}[\(52\ 035\) est-il divisible par \(5\ \)? ]
-            \item \dotsforanswer{2}[\(100\ 000\ 3\) est-il divisible par \(3\ \)?]
-            \item \dotsforanswer{2}[\(819\) est-il divisible par \(9\ \)?]
-            \item \dotsforanswer{2}[\(35\ 150\) est-il divisible par 25 ?]
-            \item \dotsforanswer{2}[\(5\ 014\) est-il divisible par 4 ?]
+            \item \dotsforanswer{2}[\num{52035} est-il divisible par 5 ? ]
+            \item \dotsforanswer{2}[\num{1000003} est-il divisible par 3 ?]
+            \item \dotsforanswer{2}[\num{819} est-il divisible par 9 ?]
+            \item \dotsforanswer{2}[\num{35150} est-il divisible par 25 ?]
+            \item \dotsforanswer{2}[\num{5014} est-il divisible par 4 ?]
       \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
-      En utilisant les chiffres \(3,\ 8,\ 9,\ 1\ \)et\(\ 6\) une seule fois chacun, forme, si possible
+      En utilisant les chiffres \numlist{3;8;9;1;6} une seule fois chacun, forme, si possible
       \begin{enumerate}
             \item le plus petit nombre naturel multiple de 3 :
             \item le plus grand nombre naturel divisible par 8 :
@@ -45,40 +36,41 @@ Les caractères de divisibilité permettent de reconnaitre si un nombre est divi
       \end{enumerate}
 \end{exercise}
 
+%FIXME: Enlever la première case
 \begin{exercise}
+      % les options pour \num permettent d'avoir du gras.
       Complète le tableau ci-dessous en cochant d'une croix les cases pour lesquelles les divisions sont vérifiées.
       \begin{center}
             \begin{tblr}{
-                    hlines,
-                    vlines,
-                    columns={.9cm, c},
-                    rows={.7cm, m},
-                    row{1}={gray!40, font=\bfseries},
-                    column{1}={gray!40, font=\bfseries},
-                }
-                & 2 & 3 & 4 & 5 & 8 & 9 & 24 & 125 \\
-                560 & & & & & & & &  \\
-                750 & & & & & & & &  \\
-                1125 & & & & & & & & \\
-                3072 & & & & & & & & \\
+                        hlines,
+                        vlines,
+                        columns={.9cm, c},
+                        rows={.7cm, m},
+                        row{1}={gray!40, font=\bfseries},
+                        column{1}={gray!40, font=\bfseries},
+                  }
+                                                                                 & 2 & 3 & 4 & 5 & 8 & 9 & 24 & 125 \\
+                  560                                                            &   &   &   &   &   &   &    &     \\
+                  750                                                            &   &   &   &   &   &   &    &     \\
+                  \num[text-family-to-math=true, text-series-to-math=true]{1125} &   &   &   &   &   &   &    &     \\
+                  \num[text-family-to-math=true, text-series-to-math=true]{3072} &   &   &   &   &   &   &    &     \\
             \end{tblr}
-        \end{center}
+      \end{center}
 \end{exercise}
 
 \begin{exercise}
-      \(236\) athlètes peuvent-ils défiler en rangs de 3 de fronts ? \\ Justifie.
-      \vspace{3em}
+      \(236\) athlètes peuvent-ils défiler en rangs de 3 de fronts ? Justifie.
 \end{exercise}
 
 \newpage
 \begin{exercise}
-      Par quel(s) chiffre(s) peut-on remplacer le symbole (\faIcon{bicycle}) pour que les divisibilités soient vérifiées ?
+      Par quel(s) chiffre(s) peut-on remplacer le symbole ($\bullet$) pour que les divisibilités soient vérifiées ?
       \begin{enumerate}[itemsep=1em]
-            \item \(26$\faIcon{bicycle}$4\) est divisible par \(4\) si  \faIcon{bicycle}=
-            \item \(73$\faIcon{bicycle}$6\) est divisible par \(3\) si  \faIcon{bicycle}=
-            \item \(74$\faIcon{bicycle}$2\) est divisible par \(5\) si  \faIcon{bicycle}=
-            \item \(17$\faIcon{bicycle}$7\) est divisible par \(9\) si  \faIcon{bicycle}=
-            \item \(2861$\faIcon{bicycle}$\) est divisible par \(6\) si  \faIcon{bicycle}=
+            \item \(26\bullet 4\) est divisible par \(4\) si  $\bullet=$
+            \item \(73\bullet 6\) est divisible par \(3\) si  $\bullet=$
+            \item \(74\bullet 2\) est divisible par \(5\) si  $\bullet=$
+            \item \(17\bullet 7\) est divisible par \(9\) si  $\bullet=$
+            \item \(2861\bullet \) est divisible par \(6\) si  $\bullet=$
       \end{enumerate}
 \end{exercise}
 
@@ -86,145 +78,239 @@ Les caractères de divisibilité permettent de reconnaitre si un nombre est divi
 
 Représente dans le quadrillage ci-dessous l'ensemble des rectangles possédant exactement 24 petits carrés.
 \begin{center}
-    \begin{tikzpicture}[scale=0.5]
-        % grille 12 x 30
-        % pour la taille de la grille : ultra thin, very thin, thin, thick, ...
-        \draw[color=gray!70, thick] (0,0) grid (30,10);
-    \end{tikzpicture}
+      \begin{tikzpicture}[scale=0.5]
+            % grille 12 x 30
+            % pour la taille de la grille : ultra thin, very thin, thin, thick, ...
+            \draw[color=gray!70, thick] (0,0) grid (30,10);
+      \end{tikzpicture}
 \end{center}
 
 Dimensions possibles de chaque rectangle : \dotsforanswer{1}
 
 Fais de même avec 26 petits carrés.
 \begin{center}
-    \begin{tikzpicture}[scale=0.5]
-        % grille 12 x 30
-        \draw [color=gray!70, thick] (0,0) grid (30,10);
-    \end{tikzpicture}
+      \begin{tikzpicture}[scale=0.5]
+            % grille 12 x 30
+            \draw [color=gray!70, thick] (0,0) grid (30,10);
+      \end{tikzpicture}
 \end{center}
 
 Dimensions possibles de chaque rectangle : \dotsforanswer{1}
 
 \newpage
 \begin{exercise}
-    Quelles sont les dimensions possibles d'un rectangle constitué du nombre de carrés ci-dessous.
-    \begin{enumerate}[itemsep=1em]
-        \item 8 carrés ?
-        \item 15 carrés ?
-        \item 50 carrés ?
-        \item 48 carrés ?
-    \end{enumerate}
+      % on utilise la notation a X b pour les dimensions
+      Quelles sont les dimensions possibles d'un rectangle constitué du nombre de carrés ci-dessous.
+      \begin{enumerate}[itemsep=1em]
+            \item 8 carrés ?
+            \item 15 carrés ?
+            \item 50 carrés ?
+            \item 48 carrés ?
+      \end{enumerate}
 \end{exercise}
 
-\vspace{3em}
-Que représentent les dimensions possibles pour un rectangle constitué de \(a\) carrés ? 
-\vspace{3em}
+\medbreak
+Que représentent ces dimensions par rapport aux nombres de carrés ?
+\dotsforanswer{2}
+% les diviseurs du nombre de carrés.
 
-Notation :
+%espace vide pour que les élèves écrivent l'ensemble des diviseurs de 8 et de 15 avec les notations conventionnelles.
+\vfill
 
-Exemples :
-
-\vspace{3em}
 \begin{exercise}
-    Détermine les éléments des ensembles ci-dessous.
-    \begin{enumerate}[cols=2, itemsep=3em]
-        \item \(\text{div } 9 : \)
-        \item \(\text{div } 7 : \)
-        \item \(\text{div } 100 : \)
-        \item \(\text{div } 1 : \)
-        \item \(\text{div } 12 : \)
-        \item \(\text{div } 49 : \)
-    \end{enumerate}
+      Détermine les éléments des ensembles ci-dessous.
+      \begin{enumerate}[cols=2, itemsep=3em]
+            \item \(div~9 = \)
+            \item \(div~7 = \)
+            \item \(div~100 = \)
+            \item \(div~1 = \)
+            \item \(div~12 = \)
+            \item \(div~49 = \)
+      \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
-    Vrai ou faux ? Plus un nombre naturel est grand, plus il admet de diviseurs.
-
-    \vspace{5em}
+      Vrai ou faux ? Plus un nombre naturel est grand, plus il admet de diviseurs.
+      \vspace*{3cm}
 \end{exercise}
 
 \newpage
 \section{Nombres particuliers}
+
+\subsection{Nombres carrés}
+Dans le quadrillage ci-dessous, trace en bleu tous les rectangles constitués de 16 carrés.
+\begin{center}
+      \begin{tikzpicture}[scale=0.5]
+            % grille 12 x 30
+            % pour la taille de la grille : ultra thin, very thin, thin, thick, ...
+            \draw[color=gray!70, thick] (0,0) grid (30,10);
+      \end{tikzpicture}
+\end{center}
+Que remarques-tu ? \dotsforanswer{1}
+% Le nombre 16 peut être représenté par un carré
+
+Ce nombre possède un nombre impair de diviseur car lorsque tu le décompose en différents produits,
+l'un deux possèdera deux facteurs identiques.
+\begin{align*}
+      1 \cdot 16        & = 16  \\
+      2 \cdot 8         & = 16  \\
+      \Aboxed{4 \cdot 4 & = 16}
+\end{align*}
+On trouvera donc que les $div~16=\lbrace 1,2,4,8,16 \rbrace$.
+
+Géométriquement, les nombres carrés font référence à l'aire d'un carré.
+
+\begin{exercise}
+      Pour les nombres carrés ci-dessous, est-tu capable de retrouver la longueur du côté du carré ?
+      \begin{enumerate}[cols=3]
+            \item
+                  \begin{tikzpicture}[baseline=(current bounding box.west)]
+                        \draw (0,0) rectangle (2,2)node[midway]{$9$};
+                        \draw (current bounding box.south)node[below=1em]{\dots};
+                  \end{tikzpicture}
+            \item
+                  \begin{tikzpicture}[baseline=(current bounding box.west)]
+                        \draw (0,0) rectangle (2,2)node[midway]{$25$};
+                        \draw (current bounding box.south)node[below=1em]{\dots};
+                  \end{tikzpicture}
+            \item
+                  \begin{tikzpicture}[baseline=(current bounding box.west)]
+                        \draw (0,0) rectangle (2,2)node[midway]{$100$};
+                        \draw (current bounding box.south)node[below=1em]{\dots};
+                  \end{tikzpicture}
+      \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+      Complète le tableau ci-dessous pour trouver les dix premiers nombres carrés.
+      \begin{center}
+            \begin{tblr}{
+                        hlines,
+                        vlines,
+                        columns = {c, 0.045\linewidth},
+                        column{1} = {2cm, gray!40, font=\bfseries},
+                        rows = {.7cm, m}}
+                  Longueur du côté &  &  &  &  &  &  &  &  &  &  &  & $n$ \\
+                  Aire du carré    &  &  &  &  &  &  &  &  &  &  &  &     \\
+            \end{tblr}
+      \end{center}
+\end{exercise}
 
 \subsection{Nombres premiers}
 
 Dans le quadrillage ci-dessous, trace en bleu tous les rectangles constitués de 13 carrés, et en vert tous les rectangles constitués de 7 carrés.
 \begin{center}
       \begin{tikzpicture}[scale=0.5]
-          % grille 12 x 30
-          % pour la taille de la grille : ultra thin, very thin, thin, thick, ...
-          \draw[color=gray!70, thick] (0,0) grid (30,10);
+            % grille 12 x 30
+            % pour la taille de la grille : ultra thin, very thin, thin, thick, ...
+            \draw[color=gray!70, thick] (0,0) grid (30,10);
       \end{tikzpicture}
-  \end{center}
+\end{center}
 \dotsforanswer{3}[Que remarques-tu ?]
-
 \dotsforanswer{2}[Un nombre premier est]
 
-%Pour
-%trouver les nombres premiers plus petits que 100, Eratosthène (IIIème
-%siècle avant JC) avait dicté une règle très simple, un \emph{crible.}
-%
-%Il commençait comme ceci :
-%
-%\begin{itemize}
-%    \item
-%          Le premier nombre premier est 2. Entoure 2 et barre ensuite tous les
-%          multiples de 2 puisqu'ils ne sont pas premiers.
-%    \item
-%          Le nombre premier qui suit est 3. Entoure 3 puis barre ensuite tous
-%          les multiples de 3.
-%\end{itemize}
-%
-%Poursuis ce travail jusqu'à ce que tu sois sûr d'avoir découvert tous
-%les nombres premiers du tableau.
-%Les nombres premiers inférieurs à 100 sont :
+\begin{center}
 
-\vspace{2em}
-\textbf{Attention : ne pas confondre !}
+      Crible d'Hératostène pour les nombres premiers inférieurs à 100.
 
-On dit aussi de certains nombres qu'ils sont premiers \textbf{entre eux,} ce qui n'est pas du tout la même chose qu'\textbf{UN} nombre premier.
-
-Par exemple, on dit que \(25\ \)et \(7\) sont des nombres
-premiers entre eux, mais par contre, \(25\) et \(15\) ne sont pas premiers entre eux. À ton avis que sont des nombres \textbf{premiers entre eux} ? 
-\dotsforanswer{3}
-
-Donne deux autres exemples de nombres premier entre eux :
-\vspace{4em}
+      \begin{tblr}{
+                  hlines,
+                  vlines,
+                  columns={.7cm,c},
+                  rows={.7cm, m},
+                  cell{1}{2}={gray!40, font=\bfseries},
+                  cell{1}{3}={gray!40, font=\bfseries},
+                  cell{1}{5}={gray!40, font=\bfseries},
+                  cell{1}{7}={gray!40, font=\bfseries},
+                  cell{2}{3}={gray!40, font=\bfseries},
+                  cell{2}{7}={gray!40, font=\bfseries},
+                  cell{2}{9}={gray!40, font=\bfseries},
+                  cell{3}{3}={gray!40, font=\bfseries},
+                  cell{3}{9}={gray!40, font=\bfseries},
+                  cell{4}{1}={gray!40, font=\bfseries},
+                  cell{4}{7}={gray!40, font=\bfseries},
+                  cell{5}{1}={gray!40, font=\bfseries},
+                  cell{5}{3}={gray!40, font=\bfseries},
+                  cell{5}{7}={gray!40, font=\bfseries},
+                  cell{6}{3}={gray!40, font=\bfseries},
+                  cell{6}{9}={gray!40, font=\bfseries},
+                  cell{7}{1}={gray!40, font=\bfseries},
+                  cell{7}{7}={gray!40, font=\bfseries},
+                  cell{8}{1}={gray!40, font=\bfseries},
+                  cell{8}{3}={gray!40, font=\bfseries},
+                  cell{8}{9}={gray!40, font=\bfseries},
+                  cell{9}{3}={gray!40, font=\bfseries},
+                  cell{9}{9}={gray!40, font=\bfseries},
+                  cell{10}{7}={gray!40, font=\bfseries},
+            }
+            1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  & 10  \\
+            11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20  \\
+            21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30  \\
+            31 & 32 & 33 & 34 & 35 & 36 & 37 & 38 & 39 & 40  \\
+            41 & 42 & 43 & 44 & 45 & 46 & 47 & 48 & 49 & 50  \\
+            51 & 52 & 53 & 54 & 55 & 56 & 57 & 58 & 59 & 60  \\
+            61 & 62 & 63 & 64 & 65 & 66 & 67 & 68 & 69 & 70  \\
+            71 & 72 & 73 & 74 & 75 & 76 & 77 & 78 & 79 & 80  \\
+            81 & 82 & 83 & 84 & 85 & 86 & 87 & 88 & 89 & 90  \\
+            91 & 92 & 93 & 94 & 95 & 96 & 97 & 98 & 99 & 100 \\
+      \end{tblr}
+\end{center}
 
 \newpage
 \begin{exercise}
       Vrai ou faux ? Justifie dans les deux cas.
       \begin{enumerate}
-            \item \dotsforanswer{2}[1 est un nombre premier.]
-            \item \dotsforanswer{2}[Tous les nombres impairs sont des nombres premiers.]
-            \item \dotsforanswer{2}[La différence entre deux nombres premiers vaut toujours deux.]
-            \item \dotsforanswer{2}[Il n'existe aucun nombre premier qui soit pair.]
-            \item \dotsforanswer{2}[\(125\) et \(17\) sont des nombres premiers entre eux.]
-            \item \dotsforanswer{2}[Il n'existe pas de nombres premiers consécutifs.]
+            \item 1 est un nombre premier.\par\dotsforanswer{2}
+            \item Tous les nombres impairs sont des nombres premiers.\par\dotsforanswer{2}
+            \item La différence entre deux nombres premiers vaut toujours deux.\par\dotsforanswer{2}
+            \item Il n'existe aucun nombre premier qui soit pair.\par\dotsforanswer{2}
+            \item Il n'existe pas de nombres premiers consécutifs.\par\dotsforanswer{2}
       \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
-      Josette explique à son petit frère : « Il n'existe aucun nombre premier qui termine par 5 ». Est-ce vrai ? Explique.
+      Josette explique à son petit frère : \og Il n'existe aucun nombre premier qui termine par 5 \fg{}. Est-ce vrai ? Explique.
       \vspace{5em}
 \end{exercise}
 
-\newpage
-\section{Décomposition en facteurs premiers}
-      
-    \dotsforanswer{3}[Décomposer un naturel en facteurs premiers, c'est]
-
-    Pour ce faire, on peut utiliser la technique en colonne : nous allons diviser le nombre de départ en n'utilisant dans la colonne de droite que des diviseurs nombres premiers.
-
-\vspace{15em}
-
-Dans la décomposition en facteurs premiers, nous découvrons un nouvel élément mathématique : les puissances. 
-
-\dotsforanswer{4}[Qu'est-ce que la puissance d'un nombre?]
-
-\vspace{5em}
 
 \newpage
+% PROPOSITION DE REMPLACEMENT
+\section*{Décomposition en facteurs premiers}
+Tout nombre peut se décomposer en un produit de facteurs premiers et cette décomposition est unique.
+Par exemple, le nombre $10$ peut s'écrire $2\cdot 5$ et le nombre $30$ peut s'écrire $2\cdot 3 \cdot 5$.
+
+Pour décomposer un nombre en facteurs premiers, il faut diviser successivement ce nombre par des nombres premiers jusqu'à obtenir le nombre 1.\\
+Voici un exemple :
+\begin{center}
+      \begin{tikzpicture}
+            %FIXME: Refaire si le temps le permets
+            \matrix (decomp) [
+                  matrix of nodes,
+                  column sep=.5cm,
+                  row 6 column 1/.style={draw=black}]
+            {
+                  160 & 2  \\
+                  60  & 2  \\
+                  30  & 2  \\
+                  15  & 3  \\
+                  5   & 5  \\
+                  1   & {} \\
+            };
+            \coordinate (T) at ($(decomp-1-1.north)!.5!(decomp-1-2.north)$);
+            \coordinate (B) at ($(decomp-6-1.south)!.5!(decomp-6-2.south)$);
+            \draw (T) -- (B);
+            \draw (decomp-1-2.north west) rectangle node[right=7pt]{facteurs premiers} (decomp-5-2.south east);
+      \end{tikzpicture}
+
+      $\begin{aligned}
+                  160
+                   & = 2\cdot 2 \cdot 2 \cdot 3 \cdot 5 \\
+                   & = 2^3 \cdot 3 \cdot 5              \\
+            \end{aligned}$
+\end{center}
+\vfill
+
 \begin{exercise}
       Écris-les ensuite en produits de puissances de facteurs premiers, en utilisant la décomposition en facteurs premiers.
       \begin{enumerate}[cols=5, label=\ ]
@@ -236,9 +322,25 @@ Dans la décomposition en facteurs premiers, nous découvrons un nouvel élémen
       \end{enumerate}
       \vspace{15em}
 \end{exercise}
+\newpage
 
 \begin{exercise}
-      Calcule les puissances suivantes.
+      À l'aide de la page 38 dans ton cahier de théorie, intitulé \og factorisation d'un nombre naturel et diviseur\fg{}, détermine le nombre de diviseurs des nombres de l'exercice précédent.
+      \begin{center}
+            \begin{tblr}{
+                        hlines,
+                        vlines,
+                        columns={c},
+                        column{1}= {gray!40, font=\bfseries,l}
+                  }
+                  Nombre              & 128 & 216 & 144 & 600 & 475 \\
+                  Nombre de diviseurs &     &     &     &     &
+            \end{tblr}
+      \end{center}
+\end{exercise}
+
+\begin{exercise}
+      Calcule en une étape les puissances suivantes.
       \begin{enumerate}[cols=3]
             \item $7^2=$
             \item $3^3=$
@@ -263,7 +365,7 @@ Dans la décomposition en facteurs premiers, nous découvrons un nouvel élémen
 
 \begin{exercise}
       La décomposition en un produit de facteurs premiers d'un naturel est $2^3\cdot 3 \cdot 5$ \\
-      Parmi les nombres ci-dessous, lequel n'est pas un diviseur de ce naturel ? Justifie. 
+      Parmi les nombres ci-dessous, lequel n'est pas un diviseur de ce naturel ? Justifie.
       \begin{enumerate}[cols=5, label=\ ]
             \item $30$
             \item $20$
@@ -275,91 +377,63 @@ Dans la décomposition en facteurs premiers, nous découvrons un nouvel élémen
 \end{exercise}
 
 %\TODO: ajouter un exercice et une explication sur le nombre de diviseurs d'un nombre grâce aux décompositions en facteurs premiers 
-
 \newpage
-\section{Nombres particuliers : les nombres carrés}
+\section{Multiples d'un naturel}
 
-Construis tous les rectangles possibles constitués de 9 carrés en bleu, et de 16 carrés en vert.
-\begin{center}
-      \begin{tikzpicture}[scale=0.5]
-          % grille 12 x 30
-          % pour la taille de la grille : ultra thin, very thin, thin, thick, ...
-          \draw[color=gray!70, thick] (0,0) grid (30,10);
-      \end{tikzpicture}
-  \end{center}
-
-\dotsforanswer{2}[Que remarques-tu ?]
-\vspace{3em}
-\dotsforanswer{2}[Un nombre carré est]
-\vspace{3em}
-
-Donne les 10 premiers nombres carrés, ainsi qu'une de leurs racines carrées comme dans l'exemple.
-
-\begin{center}
-      \begin{tblr}{
-              hlines,
-              vlines,
-              columns={.8cm, c},
-              rows={.7cm, m},
-              column{1}={2cm, gray!40, font=\bfseries},
-          }
-          Racine carrée & & 2 & & & & & \\
-          Nombre carré & & 4 & & & & & \\
-      \end{tblr}
-  \end{center}
-
-  \begin{exercise}
-      Complète les ensembles suivants.
-      \begin{enumerate}[itemsep=3em]
-            \item $\text{div } 8 :$
-            \item $\text{div } 36 :$
-            \item $\text{div } 77 :$
-            \item $\text{div } 16 :$
-            \item $\text{div } 64 :$
-            \item $\text{div } 5 :$
-      \end{enumerate}
-  \end{exercise}
-\vspace{3em}
-
-    Observe le nombre de diviseurs de chaque nombre ci-dessus. Que remarques-tu ?
-    \dotsforanswer{4}
-
-    \newpage
-    \section{Multiples d'un naturel}
-
-Note les 10 premiers multiples des nombres naturels dans les ensembles ci-dessous.
-
+Écris les nombres qui composent les ensembles ci-dessous.
 \begin{enumerate}[itemsep=2em]
-      \item \(6\mathbb{N} :\)
-      \item \(7\mathbb{N} :\)
-      \item \(20\mathbb{N}:\)
+      \item \(6\mathbb{N} =\)
+      \item \(7\mathbb{N} =\)
+      \item \(20\mathbb{N}=\)
 \end{enumerate}
 
-\dotsforanswer{3}[Propriété des multiples d'un naturel :]
-\dotsforanswer{2}[Exemple:]
+La notation sous forme d'ensemble est un moyen plus court d'écrire les tables de multiplications.
+\begin{center}
+      \begin{tikzpicture}
+            \node (A){$6\mathbb{N} = \lbrace 0, 6, 12, 18, 24, \dots \rbrace$};
+            \node [right=5cm of A](B){$6 \cdot 2 = 12$};
+            \node [above=of B](C){$6 \cdot 1 = 6$};
+            \node [above=of C](D){$6 \cdot 0 = 0$};
+            \node [below=of B](E){$6 \cdot 3 = 18$};
+            \node [below=of E](F){$6 \cdot 4 = 24$};
+            \draw[->] (A.east) -- (B.west);
+            \draw[->] (A.east) -- (C.west);
+            \draw[->] (A.east) -- (D.west);
+            \draw[->] (A.east) -- (E.west);
+            \draw[->] (A.east) -- (F.west);
+      \end{tikzpicture}
+\end{center}
 
-\includegraphics[]{chapitres/diviseurs_et_multiples/figures/div et mul.png}
+On remarque que tous les nombres de $6\mathbb{N}$ peuvent s'écrire comme $6\cdot n$ où $n$ est un nombre naturel et cela est vrai pour tous les nombres.
+Dès lors,
+
+$6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
+      12 est un multiple de 2 et de 6\\
+      12 est divisible par 2 et 6\\
+      2 et 6 divisent 12\\
+      2 et 6 sont des diviseurs de 12}
+
+\begin{exercise}
+      Complète les phrases suivantes avec les mots diviseur ou multiple.
+      \begin{enumerate}[cols=2, itemsep=2em]
+            \item 3 est un \dotfill de 12.
+            \item 150 est un \dotfill de 1.
+            \item 8 est un \dotfill de 4.
+            \item 20 est un \dotfill de 5 et de 10.
+            \item 0 est un \dotfill de 17.
+            \item 1 est un \dotfill de tous les naturels.
+            \item 13 est un \dotfill de 26.
+            \item 125 est un \dotfill de 625.
+      \end{enumerate}
+\end{exercise}
 
 \newpage
 \section{Propriétés fondamentales de la divisibilité}
 
-\dotsforanswer{2}[Propriété 1 :]
-
-Exemples : 
-\vspace{7em}
-
-\dotsforanswer{2}[Propriété 2 :]
-
-Exemples : 
-\vspace{7em}
-
-\dotsforanswer{3}[Propriété 3 :]
-
-Exemples : 
-\vspace{7em}
+\faBookOpen~ page 37.
 
 \begin{exercise}
-      Entoure l'intru dans chaque ligne. Note ce que les autres nombres en en commun comme caractéristique.
+      Entoure l'intru dans chaque ligne. Note la caractéristique commune aux autres nombres.
       \begin{enumerate}[cols=5, label=\ ]
             \item 14
             \item 35
@@ -377,7 +451,6 @@ Exemples :
       \end{enumerate}
 \end{exercise}
 
-\newpage
 \begin{exercise}
       Effectue les divisions suivantes en te servant des propriétés. Écris tes étapes.
       \begin{enumerate}[cols=2, itemsep=6em]
@@ -391,18 +464,7 @@ Exemples :
 \end{exercise}
 \vspace{6em}
 
-\begin{exercise}
-      Complète les phrases suivantes avec les mots \emph{diviseur} ou \emph{multiple.}
-      \begin{enumerate}[cols=2, itemsep=2em]
-            \item 3 est un \dotfill de 12
-            \item 150 est un \dotfill de 1
-            \item 8 est un \dotfill de 4 
-            \item 20 est un \dotfill de 5 et de 10
-            \item 0 est un \dotfill de 17
-            \item 1 est un \dotfill de tous les naturels 
-            \item 13 est un \dotfill de 26
-      \end{enumerate}
-\end{exercise}
+
 
 \begin{exercise}
       Trouve un multiple de \(6\ \)et de \(8\) qui soit compris entre \(80\) et \(100.\)
@@ -412,14 +474,14 @@ Exemples :
 \begin{exercise}
       Vrai ou faux? Justifie dans tous les cas.
       \begin{enumerate}
-            \item \dotsforanswer{2}[Tous les multiples de \(8\) sont des multiples de \(4\).]
-            \item \dotsforanswer{2}[Tous les multiples de \(3\) sont des multiples de \(9\).]
-            \item \dotsforanswer{2}[Tous les diviseurs de \(15\) sont des diviseurs de \(5\).]
-            \item \dotsforanswer{2}[Il n'y a aucun multiple \(7\) qui soit divisible par \(4\).]
-            \item \dotsforanswer{2}[Si on multiplie un multiple de \(5\) par \(7,\) on obtient un multiple de \(5\).]
-            \item \dotsforanswer{2}[Si un nombre est divisible par \(2\), alors il est également divisible par \(10\).]
-            \item \dotsforanswer{2}[Si un nombre est un multiple de \(4\), alors il est également multiple de \(8\).]
-            \item \dotsforanswer{2}[Si un nombre divise \(4\), alors il divise aussi \(16\).]
+            \item Tous les multiples de \(8\) sont des multiples de \(4\).\par\dotsforanswer{2}
+            \item Tous les multiples de \(3\) sont des multiples de \(9\).\par\dotsforanswer{2}
+            \item Tous les diviseurs de \(15\) sont des diviseurs de \(5\).\par\dotsforanswer{2}
+            \item Il n'y a aucun multiple \(7\) qui soit divisible par \(4\).\par\dotsforanswer{2}
+            \item Si on multiplie un multiple de \(5\) par \(7,\) on obtient un multiple de \(5\).\par\dotsforanswer{2}
+            \item Si un nombre est divisible par \(2\), alors il est également divisible par \(10\).\par\dotsforanswer{2}
+            \item Si un nombre est un multiple de \(4\), alors il est également multiple de \(8\).\par\dotsforanswer{2}
+            \item Si un nombre divise \(4\), alors il divise aussi \(16\).\par\dotsforanswer{2}
       \end{enumerate}
 \end{exercise}
 
@@ -433,7 +495,7 @@ Exemples :
       Cite, si possible, tous les naturels qui sont \dots
       \begin{enumerate}
             \item des diviseurs de \(24\) et qui sont inférieurs à \(12\) :
-            \item des multiples de \(4\) et qui sont inférieurs à \(20\) : 
+            \item des multiples de \(4\) et qui sont inférieurs à \(20\) :
             \item des diviseurs impairs de \(12\) :
             \item des multiples de \(5\), qui sont impairs et inférieurs à \(30\) :
             \item des diviseurs pairs de \(15\) :
@@ -441,9 +503,64 @@ Exemples :
 \end{exercise}
 
 \begin{exercise}
-      Retrouve ton chemin en te déplaçant uniquement horizontalement ou verticalement. \\
-      \includegraphics[]{chapitres/diviseurs_et_multiples/figures/mult.png}
-
+      Retrouve ton chemin en te déplaçant uniquement horizontalement ou verticalement.
+      
+      \begin{tblr}{
+            hlines,
+            hline{1}={white},
+            vlines={1}{white},
+            vlines,
+            cell{2}{1}={gray!40},
+            cell{6}{5}={gray!40},
+            rows={0.5cm, m},
+            columns={0.4cm, c, font=\scriptsize},
+            cell{1}{1}={r=1,c=5}{c, font=\normalsize},
+      }
+            Multiples de 7 &    &     &    &     \\
+            14             & 21 & 32  & 64 & 24  \\
+            25             & 42 & 17  & 54 & 84  \\
+            63             & 49 & 67  & 57 & 72  \\
+            70             & 45 & 77  & 35 & 56  \\
+            7              & 28 & 140 & 27 & 210
+      \end{tblr}
+      \hfill
+      \begin{tblr}{
+            hlines,
+            hline{1}={white},
+            vlines={1}{white},
+            vlines,
+            cell{2}{1}={gray!40},
+            cell{6}{5}={gray!40},
+            rows={0.5cm, m},
+            columns={0.4cm, c, font=\scriptsize},
+            cell{1}{1}={r=1,c=5}{c, font=\normalsize},
+      }
+            Multiples de 9 &     &     &    &     \\
+            18             & 45  & 9   & 64 & 24  \\
+            25             & 40  & 27  & 52 & 84  \\
+            36             & 54  & 6   & 57 & 77  \\
+            99             & 182 & 70  & 35 & 56  \\
+            90             & 81  & 108 & 72 & 180 \\
+      \end{tblr}
+      \hfill
+      \begin{tblr}{
+            hlines,
+            hline{1}={white},
+            vlines={1}{white},
+            vlines,
+            cell{2}{1}={gray!40},
+            cell{6}{5}={gray!40},
+            rows={0.5cm, m},
+            columns={0.4cm, c, font=\scriptsize},
+            cell{1}{1}={r=1,c=5}{c, font=\normalsize},
+      }
+            Multiples de 8 &     &     &     &     \\
+            24             & 45  & 18  & 100 & 52  \\
+            32             & 42  & 56  & 64  & 72  \\
+            40             & 54  & 16  & 58  & 88  \\
+            8              & 160 & 48  & 36  & 120 \\
+            60             & 22  & 164 & 70  & 80  \\
+      \end{tblr}
 \end{exercise}
 
 \begin{exercise}
@@ -452,7 +569,7 @@ Exemples :
             \item Le code est composé de trois chiffres distincts.
             \item Ce nombre est divisible par \(2,\ 4,\ 5\) et \(8.\)
             \item Ce nombre est le plus grand possible.
-      \end{itemize}  
+      \end{itemize}
       Aide Fatima à trouver le code secret et à récupérer son cadeau. Écris tout ton raisonnement.
 \end{exercise}
 
@@ -600,7 +717,8 @@ Exemples :
             \item $3^3 - 9 \cdot 2$
       \end{enumerate}
 \end{exercise}
-      
+
+\newpage
 \begin{exercise}
       Effectue. Laisse tes étapes visibles.
       \begin{enumerate}[cols=2]
