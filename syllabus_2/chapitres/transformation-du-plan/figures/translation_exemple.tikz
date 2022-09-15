@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 4/0/B, 3/1/C, 1/1/D, 0/2/E}
+    
+    \tkzDefPoints{0/6/V1,7/7.5/V2}
+
+    \tkzDefPointsBy[translation=from V1 to V2](A,B,C,D,E){}
+
+    \tkzDrawPolygon[\corcolor](A',B',C',D',E')
+    \tkzDrawPoints[\corcolor](A',B',C',D',E')
+    \tkzLabelPoints[\corcolor,below](A')
+    \tkzLabelPoints[\corcolor,below](B')
+    \tkzLabelPoints[\corcolor,above](C')
+    \tkzLabelPoints[\corcolor,above right](D')
+    \tkzLabelPoints[\corcolor,above](E')
+
+    \tkzDrawSegments[dashed, \corcolor!40, thin](A,A' B,B' C,C' D,D' E,E')
+
+    \tkzDrawSegment[-latex](V1,V2)
+    \tkzLabelSegment(V1,V2){$\overrightarrow{v}$}
+
+    \tkzDrawPolygon(A,B,C,D,E)
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[above right](D)
+    \tkzLabelPoints[above](E)
+\end{tikzpicture}
