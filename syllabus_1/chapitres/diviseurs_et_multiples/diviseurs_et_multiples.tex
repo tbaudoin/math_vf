@@ -8,7 +8,7 @@
 \section{Rappel des caractères de divisibilité}
 
 %TODO: Refaire mais de façons schématique
-Les caractères de divisibilité permettent de reconnaitre si un nombre est divisible par un autre sans devoir effectuer de division.
+Les caractères de divisibilité permettent de reconnaitre si un nombre est divisible par un autre sans devoir effectuer la division.
 
 \includegraphics[width=1\linewidth]{figures/Caractrères de divisibilité.pdf}
 
@@ -146,11 +146,11 @@ Dans le quadrillage ci-dessous, trace en bleu tous les rectangles constitués de
             \draw[color=gray!70, thick] (0,0) grid (30,10);
       \end{tikzpicture}
 \end{center}
-Que remarques-tu ? \dotsforanswer{1}
-% Le nombre 16 peut être représenté par un carré
+Que remarques-tu ? \dotsforanswer{2}
+% Le nombre 16 peut être représenté par un carré. On l'appelle donc un "nombre carré"
 
-Ce nombre possède un nombre impair de diviseur car lorsque tu le décompose en différents produits,
-l'un deux possèdera deux facteurs identiques.
+Ce nombre possède un nombre impair de diviseurs car lorsque tu le décompose en différents produits,
+l'un d'eux possèdera deux facteurs identiques.
 \begin{align*}
       1 \cdot 16        & = 16  \\
       2 \cdot 8         & = 16  \\
@@ -161,7 +161,7 @@ On trouvera donc que les $div~16=\lbrace 1,2,4,8,16 \rbrace$.
 Géométriquement, les nombres carrés font référence à l'aire d'un carré.
 
 \begin{exercise}
-      Pour les nombres carrés ci-dessous, est-tu capable de retrouver la longueur du côté du carré ?
+      Pour les nombres carrés ci-dessous, es-tu capable de retrouver la longueur du côté du carré ?
       \begin{enumerate}[cols=3]
             \item
                   \begin{tikzpicture}[baseline=(current bounding box.west)]
@@ -278,13 +278,13 @@ Dans le quadrillage ci-dessous, trace en bleu tous les rectangles constitués de
 % PROPOSITION DE REMPLACEMENT
 \section*{Décomposition en facteurs premiers}
 Tout nombre peut se décomposer en un produit de facteurs premiers et cette décomposition est unique.
-Par exemple, le nombre $10$ peut s'écrire $2\cdot 5$ et le nombre $30$ peut s'écrire $2\cdot 3 \cdot 5$.
+Par exemple, le nombre $10$ peut s'écrire sous la forme $2\cdot 5$ et le nombre $30$ peut s'écrire sous la forme $2\cdot 3 \cdot 5$.
 
 Pour décomposer un nombre en facteurs premiers, il faut diviser successivement ce nombre par des nombres premiers jusqu'à obtenir le nombre 1.\\
 Voici un exemple :
 \begin{center}
       \begin{tikzpicture}
-            %FIXME: Refaire si le temps le permets
+            %FIXME: Refaire si le temps le permet
             \matrix (decomp) [
                   matrix of nodes,
                   column sep=.5cm,
@@ -325,7 +325,7 @@ Voici un exemple :
 \newpage
 
 \begin{exercise}
-      À l'aide de la page 38 dans ton cahier de théorie, intitulé \og factorisation d'un nombre naturel et diviseur\fg{}, détermine le nombre de diviseurs des nombres de l'exercice précédent.
+      À l'aide de la page 38 dans ton cahier de théorie, intitulé \og factorisation d'un nombre naturel et diviseurs\fg{}, détermine le nombre de diviseurs des nombres de l'exercice précédent.
       \begin{center}
             \begin{tblr}{
                         hlines,
@@ -387,7 +387,7 @@ Voici un exemple :
       \item \(20\mathbb{N}=\)
 \end{enumerate}
 
-La notation sous forme d'ensemble est un moyen plus court d'écrire les tables de multiplications.
+La notation sous forme d'ensemble est un moyen plus court d'écrire les multiples d'un nombre (autrement dit, la tableau de multiplication de ce nombre).
 \begin{center}
       \begin{tikzpicture}
             \node (A){$6\mathbb{N} = \lbrace 0, 6, 12, 18, 24, \dots \rbrace$};
@@ -404,7 +404,7 @@ La notation sous forme d'ensemble est un moyen plus court d'écrire les tables d
       \end{tikzpicture}
 \end{center}
 
-On remarque que tous les nombres de $6\mathbb{N}$ peuvent s'écrire comme $6\cdot n$ où $n$ est un nombre naturel et cela est vrai pour tous les nombres.
+On remarque que tous les nombres de $6\mathbb{N}$ peuvent s'écrire comme $6\cdot n$, où $n$ est un nombre naturel, et cela est vrai pour tous les nombres.
 Dès lors,
 
 $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
@@ -414,7 +414,7 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
       2 et 6 sont des diviseurs de 12}
 
 \begin{exercise}
-      Complète les phrases suivantes avec les mots diviseur ou multiple.
+      Complète les phrases suivantes avec les mots \textbf{diviseur} ou \textbf{multiple}.
       \begin{enumerate}[cols=2, itemsep=2em]
             \item 3 est un \dotfill de 12.
             \item 150 est un \dotfill de 1.
@@ -452,7 +452,7 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
 \end{exercise}
 
 \begin{exercise}
-      Effectue les divisions suivantes en te servant des propriétés. Écris tes étapes.
+      Effectue, si possible, les divisions suivantes en te servant des propriétés de la divisibilité. Écris tes étapes.
       \begin{enumerate}[cols=2, itemsep=6em]
             \item $168:6=$
             \item $225:6=$
@@ -494,8 +494,8 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
 \begin{exercise}
       Cite, si possible, tous les naturels qui sont \dots
       \begin{enumerate}
-            \item des diviseurs de \(24\) et qui sont inférieurs à \(12\) :
-            \item des multiples de \(4\) et qui sont inférieurs à \(20\) :
+            \item des diviseurs de \(24\) et inférieurs à \(12\) :
+            \item des multiples de \(4\) et inférieurs à \(20\) :
             \item des diviseurs impairs de \(12\) :
             \item des multiples de \(5\), qui sont impairs et inférieurs à \(30\) :
             \item des diviseurs pairs de \(15\) :
@@ -503,7 +503,7 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
 \end{exercise}
 
 \begin{exercise}
-      Retrouve ton chemin en te déplaçant uniquement horizontalement ou verticalement.
+      Retrouve ton chemin entre les cases grisées en te déplaçant uniquement horizontalement ou verticalement.
       
       \begin{tblr}{
             hlines,
@@ -645,7 +645,7 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
 \end{exercise}
 
 \begin{exercise}
-      Soit le nombre naturel décomposé comme étant \(11\ .\ 13\ .\ 2\) \\
+      Soit le nombre naturel décomposé comme étant \(11\cdot13\cdot2\) \\
       Combien a-t-il de diviseurs ? Écris tous tes calculs.
 \end{exercise}
 
