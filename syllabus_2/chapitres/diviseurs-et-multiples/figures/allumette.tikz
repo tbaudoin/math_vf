@@ -1,0 +1,17 @@
+\begin{tikzpicture} 
+    \tkzDefPoints{0/0/A, 8/0/B, 8/4/C, 0/4/D}
+    \tkzDefPoint(30:10){A'}
+    \tkzDefPointsBy[translation=from A to A'](A,B,C,D){}
+    %face avant
+    \tkzDrawPolygon(A,B,C,D)
+    %face latérale droite
+    \tkzDrawPolygon(B,B',C',C)
+    %face du dessus
+    \tkzDrawPolygon(D,C,C',D')
+    %arrête invisible
+    \tkzDrawSegments[dashed](A,A' A',D' A',B')
+    %dimensions
+    \tkzLabelSegment[below](A,B){\SI{8}{cm}}
+    \tkzLabelSegment[left](A,D){\SI{4}{cm}}
+    \tkzLabelSegment[below right](B,B'){\SI{10}{cm}}
+\end{tikzpicture}
