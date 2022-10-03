@@ -110,6 +110,11 @@ Coche la ou les proposition(s) qui corresponde(nt) à la proposition de départ.
         \item Dans une autre maison, Malik distribue des bonbons à ses 3 amis. Chaque ami en a reçu 6, et il reste 2 bonbons dans la main de Malik. Combien avait-il de bonbons au départ~?
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item $\opidiv[displayintermediary=all,voperation=top]{28}{5}$
+    \end{enumerate}
+\end{solution}
 
 % TODO: pointillé ou un espace blanc pour noter la relation avec les différents noms ?
 Il existe une égalité qui permet de retrouver le dividende à partir du diviseur, du reste et du quotient. Quelle est-elle ?
@@ -492,23 +497,11 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
     \end{enumerate}
 \end{exercise}
 
-%\begin{exercise}
-%    Complète le tableau suivant avec $a$, $b$ \in \mathbb{N} \\
-%    \begin{tabularx}{|X|X|X|} 
-%        \hline
-%        $a$ et $b$ ($a > b$ ) sont ... & Leur PGCD vaut ... & Leur %PPCM vaut ... \\
-%        \hline
-%        Premiers entre eux                  &                    %&                    \\
-%        \hline
-%        Multiples l'un de l'autre           &                    & \\
-%        \hline
-%    \end{tabularx}
-%\end{exercise}
-
 \newpage
 \section{Exercices mélangés}
 \setcounter{exercise}{0}
 \subsection{Exercices de drill}
+\activatecollection{div-mul-exos}
 \begin{exercise}
     Décompose les nombres suivants en un produit de facteurs premiers.
     \begin{enumerate}[cols=3]
@@ -811,5 +804,7 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \task La somme de deux multiples consécutifs de $5$ est un multiple de $5$.
     \end{tasks}
 \end{exercise}
-% \deactivatecollection{div-mul-exos}
+\deactivatecollection{div-mul-exos}
+\newpage
+\printsolutions[collection=div-mul-exos]
 \end{document}
