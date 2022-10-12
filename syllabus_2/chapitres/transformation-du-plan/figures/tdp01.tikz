@@ -5,16 +5,15 @@
     \tkzDefPoint(-90:2){D}
     \tkzDefPointsBy[symmetry=center C](A,B,C,D){}
     \tkzDrawPolygon[color=\corcolor](A',B',C',D')
-    \tkzLabelPoints[color=\corcolor,above left](A')
-    \tkzLabelPoints[color=\corcolor,above right](B')
-    \tkzLabelPoints[color=\corcolor,below](C')
-    \tkzLabelPoints[color=\corcolor,below left](D')
+    \tkzLabelPoints[color=\corcolor,below](A')
+    \tkzLabelPoints[color=\corcolor,left](B')
+    \tkzLabelPoints[color=\corcolor,right](D')
 
 
     \tkzDrawPolygon(A,B,C,D)
     \tkzDrawPoints(A,B,C,D)
     \tkzLabelPoints[above left](A)
     \tkzLabelPoints[above right](B)
-    \tkzLabelPoints[below](C){C = C'}
+    \tkzLabelPoint[right](C){C \textcolor{\corcolor}{= C'}}
     \tkzLabelPoints[below left](D)
 \end{tikzpicture}
