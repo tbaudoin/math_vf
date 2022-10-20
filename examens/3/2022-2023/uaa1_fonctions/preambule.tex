@@ -5,7 +5,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
 % police
-\usepackage{cmbright}
+% \usepackage{cmbright}
+\usepackage[sfmath,light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
 % math utils
 \usepackage{mathtools, amssymb}
 \usepackage{bm}
@@ -17,10 +19,12 @@
 \usepackage{tikz}
 \usetikzlibrary{babel}
 \usepackage{tkz-fct}
+
 \usepackage{tkz-tab}
 \usepackage{tkz-euclide}
-\usepackage[]{pgfplots}
-\usepackage[]{tikzscale}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tikzscale}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,xparse}
 % plusieurs colonnes
@@ -36,7 +40,7 @@
 \setlist[enumerate]{label=\textbf{\alph*)}}
 \usepackage{tasks}
 % unités
-\usepackage[locale=FR]{siunitx}
+\usepackage[locale=FR, group-minimum-digits=3]{siunitx}
 %% mettre les labels sous forme de lettre en gras
 %% nouveau paramètre pour mettre les listes sur plusieurs colonnes
 \SetEnumitemKey{cols}{%
@@ -56,10 +60,10 @@
 \input{xsim_template.tex}
 \xsimsetup{
     path=xsim,% stocker les fichiers auxiliaires dans ce dossier
-    %solution/print=true, % afficher les solutions en dessous des questions
+    % solution/print=true, % afficher les solutions en dessous des questions
     blank/style=\dotuline{#1},
     exercise/template=math-exam,
     solution/template=math-exam,
-    exercise/name=Question
+    exercise/name=Question,
 }
 \input{entete.tex}

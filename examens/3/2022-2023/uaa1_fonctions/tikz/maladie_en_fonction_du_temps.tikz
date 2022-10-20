@@ -5,10 +5,10 @@
             grid=both,
             xlabel=Temps (en jours),
             ylabel=Nombre de malades (en milliers),
-            ymax=4,
-            xmax=30,
-            xtick={0,2,...,30},
-            ytick={0,0.5,...,4},
+            ymax=4.5,
+            xmax=32,
+            xtick={0,2,...,32},
+            ytick={0,0.5,...,4.5},
             axis lines=left,
             axis line style={shorten >=-10pt}
         ]

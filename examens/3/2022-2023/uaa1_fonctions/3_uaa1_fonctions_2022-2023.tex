@@ -1,0 +1,412 @@
+\documentclass[a4paper, 12pt, parskip=half-]{scrartcl}
+\input{preambule.tex}
+\begin{document}
+
+\entete
+\minisec{Quelques consignes}
+\begin{itemize}
+    \item Rends une copie soignée (titre et questions soulignés à la latte).
+    \item N'oublie pas de remplir l'en-tête de l'examen et de chaque feuille à en-tête.
+    \item Vérifie ton orthographe.
+    \item Pour les vrais ou faux, sois précis dans tes justifications, je ne dois rien déduire, tout doit être dit explicitement.
+    \item Structure tes raisonnements.
+    \item Respecte les conventions mathématiques et les notations.
+    \item Détail tes raisonnements, la réponse seule ne suffit pas.
+    \item Pour les problèmes, n'oublie pas de formuler ta réponse finale  avec une phrase complète et de noter tout ton raisonnement.
+\end{itemize}
+\newpage~\newpage
+\section*{\fbox{C1} Expliciter les savoirs et les procédures}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=1]
+    Pour chaque graphe ci-dessous. Détermine s'il s'agit d'une fonction ou d'une relation.
+    \begin{tasks}(4)
+        \task \input{tikz/fct_or_relation01.tikz}
+        \task \input{tikz/fct_or_relation02.tikz}
+        \task \input{tikz/fct_or_relation03.tikz}
+        \task \input{tikz/fct_or_relation04.tikz}
+    \end{tasks}
+\end{connaitre}
+\begin{solution}
+    0,5 point par bonne réponse
+    \begin{tasks}(4)
+        \task Relation
+        \task Fonction
+        \task Relation
+        \task Fonction
+    \end{tasks}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=4]
+    Les affirmations suivantes sont-elles vraies ou fausses. Justifie dans les deux cas.
+    \begin{enumerate}
+        \item Le point $(4;14)$ appartient au graphe de la fonction $f(x)=3x+4$.
+        \item La racine d'une fonction est l'abscisse du point d'intersection de la fonction avec l'axe des ordonnées.
+        \item $f(x) = 8$ est une fonction du premier degré.
+        \item Les graphes des fonctions $f(x) = 3x - 4$ et $g(x) = -5 + 3x$ sont deux droites parallèles ?
+    \end{enumerate}
+\end{connaitre}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    1 point par justification correcte.
+    \begin{enumerate}
+        \item Faux.
+              $\begin{aligned}[t]
+                      14 & \stackrel{?}{=} 3\cdot 4+ 4 \\
+                      14 & \stackrel{?}{=} 12 + 4      \\
+                      14 & \ne 16
+                  \end{aligned}$
+        \item Faux. La racine d'une fonction est l'\textbf{abscisse} du point d'intersection de la fonction avec l'axe des abscisses. Ce n'est pas un point mais une valeur.
+        \item Faux. $f(x)= 8 = x^0 + 8$, c'est une fonction du degré 0.
+        \item Vrai. Lorsque $x$ augmente $f(x)$ passe des valeurs négatives aux valeurs positives, autrement dit $f(x)$ augmente également.
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Après avoir lu la légende, complète le tableau sur cette feuille.
+
+    Type de fonction \hfill A : affine \hfill L : linéaire \hfill C : constante
+
+    Croissance de la fonction \hfill $\nearrow$  : croissante \hfill $\searrow$ : décroissante \hfill C : constante
+
+    \begin{tblr}{hlines,
+            vlines,
+            columns = {2cm,c},
+            rows={.9cm,m},
+            column{1} = {3cm, l},
+            cell{1}{1} = {c},
+            rowsep=1ex}
+        Expression analytique & Type de fonction & Pente & Croissance & Racine & Ordonnée à l'origine \\
+        $f(x) = 5x-8$                                                                                 \\
+        $f(x) = 2$                                                                                    \\
+        % $f(x) = -5x$                                                                                  \\
+        % $f(x) = -1-2x$                                                                                \\
+        % $f(x) = \dfrac{2}{3}x - 3$                                                                    \\
+        $f(x) = \dfrac{2x + 12}{3}$
+    \end{tblr}
+\end{connaitre}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    0,5 point par ligne correcte.
+
+    \begin{tblr}{hlines,
+            vlines,
+            columns = {2cm,c},
+            rows={1cm, m},
+            column{1} = {3cm, l},
+            cell{1}{1} = {c},
+            rowsep=1ex}
+        Expression analytique       & Type de fonction & Pente          & Croissance & Racines & Ordonnée à l'origine \\
+        $f(x) = 5x-8$               & A                & $1$            & $\nearrow$ & $1$     & $-1$                 \\
+        $f(x) = 2$                  & C                & $0$            & C          & /       & 2                    \\
+        % $f(x) = -5x$               & L                & $-5$           & $\searrow$ & $0$             & $0$                  \\
+        % $f(x) = -1-2x$             & A                & $-2$           & $\searrow$ & $-\dfrac{1}{2}$ & $-1$                 \\
+        % $f(x) = \dfrac{2}{3}x - 3$ & A                & $\dfrac{2}{3}$ & $\nearrow$ & $\dfrac{9}{2}$  & $-3$                 \\
+        $f(x) = \dfrac{2x + 12}{3}$ & A                & $\dfrac{1}{3}$ & $\nearrow$ & $-6$    & $2$
+    \end{tblr}
+    \newpage
+\end{solution}
+\newpage
+\section*{\fbox{C2} Appliquer une procédure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=10]
+    \begin{center}
+        \input{tikz/analyse_fct01.tikz}
+    \end{center}
+    Pour la fonction $f$ ci-dessus, détermine les éléments suivants :
+    \begin{enumerate}[cols=2]
+        \item son domaine;
+        \item son ensemble image;
+        \item son ordonnée à l'origine;
+        \item ses racines;
+        \item son tableau de signes;
+        \item son tableau de variation;
+        \item l'image de $-6$;
+        \item le nombre d'antécédents de $2$.
+    \end{enumerate}
+\end{appliquer}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    1 point par bonne réponse.
+    2 point pour le tableau de signe.
+    2 point pour le tableau de variation.
+    -1 point par erreur dans les tableaux de signes et de variations.
+    \begin{tasks}(2)
+        \task $\textrm{dom }f=[-9,-3[~\cup~[-2,7]$
+        \task $\textrm{im }f=[-3,4]$
+        \task $-3$
+        \task $-2$ et $4$
+        \task!
+        \begin{tikzpicture}[baseline=(current bounding box.north)]
+            \tkzTabInit[espcl=1.5]%
+            {$x$/1, $f(x)$/1}%
+            {$-9$, $-3$,$-2$,$4$,$7$}
+            \tkzTabLine%
+            {+,+,d,h,z,-,z,+,+}
+        \end{tikzpicture}
+        \task!
+        \begin{tikzpicture}[baseline=(current bounding box.north)]
+            \tkzTabInit[espcl=1.5]%
+            {$x$/1, $f(x)$/1.5}%
+            {$-9$, $-8$,$-4$,$-3$,$-2$,$0$,$7$}
+            \tkzTabVar{-/$2$,+/$4$,-/$1$,+DH/,+/$0$,-/$-3$,+/$1$}
+        \end{tikzpicture}
+        \task $2$
+        \task $2$
+    \end{tasks}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=10]
+    Détermine l'expression analytique des fonctions suivantes grâce aux informations données. Note ton raisonnement et n'oublie pas d'écrire l'expression complète de la fonction.
+    \begin{enumerate}[itemsep=\fill]
+        \item
+              $A(-2;8)$ et $B(-10;20)$ appartiennent à la fonction $f_1$.
+        \item
+              La fonction $f_2$ est linéaire et passe par $(4;14)$.
+        \item
+              La racine de la fonction $f_3$ est $-2$ et son graphe est parallèle à celui de la fonction $g(x)=-5x + 8$.
+        \item 
+        La fonction $f_4$ passe par les points $(10;-3)$ et $(-5;-3)$.
+              \item
+              Le graphe de la fonction $f_5$ est le suivant : \hfil \includegraphics[width=5cm]{tikz/m_p_fct01.tikz}
+
+    \end{enumerate}
+\end{appliquer}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    1 point pour $m$ et 1 point pour $p$.\\
+    -0,5 point si l'expression entière n'est pas notée.
+    \raggedcolumns
+    \begin{enumerate}
+        \item $f_1(x) = x+1$
+
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $m=\dfrac{7-2}{6-1}=\dfrac{5}{5}=1$
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $\begin{aligned}[t]
+                          A(1;2)\in f_1 \Rightarrow 2 & = 1\cdot 1 + p \\
+                          p                           & = 1
+                      \end{aligned}$
+              \end{multicols}
+        \item $f_2(x) = -3x+5$
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $m=\dfrac{-10-11}{5+2}=-\dfrac{21}{7}=-3$
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $\begin{aligned}[t]
+                          (-2;11)\in f_2 \Rightarrow 11 & = -2\cdot (-3) + p \\
+                          p                             & = 5
+                      \end{aligned}$
+              \end{multicols}
+        \item $f_3(x) = 3x + 6$
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $G_f \parallel G_g \Rightarrow m = 3$
+                  \columnbreak
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $\begin{aligned}[t]
+                          \text{La racine est }-2\Rightarrow 0 & = 3\cdot (-2) + p \\
+                          p                                    & = 6
+                      \end{aligned}$
+              \end{multicols}
+        \item $f_4(x) = \dfrac{7x}{2}$
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $f_4$ est linéaire $\Rightarrow (0;0) \in f_4$
+                  \medbreak
+                  $m = \dfrac{14-0}{4-0} = \dfrac{14}{4} = \dfrac{7}{2}$
+                  \columnbreak
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $f_4$ est linéaire $\Rightarrow p=0$
+              \end{multicols}
+        \item $f_5 = 2x-2 $
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $m=\dfrac{2}{1} = 2$
+                  \columnbreak
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $p=-2$
+              \end{multicols}
+    \end{enumerate}
+    \newpage
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+% \begin{exercise}
+%     Résous le système suivante par la méthode de substitution.
+
+%     $\left\{\begin{aligned}
+%             6x - 2y & = 0  \\
+%             x-2y    & =-10
+%         \end{aligned}\right.$
+% \end{exercise}
+% % SOLUTION
+% \begin{solution}
+
+% \end{solution}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % EXERCICE
+% \begin{exercise}
+%     Résous le système suivante par la méthode de combinaison.
+
+%     $\left\{\begin{aligned}
+%             3x - 4y & = 3 \\
+%             -2x+3y  & =-1
+%         \end{aligned}\right.$
+% \end{exercise}
+% % SOLUTION
+% \begin{solution}
+
+% \end{solution}
+\section*{\fbox{C3} Résoudre un problème}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=4]
+    \parbox[c]{.5\linewidth}{Deux éprouvettes A et B contiennent des huiles différentes qui s'évaporent au fil des jours.
+        Le graphique ci-contre modélise la hauteur (en mm) de l'huile restant dans les éprouvettes en fonction du nombre de jours écoulés et il représente la situation des six premiers jours.}
+    \hfil
+    \input{tikz/evaporation.tikz}
+    \begin{enumerate}
+        \item Après combien de jours l'évaporation de l'huile contenue dans l'éprouvette A sera-t-elle complète ?
+        \item Après combien de jours les quantités d'huile contenues dans les deux éprouvettes seront-elles identiques ?
+    \end{enumerate}
+\end{transferer}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+    \begin{enumerate}
+        \item 0,5 point pour $m$.\\
+              0,5 point pour $p$.\\
+              0,5 point si l'élève cherche la racine.\\
+              0,5 point pour la racine correcte.\\
+              -0,5 point si la réponse n'est pas formulée sous forme d'une phrase.
+
+              $f_A(x) = -\dfrac{1}{2}x + 6$
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $m=\dfrac{-1}{2}=-\dfrac{1}{2}$
+                  \columnbreak
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $p=6$
+              \end{multicols}
+              Après combien de jours la hauteur sera-t-elle nulle ?
+              \begin{align*}
+                  0  & = -\dfrac{1}{2}x + 6 \\
+                  -6 & = -\dfrac{1}{2}x     \\
+                  12 & = x
+              \end{align*}
+              L'évaporation de l'huile contenue dans l'éprouvette A sera complète après 12 jours.
+        \item 0,5 point pour $m$.\\
+              0,5 point pour $p$.\\
+              0,5 point si l'élève cherche la racine.\\
+              0,5 point pour la racine correcte.\\
+              -0,5 point si la réponse n'est pas formulée sous forme d'une phrase.
+
+              $f_B(x)=-\dfrac{1}{4}x + 4$
+              \begin{multicols}{2}
+                  \textbf{$\bm{m}$ ?}
+                  \medbreak
+                  $m=\dfrac{-1}{4}=-\dfrac{1}{4}$
+                  \columnbreak
+
+                  \textbf{$\bm{p}$ ?}
+                  \medbreak
+                  $p=4$
+              \end{multicols}
+              Que est l'abscisse du point d'intersection de $f_A$ et $f_B$ ?
+              \begin{align*}
+                  -\dfrac{1}{2}x + 6             & = -\dfrac{1}{4}x + 4 \\
+                  -\dfrac{1}{2}x + \dfrac{1}{4}x & = 4 - 6              \\
+                  -\dfrac{2x}{4} + \dfrac{x}{4}  & = -2                 \\
+                  \dfrac{-x}{4}                  & = -2                 \\
+                  -x                             & = -8                 \\
+                  x                              & = 8
+              \end{align*}
+              Les quantités d'huile contenues dans les éprouvettes seront égales après 8 jours.
+    \end{enumerate}
+\end{solution}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % EXERCICE
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{exercise}[points=4]
+%     Un centre culturel présente 15 spectacles dans la saison.
+%     Trois tarifs sont proposés:
+%     \begin{description}
+%         \item[Tarif simple] aucun versement au départ, mais chaque spectacle coûte $\bm{a}$ euros.
+%         \item[Tarif membre] une carte de membre de $\bm{b}$ euros qui permet de payer $\bm{c}$ euros par spectacle.
+%         \item[Tarif abonné] un prix fixe de $\bm{d}$ euros qui permet d'assister aux 15 spectacles annuels.
+%     \end{description}
+%     Voici les graphiques qui représentent les tarifs proposés.
+%     \begin{center}
+%         \input{tikz/tarifs.tikz}
+%     \end{center}
+%     \begin{enumerate}
+%         \item Par lecture graphique, quelles sont les valeurs des coûts $\bm{a}, \bm{b}, \bm{c}$ et $\bm{d}$~?
+%         \item Pour éviter les dépense inutiles, quel tarif devrais-tu choisir si tu sais que tu n'iras voir que 3 spectacles ?
+%         \item Ton amie est certaine d'aller voir plus de 8 spectacles. Quel tarif lui conseilles-tu pour dépenser un minimum ?
+%     \end{enumerate}
+% \end{exercise}
+% % SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{solution}
+%     0,5 point par valeur correcte.\\
+%     1 point par tarif correct.
+%     \begin{enumerate}
+%         \item $\bm{a} = 10$~€\hfill
+%               $\bm{b} = 20$~€\hfill
+%               $\bm{c} = 5$~€\hfill
+%               $\bm{d} = 60$~€
+%         \item Le tarif simple
+%         \item Le tarif abonné
+%     \end{enumerate}
+% \end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\newpage
+\begin{transferer}[points=3]
+    Observe le graphique ci-dessous représentant l'évolution du nombre de malades dans une ville en fonction du temps lors d'une épidémie.
+
+    \includegraphics[width=\linewidth]{tikz/maladie_en_fonction_du_temps.tikz}
+    \begin{enumerate}
+        \item Combien de jours faut-il au minimum pour que \num{2000} personnes soient malades ?
+        \item Après combien de jours la maladie atteint-elle son maximum ?
+        \item Détermine le nombre maximum de personnes atteintes par la maladie en même temps.
+        \item Combien de jours faut-il pour que la maladie disparaisse de cette ville ?
+        \item Réalise le tableau de variations de l'évolution du nombre de malades en fonction du temps
+    \end{enumerate}
+\end{transferer}
+% SOLUTION
+\begin{solution}
+
+\end{solution}
+% Affichage des solution
+\end{document}
+

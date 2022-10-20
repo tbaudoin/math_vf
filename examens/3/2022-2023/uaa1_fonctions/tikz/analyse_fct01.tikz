@@ -1,6 +1,6 @@
 \begin{tikzpicture}[baseline=(current bounding box.north), scale=0.69]
     % AXES + GRILLES
-    \tkzInit[xmin=-10, xmax=10, ymin=-4,ymax=4]
+    \tkzInit[xmin=-10, xmax=10, ymin=-4,ymax=5]
     \tkzGrid
     \tkzDrawX[right=1pt]
     \tkzLabelX[font=\scriptsize, orig=false]
