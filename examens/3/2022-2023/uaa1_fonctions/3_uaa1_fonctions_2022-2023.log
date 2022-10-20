@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.14)  20 OCT 2022 06:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.14)  20 OCT 2022 12:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1967,13 +1967,13 @@ runsystem(gnuplot 3_uaa1_fonctions_2022-2023.tkzfonct.gnuplot)...executed.
 Here is how much of TeX's memory you used:
  53761 strings out of 478238
  1328971 string characters out of 5850456
- 1953778 words of memory out of 5000000
+ 1953782 words of memory out of 5000000
  70858 multiletter control sequences out of 15000+600000
  549964 words of font info for 239 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,10n,114p,10713b,2519s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 3_uaa1_fonctions_2022-2023.pdf (6 pages, 80837 bytes).
+Output written on 3_uaa1_fonctions_2022-2023.pdf (6 pages, 80842 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
