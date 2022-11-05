@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.14)  5 NOV 2022 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.14)  5 NOV 2022 14:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2083,18 +2083,18 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on in
 > Step: build the whole table.
 ) [10] (./3_uaa1_fonctions_2022-2023.aux) ) 
 Here is how much of TeX's memory you used:
- 57594 strings out of 478238
- 1408684 string characters out of 5850456
+ 57602 strings out of 478238
+ 1408778 string characters out of 5850456
  1998005 words of memory out of 5000000
  74604 multiletter control sequences out of 15000+600000
- 593772 words of font info for 302 fonts, out of 8000000 for 9000
+ 594420 words of font info for 308 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,15n,114p,10713b,2519s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkplmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb>
-Output written on 3_uaa1_fonctions_2022-2023.pdf (10 pages, 110253 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkplmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on 3_uaa1_fonctions_2022-2023.pdf (10 pages, 113954 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 121 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  77942 words of extra memory for PDF output out of 89155 (max. 10000000)
 
