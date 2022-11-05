@@ -3,12 +3,12 @@
 
 \chapter{Traitement de données et pourcentages}
 
-\faBookOpen~ pages ??? 
+\faBookOpen~ pages 41 à 46
 \section{Pourcentages}
 \subsection{Découverte}
 
 \begin{exercise}
-    En 2018, $40\%$ des déchets des Européens ont été recyclés ou compostés.
+    En 2018, \SI{40}{\%} des déchets des Européens ont été recyclés ou compostés.
     \begin{enumerate}[itemsep=1.2cm]
         \item Sur 100 kg de déchets, combien ont été recyclés ou compostés?
         \item Sachant que les Européens ont généré en moyenne 524 kg de déchets par habitant en 2018, calcule la masse des déchets recyclés ou compostés par habitant.
@@ -20,23 +20,26 @@
     Dans un tableur, on a indiqué la répartition du traitement des déchets générés en un an par habitant en Allemagne.
     \begin{center}
         \begin{tblr}{
-                    hlines,
-                    vlines,
-                    columns={2.8cm, c},
-                    rows={.6cm, m},
-                    column{1}={1.5cm, gray!40, font=\bfseries},
-                    row{1}={gray!40, font=\bfseries},
-              }
-              & Mise en décharge & Incinérés & Recyclés & Compostés & Total \\
-              En \% & 1 & 35 & 47 & 17 & 100 \\
-              En kg & & & & & 581 \\
+                hlines,
+                vlines,
+                colspec={lCCCCC},
+                rows={.7cm, m},
+                column{1}={gray!40, font=\bfseries},
+                row{1}={gray!40, font=\bfseries},
+                cell{1}{1}={white},
+                hline{1}={1}{white},
+                vline{1}={1}{white}
+            }
+                  & Mise en décharge & Incinérés & Recyclés & Compostés & Total \\
+            En \% & 1                & 35        & 47       & 17        & 100   \\
+            En kg &                  &           &          &           & 581   \\
         \end{tblr}
-  \end{center}
-  \begin{enumerate}[itemsep=1.2cm]
-    \item Que signifie le nombre 35 ?
-    \item Que signifie le nombre 581 ?
-    \item Complète les cases vides du tableau.
-  \end{enumerate}
+    \end{center}
+    \begin{enumerate}[itemsep=1.2cm]
+        \item Que signifie le nombre 35 ?
+        \item Que signifie le nombre 581 ?
+        \item Complète les cases vides du tableau.
+    \end{enumerate}
 \end{exercise}
 
 \newpage
@@ -44,39 +47,43 @@
     Voici les données pour d'autres pays concernant la gestion des déchets.
     \begin{center}
         \begin{tblr}{
-                    hlines,
-                    vlines,
-                    columns={2.3cm, c},
-                    rows={.6cm, m},
-                    column{1}={3cm, gray!40, font=\bfseries},
-                    row{1}={gray!40, font=\bfseries},
-              }
-              & Mise en décharge en \% & Incinérés en \% & Recyclés en \% & Compostés en \% & Total en kg \\
-              Belgique & 5 & 36 & 35 & 24 & 493 \\
-              France & 36 & 32 & 18 & 14 & 543 \\
-              Irlande & 62 & 3 & 32 & 3 & 733 \\
-              Royaume-Uni & 55 & 10 & 23 & 12 & 565 \\
+                hlines,
+                vlines,
+                colspec={lCCCCC},
+                rows={.7cm, m},
+                column{1}={gray!40, font=\bfseries},
+                row{1}={gray!40, font=\bfseries},
+                cell{1}{1}={white},
+                hline{1}={1}{white},
+                vline{1}={1}{white}
+            }
+                        & Mise en décharge en \% & Incinérés en \% & Recyclés en \% & Compostés en \% & Total en kg \\
+            Belgique    & 5                      & 36              & 35             & 24              & 493         \\
+            France      & 36                     & 32              & 18             & 14              & 543         \\
+            Irlande     & 62                     & 3               & 32             & 3               & 733         \\
+            Royaume-Uni & 55                     & 10              & 23             & 12              & 565         \\
         \end{tblr}
-  \end{center}
-  Détermine le nombre de kg non recyclés ni compostés pour chaque pays. 
-  \begin{enumerate}[cols=2, itemsep=4cm]
-    \item Belgique
-    \item France
-    \item Irlande
-    \item Royaume-Uni
-  \end{enumerate}
-  \vspace{4cm}
+    \end{center}
+    Détermine le nombre de kg non recyclés ni compostés pour chaque pays.
+    \begin{enumerate}[cols=2, itemsep=4cm]
+        \item Belgique
+        \item France
+        \item Irlande
+        \item Royaume-Uni
+    \end{enumerate}
+    \vspace*{4cm}
 \end{exercise}
 
 \begin{exercise}
-    Dans l'école Prévert, il y a $637$ élèves, dont $217$ qui font du sport dans une équipe de l'école. Par contre, dans l'école Rimbaud, il y a $480$ élèves, dont $157$ qui sont dans des associations sportives. \\
+    Dans l'école Prévert, il y a $637$ élèves, dont $217$ qui font du sport dans une équipe de l'école. \\
+    Dans l'école Rimbaud, il y a $480$ élèves, dont $157$ qui sont dans des associations sportives. \\
     Quelle est l'école la plus sportive? Justifie en t'aidant des pourcentages.
 \end{exercise}
 
 \newpage
 \subsection{Méthodes de calcul}
 \subsubsection{Exemple 1}
-Sur une tablette de chocolat noir, on peut lire \og\textit{54\% de cacao}\fg. Calcule la masse de cacao contenue dans une tablette de 250 g.
+Sur une tablette de chocolat noir, on peut lire \og\textit{\SI{54}{\%} de cacao}\fg. Calcule la masse de cacao contenue dans une tablette de 250 g.
 
 \vfil
 
@@ -86,39 +93,39 @@ Dans un collège, trois élèves sur cinq possèdent un vélo. Quel pourcentage 
 \vfil
 
 \subsubsection{Exemple 3}
-Un ordinateur reconditionné coûte 280€ hors TVA. quel sera son prix TVA (21\%) comprise? 
+Un ordinateur reconditionné coûte 280~€ hors TVA. quel sera son prix TVA (21~\%) comprise?
 
 \vfil
 
 \subsubsection{Exemple 4}
-En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affiché à 40€. Il est indiqué d'une pastille orange, ce qui signifie \og -30\% \fg. Quel est le prix que Sonia va payer à la caisse?
+En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affiché à 40~€. Il est indiqué d'une pastille orange, ce qui signifie \og -30~\% \fg. Quel est le prix que Sonia va payer à la caisse?
 
 \newpage
 \begin{exercise}
     Calcule.
     \begin{enumerate}[cols=3, itemsep=2cm]
-        \item 36\% de 25 km
-        \item 78\% de 12 L
-        \item 25\% d'une heure
-        \item 95\% de 750 g
-        \item 25\% de 12€
-        \item 2\% de 1500€
-        \item 50\% de 438 
-        \item 20\% de 45 L
-        \item 5\% de 48 km
+        \item 36~\% de 25 km
+        \item 78~\% de 12 L
+        \item 25~\% d'une heure
+        \item 95~\% de 750 g
+        \item 25~\% de 12~€
+        \item 2~\% de \num{1500}~€
+        \item 50~\% de 438
+        \item 20~\% de 45 L
+        \item 5~\% de 48 km
     \end{enumerate}
     \vspace{2cm}
 \end{exercise}
 
 \begin{exercise}
-    Dans un collège de 575 élèves, 28\% des collégiens sont en 6ème. Calcule le nombre d'élèves que cela représente.
+    Dans un collège de 575 élèves, 28~\% des collégiens sont en 6\ieme. Calcule le nombre d'élèves que cela représente.
     \vspace{3cm}
 \end{exercise}
 
 \begin{exercise}
-    Une citerne ayant une capacité de 8500 L est remplie d'eau à 60\%. 
+    Une citerne ayant une capacité de \num{8500} L est remplie d'eau à 60~\%.
     \begin{enumerate}[itemsep=2cm]
-        \item Quelle quantité d'eau, en litres, cette citerne contient-elle? 
+        \item Quelle quantité d'eau, en litres, cette citerne contient-elle?
         \item Quelle quantité d'eau, en litres, cette citerne peut-elle encore recevoir?
     \end{enumerate}
     \vspace{2cm}
@@ -126,18 +133,18 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
 
 \newpage
 \begin{exercise}
-    Construis ci-dessous un rectangle de 6 cm de longueur et de 5 cm de largeur. Hachure ensuite 40\% de la surface de ton rectangle.
+    Construis ci-dessous un rectangle de 6 cm de longueur et de 5 cm de largeur. Hachure ensuite 40~\% de la surface de ton rectangle.
     \vspace{7cm}
 \end{exercise}
 
 \begin{exercise}
-    Au cours du dernier trimestre, une usine a créé 15200 réfrigérateurs. Le service après-vente a noté des dysfonctionnements sur 608 d'entre eux. \\ 
+    Au cours du dernier trimestre, une usine a créé \num{15200} réfrigérateurs. Le service après-vente a noté des dysfonctionnements sur 608 d'entre eux. \\
     Détermine le pourcentage d'appareils défectueux.
     \vspace{5cm}
 \end{exercise}
 
 \begin{exercise}
-    Joanna veut acheter une nouvelle voiture qui coûte 12000€. Puisqu'elle paye directement, le vendeur veut bien lui accorder une réduction de 12\% sur le prix total. Quel sera le prix à payer pour la voiture~? \\ Laisse ta démarche visible.
+    Joanna veut acheter une nouvelle voiture qui coûte 12000€. Puisqu'elle paye directement, le vendeur veut bien lui accorder une réduction de 12~\% sur le prix total. Quel sera le prix à payer pour la voiture~? \\ Laisse ta démarche visible.
     \vspace{3cm}
 \end{exercise}
 
@@ -145,10 +152,10 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
 \begin{exercise}
     Voici quatre situations de réductions ou d'augmentation de prix. Calcule le prix final en une seule étape.
     \begin{enumerate}[cols=2, itemsep=3cm]
-        \item +20\% sur 5500€
-        \item -15\% sur 2000€ 
-        \item Un intérêt de 3\% sur un placement de 1000€ 
-        \item Une remise de 5\% sur un achat de 25€
+        \item +20~\% sur \num{5500}~€
+        \item -15~\% sur \num{2000}~€
+        \item Un intérêt de 3~\% sur un placement de \num{1000}~€
+        \item Une remise de 5~\% sur un achat de 25~€
     \end{enumerate}
     \vspace{3cm}
 \end{exercise}
@@ -156,8 +163,8 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
 \begin{exercise}
     Trésor voit deux offres pour la toute nouvelle console.
     \begin{itemize}
-        \item Chez \og MoinCher \fg, la console coûte 350€ mais on peut recevoir 10\% de réduction si on commande par internet. 
-        \item Chez \og Bapri \fg, la console coûte 400€, mais si la commande est faite avant ce soir, le client reçoit 20\% de réduction. 
+        \item Chez \og MoinCher \fg, la console coûte 350€ mais on peut recevoir 10~\% de réduction si on commande par internet.
+        \item Chez \og Bapri \fg, la console coûte 400~€, mais si la commande est faite avant ce soir, le client reçoit 20~\% de réduction.
     \end{itemize}
     Dans quel magasin Trésor doit-il aller pour payer sa console au moindre prix? Justifie.
     \vspace{5cm}
@@ -165,12 +172,12 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
 
 \newpage
 \begin{exercise}
-    Charlotte travaille dans un magasin où elle reçoit un salaire mensuel de 1400€. Comme elle travaille bien, son patron décide de l'augmenter, et Charlotte reçoit 6\% de plus pour son salaire mensuel. Que gagne Charlotte chaque mois~? \\ Laisse ta démarche visible.
+    Charlotte travaille dans un magasin où elle reçoit un salaire mensuel de \num{1400}~€. Comme elle travaille bien, son patron décide de l'augmenter, et Charlotte reçoit 6~\% de plus pour son salaire mensuel. Que gagne Charlotte chaque mois~? \\ Laisse ta démarche visible.
     \vspace{4cm}
 \end{exercise}
 
 \begin{exercise}
-    Yousra a placé de l'argent en banque~: 3000€. Comme elle a placé son argent pendant 1 an, elle a reçu un intérêt de 7\%. Mais ensuite, les impôts arrivent et elle doit payer une taxe de 2\% sur le nouveau montant qu'elle a en banque. De quel montant Yousra dispose-t-elle à la fin de ces deux opérations~? \\ Laisse ta démarche visible.
+    Yousra a placé de l'argent en banque~: 3000€. Comme elle a placé son argent pendant 1 an, elle a reçu un intérêt de 7~\%. Mais ensuite, les impôts arrivent et elle doit payer une taxe de 2~\% sur le nouveau montant qu'elle a en banque. De quel montant Yousra dispose-t-elle à la fin de ces deux opérations~? \\ Laisse ta démarche visible.
     \vspace{4cm}
 \end{exercise}
 
@@ -178,98 +185,120 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
 \section{Repérage d'un point dans un plan}
 Pour repérer un point sur un plan, nous avons besoin de plusieurs informations. Explique oralement, dans chacun des exemples suivants, comment repérer la croix.
 \begin{enumerate}[cols=2, label=\ ]
-    \item Exemple 1 \\ \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple1.png}
-    \item Exemple 2 \\ \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple2.png}
+    \item Exemple 1 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple1.png}
+    \item Exemple 2 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple2.png}
 \end{enumerate}
 \begin{enumerate}[label=\ ]
-    \item Exemple 3 \\ \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple3.png}
-    \newpage
-    \item Exemple 4 \\ \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple4.png}
-    \item Exemple 5 \\ \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple5.png}
+    \item Exemple 3 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple3.png}
+          \newpage
+    \item Exemple 4 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple4.png}
+    \item Exemple 5 \\ \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple5.png}
 \end{enumerate}
 
 \newpage
 Pour placer ou repérer un point dans un repère cartésien \emph{(exemple 5)}, nous avons besoin des coordonnées de ce point. \\
 
-Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant \textbf{l'abscisse} du point (=$x$), qui est son repérage sur l'axe horizontal (axe des abscisses), et en donnant ensuite \textbf{l'ordonnée} du point (=$y$), qui est son repérage sur l'axe vertical (axe des ordonnées).
+Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant \textbf{l'abscisse} du point ($x$), qui est son repérage sur l'axe horizontal (axe des abscisses), et en donnant ensuite \textbf{l'ordonnée} du point ($y$), qui est son repérage sur l'axe vertical (axe des ordonnées).
 
-\begin{enumerate}[cols=2, label=\ ]
-    \item Les coordonnées se notent toujours sous la forme \textbf{(x;y)}. 
-    \item Par exemple, le point $A$ a comme abscisse 4, et comme ordonnée 2. On notera alors \textbf{$A$(4;2)}.
-    \item Note les coordonnées des points $B$, $C$, $J$ et $D$. 
-    \item \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/axes.png}
-\end{enumerate}
-%\TODO: refaire graphe
+\tcbsidebyside[sidebyside adapt=right,
+    blanker,sidebyside gap=5mm
+]{%
+    Les coordonnées se notent toujours sous la forme $(x;y)$.
+    \bigbreak
+    Par exemple, le point $A$ a comme abscisse 4, et comme ordonnée 2. On notera alors $A(4;2)$.
+    \bigbreak
+    Note les coordonnées des points $B$, $C$ et $D$.
+}{%
+    \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/axes.tikz}
+}
 
-\vspace{1cm}
 \begin{exercise}
-    Note correctement les coordonnées des points suivants. \\
+    Note correctement les coordonnées des points suivants en dessous du repère.
     \begin{center}
-        \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/ex_reperage1.png}
+        \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/ex_reperage1.tikz}
     \end{center}
-    \begin{enumerate}[cols=5, label=\ ]
-        \item $A\left(\ldots; \ldots\right)$
-        \item $B\left(\ldots; \ldots\right)$
-        \item $C\left(\ldots; \ldots\right)$
-        \item $D\left(\ldots; \ldots\right)$
-        \item $E\left(\ldots; \ldots\right)$
-    \end{enumerate}
-    %\TODO: refaire graphe
+    % \begin{enumerate}[cols=5, label=\ ]
+    %     \item $A\left(\ldots; \ldots\right)$
+    %     \item $B\left(\ldots; \ldots\right)$
+    %     \item $C\left(\ldots; \ldots\right)$
+    %     \item $D\left(\ldots; \ldots\right)$
+    %     \item $E\left(\ldots; \ldots\right)$
+    % \end{enumerate}
 \end{exercise}
 
 \newpage
 \begin{exercise}
-    Place dans le repère suivant les points dont voici les coordonnées. \\
+    Place dans le repère suivant les points dont voici les coordonnées.
+
+    $D\left(-2;3\right)$
+    \hfill
+    $A\left(3;0\right)$
+    \hfill
+    $N\left(2;-2\right)$
+    \hfill
+    $I\left(1;1\right)$
+    \hfill
+    $E\left(4;3\right)$
+    \hfill
+    $L\left(-3;-2\right)$
+
     \begin{center}
-        \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/ex_reperage2.png}
+        \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/ex_reperage2.tikz}
     \end{center}
-    %\TODO: refaire graphe
-    \begin{enumerate}[cols=6, label=\ ]
-        \item $D\left(-2;3\right)$
-        \item $A\left(3;0\right)$
-        \item $N\left(2;-2\right)$
-        \item $I\left(1;1\right)$
-        \item $E\left(4;3\right)$
-        \item $L\left(-3;-2\right)$
-    \end{enumerate}
 \end{exercise}
-%\FIXME:Pourquoi le I est mal mis? Comprends pas.
 
 \begin{exercise}
-    Complète les phrases suivantes. 
-    \begin{enumerate}[itemsep=1em]
-        \item Mon abscisse vaut 4 et mon ordonnée vaut la moitié de mon abscisse. Mes coordonnées sont \dotfill
-        \item Mon abscisse est un multiple de 3. Mon ordonnée est un multiple de 4. La somme de mes coordonnées vaut 10. Mes coordonnées sont \dotfill
-        \item Mon ordonnée vaut 3 et mon abscisse vaut 6. Mes coordonnées sont \dotfill
-        \item Mon ordonnée vaut 6 et mon abscisse vaut le tiers de mon ordonnée. Mes coordonnées sont \dotfill
-        \item Mon abscisse vaut 3 et mon ordonnée vaut son carré. Mes coordonnées sont \dotfill
+    Donne les coordonnées des points qui satisfont les conditions ci-dessous.
+    \begin{enumerate}[itemsep=\fill]
+        \item Mon abscisse vaut 4 et mon ordonnée vaut la moitié de mon abscisse.
+        \item Mon abscisse est un multiple de 3. Mon ordonnée est un multiple de 4. La somme de mes coordonnées vaut 10.
+        \item Mon ordonnée vaut 3 et mon abscisse vaut 6.
+        \item Mon ordonnée vaut 6 et mon abscisse vaut le tiers de mon ordonnée.
+        \item Mon abscisse vaut 3 et mon ordonnée vaut son carré.
     \end{enumerate}
 \end{exercise}
 
 \newpage
 \begin{exercise}
- Dans le quadrillage suivant, construis un repère cartésien. Tu utiliseras comme échelle \emph{3 carrés = 1 unité}. Ton axe des abscisses sera gradué de $-4$ à $4$ et ton axe des ordonnées de $-2$ à $5$.\\
- Place ensuite les points suivants.
-\begin{enumerate}[cols=5, label=\ ]
-    \item $I\left(-1;-1\right)$
-    \item $L\left(-3;1\right)$
-    \item $S\left(2;0\right)$
-    \item $A\left(3;4\right)$
-    \item $E\left(-4;4\right)$
-\end{enumerate}
-%FIXME: de nouveau le I par en cacahuète
-%\TODO: refaire le quadrillage
-\begin{center}
-    \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadrillage.png}
-\end{center}
+    Dans le quadrillage suivant, construis un repère cartésien. Tu utiliseras comme échelle \emph{3 carrés = 1 unité}. Ton axe des abscisses sera gradué de $-4$ à $4$ et ton axe des ordonnées de $-2$ à $5$.\\
+    Place ensuite les points suivants.
+
+    $I\left(-1;-1\right)$
+    \hfill
+    $L\left(-3;1\right)$
+    \hfill
+    $S\left(2;0\right)$
+    \hfill
+    $A\left(3;4\right)$
+    \hfill
+    $E\left(-4;4\right)$
+
+    \begin{center}
+        \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadrillage.tikz}
+    \end{center}
 \end{exercise}
 
 \newpage
+
 \section{Lecture de graphiques, analyse de données}
 \begin{exercise}
-    Un concessionnaire automobile a vendu ce mois-ci 85 véhicules de tous types. En voici un descriptif partiel : \\
-    \begin{center} 
-        \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees1.png}
+    Un concessionnaire automobile a vendu ce mois-ci 85 véhicules de tous types. En voici un descriptif partiel.
+    \begin{center}
+        \begin{tblr}{
+                colspec={CCCCC},
+                hlines,
+                vlines,
+                row{1}={gray!40, font = \bfseries},
+                column{1}={gray!40,font = \bfseries},
+                rows={1cm, m}}
+            Vendeurs & Citadines & Sportives & Routières & Totaux \\
+            Paul     & 3         & 5         &           & 17     \\
+            Denis    & 4         &           & 6         & 15     \\
+            Henri    & 3         &           & 8         &        \\
+            Steeve   &           & 4         &           & 18     \\
+            Eliess   & 5         &           & 2         & 16     \\
+            Totaux   &           & 31        & 30        & 85     \\
+        \end{tblr}
     \end{center}
     \begin{enumerate}[itemsep=1em]
         \item Complète le tableau.
@@ -283,101 +312,132 @@ Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant \
 
 \begin{exercise}
     Un agriculteur a réalisé le diagramme circulaire suivant illustrant l'utilisation des terres de son exploitation.
-    \begin{enumerate}[cols=2]
-        \item Quel type de culture occupe la moitié de ses terres?
-        \item Quel type de culture est la moins répandue sur ses terres.
-        \item Quelles sont les cultures qui occupent la même surface?
-        \item [\label =\ ] \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees2.png}
-    \end{enumerate}
+
+    \tcbsidebyside[sidebyside adapt=right,
+        blanker,sidebyside gap=1cm
+    ]{%
+        \begin{enumerate}[itemsep=1cm]
+            \item Quel type de culture occupe la moitié de ses terres?
+            \item Quel type de culture est la moins répandue sur ses terres.
+            \item Quelles sont les cultures qui occupent la même surface?
+        \end{enumerate}
+    }{%
+        \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees2.tikz}
+    }
 \end{exercise}
 
 \newpage
 \begin{exercise}
     Observe le graphique évolutif ci-dessous illustrant le prix de location d'une planche à voile, et complète le tableau en commençant par donner un nom aux têtes de colonnes.
-    \begin{enumerate}[cols=2, label=\ ]
-        \item \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees3.png}
-        \item \begin{center}
-            \begin{tblr}{
-                        hlines,
-                        vlines,
-                        columns={3cm, c},
-                        rows={.8cm, m},
-                        column{1}={gray!40, font=\bfseries},
-                        row{1}={1.8cm, gray!40, font=\bfseries},
-                  }
-                  & \\
-                  1 & \\
-                  2 & \\
-                  3 & \\
-                  4 & \\
-                  5 & \\
-                  6 & \\
-            \end{tblr}
-      \end{center}
-    \end{enumerate}
+
+    \tcbsidebyside[
+        sidebyside adapt=left,
+        blanker,
+        sidebyside gap=1cm
+    ]{%
+        \includegraphics[width=10cm]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees3.tikz}
+    }{%
+        \begin{tblr}{hlines, vlines, rows={1cm, m}, columns={2cm, c}, row{1}={2cm, m}}
+              & \\
+            1 & \\
+            2 & \\
+            3 & \\
+            4 & \\
+            5 & \\
+            6 & \\
+        \end{tblr}
+    }
+
+
+
+        %     \begin{tblr}{
+        %         hlines,
+        %         vlines,
+        %         column{1}={gray!40, font=\bfseries},
+        %         rows={1cm, m},
+        %         columns={1cm, c},
+        %         column{1}={6cm, c}
+        %     }
+        %      & 1 & 2 & 3 & 4 & 5 & 6 \\
+        %      &   &   &   &   &   &   \\
+        % \end{tblr}
 \end{exercise}
 
 \begin{exercise}
     Le diagramme circulaire suivant montre la répartition des élèves de la même classe en fonction du nombre de sports pratiqués régulièrement.
-    \begin{enumerate}[itemsep=4cm, cols=2]
+
+    \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees4.tikz}
+
+    \begin{enumerate}[cols=2]
         \item Si tu sais que 3 élèves ne pratiquent aucun sport régulièrement, détermine le nombre d'élèves de la classe.
         \item Combien de personnes pratiquent plus de un sport régulièrement~?
-        \item [\label=]\includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees4.png}
     \end{enumerate}
+    
+   
 \end{exercise}
 
 \newpage
 \section{Construction de graphiques}
-Dans une école de Wallonie, en 1ère année, il y a 120 élèves. Ils ont eu le choix entre plusieurs options : il en a 30 qui sont en informatique, 25 qui suivent le latin, 40 qui font un renforcement math et le reste qui sont en activité complémentaire d'expression corporelle. Représente la répartition des élèves sur un diagramme circulaire. \par \par
-\emph{Pour réaliser ce type de diagramme, nous allons devoir déterminer dans un premier temps le pourcentage que chaque option représente par rapport à l'ensemble des élèves de 1ères années, puis transformer cela en amplitudes pour pouvoir le placer dans le diagramme.}
+Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu le choix entre plusieurs options : il en a 30 qui sont en informatique, 25 qui suivent le latin, 40 qui font un renforcement math et le reste qui sont en activité complémentaire d'expression corporelle. Représente la répartition des élèves sur un diagramme circulaire. \par \par
+\emph{Pour réaliser ce type de diagramme, nous allons devoir déterminer dans un premier temps le pourcentage que chaque option représente par rapport à l'ensemble des élèves de 1\iere{} années, puis transformer cela en amplitudes pour pouvoir le placer dans le diagramme.}
 
 \begin{center}
     \begin{tblr}{
-                hlines,
-                vlines,
-                columns={4cm, c},
-                rows={1.5cm, m},
-                column{1}={gray!40, font=\bfseries},
-                row{1}={2cm, gray!40, font=\bfseries},
-          }
-          Option & Nombre d'élèves & Pourcentage & Amplitude \\
-          Informatique & & & \\
-          Latin & & & \\
-          Renforcement math & & & \\
-          Expression corporelle & & & \\
+            hlines,
+            vlines,
+            colspec={CCCC},
+            rows={1.5cm, m},
+            column{1}={gray!40, font=\bfseries},
+            row{1}={2cm, gray!40, font=\bfseries},
+        }
+        Option                & Nombre d'élèves & Pourcentage & Amplitude \\
+        Informatique          &                 &             &           \\
+        Latin                 &                 &             &           \\
+        Renforcement math     &                 &             &           \\
+        Expression corporelle &                 &             &           \\
     \end{tblr}
 \end{center}
 
 \emph{Représente maintenant les répartitions des élèves dans un diagramme circulaire. Fais une légende de ton diagramme.} \\
 
-\includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.png}
+\begin{center}
+    \begin{tikzpicture}
+        \draw[fill=black] (0,0) circle(1pt); % le centre
+        \draw (0,0) circle (3cm);
+    \end{tikzpicture}
+\end{center}
 
 \newpage
 \begin{exercise}
     En Belgique, sur 12 millions d'habitants, 6,6 millions parlent néerlandais comme première langue, 0,5 millions parlent allemand et 3,7 millions ont le français comme langue maternelle. Quel est pourcentage de la population qui ne parle aucune de ces 3 langues ? Représente la situation dans un diagramme circulaire. \\
-\emph{Note : retranscris d'abord tes données sous la forme d'un tableau.}
-\vspace{5cm} \\
-\includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.png}
+    \emph{Note : retranscris d'abord tes données sous la forme d'un tableau.}
+    \vspace{5cm} \\
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[fill=black] (0,0) circle(1pt); % le centre
+            \draw (0,0) circle (3cm);
+        \end{tikzpicture}
+    \end{center}
 \end{exercise}
 
 \begin{exercise}
-    Éléanore a relevé les températures dehors au cours de la journée. Elle les écrit comme suit. 
+    Éléanore a relevé les températures dehors au cours de la journée. Elle les écrit comme suit.
     \begin{enumerate}[cols=2, label=\ ]
         \item \begin{center}
-            \begin{tblr}{
-                        hlines,
-                        vlines,
-                        columns={2cm, c},
-                        rows={1cm, m},
-                  }
-                  8h & 10° \\
-                  10h & 11° \\
-                  12h & 12° \\
-                  14h & 17° \\
-                  16h & 15° \\
-                  18h & 11° \\
-            \end{tblr}
-        \end{center}
+                  \begin{tblr}{
+                          hlines,
+                          vlines,
+                          columns={2cm, c},
+                          rows={1cm, m},
+                      }
+                      8h  & 10° \\
+                      10h & 11° \\
+                      12h & 12° \\
+                      14h & 17° \\
+                      16h & 15° \\
+                      18h & 11° \\
+                  \end{tblr}
+              \end{center}
         \item \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.png}
     \end{enumerate}
 
@@ -387,26 +447,26 @@ Dans une école de Wallonie, en 1ère année, il y a 120 élèves. Ils ont eu le
 
 \newpage
 \begin{exercise}
-    Lorsque le robinet de ma terrasse reste ouvert au maximum, il remplit trois seaux de 10 litres en une minute. \\ Complète le tableau et construis le graphique. 
+    Lorsque le robinet de ma terrasse reste ouvert au maximum, il remplit trois seaux de 10 litres en une minute. \\ Complète le tableau et construis le graphique.
     \begin{center}
         \begin{tblr}{
-                    hlines,
-                    vlines,
-                    columns={2cm, c},
-                    rows={1cm, m},
-                    column{1}={3cm, gray!40, font=\bfseries}
-              }
-              Temps en minutes & 1 & 2 & 3 & 7 & 15 \\
-              Quantité d'eau en litres & & & & & \\
+                hlines,
+                vlines,
+                columns={2cm, c},
+                rows={1cm, m},
+                column{1}={3cm, gray!40, font=\bfseries}
+            }
+            Temps en minutes         & 1 & 2 & 3 & 7 & 15 \\
+            Quantité d'eau en litres &   &   &   &   &    \\
         \end{tblr}
     \end{center}
 
     \vspace{2cm}
     Titre du graphique : \dotfill
 
-\begin{center}
-    \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/robinet.png}
-\end{center}
+    \begin{center}
+        \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/robinet.png}
+    \end{center}
 \end{exercise}
 
 \newpage
@@ -414,21 +474,21 @@ Dans une école de Wallonie, en 1ère année, il y a 120 élèves. Ils ont eu le
     Lors d'une enquête menée par Anais parmi les élèves de 3ème maternelle, elle a noté les couleurs préférées des enfants.
     \begin{center}
         \begin{tblr}{
-                    hlines,
-                    vlines,
-                    columns={1.5cm, c},
-                    rows={.7cm, m},
-                    row{1}={gray!40, font=\bfseries}
-              }
-              Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre & Total \\
-              3 & 2 & 5 & 2 & 7 & 5 & 3 & \\
+                hlines,
+                vlines,
+                columns={1.5cm, c},
+                rows={.7cm, m},
+                row{1}={gray!40, font=\bfseries}
+            }
+            Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre & Total \\
+            3     & 2     & 5    & 2    & 7    & 5      & 3     &       \\
         \end{tblr}
     \end{center}
     \vspace{3cm}
 
     \begin{enumerate}[itemsep=.7em]
         \item Combien d'enfants se trouvent dans la classe?
-        \item Détermine le pourcentage d'enfants qui préfèrent le bleu. 
+        \item Détermine le pourcentage d'enfants qui préfèrent le bleu.
         \item Construis un diagramme circulaire qui représente la situation.
         \item Construis un graphique en bâtonnets qui représente la situation.
     \end{enumerate}

@@ -1,0 +1,5 @@
+\begin{tikzpicture}
+    \tkzInit[xmin=-4, xmax=6, ymin=-3, ymax=5]
+    \tkzGrid[color=gray!40]
+    \tkzAxeXY
+  \end{tikzpicture}

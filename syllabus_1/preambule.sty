@@ -3,14 +3,18 @@
 \usepackage[T1]{fontenc} % encodage de la police
 \usepackage[utf8]{inputenc} % encodage des caractères
 \usepackage{mathtools} % macros pour les maths
-\usepackage{frenchmath} % conventions française pour les maths
-\usepackage{cmbright} % la police de caractère
-%\usepackage{fourier} % police pour les maths
+%\usepackage{frenchmath} % conventions française pour les maths
+
+%\usepackage{cmbright} % la police de caractère
+\usepackage[sfmath,light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{calrsfs} % pour les beaux C de cercles avec la commande \mathcal{C}
 \usepackage{tasks} % pour personnaliser les listes
 \usepackage{fontawesome5} % plein de petites icones
 \usepackage{graphicx} % insérer des images
 \usepackage{tabularray} % pour les tableaux
+\NewColumnType{C}[1][]{Q[c,co=1,#1]}
+\usepackage{eurosym}
 \usepackage[small]{cwpuzzle} % pour le mots croisé
 \usepackage[group-minimum-digits=3, locale=FR]{siunitx} % unités
 \usepackage{xsim} % pour la création d'exercices et des solutions
@@ -27,8 +31,11 @@
 \usepackage{calc} % pour faire des calculs sur les longueurs
 \usepackage{xparse} % créer des macros évoluées
 \usepackage{nicematrix}
+\usepackage{tikzscale}
 \usepackage{tikz} % pour le dessin
 \usetikzlibrary{babel, mindmap, matrix, calc, positioning}
+\usepackage{pgf-pie}
+\usepackage{tkz-base}
 \usepackage{tkz-euclide} % surcouche de tikz
 \usepackage[many]{tcolorbox} % pour les boîtes stylées
 \usepackage{multicol} % pour créer des colonnes
@@ -43,3 +50,4 @@
 \tcbuselibrary{skins,xparse}
 
 \usepackage{subfiles} % permet de générer un pdf par chapitre 
+\usepackage[export]{adjustbox}

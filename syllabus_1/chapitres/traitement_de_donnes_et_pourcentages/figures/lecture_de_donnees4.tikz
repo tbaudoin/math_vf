@@ -1,0 +1,8 @@
+\begin{tikzpicture}[rotate=90]
+    \pie[text=legend]{%
+      12/Élèves ne pratiquant aucun sport régulièrement,
+      8/Élèves pratiquant trois sports régulièrement,
+      16/Élèves pratiquant deux sports régulièrement,
+      64/Élèves pratiquant un sport régulièrement
+    }
+  \end{tikzpicture}
