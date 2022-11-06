@@ -184,16 +184,28 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
 \newpage
 \section{Repérage d'un point dans un plan}
 Pour repérer un point sur un plan, nous avons besoin de plusieurs informations. Explique oralement, dans chacun des exemples suivants, comment repérer la croix.
-\begin{enumerate}[cols=2, label=\ ]
-    \item Exemple 1 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple1.png}
-    \item Exemple 2 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple2.png}
-\end{enumerate}
-\begin{enumerate}[label=\ ]
-    \item Exemple 3 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple3.png}
-          \newpage
-    \item Exemple 4 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple4.png}
-    \item Exemple 5 \\ \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple5.png}
-\end{enumerate}
+\begin{multicols}{2}
+    Exemple 1\\\includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple1.png}
+
+    Exemple 2\\\includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple2.png}
+    
+    Exemple 3\\\includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple5.png}
+    
+    \columnbreak
+    Exemple 4\\\includegraphics[rotate=-90,width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple3.png}
+\end{multicols}
+% \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple4.png}
+
+% \begin{enumerate}[cols=2, label=\ ]
+%     \item Exemple 1 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple1.png}
+%     \item Exemple 2 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple2.png}
+% \end{enumerate}
+% \begin{enumerate}[label=\ ]
+%     \item Exemple 3 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple3.png}
+%           \newpage
+%     \item Exemple 4 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple4.png}
+%     \item Exemple 5 \\ \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple5.png}
+% \end{enumerate}
 
 \newpage
 Pour placer ou repérer un point dans un repère cartésien \emph{(exemple 5)}, nous avons besoin des coordonnées de ce point. \\
@@ -350,17 +362,17 @@ Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant \
 
 
 
-        %     \begin{tblr}{
-        %         hlines,
-        %         vlines,
-        %         column{1}={gray!40, font=\bfseries},
-        %         rows={1cm, m},
-        %         columns={1cm, c},
-        %         column{1}={6cm, c}
-        %     }
-        %      & 1 & 2 & 3 & 4 & 5 & 6 \\
-        %      &   &   &   &   &   &   \\
-        % \end{tblr}
+    %     \begin{tblr}{
+    %         hlines,
+    %         vlines,
+    %         column{1}={gray!40, font=\bfseries},
+    %         rows={1cm, m},
+    %         columns={1cm, c},
+    %         column{1}={6cm, c}
+    %     }
+    %      & 1 & 2 & 3 & 4 & 5 & 6 \\
+    %      &   &   &   &   &   &   \\
+    % \end{tblr}
 \end{exercise}
 
 \begin{exercise}
@@ -369,11 +381,11 @@ Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant \
     \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees4.tikz}
 
     \begin{enumerate}[cols=2]
-        \item Si tu sais que 3 élèves ne pratiquent aucun sport régulièrement, détermine le nombre d'élèves de la classe.
+        \item Si tu sais que 3 élèves ne pratiquent aucun sport régulièrement, détermine le nombre d'élèves de la classe.\columnbreak
         \item Combien de personnes pratiquent plus de un sport régulièrement~?
     \end{enumerate}
-    
-   
+
+
 \end{exercise}
 
 \newpage
@@ -401,45 +413,42 @@ Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu
 \emph{Représente maintenant les répartitions des élèves dans un diagramme circulaire. Fais une légende de ton diagramme.} \\
 
 \begin{center}
-    \begin{tikzpicture}
-        \draw[fill=black] (0,0) circle(1pt); % le centre
-        \draw (0,0) circle (3cm);
-    \end{tikzpicture}
+    \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
 \end{center}
 
 \newpage
 \begin{exercise}
     En Belgique, sur 12 millions d'habitants, 6,6 millions parlent néerlandais comme première langue, 0,5 millions parlent allemand et 3,7 millions ont le français comme langue maternelle. Quel est pourcentage de la population qui ne parle aucune de ces 3 langues ? Représente la situation dans un diagramme circulaire. \\
     \emph{Note : retranscris d'abord tes données sous la forme d'un tableau.}
-    \vspace{5cm} \\
-    \begin{center}
-        \begin{tikzpicture}
-            \draw[fill=black] (0,0) circle(1pt); % le centre
-            \draw (0,0) circle (3cm);
-        \end{tikzpicture}
-    \end{center}
+
+    \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
 \end{exercise}
 
 \begin{exercise}
     Éléanore a relevé les températures dehors au cours de la journée. Elle les écrit comme suit.
-    \begin{enumerate}[cols=2, label=\ ]
-        \item \begin{center}
-                  \begin{tblr}{
-                          hlines,
-                          vlines,
-                          columns={2cm, c},
-                          rows={1cm, m},
-                      }
-                      8h  & 10° \\
-                      10h & 11° \\
-                      12h & 12° \\
-                      14h & 17° \\
-                      16h & 15° \\
-                      18h & 11° \\
-                  \end{tblr}
-              \end{center}
-        \item \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.png}
-    \end{enumerate}
+    \tcbsidebyside[
+        sidebyside adapt=left,
+        blanker,
+        sidebyside gap=1cm
+    ]{%
+        \begin{tblr}{
+                hlines,
+                vlines,
+                rowsep={1em}
+            }
+            \SI{8}{\hour}  & \SI{10}{\degreeCelsius} \\
+            \SI{10}{\hour} & \SI{11}{\degreeCelsius} \\
+            \SI{12}{\hour} & \SI{12}{\degreeCelsius} \\
+            \SI{14}{\hour} & \SI{17}{\degreeCelsius} \\
+            \SI{16}{\hour} & \SI{15}{\degreeCelsius} \\
+            \SI{18}{\hour} & \SI{11}{\degreeCelsius} \\
+        \end{tblr}
+    }{%
+        \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
+    }
+
+
+
 
     Trace le graphique évolutif qui correspond à la situation.
     %\TODO: quadrillage
@@ -461,17 +470,16 @@ Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu
         \end{tblr}
     \end{center}
 
-    \vspace{2cm}
     Titre du graphique : \dotfill
 
     \begin{center}
-        \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/robinet.png}
+        \includegraphics[height=15cm]{chapitres/traitement_de_donnes_et_pourcentages/figures/robinet.tikz}
     \end{center}
 \end{exercise}
 
 \newpage
 \begin{exercise}
-    Lors d'une enquête menée par Anais parmi les élèves de 3ème maternelle, elle a noté les couleurs préférées des enfants.
+    Lors d'une enquête menée par Anais parmi les élèves de 3\ieme{} maternelle, elle a noté les couleurs préférées des enfants.
     \begin{center}
         \begin{tblr}{
                 hlines,
@@ -480,22 +488,25 @@ Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu
                 rows={.7cm, m},
                 row{1}={gray!40, font=\bfseries}
             }
-            Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre & Total \\
-            3     & 2     & 5    & 2    & 7    & 5      & 3     &       \\
+            Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre \\
+            3     & 2     & 5    & 2    & 7    & 5      & 3     \\
         \end{tblr}
     \end{center}
-    \vspace{3cm}
 
-    \begin{enumerate}[itemsep=.7em]
+    \begin{enumerate}
         \item Combien d'enfants se trouvent dans la classe?
-        \item Détermine le pourcentage d'enfants qui préfèrent le bleu.
+        \item Détermine le pourcentage d'enfants qui préfèrent le bleu.\par\vspace*{3cm}
         \item Construis un diagramme circulaire qui représente la situation.
         \item Construis un graphique en bâtonnets qui représente la situation.
     \end{enumerate}
-    \vspace{.7em}
-    \hfill \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.png}
 
-    \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.png}
+    \tcbsidebyside[sidebyside adapt=left, blanker]%
+    {%
+        \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
+    }
+    {%
+        \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
+    }
 \end{exercise}
 
 \end{document}

@@ -1,5 +1,5 @@
 \begin{tikzpicture}[rotate=90]
-    \pie[text=legend]{%
+    \pie[text=legend, color={gray, gray!50, gray!20, white}]{%
       12/Élèves ne pratiquant aucun sport régulièrement,
       8/Élèves pratiquant trois sports régulièrement,
       16/Élèves pratiquant deux sports régulièrement,

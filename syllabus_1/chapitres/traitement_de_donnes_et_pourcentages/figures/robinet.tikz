@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+    \tkzInit[xmin=0, xmax=8, ymin=0, ymax =180, ystep=10]
+    \tkzGrid
+    \tkzDrawY[label=\parbox{2.5cm}{\centering Quantité d'eau en litres}, above]
+    \tkzLabelY
+    \tkzDrawX[label=Temps en minutes, right]
+    \tkzLabelX
+  \end{tikzpicture}
