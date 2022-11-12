@@ -6,13 +6,14 @@
 \section{Découverte des nombres entiers}
 %TODO: mettre une image de plein de thermometres en bonne qualité pour l'exercice.
 
-Voici plusieurs images de thermomètres. 
+Voici plusieurs images de thermomètres.
 \begin{enumerate}
-    \item Note la température (en $ \degres C$) que tu peux lire sur chacun d'eux. 
+    \item Note la température (en \SI{}{\degreeCelsius}) que tu peux lire sur chacun d'eux.
     \item [\label=] \includegraphics[]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/thermo.png}
-    \item Fait-il plus froit à $-14\degres C$ ou à $-13\degres C$ \dotfill \par \dotfill
-    \item Place le plus précisément possible les températures relevées au-dessus sur cette droite graduée. %TODO: refaire droite graduée
-    \item [\label=] \includegraphics[]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/droite graduee -20 40.png}
+    \item Fait-il plus froit à \SI{-14}{\degreeCelsius} ou à \SI{-13}{\degreeCelsius} ?
+    \item Place le plus précisément possible les températures relevées au-dessus sur cette droite graduée.
+
+          \includegraphics[width=\linewidth]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/droite_graduee_-20_40.tikz}
 \end{enumerate}
 
 \newpage
@@ -26,7 +27,7 @@ Il se note~: \dotfill
 %\TODO: Refaire les ensembles (naturels + entiers)
 
 \begin{exercise}
-    Quel est \dots 
+    Quel est \dots
     \begin{enumerate}[itemsep=2em]
         \item le plus petit nombre entier que tu peux écrire à l'aide des chiffres 2, 4, 8 et 0 ?
         \item le plus grand nombre entier que tu peux écrire à l'aide des chiffres 2, 4, 8 et 0 ?
@@ -35,22 +36,20 @@ Il se note~: \dotfill
 \end{exercise}
 
 \begin{exercise}
-    Place les nombres entiers suivants sur la droite graduée. \\
-    3 \hfill -2 \hfill -1 \hfill 2 \hfill 5
-   \\
-   \includegraphics[]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/droite graduee -4 5.png}
+    Place les élements suivants sur la droite graduée.
+
+    $\hfil A = 3 \hfil B=-2 \hfil C=-1 \hfil D=2 \hfil E=5$
+    \bigbreak
+    \includegraphics[width=\linewidth]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/droite_graduee_-4_5.tikz}
 \end{exercise}
 
 \begin{exercise}
     Compare les entiers suivants. Utilise les signes <, > ou =.
-    \begin{enumerate}[cols=3, itemsep=1em, label=\ ]
-        \item -3 \ldots -2
-        \item 8 \ldots 9
-        \item 10 \ldots -17 
-        \item -25 \ldots -30
-        \item -2 \ldots -40
-        \item 0 \ldots -7  
-    \end{enumerate}
+
+    $\begin{tblr}{colspec={cccXcccXccc}}
+            -3 & \dots & -2 &  & 10  & \dots & -17 &  & -2 & \dots& -40 \\
+            8  & \dots & 9  &  & -25 & \dots & -30 &  & 0  & \dots& -7
+        \end{tblr}$
 \end{exercise}
 
 \newpage
@@ -98,23 +97,23 @@ Donne l'abscisse des points suivants.
 
 \newpage
 \subsection{Opposés et valeur absolue}
-\dotsforanswer{3}[Qu'est ce que la valeur absolue d'un nombre?] 
+\dotsforanswer{3}[Qu'est ce que la valeur absolue d'un nombre?]
 
 \includegraphics[]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/valeur absoluee.png}
 
 \dotsforanswer{3}[Que sont deux nombres opposés?]
 
 \begin{itemize}[label=$\bullet$, cols=2]
-        \item L'opposé de 5 est \dotfill
-        \item L'opposé de $-3$ est \dotfill
+    \item L'opposé de 5 est \dotfill
+    \item L'opposé de $-3$ est \dotfill
 \end{itemize}
 
 \begin{exercise}
-     Décode.
+    Décode.
     \begin{enumerate}[itemsep=1cm]
-            \item $-9$ \dotfill
-            \item $-\left(4+3\right)$ \dotfill
-            \item $ 5 + (-3)$ \dotfill
+        \item $-9$ \dotfill
+        \item $-\left(4+3\right)$ \dotfill
+        \item $ 5 + (-3)$ \dotfill
     \end{enumerate}
     \vspace{1cm}
 \end{exercise}
@@ -136,10 +135,10 @@ Donne l'abscisse des points suivants.
 \end{exercise}
 
 \begin{exercise}
-    Cite 
+    Cite
     \begin{enumerate}[itemsep=1em]
         \item deux nombres de signes contraires qui ne sont pas opposés \dotfill
-        \item deux nombres distincts ayant la même valeur absolue \dotfill 
+        \item deux nombres distincts ayant la même valeur absolue \dotfill
         \item deux nombres opposés dont la valeur absolue est inférieure à 3 \dotfill
         \item un nombre inférieur à 2 dont la valeur absolue est supérieur à 10 \dotfill
     \end{enumerate}
@@ -153,33 +152,33 @@ Pierre-Yves participe à un jeu de hasard. Il se joue en deux manches~; à chaqu
 
 \begin{enumerate}
     \item Donne le bilan de chacune des parties suivantes en écrivant l'opération à effectuer.
-    \begin{enumerate}[itemsep=2em, label=\ ]
-        \item Partie 1 : Pierre-Yves a gagné 3€ puis a gagné 7€. Bilan : \dotfill
-        \item Partie 2 : Pierre-Yves a gagné 8€ puis a perdu 5€. Bilan : \dotfill
-        \item Partie 3 : Pierre-Yves a perdu 4€ puis a gagné 8€. Bilan : \dotfill
-        \item Partie 4 : Pierre-Yves a perdu 9€ puis a perdu 2€. Bilan : \dotfill
-    \end{enumerate}
-    \vspace{2em}
-    \item Juan a rejoint Pierre-Yves et a noté ses propres résultats dans un tableau. Complète la dernière colonne. 
-    \begin{center}
-        \begin{tblr}{
-                hlines,
-                vlines,
-                columns={2cm, c},
-                rows={1cm,m},
-                row{1}={gray!40, font=\bfseries},
-                column{1}={gray!40, font=\bfseries},
-            }
-            Partie n° & 1ère manche & 2ème manche & Bilan de la partie \\
-            1 & +4 & +7 & \\
-            2 & +9 & -5 & \\
-            3 & -4 & -6 & \\
-            4 & -9 & +2 & \\
-            5 & -7 & +10 & \\
-            6 & +5 & -7 & \\
-            7 & -7 & -11 & \\
-        \end{tblr}
-    \end{center}
+          \begin{enumerate}[itemsep=2em, label=\ ]
+              \item Partie 1 : Pierre-Yves a gagné 3€ puis a gagné 7€. Bilan : \dotfill
+              \item Partie 2 : Pierre-Yves a gagné 8€ puis a perdu 5€. Bilan : \dotfill
+              \item Partie 3 : Pierre-Yves a perdu 4€ puis a gagné 8€. Bilan : \dotfill
+              \item Partie 4 : Pierre-Yves a perdu 9€ puis a perdu 2€. Bilan : \dotfill
+          \end{enumerate}
+          \vspace{2em}
+    \item Juan a rejoint Pierre-Yves et a noté ses propres résultats dans un tableau. Complète la dernière colonne.
+          \begin{center}
+              \begin{tblr}{
+                      hlines,
+                      vlines,
+                      columns={2cm, c},
+                      rows={1cm,m},
+                      row{1}={gray!40, font=\bfseries},
+                      column{1}={gray!40, font=\bfseries},
+                  }
+                  Partie n° & 1ère manche & 2ème manche & Bilan de la partie \\
+                  1         & +4          & +7          &                    \\
+                  2         & +9          & -5          &                    \\
+                  3         & -4          & -6          &                    \\
+                  4         & -9          & +2          &                    \\
+                  5         & -7          & +10         &                    \\
+                  6         & +5          & -7          &                    \\
+                  7         & -7          & -11         &                    \\
+              \end{tblr}
+          \end{center}
     \item \dotsforanswer{2}[Au total, Juan aura-t-i perdu ou gagné de l'argent? Laisse ton calcul visible. ]
 \end{enumerate}
 
@@ -188,22 +187,22 @@ En te basant sur tes observations de la page précédente, réponds aux question
 
 \begin{itemize}[label=$\bullet$]
     \item \dotsforanswer{4}[Comment fait-on pour additionner deux nombres entiers de même signe?]
-    Exemples : \\
-    \begin{enumerate}[itemsep=1cm, label=\ , cols=2]
-        \item $\left(-6\right) + \left(-3\right)=$
-        \item $10 + 4=$
-        \item $-5 + (-3)=$
-        \item $+7 + (+8)$
-    \end{enumerate}
-    \vspace{1cm}
+          Exemples : \\
+          \begin{enumerate}[itemsep=1cm, label=\ , cols=2]
+              \item $\left(-6\right) + \left(-3\right)=$
+              \item $10 + 4=$
+              \item $-5 + (-3)=$
+              \item $+7 + (+8)$
+          \end{enumerate}
+          \vspace{1cm}
     \item \dotsforanswer{4}[Comment fait-on pour additionner deux nombres entiers de signes différents?]
-    \begin{enumerate}[itemsep=1cm, label=\ , cols=2]
-        \item $\left(-6\right) + \left(+13\right)=$
-        \item $\left(+7\right) + \left(-12\right)=$
-        \item $(-5)+20=$
-        \item $27 +(-7)=$
-    \end{enumerate}
-    \vspace{1cm}
+          \begin{enumerate}[itemsep=1cm, label=\ , cols=2]
+              \item $\left(-6\right) + \left(+13\right)=$
+              \item $\left(+7\right) + \left(-12\right)=$
+              \item $(-5)+20=$
+              \item $27 +(-7)=$
+          \end{enumerate}
+          \vspace{1cm}
 \end{itemize}
 \emph{Note : On ne peut jamais écrire deux signes consécutifs. C'est pourquoi nous mettons les signes concernés entre parenthèses !}
 
@@ -237,29 +236,29 @@ En te basant sur tes observations de la page précédente, réponds aux question
 
 \begin{itemize}[label=$\bullet$]
     \item \dotsforanswer{3}[Si les signes successifs sont identiques, ]
-    Exemples : \\
-    \begin{enumerate}[itemsep=1cm, label=\ ]
-        \item $\left(+6\right) - \left(-3\right)=$
-        \item $10 + (+4)=$
-        \vspace{1cm}
-    \end{enumerate}
+          Exemples : \\
+          \begin{enumerate}[itemsep=1cm, label=\ ]
+              \item $\left(+6\right) - \left(-3\right)=$
+              \item $10 + (+4)=$
+                    \vspace{1cm}
+          \end{enumerate}
     \item \dotsforanswer{3}[Si les signes successifs sont différents, ]
-    \begin{enumerate}[itemsep=1cm, label=\ ]
-        \item $\left(-6\right) + \left(-13\right)=$
-        \item $\left(+7\right) - \left(+10\right)=$
-        \vspace{1cm}
-    \end{enumerate}
+          \begin{enumerate}[itemsep=1cm, label=\ ]
+              \item $\left(-6\right) + \left(-13\right)=$
+              \item $\left(+7\right) - \left(+10\right)=$
+                    \vspace{1cm}
+          \end{enumerate}
 \end{itemize}
 
 \newpage
 \begin{exercise}
     Écris les calculs suivants sans parenthèses en t'aidant de la règle des signes successifs, puis effectue comme dans l'exemple. \\
-    Exemple : 
+    Exemple :
     \begin{align*}
-         (+9)-(+7)+(+11) &= 9 - 7 + 11 \\
-         &=13
+        (+9)-(+7)+(+11) & = 9 - 7 + 11 \\
+                        & =13
     \end{align*}
-    
+
     \begin{enumerate}[itemsep=3cm, cols=2]
         \item $( + 4) - ( + 15) =$
         \item $( - 12) + ( - 5) =$
@@ -276,7 +275,7 @@ En te basant sur tes observations de la page précédente, réponds aux question
 \begin{exercise}
     Complète la pyramide suivante en sachant que le nombre contenu dans une brique est la somme des deux nombres contenus dans les briques situées en-dessous d'elle.
     \begin{center}
-       \includegraphics[]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/pyramide.png} 
+        \includegraphics[]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/pyramide.png}
     \end{center}
 \end{exercise}
 
@@ -309,11 +308,11 @@ En te basant sur tes observations de la page précédente, réponds aux question
                 column{2}={1cm, gray!40, font=\bfseries},
                 column{3}={1cm, gray!40, font=\bfseries},
             }
-            $a$ & $b$& $c$& $a+b-c$ & $a-(b+c)$ \\
-            10 & -3 & 8 & & \\
-            -6 & -5 & 2 & & \\
-            3 & -8 & -2 & & \\
-            7 & -2 & -5 & & \\
+            $a$ & $b$ & $c$ & $a+b-c$ & $a-(b+c)$ \\
+            10  & -3  & 8   &         &           \\
+            -6  & -5  & 2   &         &           \\
+            3   & -8  & -2  &         &           \\
+            7   & -2  & -5  &         &           \\
         \end{tblr}
     \end{center}
 \end{exercise}
@@ -348,7 +347,7 @@ En te basant sur tes observations de la page précédente, réponds aux question
 \end{exercise}
 
 \begin{exercise}
-    Place les points suivants sur une droite que tu gradueras de sorte que \emph{2cm = 1 unité}. 
+    Place les points suivants sur une droite que tu gradueras de sorte que \emph{2cm = 1 unité}.
     \begin{enumerate}[label=\ ]
         \item $A$ si tu sais que son abscisse vaut -3
         \item $B$ si tu sais que son abscisse vaut 0,5
@@ -360,7 +359,7 @@ En te basant sur tes observations de la page précédente, réponds aux question
 \end{exercise}
 
 \begin{exercise}
-    Écris les abscisses des points places ci-dessous. Attention à l'écriture ! 
+    Écris les abscisses des points places ci-dessous. Attention à l'écriture !
     %\TODO: droite graduée
 \end{exercise}
 
@@ -376,7 +375,7 @@ En te basant sur tes observations de la page précédente, réponds aux question
         \item $-7\ldots-27$
         \item $4\ldots 3$
         \item $-5 \ldots -10$
-        %\FIXME: aligner les pointillés
+              %\FIXME: aligner les pointillés
     \end{enumerate}
 \end{exercise}
 
@@ -399,7 +398,7 @@ En te basant sur tes observations de la page précédente, réponds aux question
 \end{exercise}
 
 \begin{exercise}
-    Effectue. Laisse tes étapes visibles. 
+    Effectue. Laisse tes étapes visibles.
     \begin{enumerate}[cols=3]
         \item $(-7)+(-10)$
         \item $( + 7) + ( - 10)$
@@ -435,13 +434,13 @@ En te basant sur tes observations de la page précédente, réponds aux question
 \subsection{À toi de jouer !}
 
 \begin{exercise}
-    Le professeur Mr Mathix donne à ses élèves un questionnaire à choix multiples (QCM) comportant huit questions. Il note de la façon suivante : 
+    Le professeur Mr Mathix donne à ses élèves un questionnaire à choix multiples (QCM) comportant huit questions. Il note de la façon suivante :
     \begin{center}
         \begin{minipage}{7cm}
-        Réponse fausse (F) : -3 points \\
-        Sans réponse (S) : -1 point \\
-        Réponse correcte (B) : +4 points
-     \end{minipage} 
+            Réponse fausse (F) : -3 points \\
+            Sans réponse (S) : -1 point \\
+            Réponse correcte (B) : +4 points
+        \end{minipage}
     \end{center}
     \begin{enumerate}
         \item Calcule la note de Logan dont les résultats aux questions sont F, B, S, F, F, B, B, S
@@ -462,7 +461,7 @@ En te basant sur tes observations de la page précédente, réponds aux question
         \item 1448
         \item 781
         \item -1345
-        %\FIXME: pourquoi ça fait cette mise en page???
+              %\FIXME: pourquoi ça fait cette mise en page???
     \end{enumerate}
     \begin{enumerate}[label=\ ]
         \item \(A\) est un nombre compris entre \(- 700\) et \(0\).
