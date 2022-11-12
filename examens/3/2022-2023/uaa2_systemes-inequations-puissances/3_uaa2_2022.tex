@@ -1,0 +1,83 @@
+\documentclass[a4paper, 12pt, parskip=half-]{scrartcl}
+\input{preambule.tex}
+\input{entete.tex}
+\begin{document}
+\entete
+\minisec{Quelques consignes}
+\begin{itemize}
+    \item Rends une copie soignée (titre et questions soulignés à la latte).
+    \item N'oublie pas de remplir l'en-tête de l'examen et de chaque feuille à en-tête.
+    \item Vérifie ton orthographe.
+    \item Pour les vrais ou faux, sois précis dans tes justifications, je ne dois rien déduire, tout doit être dit explicitement.
+    \item Structure tes raisonnements.
+    \item Respecte les conventions mathématiques et les notations.
+    \item Détail tes raisonnements, la réponse seule ne suffit pas.
+    \item Pour les problèmes, n'oublie pas de formuler ta réponse finale  avec une phrase complète et de noter tout ton raisonnement.
+\end{itemize}
+\newpage~\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\fbox{C1} Expliciter les savoirs et les procédures}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\fbox{C2} Appliquer une procédure}
+\begin{appliquer}
+    Résous le système suivant par substitution.
+    \begin{center}
+        \systeme{2x + 5y &= 10}{x-4y&=-8}
+    \end{center}
+\end{appliquer}
+%
+\begin{solappliquer}
+    \systeme{2x + 5y &= 10}{x-4y&=-8}
+
+    Isolons $x$ dans la deuxième équation,
+
+    \systeme{2x + 5y &= 10}{x&=-8+4y}
+
+    Remplaçons $x$ dans la première équation par son expression dans la seconde,
+
+    \systeme{2(-8+4y) + 5y &= 10}{x&=-8+4y}
+
+    Résolvons la première équation,
+
+    \begin{equation*}
+        \begin{aligned}
+            2(-8+4y) + 5y & = 10 \\
+            -16 + 8y + 5y & = 10 \\
+            -16 + 13 y    & = 10 \\
+            13 y          & = 26 \\
+            y             & = 2
+        \end{aligned}
+    \end{equation*}
+
+    Maintenant que nous connaisson la valeur de $y$, nous pouvons trouver celle de $x$ en remplaçant $y$ par sa valeur dans la deuxième équations,
+
+    \begin{equation*}
+        \begin{aligned}
+            x & = -8 + 4 \cdot 2 \\
+            x & = -8 + 8         \\
+            x & = 0
+        \end{aligned}
+    \end{equation*}
+\end{solappliquer}
+
+\begin{appliquer}
+    Résous les inéquations suivantes en notant les solutions sous forme d'intervalles.
+\end{appliquer}
+
+\begin{appliquer}
+    Dans chaque cas, détermine l'intersection des deux intervalles de réels
+\end{appliquer}
+
+\begin{appliquer}
+    Pour chaque intervalles ci-dessous, trace une droite graduée sur laquelle tu indiquera en vert les valeurs comprises dans l'intervalle et en rouge les valeurs non comprises dans l'intervalle.
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\fbox{C3} Résoudre un problème}
+\end{document}
+

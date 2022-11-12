@@ -1,0 +1,69 @@
+% XSIM TEMPLATE
+\DeclareExerciseEnvironmentTemplate{math-exam}%
+{%
+    \GetExercisePropertyTF{points}%
+    % s'il y a des points
+    {
+        \colorbox{black}{%
+            \bfseries\color{white}
+            \XSIMmixedcase{\GetExerciseName}~\GetExerciseProperty{counter}}
+        \hfill
+        \colorbox{black}{%
+            \bfseries\color{white}%
+            \GetExerciseProperty{points}
+            \XSIMtranslate{point-abbr}}
+        \par
+    }
+    % sinon
+    {
+        \colorbox{black}{%
+            \bfseries\color{white}%
+            \XSIMmixedcase{\GetExerciseName}~\GetExerciseProperty{counter}%
+        }
+        \par
+    }%
+}%
+{%
+    \par%
+}
+
+% Mes environnements
+\DeclareExerciseType{connaitre}{
+    exercise-env = connaitre ,
+    solution-env = solconnaitre ,
+    exercise-name = \XSIMtranslate{question} ,
+    exercises-name = \XSIMtranslate{questions} ,
+    solution-name = \XSIMtranslate{solution} ,
+    solutions-name = \XSIMtranslate{solutions} ,
+    exercise-template = math-exam ,
+    solution-template = math-exam ,
+    exercise-heading = \subsection* ,
+    solution-heading = \subsection*,
+    counter = exercise
+}
+\DeclareExerciseType{appliquer}{
+    exercise-env = appliquer ,
+    solution-env = solappliquer ,
+    exercise-name = \XSIMtranslate{question} ,
+    exercises-name = \XSIMtranslate{questions} ,
+    solution-name = \XSIMtranslate{solution} ,
+    solutions-name = \XSIMtranslate{solutions} ,
+    exercise-template = math-exam ,
+    solution-template = math-exam ,
+    exercise-heading = \subsection* ,
+    solution-heading = \subsection*,
+    counter = exercise
+}
+\DeclareExerciseType{transferer}{
+    exercise-env = transferer ,
+    solution-env = soltransferer ,
+    exercise-name = \XSIMtranslate{question} ,
+    exercises-name = \XSIMtranslate{questions} ,
+    solution-name = \XSIMtranslate{solution} ,
+    solutions-name = \XSIMtranslate{solutions} ,
+    exercise-template = math-exam ,
+    solution-template = math-exam ,
+    exercise-heading = \subsection* ,
+    solution-heading = \subsection*,
+    counter = exercise
+}
