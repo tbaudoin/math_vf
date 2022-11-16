@@ -1,21 +1,20 @@
 \begin{tikzpicture}
     \tikzmath{
         int \XMIN,\XMAX,\XSTEP;
-        \XMIN = -4;
-        \XMAX = 5;
+        \XMIN = -3;
+        \XMAX = 6;
         \XSTEP = 1;
         \STEP = \XMIN + \XSTEP;
-        \XSUBSTEP = 1;
+        \XSUBSTEP = 0.25;
         \SUBSTEP = \XMIN + \XSUBSTEP;
-        \XHEIGHT = 3;
-        \XSUBHEIGHT = 1.5;
+        \XHEIGHT = 2;
+        \XSUBHEIGHT = 1;
     }
     % la droite
     \draw[->,>=latex, shorten <=-.5cm, shorten >=-.5cm] (\XMIN, 0) -- (\XMAX, 0);
     % graduation principale
     \foreach \x in {\XMIN,\STEP,...,\XMAX}
-        {\draw[thick] (\x, \XHEIGHT pt) -- (\x, -\XHEIGHT pt)node[below]{\pgfmathprintnumber{\x}};}
-    % graduation secondaire
-    \foreach \x in {\XMIN,\SUBSTEP,...,\XMAX}
-    {\draw (\x, \XSUBHEIGHT pt) -- (\x, -\XSUBHEIGHT pt);}
+        {\draw[thick] (\x, \XHEIGHT pt) -- (\x, -\XHEIGHT pt);}
+    \draw (0,0)node[below=4pt]{$0$};
+    \draw (1,0)node[below=4pt]{$1$};
 \end{tikzpicture}

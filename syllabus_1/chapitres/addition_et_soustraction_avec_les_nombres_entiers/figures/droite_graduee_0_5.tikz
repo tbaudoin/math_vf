@@ -1,14 +1,14 @@
 \begin{tikzpicture}
     \tikzmath{
         int \XMIN,\XMAX,\XSTEP;
-        \XMIN = -4;
+        \XMIN = 0;
         \XMAX = 5;
         \XSTEP = 1;
         \STEP = \XMIN + \XSTEP;
-        \XSUBSTEP = 1;
+        \XSUBSTEP = 0.25;
         \SUBSTEP = \XMIN + \XSUBSTEP;
-        \XHEIGHT = 3;
-        \XSUBHEIGHT = 1.5;
+        \XHEIGHT = 1;
+        \XSUBHEIGHT = 0.5;
     }
     % la droite
     \draw[->,>=latex, shorten <=-.5cm, shorten >=-.5cm] (\XMIN, 0) -- (\XMAX, 0);
@@ -18,4 +18,8 @@
     % graduation secondaire
     \foreach \x in {\XMIN,\SUBSTEP,...,\XMAX}
     {\draw (\x, \XSUBHEIGHT pt) -- (\x, -\XSUBHEIGHT pt);}
+    \draw(0.25, 0)node[above]{$F$};
+    \draw(1.75, 0)node[above]{$A$};
+    \draw(2.5, 0)node[above]{$T$};
+    \draw(4.25, 0)node[above]{$N$};
 \end{tikzpicture}
