@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  10 NOV 2022 12:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  19 NOV 2022 18:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1876,34 +1876,63 @@ Overfull \hbox (3.61653pt too wide) in paragraph at lines 5--5
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/entete.pdf>] [2]
 \l__xsim_file_contents_iow=\write4
-\openout4 = `xsim/3_uaa2_2022-appliquer-1-exercise-body.tex'.
+\openout4 = `xsim/3_uaa2_2022-connaitre-1-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-1-exercise-body.tex)
-\openout4 = `xsim/3_uaa2_2022-appliquer-1-solution-body.tex'.
+ (./xsim/3_uaa2_2022-connaitre-1-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-connaitre-2-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-1-solution-body.tex)
-\openout4 = `xsim/3_uaa2_2022-appliquer-2-exercise-body.tex'.
+ (./xsim/3_uaa2_2022-connaitre-2-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-connaitre-3-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-2-exercise-body.tex)
-\openout4 = `xsim/3_uaa2_2022-appliquer-3-exercise-body.tex'.
+ (./xsim/3_uaa2_2022-connaitre-3-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-connaitre-4-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-3-exercise-body.tex [3])
-\openout4 = `xsim/3_uaa2_2022-appliquer-4-exercise-body.tex'.
+ (./xsim/3_uaa2_2022-connaitre-4-exercise-body.tex [3])
+\openout4 = `xsim/3_uaa2_2022-appliquer-5-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-4-exercise-body.tex) [4] (./3_uaa2_2022.aux) ) 
+ (./xsim/3_uaa2_2022-appliquer-5-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-appliquer-6-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-6-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-appliquer-7-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex [4])
+\openout4 = `xsim/3_uaa2_2022-appliquer-8-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-8-exercise-body.tex [5])
+\openout4 = `xsim/3_uaa2_2022-appliquer-9-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-9-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-appliquer-10-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex [6])
+\openout4 = `xsim/3_uaa2_2022-appliquer-11-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-11-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-appliquer-11-solution-body.tex'.
+
+\openout4 = `xsim/3_uaa2_2022-appliquer-12-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-12-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-appliquer-13-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-13-exercise-body.tex [7])
+\openout4 = `xsim/3_uaa2_2022-appliquer-14-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-appliquer-14-exercise-body.tex) [8] (./3_uaa2_2022.aux) ) 
 Here is how much of TeX's memory you used:
- 55005 strings out of 478238
- 1349807 string characters out of 5850456
- 1896168 words of memory out of 5000000
- 72226 multiletter control sequences out of 15000+600000
- 526644 words of font info for 148 fonts, out of 8000000 for 9000
+ 55628 strings out of 478238
+ 1376249 string characters out of 5850456
+ 1912063 words of memory out of 5000000
+ 72788 multiletter control sequences out of 15000+600000
+ 535731 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,114p,10720b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 3_uaa2_2022.pdf (4 pages, 60458 bytes).
+ 108i,11n,114p,10720b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
+Output written on 3_uaa2_2022.pdf (8 pages, 73900 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 43122 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 51314 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -40,6 +40,9 @@
 \usepackage{enumitem}
 \setlist[enumerate]{label=\textbf{\alph*)}}
 \usepackage{tasks}
+\settasks{
+    label-width=15 pt,
+}
 % unités
 \usepackage[locale=FR, group-minimum-digits=3]{siunitx}
 %% mettre les labels sous forme de lettre en gras
@@ -49,11 +52,6 @@
     parsep = 1\parsep,
     before = \raggedcolumns\begin{multicols}{#1},
         after = \end{multicols}}
-%% tasks setup
-\settasks{
-    label=\textbf{\alph*)},
-    label-width=12pt
-}
 % exercice
 % use-files -> xsim utilise mets chaque exercice dans un fichier séparé
 % use-aux -> xsim utilise le fichier aux de latex au lien d'en créer un nouveau
@@ -66,20 +64,17 @@
     exercise/template=math-exam,
     solution/template=math-exam,
     exercise/name=Question,
-    solconnaitre/print=true,
-    solappliquer/print=true,
-    soltransferer/print=true,
+    % solconnaitre/print=true,
+    % solappliquer/print=true,
+    % soltransferer/print=true,
 }
 
 \newcommand{\systeme}[2]
 {%
-
-    \begin{equation*}
-        \left\lbrace
+        $\left\lbrace
         \begin{aligned}%
             #1 \\
             #2
         \end{aligned}
-        \right.
-    \end{equation*}
+        \right.$
 }
