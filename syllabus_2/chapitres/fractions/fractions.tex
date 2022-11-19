@@ -110,7 +110,7 @@ Pour convertir des fractions en nombres décimaux, nous pouvons effectuer la div
 
 \newpage
 \subsection{De la forme décimale à la forme fractionnaire}
-Tous les nombres décimaux sous formés en divisant un nombre entier par une puissance de $10$.
+Tous les nombres décimaux sont formés en divisant un nombre entier par une puissance de $10$.
 
 \exemple
 Le nombre $3,2$ est obtenu en divisant $32$ par $10$. Donc, \[3,2 = \dfrac{32}{10}\]
@@ -134,7 +134,7 @@ La fraction qui correspond au nombre décimal a donc les caractéristiques suiva
 
 Plusieurs fractions peuvent représenter le même nombre. Par exemple, $\dfrac{1}{2}$ et $\dfrac{2}{4}$ représentent la même valeur.
 \begin{center}
-  \includegraphics[width=.3\linewidth]{img/fractions_equivalentes.pdf}
+  \includegraphics[width=.25\linewidth]{img/fractions_equivalentes.pdf}
 \end{center}
 
 On appelle cela des fractions équivalentes.
@@ -172,14 +172,20 @@ On appelle cela des fractions équivalentes.
   \end{enumerate}
 \end{exercise}
 
+\newpage
 \adf[Une fraction irréductible est, comme son nom l'indique, une fraction]{3}
 
-Pour rendre une fraction irréductible, tu dois diviser le numérateur et le dénominateur par leur PGCD.
+Pour rendre une fraction irréductible, il existe plusieurs techniques. En voici plusieurs exemples.
+%Place pour faire avec l pgcd, la decomposition en facteurs premiers, les divisions successives du num et du dénom, ...
 
 \exemples
-\begin{enumerate}[itemsep=3em, cols=2]
+\begin{enumerate}[cols=2, itemsep=4cm]
   \item $\dfrac{150}{45}=$
   \item $\dfrac{54}{144} =$
+  \item $\dfrac{72}{160}=$
+  \item $\dfrac{16}{20}=$
+  \item $\dfrac{150}{200}=$
+  \item $\dfrac{81}{54}=$
 \end{enumerate}
 
 \newpage
@@ -199,7 +205,7 @@ Pour rendre une fraction irréductible, tu dois diviser le numérateur et le dé
 
 \begin{exercise}
   Simplifie au maximum les fractions suivantes.
-  \begin{enumerate}[cols=3, itemsep=2cm]
+  \begin{enumerate}[cols=2, itemsep=4cm]
     \item $\dfrac{72}{36}=$
     \item $\dfrac{260}{130}=$
     \item $\dfrac{3}{9}=$
@@ -210,6 +216,7 @@ Pour rendre une fraction irréductible, tu dois diviser le numérateur et le dé
   \vspace{1cm}
 \end{exercise}
 
+\newpage
 \section{Signe d'une fraction}
 La fraction est un quotient entre deux nombres entiers. Dès lors, tout comme pour les produits :
 \begin{itemize}
@@ -218,7 +225,7 @@ La fraction est un quotient entre deux nombres entiers. Dès lors, tout comme po
   \item[\faIcon{minus-square}] Une fraction est négative si son numérateur et son dénominateur ont des signes différents.
     \[\dfrac{-2}{3} = \dfrac{2}{-3} = -\dfrac{2}{3}\]
 \end{itemize}
-\smallbreak
+\medbreak
 \faIcon{exclamation-triangle} Par convention, on ne laissera jamais de nombre négatif au dénominateur lorsqu'on écrit une fraction.
 
 \bigbreak
@@ -228,6 +235,7 @@ La fraction est un quotient entre deux nombres entiers. Dès lors, tout comme po
   \item $\dfrac{- 3}{4}$ est \blank[scale=2]{négative} \dotsforanswer{2}[car]
 \end{enumerate}
 
+\vspace{2cm}
 \begin{exercise}
   Détermine le signe des fractions ci-dessous.
 
@@ -253,6 +261,7 @@ La fraction est un quotient entre deux nombres entiers. Dès lors, tout comme po
   \end{tblr}
 \end{exercise}
 
+\newpage
 \section{Fractions particulières}
 \faIcon{book} Page 120
 \begin{exercise}
@@ -355,17 +364,56 @@ Lorsque l'on repère un point sur une droite graduée, on le repère grâce à u
 % FIXME: les schéma doivent être expliqué. À retravailler
 %Oui mais expliqués à l'oral c'est bien aussi non?
 \section{Comparaison de fractions}
-Pour comparer des fractions, nous allons puiser dans quatre méthodes différentes qui sont résumées par les schémas suivants :
-\begin{center}
-  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{img/comparaison1.pdf}}
 
-  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{img/comparaison2.pdf}}
+Pour comparer des fractions, nous allons puiser dans quatre méthodes différentes. 
 
-  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{img/comparaison3.pdf}}
-\end{center}
+\subsubsection{Comparaison des signes}
+Si les fractions à comparer n'ont pas le même signe, aucun calcul supplémentaire n'est à effectuer : la fraction positive représente un nombre supérieur à la fraction négative.
 
+\exemples
+\begin{enumerate}[cols=2]
+  \item $\dfrac{-8}{15} \ldots \dfrac{7}{75}$
+  \item $-\dfrac{-14}{3} \ldots \dfrac{-9}{4}$
+\end{enumerate}
+
+\subsubsection{Valeur décimale}
+En calculant les valeurs décimales des fractions à comparer, nous pouvons les comparer.
+
+\exemples
+\begin{enumerate}[cols=2]
+  \item $\dfrac{32}{100} \ldots \dfrac{16}{50} $
+  \item $\dfrac{15}{5} \ldots \dfrac{81}{9} $
+\end{enumerate}
+
+\subsubsection{Réduction au même dénominateur}
+En réduisant les fractions au même dénominateur, il nous suffit après de comparer les numérateurs : le plus grand numérateur se trouve alors sur la plus grande fraction.
+
+\exemples
+\begin{enumerate}[cols=2]
+  \item $\dfrac{27}{5} \ldots \dfrac{61}{15} $
+  \item $\dfrac{-2}{7} \ldots \dfrac{-3}{6} $
+\end{enumerate}
+
+\subsubsection{Réduction au même numérateur}
+En réduisant les fractions au même numérateur, il nous suffit après de comparer les dénominateurs : le plus grand dénominateur se trouve alors sur la plus petite fraction.
+
+\exemples
+\begin{enumerate}[cols=2]
+  \item $\dfrac{-2}{9} \ldots \dfrac{-3}{8} $
+  \item $\dfrac{49}{17} \ldots \dfrac{7}{3} $
+\end{enumerate}
+
+%\begin{center}
+%  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{img/comparaison1.pdf}}
+%
+%  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{img/comparaison2.pdf}}
+%
+%  \fbox{\includegraphics[clip, trim=0cm 5cm 3cm 11cm, height=.28\textheight]{img/comparaison3.pdf}}
+%\end{center}
+
+\newpage
 \begin{exercise}
-  Complète par $>$, $<$ ou $=$.
+  Compare. Complète par $>$, $<$ ou $=$.
   \begin{enumerate}[cols=4]
     \item $\dfrac{4}{4}~\ldots~\dfrac{3}{3}$
     \item $0,2~\ldots~\dfrac{1}{2}$
@@ -445,7 +493,7 @@ Encadrer une fraction à un rang donné, c'est déterminer entre quels décimaux
 
 \newpage
 \section{Exercices mélangés}
-\textbf{Rappel : les solutions doivent toujours être exprimmées sous forme de fractions irréductibles, sauf si la consigne donne d'autres informations}
+\textbf{Rappel : les solutions doivent toujours être exprimmées sous forme de fractions irréductibles, sauf si la consigne donne d'autres informations.}
 \subsection{Exercices de drill}
 \setcounter{exercise}{0}
 
