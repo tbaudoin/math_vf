@@ -11,6 +11,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 % math utils
 \usepackage{mathtools, amssymb}
+\usepackage{autoaligne}
 \usepackage{bm}
 % couleurs
 \usepackage[dvipsnames]{xcolor}
@@ -20,7 +21,6 @@
 \usepackage{tikz}
 \usetikzlibrary{babel}
 \usepackage{tkz-fct}
-
 \usepackage{tkz-tab}
 \usepackage{tkz-euclide}
 \usepackage{pgfplots}
@@ -71,10 +71,8 @@
 
 \newcommand{\systeme}[2]
 {%
-        $\left\lbrace
-        \begin{aligned}%
-            #1 \\
-            #2
-        \end{aligned}
-        \right.$
+    $\left\{\begin{aligned}
+        #1 \\
+        #2
+    \end{aligned}\right.$
 }

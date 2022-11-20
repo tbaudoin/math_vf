@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  19 NOV 2022 18:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  20 NOV 2022 11:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -801,6 +801,14 @@ LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
 LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
+) (/usr/share/texmf-dist/tex/generic/autoaligne/autoaligne.sty (/usr/share/texmf-dist/tex/generic/autoaligne/autoaligne.tex (/usr/share/texmf-dist/tex/generic/listofitems/listofitems.tex
+Package: 2019/08/21 v1.63 Grab items in lists using user-specified sep char (CT)
+\loi_cnt_foreach_nest=\count296
+\loi_nestcnt=\count297
+)
+\aa_liste_tokens=\toks25
+)
+Package: autoaligne 2020/11/19 v1.5 Aligne les termes sur plusieurs lignes (CT)
 ) (/usr/share/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup9
@@ -844,7 +852,7 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen176
 \Gin@req@width=\dimen177
 ) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks25
+\pgfutil@everybye=\toks26
 \pgfutil@tempdima=\dimen178
 \pgfutil@tempdimb=\dimen179
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -856,10 +864,10 @@ Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks26
-\pgfkeys@temptoks=\toks27
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks28
+\pgfkeys@tmptoks=\toks29
 ))
 \pgf@x=\dimen180
 \pgf@y=\dimen181
@@ -873,14 +881,14 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yd=\dimen189
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count296
-\c@pgf@countb=\count297
-\c@pgf@countc=\count298
-\c@pgf@countd=\count299
-\t@pgf@toka=\toks29
-\t@pgf@tokb=\toks30
-\t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count300
+\c@pgf@counta=\count298
+\c@pgf@countb=\count299
+\c@pgf@countc=\count300
+\c@pgf@countd=\count301
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+\pgf@sys@id@count=\count302
  (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -891,21 +899,21 @@ File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count301
-\pgfsyssoftpath@bigbuffer@items=\count302
+\pgfsyssoftpath@smallbuffer@items=\count303
+\pgfsyssoftpath@bigbuffer@items=\count304
 ) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen190
-\pgfmath@count=\count303
+\pgfmath@count=\count305
 \pgfmath@box=\box58
-\pgfmath@toks=\toks32
-\pgfmath@stack@operand=\toks33
-\pgfmath@stack@operation=\toks34
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
 ) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count304
+\c@pgfmathroundto@lastzeros=\count306
 )) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen191
@@ -935,7 +943,7 @@ File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box59
 \pgf@hbox=\box60
 \pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count305
+\pgf@picture@serial@count=\count307
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen265
@@ -956,8 +964,8 @@ File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen270
-\pgf@sys@shading@range@num=\count306
-\pgf@shadingcount=\count307
+\pgf@sys@shading@range@num=\count308
+\pgf@shadingcount=\count309
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -987,13 +995,13 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen273
 \pgffor@skip=\dimen274
-\pgffor@stack=\toks35
-\pgffor@toks=\toks36
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count308
+\pgf@plot@mark@count=\count310
 \pgfplotmarksize=\dimen275
 )
 \tikz@lastx=\dimen276
@@ -1008,17 +1016,17 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@figbox@bg=\box65
 \tikz@tempbox=\box66
 \tikz@tempbox@bg=\box67
-\tikztreelevel=\count309
-\tikznumberofchildren=\count310
-\tikznumberofcurrentchild=\count311
-\tikz@fig@count=\count312
+\tikztreelevel=\count311
+\tikznumberofchildren=\count312
+\tikznumberofcurrentchild=\count313
+\tikz@fig@count=\count314
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count313
-\pgfmatrixcurrentcolumn=\count314
-\pgf@matrix@numberofcolumns=\count315
+\pgfmatrixcurrentrow=\count315
+\pgfmatrixcurrentcolumn=\count316
+\pgf@matrix@numberofcolumns=\count317
 )
-\tikz@expandcount=\count316
+\tikz@expandcount=\count318
  (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybabel.code.tex
@@ -1026,7 +1034,7 @@ File: tikzlibrarybabel.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/latex/tkz-fct/tkz-fct.sty
 2022/01/27 1.7c function tkz-fct
 Package: tkz-fct 2022/01/27 1.7c function 
-\tkz@tkzf@fct=\count317
+\tkz@tkzf@fct=\count319
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-base.sty
 2022/01/28 4.05b tkz-base.sty
 Package: tkz-base 2022/01/28 4.05b tkz-base
@@ -1051,7 +1059,7 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfdecoratedinputsegmentcompleteddistance=\dimen291
 \pgfdecoratedinputsegmentremainingdistance=\dimen292
 \pgf@decorate@distancetomove=\dimen293
-\pgf@decorate@repeatstate=\count318
+\pgf@decorate@repeatstate=\count320
 \pgfdecorationsegmentamplitude=\dimen294
 \pgfdecorationsegmentlength=\dimen295
 )
@@ -1061,7 +1069,7 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 \tikz@lib@dec@te@box=\box70
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-\pgf@intersect@solutions=\count319
+\pgf@intersect@solutions=\count321
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
@@ -1093,46 +1101,46 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen296
 \ar@mcellbox=\box71
 \extrarowheight=\dimen297
-\NC@list=\toks37
+\NC@list=\toks38
 \extratabsurround=\skip71
 \backup@length=\skip72
 \ar@cellbox=\box72
 )
-\c@nprt@mantissa@digitsbefore=\count320
-\c@nprt@mantissa@digitsafter=\count321
-\c@nprt@exponent@digitsbefore=\count322
-\c@nprt@exponent@digitsafter=\count323
+\c@nprt@mantissa@digitsbefore=\count322
+\c@nprt@mantissa@digitsafter=\count323
+\c@nprt@exponent@digitsbefore=\count324
+\c@nprt@exponent@digitsafter=\count325
 \nprt@digitwidth=\skip73
 \nprt@sepwidth=\skip74
 \nprt@decimalwidth=\skip75
 \nprt@blockwidth=\skip76
-\nprt@digittoks=\toks38
-\nprt@pretoks=\toks39
-\nprt@posttoks=\toks40
-\nprt@thisdigit=\count324
-\nprt@curpos=\count325
-\nprt@rndpos=\count326
-\c@nprt@digitsfirstblock=\count327
-\c@nprt@blockcnt=\count328
-\c@nprt@cntprint=\count329
+\nprt@digittoks=\toks39
+\nprt@pretoks=\toks40
+\nprt@posttoks=\toks41
+\nprt@thisdigit=\count326
+\nprt@curpos=\count327
+\nprt@rndpos=\count328
+\c@nprt@digitsfirstblock=\count329
+\c@nprt@blockcnt=\count330
+\c@nprt@cntprint=\count331
  No configuration file `numprint.cfg' found.) (/usr/share/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
 Package: xfp 2022-01-12 L3 Floating point unit
 ) (/usr/share/texmf-dist/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
  `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/share/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count330
+\actioncount=\count332
 ) (/usr/share/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count331
-\FP@xia=\count332
-\FP@xib=\count333
-\FP@xfa=\count334
-\FP@xfb=\count335
-\FP@rega=\count336
-\FP@regb=\count337
-\FP@regs=\count338
-\FP@times=\count339
+\FP@xs=\count333
+\FP@xia=\count334
+\FP@xib=\count335
+\FP@xfa=\count336
+\FP@xfb=\count337
+\FP@rega=\count338
+\FP@regb=\count339
+\FP@regs=\count340
+\FP@times=\count341
 ) (/usr/share/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
 ) (/usr/share/texmf-dist/tex/latex/fp/fp-snap.sty
@@ -1145,7 +1153,7 @@ Package: fp-trigo 1995/04/14
 Package: fp-pas 1994/08/29
 ) (/usr/share/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count340
+\FPseed=\count342
 ) (/usr/share/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
 ) (/usr/share/texmf-dist/tex/latex/fp/fp-upn.sty
@@ -1169,7 +1177,7 @@ Package: fp-eval 1995/04/03
 \tkz@tcy=\dimen311
 \tkz@tdx=\dimen312
 \tkz@tdy=\dimen313
-\tkz@cntmk=\count341
+\tkz@cntmk=\count343
 
 Local configuration file tkz-base.cfg found and used
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-base.cfg
@@ -1214,26 +1222,26 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
  (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks41
-\XKV@tempa@toks=\toks42
+\XKV@toks=\toks42
+\XKV@tempa@toks=\toks43
 )
-\XKV@depth=\count342
+\XKV@depth=\count344
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \tkz@XF=\dimen314
 \tkz@YF=\dimen315
-\c@tkz@cnt@line=\count343
-\c@tkz@cnt@lg=\count344
-\c@tkz@cnt@cl=\count345
-\c@tkz@cnt@pred=\count346
-\c@tkz@cnt@temp=\count347
-\c@tkz@cnt@arrow=\count348
-\c@tkz@cnt@zone=\count349
-\c@tkz@cnt@lgnext=\count350
-\c@tkz@cnt@clnext=\count351
-\c@tkz@cnt@pair=\count352
-\c@tkz@cnt@impair=\count353
-\c@tkz@cnt@aw=\count354
+\c@tkz@cnt@line=\count345
+\c@tkz@cnt@lg=\count346
+\c@tkz@cnt@cl=\count347
+\c@tkz@cnt@pred=\count348
+\c@tkz@cnt@temp=\count349
+\c@tkz@cnt@arrow=\count350
+\c@tkz@cnt@zone=\count351
+\c@tkz@cnt@lgnext=\count352
+\c@tkz@cnt@clnext=\count353
+\c@tkz@cnt@pair=\count354
+\c@tkz@cnt@impair=\count355
+\c@tkz@cnt@aw=\count356
 ) (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty
 2022/02/25 4.051b tkz-euclide.sty
 Package: tkz-euclide  2022/02/25 4.051b for pure Euclidean Geometry 
@@ -1287,21 +1295,21 @@ Package: tkz-euclide  2022/02/25 4.051b for pure Euclidean Geometry
 )) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
  (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks43
-\t@pgfplots@tokb=\toks44
-\t@pgfplots@tokc=\toks45
+\t@pgfplots@toka=\toks44
+\t@pgfplots@tokb=\toks45
+\t@pgfplots@tokc=\toks46
 \pgfplots@tmpa=\dimen321
-\c@pgfplots@coordindex=\count355
-\c@pgfplots@scanlineindex=\count356
+\c@pgfplots@coordindex=\count357
+\c@pgfplots@scanlineindex=\count358
  (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count357
+\c@pgfplotsarray@tmp=\count359
 ) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count358
-\t@pgfplotstable@a=\toks46
+\c@pgfplotstable@counta=\count360
+\t@pgfplotstable@a=\toks47
 ) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count359
+\c@pgfplotslibrarysurf@no=\count361
  (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count360
+\pgfplots@numplots=\count362
 \pgfplots@xmin@reg=\dimen322
 \pgfplots@xmax@reg=\dimen323
 \pgfplots@ymin@reg=\dimen324
@@ -1313,8 +1321,8 @@ Package: tikzscale 2013/05/22 v0.2.6 tikzscale LaTeX package
  (/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count361
-\decimalpart=\count362
+\integerpart=\count363
+\decimalpart=\count364
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
@@ -1323,8 +1331,8 @@ Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 Package: tcolorbox 2022/01/07 version 5.0.2 text color boxes
  (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks47
-\verbatim@line=\toks48
+\every@verbatim=\toks48
+\verbatim@line=\toks49
 \verbatim@in@stream=\read4
 ) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -1335,9 +1343,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box75
 \tcb@lowerbox=\box76
 \tcb@phantombox=\box77
-\c@tcbbreakpart=\count363
-\c@tcblayer=\count364
-\c@tcolorbox@number=\count365
+\c@tcbbreakpart=\count365
+\c@tcblayer=\count366
+\c@tcolorbox@number=\count367
 \tcb@temp=\box78
 \tcb@temp=\box79
 \tcb@temp=\box80
@@ -1351,14 +1359,14 @@ Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.0.2'
 Library (tcolorbox): 'tcbxparse.code.tex' version '5.0.2'
 ) (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count366
+\c@tracingmulticols=\count368
 \mult@box=\box83
 \multicol@leftmargin=\dimen328
-\c@unbalance=\count367
-\c@collectmore=\count368
-\doublecol@number=\count369
-\multicoltolerance=\count370
-\multicolpretolerance=\count371
+\c@unbalance=\count369
+\c@collectmore=\count370
+\doublecol@number=\count371
+\multicoltolerance=\count372
+\multicolpretolerance=\count373
 \full@width=\dimen329
 \page@free=\dimen330
 \premulticols=\dimen331
@@ -1408,22 +1416,22 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box123
 \@tempa=\box124
 \@tempa=\box125
-\c@minrows=\count372
-\c@columnbadness=\count373
-\c@finalcolumnbadness=\count374
+\c@minrows=\count374
+\c@columnbadness=\count375
+\c@finalcolumnbadness=\count376
 \last@try=\dimen334
 \multicolovershoot=\dimen335
 \multicolundershoot=\dimen336
 \mult@nat@firstbox=\box126
 \colbreak@box=\box127
-\mc@col@check@num=\count375
+\mc@col@check@num=\count377
 ) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box128
 \UL@hyphenbox=\box129
 \UL@skip=\skip79
-\UL@hook=\toks49
+\UL@hook=\toks50
 \UL@height=\dimen337
-\UL@pe=\count376
+\UL@pe=\count378
 \UL@pixel=\dimen338
 \ULC@box=\box130
 Package: ulem 2019/11/18
@@ -1432,9 +1440,9 @@ Package: ulem 2019/11/18
 Package: import 2020/04/01  v 6.2
 ) (/usr/share/texmf-dist/tex/latex/tabularray/tabularray.sty
 Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
-\l__tblr_a_int=\count377
-\l__tblr_c_int=\count378
-\l__tblr_r_int=\count379
+\l__tblr_a_int=\count379
+\l__tblr_c_int=\count380
+\l__tblr_r_int=\count381
 \l__tblr_d_dim=\dimen340
 \l__tblr_h_dim=\dimen341
 \l__tblr_o_dim=\dimen342
@@ -1449,25 +1457,25 @@ Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
 \l__tblr_b_box=\box132
 \l__tblr_c_box=\box133
 \l__tblr_d_box=\box134
-\g__tblr_table_count_int=\count380
-\c@rownum=\count381
-\c@colnum=\count382
-\c@rowcount=\count383
-\c@colcount=\count384
+\g__tblr_table_count_int=\count382
+\c@rownum=\count383
+\c@colnum=\count384
+\c@rowcount=\count385
+\c@colcount=\count386
 \abovesep=\dimen350
 \belowsep=\dimen351
 \leftsep=\dimen352
 \rightsep=\dimen353
-\g_tblr_level_int=\count385
-\g__tblr_data_row_key_count_int=\count386
-\g__tblr_data_column_key_count_int=\count387
-\g__tblr_data_cell_key_count_int=\count388
-\g__tblr_array_int=\count389
-\l__tblr_key_count_int=\count390
-\l__tblr_key_quotient_int=\count391
-\l__tblr_key_quotient_two_int=\count392
-\l__tblr_key_remainder_int=\count393
-\g__tblr_data_str_value_count_int=\count394
+\g_tblr_level_int=\count387
+\g__tblr_data_row_key_count_int=\count388
+\g__tblr_data_column_key_count_int=\count389
+\g__tblr_data_cell_key_count_int=\count390
+\g__tblr_array_int=\count391
+\l__tblr_key_count_int=\count392
+\l__tblr_key_quotient_int=\count393
+\l__tblr_key_quotient_two_int=\count394
+\l__tblr_key_remainder_int=\count395
+\g__tblr_data_str_value_count_int=\count396
 \rulewidth=\dimen354
 \l__tblr_strut_ht_box=\box135
 \l__tblr_strut_dp_box=\box136
@@ -1489,11 +1497,11 @@ Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
 \l__tblr_table_middlefoot_box=\box145
 \l__tblr_table_lastfoot_box=\box146
 \l__tblr_remain_height_dim=\dimen362
-\l__tblr_long_from_int=\count395
-\l__tblr_long_to_int=\count396
-\l__tblr_curr_i_int=\count397
-\l__tblr_prev_i_int=\count398
-\l__tblr_table_page_int=\count399
+\l__tblr_long_from_int=\count397
+\l__tblr_long_to_int=\count398
+\l__tblr_curr_i_int=\count399
+\l__tblr_prev_i_int=\count400
+\l__tblr_table_page_int=\count401
 \l__tblr_table_head_box=\box147
 \l__tblr_table_foot_box=\box148
 \l__tblr_table_head_foot_dim=\dimen363
@@ -1525,26 +1533,26 @@ Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip80
 \enit@outerparindent=\dimen380
-\enit@toks=\toks50
+\enit@toks=\toks51
 \enit@inbox=\box157
-\enit@count@id=\count400
-\enitdp@description=\count401
+\enit@count@id=\count402
+\enitdp@description=\count403
 ) (/usr/share/texmf-dist/tex/latex/tasks/tasks.sty (/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen381
-\l__xtemplate_tmp_int=\count402
+\l__xtemplate_tmp_int=\count404
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip81
 )
 Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
-\g__tasks_total_items_int=\count403
-\l__tasks_columns_int=\count404
-\g__tasks_rows_int=\count405
-\g__tasks_current_col_num_int=\count406
-\g__tasks_current_row_num_int=\count407
-\l__tasks_item_columns_int=\count408
-\g__tasks_env_int=\count409
-\l__tasks_start_int=\count410
+\g__tasks_total_items_int=\count405
+\l__tasks_columns_int=\count406
+\g__tasks_rows_int=\count407
+\g__tasks_current_col_num_int=\count408
+\g__tasks_current_row_num_int=\count409
+\l__tasks_item_columns_int=\count410
+\g__tasks_env_int=\count411
+\l__tasks_start_int=\count412
 \l__tasks_item_indent_dim=\dimen382
 \l__tasks_item_default_indent_dim=\dimen383
 \l__tasks_item_width_dim=\dimen384
@@ -1561,9 +1569,9 @@ Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
 \l__tasks_after_list_skip=\skip85
 \l__tasks_item_coffin=\box158
 \l__tasks_label_coffin=\box159
-\c@task=\count411
-\l__tasks_tmpa_int=\count412
-\l__tasks_tmpb_int=\count413
+\c@task=\count413
+\l__tasks_tmpa_int=\count414
+\l__tasks_tmpb_int=\count415
 \l__tasks_tmpa_coffin=\box160
 \l__tasks_tmpa_box=\box161
 
@@ -1575,7 +1583,7 @@ Package: siunitx 2022-04-04 v3.0.50 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen392
 \l__siunitx_angle_marker_box=\box162
 \l__siunitx_angle_unit_box=\box163
-\l__siunitx_compound_count_int=\count414
+\l__siunitx_compound_count_int=\count416
  (/usr/share/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
  (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -1589,11 +1597,11 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-\l__siunitx_number_exponent_fixed_int=\count415
-\l__siunitx_number_min_decimal_int=\count416
-\l__siunitx_number_min_integer_int=\count417
-\l__siunitx_number_round_precision_int=\count418
-\l__siunitx_number_group_minimum_int=\count419
+\l__siunitx_number_exponent_fixed_int=\count417
+\l__siunitx_number_min_decimal_int=\count418
+\l__siunitx_number_min_integer_int=\count419
+\l__siunitx_number_round_precision_int=\count420
+\l__siunitx_number_group_minimum_int=\count421
 \l__siunitx_table_tmp_box=\box164
 \l__siunitx_table_tmp_dim=\dimen393
 \l__siunitx_table_column_width_dim=\dimen394
@@ -1603,22 +1611,22 @@ Package pdftexcmds Info: \pdfdraftmode found.
 \l__siunitx_table_after_box=\box168
 \l__siunitx_table_before_dim=\dimen395
 \l__siunitx_table_carry_dim=\dimen396
-\l__siunitx_unit_tmp_int=\count420
-\l__siunitx_unit_position_int=\count421
-\l__siunitx_unit_total_int=\count422
+\l__siunitx_unit_tmp_int=\count422
+\l__siunitx_unit_position_int=\count423
+\l__siunitx_unit_total_int=\count424
 ) (/usr/share/texmf-dist/tex/latex/xsim/xsim.sty (/usr/share/texmf-dist/tex/latex/xsim/xsimverb.sty
 Package: xsimverb 2022/02/12 v0.4 write environments verbatim to files
-\l__xsimverb_tmpa_int=\count423
-\l_xsim_line_gobble_int=\count424
+\l__xsimverb_tmpa_int=\count425
+\l_xsim_line_gobble_int=\count426
 )
 Package: xsim 2022/02/12 v0.21 eXercise Sheets IMproved
 Loading module `base' ...
 \l__xsim_tmpa_dim=\dimen397
 \l__xsim_tmpb_dim=\dimen398
 \l__xsim_tmpc_dim=\dimen399
-\l__xsim_tmpa_int=\count425
-\l__xsim_tmpb_int=\count426
-\l__xsim_tmpc_int=\count427
+\l__xsim_tmpa_int=\count427
+\l__xsim_tmpb_int=\count428
+\l__xsim_tmpc_int=\count429
 \l__xsim_tmpa_box=\box169
 \l__xsim_tmpb_box=\box170
 \l__xsim_tmpc_box=\box171
@@ -1629,11 +1637,11 @@ Loading module `templates' ...
 Loading module `tags' ...
 Loading module `goals' ...
 Loading module `exercises' ...
-\g_xsim_id_int=\count428
-\g_xsim_max_id_int=\count429
+\g_xsim_id_int=\count430
+\g_xsim_max_id_int=\count431
 Loading module `solutions' ...
-\l_xsim_printsolutions_section_int=\count430
-\l_xsim_printsolutions_chapter_int=\count431
+\l_xsim_printsolutions_section_int=\count432
+\l_xsim_printsolutions_chapter_int=\count433
 Loading module `collections' ...
 Loading module `blanks' ...
 \l__xsim_blank_dim=\dimen400
@@ -1642,13 +1650,13 @@ Loading module `blanks' ...
 \l__xsim_blank_box=\box172
 Loading module `grades' ...
 Loading module `random' ...
-\g__xsim_random_list_id_int=\count432
+\g__xsim_random_list_id_int=\count434
 Loading module `translations' ...
 Loading module `interface' ...
 Loading module `definitions' ...
-\c@exercise=\count433
-\c@solution=\count434
-\c@numberofexercises=\count435
+\c@exercise=\count435
+\c@solution=\count436
+\c@numberofexercises=\count437
  (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen403
@@ -1661,30 +1669,30 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen410
 \cmidrulekern=\dimen411
 \defaultaddspace=\dimen412
-\@cmidla=\count436
-\@cmidlb=\count437
+\@cmidla=\count438
+\@cmidlb=\count439
 \@aboverulesep=\dimen413
 \@belowrulesep=\dimen414
-\@thisruleclass=\count438
-\@lastruleclass=\count439
+\@thisruleclass=\count440
+\@lastruleclass=\count441
 \@thisrulewidth=\dimen415
 )) (./xsim_template.tex
-\c@solconnaitre=\count440
-\c@numberofconnaitres=\count441
-\c@solappliquer=\count442
-\c@numberofappliquers=\count443
-\c@soltransferer=\count444
-\c@numberoftransferers=\count445
+\c@solconnaitre=\count442
+\c@numberofconnaitres=\count443
+\c@solappliquer=\count444
+\c@numberofappliquers=\count445
+\c@soltransferer=\count446
+\c@numberoftransferers=\count447
 )) (./entete.tex)
 \tikzscale@accuracy=\skip86
-\g_xsim_collection_exercise_in_all exercises_int=\count446
-\c@totalexerciseinall exercises=\count447
-\g_xsim_collection_connaitre_in_all exercises_int=\count448
-\c@totalconnaitreinall exercises=\count449
-\g_xsim_collection_appliquer_in_all exercises_int=\count450
-\c@totalappliquerinall exercises=\count451
-\g_xsim_collection_transferer_in_all exercises_int=\count452
-\c@totaltransfererinall exercises=\count453
+\g_xsim_collection_exercise_in_all exercises_int=\count448
+\c@totalexerciseinall exercises=\count449
+\g_xsim_collection_connaitre_in_all exercises_int=\count450
+\c@totalconnaitreinall exercises=\count451
+\g_xsim_collection_appliquer_in_all exercises_int=\count452
+\c@totalappliquerinall exercises=\count453
+\g_xsim_collection_transferer_in_all exercises_int=\count454
+\c@totaltransfererinall exercises=\count455
 LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 4.
  (/usr/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
@@ -1785,17 +1793,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count454
+\scratchcounter=\count456
 \scratchdimen=\dimen416
 \scratchbox=\box173
-\nofMPsegments=\count455
-\nofMParguments=\count456
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count457
+\nofMPsegments=\count457
+\nofMParguments=\count458
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count459
 \MPscratchDim=\dimen417
-\MPnumerator=\count458
-\makeMPintoPDFobject=\count459
-\everyMPtoPDFconversion=\toks52
+\MPnumerator=\count460
+\makeMPintoPDFobject=\count461
+\everyMPtoPDFconversion=\toks53
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1881,13 +1889,18 @@ Overfull \hbox (3.61653pt too wide) in paragraph at lines 5--5
  (./xsim/3_uaa2_2022-connaitre-1-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-connaitre-2-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-connaitre-2-exercise-body.tex)
+ (./xsim/3_uaa2_2022-connaitre-2-exercise-body.tex
+Overfull \hbox (0.58714pt too wide) in paragraph at lines 17--17
+|$[]$ | 
+ []
+
+)
 \openout4 = `xsim/3_uaa2_2022-connaitre-3-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-connaitre-3-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-connaitre-4-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-connaitre-4-exercise-body.tex [3])
+ (./xsim/3_uaa2_2022-connaitre-4-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-5-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-5-exercise-body.tex)
@@ -1896,43 +1909,68 @@ Overfull \hbox (3.61653pt too wide) in paragraph at lines 5--5
  (./xsim/3_uaa2_2022-appliquer-6-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-7-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex [4])
+ (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex [3])
 \openout4 = `xsim/3_uaa2_2022-appliquer-8-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-8-exercise-body.tex [5])
+ (./xsim/3_uaa2_2022-appliquer-8-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-9-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-9-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-10-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex [6])
+ (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-11-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-11-exercise-body.tex)
-\openout4 = `xsim/3_uaa2_2022-appliquer-11-solution-body.tex'.
-
 \openout4 = `xsim/3_uaa2_2022-appliquer-12-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-12-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-13-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-13-exercise-body.tex [7])
+ [4] (./xsim/3_uaa2_2022-appliquer-13-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-14-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-14-exercise-body.tex) [8] (./3_uaa2_2022.aux) ) 
+ (./xsim/3_uaa2_2022-appliquer-14-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-transferer-15-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-transferer-15-exercise-body.tex
+<img/velux_tableau.png, id=52, 391.4625pt x 520.19344pt>
+File: img/velux_tableau.png Graphic file (type png)
+<use img/velux_tableau.png>
+Package pdftex.def Info: img/velux_tableau.png  used on input line 29.
+(pdftex.def)             Requested size: 391.46153pt x 520.19215pt.
+ [5]
+<img/velux_legende.png, id=56, 167.87718pt x 151.3153pt>
+File: img/velux_legende.png Graphic file (type png)
+<use img/velux_legende.png>
+Package pdftex.def Info: img/velux_legende.png  used on input line 31.
+(pdftex.def)             Requested size: 167.87677pt x 151.31493pt.
+)
+\openout4 = `xsim/3_uaa2_2022-transferer-16-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-transferer-16-exercise-body.tex [6 <./img/velux_tableau.png (PNG copy)> <./img/velux_legende.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for TS1+jkpss on input line 11.
+ (/usr/share/texmf-dist/tex/latex/kpfonts/ts1jkpss.fd
+File: ts1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for TS1/jkpss.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `jkpss' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [7] (./3_uaa2_2022.aux) ) 
 Here is how much of TeX's memory you used:
- 55628 strings out of 478238
- 1376249 string characters out of 5850456
- 1912063 words of memory out of 5000000
- 72788 multiletter control sequences out of 15000+600000
- 535731 words of font info for 172 fonts, out of 8000000 for 9000
+ 55991 strings out of 478238
+ 1382201 string characters out of 5850456
+ 1920729 words of memory out of 5000000
+ 73108 multiletter control sequences out of 15000+600000
+ 531786 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,114p,10720b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 3_uaa2_2022.pdf (8 pages, 73900 bytes).
+ 108i,12n,114p,10720b,1172s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmnc.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
+Output written on 3_uaa2_2022.pdf (7 pages, 508915 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51314 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 51324 words of extra memory for PDF output out of 51595 (max. 10000000)
 
