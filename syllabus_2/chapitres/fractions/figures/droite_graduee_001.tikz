@@ -1,7 +1,4 @@
 \begin{tikzpicture}[>=latex, x=3cm]
-    % droite
-    \draw[->] (-.25,0) -- (4.75,0)node[right]{$x$};
-
     \tikzmath{
         \xmin=-0.25;
         \xmax=4.75;
