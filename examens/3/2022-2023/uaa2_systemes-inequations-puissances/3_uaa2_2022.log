@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  20 NOV 2022 11:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  23 NOV 2022 14:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1887,20 +1887,17 @@ Overfull \hbox (3.61653pt too wide) in paragraph at lines 5--5
 \openout4 = `xsim/3_uaa2_2022-connaitre-1-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-connaitre-1-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-connaitre-1-solution-body.tex'.
+
 \openout4 = `xsim/3_uaa2_2022-connaitre-2-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-connaitre-2-exercise-body.tex
-Overfull \hbox (0.58714pt too wide) in paragraph at lines 17--17
-|$[]$ | 
- []
-
-)
+ (./xsim/3_uaa2_2022-connaitre-2-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-connaitre-3-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-connaitre-3-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-connaitre-4-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-connaitre-4-exercise-body.tex)
+ (./xsim/3_uaa2_2022-connaitre-4-exercise-body.tex) [3]
 \openout4 = `xsim/3_uaa2_2022-appliquer-5-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-5-exercise-body.tex)
@@ -1909,7 +1906,7 @@ Overfull \hbox (0.58714pt too wide) in paragraph at lines 17--17
  (./xsim/3_uaa2_2022-appliquer-6-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-7-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex [3])
+ (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-8-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-8-exercise-body.tex)
@@ -1918,7 +1915,7 @@ Overfull \hbox (0.58714pt too wide) in paragraph at lines 17--17
  (./xsim/3_uaa2_2022-appliquer-9-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-10-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex)
+ (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex) [4]
 \openout4 = `xsim/3_uaa2_2022-appliquer-11-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-11-exercise-body.tex)
@@ -1927,28 +1924,13 @@ Overfull \hbox (0.58714pt too wide) in paragraph at lines 17--17
  (./xsim/3_uaa2_2022-appliquer-12-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-13-exercise-body.tex'.
 
- [4] (./xsim/3_uaa2_2022-appliquer-13-exercise-body.tex)
-\openout4 = `xsim/3_uaa2_2022-appliquer-14-exercise-body.tex'.
+ (./xsim/3_uaa2_2022-appliquer-13-exercise-body.tex) [5]
+\openout4 = `xsim/3_uaa2_2022-transferer-14-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-14-exercise-body.tex)
+ (./xsim/3_uaa2_2022-transferer-14-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-transferer-15-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-transferer-15-exercise-body.tex
-<img/velux_tableau.png, id=52, 391.4625pt x 520.19344pt>
-File: img/velux_tableau.png Graphic file (type png)
-<use img/velux_tableau.png>
-Package pdftex.def Info: img/velux_tableau.png  used on input line 29.
-(pdftex.def)             Requested size: 391.46153pt x 520.19215pt.
- [5]
-<img/velux_legende.png, id=56, 167.87718pt x 151.3153pt>
-File: img/velux_legende.png Graphic file (type png)
-<use img/velux_legende.png>
-Package pdftex.def Info: img/velux_legende.png  used on input line 31.
-(pdftex.def)             Requested size: 167.87677pt x 151.31493pt.
-)
-\openout4 = `xsim/3_uaa2_2022-transferer-16-exercise-body.tex'.
-
- (./xsim/3_uaa2_2022-transferer-16-exercise-body.tex [6 <./img/velux_tableau.png (PNG copy)> <./img/velux_legende.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for TS1+jkpss on input line 11.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ts1jkpss.fd
 File: ts1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for TS1/jkpss.
@@ -1957,20 +1939,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpss' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [7] (./3_uaa2_2022.aux) ) 
+)
+\openout4 = `xsim/3_uaa2_2022-transferer-16-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-transferer-16-exercise-body.tex) [6] (./3_uaa2_2022.aux) ) 
 Here is how much of TeX's memory you used:
- 55991 strings out of 478238
- 1382201 string characters out of 5850456
- 1920729 words of memory out of 5000000
- 73108 multiletter control sequences out of 15000+600000
- 531786 words of font info for 188 fonts, out of 8000000 for 9000
+ 56062 strings out of 478238
+ 1383825 string characters out of 5850456
+ 1917198 words of memory out of 5000000
+ 73183 multiletter control sequences out of 15000+600000
+ 531570 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,114p,10720b,1172s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,114p,10720b,1192s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmnc.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 3_uaa2_2022.pdf (7 pages, 508915 bytes).
+Output written on 3_uaa2_2022.pdf (6 pages, 81603 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51324 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 51314 words of extra memory for PDF output out of 51595 (max. 10000000)
 
