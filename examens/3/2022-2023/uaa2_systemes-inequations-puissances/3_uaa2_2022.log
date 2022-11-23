@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  23 NOV 2022 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  23 NOV 2022 14:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1930,7 +1930,10 @@ Overfull \hbox (3.61653pt too wide) in paragraph at lines 5--5
  (./xsim/3_uaa2_2022-transferer-14-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-transferer-15-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-transferer-15-exercise-body.tex
+ (./xsim/3_uaa2_2022-transferer-15-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-transferer-16-exercise-body.tex'.
+
+ (./xsim/3_uaa2_2022-transferer-16-exercise-body.tex
 LaTeX Font Info:    Trying to load font information for TS1+jkpss on input line 11.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ts1jkpss.fd
 File: ts1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for TS1/jkpss.
@@ -1940,19 +1943,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-\openout4 = `xsim/3_uaa2_2022-transferer-16-exercise-body.tex'.
+\openout4 = `xsim/3_uaa2_2022-transferer-17-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-transferer-16-exercise-body.tex) [6] (./3_uaa2_2022.aux) ) 
+ (./xsim/3_uaa2_2022-transferer-17-exercise-body.tex) [6] (./3_uaa2_2022.aux) ) 
 Here is how much of TeX's memory you used:
- 56062 strings out of 478238
- 1383825 string characters out of 5850456
- 1917198 words of memory out of 5000000
- 73183 multiletter control sequences out of 15000+600000
+ 56104 strings out of 478238
+ 1385740 string characters out of 5850456
+ 1918217 words of memory out of 5000000
+ 73222 multiletter control sequences out of 15000+600000
  531570 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,114p,10720b,1192s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,114p,10720b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmnc.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 3_uaa2_2022.pdf (6 pages, 81603 bytes).
+Output written on 3_uaa2_2022.pdf (6 pages, 82064 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

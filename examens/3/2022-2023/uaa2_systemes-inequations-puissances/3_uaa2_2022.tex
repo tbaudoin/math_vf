@@ -216,23 +216,23 @@
     \end{tasks}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appliquer}[points=6]
+\begin{appliquer}[points=8]
     Résous les inéquations suivantes.
-    \begin{tasks}(3)
+    \begin{tasks}(4)
         % série A
         \task $x-4 > 2$
         \task $-3x \ge -12$
         %\task $\dfrac{2}{3x} \le 14$
         %\task $2x+1<3$
         \task $3x-4 < 6x-8$
-        \task $2(x-4) \ge 5(2x+8)$
+        %\task $2(x-4) \ge 5(2x+8)$
         % série B
         % \task $x+7 \le 4$
         % \task $5x < -35$
         % \task $-\dfrac{x}{3} < 5$
         % \task $1-3x \ge -5$
         % \task $-x+1 \le 2x - 3$
-        \task $8-(x-1)-4x < 6(x-1)$
+        %\task $8-(x-1)-4x < 6(x-1)$
         % série C
         % \task $2 \ge x+\dfrac{1}{3}$
         % \task $9 < -2x$
@@ -265,6 +265,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{\fbox{C3} Résoudre un problème}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=1]
+    Le c\oe{}ur humain effectue environ \num{5000} battements par heure. Donne une estimation du nombre de battements effectué en une journée. Écris ta solution à l'aide de la notation scientifique. 
+\end{transferer}
+
 \begin{transferer}[points=3]
     Lorsqu'un architecte dessine les plans d'une maison, la loi l'oblige à apporter suffisamment de lumière naturelle dans chaque pièce d'habitation. Pour cela, l'architecte doit calcule un coefficient d'éclairage qui revient à vérifier l'inéquation suivante,
     \tcbsidebyside[blanker]%
@@ -300,7 +304,7 @@
 
     Où doit-on placer le point $P$ sur le côté $[DC]$ pour que l'aire du triangle $MBP$ soit inférieure ou égale au tiers de celle du rectangle $ABCD$ ?
     \begin{center}
-        \begin{tikzpicture}[scale=.5]
+        \begin{tikzpicture}
             \tkzDefPoints{0/4/A, 6/4/B, 6/0/C, 0/0/D, 0/2/M, 4/0/P}
             \tkzDrawPolygon(A,B,C,D)
             \tkzDrawPolygon[fill=red, opacity=0.5](M,B,P)
