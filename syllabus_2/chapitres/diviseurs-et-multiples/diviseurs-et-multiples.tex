@@ -111,11 +111,6 @@ Coche la ou les proposition(s) qui corresponde(nt) à la proposition de départ.
         \item Dans une autre maison, Malik distribue des bonbons à ses 3 amis. Chaque ami en a reçu 6, et il reste 2 bonbons dans la main de Malik. Combien avait-il de bonbons au départ~?
     \end{enumerate}
 \end{exercise}
-\begin{solution}
-    \begin{enumerate}
-        \item $\opidiv[displayintermediary=all,voperation=top]{28}{5}$
-    \end{enumerate}
-\end{solution}
 
 % TODO: pointillé ou un espace blanc pour noter la relation avec les différents noms ?
 Il existe une égalité qui permet de retrouver le dividende à partir du diviseur, du reste et du quotient. Quelle est-elle ?
@@ -502,7 +497,6 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
 \section{Exercices mélangés}
 \setcounter{exercise}{0}
 \subsection{Exercices de drill}
-\activatecollection{div-mul-exos}
 \begin{exercise}
     Décompose les nombres suivants en un produit de facteurs premiers.
     \vspace*{-\bigskipamount}
@@ -611,7 +605,7 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \item $2n+2 - (2n) = 2$
         \item $5n$ et $5n+5$
         \item $2n+1$ et $2n+5$
-        \item $11n + 4n$ %FIXME: problématique dans l'écriture car on a tendance à croire que ça donne un multiple de 15 or c'est faux.
+        \item $11n + 4m$
         \item $2n$ et $2n+2$
     \end{enumerate}
 \end{solution}
@@ -697,6 +691,10 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \item $D = d\cdot q + r$\qquad avec $r<d$
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    Réponse d : $D = d\cdot q + r$\qquad avec $r<d$
+\end{solution}
+
 \begin{exercise}
     Les égalités suivantes décrivent des divisions euclidiennes. Quel nom porte le nombre 19 dans ces divisions.
     \begin{enumerate}[cols=2]
@@ -706,6 +704,14 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \item $81 = 4\cdot 19 + 5$
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item Le reste
+        \item Le dividende
+        \item Le quotient
+        \item Le diviseur
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Détermine la valeur des lettres dans le tableau suivant.
@@ -720,16 +726,34 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \end{tblr}
     \end{center}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}[label=\Alph* :]
+        \item \(16\)
+        \item \(2\)
+        \item \(74\)
+        \item \(96\)
+        \item \(4\)
+        \item \(4\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Écris la relation euclidienne pour les divisions suivantes.
     \begin{enumerate}[cols=4]
-        \item $1728:4$
+        \item $\num{1728}:4$
         \item $874:3$
         \item $723:12$
-        \item $5379:13$
+        \item $\num{5379}:13$
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item \(\num{1728} = 4 \cdot 432 + 0\)
+        \item \(874 = 3 \cdot 291 + 1\)
+        \item \(723 = 12 \cdot 60 + 3\)
+        \item \(\num{5379} = 13 \cdot 413 + 10\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Détermine le PGCD et le PPCM des nombres suivants.
@@ -748,10 +772,31 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \item 14, 11 et 22
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item \(2\)
+        \item \(24\)
+        \item \(52\)
+        \item \(1\)
+        \item \(1\)
+        \item \(1\)
+        \item \(30\)
+        \item \(1\)
+        \item \(6\)
+        \item \(5\)
+        \item \(24\)
+        \item \(1\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Combien de tentes de 6 places faut-il pour que les 75 scouts du camp d'unité puissent loger~? Combien restera-t-il de places libres~?
 \end{exercise}
+\begin{solution}
+    $\opidiv[displayintermediary=all,voperation=top]{75}{6}$
+
+    Il faudra 13 tentes de 6 places pour loger les scouts et il restera 3 places.
+\end{solution}
 
 \begin{exercise}
     Guillaume souhaite mettre des bonbons dans des sachets pour les offrir à ses copains de classe. Il possède $96$ cerises citriques, $216$ grenouilles et $72$ Dragibus. Il désire confectionner le plus grand nombre de sachets contenant tous le même nombre de bonbons de chaque sorte.
@@ -760,10 +805,27 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \item Détermine le nombre de bonbons de chaque sorte contenu dans un sachet.
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item \(PGCD(96, 216, 72) = 24\).
+              Il peut confectionner au maximum 24 sachets sans qu'il lui reste de bonbons.
+        \item 
+        \begin{itemize}
+            \item Cerise citriques : \(96 : 24 = 4\)
+            \item Grenouilles : \(216 : 24 = 9\)
+            \item Dragibus : \(72 : 24 = 3\)
+        \end{itemize}
+    \end{enumerate}
+\end{solution}
+
 
 \begin{exercise}
     Valentin possède trois planches de \SI{10}{cm} de large. La première mesure \SI{1,80}{m}, la deuxième \SI{2,40}{m} et la troisième \SI{1,68}{m}. Il voudrait les scier toutes les trois en morceaux de même longueur~; cette longueur doit être la plus grande possible, un nombre entier de centimètres. Quel est le plus grand morceau possible~?
 \end{exercise}
+\begin{solution}
+    \(PGCD(180, 240, 168) = 12\).
+    Le plus grand morceau possible fera \SI{12}{cm}.
+\end{solution}
 
 \begin{exercise}
     Un numéro de carte d'identité est composé de $12$ chiffres répartis en trois parties. Les deux derniers chiffres représentent toujours le reste de la division par $97$ du nombre formé par les dix premiers chiffres. Vérifie l'exactitude des numéros des cartes d'identité ci-dessous.
@@ -772,19 +834,38 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \item 138-4376001-52
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item \opidiv[displayintermediary=all,voperation=top]{2471028457}{97}\\ Ce numéro de carte est valide.
+        \item \opidiv[displayintermediary=all,voperation=top]{1384376001}{97}\\ ce numéro de carte est valide.
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Deux voitures partent en même temps de la ligne de départ et font plusieurs tours du même circuit. La voiture jaune réalise un tour de circuit en 36 minutes tandis que la voiture verte réalise un tour de circuit en 48 minutes. À quel moment les deux voitures vont-elles repasser la ligne de départ ensemble~?
 \end{exercise}
+\begin{solution}
+    \(PPCM(36,48) = 144\). Les deux voitures repasseront la ligne de départ ensemble après 144 minutes.
+\end{solution}
 
 \begin{exercise}
-    Quel est le plus petit carré que l'on peut former avec des rectangles de \SI{12}{cm} x \SI{16}{cm}~? \\ Combien de rectangles seront utilisés~?
+    Quel est le plus petit carré que l'on peut former avec des rectangles de \(\SI{12}{cm}\times\SI{16}{cm}\)~? \\ Combien de rectangles seront utilisés~?
 \end{exercise}
+\begin{solution}
+    \(PPCM(12,16) = 48\). 
+
+    Les dimensions du plus petit carré que l'on peut former seront \(\SI{48}{cm}\times\SI{48}{cm}\).
+
+    Il faudra \(\dfrac{48}{12}\cdot\dfrac{48}{16} = 12\) rectangles pour former un tel carré.
+\end{solution}
 
 \begin{exercise}
     Dans la salle de bain de Juliette, deux robinets coulent goutte à goutte. Le robinet d'eau chaude laisse tomber une goutte toutes les 18 secondes tandis que le robinet d'eau froide en laisse tomber une toutes les 15 secondes.\\
-    Juliette remarque qu'à 13h50, les deux robinets ont laissé tomber une goutte en même temps. À quelle heure cela se reproduira-t-il~?
+    Juliette remarque qu'à 13~h~50, les deux robinets ont laissé tomber une goutte en même temps. À quelle heure cela se reproduira-t-il~?
 \end{exercise}
+\begin{solution}
+    \(PPCM(18,15)= 90\). À 15~h~20 les deux robients goutteront en même temps.
+\end{solution}
 
 \begin{exercise}
     À l'occasion de la fancy-fair, le cuisinier de l'école confectionne de grandes pizzas rectangulaires. Pour leur cuisson, il utilise une plaque rectangulaire de \SI{108}{cm} sur \SI{84}{cm}. Détermine le nombre minimum de parts carrées identiques qu'il peut obtenir en découpant une de ces grandes pizzas et en évitant les déchets. Les dimensions de ces mini pizzas doivent être exprimées en nombre entier de centimètres. \\
@@ -814,7 +895,6 @@ Déduis des propriétés en observant les nombres de départ et leur PPCM
         \item La somme de deux multiples consécutifs de $5$ est un multiple de $5$.
     \end{enumerate}
 \end{exercise}
-\deactivatecollection{div-mul-exos}
 \newpage
-% \printsolutions[collection=div-mul-exos]
+\printsolutions
 \end{document}
