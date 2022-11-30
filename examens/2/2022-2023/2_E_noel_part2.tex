@@ -1,5 +1,4 @@
-\documentclass[parskip=half-,DIV=12,twoside=semi]{scrartcl}
-\usepackage{layout}
+\documentclass[parskip=half-,twoside=semi, DIV=12]{scrartcl}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -94,7 +93,7 @@ counter = exercise
 % \setlength{\headheight}{50pt}
 % \lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
 % \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
-\setlength{\footskip}{100pt}
+\setlength{\textheight}{700pt}
 
 \begin{document}
 \pagestyle{empty}
@@ -413,7 +412,7 @@ counter = exercise
 \newpage
 \begin{appliquer}[points=4]
     Calcule le PPCM des nombres suivants. Utilise si possible une propriété, sinon écris tous tes calculs.
-    \begin{tasks}[after-skip=4cm](2)
+    \begin{tasks}[after-skip=3cm](2)
         \task \(54\) et \(27\)
         \task \(63\) et \(28\)
     \end{tasks}
@@ -446,7 +445,7 @@ counter = exercise
     fait 36 biscuits au chocolat et 60 biscuits au sucre. Elle veut tous les
     mettre dans des boîtes contenant chacune exactement les mêmes nombres
     de biscuits. Quel est le plus grand nombre de boîtes identiques qu'elle peut faire ? Note tout ton raisonnement.
-    \vspace*{4cm}
+    \vspace*{3cm}
 \end{transferer}
 \begin{soltransferer}
     \(PGCD(36,60) = 12\). Elle peut donc concevoir au maximum 12 boîtes de biscuits.
@@ -462,28 +461,18 @@ counter = exercise
         \task \(E=\dfrac{- 11}{8}\)
     \end{tasks}
     Classement : 
-    \vspace{1cm}
 \end{appliquer}
 \begin{solappliquer}
     E < D < C < A < B
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
-    Des boîtes de savon en forme de parallélépipède rectangle ont les
-    dimensions suivantes : \(\SI{36}{mm}\times\SI{54}{mm}\times\SI{72}{mm}\). On veut les emballer sans perdre de la place dans des caisses cubiques les plus petites possibles, dont l'arête est un nombre entier de millimètres.
-    \begin{tasks}[after-item-skip=\fill]
-        \task Quelle sera la dimension de ces caisses ?
-        \task Combien de boîte de savon y seront contenues ?
-    \end{tasks}
+    Pour l'anniversaire d'Eliott, deux de ses amis ont prévu de lui envoyer un SMS à intervalles réguliers. Ils commencent en même temps à 8 heures. Le premier envoie un SMS toutes les 36 minutes, l'autre toutes les 45 minutes. À quelle heure Eliott recevra-t-il pour la première fois deux SMS en même temps (autre que le premier) ?\vfill
 \end{transferer}
 \begin{soltransferer}
-\begin{tasks}
-    \task \(72\) est un multiple de \(36\) donc \(PPCM(36,72)=72\). Il nous reste à déterminer le \(PPCM(54,72) =  \num{1924}\). La boîte fera donc \(\SI{1924}{mm}\times\SI{1924}{mm}\times\SI{1924}{mm}\).
-    \task \(\dfrac{36 \cdot 54 \cdot 72}{1924^3}\)
-\end{tasks}
+    \(36 = 2^2 \cdot 3^2\) et \(45 = 3^2 \cdot 5\) donc \(PPCM(36,45=2^2 \cdot 3^2 \cdot 5 = 180)\). Eliott recevra deux SMS en même temps à 11 heure.
 \end{soltransferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
 \begin{appliquer}[points=2]
     Donne une fraction irréductible correspondant aux abscisses des points
     nommés ci-dessous. Sois précis~!
