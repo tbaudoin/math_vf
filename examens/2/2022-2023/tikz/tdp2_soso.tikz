@@ -1,0 +1,15 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    % Points
+    \tkzDefPoints{0/0/I, 4/0/C, 4/2/E, 0/2/N}
+    \tkzDefPoints{0/1.2/H1, 2/2/H2}
+    \tkzDefPointsBy[reflection=over H1--H2](N,I,C,E){}
+    \tkzDrawPolygon[color=\figcolor](N',I',C',E')
+    \tkzDrawPolygon(N,I,C,E)
+    \tkzDrawLine[add=2cm and 3cm](H1,H2)
+    \tkzLabelLine[pos=-1, above](H1,H2){h}
+    \tkzDrawPoints(N,I,C,E)
+    \tkzLabelPoints[below left](I)
+    \tkzLabelPoints[below right](C)
+    \tkzLabelPoints[above left](N)
+    \tkzLabelPoints[above right](E)
+\end{tikzpicture}

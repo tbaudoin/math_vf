@@ -1,0 +1,11 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    % Points
+    \tkzDefPoints{0/0/A, 2/2/I, 2/3.5/M, 5/3.5/S}
+    \tkzDefPointsBy[rotation=center A angle -80](A,M,I,S){}
+    \tkzDrawPolygon[color=\figcolor](M',A',S',I')
+    \tkzDrawPolygon(M,A,S,I)
+    \tkzLabelPoints[above](M)
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[right](S)
+    \tkzLabelPoints[above right](I)
+\end{tikzpicture}

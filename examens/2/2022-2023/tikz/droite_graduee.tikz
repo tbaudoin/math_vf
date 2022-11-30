@@ -1,0 +1,13 @@
+\begin{tikzpicture}[x=2.5cm, >=latex]
+    \draw[->] (-3,0) -- (3,0)node[right]{$x$};
+    \draw (0,0) node[below=3pt]{$0$};
+    \draw (1,0) node[below=3pt]{$1$};
+    \foreach \x in {-3,-2,...,2}
+        {
+            \draw (\x, -4pt) -- (\x, 4pt);
+        }
+    \foreach \x in {-3,-2.9,...,2.9}
+        {
+            \draw (\x, -2pt) -- (\x, 2pt);
+        }
+\end{tikzpicture}

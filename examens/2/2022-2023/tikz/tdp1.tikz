@@ -1,0 +1,20 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    % Points
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(-120:3){C}    
+    \tkzDefPoint(-60:4){B}
+    \tkzDefPoint(200:3){D}
+    \tkzDefShiftPoint[D](0:6){E}
+    % Axe
+    \tkzDrawLine(D,E)
+    \tkzDrawPoints(D,E)
+    \tkzLabelPoints[above](D,E)
+    % Image
+    \tkzDefPointsBy[reflection= over D--E](A,B,C){}
+    \tkzDrawPolygon[\figcolor](A',B',C')
+    % Polygon
+    \tkzDrawPolygon(A,B,C)    
+    \tkzDrawPoints(A,B,C)    
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[below](B,C)
+\end{tikzpicture}

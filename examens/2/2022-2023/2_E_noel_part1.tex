@@ -1,0 +1,346 @@
+\documentclass[parskip=half-,DIV=12,twoside=semi]{scrartcl}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[sfmath, light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{frenchmath}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\textbf{\alph*)}}
+\usepackage{tasks}
+\settasks{label-format=\bfseries}
+\usepackage[locale=FR]{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\usepackage{tkz-base}
+\usepackage{tkz-euclide}
+\usepackage{tikzscale}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{tabularray}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, xparse}
+\usepackage[use-aux, no-files]{xsim}
+
+\DeclareExerciseEnvironmentTemplate{interrogation}
+{%
+    {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
+    \GetExercisePropertyT{points}{\marginpar{\hfill/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue}
+}%
+{\bigbreak}
+
+% Mes environnements
+\DeclareExerciseType{connaitre}{
+exercise-env = connaitre ,
+solution-env = solconnaitre ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{appliquer}{
+exercise-env = appliquer ,
+solution-env = solappliquer ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{transferer}{
+exercise-env = transferer ,
+solution-env = soltransferer ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+
+\xsimsetup{
+    exercise/template = interrogation,
+    solution/template = interrogation,
+}
+
+\newcommand{\figcolor}{white}
+\newcommand{\Titre}{TJF - Les inéquations}
+\newcommand{\Date}{Vendredi 25 novembre 2022}
+\newcommand{\Classe}{}
+
+% \usepackage{scrlayer-scrpage}
+% \setlength{\headheight}{50pt}
+% \lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
+% \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
+
+
+\begin{document}
+\raggedbottom
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ENTETE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=\linewidth]{img/entete.pdf}
+\vspace{\smallskipamount}
+\begin{tblr}{%
+        width=\textwidth,%
+        colspec={|XXX|},%
+        cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+        cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+        cell{5}{1}={r=1,c=2}{l},
+        cell{5}{3}={r=4,c=1}{r},
+        cell{6}{1}={r=1,c=3}{l},%
+        cell{7}{1}={r=1,c=3}{l},%
+        cell{8}{1}={r=1,c=3}{l},%
+        rowsep=1ex%
+    }%
+    \hline
+    % cell1
+                                                               &             &          \\
+    % cell2
+                                                               &             &          \\
+    \hline
+    % cell3
+    Nom :                                                      &             & Classe : \\
+    % cell4
+    Prénom :                                                   &             & Numéro : \\
+    \hline
+    % cell5
+    Professeur :                                               &             &          \\
+    % cell6
+    Date et heure:                                                                      \\
+    % cell7
+    Matériel autorisé :                                                                 \\
+    % cell8
+    Matériel à distribuer :                                                             \\
+    \hline
+    % cell9
+    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}  & Remarques : &          \\
+    % cell 10
+    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}  &             &          \\
+    % cell 11
+    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{} &             &          \\
+    Total : \qquad/\TotalExerciseGoal{points}{}{}              &             &          \\
+    \hline
+\end{tblr}%
+\vspace{\smallskipamount}
+\begin{scriptsize}%
+    Rue de linthout, 30 - 1030 Bruxelles%
+\end{scriptsize}%
+\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONTENU
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% partie 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{}
+\begin{connaitre}[points=4]
+    Complète le tableau suivant.\par
+    \begin{tblr}{
+            hlines,
+            vlines,
+            rowsep=1em,
+            row{1}={font=\bfseries},
+            colspec={XXX},
+            columns={c},}
+        Nom des isométries & Verbe de mouvement     & Éléments caractéristiques \\
+        Translation        &                        &                           \\
+                           &                        & Axe de symétrie           \\
+                           & Tourner d'un demi-tour &                           \\
+        Rotation           &                        &                           \\
+    \end{tblr}
+\end{connaitre}
+\begin{solconnaitre}
+
+    \begin{tblr}{
+            hlines,
+            vlines,
+            rowsep=1em,
+            row{1}={font=\bfseries},
+            colspec={XXX},
+            columns={c},}
+        Nom des isométries   & Verbe de mouvement     & Éléments caractéristiques \\
+        Translation          & Glisser                & Vecteur                   \\
+        Symétrie orthogonale & Retourner              & Axe de symétrie           \\
+        Symétrie centrale    & Tourner d'un demi-tour & Centre de symétrie        \\
+        Rotation             & Tourner                & {Centre de rotation       \\Angle de rotation\\Sens de rotation}                         \\
+    \end{tblr}
+\end{solconnaitre}
+
+\begin{connaitre}[points=2]
+    Complète le tableau suivant.\par
+    \begin{tblr}{
+            hlines,
+            vlines,
+            rowsep=1em,
+            row{1}={font=\bfseries},
+            colspec={XXX},
+            columns={c},}
+        Notation mathématiques     & Décodage en français                                                                                         \\
+                                   & Le triangle \(T'I'C'\) est l'image du triangle \(TIC\) par la translation de vecteur \(\overrightarrow{TI}\) \\
+        \(S_{A}(WOLF) = W'O'L'F'\) &
+    \end{tblr}
+\end{connaitre}
+\begin{solconnaitre}
+
+    \begin{tblr}{
+            hlines,
+            vlines,
+            rowsep=1em,
+            row{1}={font=\bfseries},
+            colspec={XXX},
+            columns={c},}
+        Notation mathématiques                  & Décodage en français                                                                                         \\
+        \(t_{\overrightarrow{TI}(TIC)=T'I'C'}\) & Le triangle \(T'I'C'\) est l'image du triangle \(TIC\) par la translation de vecteur \(\overrightarrow{TI}\) \\
+        \(S_{A}(WOLF) = W'O'L'F'\)              & Le quadrilatère \(W'O'L'F'\) est l'image du quadrilatère \(WOLF\) par la symétrice centrale de centre \(A\)
+    \end{tblr}
+\end{solconnaitre}
+
+\begin{transferer}[points=4]
+    \(ABCDEFGH\) est un octogone régulier. Réponds aux questions suivantes.
+
+    \tcbsidebyside[sidebyside adapt=left, blanker]%
+    {%
+        \includegraphics[height=4cm]{tikz/octogone.tikz}
+    }
+    {%
+        \begin{enumerate}
+            \item Quelle est l'image du point \(G\) par la translation qui applique \(A\) sur \(C\) ?
+            \item \(R_{O,\ang{-90}}(C)\) ?
+            \item Quelle est l'image du triangle \(AOB\) par la symétrie orthogonale d'axe \(HD\) ?
+            \item \(S_{O}([DB])\) ?
+        \end{enumerate}
+    }
+\end{transferer}
+
+\begin{soltransferer}
+    \begin{enumerate}
+        \item \(E\)
+        \item \(1\)
+        \item \(GOF\)
+        \item \([HF]\)
+    \end{enumerate}
+\end{soltransferer}
+
+\newpage
+\begin{appliquer}[points=4]
+    À l'aide du repère cartésien ci-dessous, réponds aux questions.
+    \begin{center}
+        \input{tikz/cartesien.tikz}
+    \end{center}
+    \begin{enumerate}
+        \item Quels sont les coordonnées des points \(A\) et \(B\)?
+        \item Place les points suivants dans le repère : \(D(-3;2)\) et \(E(4;-2)\).
+        \item Place le point \(D'\) tel qu'il soit l'image point \(D\) par une symétrie orthogonale d'axe \(x\).
+        \item Place le point \(E\) tel que \(t_{\overrightarrow{OA}}(C)=E\).
+        \item Donne les coordonnées de \(B'\) tel que \(B'= S_y(B)\)?
+        \item Donne les coordonnées de \(Z'\) tel qu'il soit l'image du point \(Z(-34;65)\) par la symétrie centrale dont le centre est l'origine du repère.
+    \end{enumerate}
+\end{appliquer}
+\begin{solappliquer}
+    \begin{center}
+        \input{tikz/cartesien_sol.tikz}
+    \end{center}
+    \begin{enumerate}
+        \item \( A(2;3)\) et \(B(-2;3)\)
+        \item Voir repère
+        \item Voir repère
+        \item Voir repère
+        \item \(B'(2;3)\)
+        \item \(Z'(34;-65)\)
+    \end{enumerate}
+\end{solappliquer}
+
+\begin{appliquer}[points=12]
+    Effectue les transformations du plan demandées. Laisse tes constructions visibles.
+    \begin{enumerate}
+        \item Une rotation du triangle \(ABC\) de centre \(D\) et d'amplitude \ang{100}, que tu appeleras \(A'B'C'\)
+              \begin{center}
+                  \input{tikz/tdp1_soso.tikz}
+              \end{center}
+        \item \(S_{h}(NICE) = N'I'C'E'\)
+              \begin{center}
+                  \input{tikz/tdp2_soso.tikz}
+              \end{center}
+        \item \(r_{A;\ang{-80}}(AMIS) = A'M'I'S'\)
+              \begin{center}
+                  \input{tikz/tdp3_soso.tikz}
+              \end{center}
+              % \item $S_{DE}(ABC)=A'B'C'$
+              %       \begin{center}
+              %           \input{tikz/tdp1.tikz}
+              %       \end{center}
+        \item \(S_{O}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \input{tikz/tdp2.tikz}
+              \end{center}
+        \item \(t_{\overrightarrow{v}}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \input{tikz/tdp3.tikz}
+              \end{center}
+              % \item \(r_{B;\ang{-75}}(ABC)=A'B'C'\)
+              %       \begin{center}
+              %           \input{tikz/tdp4.tikz}
+              %       \end{center}
+              % \item \(r_{M;\ang{60}}(ABCD)=A'B'C'D'\)
+              %       \begin{center}
+              %           \input{tikz/tdp5.tikz}
+              %       \end{center}
+    \end{enumerate}
+\end{appliquer}
+\begin{solappliquer}
+    Effectue les transformations du plan demandées. Laisse tes constructions visibles.
+    \begin{enumerate}
+        \item Une rotation du triangle \(ABC\) de centre \(D\) et d'amplitude \ang{100}, que tu appeleras \(A'B'C'\)
+              \begin{center}
+                  \input{tikz/tdp1_soso.tikz}
+              \end{center}
+        \item \(S_{h}(NICE) = N'I'C'E'\)
+              \begin{center}
+                  \input{tikz/tdp2_soso.tikz}
+              \end{center}
+        \item \(r_{A;\ang{-80}}(AMIS) = A'M'I'S'\)
+              \begin{center}
+                  \input{tikz/tdp3_soso.tikz}
+              \end{center}
+              % \item $S_{DE}(ABC)=A'B'C'$
+              %       \begin{center}
+              %           \input{tikz/tdp1.tikz}
+              %       \end{center}
+        \item \(S_{O}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \input{tikz/tdp2.tikz}
+              \end{center}
+        \item \(t_{\overrightarrow{v}}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \input{tikz/tdp3.tikz}
+              \end{center}
+              % \item \(r_{B;\ang{-75}}(ABC)=A'B'C'\)
+              %       \begin{center}
+              %           \input{tikz/tdp4.tikz}
+              %       \end{center}
+              % \item \(r_{M;\ang{60}}(ABCD)=A'B'C'D'\)
+              %       \begin{center}
+              %           \input{tikz/tdp5.tikz}
+              %       \end{center}
+    \end{enumerate}
+\end{solappliquer}
+\newpage
+\renewcommand{\figcolor}{red}
+\printallsolutions[headings=false]
+\end{document}
