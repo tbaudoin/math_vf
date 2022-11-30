@@ -7,6 +7,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{frenchmath}
 \usepackage{mathtools}
+\usepackage{xlop}
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlist[enumerate]{label=\textbf{\alph*)}}
@@ -17,7 +18,7 @@ before = \raggedcolumns\begin{multicols}{#1},
 after = \end{multicols}}
 \usepackage{tasks}
 \settasks{label-format=\bfseries}
-\usepackage[locale=FR]{siunitx}
+\usepackage[locale=FR,group-minimum-digits = 3]{siunitx}
 \usepackage{tikz}
 \usetikzlibrary{babel, math}
 \usepackage{tkz-base}
@@ -165,6 +166,13 @@ counter = exercise
     \end{tblr}
 \end{connaitre}
 \begin{solconnaitre}
+
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={1cm},row{1}={font=\bfseries}}
+        Nom de la propriété                & Propriété                              & Exemple chiffré                              \\
+        Puissance d'une puissance          & \(\left(a^b\right)^c = a^{b \cdot c}\) & \(\left(2^3\right)^4 = 2^12\)                \\
+        Puissance d'un produit             & \(\left(a \cdot b\right)^n\)           & \(\left(2 \cdot 3\right)^4 = 2^4 \cdot 3^4\) \\
+        Quotient de puissance de même base & \(\dfrac{a^b}{a^c}= a^{b-c}\)          & \(\dfrac{2^5}{2^3}=2^2\)
+    \end{tblr}
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=3]
@@ -178,14 +186,25 @@ counter = exercise
 \end{connaitre}
 \begin{solconnaitre}
 
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={1cm},row{1}={font=\bfseries}}
+        Expression                  & Notation décimale & Notation scientifique  \\
+        \(350 \cdot 10^{- 5}\)      & \num{0,00350}     & \(3,5 \cdot 10 ^{-3}\) \\
+        \(2\) milliards             & \num{2000000000}  & \(2 \cdot 10^9\)       \\
+        \(0,000\ 007 \cdot 10^{5}\) & \num{0,7}         & \(7 \cdot 10^{-1}\)    \\
+    \end{tblr}
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
-    Quelle est la valeur du symbole \(\bullet\) pour que le nombre \(435\bullet\) soit divisible par 15 ? Justifie.
+    Quelle est la valeur du symbole \(\bullet\) pour que le nombre \(435\bullet\) soit divisible par 15 ? Note ton raisonnement.
     \vspace*{2cm}
 \end{transferer}
 %\TODO:Plus d'espace pour répondre, 3 choses à justifier par de vraies phrases
 \begin{soltransferer}
+    % Pour être divisible par 15, le nombre doit être divisible par 3 et par 5.\\
+    % Pour être divisible par 5, le chiffre des unités doit être 0 ou 5 ce qui ne nous laisse que deux possibilités : \num{4350} ou \num{4355}.\\
+    % Pour être divisible par 3, la somme des chiffres doit être un multiple de 3 : \(4+3+5 + 0 = 12\) et \(4 + 3 + 5 + 5 = 17\).\\
+    % Le symbole \(bullet\) ne peut prendre que la valeur \(0\) pour que les deux conditions soient respectées.
+    \num{4350}
 \end{soltransferer}
 
 \begin{appliquer}[points=6]
@@ -195,11 +214,19 @@ counter = exercise
         \task \(\left( 3x^{3} \right)^{2} =\)
         \task \(\dfrac{a^{6} \cdot b^{5} \cdot a}{a^{4} \cdot b} =\)
         \task \(4a^{3} \cdot 6 \cdot a \cdot \left( a^{5} \right)^{4} =\)
-        \task \(2x^{4} \cdot \left( 4x^{5}y \right)^{3} \cdot 3x =\)
+        \task \(2x^{4} \cdot \left( 4x^{5}y \right)^{2} \cdot 3x =\)
         \task \(\dfrac{\left( 4xy^{3} \right)^{2}}{8y} =\)
     \end{tasks}
 \end{appliquer}
 \begin{solappliquer}
+    \begin{tasks}(3)
+        \task \(2a^4\)
+        \task \(9x^6\)
+        \task \(a^3b^4\)
+        \task \(24a^{24}\)
+        \task \(80x^{15}y^2\)
+        \task \(2x^2y^5\)
+    \end{tasks}
 \end{solappliquer}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -211,12 +238,16 @@ counter = exercise
     \end{tasks}
 \end{appliquer}
 \begin{solappliquer}
+    \begin{tasks}(2)
+        \task \(\num{6,7465} \cdot 10^7\)
+        \task \(1,5 \cdot 10^{13}\)
+    \end{tasks}
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=2]
-    Coche-la ou les bonnes réponses
+    Coche-la ou les bonnes réponses.
     \begin{enumerate}
-        \item Si a est un multiple de b alors que vaut leur PGCD ?
+        \item
               \begin{tasks}[label=\faSquare](4)
                   \task  \(a\)
                   \task \(b\)
@@ -224,7 +255,7 @@ counter = exercise
                   \task \(1\)
               \end{tasks}
 
-        \item Que vaut \(a\) si \(\dfrac{a}{b} = -1\) ?
+        \item
               \begin{tasks}[label=\faSquare](4)
                   \task \(-b\)
                   \task \(-1\)
@@ -234,6 +265,10 @@ counter = exercise
     \end{enumerate}
 \end{connaitre}
 \begin{solconnaitre}
+    \begin{tasks}(2)
+        \task \(b\)
+        \task \(-b\)
+    \end{tasks}
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
@@ -241,7 +276,10 @@ counter = exercise
     \vspace*{3cm}
 \end{appliquer}
 \begin{solappliquer}
-
+    \par
+    \opidiv[displayintermediary=all,voperation=center,voperator=bottom]{1478}{4}
+    \qquad
+    \(\num{1478} = 4 \cdot 369 + 2\)
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=5]
@@ -257,18 +295,28 @@ counter = exercise
     \end{tasks}
 \end{connaitre}
 \begin{solconnaitre}
+    \begin{tasks}
+        \task Faux. \(\dfrac{4^6}{4} = 4^5 \neq 4^3\).
+        \task Faux. \(\left( - a^{2} \cdot 2a \right)^{3} = -8a^9 \neq - 2a^{9}\)
+        \task Faux. \(\dfrac{17}{50} = 0,34\). Par conséquent \(0,4\) est sa valeur approchée par excès et non par défaut.
+        \task Vrai. \(16n+4 = 4(4n+1)\).
+        \task Faux. Si \(n = 1\) alors \(n+3 = 1+ 3 = 4\) et le chiffre des unités de ce nombre n'est ni 3 ni 6 ni 9.
+    \end{tasks}
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \begin{appliquer}[points=2]
-    Trouve la valeur de \(n\) dans les égalités suivantes.
+    Trouve la valeur de \(a\) dans les égalités suivantes.
     \begin{tasks}[after-skip=1cm](2)
-        \task \(14500 = 14,5 \cdot 10^{n}\)
-        \task \(0,000\ 6784 \cdot 10^{n} = 6784\)
+        \task \(\num{14500} = 14,5 \cdot 10^{a}\)
+        \task \(\num{6784} \cdot 10^{a} = \num{0,0006784}\)
     \end{tasks}
 \end{appliquer}
 \begin{solappliquer}
-
+    \begin{tasks}(2)
+        \task \(a=3\)
+        \task \(a=-7\)
+    \end{tasks}
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=4]
@@ -277,14 +325,23 @@ counter = exercise
     \begin{tblr}{hlines, vlines, colspec={CCCCC},row{2-5}={2em},row{1}={font=\bfseries\boldmath}}
         D  & d & q & r & \text{Égalité}      \\
         51 & 8 &   &   &                     \\
-        65 &   &   & 2 &                     \\
+        19 &   &   & 2 &                     \\
         47 &   & 6 &   &                     \\
            &   &   &   & 35 = 3 \cdot 10 + 5 \\
     \end{tblr}
     \)
 \end{connaitre}
 \begin{solconnaitre}
-
+    \par
+    \(
+    \begin{tblr}{hlines, vlines, colspec={CCCCC},row{2-5}={2em},row{1}={font=\bfseries\boldmath}}
+        D  & d  & q & r & \text{Égalité}      \\
+        51 & 8  & 6 & 3 & 51=8\cdot 6 + 3     \\
+        19 & 17 & 1 & 2 & 19=17\cdot 1 + 2    \\
+        47 & 7  & 6 & 1 & 47=7\cdot 6 + 1     \\
+        35 & 10 & 3 & 5 & 35 = 3 \cdot 10 + 5 \\
+    \end{tblr}
+    \)
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
@@ -296,21 +353,33 @@ counter = exercise
     \end{tasks}
 \end{transferer}
 \begin{soltransferer}
+    \begin{tasks}
+        \task \opidiv[displayintermediary=all,voperation=top,voperator=bottom]{8700}{70}
+        \qquad Elle aura besoin de \(125\) bocaux.
+        \task Il lui reste \SI{20}{g}, il lui manque donc \(70-20=\SI{50}{g}\) pour  compléter le dernier bocal.
+    \end{tasks}
 \end{soltransferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
     Classe les nombres suivants dans l'ordre croissant.
     \begin{tasks}[label=](3)
-        \task \(A= \num{23456} \cdot 10^{- 4}\)
+        \task \(A= \num{23456} \cdot 10^{- 4} = \)
         \task \(B= \num{23,456} \cdot 10^{6}\)
         \task \(C= \num{0,000023456} \cdot 10^{9}\)
-        \task \(D= \num{23456000} \cdot 10^{- 7}\)
+        \task \(D= \num{23456000} \cdot 10^{- 6}\)
         \task \(E= \num{0,0023456} \cdot 10^{- 2}\)
     \end{tasks}
-    Classement : 
+    Classement :
 \end{transferer}
 \begin{soltransferer}
-
+    \begin{tasks}[label=]
+        \task \(A= \num{23456} \cdot 10^{- 4} = \num{2,3456}\)
+        \task \(B= \num{23,456} \cdot 10^{6} = \num{2,3456} \cdot 10^7\)
+        \task \(C= \num{0,000023456} \cdot 10^{9}= \num{2,3456}\cdot 10^4\)
+        \task \(D= \num{23456000} \cdot 10^{- 6}= \num{2,3456}\cdot 10^1\)
+        \task \(E= \num{0,0023456} \cdot 10^{- 2}= \num{2,3456}\cdot 10^{-5}\)
+    \end{tasks}
+    Classement : E < A < D < C < B
 \end{soltransferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}
@@ -321,7 +390,10 @@ counter = exercise
     \end{tasks}
 \end{appliquer}
 \begin{solappliquer}
-
+    \begin{tasks}(2)
+        \task \(0<\dfrac{3}{7}<1\)
+        \task \(-10<\dfrac{-46}{5}<-9\)
+    \end{tasks}
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=4]
@@ -332,7 +404,10 @@ counter = exercise
     \end{tasks}
 \end{appliquer}
 \begin{solappliquer}
-
+    \begin{tasks}
+        \task \(210 = 2 \cdot 3 \cdot 5 \cdot 7\) et \(330 = 2 \cdot 3 \cdot 5 \cdot 11\) donc \(PGCD(210, 330) = 30\).
+        \task \(600\) est un multiple de \(12\) donc \(PGCD(600,12) = 12\).
+    \end{tasks}
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -407,4 +482,6 @@ counter = exercise
     \end{center}
     %\TODO: il n'y a pas de points :D
 \end{appliquer}
+\newpage
+\printallsolutions[headings=false]
 \end{document}
