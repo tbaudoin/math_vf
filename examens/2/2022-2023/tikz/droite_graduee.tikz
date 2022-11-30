@@ -13,8 +13,18 @@
             \draw (\x, 2.5pt) -- (\x, -2.5pt);
         }
     \foreach \x in {\min,...,\max}
-    {
-        \draw (\x, 5pt) -- (\x, -5pt)node[below]{\(\x\)};
-    }
-    
+        {
+            \draw (\x, 5pt) -- (\x, -5pt)node[below]{\(\x\)};
+        }
+
+   \draw (-10*\subgrad,-3pt) -- (-10*\subgrad,10pt) node[above]{\(A\)};
+   \draw (-3*\subgrad,-3pt) -- (-3*\subgrad,10pt) node[above]{\(B\)};
+   \draw (2*\subgrad,-3pt) -- (2*\subgrad,10pt) node[above]{\(C\)};
+   \draw (12*\subgrad,-3pt) -- (12*\subgrad,10pt) node[above]{\(D\)};
+   \draw (15*\subgrad,-3pt) -- (15*\subgrad,10pt) node[above]{\(E\)};
+    % -3\subgrad/0/B,
+    % 2\subgrad/0/C,
+    % 12\subgrad/0/D,
+    % 15\subgrad/0/E
+
 \end{tikzpicture}
