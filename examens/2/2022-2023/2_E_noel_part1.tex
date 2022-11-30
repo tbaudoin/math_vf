@@ -111,9 +111,9 @@ counter = exercise
     }%
     \hline
     % cell1
-                                                               &             &          \\
+    Examen de mathématiques                                                           &             &          \\
     % cell2
-                                                               &             &          \\
+    Partie 1                                                        &             &          \\
     \hline
     % cell3
     Nom :                                                      &             & Classe : \\
@@ -121,11 +121,11 @@ counter = exercise
     Prénom :                                                   &             & Numéro : \\
     \hline
     % cell5
-    Professeur :                                               &             &          \\
+    Professeur : Baudoin, Debroux, Janssens, van de Werve                                               &             &          \\
     % cell6
-    Date et heure:                                                                      \\
+    Date et heure: Mercredi 14 décembre 2022 de 9h10 à 10h30.                                                             \\
     % cell7
-    Matériel autorisé :                                                                 \\
+    Matériel autorisé : Équerre multifonction, compas, crayon, gomme.                                                                 \\
     % cell8
     Matériel à distribuer :                                                             \\
     \hline
@@ -148,7 +148,6 @@ counter = exercise
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % partie 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\part{}
 \begin{connaitre}[points=4]
     Complète le tableau suivant.\par
     \begin{tblr}{
@@ -156,6 +155,7 @@ counter = exercise
             vlines,
             rowsep=1em,
             row{1}={font=\bfseries},
+            row{5}={2cm},
             colspec={XXX},
             columns={c},}
         Nom des isométries & Verbe de mouvement     & Éléments caractéristiques \\
@@ -181,7 +181,7 @@ counter = exercise
         Rotation             & Tourner                & {Centre de rotation       \\Angle de rotation\\Sens de rotation}                         \\
     \end{tblr}
 \end{solconnaitre}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=2]
     Complète le tableau suivant.\par
     \begin{tblr}{
@@ -206,11 +206,11 @@ counter = exercise
             colspec={XXX},
             columns={c},}
         Notation mathématiques                  & Décodage en français                                                                                         \\
-        \(t_{\overrightarrow{TI}(TIC)=T'I'C'}\) & Le triangle \(T'I'C'\) est l'image du triangle \(TIC\) par la translation de vecteur \(\overrightarrow{TI}\) \\
+        \(t_{\overrightarrow{TI}}(TIC)=T'I'C'\) & Le triangle \(T'I'C'\) est l'image du triangle \(TIC\) par la translation de vecteur \(\overrightarrow{TI}\) \\
         \(S_{A}(WOLF) = W'O'L'F'\)              & Le quadrilatère \(W'O'L'F'\) est l'image du quadrilatère \(WOLF\) par la symétrice centrale de centre \(A\)
     \end{tblr}
 \end{solconnaitre}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=4]
     \(ABCDEFGH\) est un octogone régulier. Réponds aux questions suivantes.
 
@@ -236,9 +236,9 @@ counter = exercise
         \item \([HF]\)
     \end{enumerate}
 \end{soltransferer}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\begin{appliquer}[points=4]
+\begin{appliquer}[points=6]
     À l'aide du repère cartésien ci-dessous, réponds aux questions.
     \begin{center}
         \input{tikz/cartesien.tikz}
@@ -246,10 +246,12 @@ counter = exercise
     \begin{enumerate}
         \item Quels sont les coordonnées des points \(A\) et \(B\)?
         \item Place les points suivants dans le repère : \(D(-3;2)\) et \(E(4;-2)\).
-        \item Place le point \(D'\) tel qu'il soit l'image point \(D\) par une symétrie orthogonale d'axe \(x\).
-        \item Place le point \(E\) tel que \(t_{\overrightarrow{OA}}(C)=E\).
+        \item Place le point \(A'\) tel qu'il soit l'image du point \(A\) par une symétrie orthogonale d'axe \(x\).
+        \item Place le point \(C'\) tel que \(t_{\overrightarrow{OA}}(C)=C'\).
         \item Donne les coordonnées de \(B'\) tel que \(B'= S_y(B)\)?
         \item Donne les coordonnées de \(Z'\) tel qu'il soit l'image du point \(Z(-34;65)\) par la symétrie centrale dont le centre est l'origine du repère.
+        \item Donne les coordonnées de \(D'\) tel que \(r_{O, \ang{-90}}(D)\)
+        \item Donne les coordonnées de \(W'\) tel q'uil soit l'image du point \(W(-78;23)\) par une rotation dont le centre est l'origine et de \ang{90}.
     \end{enumerate}
 \end{appliquer}
 \begin{solappliquer}
@@ -265,8 +267,14 @@ counter = exercise
         \item \(Z'(34;-65)\)
     \end{enumerate}
 \end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}
+    \includegraphics[height=5cm]{img/ce1d.png}
+\end{transferer}
 
-\begin{appliquer}[points=12]
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=10]
     Effectue les transformations du plan demandées. Laisse tes constructions visibles.
     \begin{enumerate}
         \item Une rotation du triangle \(ABC\) de centre \(D\) et d'amplitude \ang{100}, que tu appeleras \(A'B'C'\)
@@ -340,6 +348,7 @@ counter = exercise
               %       \end{center}
     \end{enumerate}
 \end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \renewcommand{\figcolor}{red}
 \printallsolutions[headings=false]

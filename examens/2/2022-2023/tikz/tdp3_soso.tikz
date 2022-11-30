@@ -1,4 +1,4 @@
-\begin{tikzpicture}[baseline=(current bounding box.north)]
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=0.8]
     % Points
     \tkzDefPoints{0/0/A, 2/2/I, 2/3.5/M, 5/3.5/S}
     \tkzDefPointsBy[rotation=center A angle -80](A,M,I,S){}

@@ -10,16 +10,23 @@
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlist[enumerate]{label=\textbf{\alph*)}}
+\SetEnumitemKey{cols}{
+itemsep = 1\tasksep,
+parsep = 1\parsep,
+before = \raggedcolumns\begin{multicols}{#1},
+after = \end{multicols}}
 \usepackage{tasks}
 \settasks{label-format=\bfseries}
 \usepackage[locale=FR]{siunitx}
 \usepackage{tikz}
-\usetikzlibrary{babel}
+\usetikzlibrary{babel, math}
 \usepackage{tkz-base}
 \usepackage{tkz-euclide}
 \usepackage{graphicx}
-\usepackage{systeme}
+\usepackage{fontawesome5}
+\faStyle{regular}
 \usepackage{tabularray}
+\NewColumnType{C}[1][]{Q[c,co=1,#1]}
 \usepackage[use-aux, no-files]{xsim}
 
 \DeclareExerciseEnvironmentTemplate{interrogation}
@@ -88,6 +95,8 @@ counter = exercise
 
 
 \begin{document}
+\pagestyle{empty}
+\raggedbottom
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ENTETE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -107,9 +116,9 @@ counter = exercise
     }%
     \hline
     % cell1
-                                                               &             &          \\
+    Examen de mathématiques                                    &             &          \\
     % cell2
-                                                               &             &          \\
+    Partie 2                                                   &             &          \\
     \hline
     % cell3
     Nom :                                                      &             & Classe : \\
@@ -117,13 +126,13 @@ counter = exercise
     Prénom :                                                   &             & Numéro : \\
     \hline
     % cell5
-    Professeur :                                               &             &          \\
+    Professeur : Baudoin, Debroux, Janssens, van de Werve      &             &          \\
     % cell6
-    Date et heure:                                                                      \\
+    Date et heure: Mercredi 14 décembre 2022 de 10h45 à 12h50                           \\
     % cell7
-    Matériel autorisé :                                                                 \\
+    Matériel autorisé : crayon, gomme                                                   \\
     % cell8
-    Matériel à distribuer :                                                             \\
+    Matériel à distribuer : aucun                                                       \\
     \hline
     % cell9
     C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}  & Remarques : &          \\
@@ -139,19 +148,260 @@ counter = exercise
     Rue de linthout, 30 - 1030 Bruxelles%
 \end{scriptsize}%
 \cleardoublepage
+\pagestyle{plain}
+\setcounter{page}{1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONTENU
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % partie 2
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\part{}
 \begin{connaitre}[points=3]
     Complète le tableau suivant.\par
-    \begin{tblr}{hlines, vlines}
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={1cm},row{1}={font=\bfseries}}
         Nom de la propriété       & Propriété                    & Exemple chiffré          \\
         Puissance d'une puissance &                              &                          \\
                                   & \(\left(a \cdot b\right)^n\) &                          \\
                                   &                              & \(\dfrac{2^5}{2^3}=2^2\)
     \end{tblr}
 \end{connaitre}
+\begin{solconnaitre}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Complète le tableau suivant.\par
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={1cm},row{1}={font=\bfseries}}
+        Expression                  & Notation décimale & Notation scientifique \\
+        \(350 \cdot 10^{- 5}\)      &                   &                       \\
+        \(2\) milliards             &                   &                       \\
+        \(0,000\ 007 \cdot 10^{5}\) &                   &                       \\
+    \end{tblr}
+\end{connaitre}
+\begin{solconnaitre}
+
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Quelle est la valeur du symbole \(\bullet\) pour que le nombre \(435\bullet\) soit divisible par 15 ? Justifie.
+    \vspace*{2cm}
+\end{transferer}
+\begin{soltransferer}
+\end{soltransferer}
+
+\begin{appliquer}[points=6]
+    Réduis au maximum les expressions suivants à l'aide des propriétés des puissances.
+    \begin{tasks}[after-item-skip=\fill](2)
+        \task \(2a \cdot a^{3} =\)
+        \task \(\left( 3x^{3} \right)^{2} =\)
+        \task \(\dfrac{a^{6} \cdot b^{5} \cdot a}{a^{4} \cdot b} =\)
+        \task \(4a^{3} \cdot 6 \cdot a \cdot \left( a^{5} \right)^{4} =\)
+        \task \(2x^{4} \cdot \left( 4x^{5}y \right)^{3} \cdot 3x =\)
+        \task \(\dfrac{\left( 4xy^{3} \right)^{2}}{8y} =\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+\end{solappliquer}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Écris les produits suivants sous la forme d'une notation scientifique.
+    \begin{tasks}[after-skip=2cm](2)
+        \task \(67\ 465 \cdot 10^{3} =\)
+        \task \(\left( 10^{3} \right)^{3} \cdot 3 \cdot 10^{- 5} \cdot \left( 10^{2} \right)^{4} \cdot 5 =\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=2]
+    Coche-la ou les bonnes réponses
+    \begin{enumerate}
+        \item Si a est un multiple de b alors que vaut leur PGCD ?
+              \begin{tasks}[label=\faSquare](4)
+                  \task  \(a\)
+                  \task \(b\)
+                  \task \(a \dot b\)
+                  \task \(1\)
+              \end{tasks}
+
+        \item Que vaut \(a\) si \(\dfrac{a}{b} = -1\) ?
+              \begin{tasks}[label=\faSquare](4)
+                  \task \(-b\)
+                  \task \(-1\)
+                  \task \(0\)
+                  \task \(b\)
+              \end{tasks}
+    \end{enumerate}
+\end{connaitre}
+\begin{solconnaitre}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Effectue la division euclidienne de \num{1478} par 4 et note la relation qui en découle.
+    \vspace*{3cm}
+\end{appliquer}
+\begin{solappliquer}
+
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=5]
+    Vrai ou faux~? Justifie dans les deux cas.
+    \begin{tasks}[after-item-skip=\fill]
+        \task Yves prétend que le quart de \(4^{6}\) est \(4^{3}\).
+        \task \(\left( - a^{2} \cdot 2a \right)^{3} = \  - 2a^{9}\)
+        \task \(0,4\) est la valeur approchée par défaut au dixième près de
+        \(\dfrac{17}{50}\).
+        \task \(16n + 4\) est un multiple de 4.
+        \task \(n + 3\) est un nombre naturel dont le chiffre des unités est \(3\),
+        \(6\) ou \(9\).
+    \end{tasks}
+\end{connaitre}
+\begin{solconnaitre}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{appliquer}[points=2]
+    Trouve la valeur de \(n\) dans les égalités suivantes.
+    \begin{tasks}[after-skip=1cm](2)
+        \task \(14500 = 14,5 \cdot 10^{n}\)
+        \task \(0,000\ 6784 \cdot 10^{n} = 6784\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=4]
+    Complète le tableau ci-dessous.\medbreak
+    \(
+    \begin{tblr}{hlines, vlines, colspec={CCCCC},row{2-5}={2em},row{1}={font=\bfseries\boldmath}}
+        D  & d & q & r & \text{Égalité}      \\
+        51 & 8 &   &   &                     \\
+        65 &   &   & 2 &                     \\
+        47 &   & 6 &   &                     \\
+           &   &   &   & 35 = 3 \cdot 10 + 5 \\
+    \end{tblr}
+    \)
+\end{connaitre}
+\begin{solconnaitre}
+
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Mélissa a fait \SI{8,7}{kg} de confiture. Elle la répartit dans des
+    petits bocaux de \SI{70}{g} pour son hôtel. Réponds aux questions ci-dessous en notant ton raisonnement.
+    \begin{tasks}[after-item-skip=1cm, after-skip=1cm]
+        \task De combien de bocaux aura-t-elle besoin ?
+        \task Combien de grammes de confiture aurait-elle dû faire en plus pour compléter le dernier bocal ?
+    \end{tasks}
+\end{transferer}
+\begin{soltransferer}
+\end{soltransferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Classe les nombres suivants dans l'ordre croissant.
+    \begin{tasks}[label=](3)
+        \task \(A= \num{23456} \cdot 10^{- 4}\)
+        \task \(B= \num{23,456} \cdot 10^{6}\)
+        \task \(C= \num{0,000023456} \cdot 10^{9}\)
+        \task \(D= \num{23456000} \cdot 10^{- 7}\)
+        \task \(E= \num{0,0023456} \cdot 10^{- 2}\)
+    \end{tasks}
+    Classement : 
+\end{transferer}
+\begin{soltransferer}
+
+\end{soltransferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}
+    Encadre les fractions suivantes à l'unité près.
+    \begin{tasks}(2)
+        \task \hfil\(\dfrac{3}{7}\)
+        \task \hfil\(\dfrac{-46}{5}\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=4]
+    Calcule le PGCD des nombres suivants. Utilise si possible une propriété, sinon écris tous tes calculs.
+    \begin{tasks}(2)
+        \task \(210\) et \(330\)
+        \task \(600\) et \(12\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{appliquer}[points=4]
+    Calcule le PPCM des nombres suivants. Utilise si possible une propriété, sinon écris tous tes calculs.
+    \begin{tasks}[after-skip=4cm](2)
+        \task \(54\) et \(27\)
+        \task \(63\) et \(28\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Écris l'expression générale des expressions suivantes.
+    \begin{tasks}
+        \task La somme de deux nombres impairs consécutifs~:
+        \task Deux multiples de 3 consécutifs~:
+        \task Un multiple de 6 augmenté de 5~:
+    \end{tasks}
+\end{connaitre}
+\begin{solconnaitre}
+
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Elsa a fait des biscuits pour les vendre à la fête du quartier. Elle a
+    fait 36 biscuits au chocolat et 60 biscuits au sucre. Elle veut tous les
+    mettre dans des boîtes contenant chacune exactement les mêmes nombres
+    de biscuits. Quel est le plus grand nombre de boîtes identiques qu'elle peut faire ? Note tout ton raisonnement.
+    \vspace*{4cm}
+\end{transferer}
+\begin{soltransferer}
+
+\end{soltransferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Classe les fractions suivantes par ordre croissant.
+    \begin{tasks}[label=](5)
+        \task \(A=\dfrac{34}{16}\)
+        \task \(B=\dfrac{5}{2}\)
+        \task \(C=\dfrac{70}{200}\)
+        \task \(D=- \dfrac{3}{42}\)
+        \task \(E=\dfrac{- 11}{8}\)
+    \end{tasks}
+    Classement :
+\end{appliquer}
+\begin{solappliquer}
+
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Des boîtes de savon en forme de parallélépipède rectangle ont les
+    dimensions suivantes : \(\SI{36}{mm}\times\SI{54}{mm}\times\SI{72}{mm}\). On veut les emballer sans perdre de la place dans des caisses cubiques les plus petites possibles, dont l'arête est un nombre entier de millimètres.
+    \begin{tasks}[after-item-skip=\fill]
+        \task Quelle sera la dimension de ces caisses ?
+        \task Combien de boîte de savon y seront contenus ?
+    \end{tasks}
+\end{transferer}
+\begin{soltransferer}
+
+\end{soltransferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{appliquer}[points=2]
+    Donne une fraction irréductible correspondant aux abscisses des points
+    nommés ci-dessous. Sois précis~!
+    \begin{center}
+        \input{tikz/droite_graduee.tikz}
+    \end{center}
+\end{appliquer}
 \end{document}
