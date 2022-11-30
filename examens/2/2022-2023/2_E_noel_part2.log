@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  30 NOV 2022 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  30 NOV 2022 21:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1787,17 +1787,22 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on in
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
- [6] [7] (./2_E_noel_part2.aux) ) 
+ [6]
+
+Package xsim Warning: Exercise properties may have changed. Rerun to get them
+(xsim)                synchronized.
+
+[7] (./2_E_noel_part2.aux) ) 
 Here is how much of TeX's memory you used:
- 43312 strings out of 478238
- 991900 string characters out of 5850455
- 1448860 words of memory out of 5000000
- 60582 multiletter control sequences out of 15000+600000
+ 43313 strings out of 478238
+ 992348 string characters out of 5850455
+ 1450022 words of memory out of 5000000
+ 60583 multiletter control sequences out of 15000+600000
  576039 words of font info for 263 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,11n,128p,10691b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb>
-Output written on 2_E_noel_part2.pdf (9 pages, 97768 bytes).
+Output written on 2_E_noel_part2.pdf (9 pages, 97927 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
