@@ -1,0 +1,102 @@
+\documentclass[parskip=half-,DIV=12,twoside=semi]{scrartcl}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[sfmath, light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{frenchmath}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{tasks}
+\settasks{label-format=\bfseries}
+\usepackage[locale=FR]{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\usepackage{tkz-euclide}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{tabularray}
+\usepackage[use-aux, no-files]{xsim}
+
+\DeclareExerciseEnvironmentTemplate{interrogation}
+{%
+    {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
+    \GetExercisePropertyT{points}{\marginpar{\hfill/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue}
+}%
+{\par}
+
+% Mes environnements
+\DeclareExerciseType{connaitre}{
+exercise-env = connaitre ,
+solution-env = solconnaitre ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{appliquer}{
+exercise-env = appliquer ,
+solution-env = solappliquer ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{transferer}{
+exercise-env = transferer ,
+solution-env = soltransferer ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+
+\xsimsetup{
+    exercise/template = interrogation,
+    solution/template = interrogation,
+}
+
+\newcommand{\corcolor}{white}
+\newcommand{\Titre}{TJF - Les inéquations}
+\newcommand{\Date}{Vendredi 25 novembre 2022}
+\newcommand{\Classe}{}
+
+\usepackage{scrlayer-scrpage}
+\setlength{\headheight}{50pt}
+\lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
+\rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
+
+
+\begin{document}
+\begin{huge}
+    \bfseries
+    \Titre
+    \marginpar{\hfill\huge\bfseries/\TotalExerciseGoal{points}{}{}}
+    \bigbreak
+\end{huge}
+\begin{center}
+    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}
+    \hfil
+    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}
+    \hfil
+    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}
+\end{center}
+\end{document}
