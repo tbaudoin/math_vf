@@ -3,7 +3,7 @@
     \tkzGrid
     \tkzDrawXY
     \tkzLabelXY[orig=false, font=\scriptsize]
-    \tkzDefPoints{2/3/A, -2/3/B, -4/-2/C, -2/-3/D,0/0/O}
+    \tkzDefPoints{2/3/A, -2/4/B, -4/-2/C, -2/-3/D,0/0/O}
     \tkzDrawPoints(A,B,C,O)
     \tkzLabelPoints(A,B,C,O){}
 \end{tikzpicture}

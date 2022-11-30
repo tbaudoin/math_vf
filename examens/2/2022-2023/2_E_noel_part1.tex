@@ -14,7 +14,7 @@
 \settasks{label-format=\bfseries}
 \usepackage[locale=FR]{siunitx}
 \usepackage{tikz}
-\usetikzlibrary{babel}
+\usetikzlibrary{babel, patterns}
 \usepackage{tkz-base}
 \usepackage{tkz-euclide}
 \usepackage{tikzscale}
@@ -89,6 +89,7 @@ counter = exercise
 % \lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
 % \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
 
+\setlength{\textheight}{700pt}
 
 \begin{document}
 \raggedbottom
@@ -111,9 +112,9 @@ counter = exercise
     }%
     \hline
     % cell1
-    Examen de mathématiques                                                           &             &          \\
+    Examen de mathématiques                                    &             &          \\
     % cell2
-    Partie 1                                                        &             &          \\
+    Partie 1                                                   &             &          \\
     \hline
     % cell3
     Nom :                                                      &             & Classe : \\
@@ -121,11 +122,11 @@ counter = exercise
     Prénom :                                                   &             & Numéro : \\
     \hline
     % cell5
-    Professeur : Baudoin, Debroux, Janssens, van de Werve                                               &             &          \\
+    Professeur : Baudoin, Debroux, Janssens, van de Werve      &             &          \\
     % cell6
-    Date et heure: Mercredi 14 décembre 2022 de 9h10 à 10h30.                                                             \\
+    Date et heure: Mercredi 14 décembre 2022 de 9h10 à 10h30.                           \\
     % cell7
-    Matériel autorisé : Équerre multifonction, compas, crayon, gomme.                                                                 \\
+    Matériel autorisé : Équerre multifonction, compas, crayon, gomme.                   \\
     % cell8
     Matériel à distribuer :                                                             \\
     \hline
@@ -219,7 +220,7 @@ counter = exercise
         \includegraphics[height=4cm]{tikz/octogone.tikz}
     }
     {%
-        \begin{enumerate}
+        \begin{enumerate}[itemsep=1em]
             \item Quelle est l'image du point \(G\) par la translation qui applique \(A\) sur \(C\) ?
             \item \(R_{O,\ang{-90}}(C)\) ?
             \item Quelle est l'image du triangle \(AOB\) par la symétrie orthogonale d'axe \(HD\) ?
@@ -229,21 +230,21 @@ counter = exercise
 \end{transferer}
 
 \begin{soltransferer}
-    \begin{enumerate}
-        \item \(E\)
-        \item \(1\)
-        \item \(GOF\)
-        \item \([HF]\)
-    \end{enumerate}
+    \begin{tasks}(4)
+        \task \(E\)
+        \task \(1\)
+        \task \(GOF\)
+        \task \([HF]\)
+    \end{tasks}
 \end{soltransferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\begin{appliquer}[points=6]
+\begin{appliquer}[points=5]
     À l'aide du repère cartésien ci-dessous, réponds aux questions.
     \begin{center}
         \input{tikz/cartesien.tikz}
     \end{center}
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=\fill]
         \item Quels sont les coordonnées des points \(A\) et \(B\)?
         \item Place les points suivants dans le repère : \(D(-3;2)\) et \(E(4;-2)\).
         \item Place le point \(A'\) tel qu'il soit l'image du point \(A\) par une symétrie orthogonale d'axe \(x\).
@@ -251,27 +252,43 @@ counter = exercise
         \item Donne les coordonnées de \(B'\) tel que \(B'= S_y(B)\)?
         \item Donne les coordonnées de \(Z'\) tel qu'il soit l'image du point \(Z(-34;65)\) par la symétrie centrale dont le centre est l'origine du repère.
         \item Donne les coordonnées de \(D'\) tel que \(r_{O, \ang{-90}}(D)\)
-        \item Donne les coordonnées de \(W'\) tel q'uil soit l'image du point \(W(-78;23)\) par une rotation dont le centre est l'origine et de \ang{90}.
+        \item Donne les coordonnées de \(W'\) tel q'uil soit l'image du point \(W(-78;23)\) par une rotation dont le centre est l'origine et de \(+\ang{90}\).
     \end{enumerate}
 \end{appliquer}
 \begin{solappliquer}
-    \begin{center}
-        \input{tikz/cartesien_sol.tikz}
-    \end{center}
-    \begin{enumerate}
-        \item \( A(2;3)\) et \(B(-2;3)\)
-        \item Voir repère
-        \item Voir repère
-        \item Voir repère
-        \item \(B'(2;3)\)
-        \item \(Z'(34;-65)\)
-    \end{enumerate}
+    \tcbsidebyside[sidebyside adapt=left, blanker]%
+    {%
+        \includegraphics[height=5cm]{tikz/cartesien_sol.tikz}
+    }
+    {%
+        \begin{enumerate}
+            \item \( A(2;3)\) et \(B(-2;4)\)
+            \item Voir repère
+            \item Voir repère
+            \item Voir repère
+            \item \(B'(2;3)\)
+            \item \(Z'(34;-65)\)
+            \item \(D(2;3)\)
+            \item \(W'(-23;-78)\)
+        \end{enumerate}
+    }
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{transferer}
-    \includegraphics[height=5cm]{img/ce1d.png}
+\newpage
+\begin{transferer}[points=3]
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{tikz/ce1d_tdp.tikz}
+    \end{center}
+    La partie du pavage représentée ci-dessus est constituée de losanges tous identiques au losange \(ABCD\). Le triangle \(ABD\) est équilatéral.
+    \begin{tasks}
+        \task Hachure en bleu l'image du losange \(ABCD\) par la translation qui applique le point \(B\) sur le point \(E\).
+        \task Hachure en vert l'image du losange \(ABCD\) par la symétrie centrale de centre \(B\).
+        \task Hachure en noir l'image du losange \(ABCD\) par la rotation de centre \(D\) qui applique le point \(B\) sur le point \(A\).
+    \end{tasks}
 \end{transferer}
-
+\begin{soltransferer}
+    \includegraphics[width=.5\linewidth]{tikz/ce1d_tdp_sol.tikz}
+\end{soltransferer}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=10]
@@ -293,6 +310,7 @@ counter = exercise
               %       \begin{center}
               %           \input{tikz/tdp1.tikz}
               %       \end{center}
+              \newpage
         \item \(S_{O}(ABCD)=A'B'C'D'\)
               \begin{center}
                   \input{tikz/tdp2.tikz}
@@ -322,6 +340,7 @@ counter = exercise
               \begin{center}
                   \input{tikz/tdp2_soso.tikz}
               \end{center}
+        \newpage
         \item \(r_{A;\ang{-80}}(AMIS) = A'M'I'S'\)
               \begin{center}
                   \input{tikz/tdp3_soso.tikz}
