@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  1 DEC 2022 13:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  1 DEC 2022 17:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -931,40 +931,50 @@ File: bc-cle.mps Graphic file (type mps)
 <puissance.jpg, id=38, 265.59225pt x 118.041pt>
 File: puissance.jpg Graphic file (type jpg)
 <use puissance.jpg>
-Package pdftex.def Info: puissance.jpg  used on input line 146.
+Package pdftex.def Info: puissance.jpg  used on input line 163.
 (pdftex.def)             Requested size: 132.79579pt x 59.02034pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 [2 <./puissance.JPG>]
 File: bc-cle.mps Graphic file (type mps)
  [MP to PDF] (c:/texlive/2021/texmf-dist/tex/latex/bclogo/bc-cle.mps)
-<droitegradd.png, id=45, 455.301pt x 64.44075pt>
+<droitegradd.png, id=46, 455.301pt x 64.44075pt>
 File: droitegradd.png Graphic file (type png)
 <use droitegradd.png>
-Package pdftex.def Info: droitegradd.png  used on input line 213.
+Package pdftex.def Info: droitegradd.png  used on input line 246.
 (pdftex.def)             Requested size: 455.29988pt x 64.44058pt.
-<droitegrad.png, id=47, 464.937pt x 71.0655pt>
+<droitegrad.png, id=48, 464.937pt x 71.0655pt>
 File: droitegrad.png Graphic file (type png)
 <use droitegrad.png>
-Package pdftex.def Info: droitegrad.png  used on input line 218.
+Package pdftex.def Info: droitegrad.png  used on input line 251.
 (pdftex.def)             Requested size: 464.93585pt x 71.0653pt.
- [3 <./droitegradd.png> <./droitegrad.png>] [4] [5] (./revisions_noel.aux (./revisions_noel.xsim)) ) 
+ [3 <./droitegradd.png>] [4 <./droitegrad.png>] [5]
+Overfull \hbox (10.55887pt too wide) in paragraph at lines 445--447
+[]$\OML/cmm/m/it/10 div \OT1/cmr/m/n/10 144 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 12\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 16\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 18\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 24\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 36\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 48\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 72\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 144\OMS/cmsy/m/n/10 g$ 
+ []
+
+[6]
+
+Package xsim Warning: Exercise properties may have changed. Rerun to get them
+(xsim)                synchronized.
+
+[7] (./revisions_noel.aux (./revisions_noel.xsim)) ) 
 Here is how much of TeX's memory you used:
- 24266 strings out of 478579
- 485291 string characters out of 5857457
- 882205 words of memory out of 5000000
- 41699 multiletter control sequences out of 15000+600000
- 413807 words of font info for 66 fonts, out of 8000000 for 9000
+ 24431 strings out of 478579
+ 497693 string characters out of 5857457
+ 915597 words of memory out of 5000000
+ 41875 multiletter control sequences out of 15000+600000
+ 409495 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,14n,94p,3070b,1324s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on revisions_noel.pdf (5 pages, 205729 bytes).
+ 88i,14n,94p,5491b,1324s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on revisions_noel.pdf (7 pages, 161844 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
