@@ -158,10 +158,10 @@ counter = exercise
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=3]
     Complète le tableau suivant.\par
-    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={1cm},row{1}={font=\bfseries}}
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={2cm},row{1}={font=\bfseries}}
         Nom de la propriété       & Propriété                    & Exemple chiffré          \\
         Puissance d'une puissance &                              &                          \\
-                                  & \(\left(a \cdot b\right)^n\) &                          \\
+                                  & \(\left(a \cdot b\right)^n = a^n \cdot b^n\) &                          \\
                                   &                              & \(\dfrac{2^5}{2^3}=2^2\)
     \end{tblr}
 \end{connaitre}
@@ -195,8 +195,8 @@ counter = exercise
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
-    Quelle est la valeur du symbole \(\bullet\) pour que le nombre \(435\bullet\) soit divisible par 15 ? Note ton raisonnement.
-    \vspace*{4cm}
+    Quelle est la valeur du symbole \(\bullet\) pour que le nombre \(435\bullet\) soit divisible par 15 ? Justifie et sois précis.
+    \vspace*{7cm}
 \end{transferer}
 \begin{soltransferer}
     % Pour être divisible par 15, le nombre doit être divisible par 3 et par 5.\\
@@ -205,44 +205,7 @@ counter = exercise
     % Le symbole \(bullet\) ne peut prendre que la valeur \(0\) pour que les deux conditions soient respectées.
     \num{4350}
 \end{soltransferer}
-
-\begin{appliquer}[points=6]
-    Réduis au maximum les expressions suivantes à l'aide des propriétés des puissances.
-    \begin{tasks}[after-item-skip=\fill](2)
-        \task \(2a \cdot a^{3} =\)
-        \task \(\left( 3x^{3} \right)^{2} =\)
-        \task \(\dfrac{a^{6} \cdot b^{5} \cdot a}{a^{4} \cdot b} =\)
-        \task \(4a^{3} \cdot 6 \cdot a \cdot \left( a^{5} \right)^{4} =\)
-        \task \(2x^{4} \cdot \left( 4x^{5}y \right)^{2} \cdot 3x =\)
-        \task \(\dfrac{\left( 4xy^{3} \right)^{2}}{8y} =\)
-    \end{tasks}
-\end{appliquer}
-\begin{solappliquer}
-    \begin{tasks}(3)
-        \task \(2a^4\)
-        \task \(9x^6\)
-        \task \(a^3b^4\)
-        \task \(24a^{24}\)
-        \task \(80x^{15}y^2\)
-        \task \(2x^2y^5\)
-    \end{tasks}
-\end{solappliquer}
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appliquer}[points=2]
-    Écris les produits suivants sous la forme d'une notation scientifique.
-    \begin{tasks}[after-skip=2cm](2)
-        \task \(67\ 465 \cdot 10^{3} =\)
-        \task \(\left( 10^{3} \right)^{3} \cdot 3 \cdot 10^{- 5} \cdot \left( 10^{2} \right)^{4} \cdot 5 =\)
-    \end{tasks}
-\end{appliquer}
-\begin{solappliquer}
-    \begin{tasks}(2)
-        \task \(\num{6,7465} \cdot 10^7\)
-        \task \(1,5 \cdot 10^{13}\)
-    \end{tasks}
-\end{solappliquer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=2]
     Coche-la ou les bonnes réponses.
     \begin{enumerate}
@@ -269,10 +232,47 @@ counter = exercise
         \task \(-b\)
     \end{tasks}
 \end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=6]
+    Réduis au maximum les expressions suivantes à l'aide des propriétés des puissances.
+    \begin{tasks}[after-item-skip=2cm](2)
+        \task \(2a \cdot a^{3} =\)
+        \task \(\left( 3x^{3} \right)^{2} =\)
+        \task \(\dfrac{a^{6} \cdot b^{5} \cdot a}{a^{4} \cdot b} =\)
+        \task \(4a^{3} \cdot 6 \cdot a \cdot \left( a^{5} \right)^{4} =\)
+        \task \(2x^{4} \cdot \left( 4x^{5}y \right)^{2} \cdot 3x =\)
+        \task \(\dfrac{\left( 4xy^{3} \right)^{2}}{8y} =\)
+    \end{tasks}
+    \vspace{2cm}
+\end{appliquer}
+\begin{solappliquer}
+    \begin{tasks}(3)
+        \task \(2a^4\)
+        \task \(9x^6\)
+        \task \(a^3b^4\)
+        \task \(24a^{24}\)
+        \task \(80x^{15}y^2\)
+        \task \(2x^2y^5\)
+    \end{tasks}
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Écris les produits suivants sous la forme d'une notation scientifique.
+    \begin{tasks}[after-skip=3.5cm](2)
+        \task \(67\ 465 \cdot 10^{3} =\)
+        \task \(\left( 10^{3} \right)^{3} \cdot 3 \cdot 10^{- 5} \cdot \left( 10^{2} \right)^{4} \cdot 5 =\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+    \begin{tasks}(2)
+        \task \(\num{6,7465} \cdot 10^7\)
+        \task \(1,5 \cdot 10^{13}\)
+    \end{tasks}
+\end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
     Effectue la division euclidienne de \num{1478} par 4 et note la relation qui en découle.
-    \vspace*{3cm}
+    \vspace*{5cm}
 \end{appliquer}
 \begin{solappliquer}
     \par
@@ -281,9 +281,24 @@ counter = exercise
     \(\num{1478} = 4 \cdot 369 + 2\)
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Trouve la valeur de \(a\) dans les égalités suivantes.
+    \begin{tasks}[after-skip=1cm](2)
+        \task \(\num{14500} = 14,5 \cdot 10^{a}\)
+        \task \(\num{6784} \cdot 10^{a} = \num{0,0006784}\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+    \begin{tasks}(2)
+        \task \(a=3\)
+        \task \(a=-7\)
+    \end{tasks}
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \begin{connaitre}[points=5]
     Vrai ou faux~? Justifie dans les deux cas.
-    \begin{tasks}[after-item-skip=\fill]
+    \begin{tasks}[after-item-skip=\fill, after-skip=1.5cm]
         \task Yves prétend que le quart de \(4^{6}\) est \(4^{3}\).
         \task \(\left( - a^{2} \cdot 2a \right)^{3} = \  - 2a^{9}\)
         \task \(0,4\) est la valeur approchée par défaut au dixième près de
@@ -303,25 +318,10 @@ counter = exercise
     \end{tasks}
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\begin{appliquer}[points=2]
-    Trouve la valeur de \(a\) dans les égalités suivantes.
-    \begin{tasks}[after-skip=1cm](2)
-        \task \(\num{14500} = 14,5 \cdot 10^{a}\)
-        \task \(\num{6784} \cdot 10^{a} = \num{0,0006784}\)
-    \end{tasks}
-\end{appliquer}
-\begin{solappliquer}
-    \begin{tasks}(2)
-        \task \(a=3\)
-        \task \(a=-7\)
-    \end{tasks}
-\end{solappliquer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=4]
     Complète le tableau ci-dessous.\medbreak
     \(
-    \begin{tblr}{hlines, vlines, colspec={CCCCC},row{2-5}={2em},row{1}={font=\bfseries\boldmath}}
+    \begin{tblr}{hlines, vlines, colspec={CCCCC},row{2-5}={2em},row{1}={font=\bfseries\boldmath}, column{5}={4cm}}
         D  & d & q & r & \text{Égalité}      \\
         51 & 8 &   &   &                     \\
         19 &   &   & 2 &                     \\
@@ -344,31 +344,17 @@ counter = exercise
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
-    Mélissa a fait \SI{8,7}{kg} de confiture. Elle la répartit dans des
-    petits bocaux de \SI{70}{g} pour son hôtel. Réponds aux questions ci-dessous en notant ton raisonnement.
-    \begin{tasks}[after-item-skip=4cm, after-skip=1cm]
-        \task De combien de bocaux aura-t-elle besoin ? 
-        \task Combien de grammes de confiture aurait-elle dû faire en plus pour compléter le dernier bocal ?
-    \end{tasks}
-\end{transferer}
-\begin{soltransferer}
-    \begin{tasks}
-        \task \opidiv[displayintermediary=all,voperation=top,voperator=bottom]{8700}{70}
-        \qquad Elle aura besoin de \(125\) bocaux.
-        \task Il lui reste \SI{20}{g}, il lui manque donc \(70-20=\SI{50}{g}\) pour  compléter le dernier bocal.
-    \end{tasks}
-\end{soltransferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{transferer}[points=3]
     Classe les nombres suivants dans l'ordre croissant.
     \begin{tasks}[label=](3)
-        \task \(A= \num{23456} \cdot 10^{- 4} = \)
+        \task \(A= \num{23456} \cdot 10^{- 4} \)
         \task \(B= \num{23,456} \cdot 10^{6}\)
         \task \(C= \num{0,000023456} \cdot 10^{9}\)
         \task \(D= \num{23456000} \cdot 10^{- 6}\)
         \task \(E= \num{0,0023456} \cdot 10^{- 2}\)
     \end{tasks}
+    \vspace{1cm}
     Classement :
+    \vspace{1cm}
 \end{transferer}
 \begin{soltransferer}
     \begin{tasks}[label=]
@@ -387,6 +373,7 @@ counter = exercise
         \task \hfil\(\dfrac{3}{7}\)
         \task \hfil\(\dfrac{-46}{5}\)
     \end{tasks}
+    \vspace{1cm}
 \end{appliquer}
 \begin{solappliquer}
     \begin{tasks}(2)
@@ -394,6 +381,23 @@ counter = exercise
         \task \(-10<\dfrac{-46}{5}<-9\)
     \end{tasks}
 \end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{transferer}[points=3]
+    Mélissa a fait \SI{8,7}{kg} de confiture. Elle la répartit dans des
+    petits bocaux de \SI{70}{g} pour son hôtel. Réponds aux questions ci-dessous en notant ton raisonnement.
+    \begin{tasks}[after-item-skip=6cm, after-skip=3cm]
+        \task De combien de bocaux aura-t-elle besoin ? 
+        \task Combien de grammes de confiture aurait-elle dû faire en plus pour compléter le dernier bocal ?
+    \end{tasks}
+\end{transferer}
+\begin{soltransferer}
+    \begin{tasks}
+        \task \opidiv[displayintermediary=all,voperation=top,voperator=bottom]{8700}{70}
+        \qquad Elle aura besoin de \(125\) bocaux.
+        \task Il lui reste \SI{20}{g}, il lui manque donc \(70-20=\SI{50}{g}\) pour  compléter le dernier bocal.
+    \end{tasks}
+\end{soltransferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=4]
     Calcule le PGCD des nombres suivants. Utilise si possible une propriété, sinon écris tous tes calculs.
@@ -410,11 +414,30 @@ counter = exercise
     \newpage
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Écris l'expression générale des expressions suivantes.
+    \begin{tasks}
+        \task La somme de deux nombres impairs consécutifs~:
+        \task Deux multiples de 3 consécutifs~:
+        \task Un multiple de 6 augmenté de 5~:
+    \end{tasks}
+    \vspace{0.5cm}
+\end{connaitre}
+\begin{solconnaitre}
+    \begin{tasks}
+        \task \(2n+1 + 2n + 3 = 4n  + 4\)
+        \task \(3n, 3n+3, 3n+6\)
+        \task \(6n+5\)
+    \end{tasks}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \begin{appliquer}[points=4]
     Calcule le PPCM des nombres suivants. Utilise si possible une propriété, sinon écris tous tes calculs.
-    \begin{tasks}[after-skip=3cm](2)
-        \task \(54\) et \(27\)
+    \begin{tasks}[after-skip=5cm](2)
+        \task \(5\) et \(12\)
         \task \(63\) et \(28\)
     \end{tasks}
 \end{appliquer}
@@ -425,33 +448,18 @@ counter = exercise
     \end{tasks}
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{connaitre}[points=3]
-    Écris l'expression générale des expressions suivantes.
-    \begin{tasks}
-        \task La somme de deux nombres impairs consécutifs~:
-        \task Deux multiples de 3 consécutifs~:
-        \task Un multiple de 6 augmenté de 5~:
-    \end{tasks}
-\end{connaitre}
-\begin{solconnaitre}
-    \begin{tasks}
-        \task \(2n+1 + 2n + 3 = 4n  + 4\)
-        \task \(3n, 3n+3, 3n+6\)
-        \task \(6n+5\)
-    \end{tasks}
-\end{solconnaitre}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
     Elisa a fait des biscuits pour les vendre à la fête du quartier. Elle a
     fait 36 biscuits au chocolat et 60 biscuits au sucre. Elle veut tous les
-    mettre dans des boîtes contenant chacune exactement les mêmes nombres
-    de biscuits. Quel est le plus grand nombre de boîtes identiques qu'elle peut faire ? Note tout ton raisonnement.
-    \vspace*{3cm}
+    mettre dans des boîtes contenant chacune exactement le même nombre
+    de biscuits au sucre et le même nombre de biscuits au chocolat. Quel est le plus grand nombre de boîtes identiques qu'elle peut faire ? Note tout ton raisonnement.
+    \vspace*{6cm}
 \end{transferer}
 \begin{soltransferer}
     \(PGCD(36,60) = 12\). Elle peut donc concevoir au maximum 12 boîtes de biscuits.
 \end{soltransferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \begin{appliquer}[points=2]
     Classe les fractions suivantes par ordre croissant.
     \begin{tasks}[label=](5)
@@ -461,14 +469,17 @@ counter = exercise
         \task \(D=- \dfrac{3}{42}\)
         \task \(E=\dfrac{- 11}{8}\)
     \end{tasks}
+    \vspace{1cm}
     Classement : 
+    \vspace{1cm}
 \end{appliquer}
 \begin{solappliquer}
     E < D < C < A < B
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
-    Pour l'anniversaire d'Eliott, deux de ses amis ont prévu de lui envoyer un SMS à intervalles réguliers. Ils commencent en même temps à 8 heures. Le premier envoie un SMS toutes les 36 minutes, l'autre toutes les 45 minutes. À quelle heure Eliott recevra-t-il pour la première fois deux SMS en même temps (autre que le premier) ?\vfill
+    Pour l'anniversaire d'Eliott, deux de ses amis ont prévu de lui envoyer un SMS à intervalles réguliers. Ils commencent en même temps à 8 heures. Le premier envoie un SMS toutes les 36 minutes, l'autre toutes les 45 minutes. À quelle heure Eliott recevra-t-il pour la première fois deux SMS en même temps (autre que le premier) ?
+    \vspace{7cm}
 \end{transferer}
 \begin{soltransferer}
     \(36 = 2^2 \cdot 3^2\) et \(45 = 3^2 \cdot 5\) donc \(PPCM(36,45=2^2) = \cdot 3^2 \cdot 5 = 180\). Eliott recevra deux SMS en même temps à 11 heure.
