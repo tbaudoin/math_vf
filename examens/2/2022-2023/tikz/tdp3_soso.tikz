@@ -4,6 +4,7 @@
     \tkzDefPointsBy[rotation=center A angle -80](A,M,I,S){}
     \tkzDrawPolygon[color=\figcolor](M',A',S',I')
     \tkzDrawPolygon(M,A,S,I)
+    \tkzDrawPoints(A,M,I,S)
     \tkzLabelPoints[above](M)
     \tkzLabelPoints[left](A)
     \tkzLabelPoints[right](S)
