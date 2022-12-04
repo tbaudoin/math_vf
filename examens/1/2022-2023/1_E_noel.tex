@@ -1,0 +1,435 @@
+\documentclass[parskip=half-,DIV=12,twoside=semi]{scrartcl}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[sfmath, light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{frenchmath}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\textbf{\alph*)}}
+\usepackage{tasks}
+\settasks{label-format=\bfseries}
+\usepackage[locale=FR]{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{babel, patterns}
+\usepackage{tkz-base}
+\usepackage{tkz-euclide}
+\usepackage{tikzscale}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{tabularray}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, xparse}
+\usepackage[use-aux, no-files]{xsim}
+
+\DeclareExerciseEnvironmentTemplate{interrogation}
+{%
+    {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
+    \GetExercisePropertyT{points}{\marginpar{\hfill/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue}
+}%
+{\bigbreak}
+
+% Mes environnements
+\DeclareExerciseType{connaitre}{
+exercise-env = connaitre ,
+solution-env = solconnaitre ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{appliquer}{
+exercise-env = appliquer ,
+solution-env = solappliquer ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{transferer}{
+exercise-env = transferer ,
+solution-env = soltransferer ,
+exercise-name = \XSIMtranslate{exercise} ,
+exercises-name = \XSIMtranslate{exercises} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+
+\xsimsetup{
+    exercise/template = interrogation,
+    solution/template = interrogation,
+}
+
+\newcommand{\figcolor}{white}
+\newcommand{\Titre}{TJF - Les inéquations}
+\newcommand{\Date}{Vendredi 25 novembre 2022}
+\newcommand{\Classe}{}
+
+% \usepackage{scrlayer-scrpage}
+% \setlength{\headheight}{50pt}
+% \lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
+% \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
+
+\setlength{\textheight}{700pt}
+
+\begin{document}
+\raggedbottom
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ENTETE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=\linewidth]{img/entete.pdf}
+\vspace{\smallskipamount}
+\begin{tblr}{%
+        width=\textwidth,%
+        colspec={|XXX|},%
+        cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+        cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+        cell{5}{1}={r=1,c=2}{l},
+        cell{5}{3}={r=4,c=1}{r},
+        cell{6}{1}={r=1,c=3}{l},%
+        cell{7}{1}={r=1,c=3}{l},%
+        cell{8}{1}={r=1,c=3}{l},%
+        rowsep=1ex%
+    }%
+    \hline
+    % cell1
+    Examen de mathématiques                                    &             &          \\
+    % cell2
+   Noël 2022                                                   &             &          \\
+    \hline
+    % cell3
+    Nom :                                                      &             & Classe : \\
+    % cell4
+    Prénom :                                                   &             & Numéro : \\
+    \hline
+    % cell5
+    Professeur : Baudoin, Debroux, Janssens      &             &          \\
+    % cell6
+    Date et heure: Mardi 13 décembre 2022 de 8h20 à 10h30                          \\
+    % cell7
+    Matériel autorisé : Équerre multifonction, compas, crayons de couleur, calculatrice                  \\
+    % cell8
+    Matériel à distribuer :                                                             \\
+    \hline
+    % cell9
+    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}  & Remarques : &          \\
+    % cell 10
+    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}  &             &          \\
+    % cell 11
+    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{} &             &          \\
+    Total : \qquad/\TotalExerciseGoal{points}{}{}              &             &          \\
+    \hline
+\end{tblr}%
+\vspace{\smallskipamount}
+\begin{scriptsize}%
+    Rue de linthout, 30 - 1030 Bruxelles%
+\end{scriptsize}%
+\medbreak
+Quelques conseils pour réussir ton examen : 
+\begin{enumerate}[itemsep=0.5cm, label=$\bullet$]
+    \item Toutes tes réponses doivent être soignées et écrites sur ce questionnaire.
+    \item Ne te précipite pas. Commence par identifier ce que tu dois faire en lisant correctement et attentivement l'énoncé. 
+    \item S'il y a plusieurs questions dans un énoncé, veille à répondre à chacune d'entre elles.
+    \item Utilise le vocabulaire adéquat. 
+    \item Veille à faire tes constructions au crayon et proprement.
+    \item Commence par répondre à ce que tu maitrises, et reviens ensuite sur les questions qui te demandent plus de temps. 
+    \item Prends le temps de bien te relire ! 
+\end{enumerate}
+
+\vfill
+\begin{center}
+    Bon examen ! 
+\end{center}
+\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONTENU
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Complète le tableau suivant.\par
+    \begin{tblr}{
+            hlines,
+            vlines,
+            rowsep=1em,
+            row{1}={font=\bfseries},
+            rows={m},
+            column{3-5}={4cm},
+            columns={c},
+            column{2}={1.5cm},}
+        Opération & Signe & Nom du premier élément & Nom du deuxième élément & Nom du résultat \\
+        Addition & & & & \\
+         & & Facteur & & \\
+         & & & Diviseur & \\
+    \end{tblr}
+\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=6]
+    Vrai ou faux? Justifie dans tous les cas. 
+    \begin{enumerate}[itemsep=2cm]
+        \item L'addition et la soustraction sont des opérations commutatives. 
+        \item Pauline dit que $7\cdot 2 \cdot 0 = 14$
+        \item 42 est un chiffre
+        \item 15 est un nombre naturel 
+        \item 25 est un nombre premier 
+        \item 18 est un diviseur de 9
+    \end{enumerate}
+    \vspace{2cm}
+\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=2]
+    Une table de salon pèse \SI{75}{kg}. Elle est composée de \SI{70}{\%} de bois, de \SI[]{20}{\%} de métal, et le reste de verre. Calcule ce que pèse le verre et laisse toutes tes
+étapes visibles
+\vspace{5cm}
+\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Un commerçant achète de la marchandise pour \SI[]{360000}{€}. En payant directement, il obtient une remise de \SI[]{2}{\%}. Peut-il s’offrir, avec cette réduction, une moto à \SI[]{6000}{€} ? Laisse ta démarche visible.
+\vspace{4cm}
+\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Josefina travaille en tant qu’étudiante dans une boulangerie où son patron lui paie
+un salaire de \SI[]{500}{€} par mois. Comme elle travaille bien, son patron lui offre une
+augmentation de \SI[]{2}{\%} sur son salaire mensuel. Ensuite, l’indexation arrive et cela
+augmente tous les salaires de \SI[]{1}{\%}. Quel est le nouveau salaire de Josefina après ces deux opérations ? Laisse ta démarche visible.
+\vspace{4cm}
+\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=4]
+    Définis les mots suivants et donne ensuite un exemple. 
+    \begin{enumerate}
+        \item Un nombre premier est \dotfill \par \dotfill \par
+        Exemple : 
+        \item La valeur absolue d'un nombre est \dotfill \par \dotfill \par 
+        Exemple :
+    \end{enumerate}
+\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=4]
+    Code les phrases suivantes. Ne calcule pas le résultat.
+    \begin{enumerate}[itemsep=1.5cm]
+        \item Le produit de 3 par la somme de 2 et 4 
+        \item La somme de 3 et de l'opposé de 3 
+        \item Le produit de la somme de 2 et 4 par le carré de 9 
+        \item La valeur absolue de l'opposé de 4 est 4 
+    \end{enumerate}
+    \vspace{1.5cm}
+\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=1]
+    Écris l'ensemble des diviseurs de 12. 
+    \vspace{2cm}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=1]
+    Écris l'ensemble des 10 premiers multiples de 12. 
+    \vspace{2cm}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Décode les expressions mathématiques suivantes. Ne calcule pas le résultat. 
+    \begin{enumerate}[itemsep=2.5cm]
+        \item $7\cdot 3 = 21$
+        \item $4\cdot 4 - 16=0$
+        \item $-3+1=-2$
+    \end{enumerate}
+    \vspace{2.5cm}
+\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=8]
+    Donne un exemple qui remplit les conditions suivantes. 
+    \begin{enumerate}[itemsep=.5cm]
+        \item Un nombre inférieur à 2 dont la valeur absolue est plus grande que 12 : \dotfill
+        \item Un nombre premier plus grand que 10 :\dotfill
+        \item Deux nombres opposés : \dotfill
+        \item Deux nombres premiers consécutifs : \dotfill
+        \item Un nombre carré plus petit que 100 : \dotfill
+        \item Un nombre qui est un multiple de 4 et de 11 : \dotfill
+        \item Un nombre entier entre -20 et -8 : \dotfill
+        \item Un multiple de 3 qui est premier : \dotfill
+    \end{enumerate}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Calcule en une seule étape. 
+    \begin{multicols}{2}
+         \begin{enumerate}[itemsep=1cm]
+        \item $3^4=$
+        \item $28^0=$
+        \item $9^2=$
+        \item $1^{28}=$
+    \end{enumerate} 
+    \end{multicols}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=12]
+    Calcule le résultat en respectant la priorité des opérations. Laisse toutes tes étapes visibles. 
+    \begin{enumerate}[itemsep=3cm]
+        \item $8+2\cdot 3-2=$
+        \item $4\cdot \left(5+3:3\right)=$
+        \item $5\cdot 5 + 2^2=$
+        \item $8\cdot 3-\left(16/4\right)\cdot 2=$
+        \item $2+(3-2)\cdot 4=$
+        \item $\left(30+20:4\cdot 12 \right) \cdot \left(24-8\cdot 3\right)=$
+    \end{enumerate}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=1]
+    Dans un repère cartésien, comment appelle-t-on l'axe horizontal? 
+    \vspace{1.5cm}
+\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Écris les nombres suivants comme un produit de facteurs premiers. \\
+    144 \hfil 200
+    \vspace{5cm}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=2]
+    Quentin fait la collection de Playmobil. Il veut faire un défilé et remarque qu’il peut
+faire des rangées de 2, 4 et 9 et qu’à chaque fois les rangées seront complètes et
+il ne restera pas de Playmobil sur le côté. Il sait qu’il en a entre 150 et 200. Combien de
+Playmobils possède Quentin ? Laisse ta démarche visible.
+\vspace{7cm}
+\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=4]
+    Voici un repère cartésien. 
+    \begin{enumerate}
+        \item Place les points $F(5;-2), G(-2;-2), H(4;5)$ et $M(3;-2)$.
+        \item Note (en-dessous du repère) les coordonnées des points $A, B, C$ et $D$.
+    \end{enumerate}
+    \begin{center}
+        \includegraphics[]{img/repere.png} %\FIXME: repère à refaire avec x et y
+    \end{center}
+    Coordonnées des points : 
+    \vspace{2cm}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=8]
+    Mélanie a représenté sous forme d'un graphique les coûts par secteur d'activité pour un voyage à New York. Mélanie estime son voyage à \SI[]{1250}{€}.
+    \begin{center}
+        \includegraphics[]{img/NY.png}
+    \end{center}
+        \begin{enumerate}[itemsep=2cm]
+            \item Quel est le secteur le plus cher? 
+            \item Quels secteurs représentent plus de $\dfrac{1}{4}$ du budget?
+            \item Combien les trajets  vont-ils lui coûter (en €)? 
+            \item Mélanie vient d'apprendre qu'en tant qu'étudiante, elle bénéficie d'une réduction de \SI[]{40}{\%} sur les visites. Combien vont finalement lui coûter les visites?
+            \item Quel est le nom de ce type de graphique? 
+            \item Construis ci-dessous le diagramme en bâtonnets qui représente cette répartition des coûts (en \%) en fonction des secteurs d'activités pour le voyage à New York.
+        \end{enumerate}
+        \includegraphics[]{img/quadril.png}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=6]
+    En 1ère, le professeur de mathématiques a mené une enquête auprès de ses élèves concernant leur sport préféré, et a réuni toutes les données dans le tableau ci-dessous. 
+    \begin{tblr}
+       {width=\textwidth, 
+        hlines,
+        vlines, 
+        row{1}={font=\bfseries},
+        rows={m},
+        columns={2.4cm, c}}
+        Tennis & Foot & Volley & Basket & Danse & \\
+        7 & 3 & 8 & 2 & 5 & \\
+    \end{tblr}
+    \begin{enumerate}[itemsep=1.5cm]
+        \item Combien y a-t-il d'élèves dans la classe? 
+        \item Quel est le pourcentage d'élèves qui préfèrent le tennis?
+        \item Construis le diagramme circulaire qui représente la situation après avoir complété le tableau ci-dessous avec les étapes nécessaires.
+    \end{enumerate}
+    \begin{tblr}
+        {width=\textwidth, 
+         hlines,
+         vlines, 
+         row{1}={font=\bfseries},
+         rows={m},
+         columns={2.4cm, c}}
+         Tennis & Foot & Volley & Basket & Danse & \\
+          &  &  &  & & \\
+          &  &  &  & & \\
+     \end{tblr}
+     \begin{center}
+        \includegraphics[]{img/cercle.png}
+     \end{center}
+\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Compare les nombres suivants. Utilise les signes <, > ou =.
+    \begin{multicols}{2}
+       \begin{enumerate} [itemsep=0.5cm, label=\ ]
+        \item -4 \ldots 6 
+        \item 2 \ldots 5 
+        \item -25 \ldots -30 
+        \item |-4| \ldots 4
+    \end{enumerate} 
+    \end{multicols}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=2]
+    Complète le tableau suivant. \\
+    \begin{tblr}
+        { hlines,
+         vlines, 
+         row{1}={font=\bfseries},
+         rows={m},
+         columns={2cm, c}}
+         Nombre de départ & Son opposé & Sa valeur absolue \\
+         14 & & \\
+         -6 & & \\
+         0 & & \\
+        1 & & \\
+     \end{tblr}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=3]
+    Écris le calcul sans parenthèse en appliquant la règle des signes successifs, puis effectue.
+    \begin{multicols}{2}
+        \begin{enumerate}[itemsep=2cm]
+        \item $(+14) + (-25)=$
+        \item $28 - (-45)=$
+        \item $(-42)+(-64)=$
+        \item $-17-(+35)=$
+        \item $-18+(-2)=$
+        \item $10-(-10)=$
+    \end{enumerate}
+    \end{multicols}
+    \vspace{2cm}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=3]
+    Effectue. 
+    \begin{multicols}{2}
+        \begin{enumerate}[itemsep=2cm]
+            \item $5-10+9-3=$
+            \item $-17+23=$
+            \item $-15-13=$
+            \item $10-25+3=$
+            \item $-5-10-9+3=$
+            \item $-5+7-8=$
+        \end{enumerate}
+    \end{multicols}
+    \vspace{2cm}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
