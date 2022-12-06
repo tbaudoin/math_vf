@@ -13,7 +13,7 @@
 \setlist[enumerate]{label=\textbf{\alph*)}}
 \usepackage{tasks}
 \settasks{label-format=\bfseries}
-\usepackage{eurosym}
+\usepackage{eurosym} % \EUR{8} --> 8 €
 \usepackage[locale=FR]{siunitx}
 \DeclareSIUnit{\sieuro}{\mbox{\euro}}
 \usepackage{tikz}
@@ -190,11 +190,11 @@ Quelques conseils pour réussir ton examen :
     Vrai ou faux? Justifie dans tous les cas.
     \begin{enumerate}[itemsep=2cm]
         \item L'addition et la soustraction sont des opérations commutatives.
-        \item Pauline dit que $7\cdot 2 \cdot 0 = 14$
-        \item 42 est un chiffre
-        \item 15 est un nombre naturel
-        \item 25 est un nombre premier
-        \item 18 est un diviseur de 9
+        \item Pauline dit que $7\cdot 2 \cdot 0 = 14$.
+        \item 15 est un nombre naturel.
+        \item 25 est un nombre premier.
+        \item 18 est un diviseur de 9.
+        \item \(3^3 = 9\).
     \end{enumerate}
     \vspace{2cm}
 \end{connaitre}
@@ -252,9 +252,9 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=8]
     Donne un exemple qui remplit les conditions suivantes.
-    \begin{enumerate}[itemsep=1cm]
+    \begin{enumerate}[itemsep=1cm, after=\vspace*{1cm}]
         \item Un nombre inférieur à 2 dont la valeur absolue est plus grande que 12.
-        \item Un nombre premier plus grand que 10 
+        \item Un nombre premier plus grand que 10
         \item Deux nombres opposés.
         \item Deux nombres premiers consécutifs.
         \item Un nombre carré plus petit que 100.
@@ -263,18 +263,18 @@ Quelques conseils pour réussir ton examen :
         \item Un multiple de 3 qui est premier.
     \end{enumerate}
 \end{connaitre}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appliquer}[points=2]
-    Calcule en une seule étape.
-    \begin{multicols}{2}
-        \begin{enumerate}[itemsep=1cm]
-            \item $3^4=$
-            \item $28^0=$
-            \item $9^2=$
-            \item $1^{28}=$
-        \end{enumerate}
-    \end{multicols}
-\end{appliquer}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{appliquer}[points=2]
+%     Calcule en une seule étape.
+%     \begin{multicols}{2}
+%         \begin{enumerate}[itemsep=1cm]
+%             \item $3^4=$
+%             \item $28^0=$
+%             \item $9^2=$
+%             \item $1^{28}=$
+%         \end{enumerate}
+%     \end{multicols}
+% \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
     Écris les nombres suivants comme un produit de facteurs premiers.
@@ -291,7 +291,7 @@ Quelques conseils pour réussir ton examen :
         \item $4\cdot \left(5+3:3\right)=$
         \item $8\cdot 3-\left(16:4\right)\cdot 2=$
         \item $2+(3-2)\cdot 4=$
-        \item $\left(30+20:4\cdot 12 \right) \cdot \left(24-8\cdot 3\right)=$
+        \item $\left(24-8\cdot 3\right)\cdot\left(30+20:4\cdot 12 \right)=$
     \end{enumerate}
 \end{appliquer}
 \newpage
@@ -300,7 +300,7 @@ Quelques conseils pour réussir ton examen :
     Quentin fait la collection de Playmobil. Il veut faire un défilé et remarque qu'il peut
     faire des rangées de 2, 4 et 9 et qu'à chaque fois les rangées seront complètes et
     il ne restera pas de Playmobil sur le côté. Il sait qu'il en a entre 150 et 200. Combien de
-    Playmobils possède Quentin ? Laisse ta démarche visible.
+    Playmobil possède Quentin ? Laisse ta démarche visible.
 \end{transferer}
 \vfil
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -341,10 +341,10 @@ Quelques conseils pour réussir ton examen :
     Compare. Utilise les signes <, > ou =.
     \begin{multicols}{2}
         \begin{enumerate} [itemsep=0.5cm, label=\ ]
-            \item -4 \ldots 6
-            \item 2 \ldots 5
-            \item -25 \ldots -30
-            \item |-4| \ldots 4
+            \item -4 \quad\ldots\quad 6
+            \item 2 \quad\ldots\quad 5
+            \item -25 \quad\ldots\quad -30
+            \item |-4| \quad\ldots\quad 4
         \end{enumerate}
     \end{multicols}
 \end{appliquer}
@@ -352,31 +352,39 @@ Quelques conseils pour réussir ton examen :
 \newpage
 \begin{appliquer}[points=8]
     %\FIXME: s'arranger niveau mise en page que tout rentre sur une seule page
-    Mélanie a représenté sous forme d'un diagramme les coûts par secteur d'activité pour un voyage à New York. Mélanie estime son voyage à \SI[]{1250}{\sieuro}.
-    \begin{center}
-        \begin{tikzpicture}[scale=0.5]
-            \pie[
-                text = legend
-            ]
-            {
-                36/Trajets,
-                20/Visites,
-                28/Logement,
-                16/Nourriture
-            }
-        \end{tikzpicture}
-    \end{center}
+    \tcbsidebyside[blanker]
+    {
+        Mélanie a représenté sous forme d'un diagramme les coûts par secteur d'activité pour un voyage à New York. Mélanie estime son voyage à \SI[]{1250}{\sieuro}.
+    }
+    {
+        \begin{center}
+            \begin{tikzpicture}[scale=0.5]
+                \pie[
+                    text = legend
+                ]
+                {
+                    36/Trajets,
+                    20/Visites,
+                    28/Logement,
+                    16/Nourriture
+                }
+            \end{tikzpicture}
+        \end{center}
+    }
+
     \begin{enumerate}[itemsep=1cm]
         \item Quel est le secteur le plus cher?
         \item Quels secteurs représentent plus de $\dfrac{1}{4}$ du budget?
         \item Combien les trajets  vont-ils lui coûter (en \euro)?
-        \item Mélanie vient d'apprendre qu'en tant qu'étudiante, elle bénéficie d'une réduction de \SI[]{40}{\%} sur les visites. Combien vont finalement lui coûter les visites?
+        \item Mélanie vient d'apprendre qu'en tant qu'étudiante, elle bénéficie d'une réduction de \SI[]{40}{\%} sur les visites. Combien vont finalement lui coûter les visites?\vfill
         \item Quel est le nom de ce type de diagramme ?
         \item Construis ci-dessous le diagramme en bâtonnets qui représente cette répartition des coûts (en \%) en fonction des secteurs d'activités pour le voyage à New York.
               \begin{center}
-                  \begin{tikzpicture}
-                      \tkzInit[xmin=0, xmax=5, ymin=0, ymax=40, ystep=5]
+                  \begin{tikzpicture}[scale=0.8]
+                      \tkzInit[xmin=0, xmax=9, ymin=0, ymax=40, ystep=4]
                       \tkzGrid
+                      \tkzDrawX[noticks]
+                      \tkzAxeY
                   \end{tikzpicture}
               \end{center}
     \end{enumerate}
@@ -398,24 +406,33 @@ Quelques conseils pour réussir ton examen :
     \begin{enumerate}[itemsep=1cm]
         \item Combien y a-t-il d'élèves dans la classe?
         \item Quel est le pourcentage d'élèves qui préfèrent le tennis?
-        \item Converti les valeurs du tableau en degré puis représente les données à l'aide d'un diagramme circulaire.
+        \item Complète le tableau ci-dessous puis représente les données à l'aide d'un diagramme circulaire. N'oublie pas la légende.
     \end{enumerate}
     \begin{tblr}
-        {colspec={CCCCC},
-            hlines,
-            vlines,
-            row{1}={font=\bfseries},
-            rows={1cm, m},}
-        Tennis & Foot & Volley & Basket & Danse \\
-             7      & 3    & 8      & 2      & 5     \\
-               &      &        &        &       \\
+        {colspec={cCCCCC},
+        hlines,
+        vlines,
+        row{1}={font=\bfseries},
+        rows={1cm, m},
+        hline{1,2}={1}{white},
+                vline{1}={1,2}{white}}
+               & Tennis & Foot & Volley & Basket & Danse \\
+               & 7      & 3    & 8      & 2      & 5     \\
+        \%     &        &      &        &        &       \\
+        degrés &        &      &        &        &       \\
     \end{tblr}
-    \begin{center}
+    \vfil
+    % FIXME: aligner le cercle et la légende sur le haut.
+    \tcbsidebyside[blanker]
+    {
         \begin{tikzpicture}
             \draw(0,0)node{\(\times\)};
             \draw (0,0) circle (3cm);
         \end{tikzpicture}
-    \end{center}
+    }
+    {
+        Légende :
+    }
 \end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage

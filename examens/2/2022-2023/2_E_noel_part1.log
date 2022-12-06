@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  6 DEC 2022 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  6 DEC 2022 21:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/tbaudoin/Documents/GitHub/math_vf/examens/1/2022-2023/1_E_noel
-(/home/tbaudoin/Documents/GitHub/math_vf/examens/1/2022-2023/1_E_noel.tex
+**/home/tbaudoin/Documents/GitHub/math_vf/examens/2/2022-2023/2_E_noel_part1
+(/home/tbaudoin/Documents/GitHub/math_vf/examens/2/2022-2023/2_E_noel_part1.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2021/11/13 v3.35 KOMA-Script document class (article)
@@ -31,15 +31,10 @@ Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 135.
-Package scrartcl Info: You've used standard option `12pt'.
-(scrartcl)             This is correct!
-(scrartcl)             Internally I'm using `fontsize=12pt'.
-(scrartcl)             If you'd like to set the option with \KOMAoptions,
-(scrartcl)             you'd have to use `fontsize=12pt' there
-(scrartcl)             instead of `12pt', too.
-Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input line 2242.
- (/usr/share/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
-File: scrsize12pt.clo 2021/11/13 v3.35 KOMA-Script font size class option (12pt)
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 2242.
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/11/13 v3.35 KOMA-Script font size class option (11pt)
 ) (/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2021/11/13 v3.35 KOMA-Script package (type area)
 \ta@bcor=\skip48
@@ -53,17 +48,17 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 448.13095pt
-(typearea)              DIV departure   = -6%
+(typearea)              DIV departure   = -14%
 (typearea)              \evensidemargin = 2.4185pt
 (typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 635.5pt
-(typearea)              \topmargin      = -41.72441pt
-(typearea)              \headheight     = 18.125pt
-(typearea)              \headsep        = 21.75pt
-(typearea)              \topskip        = 12.0pt
-(typearea)              \footskip       = 50.75pt
-(typearea)              \baselineskip   = 14.5pt
+(typearea)              \textheight     = 636.60028pt
+(typearea)              \topmargin      = -39.24942pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 1743.
 )
 \c@part=\count186
@@ -905,14 +900,11 @@ Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
 Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
 (xtemplate)             line 450.
 
- (/usr/share/texmf-dist/tex/latex/tasks/tasks.cfg)) (/usr/share/texmf-dist/tex/latex/eurosym/eurosym.sty
-Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box107
-) (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
+ (/usr/share/texmf-dist/tex/latex/tasks/tasks.cfg)) (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2022-04-04 v3.0.50 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen189
-\l__siunitx_angle_marker_box=\box108
-\l__siunitx_angle_unit_box=\box109
+\l__siunitx_angle_marker_box=\box107
+\l__siunitx_angle_unit_box=\box108
 \l__siunitx_compound_count_int=\count317
  (/usr/share/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
@@ -934,13 +926,13 @@ Package pdftexcmds Info: \pdfdraftmode found.
 \l__siunitx_number_min_integer_int=\count320
 \l__siunitx_number_round_precision_int=\count321
 \l__siunitx_number_group_minimum_int=\count322
-\l__siunitx_table_tmp_box=\box110
+\l__siunitx_table_tmp_box=\box109
 \l__siunitx_table_tmp_dim=\dimen190
 \l__siunitx_table_column_width_dim=\dimen191
-\l__siunitx_table_integer_box=\box111
-\l__siunitx_table_decimal_box=\box112
-\l__siunitx_table_before_box=\box113
-\l__siunitx_table_after_box=\box114
+\l__siunitx_table_integer_box=\box110
+\l__siunitx_table_decimal_box=\box111
+\l__siunitx_table_before_box=\box112
+\l__siunitx_table_after_box=\box113
 \l__siunitx_table_before_dim=\dimen192
 \l__siunitx_table_carry_dim=\dimen193
 \l__siunitx_unit_tmp_int=\count323
@@ -951,18 +943,18 @@ Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen194
-\ar@mcellbox=\box115
+\ar@mcellbox=\box114
 \extrarowheight=\dimen195
 \NC@list=\toks27
 \extratabsurround=\skip79
 \backup@length=\skip80
-\ar@cellbox=\box116
+\ar@cellbox=\box115
 )) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks28
 \pgfutil@tempdima=\dimen196
 \pgfutil@tempdimb=\dimen197
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box117
+\pgfutil@abb=\box116
 ) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
@@ -1044,7 +1036,7 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen266
 \pgfmath@count=\count333
-\pgfmath@box=\box118
+\pgfmath@box=\box117
 \pgfmath@toks=\toks35
 \pgfmath@stack@operand=\toks36
 \pgfmath@stack@operation=\toks37
@@ -1076,9 +1068,9 @@ File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@start@additional=\dimen284
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box119
-\pgf@hbox=\box120
-\pgf@layerbox@main=\box121
+\pgfpic=\box118
+\pgf@hbox=\box119
+\pgf@layerbox@main=\box120
 \pgf@picture@serial@count=\count335
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -1106,7 +1098,7 @@ File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box122
+\pgfexternal@startupbox=\box121
 )) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -1117,7 +1109,7 @@ File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box123
+\pgfnodeparttextbox=\box122
 ) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
@@ -1148,10 +1140,10 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@lastmovetoy=\dimen301
 \tikzleveldistance=\dimen302
 \tikzsiblingdistance=\dimen303
-\tikz@figbox=\box124
-\tikz@figbox@bg=\box125
-\tikz@tempbox=\box126
-\tikz@tempbox@bg=\box127
+\tikz@figbox=\box123
+\tikz@figbox@bg=\box124
+\tikz@tempbox=\box125
+\tikz@tempbox@bg=\box126
 \tikztreelevel=\count339
 \tikznumberofchildren=\count340
 \tikznumberofcurrentchild=\count341
@@ -1199,11 +1191,11 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfdecorationsegmentamplitude=\dimen314
 \pgfdecorationsegmentlength=\dimen315
 )
-\tikz@lib@dec@box=\box128
+\tikz@lib@dec@box=\box127
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.shapes.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.shapes.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.text.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.text.code.tex
-\pgf@lib@dec@text@box=\box129
+\pgf@lib@dec@text@box=\box128
 )
-\tikz@lib@dec@te@box=\box130
+\tikz@lib@dec@te@box=\box129
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
 \pgf@intersect@solutions=\count348
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
@@ -1397,151 +1389,150 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
-\tikzscale@measuredSize=\box131
-) (/usr/share/texmf-dist/tex/latex/pgf-pie/pgf-pie.sty
-Package: pgf-pie 2021/07/30 v0.6 Some LaTeX macros for pie chart by using PGF/Tikz package.
- (/usr/share/texmf-dist/tex/latex/pgf-pie/tikzlibrarypie.code.tex
-\pgfpie@angleEnd=\dimen337
-\pgfpie@explodeLength=\count373
-\pgfpie@colorLength=\count374
-\pgfpie@sliceLength=\count375
-)) (/usr/share/texmf-dist/tex/latex/tabularray/tabularray.sty
+\tikzscale@measuredSize=\box130
+) (/usr/share/texmf-dist/tex/generic/systeme/systeme.sty (/usr/share/texmf-dist/tex/generic/systeme/systeme.tex
+\SYS_systemecode=\toks43
+\SYS_systempreamble=\toks44
+\SYSeqnum=\count373
+)
+Package: systeme 2020/05/03 v0.34 Mise en forme de systemes d'equations (CT)
+) (/usr/share/texmf-dist/tex/latex/tabularray/tabularray.sty
 Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
-\l__tblr_a_int=\count376
-\l__tblr_c_int=\count377
-\l__tblr_r_int=\count378
-\l__tblr_d_dim=\dimen338
-\l__tblr_h_dim=\dimen339
-\l__tblr_o_dim=\dimen340
-\l__tblr_p_dim=\dimen341
-\l__tblr_q_dim=\dimen342
-\l__tblr_r_dim=\dimen343
-\l__tblr_s_dim=\dimen344
-\l__tblr_t_dim=\dimen345
-\l__tblr_v_dim=\dimen346
-\l__tblr_w_dim=\dimen347
-\l__tblr_a_box=\box132
-\l__tblr_b_box=\box133
-\l__tblr_c_box=\box134
-\l__tblr_d_box=\box135
-\g__tblr_table_count_int=\count379
-\c@rownum=\count380
-\c@colnum=\count381
-\c@rowcount=\count382
-\c@colcount=\count383
-\abovesep=\dimen348
-\belowsep=\dimen349
-\leftsep=\dimen350
-\rightsep=\dimen351
-\g_tblr_level_int=\count384
-\g__tblr_data_row_key_count_int=\count385
-\g__tblr_data_column_key_count_int=\count386
-\g__tblr_data_cell_key_count_int=\count387
-\g__tblr_array_int=\count388
-\l__tblr_key_count_int=\count389
-\l__tblr_key_quotient_int=\count390
-\l__tblr_key_quotient_two_int=\count391
-\l__tblr_key_remainder_int=\count392
-\g__tblr_data_str_value_count_int=\count393
-\rulewidth=\dimen352
-\l__tblr_strut_ht_box=\box136
-\l__tblr_strut_dp_box=\box137
-\g__tblr_cell_wd_dim=\dimen353
-\g__tblr_cell_ht_dim=\dimen354
-\g__tblr_cell_head_dim=\dimen355
-\g__tblr_cell_foot_dim=\dimen356
-\l__column_target_dim=\dimen357
-\l__tblr_caption_box=\box138
-\l__tblr_caption_left_box=\box139
-\l__tblr_row_head_box=\box140
-\l__tblr_row_foot_box=\box141
-\l__tblr_row_head_foot_dim=\dimen358
-\tablewidth=\dimen359
-\l__tblr_table_firsthead_box=\box142
-\l__tblr_table_middlehead_box=\box143
-\l__tblr_table_lasthead_box=\box144
-\l__tblr_table_firstfoot_box=\box145
-\l__tblr_table_middlefoot_box=\box146
-\l__tblr_table_lastfoot_box=\box147
-\l__tblr_remain_height_dim=\dimen360
-\l__tblr_long_from_int=\count394
-\l__tblr_long_to_int=\count395
-\l__tblr_curr_i_int=\count396
-\l__tblr_prev_i_int=\count397
-\l__tblr_table_page_int=\count398
-\l__tblr_table_head_box=\box148
-\l__tblr_table_foot_box=\box149
-\l__tblr_table_head_foot_dim=\dimen361
-\l__tblr_table_head_body_foot_dim=\dimen362
-\l__tblr_table_box=\box150
-\l__tblr_table_hlines_box=\box151
-\l__tblr_hline_box=\box152
-\l__tblr_row_box=\box153
-\l__tblr_col_o_wd_dim=\dimen363
-\l__tblr_col_b_wd_dim=\dimen364
-\l__tblr_hline_leftskip_dim=\dimen365
-\l__tblr_hline_rightskip_dim=\dimen366
-\l__tblr_row_ht_dim=\dimen367
-\l__tblr_row_dp_dim=\dimen368
-\l__tblr_row_abovesep_dim=\dimen369
-\l__tblr_row_belowsep_dim=\dimen370
-\l__tblr_row_vlines_box=\box154
-\l__tblr_vline_box=\box155
-\l__tblr_cell_box=\box156
-\l__row_upper_dim=\dimen371
-\l__row_lower_dim=\dimen372
-\l__row_vpace_dim=\dimen373
-\l__tblr_vline_aboveskip_dim=\dimen374
-\l__tblr_vline_belowskip_dim=\dimen375
-\l__tblr_cell_wd_dim=\dimen376
-\l__tblr_cell_ht_dim=\dimen377
-\l__tblr_diag_box=\box157
+\l__tblr_a_int=\count374
+\l__tblr_c_int=\count375
+\l__tblr_r_int=\count376
+\l__tblr_d_dim=\dimen337
+\l__tblr_h_dim=\dimen338
+\l__tblr_o_dim=\dimen339
+\l__tblr_p_dim=\dimen340
+\l__tblr_q_dim=\dimen341
+\l__tblr_r_dim=\dimen342
+\l__tblr_s_dim=\dimen343
+\l__tblr_t_dim=\dimen344
+\l__tblr_v_dim=\dimen345
+\l__tblr_w_dim=\dimen346
+\l__tblr_a_box=\box131
+\l__tblr_b_box=\box132
+\l__tblr_c_box=\box133
+\l__tblr_d_box=\box134
+\g__tblr_table_count_int=\count377
+\c@rownum=\count378
+\c@colnum=\count379
+\c@rowcount=\count380
+\c@colcount=\count381
+\abovesep=\dimen347
+\belowsep=\dimen348
+\leftsep=\dimen349
+\rightsep=\dimen350
+\g_tblr_level_int=\count382
+\g__tblr_data_row_key_count_int=\count383
+\g__tblr_data_column_key_count_int=\count384
+\g__tblr_data_cell_key_count_int=\count385
+\g__tblr_array_int=\count386
+\l__tblr_key_count_int=\count387
+\l__tblr_key_quotient_int=\count388
+\l__tblr_key_quotient_two_int=\count389
+\l__tblr_key_remainder_int=\count390
+\g__tblr_data_str_value_count_int=\count391
+\rulewidth=\dimen351
+\l__tblr_strut_ht_box=\box135
+\l__tblr_strut_dp_box=\box136
+\g__tblr_cell_wd_dim=\dimen352
+\g__tblr_cell_ht_dim=\dimen353
+\g__tblr_cell_head_dim=\dimen354
+\g__tblr_cell_foot_dim=\dimen355
+\l__column_target_dim=\dimen356
+\l__tblr_caption_box=\box137
+\l__tblr_caption_left_box=\box138
+\l__tblr_row_head_box=\box139
+\l__tblr_row_foot_box=\box140
+\l__tblr_row_head_foot_dim=\dimen357
+\tablewidth=\dimen358
+\l__tblr_table_firsthead_box=\box141
+\l__tblr_table_middlehead_box=\box142
+\l__tblr_table_lasthead_box=\box143
+\l__tblr_table_firstfoot_box=\box144
+\l__tblr_table_middlefoot_box=\box145
+\l__tblr_table_lastfoot_box=\box146
+\l__tblr_remain_height_dim=\dimen359
+\l__tblr_long_from_int=\count392
+\l__tblr_long_to_int=\count393
+\l__tblr_curr_i_int=\count394
+\l__tblr_prev_i_int=\count395
+\l__tblr_table_page_int=\count396
+\l__tblr_table_head_box=\box147
+\l__tblr_table_foot_box=\box148
+\l__tblr_table_head_foot_dim=\dimen360
+\l__tblr_table_head_body_foot_dim=\dimen361
+\l__tblr_table_box=\box149
+\l__tblr_table_hlines_box=\box150
+\l__tblr_hline_box=\box151
+\l__tblr_row_box=\box152
+\l__tblr_col_o_wd_dim=\dimen362
+\l__tblr_col_b_wd_dim=\dimen363
+\l__tblr_hline_leftskip_dim=\dimen364
+\l__tblr_hline_rightskip_dim=\dimen365
+\l__tblr_row_ht_dim=\dimen366
+\l__tblr_row_dp_dim=\dimen367
+\l__tblr_row_abovesep_dim=\dimen368
+\l__tblr_row_belowsep_dim=\dimen369
+\l__tblr_row_vlines_box=\box153
+\l__tblr_vline_box=\box154
+\l__tblr_cell_box=\box155
+\l__row_upper_dim=\dimen370
+\l__row_lower_dim=\dimen371
+\l__row_vpace_dim=\dimen372
+\l__tblr_vline_aboveskip_dim=\dimen373
+\l__tblr_vline_belowskip_dim=\dimen374
+\l__tblr_cell_wd_dim=\dimen375
+\l__tblr_cell_ht_dim=\dimen376
+\l__tblr_diag_box=\box156
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2022/01/07 version 5.0.2 text color boxes
  (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks43
-\verbatim@line=\toks44
+\every@verbatim=\toks45
+\verbatim@line=\toks46
 \verbatim@in@stream=\read4
 ) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box158
-\tcb@upperbox=\box159
-\tcb@lowerbox=\box160
-\tcb@phantombox=\box161
-\c@tcbbreakpart=\count399
-\c@tcblayer=\count400
-\c@tcolorbox@number=\count401
+\tcb@titlebox=\box157
+\tcb@upperbox=\box158
+\tcb@lowerbox=\box159
+\tcb@phantombox=\box160
+\c@tcbbreakpart=\count397
+\c@tcblayer=\count398
+\c@tcolorbox@number=\count399
+\tcb@temp=\box161
 \tcb@temp=\box162
 \tcb@temp=\box163
 \tcb@temp=\box164
-\tcb@temp=\box165
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '5.0.2'
-\tcb@waterbox=\box166
+\tcb@waterbox=\box165
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.0.2'
 )) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
 Library (tcolorbox): 'tcbxparse.code.tex' version '5.0.2'
 ) (/usr/share/texmf-dist/tex/latex/xsim/xsim.sty (/usr/share/texmf-dist/tex/latex/xsim/xsimverb.sty
 Package: xsimverb 2022/02/12 v0.4 write environments verbatim to files
-\l__xsimverb_tmpa_int=\count402
-\l_xsim_line_gobble_int=\count403
+\l__xsimverb_tmpa_int=\count400
+\l_xsim_line_gobble_int=\count401
 )
 Package: xsim 2022/02/12 v0.21 eXercise Sheets IMproved
 Loading module `base' ...
-\l__xsim_tmpa_dim=\dimen378
-\l__xsim_tmpb_dim=\dimen379
-\l__xsim_tmpc_dim=\dimen380
-\l__xsim_tmpa_int=\count404
-\l__xsim_tmpb_int=\count405
-\l__xsim_tmpc_int=\count406
-\l__xsim_tmpa_box=\box167
-\l__xsim_tmpb_box=\box168
-\l__xsim_tmpc_box=\box169
+\l__xsim_tmpa_dim=\dimen377
+\l__xsim_tmpb_dim=\dimen378
+\l__xsim_tmpc_dim=\dimen379
+\l__xsim_tmpa_int=\count402
+\l__xsim_tmpb_int=\count403
+\l__xsim_tmpc_int=\count404
+\l__xsim_tmpa_box=\box166
+\l__xsim_tmpb_box=\box167
+\l__xsim_tmpc_box=\box168
 Loading module `auxfile' ...
 Loading module `properties' ...
 Loading module `environments' ...
@@ -1549,117 +1540,118 @@ Loading module `templates' ...
 Loading module `tags' ...
 Loading module `goals' ...
 Loading module `exercises' ...
-\g_xsim_id_int=\count407
-\g_xsim_max_id_int=\count408
+\g_xsim_id_int=\count405
+\g_xsim_max_id_int=\count406
 Loading module `solutions' ...
-\l_xsim_printsolutions_section_int=\count409
-\l_xsim_printsolutions_chapter_int=\count410
+\l_xsim_printsolutions_section_int=\count407
+\l_xsim_printsolutions_chapter_int=\count408
 Loading module `collections' ...
 Loading module `blanks' ...
-\l__xsim_blank_dim=\dimen381
-\l__xsim_blank_line_increment_dim=\dimen382
-\l__xsim_blank_line_minimum_length_dim=\dimen383
-\l__xsim_blank_box=\box170
+\l__xsim_blank_dim=\dimen380
+\l__xsim_blank_line_increment_dim=\dimen381
+\l__xsim_blank_line_minimum_length_dim=\dimen382
+\l__xsim_blank_box=\box169
 Loading module `grades' ...
 Loading module `random' ...
-\g__xsim_random_list_id_int=\count411
+\g__xsim_random_list_id_int=\count409
 Loading module `translations' ...
 Loading module `interface' ...
 Loading module `definitions' ...
-\c@exercise=\count412
-\c@solution=\count413
-\c@numberofexercises=\count414
+\c@exercise=\count410
+\c@solution=\count411
+\c@numberofexercises=\count412
  (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen384
-\lightrulewidth=\dimen385
-\cmidrulewidth=\dimen386
-\belowrulesep=\dimen387
-\belowbottomsep=\dimen388
-\aboverulesep=\dimen389
-\abovetopsep=\dimen390
-\cmidrulesep=\dimen391
-\cmidrulekern=\dimen392
-\defaultaddspace=\dimen393
-\@cmidla=\count415
-\@cmidlb=\count416
-\@aboverulesep=\dimen394
-\@belowrulesep=\dimen395
-\@thisruleclass=\count417
-\@lastruleclass=\count418
-\@thisrulewidth=\dimen396
+\heavyrulewidth=\dimen383
+\lightrulewidth=\dimen384
+\cmidrulewidth=\dimen385
+\belowrulesep=\dimen386
+\belowbottomsep=\dimen387
+\aboverulesep=\dimen388
+\abovetopsep=\dimen389
+\cmidrulesep=\dimen390
+\cmidrulekern=\dimen391
+\defaultaddspace=\dimen392
+\@cmidla=\count413
+\@cmidlb=\count414
+\@aboverulesep=\dimen393
+\@belowrulesep=\dimen394
+\@thisruleclass=\count415
+\@lastruleclass=\count416
+\@thisrulewidth=\dimen395
 ))
-\c@solconnaitre=\count419
-\c@numberofconnaitres=\count420
-\c@solappliquer=\count421
-\c@numberofappliquers=\count422
-\c@soltransferer=\count423
-\c@numberoftransferers=\count424
+\c@solconnaitre=\count417
+\c@numberofconnaitres=\count418
+\c@solappliquer=\count419
+\c@numberofappliquers=\count420
+\c@soltransferer=\count421
+\c@numberoftransferers=\count422
 \tikzscale@accuracy=\skip85
-\g_xsim_collection_exercise_in_all exercises_int=\count425
-\c@totalexerciseinall exercises=\count426
-\g_xsim_collection_connaitre_in_all exercises_int=\count427
-\c@totalconnaitreinall exercises=\count428
-\g_xsim_collection_appliquer_in_all exercises_int=\count429
-\c@totalappliquerinall exercises=\count430
-\g_xsim_collection_transferer_in_all exercises_int=\count431
-\c@totaltransfererinall exercises=\count432
-LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 98.
+\g_xsim_collection_exercise_in_all exercises_int=\count423
+\c@totalexerciseinall exercises=\count424
+\g_xsim_collection_connaitre_in_all exercises_int=\count425
+\c@totalconnaitreinall exercises=\count426
+\g_xsim_collection_appliquer_in_all exercises_int=\count427
+\c@totalappliquerinall exercises=\count428
+\g_xsim_collection_transferer_in_all exercises_int=\count429
+\c@totaltransfererinall exercises=\count430
+LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 94.
  (/usr/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
-) (./1_E_noel.aux)
-\openout1 = `1_E_noel.aux'.
+)
+No file 2_E_noel_part1.aux.
+\openout1 = `2_E_noel_part1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 98.
-LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 98.
- (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpl.fd
+LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 94.
+LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 94.
+(/usr/share/texmf-dist/tex/latex/kpfonts/omljkpl.fd
 File: omljkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 98.
-LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 98.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 94.
+LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 94.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkpl.fd
 File: omsjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 98.
-LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 98.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 94.
+LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 94.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpl.fd
 File: omxjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 98.
-LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 98.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 94.
+LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 94.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkplexa.fd
 File: ujkplexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Info: Redefining \degres on input line 98.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Info: Redefining \degres on input line 94.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 98.
+(french.ldf)             reported on input line 94.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 98.
-LaTeX Info: Redefining \up on input line 98.
-LaTeX Info: Redefining \microtypecontext on input line 98.
-Package microtype Info: Applying patch `item' on input line 98.
-Package microtype Info: Applying patch `toc' on input line 98.
-Package microtype Info: Applying patch `eqnum' on input line 98.
-Package microtype Info: Applying patch `footnote' on input line 98.
+(french.ldf)             reported on input line 94.
+LaTeX Info: Redefining \up on input line 94.
+LaTeX Info: Redefining \microtypecontext on input line 94.
+Package microtype Info: Applying patch `item' on input line 94.
+Package microtype Info: Applying patch `toc' on input line 94.
+Package microtype Info: Applying patch `eqnum' on input line 94.
+Package microtype Info: Applying patch `footnote' on input line 94.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 98.
+LaTeX Info: Redefining \showhyphens on input line 94.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1670,20 +1662,20 @@ Package microtype Info: Loading generic protrusion settings for font family
  (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 98.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 94.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count433
-\scratchdimen=\dimen397
-\scratchbox=\box171
-\nofMPsegments=\count434
-\nofMParguments=\count435
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count436
-\MPscratchDim=\dimen398
-\MPnumerator=\count437
-\makeMPintoPDFobject=\count438
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count431
+\scratchdimen=\dimen396
+\scratchbox=\box170
+\nofMPsegments=\count432
+\nofMParguments=\count433
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count434
+\MPscratchDim=\dimen397
+\MPnumerator=\count435
+\makeMPintoPDFobject=\count436
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1695,7 +1687,7 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 <img/entete.pdf, id=29, 803.0pt x 50.1875pt>
 File: img/entete.pdf Graphic file (type pdf)
 <use img/entete.pdf>
-Package pdftex.def Info: img/entete.pdf  used on input line 104.
+Package pdftex.def Info: img/entete.pdf  used on input line 99.
 (pdftex.def)             Requested size: 448.13095pt x 28.00906pt.
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1705,7 +1697,7 @@ Package pdftex.def Info: img/entete.pdf  used on input line 104.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 146.
+LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 141.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -1713,43 +1705,43 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 146.
+LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 141.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpss.fd
 File: omljkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 146.
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 141.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 146.
+LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 141.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpss.fd
 File: omxjkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 146.
+LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 141.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpssmia.fd
 File: ujkpssmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 146.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 141.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 146.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 141.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 146.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 141.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 146.
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 141.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 146.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 141.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
@@ -1766,7 +1758,15 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
- [1] [2] [3] [4] [5] [6] [7] [8]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+ (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) [3] (./tikz/cartesien.tikz) [4] (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) [5] (./tikz/tdp1_soso.tikz) (./tikz/tdp2_soso.tikz) (./tikz/tdp3_soso.tikz) [6] (./tikz/tdp2.tikz) (./tikz/tdp3.tikz) [7]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1783,20 +1783,25 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
- [9] [10] (./1_E_noel.aux) ) 
+ (./tikz/cartesien_sol.tikz) (./tikz/cartesien_sol.tikz) (./tikz/cartesien_sol.tikz) (./tikz/cartesien_sol.tikz) (./tikz/cartesien_sol.tikz) (./tikz/ce1d_tdp_sol.tikz) (./tikz/ce1d_tdp_sol.tikz) (./tikz/ce1d_tdp_sol.tikz) (./tikz/ce1d_tdp_sol.tikz) (./tikz/ce1d_tdp_sol.tikz) [8] (./tikz/tdp1_soso.tikz) (./tikz/tdp2_soso.tikz) [9] (./tikz/tdp3_soso.tikz) (./tikz/tdp2.tikz) (./tikz/tdp3.tikz)
+
+Package xsim Warning: Exercise properties may have changed. Rerun to get them
+(xsim)                synchronized.
+
+[10] (./2_E_noel_part1.aux) ) 
 Here is how much of TeX's memory you used:
- 43181 strings out of 478238
- 1009719 string characters out of 5850455
- 1501683 words of memory out of 5000000
- 60493 multiletter control sequences out of 15000+600000
- 538779 words of font info for 193 fonts, out of 8000000 for 9000
+ 42744 strings out of 478238
+ 983281 string characters out of 5850455
+ 1461576 words of memory out of 5000000
+ 60020 multiletter control sequences out of 15000+600000
+ 552937 words of font info for 191 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,9n,106p,10685b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_noel.pdf (12 pages, 78744 bytes).
+ 110i,21n,121p,10691b,1408s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
+Output written on 2_E_noel_part1.pdf (10 pages, 75745 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 45170 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 51318 words of extra memory for PDF output out of 51595 (max. 10000000)
 
