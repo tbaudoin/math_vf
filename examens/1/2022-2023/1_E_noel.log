@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  4 DEC 2022 12:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  6 DEC 2022 13:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1759,9 +1759,9 @@ Overfull \hbox (50.52498pt too wide) in paragraph at lines 183--183
 
 [3]
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 207.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 208.
 
-LaTeX Font Info:    Trying to load font information for TS1+jkpss on input line 207.
+LaTeX Font Info:    Trying to load font information for TS1+jkpss on input line 208.
 (c:/texlive/2021/texmf-dist/tex/latex/kpfonts/ts1jkpss.fd
 File: ts1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for TS1/jkpss.
 )
@@ -1771,48 +1771,49 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 207.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 208.
 
 Missing character: There is no ¿ in font jkpssmn7t!
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 207.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 208.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 207.
-
-Missing character: There is no ¿ in font jkpssmn7t!
-
-LaTeX Warning: Command \texteuro invalid in math mode on input line 215.
-
-
-LaTeX Warning: Command \texteuro invalid in math mode on input line 215.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 208.
 
 Missing character: There is no ¿ in font jkpssmn7t!
-[4] [5] [6]
-<img/repere.png, id=56, 388.45125pt x 346.29375pt>
+[4] [5] [6] [7]
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 317.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 317.
+
+Missing character: There is no ¿ in font jkpssmn7t!
+[8]
+<img/repere.png, id=62, 388.45125pt x 346.29375pt>
 File: img/repere.png Graphic file (type png)
 <use img/repere.png>
-Package pdftex.def Info: img/repere.png  used on input line 326.
+Package pdftex.def Info: img/repere.png  used on input line 331.
 (pdftex.def)             Requested size: 388.45029pt x 346.2929pt.
- [7]
+ [9 <./img/repere.png>]
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 342.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 364.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 342.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 364.
 
 Missing character: There is no ¿ in font jkpssmn7t!
-<img/NY.png, id=62, 216.05719pt x 137.7647pt>
+<img/NY.png, id=69, 216.05719pt x 137.7647pt>
 File: img/NY.png Graphic file (type png)
 <use img/NY.png>
-Package pdftex.def Info: img/NY.png  used on input line 342.
+Package pdftex.def Info: img/NY.png  used on input line 364.
 (pdftex.def)             Requested size: 216.05664pt x 137.76434pt.
-[8 <./img/repere.png> <./img/NY.png>]
-<img/quadril.png, id=68, 337.26pt x 336.50719pt>
+<img/quadril.png, id=70, 337.26pt x 336.50719pt>
 File: img/quadril.png Graphic file (type png)
 <use img/quadril.png>
-Package pdftex.def Info: img/quadril.png  used on input line 342.
+Package pdftex.def Info: img/quadril.png  used on input line 364.
 (pdftex.def)             Requested size: 337.25917pt x 336.50635pt.
+[10 <./img/NY.png>] [11 <./img/quadril.png>]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1826,11 +1827,10 @@ Package tabularray Warning: Table width is too small, need 36.38763pt more!
 
 > Step: build the whole table.
 
-Overfull \hbox (36.38763pt too wide) in paragraph at lines 375--375
+Overfull \hbox (36.38763pt too wide) in paragraph at lines 397--397
 [] 
  []
 
-[9 <./img/quadril.png>]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1839,42 +1839,33 @@ Overfull \hbox (36.38763pt too wide) in paragraph at lines 375--375
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 
-
 Package tabularray Warning: Table width is too small, need 36.38763pt more!
 
 > Step: build the whole table.
 
-Overfull \hbox (36.38763pt too wide) in paragraph at lines 375--375
+Overfull \hbox (36.38763pt too wide) in paragraph at lines 397--397
 [] 
  []
 
-<img/cercle.png, id=74, 191.21437pt x 182.18062pt>
+<img/cercle.png, id=80, 191.21437pt x 182.18062pt>
 File: img/cercle.png Graphic file (type png)
 <use img/cercle.png>
-Package pdftex.def Info: img/cercle.png  used on input line 375.
+Package pdftex.def Info: img/cercle.png  used on input line 397.
 (pdftex.def)             Requested size: 191.2139pt x 182.18016pt.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-[10 <./img/cercle.png>] [11] (./1_E_noel.aux) ) 
+[12 <./img/cercle.png>] [13] (./1_E_noel.aux) ) 
 Here is how much of TeX's memory you used:
- 41333 strings out of 478579
- 967382 string characters out of 5857457
- 1531855 words of memory out of 5000000
- 58288 multiletter control sequences out of 15000+600000
- 475582 words of font info for 206 fonts, out of 8000000 for 9000
+ 41555 strings out of 478579
+ 982986 string characters out of 5857457
+ 1560192 words of memory out of 5000000
+ 58510 multiletter control sequences out of 15000+600000
+ 474428 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,7n,108p,10710b,815s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,7n,108p,11426b,815s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmnc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_noel.pdf (11 pages, 156509 bytes).
+Output written on 1_E_noel.pdf (13 pages, 156207 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  49286 words of extra memory for PDF output out of 51595 (max. 10000000)
 
