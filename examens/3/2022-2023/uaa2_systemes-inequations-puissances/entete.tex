@@ -1,27 +1,30 @@
-\newcommand{\mydate}{???}
+\newcommand{\mydate}{12 décembre 2022}
 \newcommand{\examtitle}{Examen de Mathématiques}
 \newcommand{\examsubtitle}{UAA2 \\ Puissances, systèmes et inéquations}
 \newcommand{\examyear}{2022-2023}
-\newcommand{\examclass}{3}
+\newcommand{\examclass}{3 \dots}
 \newcommand{\examsession}{Décembre}
 \newcommand{\examteacher}{Baudoin, Debroux}
-\newcommand{\examdate}{Lundi 12 décembre             8h20-10h30}
+\newcommand{\examdate}{Lundi \mydate, 8h20 à 10h30}
 \newcommand{\exammatos}{équerre, latte}
 \newcommand{\examneeded}{feuille de brouillon, feuille à en-tête}
 \newcommand{\examnote}{\textbf{/\TotalExerciseGoal{points}}~$\rightarrow$\quad\textbf{\phantom{XX}/10}}
 
 \newcommand{\entete}%
 {%
-    \includegraphics[width=\linewidth]{img/entete.pdf}\\[5pt]
-    \begin{tblr}{colspec={|XXX|},
+    \includegraphics[width=\linewidth]{img/entete.pdf}
+    \vspace{\smallskipamount}
+    \begin{tblr}{%
+            width=\textwidth,%
+            colspec={|XXX|},%
             cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
             cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
             cell{5}{1}={r=1,c=2}{l},
-            cell{5}{3}={r},
+            cell{5}{3}={r=4,c=1}{r},
             cell{6}{1}={r=1,c=3}{l},%
             cell{7}{1}={r=1,c=3}{l},%
             cell{8}{1}={r=1,c=3}{l},%
-            cell{9}{1}={r=1,c=3}{l},%
+            row{9}={c},
             rowsep=1ex%
         }%
         \hline
@@ -36,7 +39,7 @@
         Prénom : && Numéro :  \\
         \hline
         % cell5
-        Professeur : \examteacher && \\
+        Professeur : \examteacher &&\examnote\\
         % cell6
         Date et heure: \examdate\\
         % cell7
@@ -46,14 +49,13 @@
         \hline
         % cell9
         C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}
-        \hfill
+        &
         C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}
-        \hfill
-        C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}
-        \hfill
-        Total : \qquad/\TotalExerciseGoal{points}{}{}\\
+        &
+        C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}\\
         \hline
-    \end{tblr}\\[5pt]
+    \end{tblr}%
+    \vspace{\smallskipamount}
     \begin{scriptsize}%
         Rue de linthout, 30 - 1030 Bruxelles%
     \end{scriptsize}%

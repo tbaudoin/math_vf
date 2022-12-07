@@ -92,52 +92,49 @@ counter = exercise
 
 \begin{document}
 \raggedbottom
+\pagestyle{empty}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ENTETE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \includegraphics[width=\linewidth]{img/entete.pdf}
 \vspace*{\smallskipamount}
 \begin{tblr}{%
-        colspec={|XXX|},%
-        cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
-        cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
-        cell{5}{1}={r=1,c=3}{l},
-        % cell{5}{3}={r=4,c=1}{r},
-        cell{6}{1}={r=1,c=3}{l},%
-        cell{7}{1}={r=1,c=3}{l},%
-        cell{8}{1}={r=1,c=3}{l},%
-        cell{10}{3}={font=\bfseries},
-        hline{1,3,5,9,11}={black},
-        rowsep=1ex%
-    }%
+    colspec={|XXX|},%
+    cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+    cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+    cell{5}{1}={r=1,c=3}{l},
+    % cell{5}{3}={r=4,c=1}{r},
+    cell{6}{1}={r=1,c=3}{l},%
+    cell{7}{1}={r=1,c=3}{l},%
+    cell{8}{1}={r=1,c=3}{l},%
+    hline{1,3,5,9,10}={black},
+            rowsep=1ex%
+        }%
     % cell1
-    Examen de mathématiques                                   &  &          \\
+    Examen de mathématiques                                   &                      &                  \\
     % % cell2
-    Partie 1                                                  &  &          \\
+    Partie 1                                                  &                      &                  \\
     % cell3
-    Nom :                                                     &  & Classe : \\
+    Nom :                                                     &                      & Classe :         \\
     % cell4
-    Prénom :                                                  &  & Numéro : \\
+    Prénom :                                                  &                      & Numéro :         \\
     % cell5
-    Professeur : Baudoin, Debroux, Janssens, van de Werve     &  &          \\
+    Professeur : Baudoin, Debroux, Janssens, van de Werve     &                      &                  \\
     % cell6
-    Date et heure: Mercredi 14 décembre 2022 de 9h10 à 10h30. &  &          \\
+    Date et heure: Mercredi 14 décembre 2022 de 9h10 à 10h30. &                      &                  \\
     % % cell7
-    Matériel autorisé : Équerre multifonction, compas, crayon, gomme.                   \\
+    Matériel autorisé : Équerre multifonction, compas, crayon, gomme.                                   \\
     % % cell8
-    Matériel à distribuer :                                                             \\
+    Matériel à distribuer :                                                                             \\
     % % cell9
-    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}  & 
-    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}  &
-    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}\\
-    % % cell 10
-    Partie 1 : \qquad/\TotalExerciseGoal{points}{}{}              & Partie 2 : \qquad/59             & Total :\qquad/30          \\
+    Partie 1 : \qquad/\TotalExerciseGoal{points}{}{}          & Partie 2 : \qquad/59 &\hfill\bfseries Total :\qquad/30 \\
 \end{tblr}%
 \vspace*{\smallskipamount}
 \begin{scriptsize}%
     Rue de linthout, 30 - 1030 Bruxelles%
 \end{scriptsize}%
 \cleardoublepage
+\pagestyle{plain}\setcounter{page}{1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONTENU
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
