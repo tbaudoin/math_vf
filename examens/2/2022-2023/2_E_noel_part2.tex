@@ -1,4 +1,4 @@
-\documentclass[parskip=half-,twoside=semi, DIV=12]{scrartcl}
+\documentclass[parskip=half-,twoside=semi, DIV=12, 12pt]{scrartcl}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -33,7 +33,7 @@ after = \end{multicols}}
 \DeclareExerciseEnvironmentTemplate{interrogation}
 {%
     {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
-    \GetExercisePropertyT{points}{\marginpar{\hfill/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{points}{\marginpar{\qquad/\bfseries\PropertyValue}}
     \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue}
 }%
 {\par}
@@ -102,49 +102,44 @@ counter = exercise
 % ENTETE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \includegraphics[width=\linewidth]{img/entete.pdf}
-\vspace{\smallskipamount}
+\vspace*{\smallskipamount}
 \begin{tblr}{%
-        width=\textwidth,%
-        colspec={|XXX|},%
-        cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
-        cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
-        cell{5}{1}={r=1,c=2}{l},
-        cell{5}{3}={r=4,c=1}{r},
-        cell{6}{1}={r=1,c=3}{l},%
-        cell{7}{1}={r=1,c=3}{l},%
-        cell{8}{1}={r=1,c=3}{l},%
-        rowsep=1ex%
-    }%
-    \hline
+    colspec={|XXX|},%
+    cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+    cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+    cell{5}{1}={r=1,c=3}{l},
+    % cell{5}{3}={r=4,c=1}{r},
+    cell{6}{1}={r=1,c=3}{l},%
+    cell{7}{1}={r=1,c=3}{l},%
+    cell{8}{1}={r=1,c=3}{l},%
+    cell{10}{3}={font=\bfseries},
+    hline{1,3,5,9,11}={black},
+            rowsep=1ex%
+        }%
     % cell1
-    Examen de mathématiques                                    &             &          \\
-    % cell2
-    Partie 2                                                   &             &          \\
-    \hline
+    Examen de mathématiques                                   &   &          \\
+    % % cell2
+    Partie 2                                                  &   &          \\
     % cell3
-    Nom :                                                      &             & Classe : \\
+    Nom :                                                     &   & Classe : \\
     % cell4
-    Prénom :                                                   &             & Numéro : \\
-    \hline
+    Prénom :                                                  &   & Numéro : \\
     % cell5
-    Professeur : Baudoin, Debroux, Janssens, van de Werve      &             &          \\
+    Professeur : Baudoin, Debroux, Janssens, van de Werve     &   &          \\
     % cell6
-    Date et heure: Mercredi 14 décembre 2022 de 10h45 à 12h50                           \\
-    % cell7
-    Matériel autorisé : crayon, gomme                                                   \\
-    % cell8
-    Matériel à distribuer : aucun                                                       \\
-    \hline
-    % cell9
-    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}  & Remarques : &          \\
-    % cell 10
-    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}  &             &          \\
-    % cell 11
-    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{} &             &          \\
-    Total : \qquad/\TotalExerciseGoal{points}{}{}              &             &          \\
-    \hline
+    Date et heure: Mercredi 14 décembre 2022 de 10h45 à 12h50. &   &          \\
+    % % cell7
+    Matériel autorisé : crayon, gomme.        \\
+    % % cell8
+    Matériel à distribuer :                                                  \\
+    % % cell9
+    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{} &
+    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{} &
+    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}               \\
+    % % cell 10
+    Partie 2 : \qquad/\TotalExerciseGoal{points}{}{}          &   &          \\
 \end{tblr}%
-\vspace{\smallskipamount}
+\vspace*{\smallskipamount}
 \begin{scriptsize}%
     Rue de linthout, 30 - 1030 Bruxelles%
 \end{scriptsize}%
@@ -159,10 +154,10 @@ counter = exercise
 \begin{connaitre}[points=3]
     Complète le tableau suivant.\par
     \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={2cm},row{1}={font=\bfseries}}
-        Nom de la propriété       & Propriété                    & Exemple chiffré          \\
-        Puissance d'une puissance &                              &                          \\
+        Nom de la propriété       & Propriété                                    & Exemple chiffré          \\
+        Puissance d'une puissance &                                              &                          \\
                                   & \(\left(a \cdot b\right)^n = a^n \cdot b^n\) &                          \\
-                                  &                              & \(\dfrac{2^5}{2^3}=2^2\)
+                                  &                                              & \(\dfrac{2^5}{2^3}=2^2\)
     \end{tblr}
 \end{connaitre}
 \begin{solconnaitre}
@@ -345,7 +340,7 @@ counter = exercise
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
     Classe les nombres suivants dans l'ordre croissant.
-    \begin{tasks}[label=](3)
+    \begin{tasks}[label=, item-indent=0pt, after-item-skip=1em]
         \task \(A= \num{23456} \cdot 10^{- 4} \)
         \task \(B= \num{23,456} \cdot 10^{6}\)
         \task \(C= \num{0,000023456} \cdot 10^{9}\)
@@ -354,7 +349,6 @@ counter = exercise
     \end{tasks}
     \vspace{1cm}
     Classement :
-    \vspace{1cm}
 \end{transferer}
 \begin{soltransferer}
     \begin{tasks}[label=]
@@ -366,6 +360,7 @@ counter = exercise
     \end{tasks}
     Classement : E < A < D < C < B
 \end{soltransferer}
+\vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}
     Encadre les fractions suivantes à l'unité près.
@@ -387,7 +382,7 @@ counter = exercise
     Mélissa a fait \SI{8,7}{kg} de confiture. Elle la répartit dans des
     petits bocaux de \SI{70}{g} pour son hôtel. Réponds aux questions ci-dessous en notant ton raisonnement.
     \begin{tasks}[after-item-skip=6cm, after-skip=3cm]
-        \task De combien de bocaux aura-t-elle besoin ? 
+        \task De combien de bocaux aura-t-elle besoin ?
         \task Combien de grammes de confiture aurait-elle dû faire en plus pour compléter le dernier bocal ?
     \end{tasks}
 \end{transferer}
@@ -452,8 +447,11 @@ counter = exercise
     Elisa a fait des biscuits pour les vendre à la fête du quartier. Elle a
     fait 36 biscuits au chocolat et 60 biscuits au sucre. Elle veut tous les
     mettre dans des boîtes contenant chacune exactement le même nombre
-    de biscuits au sucre et le même nombre de biscuits au chocolat. Quel est le plus grand nombre de boîtes identiques qu'elle peut faire ? Note tout ton raisonnement.
-    \vspace*{6cm}
+    de biscuits au sucre et le même nombre de biscuits au chocolat.
+    \begin{tasks}[after-item-skip=7cm]
+        \task Quel est le plus grand nombre de boîtes identiques qu'elle peut faire ? Note tout ton raisonnement.
+        \task Combien de biscuits pourrait-on mettre dans une de ces boîtes ? 
+    \end{tasks}
 \end{transferer}
 \begin{soltransferer}
     \(PGCD(36,60) = 12\). Elle peut donc concevoir au maximum 12 boîtes de biscuits.
@@ -470,7 +468,7 @@ counter = exercise
         \task \(E=\dfrac{- 11}{8}\)
     \end{tasks}
     \vspace{1cm}
-    Classement : 
+    Classement :
     \vspace{1cm}
 \end{appliquer}
 \begin{solappliquer}
@@ -492,14 +490,14 @@ counter = exercise
         \input{tikz/droite_graduee.tikz}
     \end{center}
 \end{appliquer}
-\begin{solappliquer}   
-         \par
-         \(abs~A = \dfrac{-10}{8} = \dfrac{-5}{4}\)
-         \hfill\(abs~B = \dfrac{-3}{8}\)
-         \hfill\(abs~C = \dfrac{2}{8}=\dfrac{1}{4}\)
-         \hfill\(abs~D = \dfrac{12}{8}=\dfrac{3}{2}\)
-         \hfill\(abs~E = \dfrac{15}{8}\)
+\begin{solappliquer}
+    \par
+    \(abs~A = \dfrac{-10}{8} = \dfrac{-5}{4}\)
+    \hfill\(abs~B = \dfrac{-3}{8}\)
+    \hfill\(abs~C = \dfrac{2}{8}=\dfrac{1}{4}\)
+    \hfill\(abs~D = \dfrac{12}{8}=\dfrac{3}{2}\)
+    \hfill\(abs~E = \dfrac{15}{8}\)
 \end{solappliquer}
-\newpage
-\printallsolutions[headings=false]
+% \newpage
+% \printallsolutions[headings=false]
 \end{document}

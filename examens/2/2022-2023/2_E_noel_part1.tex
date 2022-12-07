@@ -1,17 +1,16 @@
-\documentclass[parskip=half-,DIV=12,twoside=semi]{scrartcl}
+\documentclass[parskip=half-,twoside=semi, 12pt]{scrartcl}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage[sfmath, light]{kpfonts}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage{frenchmath}
 \usepackage{mathtools}
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlist[enumerate]{label=\textbf{\alph*)}}
 \usepackage{tasks}
-\settasks{label-format=\bfseries}
+\settasks{label-format=\bfseries, label-width=13pt}
 \usepackage[locale=FR]{siunitx}
 \usepackage{tikz}
 \usetikzlibrary{babel, patterns}
@@ -28,7 +27,7 @@
 \DeclareExerciseEnvironmentTemplate{interrogation}
 {%
     {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
-    \GetExercisePropertyT{points}{\marginpar{\hfill/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{points}{\marginpar{\qquad/\bfseries\PropertyValue}}
     \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue}
 }%
 {\bigbreak}
@@ -97,49 +96,44 @@ counter = exercise
 % ENTETE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \includegraphics[width=\linewidth]{img/entete.pdf}
-\vspace{\smallskipamount}
+\vspace*{\smallskipamount}
 \begin{tblr}{%
-        width=\textwidth,%
         colspec={|XXX|},%
         cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
         cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
-        cell{5}{1}={r=1,c=2}{l},
-        cell{5}{3}={r=4,c=1}{r},
+        cell{5}{1}={r=1,c=3}{l},
+        % cell{5}{3}={r=4,c=1}{r},
         cell{6}{1}={r=1,c=3}{l},%
         cell{7}{1}={r=1,c=3}{l},%
         cell{8}{1}={r=1,c=3}{l},%
+        cell{10}{3}={font=\bfseries},
+        hline{1,3,5,9,11}={black},
         rowsep=1ex%
     }%
-    \hline
     % cell1
-    Examen de mathématiques                                    &             &          \\
-    % cell2
-    Partie 1                                                   &             &          \\
-    \hline
+    Examen de mathématiques                                   &  &          \\
+    % % cell2
+    Partie 1                                                  &  &          \\
     % cell3
-    Nom :                                                      &             & Classe : \\
+    Nom :                                                     &  & Classe : \\
     % cell4
-    Prénom :                                                   &             & Numéro : \\
-    \hline
+    Prénom :                                                  &  & Numéro : \\
     % cell5
-    Professeur : Baudoin, Debroux, Janssens, van de Werve      &             &          \\
+    Professeur : Baudoin, Debroux, Janssens, van de Werve     &  &          \\
     % cell6
-    Date et heure: Mercredi 14 décembre 2022 de 9h10 à 10h30.                           \\
-    % cell7
+    Date et heure: Mercredi 14 décembre 2022 de 9h10 à 10h30. &  &          \\
+    % % cell7
     Matériel autorisé : Équerre multifonction, compas, crayon, gomme.                   \\
-    % cell8
+    % % cell8
     Matériel à distribuer :                                                             \\
-    \hline
-    % cell9
-    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}  & Remarques : &          \\
-    % cell 10
-    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}  &             &          \\
-    % cell 11
-    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{} &             &          \\
-    Total : \qquad/\TotalExerciseGoal{points}{}{}              &             &          \\
-    \hline
+    % % cell9
+    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}  & 
+    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}  &
+    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}\\
+    % % cell 10
+    Partie 1 : \qquad/\TotalExerciseGoal{points}{}{}              & Partie 2 : \qquad/59             & Total :\qquad/30          \\
 \end{tblr}%
-\vspace{\smallskipamount}
+\vspace*{\smallskipamount}
 \begin{scriptsize}%
     Rue de linthout, 30 - 1030 Bruxelles%
 \end{scriptsize}%
@@ -223,9 +217,9 @@ counter = exercise
     {%
         \begin{enumerate}[itemsep=1em]
             \item Quelle est l'image du point \(G\) par la translation qui applique \(A\) sur \(C\) ?
-            \item \(R_{O,\ang{-90}}(C)\) ?
+            \item \(R_{O,\ang{-90}}(C) = \) ?
             \item Quelle est l'image du triangle \(AOB\) par la symétrie orthogonale d'axe \(HD\) ?
-            \item \(S_{O}([DB])\) ?
+            \item \(S_{O}([DB]) =\) ?
         \end{enumerate}
     }
 \end{transferer}
@@ -340,7 +334,7 @@ counter = exercise
               \begin{center}
                   \input{tikz/tdp2_soso.tikz}
               \end{center}
-        \newpage
+              \newpage
         \item \(r_{A;\ang{-80}}(AMIS) = A'M'I'S'\)
               \begin{center}
                   \input{tikz/tdp3_soso.tikz}
@@ -368,7 +362,7 @@ counter = exercise
     \end{enumerate}
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\renewcommand{\figcolor}{red}
-\printallsolutions[headings=false]
+% \newpage
+% \renewcommand{\figcolor}{red}
+% \printallsolutions[headings=false]
 \end{document}

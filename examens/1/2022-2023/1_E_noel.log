@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  6 DEC 2022 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 13:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -504,254 +504,6 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldsf'
 (Font)                  U/jkpexa/m/n --> U/jkpexa/bx/n on input line 620.
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 940.
 LaTeX Info: Redefining \not on input line 1580.
-) (/usr/share/texmf-dist/tex/latex/frenchmath/frenchmath.sty
-Package: frenchmath 2020/11/02 v1.5 .dtx frenchmath file
- (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
-Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup9
-LaTeX Font Info:    Redeclaring math alphabet \mathscr on input line 9.
-) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 59.
-LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
-(Font)                  U/jkpsya/m/n --> U/msa/m/n on input line 59.
-LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
-(Font)                  U/jkpsya/bx/n --> U/msa/m/n on input line 59.
-LaTeX Font Info:    Overwriting symbol font `AMSa' in version `rm'
-(Font)                  U/jkpsya/m/n --> U/msa/m/n on input line 59.
-LaTeX Font Info:    Overwriting symbol font `AMSa' in version `boldrm'
-(Font)                  U/jkpsya/bx/n --> U/msa/m/n on input line 59.
-LaTeX Font Info:    Overwriting symbol font `AMSa' in version `sf'
-(Font)                  U/jkpsya/m/n --> U/msa/m/n on input line 59.
-LaTeX Font Info:    Overwriting symbol font `AMSa' in version `boldsf'
-(Font)                  U/jkpsya/bx/n --> U/msa/m/n on input line 59.
-LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 60.
-LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
-(Font)                  U/jkpsssyb/m/n --> U/msb/m/n on input line 60.
-LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
-(Font)                  U/jkpsssyb/bx/n --> U/msb/m/n on input line 60.
-LaTeX Font Info:    Overwriting symbol font `AMSb' in version `rm'
-(Font)                  U/jkplsyb/m/n --> U/msb/m/n on input line 60.
-LaTeX Font Info:    Overwriting symbol font `AMSb' in version `boldrm'
-(Font)                  U/jkplsyb/bx/n --> U/msb/m/n on input line 60.
-LaTeX Font Info:    Overwriting symbol font `AMSb' in version `sf'
-(Font)                  U/jkpsssyb/m/n --> U/msb/m/n on input line 60.
-LaTeX Font Info:    Overwriting symbol font `AMSb' in version `boldsf'
-(Font)                  U/jkpsssyb/bx/n --> U/msb/m/n on input line 60.
-LaTeX Font Info:    Redeclaring math delimiter \ulcorner on input line 74.
-LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 75.
-LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 76.
-LaTeX Font Info:    Redeclaring math delimiter \lrcorner on input line 77.
-LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
-LaTeX Font Info:    Redeclaring math symbol \lozenge on input line 142.
-)
-LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \boxplus on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \boxtimes on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \centerdot on input line 49.
-LaTeX Font Info:    Redeclaring math symbol \blacklozenge on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \circlearrowright on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \circlearrowleft on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \boxminus on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \Vdash on input line 58.
-LaTeX Font Info:    Redeclaring math symbol \Vvdash on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \vDash on input line 60.
-LaTeX Font Info:    Redeclaring math symbol \twoheadrightarrow on input line 61.
-LaTeX Font Info:    Redeclaring math symbol \twoheadleftarrow on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \upuparrows on input line 65.
-LaTeX Font Info:    Redeclaring math symbol \downdownarrows on input line 66.
-LaTeX Font Info:    Redeclaring math symbol \upharpoonright on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \downharpoonright on input line 69.
-LaTeX Font Info:    Redeclaring math symbol \upharpoonleft on input line 70.
-LaTeX Font Info:    Redeclaring math symbol \downharpoonleft on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \rightarrowtail on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \leftarrowtail on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \leftrightarrows on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \rightleftarrows on input line 75.
-LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 77.
-LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 79.
-LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \circeq on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \succsim on input line 83.
-LaTeX Font Info:    Redeclaring math symbol \gtrsim on input line 84.
-LaTeX Font Info:    Redeclaring math symbol \gtrapprox on input line 85.
-LaTeX Font Info:    Redeclaring math symbol \multimap on input line 86.
-LaTeX Font Info:    Redeclaring math symbol \therefore on input line 87.
-LaTeX Font Info:    Redeclaring math symbol \because on input line 88.
-LaTeX Font Info:    Redeclaring math symbol \doteqdot on input line 89.
-LaTeX Font Info:    Redeclaring math symbol \triangleq on input line 91.
-LaTeX Font Info:    Redeclaring math symbol \precsim on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \lesssim on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \lessapprox on input line 94.
-LaTeX Font Info:    Redeclaring math symbol \eqslantless on input line 95.
-LaTeX Font Info:    Redeclaring math symbol \eqslantgtr on input line 96.
-LaTeX Font Info:    Redeclaring math symbol \curlyeqprec on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \curlyeqsucc on input line 98.
-LaTeX Font Info:    Redeclaring math symbol \preccurlyeq on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \leqq on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \lessgtr on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \backprime on input line 103.
-LaTeX Font Info:    Redeclaring math symbol \risingdotseq on input line 104.
-LaTeX Font Info:    Redeclaring math symbol \fallingdotseq on input line 105.
-LaTeX Font Info:    Redeclaring math symbol \succcurlyeq on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \geqq on input line 107.
-LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \gtrless on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \bigstar on input line 117.
-LaTeX Font Info:    Redeclaring math symbol \between on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 119.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 120.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 121.
-LaTeX Font Info:    Redeclaring math symbol \vartriangle on input line 122.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangle on input line 123.
-LaTeX Font Info:    Redeclaring math symbol \triangledown on input line 124.
-LaTeX Font Info:    Redeclaring math symbol \eqcirc on input line 125.
-LaTeX Font Info:    Redeclaring math symbol \lesseqgtr on input line 126.
-LaTeX Font Info:    Redeclaring math symbol \gtreqless on input line 127.
-LaTeX Font Info:    Redeclaring math symbol \lesseqqgtr on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \gtreqqless on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Rrightarrow on input line 130.
-LaTeX Font Info:    Redeclaring math symbol \Lleftarrow on input line 131.
-LaTeX Font Info:    Redeclaring math symbol \veebar on input line 132.
-LaTeX Font Info:    Redeclaring math symbol \barwedge on input line 133.
-LaTeX Font Info:    Redeclaring math symbol \doublebarwedge on input line 134.
-LaTeX Font Info:    Redeclaring math symbol \measuredangle on input line 137.
-LaTeX Font Info:    Redeclaring math symbol \sphericalangle on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \varpropto on input line 139.
-LaTeX Font Info:    Redeclaring math symbol \smallsmile on input line 140.
-LaTeX Font Info:    Redeclaring math symbol \smallfrown on input line 141.
-LaTeX Font Info:    Redeclaring math symbol \Subset on input line 142.
-LaTeX Font Info:    Redeclaring math symbol \Supset on input line 143.
-LaTeX Font Info:    Redeclaring math symbol \Cup on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Cap on input line 146.
-LaTeX Font Info:    Redeclaring math symbol \curlywedge on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \curlyvee on input line 149.
-LaTeX Font Info:    Redeclaring math symbol \leftthreetimes on input line 150.
-LaTeX Font Info:    Redeclaring math symbol \rightthreetimes on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \subseteqq on input line 152.
-LaTeX Font Info:    Redeclaring math symbol \supseteqq on input line 153.
-LaTeX Font Info:    Redeclaring math symbol \bumpeq on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Bumpeq on input line 155.
-LaTeX Font Info:    Redeclaring math symbol \lll on input line 156.
-LaTeX Font Info:    Redeclaring math symbol \ggg on input line 158.
-LaTeX Font Info:    Redeclaring math symbol \circledS on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \pitchfork on input line 161.
-LaTeX Font Info:    Redeclaring math symbol \dotplus on input line 162.
-LaTeX Font Info:    Redeclaring math symbol \backsim on input line 163.
-LaTeX Font Info:    Redeclaring math symbol \backsimeq on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \complement on input line 165.
-LaTeX Font Info:    Redeclaring math symbol \intercal on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \circledcirc on input line 167.
-LaTeX Font Info:    Redeclaring math symbol \circledast on input line 168.
-LaTeX Font Info:    Redeclaring math symbol \circleddash on input line 169.
-LaTeX Font Info:    Redeclaring math symbol \lvertneqq on input line 171.
-LaTeX Font Info:    Redeclaring math symbol \gvertneqq on input line 172.
-LaTeX Font Info:    Redeclaring math symbol \nleq on input line 173.
-LaTeX Font Info:    Redeclaring math symbol \ngeq on input line 174.
-LaTeX Font Info:    Redeclaring math symbol \nless on input line 175.
-LaTeX Font Info:    Redeclaring math symbol \ngtr on input line 176.
-LaTeX Font Info:    Redeclaring math symbol \nprec on input line 177.
-LaTeX Font Info:    Redeclaring math symbol \nsucc on input line 178.
-LaTeX Font Info:    Redeclaring math symbol \lneqq on input line 179.
-LaTeX Font Info:    Redeclaring math symbol \gneqq on input line 180.
-LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 181.
-LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 182.
-LaTeX Font Info:    Redeclaring math symbol \lneq on input line 183.
-LaTeX Font Info:    Redeclaring math symbol \gneq on input line 184.
-LaTeX Font Info:    Redeclaring math symbol \npreceq on input line 185.
-LaTeX Font Info:    Redeclaring math symbol \nsucceq on input line 186.
-LaTeX Font Info:    Redeclaring math symbol \precnsim on input line 187.
-LaTeX Font Info:    Redeclaring math symbol \succnsim on input line 188.
-LaTeX Font Info:    Redeclaring math symbol \lnsim on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \gnsim on input line 190.
-LaTeX Font Info:    Redeclaring math symbol \nleqq on input line 191.
-LaTeX Font Info:    Redeclaring math symbol \ngeqq on input line 192.
-LaTeX Font Info:    Redeclaring math symbol \precneqq on input line 193.
-LaTeX Font Info:    Redeclaring math symbol \succneqq on input line 194.
-LaTeX Font Info:    Redeclaring math symbol \precnapprox on input line 195.
-LaTeX Font Info:    Redeclaring math symbol \succnapprox on input line 196.
-LaTeX Font Info:    Redeclaring math symbol \lnapprox on input line 197.
-LaTeX Font Info:    Redeclaring math symbol \gnapprox on input line 198.
-LaTeX Font Info:    Redeclaring math symbol \nsim on input line 199.
-LaTeX Font Info:    Redeclaring math symbol \ncong on input line 200.
-LaTeX Font Info:    Redeclaring math symbol \diagup on input line 201.
-LaTeX Font Info:    Redeclaring math symbol \diagdown on input line 202.
-LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 203.
-LaTeX Font Info:    Redeclaring math symbol \varsupsetneq on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \nsubseteqq on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \nsupseteqq on input line 206.
-LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 207.
-LaTeX Font Info:    Redeclaring math symbol \supsetneqq on input line 208.
-LaTeX Font Info:    Redeclaring math symbol \varsubsetneqq on input line 209.
-LaTeX Font Info:    Redeclaring math symbol \varsupsetneqq on input line 210.
-LaTeX Font Info:    Redeclaring math symbol \subsetneq on input line 211.
-LaTeX Font Info:    Redeclaring math symbol \supsetneq on input line 212.
-LaTeX Font Info:    Redeclaring math symbol \nsubseteq on input line 213.
-LaTeX Font Info:    Redeclaring math symbol \nsupseteq on input line 214.
-LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 215.
-LaTeX Font Info:    Redeclaring math symbol \nmid on input line 216.
-LaTeX Font Info:    Redeclaring math symbol \nshortmid on input line 217.
-LaTeX Font Info:    Redeclaring math symbol \nshortparallel on input line 218.
-LaTeX Font Info:    Redeclaring math symbol \nvdash on input line 219.
-LaTeX Font Info:    Redeclaring math symbol \nVdash on input line 220.
-LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 221.
-LaTeX Font Info:    Redeclaring math symbol \nVDash on input line 222.
-LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 223.
-LaTeX Font Info:    Redeclaring math symbol \ntrianglelefteq on input line 224.
-LaTeX Font Info:    Redeclaring math symbol \ntriangleleft on input line 225.
-LaTeX Font Info:    Redeclaring math symbol \ntriangleright on input line 226.
-LaTeX Font Info:    Redeclaring math symbol \nleftarrow on input line 227.
-LaTeX Font Info:    Redeclaring math symbol \nrightarrow on input line 228.
-LaTeX Font Info:    Redeclaring math symbol \nLeftarrow on input line 229.
-LaTeX Font Info:    Redeclaring math symbol \nRightarrow on input line 230.
-LaTeX Font Info:    Redeclaring math symbol \nLeftrightarrow on input line 231.
-LaTeX Font Info:    Redeclaring math symbol \nleftrightarrow on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \divideontimes on input line 233.
-LaTeX Font Info:    Redeclaring math symbol \varnothing on input line 234.
-LaTeX Font Info:    Redeclaring math symbol \nexists on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Finv on input line 236.
-LaTeX Font Info:    Redeclaring math symbol \Game on input line 237.
-LaTeX Font Info:    Redeclaring math symbol \eth on input line 240.
-LaTeX Font Info:    Redeclaring math symbol \eqsim on input line 241.
-LaTeX Font Info:    Redeclaring math symbol \beth on input line 242.
-LaTeX Font Info:    Redeclaring math symbol \gimel on input line 243.
-LaTeX Font Info:    Redeclaring math symbol \daleth on input line 244.
-LaTeX Font Info:    Redeclaring math symbol \lessdot on input line 245.
-LaTeX Font Info:    Redeclaring math symbol \gtrdot on input line 246.
-LaTeX Font Info:    Redeclaring math symbol \ltimes on input line 247.
-LaTeX Font Info:    Redeclaring math symbol \rtimes on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \shortmid on input line 249.
-LaTeX Font Info:    Redeclaring math symbol \shortparallel on input line 250.
-LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 251.
-LaTeX Font Info:    Redeclaring math symbol \thicksim on input line 252.
-LaTeX Font Info:    Redeclaring math symbol \thickapprox on input line 253.
-LaTeX Font Info:    Redeclaring math symbol \approxeq on input line 254.
-LaTeX Font Info:    Redeclaring math symbol \succapprox on input line 255.
-LaTeX Font Info:    Redeclaring math symbol \precapprox on input line 256.
-LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 257.
-LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 258.
-LaTeX Font Info:    Redeclaring math symbol \digamma on input line 259.
-LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
-LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
-LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
-) (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (/usr/share/texmf-dist/tex/latex/was/icomma.sty
-Package: icomma 2002/03/10 v2.0 (WaS)
-)
-\symUpSh=\mathgroup10
 ) (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
  (/usr/share/texmf-dist/tex/latex/tools/calc.sty
@@ -780,30 +532,43 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen166
 \xmathstrut@box=\box55
 \xmathstrut@dim=\dimen167
-) (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+) (/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-04-10 L3 programming layer (loader) 
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count292
+\l__pdf_internal_box=\box56
+))
+Package: fontawesome5 2021/06/04 v5.15.3 Font Awesome 5
+ (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+) (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+) (/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+Package: fontawesome5-generic-helper 2021/06/04 v5.15.3 non-uTeX helper for fontawesome5
+ (/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def))) (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count292
-\mult@box=\box56
+\c@tracingmulticols=\count293
+\mult@box=\box57
 \multicol@leftmargin=\dimen168
-\c@unbalance=\count293
-\c@collectmore=\count294
-\doublecol@number=\count295
-\multicoltolerance=\count296
-\multicolpretolerance=\count297
+\c@unbalance=\count294
+\c@collectmore=\count295
+\doublecol@number=\count296
+\multicoltolerance=\count297
+\multicolpretolerance=\count298
 \full@width=\dimen169
 \page@free=\dimen170
 \premulticols=\dimen171
 \postmulticols=\dimen172
 \multicolsep=\skip71
 \multicolbaselineskip=\skip72
-\partial@page=\box57
-\last@line=\box58
+\partial@page=\box58
+\last@line=\box59
 \maxbalancingoverflow=\dimen173
-\mult@rightbox=\box59
-\mult@grightbox=\box60
-\mult@firstbox=\box61
-\mult@gfirstbox=\box62
-\@tempa=\box63
+\mult@rightbox=\box60
+\mult@grightbox=\box61
+\mult@firstbox=\box62
+\mult@gfirstbox=\box63
 \@tempa=\box64
 \@tempa=\box65
 \@tempa=\box66
@@ -839,32 +604,25 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box96
 \@tempa=\box97
 \@tempa=\box98
-\c@minrows=\count298
-\c@columnbadness=\count299
-\c@finalcolumnbadness=\count300
+\@tempa=\box99
+\c@minrows=\count299
+\c@columnbadness=\count300
+\c@finalcolumnbadness=\count301
 \last@try=\dimen174
 \multicolovershoot=\dimen175
 \multicolundershoot=\dimen176
-\mult@nat@firstbox=\box99
-\colbreak@box=\box100
-\mc@col@check@num=\count301
+\mult@nat@firstbox=\box100
+\colbreak@box=\box101
+\mc@col@check@num=\count302
 ) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip73
 \enit@outerparindent=\dimen177
 \enit@toks=\toks26
-\enit@inbox=\box101
-\enit@count@id=\count302
-\enitdp@description=\count303
-) (/usr/share/texmf-dist/tex/latex/tasks/tasks.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-04-10 L3 programming layer (loader) 
- (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count304
-\l__pdf_internal_box=\box102
-)) (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-01-12 L3 Experimental document command parser
-) (/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+\enit@inbox=\box102
+\enit@count@id=\count303
+\enitdp@description=\count304
+) (/usr/share/texmf-dist/tex/latex/tasks/tasks.sty (/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen178
 \l__xtemplate_tmp_int=\count305
@@ -946,9 +704,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 \l__siunitx_unit_tmp_int=\count323
 \l__siunitx_unit_position_int=\count324
 \l__siunitx_unit_total_int=\count325
- (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
-) (/usr/share/texmf-dist/tex/latex/tools/array.sty
+ (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen194
 \ar@mcellbox=\box115
@@ -1704,8 +1460,10 @@ Package pdftex.def Info: img/entete.pdf  used on input line 104.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 148.
+ (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)
 > Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 146.
+LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 148.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -1713,45 +1471,37 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 146.
+LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 148.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpss.fd
 File: omljkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 146.
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 148.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 146.
+LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 148.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpss.fd
 File: omxjkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 146.
+LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 148.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpssmia.fd
 File: ujkpssmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 146.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 148.
+ (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
+File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 146.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 148.
+ (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsssyb.fd
+File: ujkpsssyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 146.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 148.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 146.
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 148.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 146.
- (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/entete.pdf>] [2
@@ -1785,18 +1535,18 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 > Step: build the whole table.
  [9] [10] (./1_E_noel.aux) ) 
 Here is how much of TeX's memory you used:
- 43181 strings out of 478238
- 1009719 string characters out of 5850455
- 1501683 words of memory out of 5000000
- 60493 multiletter control sequences out of 15000+600000
- 538779 words of font info for 193 fonts, out of 8000000 for 9000
+ 45894 strings out of 478238
+ 1070221 string characters out of 5850455
+ 1542093 words of memory out of 5000000
+ 63233 multiletter control sequences out of 15000+600000
+ 529231 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,9n,106p,10685b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_noel.pdf (12 pages, 78744 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
+Output written on 1_E_noel.pdf (12 pages, 86563 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 45170 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 41074 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -6,8 +6,8 @@
 \usepackage{microtype}
 \usepackage[sfmath, light]{kpfonts}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage{frenchmath}
 \usepackage{mathtools}
+\usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlist[enumerate]{label=\textbf{\alph*)}}
@@ -113,6 +113,7 @@ counter = exercise
         cell{6}{1}={r=1,c=3}{l},%
         cell{7}{1}={r=1,c=3}{l},%
         cell{8}{1}={r=1,c=3}{l},%
+        cell{12}{1}={r=1,c=3}{l},%
         rowsep=1ex%
     }%
     \hline
@@ -141,7 +142,8 @@ counter = exercise
     C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}  &             &          \\
     % cell 11
     C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{} &             &          \\
-    Total : \qquad/\TotalExerciseGoal{points}{}{}              &             &          \\
+    % cell 12
+    Total : \qquad/\TotalExerciseGoal{points}{}{}\quad\faIcon{arrow-right}\qquad/30             &             &          \\
     \hline
 \end{tblr}%
 \vspace{\smallskipamount}
@@ -423,9 +425,9 @@ Quelques conseils pour réussir ton examen :
     \end{tblr}
     \vfil
     % FIXME: aligner le cercle et la légende sur le haut.
-    \tcbsidebyside[blanker]
+    \tcbsidebyside[blanker, sidebyside align = top]
     {
-        \begin{tikzpicture}
+        \begin{tikzpicture}[baseline=(current bounding box.north)]
             \draw(0,0)node{\(\times\)};
             \draw (0,0) circle (3cm);
         \end{tikzpicture}
