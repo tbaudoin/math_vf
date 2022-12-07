@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 15:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1830,6 +1830,7 @@ Package pdftex.def Info: img/entete.pdf  used on input line 5.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
+> Step: build the whole table.
 LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 5.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
@@ -1873,9 +1874,7 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 5.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
-)
-> Step: build the whole table.
- [1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/entete.pdf>] [2]
 \l__xsim_file_contents_iow=\write4
@@ -1887,9 +1886,9 @@ File: ujkpexa.fd 2006/08/15 v1.0
 \openout4 = `xsim/3_uaa2_2022-connaitre-2-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-connaitre-2-exercise-body.tex)
-\openout4 = `xsim/3_uaa2_2022-connaitre-3-exercise-body.tex'.
+\openout4 = `xsim/3_uaa2_2022-appliquer-3-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-connaitre-3-exercise-body.tex) [3]
+ (./xsim/3_uaa2_2022-appliquer-3-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-4-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-4-exercise-body.tex)
@@ -1901,7 +1900,7 @@ File: ujkpexa.fd 2006/08/15 v1.0
  (./xsim/3_uaa2_2022-appliquer-6-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-7-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex)
+ (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex [3])
 \openout4 = `xsim/3_uaa2_2022-appliquer-8-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-8-exercise-body.tex)
@@ -1910,19 +1909,13 @@ File: ujkpexa.fd 2006/08/15 v1.0
  (./xsim/3_uaa2_2022-appliquer-9-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-10-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex [4])
-\openout4 = `xsim/3_uaa2_2022-appliquer-11-exercise-body.tex'.
+ (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex) [4]
+\openout4 = `xsim/3_uaa2_2022-transferer-11-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-11-exercise-body.tex)
-\openout4 = `xsim/3_uaa2_2022-appliquer-12-exercise-body.tex'.
+ (./xsim/3_uaa2_2022-transferer-11-exercise-body.tex)
+\openout4 = `xsim/3_uaa2_2022-transferer-12-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-12-exercise-body.tex) [5]
-\openout4 = `xsim/3_uaa2_2022-transferer-13-exercise-body.tex'.
-
- (./xsim/3_uaa2_2022-transferer-13-exercise-body.tex)
-\openout4 = `xsim/3_uaa2_2022-transferer-14-exercise-body.tex'.
-
- (./xsim/3_uaa2_2022-transferer-14-exercise-body.tex
+ (./xsim/3_uaa2_2022-transferer-12-exercise-body.tex
 LaTeX Font Info:    Trying to load font information for TS1+jkpss on input line 11.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ts1jkpss.fd
 File: ts1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for TS1/jkpss.
@@ -1932,22 +1925,22 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-\openout4 = `xsim/3_uaa2_2022-transferer-15-exercise-body.tex'.
+\openout4 = `xsim/3_uaa2_2022-transferer-13-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-transferer-15-exercise-body.tex) [6] (./3_uaa2_2022.aux) ) 
+ (./xsim/3_uaa2_2022-transferer-13-exercise-body.tex) [5] (./3_uaa2_2022.aux) ) 
 Here is how much of TeX's memory you used:
- 56103 strings out of 478238
- 1385961 string characters out of 5850455
- 1923381 words of memory out of 5000000
- 73231 multiletter control sequences out of 15000+600000
- 531175 words of font info for 184 fonts, out of 8000000 for 9000
+ 55872 strings out of 478238
+ 1375329 string characters out of 5850455
+ 1914538 words of memory out of 5000000
+ 73002 multiletter control sequences out of 15000+600000
+ 531477 words of font info for 186 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,114p,10720b,1192s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmnc.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 3_uaa2_2022.pdf (6 pages, 81213 bytes).
+Output written on 3_uaa2_2022.pdf (5 pages, 80259 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51314 words of extra memory for PDF output out of 51595 (max. 10000000)
 

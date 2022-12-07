@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 13:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 16:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1460,10 +1460,10 @@ Package pdftex.def Info: img/entete.pdf  used on input line 104.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 148.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 145.
  (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)
 > Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 148.
+LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -1471,35 +1471,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 148.
+LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpss.fd
 File: omljkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 148.
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 148.
+LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpss.fd
 File: omxjkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 148.
+LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpssmia.fd
 File: ujkpssmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 148.
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 148.
+LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsssyb.fd
 File: ujkpsssyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 148.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 148.
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 145.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 ) [1
@@ -1535,15 +1535,15 @@ File: ujkpexa.fd 2006/08/15 v1.0
 > Step: build the whole table.
  [9] [10] (./1_E_noel.aux) ) 
 Here is how much of TeX's memory you used:
- 45894 strings out of 478238
- 1070221 string characters out of 5850455
- 1542093 words of memory out of 5000000
- 63233 multiletter control sequences out of 15000+600000
- 529231 words of font info for 185 fonts, out of 8000000 for 9000
+ 45873 strings out of 478238
+ 1069467 string characters out of 5850455
+ 1541877 words of memory out of 5000000
+ 63212 multiletter control sequences out of 15000+600000
+ 529078 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,9n,106p,10685b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_noel.pdf (12 pages, 86563 bytes).
+Output written on 1_E_noel.pdf (12 pages, 86467 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream

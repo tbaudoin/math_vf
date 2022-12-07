@@ -2,7 +2,7 @@
 \newcommand{\examtitle}{Examen de Mathématiques}
 \newcommand{\examsubtitle}{UAA2 \\ Puissances, systèmes et inéquations}
 \newcommand{\examyear}{2022-2023}
-\newcommand{\examclass}{3 \dots}
+\newcommand{\examclass}{3}
 \newcommand{\examsession}{Décembre}
 \newcommand{\examteacher}{Baudoin, Debroux}
 \newcommand{\examdate}{Lundi 12 décembre             8h20-10h30}
@@ -12,11 +12,8 @@
 
 \newcommand{\entete}%
 {%
-    \includegraphics[width=\linewidth]{img/entete.pdf}
-    \vspace{\smallskipamount}
-    \begin{tblr}{%
-            width=\linewidth,%
-            colspec={|XXX|},%
+    \includegraphics[width=\linewidth]{img/entete.pdf}\\[5pt]
+    \begin{tblr}{colspec={|XXX|},
             cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
             cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
             cell{5}{1}={r=1,c=2}{l},
@@ -24,7 +21,7 @@
             cell{6}{1}={r=1,c=3}{l},%
             cell{7}{1}={r=1,c=3}{l},%
             cell{8}{1}={r=1,c=3}{l},%
-            row{9}={c},
+            cell{9}{1}={r=1,c=3}{l},%
             rowsep=1ex%
         }%
         \hline
@@ -39,7 +36,7 @@
         Prénom : && Numéro :  \\
         \hline
         % cell5
-        Professeur : \examteacher && \examnote\\
+        Professeur : \examteacher && \\
         % cell6
         Date et heure: \examdate\\
         % cell7
@@ -48,14 +45,15 @@
         Matériel à distribuer : \examneeded\\
         \hline
         % cell9
-        C1 : \dots~/\TotalExerciseTypeGoal{connaitre}{points}{}{}
-        &
-        C2 : \dots~/\TotalExerciseTypeGoal{appliquer}{points}{}{}
-        &
-        C3 : \dots~/\TotalExerciseTypeGoal{transferer}{points}{}{}\\
+        C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}
+        \hfill
+        C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}
+        \hfill
+        C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}
+        \hfill
+        Total : \qquad/\TotalExerciseGoal{points}{}{}\\
         \hline
-    \end{tblr}%
-    \vspace{\smallskipamount}
+    \end{tblr}\\[5pt]
     \begin{scriptsize}%
         Rue de linthout, 30 - 1030 Bruxelles%
     \end{scriptsize}%
