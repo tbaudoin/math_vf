@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 16:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  8 DEC 2022 08:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1452,7 +1452,6 @@ Package pdftex.def Info: img/entete.pdf  used on input line 99.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
-> Step: build the whole table.
 LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 131.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
@@ -1492,7 +1491,9 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 131.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
-) [1
+)
+> Step: build the whole table.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/entete.pdf>] [2
 
@@ -1514,22 +1515,17 @@ File: ujkpexa.fd 2006/08/15 v1.0
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
- (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) [1] (./tikz/cartesien.tikz) [2] (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) [3] (./tikz/tdp1_soso.tikz) (./tikz/tdp2_soso.tikz) (./tikz/tdp3_soso.tikz) [4] (./tikz/tdp2.tikz) (./tikz/tdp3.tikz)
-
-Package xsim Warning: Exercise properties may have changed. Rerun to get them
-(xsim)                synchronized.
-
-[5] (./2_E_noel_part1.aux) ) 
+ (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) (./tikz/octogone.tikz) [1] (./tikz/cartesien.tikz) [2] (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) (./tikz/ce1d_tdp.tikz) [3] (./tikz/tdp1_soso.tikz) (./tikz/tdp2_soso.tikz) (./tikz/tdp3_soso.tikz) [4] (./tikz/tdp2.tikz) (./tikz/tdp3.tikz) [5] (./2_E_noel_part1.aux) ) 
 Here is how much of TeX's memory you used:
- 42375 strings out of 478238
- 975535 string characters out of 5850455
- 1438519 words of memory out of 5000000
- 59703 multiletter control sequences out of 15000+600000
+ 42397 strings out of 478238
+ 977771 string characters out of 5850455
+ 1447461 words of memory out of 5000000
+ 59725 multiletter control sequences out of 15000+600000
  541611 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,20n,106p,10691b,1351s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,20n,106p,10691b,1353s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 2_E_noel_part1.pdf (7 pages, 68103 bytes).
+Output written on 2_E_noel_part1.pdf (7 pages, 68437 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream

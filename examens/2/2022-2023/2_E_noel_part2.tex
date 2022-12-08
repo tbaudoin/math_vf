@@ -42,8 +42,8 @@ after = \end{multicols}}
 \DeclareExerciseType{connaitre}{
 exercise-env = connaitre ,
 solution-env = solconnaitre ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -55,8 +55,8 @@ counter = exercise
 \DeclareExerciseType{appliquer}{
 exercise-env = appliquer ,
 solution-env = solappliquer ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -68,8 +68,8 @@ counter = exercise
 \DeclareExerciseType{transferer}{
 exercise-env = transferer ,
 solution-env = soltransferer ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -187,7 +187,7 @@ counter = exercise
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
     Quelle est la valeur du symbole \(\bullet\) pour que le nombre \(435\bullet\) soit divisible par 15 ? Justifie et sois précis.
-    \vspace*{7cm}
+    \vfill
 \end{transferer}
 \begin{soltransferer}
     % Pour être divisible par 15, le nombre doit être divisible par 3 et par 5.\\
@@ -223,6 +223,7 @@ counter = exercise
         \task \(-b\)
     \end{tasks}
 \end{solconnaitre}
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=6]
     Réduis au maximum les expressions suivantes à l'aide des propriétés des puissances.
@@ -358,7 +359,7 @@ counter = exercise
 \end{soltransferer}
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appliquer}
+\begin{appliquer}[points=2]
     Encadre les fractions suivantes à l'unité près.
     \begin{tasks}(2)
         \task \hfil\(\dfrac{3}{7}\)

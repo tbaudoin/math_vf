@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  8 DEC 2022 08:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1588,12 +1588,13 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 98.
  (/usr/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
-) (./2_E_noel_part2.aux)
+)
+No file 2_E_noel_part2.aux.
 \openout1 = `2_E_noel_part2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 98.
 LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 98.
- (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpl.fd
+(/usr/share/texmf-dist/tex/latex/kpfonts/omljkpl.fd
 File: omljkpl.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 98.
@@ -1758,89 +1759,89 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on input line 219.
  (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd) [1]
 
-Package tasks Warning: The width of `label-width' is too small on line 238.
+Package tasks Warning: The width of `label-width' is too small on line 239.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 238.
+Package tasks Warning: The width of `label-width' is too small on line 239.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 238--238
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 239--239
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 
-Package tasks Warning: The width of `label-width' is too small on line 238.
+Package tasks Warning: The width of `label-width' is too small on line 239.
 (tasks)                Please set it at least to 11.29199pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 238.
+Package tasks Warning: The width of `label-width' is too small on line 239.
 (tasks)                Please set it at least to 11.976pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 238.
+Package tasks Warning: The width of `label-width' is too small on line 239.
 (tasks)                Please set it at least to 11.568pt.
 
 
-Overfull \hbox (0.33664pt too wide) in paragraph at lines 238--238
+Overfull \hbox (0.33664pt too wide) in paragraph at lines 239--239
 \T1/jkpss/b/n/12 (-20) e) | 
  []
 
 
-Package tasks Warning: The width of `label-width' is too small on line 256.
+Package tasks Warning: The width of `label-width' is too small on line 257.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 256.
+Package tasks Warning: The width of `label-width' is too small on line 257.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 256--256
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 257--257
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 
-Package tasks Warning: The width of `label-width' is too small on line 281.
+Package tasks Warning: The width of `label-width' is too small on line 282.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 281.
+Package tasks Warning: The width of `label-width' is too small on line 282.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 281--281
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 282--282
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 [2]
 
-Package tasks Warning: The width of `label-width' is too small on line 301.
+Package tasks Warning: The width of `label-width' is too small on line 302.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 301.
+Package tasks Warning: The width of `label-width' is too small on line 302.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 301--301
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 302--302
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 
-Package tasks Warning: The width of `label-width' is too small on line 301.
+Package tasks Warning: The width of `label-width' is too small on line 302.
 (tasks)                Please set it at least to 11.29199pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 301.
+Package tasks Warning: The width of `label-width' is too small on line 302.
 (tasks)                Please set it at least to 11.976pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 301.
+Package tasks Warning: The width of `label-width' is too small on line 302.
 (tasks)                Please set it at least to 11.568pt.
 
 
-Overfull \hbox (0.33664pt too wide) in paragraph at lines 301--301
+Overfull \hbox (0.33664pt too wide) in paragraph at lines 302--302
 \T1/jkpss/b/n/12 (-20) e) | 
  []
 
@@ -1853,104 +1854,109 @@ Overfull \hbox (0.33664pt too wide) in paragraph at lines 301--301
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-Package tasks Warning: The width of `item-indent' is too small on line 348.
+Package tasks Warning: The width of `item-indent' is too small on line 349.
 (tasks)                Please set it at least to 14.99957pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 368.
+Package tasks Warning: The width of `label-width' is too small on line 369.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 368.
+Package tasks Warning: The width of `label-width' is too small on line 369.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 368--368
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 369--369
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 [3]
 
-Package tasks Warning: The width of `label-width' is too small on line 384.
+Package tasks Warning: The width of `label-width' is too small on line 385.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 384.
+Package tasks Warning: The width of `label-width' is too small on line 385.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 384--384
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 385--385
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 
-Package tasks Warning: The width of `label-width' is too small on line 399.
+Package tasks Warning: The width of `label-width' is too small on line 400.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 399.
+Package tasks Warning: The width of `label-width' is too small on line 400.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 399--399
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 400--400
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 
-Package tasks Warning: The width of `label-width' is too small on line 418.
+Package tasks Warning: The width of `label-width' is too small on line 419.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 418.
+Package tasks Warning: The width of `label-width' is too small on line 419.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 418--418
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 419--419
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 
-Package tasks Warning: The width of `label-width' is too small on line 418.
+Package tasks Warning: The width of `label-width' is too small on line 419.
 (tasks)                Please set it at least to 11.29199pt.
 
 [4]
 
-Package tasks Warning: The width of `label-width' is too small on line 434.
+Package tasks Warning: The width of `label-width' is too small on line 435.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 434.
+Package tasks Warning: The width of `label-width' is too small on line 435.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 434--434
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 435--435
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
 
-Package tasks Warning: The width of `label-width' is too small on line 451.
+Package tasks Warning: The width of `label-width' is too small on line 452.
 (tasks)                Please set it at least to 12.04799pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 451.
+Package tasks Warning: The width of `label-width' is too small on line 452.
 (tasks)                Please set it at least to 11.91599pt.
 
 
-Overfull \hbox (0.67767pt too wide) in paragraph at lines 451--451
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 452--452
 \T1/jkpss/b/n/12 (-20) b) | 
  []
 
-[5] (./tikz/droite_graduee.tikz) [6] (./2_E_noel_part2.aux) ) 
+[5] (./tikz/droite_graduee.tikz)
+
+Package xsim Warning: Exercise properties may have changed. Rerun to get them
+(xsim)                synchronized.
+
+[6] (./2_E_noel_part2.aux) ) 
 Here is how much of TeX's memory you used:
- 43142 strings out of 478238
- 990321 string characters out of 5850455
- 1439067 words of memory out of 5000000
- 60399 multiletter control sequences out of 15000+600000
- 573734 words of font info for 262 fonts, out of 8000000 for 9000
+ 43129 strings out of 478238
+ 990706 string characters out of 5850455
+ 1422463 words of memory out of 5000000
+ 60430 multiletter control sequences out of 15000+600000
+ 569640 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,11n,106p,10691b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,11n,106p,10691b,939s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 2_E_noel_part2.pdf (8 pages, 88999 bytes).
+Output written on 2_E_noel_part2.pdf (8 pages, 89000 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
