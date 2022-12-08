@@ -6,6 +6,7 @@
 \usepackage[sfmath, light]{kpfonts}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{mathtools}
+\usepackage{calc}
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlist[enumerate]{label=\textbf{\alph*)}}
@@ -89,7 +90,6 @@ counter = exercise
 % \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
 
 \setlength{\textheight}{700pt}
-
 \begin{document}
 \raggedbottom
 \pagestyle{empty}
@@ -127,7 +127,7 @@ counter = exercise
     % % cell8
     Matériel à distribuer :                                                                             \\
     % % cell9
-    Partie 1 : \qquad/\TotalExerciseGoal{points}{}{}          & Partie 2 : \qquad/61 &\hfill\bfseries Total : \quad/88 \(\rightarrow\) \qquad/30 \\
+    Partie 1 : \qquad/\TotalExerciseGoal{points}{}{}          & Partie 2 : \qquad/58 &\hfill\bfseries Total : \quad/85 \(\rightarrow\) \qquad/30 \\
 \end{tblr}%
 \vspace*{\smallskipamount}
 \begin{scriptsize}%
@@ -244,7 +244,7 @@ counter = exercise
         \item Donne les coordonnées de \(B'\) tel que \(B'= S_y(B)\)?
         \item Donne les coordonnées de \(Z'\) tel qu'il soit l'image du point \(Z(-34;65)\) par la symétrie centrale dont le centre est l'origine du repère.
         \item Donne les coordonnées de \(D'\) tel que \(r_{O, \ang{-90}}(D)\)
-        \item Donne les coordonnées de \(W'\) tel qu'il soit l'image du point \(W(-78;23)\) par une rotation dont le centre est l'origine et de \(+\ang{90}\).
+        \item Donne les coordonnées de \(W'\) tel qu'il soit l'image du point \(W(-78;23)\) par une rotation de \(+\ang{90}\) dont le centre est l'origine.
     \end{enumerate}
 \end{appliquer}
 \begin{solappliquer}
@@ -271,7 +271,7 @@ counter = exercise
     \begin{center}
         \includegraphics[width=.5\linewidth]{tikz/ce1d_tdp.tikz}
     \end{center}
-    La partie du pavage représentée ci-dessus est constituée de losanges tous identiques au losange \(ABCD\). Le triangle \(ABD\) est équilatéral.
+    La partie du pavage représentée ci-dessus est constituée de losanges tous identiques au losange \(ABCD\).
     \begin{tasks}
         \task Hachure en bleu l'image du losange \(ABCD\) par la translation qui applique le point \(B\) sur le point \(E\).
         \task Hachure en vert l'image du losange \(ABCD\) par la symétrie centrale de centre \(B\).
