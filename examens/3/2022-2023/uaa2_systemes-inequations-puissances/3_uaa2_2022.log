@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 15:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  7 DEC 2022 20:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1737,7 +1737,7 @@ LaTeX Font Info:    ... okay on input line 4.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside asymmetric 
 * h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
 * v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
 * \paperwidth=597.50787pt
@@ -1759,7 +1759,7 @@ LaTeX Font Info:    ... okay on input line 4.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
+* \@twosidetrue
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
@@ -1821,7 +1821,7 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 <img/entete.pdf, id=29, 803.0pt x 50.1875pt>
 File: img/entete.pdf Graphic file (type pdf)
 <use img/entete.pdf>
-Package pdftex.def Info: img/entete.pdf  used on input line 5.
+Package pdftex.def Info: img/entete.pdf  used on input line 6.
 (pdftex.def)             Requested size: 452.9679pt x 28.31079pt.
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1830,8 +1830,7 @@ Package pdftex.def Info: img/entete.pdf  used on input line 5.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
-> Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 5.
+LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 6.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -1839,44 +1838,49 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 5.
+LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 6.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpss.fd
 File: omljkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 5.
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 6.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 5.
+LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 6.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpss.fd
 File: omxjkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 5.
+LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 6.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpssmia.fd
 File: ujkpssmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 5.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 6.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 6.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
-) [1
+)
+> Step: build the whole table.
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/entete.pdf>] [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/entete.pdf>] [2
+
+
+]
 \l__xsim_file_contents_iow=\write4
 \openout4 = `xsim/3_uaa2_2022-connaitre-1-exercise-body.tex'.
 
@@ -1900,7 +1904,7 @@ File: ujkpexa.fd 2006/08/15 v1.0
  (./xsim/3_uaa2_2022-appliquer-6-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-7-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex [3])
+ (./xsim/3_uaa2_2022-appliquer-7-exercise-body.tex [1])
 \openout4 = `xsim/3_uaa2_2022-appliquer-8-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-appliquer-8-exercise-body.tex)
@@ -1909,7 +1913,7 @@ File: ujkpexa.fd 2006/08/15 v1.0
  (./xsim/3_uaa2_2022-appliquer-9-exercise-body.tex)
 \openout4 = `xsim/3_uaa2_2022-appliquer-10-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex) [4]
+ (./xsim/3_uaa2_2022-appliquer-10-exercise-body.tex) [2]
 \openout4 = `xsim/3_uaa2_2022-transferer-11-exercise-body.tex'.
 
  (./xsim/3_uaa2_2022-transferer-11-exercise-body.tex)
@@ -1927,17 +1931,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 )
 \openout4 = `xsim/3_uaa2_2022-transferer-13-exercise-body.tex'.
 
- (./xsim/3_uaa2_2022-transferer-13-exercise-body.tex) [5] (./3_uaa2_2022.aux) ) 
+ (./xsim/3_uaa2_2022-transferer-13-exercise-body.tex) [3] (./3_uaa2_2022.aux) ) 
 Here is how much of TeX's memory you used:
- 55872 strings out of 478238
- 1375329 string characters out of 5850455
- 1914538 words of memory out of 5000000
- 73002 multiletter control sequences out of 15000+600000
+ 55886 strings out of 478238
+ 1375762 string characters out of 5850455
+ 1914588 words of memory out of 5000000
+ 73015 multiletter control sequences out of 15000+600000
  531477 words of font info for 186 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,114p,10720b,1192s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,114p,10720b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmnc.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 3_uaa2_2022.pdf (5 pages, 80259 bytes).
+Output written on 3_uaa2_2022.pdf (5 pages, 80323 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream

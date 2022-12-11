@@ -1,7 +1,8 @@
-\documentclass[a4paper, 12pt, parskip=half-]{scrartcl}
+\documentclass[a4paper, 12pt, parskip=half-, twoside=semi]{scrartcl}
 \input{preambule.tex}
 \input{entete.tex}
 \begin{document}
+\pagestyle{empty}
 \entete
 \minisec{Quelques consignes}
 \begin{itemize}
@@ -14,7 +15,9 @@
 \begin{flushright}
     Bon travail !
 \end{flushright}
-\newpage~\newpage
+\cleardoublepage
+\pagestyle{plain}
+\setcounter{page}{1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % C1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

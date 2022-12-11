@@ -42,8 +42,8 @@ after = \end{multicols}}
 \DeclareExerciseType{connaitre}{
 exercise-env = connaitre ,
 solution-env = solconnaitre ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -55,8 +55,8 @@ counter = exercise
 \DeclareExerciseType{appliquer}{
 exercise-env = appliquer ,
 solution-env = solappliquer ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -68,8 +68,8 @@ counter = exercise
 \DeclareExerciseType{transferer}{
 exercise-env = transferer ,
 solution-env = soltransferer ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -113,7 +113,7 @@ counter = exercise
     cell{7}{1}={r=1,c=3}{l},%
     cell{8}{1}={r=1,c=3}{l},%
     cell{10}{3}={font=\bfseries},
-    hline{1,3,5,9,11}={black},
+    hline{1,3,5,9,10}={black},
             rowsep=1ex%
         }%
     % cell1
@@ -133,10 +133,6 @@ counter = exercise
     % % cell8
     Matériel à distribuer :                                                  \\
     % % cell9
-    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{} &
-    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{} &
-    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}               \\
-    % % cell 10
     Partie 2 : \qquad/\TotalExerciseGoal{points}{}{}          &   &          \\
 \end{tblr}%
 \vspace*{\smallskipamount}
@@ -191,7 +187,7 @@ counter = exercise
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
     Quelle est la valeur du symbole \(\bullet\) pour que le nombre \(435\bullet\) soit divisible par 15 ? Justifie et sois précis.
-    \vspace*{7cm}
+    \vfill
 \end{transferer}
 \begin{soltransferer}
     % Pour être divisible par 15, le nombre doit être divisible par 3 et par 5.\\
@@ -227,6 +223,7 @@ counter = exercise
         \task \(-b\)
     \end{tasks}
 \end{solconnaitre}
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=6]
     Réduis au maximum les expressions suivantes à l'aide des propriétés des puissances.
@@ -235,8 +232,8 @@ counter = exercise
         \task \(\left( 3x^{3} \right)^{2} =\)
         \task \(\dfrac{a^{6} \cdot b^{5} \cdot a}{a^{4} \cdot b} =\)
         \task \(4a^{3} \cdot 6 \cdot a \cdot \left( a^{5} \right)^{4} =\)
-        \task \(2x^{4} \cdot \left( 4x^{5}y \right)^{2} \cdot 3x =\)
         \task \(\dfrac{\left( 4xy^{3} \right)^{2}}{8y} =\)
+        \task \(2x^{4} \cdot \left( 4x^{5}y \right)^{2} \cdot 3x =\)
     \end{tasks}
     \vspace{2cm}
 \end{appliquer}
@@ -276,7 +273,7 @@ counter = exercise
     \(\num{1478} = 4 \cdot 369 + 2\)
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appliquer}[points=2]
+\begin{appliquer}[points=1]
     Trouve la valeur de \(a\) dans les égalités suivantes.
     \begin{tasks}[after-skip=1cm](2)
         \task \(\num{14500} = 14,5 \cdot 10^{a}\)
@@ -293,7 +290,7 @@ counter = exercise
 \newpage
 \begin{connaitre}[points=5]
     Vrai ou faux~? Justifie dans les deux cas.
-    \begin{tasks}[after-item-skip=\fill, after-skip=1.5cm]
+    \begin{tasks}[after-item-skip=1.5cm, after-skip=1.5cm]
         \task Yves prétend que le quart de \(4^{6}\) est \(4^{3}\).
         \task \(\left( - a^{2} \cdot 2a \right)^{3} = \  - 2a^{9}\)
         \task \(0,4\) est la valeur approchée par défaut au dixième près de
@@ -338,16 +335,15 @@ counter = exercise
     \)
 \end{solconnaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{transferer}[points=3]
+\begin{transferer}[points=2]
     Classe les nombres suivants dans l'ordre croissant.
-    \begin{tasks}[label=, item-indent=0pt, after-item-skip=1em]
+    \begin{tasks}[label=, item-indent=0pt]
         \task \(A= \num{23456} \cdot 10^{- 4} \)
         \task \(B= \num{23,456} \cdot 10^{6}\)
         \task \(C= \num{0,000023456} \cdot 10^{9}\)
         \task \(D= \num{23456000} \cdot 10^{- 6}\)
         \task \(E= \num{0,0023456} \cdot 10^{- 2}\)
     \end{tasks}
-    \vspace{1cm}
     Classement :
 \end{transferer}
 \begin{soltransferer}
@@ -360,9 +356,8 @@ counter = exercise
     \end{tasks}
     Classement : E < A < D < C < B
 \end{soltransferer}
-\vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appliquer}
+\begin{appliquer}[points=2]
     Encadre les fractions suivantes à l'unité près.
     \begin{tasks}(2)
         \task \hfil\(\dfrac{3}{7}\)
@@ -475,7 +470,7 @@ counter = exercise
     E < D < C < A < B
 \end{solappliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{transferer}[points=3]
+\begin{transferer}[points=2]
     Pour l'anniversaire d'Eliott, deux de ses amis ont prévu de lui envoyer un SMS à intervalles réguliers. Ils commencent en même temps à 8 heures. Le premier envoie un SMS toutes les 36 minutes, l'autre toutes les 45 minutes. À quelle heure Eliott recevra-t-il pour la première fois deux SMS en même temps (autre que le premier) ?
     \vspace{7cm}
 \end{transferer}

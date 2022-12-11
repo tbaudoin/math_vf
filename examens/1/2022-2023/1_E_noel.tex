@@ -41,8 +41,8 @@
 \DeclareExerciseType{connaitre}{
 exercise-env = connaitre ,
 solution-env = solconnaitre ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -54,8 +54,8 @@ counter = exercise
 \DeclareExerciseType{appliquer}{
 exercise-env = appliquer ,
 solution-env = solappliquer ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -67,8 +67,8 @@ counter = exercise
 \DeclareExerciseType{transferer}{
 exercise-env = transferer ,
 solution-env = soltransferer ,
-exercise-name = \XSIMtranslate{exercise} ,
-exercises-name = \XSIMtranslate{exercises} ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
 solution-name = \XSIMtranslate{solution} ,
 solutions-name = \XSIMtranslate{solutions} ,
 exercise-template = interrogation ,
@@ -349,7 +349,6 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \begin{appliquer}[points=8]
-    %\FIXME: s'arranger niveau mise en page que tout rentre sur une seule page
     \tcbsidebyside[blanker]
     {
         Mélanie a représenté sous forme d'un diagramme les coûts par secteur d'activité pour un voyage à New York. Mélanie estime son voyage à \SI[]{1250}{\sieuro}.
@@ -420,7 +419,6 @@ Quelques conseils pour réussir ton examen :
         degrés &        &      &        &        &       \\
     \end{tblr}
     \vfil
-    % FIXME: aligner le cercle et la légende sur le haut.
     \tcbsidebyside[blanker, sidebyside align = top]
     {
         \begin{tikzpicture}[baseline=(current bounding box.north)]
