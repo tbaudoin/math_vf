@@ -33,7 +33,7 @@
             % \tkzMarkAngle[mark=none, size=0.7](LA,A,BA)
             % \tkzLabelAngle[pos=17](LA,A,BA){4}
              \tkzMarkAngle[mark=none, size=0.5](BA,A,RA)
-             \tkzLabelAngle[pos=0.8](BA,A,RA){$55\degres$}
+             \tkzLabelAngle[pos=0.8,font=\scriptsize](BA,A,RA){$55\degres$}
             %B
             % \tkzMarkAngle[mark=none, size=0.7](RB,B,TB)
             % \tkzLabelAngle[pos=1](RB,B,TB){$53\degres$}
@@ -42,7 +42,7 @@
             % \tkzMarkAngle[mark=none, size=0.7](LB,B,BB)
             % \tkzLabelAngle[pos=1](LB,B,BB){4}
              \tkzMarkAngle[mark=none, size=0.5](BB,B,RB)
-             \tkzLabelAngle[pos=0.8](BB,B,RB){$86\degres$}
+             \tkzLabelAngle[pos=0.8,font=\scriptsize](BB,B,RB){$86\degres$}
         \end{scriptsize}
     \end{scope}
 \end{tikzpicture}
