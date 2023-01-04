@@ -1,0 +1,13 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    % Points
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(30:3){I}    
+    \tkzDefPoint(60:3){M}
+    \tkzDefPoint(-20:3){D}
+    \tkzDrawPolygon(A,M,I)
+    \tkzDrawPoints(A,M,I,D)
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[above](M)
+    \tkzLabelPoints[right](I)
+    \tkzLabelPoints(D)
+\end{tikzpicture}
