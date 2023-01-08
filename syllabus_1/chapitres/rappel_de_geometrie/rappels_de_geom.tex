@@ -1,4 +1,6 @@
-\documentclass[../../syllabus_1.tex]{subfiles}
+\documentclass[paper=a4, twoside, fontsize=12pt, parskip=half-, numbers=enddot, open=right]{scrbook}
+\usepackage{preambule}
+\usepackage{macros}
 \begin{document}
 
 \chapter*{Rappels de géométrie}
@@ -7,7 +9,7 @@
 Trace \(AD\) en rouge, \(\lbrack CD\rbrack\) en vert, \(AB\rbrack\) en gris, \(\lbrack BC\rbrack\) en noir et \(\lbrack EC\) en bleu. \\ Nomme \(X\) l'intersection entre \(AD\) et \(\lbrack EC\).
 
 \begin{center}
-    \includegraphics[width=.5\linewidth]{chapitres/figures_planes/img/intro.png}
+    \includegraphics[width=.5\linewidth]{img/intro.png}
 \end{center}
 Complète~:
 \begin{enumerate}[itemsep=.7cm]
@@ -22,51 +24,51 @@ Complète~:
 \newpage
 \subsubsection{Un point}
 Un point se note à l'aide d'une lettre majuscule. \\
-Exemple : 
+Exemple :
 \vspace{2cm}
 
 \subsubsection{Une droite}
 Une droite se note à l'aide soit d'une lettre minuscule, soit de deux lettres majuscules. Dans ce cas-là, nous nommons la droite par deux points de passage de cette droite. Une droite est illimitée. \\
-Exemple : 
+Exemple :
 \vspace{2cm}
 
 \subsubsection{Une demi-droite}
 Une demi-droite se note à l'aide de deux lettres majuscules. Nous nommons alors la demi-droite à l'aide de son origine (marquée d'un crochet) et d'un point de passage de cette demi-droite. \\
-Exemple : 
+Exemple :
 \vspace{2cm}
 
 \subsubsection{Un segment de droite}
 Un segment de droite se note à l'aide de deux lettres majuscules. Nous nommons le segment à l'aide des deux extrémités du segment, marquées par des crochets. \\
-Exemple : 
+Exemple :
 \vspace{2cm}
 
 La longueur du segment se note :
 
 \subsubsection{Droites parallèles}
 Deux droites parallèles sont des droites qui soit n'ont aucun point commun, autrement dit qui n'auront aucun point d'intersection, soit qui sont confondues (donc elles possèdent une infinité de points d'intersections). Cela se note à l'aide du symbole \ldots .\\
-Exemple : 
+Exemple :
 \vspace{2cm}
 
 \subsubsection{Droites sécantes}
 Deux droites sécantes sont des droites qui ont un point commun, autrement dit qui ont un point d'intersection. Si deux droites ne sont pas parallèles, alors elles sont sécantes. Cela se note à l'aide du symbole \ldots .\\
-Exemple : 
+Exemple :
 \vspace{2cm}
 
 \subsubsection{Droites perpendiculaires}
 Deux droites perpendiculaires sont deux droites sécantes qui se coupent en formant quatre angles droits (=90° ). Cela se note à l'aide du symbole \ldots . \\
-Exemple : 
+Exemple :
 \vspace{2cm}
 
 \subsubsection{Notion d'appartenance}
 Un point appartient à une droite (ou à un segment, à une demi-droite, \ldots) s'il fait partie de cette droite. Cela se note à l'aide des symboles $\in$ (appartient à) et $\notin$ (n'appartient pas à).  \\
-Exemple : 
+Exemple :
 \vspace{2cm}
 
 \newpage
 \begin{exercise}
     Complète les pointillés à l'aide des symboles \(\in\) et \(\notin\).
     \begin{center}
-        \includegraphics[]{chapitres/figures_planes/img/appartient.png}
+        \includegraphics[]{img/appartient.png}
     \end{center}
     \begin{enumerate}[itemsep=1cm, cols=4]
         \item \(F \dotfill [AH\)
@@ -84,7 +86,7 @@ Exemple :
 \begin{exercise}
     Complète les pointillés à l'aide du symbole adéquat concernant la position relative de deux droites.
     \begin{multicols}{3}
-        \includegraphics[]{chapitres/figures_planes/img/pos_de_droites.png}
+        \includegraphics[]{img/pos_de_droites.png}
 
         \begin{enumerate}[itemsep=1cm]
             \item \(d \dotfill AB\)
@@ -101,13 +103,15 @@ Exemple :
 
 \begin{exercise}
     Construis la droite demandée.
-    \begin{enumerate}[cols=2, itemsep=1cm]
-        \item Construis $d$ tel que $d \bot a$ et $C \in d$
-        \item [\label=\ ] \includegraphics[]{chapitres/figures_planes/img/droiteABpointC.png}
-        \item Construis $f$ tel que $f \sslash AB$ et $C \notin f$
-        \item [\label=\ ] \includegraphics[]{chapitres/figures_planes/img/droiteABpointC.png}
-    \end{enumerate}
-    %\TODO: refaire les droites
+    \tcbsidebyside[blanker]{
+        Construis $d$ tel que $d \bot a$ et $C \in d$
+        \bigbreak
+        \includegraphics{tikz/droite_construction.tikz}
+    }{
+        Construis $f$ tel que $f \sslash AB$ et $C \notin f$
+        \bigbreak
+        \includegraphics{tikz/droite_construction.tikz}
+    }
 \end{exercise}
 
 \newpage
@@ -136,20 +140,20 @@ Exemple :
 \dotsforanswer{3}[La médiatrice d'un segment est]
 
 \begin{enumerate}[itemsep=2cm, cols=2, label= ]
-    \item Tracé à l'équerre : 
-    \item \includegraphics[]{chapitres/figures_planes/img/segmentAB.png}
-    \item Tracé au compas : 
-    \item \includegraphics[]{chapitres/figures_planes/img/segmentAB.png}
+    \item Tracé à l'équerre :
+    \item \includegraphics[]{img/segmentAB.png}
+    \item Tracé au compas :
+    \item \includegraphics[]{img/segmentAB.png}
 \end{enumerate}
 
-\vfil 
+\vfil
 
 \begin{exercise}
-     Maxime a tracé trois médiatrices. Laquelle est correcte~? Explique pourquoi les deux autres ne le sont pas.
-     \begin{center}
-        \includegraphics[]{chapitres/figures_planes/img/med.png}
-     \end{center}
-     \dotsforanswer{3}[]
+    Maxime a tracé trois médiatrices. Laquelle est correcte~? Explique pourquoi les deux autres ne le sont pas.
+    \begin{center}
+        \includegraphics[]{img/med.png}
+    \end{center}
+    \dotsforanswer{3}[]
 \end{exercise}
 
 \newpage
@@ -168,8 +172,8 @@ L'amplitude de l'angle se mesure en degrés et s'écrit \dotfill
 \begin{exercise}
     Après avoir été programmé, un robot se déplace de la manière suivante~:
     \begin{multicols}{2}
-        \includegraphics[]{chapitres/figures_planes/img/robot.png}
-        À l'aide des instruments adéquats, mesure l'amplitude des angles grisés. 
+        \includegraphics[]{img/robot.png}
+        À l'aide des instruments adéquats, mesure l'amplitude des angles grisés.
         \begin{enumerate}[itemsep=1cm, label= ]
             \item \(|\widehat{P_1}| =\)
             \item \(|\widehat{P_2}| =\)
@@ -195,10 +199,10 @@ L'amplitude de l'angle se mesure en degrés et s'écrit \dotfill
 \dotsforanswer{4}[La bissectrice d'un angle est]
 
 \begin{enumerate}[itemsep=3cm, cols=2, label= ]
-    \item Tracé à l'équerre : 
-    \item \includegraphics[]{chapitres/rappel_de_geometrie/img/angleA.png}
-    \item Tracé au compas : 
-    \item \includegraphics[]{chapitres/rappel_de_geometrie/img/angleA.png}
+    \item Tracé à l'équerre :
+    \item \includegraphics[]{img/angleA.png}
+    \item Tracé au compas :
+    \item \includegraphics[]{img/angleA.png}
 \end{enumerate}
 
 \begin{exercise}
@@ -256,7 +260,7 @@ L'amplitude de l'angle se mesure en degrés et s'écrit \dotfill
     \begin{enumerate}[label= $\ast$]
         \item Trace $AR$ en vert
         \item Trace $RY]$ en bleu
-        \item Trace $a$, parallèle à $AR$ et passant par $Y$. 
+        \item Trace $a$, parallèle à $AR$ et passant par $Y$.
         \item Trace $d$, perpendiculaire à $RY]$ ne passant pas par $A$
     \end{enumerate}
 \end{exercise}

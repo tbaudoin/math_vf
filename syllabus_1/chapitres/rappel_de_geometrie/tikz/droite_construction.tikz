@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 4/-3/B, 2/0/C}
+    \tkzDrawLine(A,B)
+    \tkzDrawPoints(A,B,C)
+    \tkzLabelPoints[above](A,B,C)
+    \tkzLabelLine[pos=-0.15, above](A,B){\(a\)}
+\end{tikzpicture}
