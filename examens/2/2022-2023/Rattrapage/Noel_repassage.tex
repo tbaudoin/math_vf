@@ -1,0 +1,539 @@
+\documentclass[parskip=half-,twoside=semi, 12pt]{scrartcl}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[sfmath, light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{frenchmath}
+\usepackage{mathtools}
+\usepackage{calc}
+\usepackage{xlop}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\textbf{\alph*)}}
+\SetEnumitemKey{cols}{
+itemsep = 1\tasksep,
+parsep = 1\parsep,
+before = \raggedcolumns\begin{multicols}{#1},
+after = \end{multicols}}
+\usepackage{tasks}
+\settasks{label-format=\bfseries, label-width=13pt}
+\usepackage[locale=FR, group-minimum-digits = 3]{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{babel, patterns, math}
+\usepackage{tkz-base}
+\usepackage{tkz-euclide}
+\usepackage{tikzscale}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\faStyle{regular}
+\usepackage{systeme}
+\usepackage{tabularray}
+\NewColumnType{C}[1][]{Q[c,co=1,#1]}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, xparse}
+\usepackage[use-aux, no-files]{xsim}
+
+\DeclareExerciseEnvironmentTemplate{interrogation}
+{%
+    {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
+    \GetExercisePropertyT{points}{\marginpar{\qquad/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue}
+}%
+{\bigbreak}
+
+% Mes environnements
+\DeclareExerciseType{connaitre}{
+exercise-env = connaitre ,
+solution-env = solconnaitre ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{appliquer}{
+exercise-env = appliquer ,
+solution-env = solappliquer ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{transferer}{
+exercise-env = transferer ,
+solution-env = soltransferer ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+
+\xsimsetup{
+    exercise/template = interrogation,
+    solution/template = interrogation,
+}
+
+\newcommand{\figcolor}{white}
+\newcommand{\Titre}{TJF - Les inéquations}
+\newcommand{\Date}{Vendredi 25 novembre 2022}
+\newcommand{\Classe}{}
+
+% \usepackage{scrlayer-scrpage}
+% \setlength{\headheight}{50pt}
+% \lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
+% \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
+
+\setlength{\textheight}{700pt}
+\begin{document}
+\raggedbottom
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ENTETE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=\linewidth]{img/entete.pdf}
+\vspace*{\smallskipamount}
+\begin{tblr}{%
+    colspec={|XXX|},%
+    cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+    cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+    cell{5}{1}={r=1,c=3}{l},
+    % cell{5}{3}={r=4,c=1}{r},
+    cell{6}{1}={r=1,c=3}{l},%
+    cell{7}{1}={r=1,c=3}{l},%
+    cell{8}{1}={r=1,c=3}{l},%
+    hline{1,3,5,9,10}={black},
+            rowsep=1ex%
+        }%
+    % cell1
+    Examen de mathématiques                                   &                      &                  \\
+    % % cell2
+    Report de session                                                 &                      &                  \\
+    % cell3
+    Nom :                                                     &                      & Classe :         \\
+    % cell4
+    Prénom :                                                  &                      & Numéro :         \\
+    % cell5
+    Professeur : Janssens    &                      &                  \\
+    % cell6
+    Date et heure: Lundi 23 janvier 2023 &                      &                  \\
+    % % cell7
+    Matériel autorisé : Équerre multifonction, compas, crayon, gomme.                                   \\
+    % % cell8
+    Matériel à distribuer :     /                                                                        \\
+    % % cell9
+    & &  Total : \quad\TotalExerciseGoal{points}{}{} \(\rightarrow\) \qquad/30 \\
+\end{tblr}%
+\vspace*{\smallskipamount}
+\begin{scriptsize}%
+    Rue de linthout, 30 - 1030 Bruxelles%
+\end{scriptsize}%
+\cleardoublepage
+\pagestyle{plain}\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONTENU
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% partie 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=2]
+    Complète le tableau suivant.\par
+    \begin{tblr}{
+            hlines,
+            vlines,
+            rowsep=1em,
+            row{1}={font=\bfseries},
+            row{3}={2cm},
+            colspec={XXX},
+            columns={c},}
+        Nom des isométries & Verbe de mouvement     & Éléments caractéristiques \\
+                           &                        & Axe de symétrie           \\
+        Rotation           &                        &                           \\
+    \end{tblr}
+\end{connaitre}
+\begin{solconnaitre}
+
+    \begin{tblr}{
+            hlines,
+            vlines,
+            rowsep=1em,
+            row{1}={font=\bfseries},
+            colspec={XXX},
+            columns={c},}
+        Nom des isométries   & Verbe de mouvement     & Éléments caractéristiques \\
+        Translation          & Glisser                & Vecteur                   \\
+        Symétrie orthogonale & Retourner              & Axe de symétrie           \\
+        Symétrie centrale    & Tourner d'un demi-tour & Centre de symétrie        \\
+        Rotation             & Tourner                & {Centre de rotation       \\Angle de rotation\\Sens de rotation}                         \\
+    \end{tblr}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=4]
+    \(ABCDEFGH\) est un octogone régulier. Réponds aux questions suivantes.
+
+    \tcbsidebyside[sidebyside adapt=left, blanker]%
+    {%
+        \includegraphics[height=4cm]{tikz/octogone.tikz}
+    }
+    {%
+        \begin{enumerate}[itemsep=1em]
+            \item Quelle est l'image du point \(G\) par la translation qui applique \(A\) sur \(C\) ?
+            \item \(R_{O,\ang{-90}}(C) = \) ?
+            \item Quelle est l'image du triangle \(AOB\) par la symétrie orthogonale d'axe \(HD\) ?
+            \item \(S_{O}([DB]) =\) ?
+        \end{enumerate}
+    }
+\end{transferer}
+
+\begin{soltransferer}
+    \begin{tasks}(4)
+        \task \(E\)
+        \task \(1\)
+        \task \(GOF\)
+        \task \([HF]\)
+    \end{tasks}
+\end{soltransferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=2]
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{tikz/ce1d_tdp.tikz}
+    \end{center}
+    La partie du pavage représentée ci-dessus est constituée de losanges tous identiques au losange \(ABCD\).
+    \begin{tasks}
+        \task Hachure en bleu l'image du losange \(ABCD\) par la translation qui applique le point \(B\) sur le point \(E\).
+        \task Hachure en vert l'image du losange \(ABCD\) par la symétrie centrale de centre \(B\).
+    \end{tasks}
+\end{transferer}
+\begin{soltransferer}
+    \includegraphics[width=.5\linewidth]{tikz/ce1d_tdp_sol.tikz}
+\end{soltransferer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{appliquer}[points=4]
+    À l'aide du repère cartésien ci-dessous, réponds aux questions.
+    \begin{center}
+        \input{tikz/cartesien.tikz}
+    \end{center}
+    \begin{enumerate}[itemsep=\fill]
+        \item Place le point \(A'\) tel qu'il soit l'image du point \(A\) par une symétrie orthogonale d'axe \(x\).
+        \item Place le point \(C'\) tel que \(t_{\overrightarrow{OA}}(C)=C'\).
+        \item Donne les coordonnées de \(B'\) tel que \(B'= S_y(B)\)?
+        \item Donne les coordonnées de \(Z'\) tel qu'il soit l'image du point \(Z(-34;65)\) par la symétrie centrale dont le centre est l'origine du repère.
+    \end{enumerate}
+    \vspace{2cm}
+\end{appliquer}
+\begin{solappliquer}
+    \tcbsidebyside[sidebyside adapt=left, blanker]%
+    {%
+        \includegraphics[height=5cm]{tikz/cartesien_sol.tikz}
+    }
+    {%
+        \begin{enumerate}
+            \item \( A(2;3)\) et \(B(-2;4)\)
+            \item Voir repère
+            \item Voir repère
+            \item Voir repère
+            \item \(B'(2;3)\)
+            \item \(Z'(34;-65)\)
+            \item \(D(2;3)\)
+            \item \(W'(-23;-78)\)
+        \end{enumerate}
+    }
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{appliquer}[points=1]
+    Donne une fraction irréductible correspondant aux abscisses des points
+    nommés ci-dessous. Sois précis~!
+    \begin{center}
+        \input{tikz/droite_graduee.tikz}
+    \end{center}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=6]
+    Effectue les transformations du plan demandées. Laisse tes constructions visibles.
+    \begin{enumerate}
+        \item \(S_{h}(NICE) = N'I'C'E'\)
+              \begin{center}
+                  \input{tikz/tdp2_soso.tikz}
+              \end{center}
+        \item \(r_{A;\ang{-80}}(AMIS) = A'M'I'S'\)
+              \begin{center}
+                  \input{tikz/tdp3_soso.tikz}
+              \end{center}
+        \item \(S_{O}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \input{tikz/tdp2.tikz}
+              \end{center}
+
+    \end{enumerate}
+\end{appliquer}
+\begin{solappliquer}
+    Effectue les transformations du plan demandées. Laisse tes constructions visibles.
+    \begin{enumerate}
+        \item Une rotation du triangle \(ABC\) de centre \(D\) et d'amplitude \ang{100}, que tu appeleras \(A'B'C'\)
+              \begin{center}
+                  \input{tikz/tdp1_soso.tikz}
+              \end{center}
+        \item \(S_{h}(NICE) = N'I'C'E'\)
+              \begin{center}
+                  \input{tikz/tdp2_soso.tikz}
+              \end{center}
+              % \item $S_{DE}(ABC)=A'B'C'$
+              %       \begin{center}
+              %           \input{tikz/tdp1.tikz}
+              %       \end{center}
+        \item \(S_{O}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \input{tikz/tdp2.tikz}
+              \end{center}
+        \item \(t_{\overrightarrow{v}}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \input{tikz/tdp3.tikz}
+              \end{center}
+              % \item \(r_{B;\ang{-75}}(ABC)=A'B'C'\)
+              %       \begin{center}
+              %           \input{tikz/tdp4.tikz}
+              %       \end{center}
+              % \item \(r_{M;\ang{60}}(ABCD)=A'B'C'D'\)
+              %       \begin{center}
+              %           \input{tikz/tdp5.tikz}
+              %       \end{center}
+    \end{enumerate}
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Complète le tableau suivant.\par
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={2cm},row{1}={font=\bfseries}}
+        Nom de la propriété       & Propriété                                    & Exemple chiffré          \\
+        Puissance d'une puissance &                                              &                          \\
+                                  & \(\left(a \cdot b\right)^n = a^n \cdot b^n\) &                          \\
+                                  &                                              & \(\dfrac{2^5}{2^3}=2^2\)
+    \end{tblr}
+\end{connaitre}
+\begin{solconnaitre}
+
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={1cm},row{1}={font=\bfseries}}
+        Nom de la propriété                & Propriété                              & Exemple chiffré                              \\
+        Puissance d'une puissance          & \(\left(a^b\right)^c = a^{b \cdot c}\) & \(\left(2^3\right)^4 = 2^12\)                \\
+        Puissance d'un produit             & \(\left(a \cdot b\right)^n\)           & \(\left(2 \cdot 3\right)^4 = 2^4 \cdot 3^4\) \\
+        Quotient de puissance de même base & \(\dfrac{a^b}{a^c}= a^{b-c}\)          & \(\dfrac{2^5}{2^3}=2^2\)
+    \end{tblr}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Complète le tableau suivant.\par
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={1cm},row{1}={font=\bfseries}}
+        Expression                  & Notation décimale & Notation scientifique \\
+        \(350 \cdot 10^{- 5}\)      &                   &                       \\
+        \(2\) milliards             &                   &                       \\
+        \(0,000\ 007 \cdot 10^{5}\) &                   &                       \\
+    \end{tblr}
+\end{connaitre}
+\begin{solconnaitre}
+
+    \begin{tblr}{hlines, vlines, colspec={CCC}, row{2-4}={1cm},row{1}={font=\bfseries}}
+        Expression                  & Notation décimale & Notation scientifique  \\
+        \(350 \cdot 10^{- 5}\)      & \num{0,00350}     & \(3,5 \cdot 10 ^{-3}\) \\
+        \(2\) milliards             & \num{2000000000}  & \(2 \cdot 10^9\)       \\
+        \(0,000\ 007 \cdot 10^{5}\) & \num{0,7}         & \(7 \cdot 10^{-1}\)    \\
+    \end{tblr}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Quelle est la valeur du symbole \(\bullet\) pour que le nombre \(435\bullet\) soit divisible par 15 ? Justifie et sois précis.
+    \vfill
+\end{transferer}
+\begin{soltransferer}
+    % Pour être divisible par 15, le nombre doit être divisible par 3 et par 5.\\
+    % Pour être divisible par 5, le chiffre des unités doit être 0 ou 5 ce qui ne nous laisse que deux possibilités : \num{4350} ou \num{4355}.\\
+    % Pour être divisible par 3, la somme des chiffres doit être un multiple de 3 : \(4+3+5 + 0 = 12\) et \(4 + 3 + 5 + 5 = 17\).\\
+    % Le symbole \(bullet\) ne peut prendre que la valeur \(0\) pour que les deux conditions soient respectées.
+    \num{4350}
+\end{soltransferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=6]
+    Réduis au maximum les expressions suivantes à l'aide des propriétés des puissances.
+    \begin{tasks}[after-item-skip=2cm](2)
+        \task \(2a \cdot a^{3} =\)
+        \task \(\left( 3x^{3} \right)^{2} =\)
+        \task \(\dfrac{a^{6} \cdot b^{5} \cdot a}{a^{4} \cdot b} =\)
+        \task \(4a^{3} \cdot 6 \cdot a \cdot \left( a^{5} \right)^{4} =\)
+        \task \(\dfrac{\left( 4xy^{3} \right)^{2}}{8y} =\)
+        \task \(2x^{4} \cdot \left( 4x^{5}y \right)^{2} \cdot 3x =\)
+    \end{tasks}
+    \vspace{2cm}
+\end{appliquer}
+\begin{solappliquer}
+    \begin{tasks}(3)
+        \task \(2a^4\)
+        \task \(9x^6\)
+        \task \(a^3b^4\)
+        \task \(24a^{24}\)
+        \task \(80x^{15}y^2\)
+        \task \(2x^2y^5\)
+    \end{tasks}
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{connaitre}[points=5]
+    Vrai ou faux~? Justifie dans les deux cas.
+    \begin{tasks}[after-item-skip=1.5cm, after-skip=1.5cm]
+        \task Yves prétend que le quart de \(4^{6}\) est \(4^{3}\).
+        \task \(\left( - a^{2} \cdot 2a \right)^{3} = \  - 2a^{9}\)
+        \task \(0,4\) est la valeur approchée par défaut au dixième près de
+        \(\dfrac{17}{50}\).
+        \task \(16n + 4\) est un multiple de 4.
+        \task \(n + 3\) est un nombre naturel dont le chiffre des unités est \(3\),
+        \(6\) ou \(9\).
+    \end{tasks}
+\end{connaitre}
+\begin{solconnaitre}
+    \begin{tasks}
+        \task Faux. \(\dfrac{4^6}{4} = 4^5 \neq 4^3\).
+        \task Faux. \(\left( - a^{2} \cdot 2a \right)^{3} = -8a^9 \neq - 2a^{9}\)
+        \task Faux. \(\dfrac{17}{50} = 0,34\). Par conséquent \(0,4\) est sa valeur approchée par excès et non par défaut.
+        \task Vrai. \(16n+4 = 4(4n+1)\).
+        \task Faux. Si \(n = 1\) alors \(n+3 = 1+ 3 = 4\) et le chiffre des unités de ce nombre n'est ni 3 ni 6 ni 9.
+    \end{tasks}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{connaitre}[points=3]
+    Complète le tableau ci-dessous.\medbreak
+    \(
+    \begin{tblr}{hlines, vlines, colspec={CCCCC},row{2-5}={2em},row{1}={font=\bfseries\boldmath}, column{5}={4cm}}
+        D  & d & q & r & \text{Égalité}      \\
+        51 & 8 &   &   &                     \\
+        19 &   &   & 2 &                     \\
+           &   &   &   & 35 = 3 \cdot 10 + 5 \\
+    \end{tblr}
+    \)
+\end{connaitre}
+\begin{solconnaitre}
+    \par
+    \(
+    \begin{tblr}{hlines, vlines, colspec={CCCCC},row{2-5}={2em},row{1}={font=\bfseries\boldmath}}
+        D  & d  & q & r & \text{Égalité}      \\
+        51 & 8  & 6 & 3 & 51=8\cdot 6 + 3     \\
+        19 & 17 & 1 & 2 & 19=17\cdot 1 + 2    \\
+        47 & 7  & 6 & 1 & 47=7\cdot 6 + 1     \\
+        35 & 10 & 3 & 5 & 35 = 3 \cdot 10 + 5 \\
+    \end{tblr}
+    \)
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=3]
+    Mélissa a fait \SI{8,7}{kg} de confiture. Elle la répartit dans des
+    petits bocaux de \SI{70}{g} pour son hôtel. Réponds aux questions ci-dessous en notant ton raisonnement.
+    \begin{tasks}[after-item-skip=6cm, after-skip=3cm]
+        \task De combien de bocaux aura-t-elle besoin ?
+        \task Combien de grammes de confiture aurait-elle dû faire en plus pour compléter le dernier bocal ?
+    \end{tasks}
+\end{transferer}
+\begin{soltransferer}
+    \begin{tasks}
+        \task \opidiv[displayintermediary=all,voperation=top,voperator=bottom]{8700}{70}
+        \qquad Elle aura besoin de \(125\) bocaux.
+        \task Il lui reste \SI{20}{g}, il lui manque donc \(70-20=\SI{50}{g}\) pour  compléter le dernier bocal.
+    \end{tasks}
+\end{soltransferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{appliquer}[points=4]
+    Calcule le PGCD des nombres suivants. Utilise si possible une propriété, sinon écris tous tes calculs.
+    \begin{tasks}(2)
+        \task \(210\) et \(330\)
+        \task \(600\) et \(12\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+    \begin{tasks}
+        \task \(210 = 2 \cdot 3 \cdot 5 \cdot 7\) et \(330 = 2 \cdot 3 \cdot 5 \cdot 11\) donc \(PGCD(210, 330) = 30\).
+        \task \(600\) est un multiple de \(12\) donc \(PGCD(600,12) = 12\).
+    \end{tasks}
+    
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vfil
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{appliquer}[points=4]
+    Calcule le PPCM des nombres suivants. Utilise si possible une propriété, sinon écris tous tes calculs.
+    \begin{tasks}[after-skip=5cm](2)
+        \task \(5\) et \(12\)
+        \task \(63\) et \(28\)
+    \end{tasks}
+\end{appliquer}
+\begin{solappliquer}
+    \begin{tasks}
+        \task \(54\) est un multiple de \(27\) donc \(PPCM(54,27)=54\)
+        \task \(64 = 3^2 \cdot 7\) et \(28 = 2^2 \cdot 7\) donc \(PPCM(64, 28) = 448\)
+    \end{tasks}
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{transferer}[points=3]
+    Elisa a fait des biscuits pour les vendre à la fête du quartier. Elle a
+    fait 36 biscuits au chocolat et 60 biscuits au sucre. Elle veut tous les
+    mettre dans des boîtes contenant chacune exactement le même nombre
+    de biscuits au sucre et le même nombre de biscuits au chocolat.
+    \begin{tasks}[after-item-skip=7cm]
+        \task Quel est le plus grand nombre de boîtes identiques qu'elle peut faire ? Note tout ton raisonnement.
+        \task Combien de biscuits pourrait-on mettre dans une de ces boîtes ? 
+    \end{tasks}
+\end{transferer}
+\begin{soltransferer}
+    \(PGCD(36,60) = 12\). Elle peut donc concevoir au maximum 12 boîtes de biscuits.
+\end{soltransferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vfil
+\begin{appliquer}[points=2]
+    Classe les fractions suivantes par ordre croissant. Laisse ta démarche visible.
+    \begin{tasks}[label=](5)
+        \task \(A=\dfrac{34}{16}\)
+        \task \(B=\dfrac{5}{2}\)
+        \task \(C=\dfrac{70}{200}\)
+        \task \(D=- \dfrac{3}{42}\)
+        \task \(E=\dfrac{- 11}{8}\)
+    \end{tasks}
+    \vspace{1cm}
+    Classement :
+    \vspace{1cm}
+\end{appliquer}
+\begin{solappliquer}
+    E < D < C < A < B
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newpage
+% \printallsolutions[headings=false]
+% \newpage
+% \renewcommand{\figcolor}{red}
+% \printallsolutions[headings=false]
+\end{document}

@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    \foreach \x/\y in {45/A,90/B,135/C,180/D,225/E,270/F,315/G,360/H}
+        {\coordinate (\y) at (\x:2);}
+    \tkzDrawPolygon(A,B,C,D,E,F,G,H)
+    \tkzDefPoint(0,0){O}
+    \tkzDrawPoint(O)
+    \tkzLabelPoints[below right](O)
+    \tkzLabelPoints[above right](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[above left](C)
+    \tkzLabelPoints[left](D)
+    \tkzLabelPoints[below left](E)
+    \tkzLabelPoints[below](F)
+    \tkzLabelPoints[below right](G)
+    \tkzLabelPoints[ right](H)
+    %\tkzMarkSegments[mark=|](A,B B,C C,D D,E E,F F,G G,H H,A)
+\end{tikzpicture}

@@ -1,0 +1,29 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \foreach \x in {0,2,...,10}{
+            \draw[xshift=\x cm, gray!60] (0,0) -- (1,2) -- (2,0) -- (1,-2) -- cycle;
+        }
+    \begin{scope}[xshift=1cm, yshift=2cm]
+        \foreach \x in {0,2,...,8}{
+                \draw[xshift=\x cm,gray!60] (0,0) -- (1,2) -- (2,0) -- (1,-2) -- cycle;
+            }
+    \end{scope}
+    \begin{scope}[xshift=2cm, yshift=4cm]
+        \foreach \x in {0,2,...,6}{
+                \draw[xshift=\x cm,gray!60] (0,0) -- (1,2) -- (2,0) -- (1,-2) -- cycle;
+            }
+    \end{scope}
+    \begin{scope}[xshift=1cm, yshift=-2cm]
+        \foreach \x in {0,2,...,8}{
+        \draw[xshift=\x cm,gray!60] (0,0) -- (1,2) -- (2,0) -- (1,-2) -- cycle;
+    }
+    \end{scope}
+
+    \draw[line width=2pt, xshift=5cm, yshift=2cm] (0,0)node[left]{\(D\)} -- (1,2)node[above=5pt]{\(A\)} -- (2,0)node[right]{\(B\)} -- (1,-2)node[below=5pt]{\(C\)} -- cycle;
+
+    \draw[xshift=5cm, yshift=2cm] (0,-4)node[below=5pt]{\(E\)};
+
+    %sol
+    \draw[color = blue, pattern color=blue,pattern= north east lines, xshift=3cm,yshift=-2cm] (0,0) -- (1,2) -- (2,0) -- (1,-2) -- cycle;
+    \draw[color=green,pattern color=green,pattern= north east lines, xshift=7cm,yshift=2cm] (0,0) -- (1,2) -- (2,0) -- (1,-2) -- cycle;
+    \draw[pattern= north east lines, xshift=4cm,yshift=4cm] (0,0) -- (1,2) -- (2,0) -- (1,-2) -- cycle;
+\end{tikzpicture}

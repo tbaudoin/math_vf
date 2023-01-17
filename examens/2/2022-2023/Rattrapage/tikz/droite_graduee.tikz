@@ -1,0 +1,27 @@
+\begin{tikzpicture}[x=2cm,>=latex]
+    \tikzmath{
+        int \max;
+        int \min;
+        \max = 4;
+        \min = -3;
+        \grad = 1;
+        \subgrad = 0.125;
+    }
+    \draw[->,shorten >=-0.5cm] (\min,0) -- (\max,0)node[right=0.5cm]{$x$};
+    \foreach \x[parse=true] in {\min,\min+\subgrad,...,\max}
+        {
+            \draw (\x, 2.5pt) -- (\x, -2.5pt);
+        }
+    \foreach \x in {\min,...,\max}
+        {
+            \draw (\x, 5pt) -- (\x, -5pt)node[below]{\(\x\)};
+        }
+
+   \draw (-10*\subgrad,-3pt) -- (-10*\subgrad,10pt) node[above]{\(A\)};
+   \draw (2*\subgrad,-3pt) -- (2*\subgrad,10pt) node[above]{\(C\)};
+    % -3\subgrad/0/B,
+    % 2\subgrad/0/C,
+    % 12\subgrad/0/D,
+    % 15\subgrad/0/E
+
+\end{tikzpicture}

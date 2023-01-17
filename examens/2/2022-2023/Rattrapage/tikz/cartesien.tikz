@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.7]
+    \tkzInit[xmin=-5, xmax=5, ymin=-5, ymax=5]
+    \tkzGrid
+    \tkzDrawXY
+    \tkzLabelXY[orig=false, font=\scriptsize]
+    \tkzDefPoints{2/3/A, -2/4/B, -4/-2/C, -2/-3/D,0/0/O}
+    \tkzDrawPoints(A,B,C,O)
+    \tkzLabelPoints(A,B,C,O){}
+\end{tikzpicture}
