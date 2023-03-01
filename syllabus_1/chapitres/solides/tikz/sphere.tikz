@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+    \shade[ball color = white, opacity = 0.3] (0,0) circle (2);
+    \draw (0,0) circle (2);
+    \draw (-2,0) arc (180:360:2 and 0.6);
+    \draw[dashed] (2,0) arc (0:180:2 and 0.6);
+    % \fill[fill=black] (0,0) circle (1pt);
+    % \draw[dashed] (0,0 ) -- node[above]{$r$} (2,0);
+  \end{tikzpicture}

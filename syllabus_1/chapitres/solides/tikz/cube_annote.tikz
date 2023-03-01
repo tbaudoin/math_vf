@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+    \tikzmath{
+        \side = 2;
+        \k = 0.5 * \side;
+    }
+    \tkzDefPoints{0/0/A, \side/0/B, \side/\side/C, 0/\side/D}
+    \tkzDefPoints{\k/\k/E}
+    \tkzDefPointsBy[translation=from A to E](B,C,D){F,G,H}
+    \tkzDrawSegments[dashed](A,E H,E F,E)
+    \tkzDrawPolygon[opacity=.5,fill=red](A,B,C,D) 
+    \tkzDrawPolygon[opacity=.5,fill=blue](B,F,G,C) 
+    \tkzDrawPolygon[opacity=.5,fill=yellow](D,C,G,H)
+    % annotations
+    %% face
+    \tkzDefMidPoint(D,G)
+    \node (face) at ([shift={(-1,1)}]tkzPointResult){face};
+    \draw (tkzPointResult) to[bend right] (face);
+    %% arête
+    \tkzDrawSegment[line width=2pt](F,G)
+    \tkzDefMidPoint(F,G)
+    \node (arete) at ([shift={(1,-.5)}]tkzPointResult){arête};
+    \draw (tkzPointResult) to [bend left] (arete);
+    %% sommet
+    \tkzDrawPoint(A)
+    \node (sommet) at ([shift={(-1,1)}]A){sommet};
+    \draw (A) to[bend left] (sommet);
+\end{tikzpicture}

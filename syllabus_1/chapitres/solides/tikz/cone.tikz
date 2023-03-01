@@ -1,0 +1,6 @@
+\begin{tikzpicture}
+    \shade[color=white, opacity=0.3] (-2,0) -- (0,3) -- (2,0);
+    \draw (-2,0) -- (0,3) -- (2,0);
+    \draw (-2,0) arc (180:360:2 and 0.3);
+    \draw[dashed] (2,0) arc (0:180:2 and 0.3);
+  \end{tikzpicture}
