@@ -1,0 +1,9 @@
+\begin{tikzpicture}[join=bevel]
+    \tkzDefPoints{0/0/A, 3/0/B, 3/3/C, 0/3/D}
+    \tkzDefPoint(45:2){A'}
+    \tkzDefPointsBy[translation=from A to A'](B,C,D){}
+    \tkzDrawSegments[color=white](B,B' C,C' D,D' B',C' C',D')
+    \tkzDrawSegments[dashed, color=white](A,A' A',B' A',D')
+    \tkzDrawPolygon(A,B,C,D)
+    \draw[|-|] (0,-0.5) -- node[below]{\SI{3}{cm}}(3,-0.5);
+\end{tikzpicture}

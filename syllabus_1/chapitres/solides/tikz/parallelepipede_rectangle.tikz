@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+    \tikzmath{
+        \largeur = 1;
+        \longueur = 2;
+        \hauteur = 1;
+    }
+    % \draw[->] (-5,0,0) -- (5,0,0)node[right]{\(x\)};
+    % \draw[->] (0,-5,0) -- (0,5,0)node[above]{\(y\)};
+    % \draw[->] (0,0,-5) -- (0,0,5)node[below]{\(z\)};
+    \coordinate (A) at (-.5*\longueur, 0, .5*\largeur);
+    \coordinate (B) at (.5*\longueur, 0, .5*\largeur);
+    \coordinate (C) at (.5*\longueur, \hauteur, .5*\largeur);
+    \coordinate (D) at (-.5*\longueur, \hauteur, .5*\largeur);
+    \coordinate (E) at (-.5*\longueur, 0, -.5*\largeur);
+    \coordinate (F) at (.5*\longueur, 0, -.5*\largeur);
+    \coordinate (G) at (.5*\longueur, \hauteur, -.5*\largeur);
+    \coordinate (H) at (-.5*\longueur, \hauteur, -.5*\largeur);
+    \draw (A) rectangle (C);
+    \draw[dashed] (A) -- (E) -- (F);
+    \draw[dashed] (E) -- (H);
+    \draw (G) -- (H);
+    \draw (F) -- (G);
+    \draw (B) -- (F);
+    \draw (C) -- (G);
+    \draw (D) -- (H);
+    \shade[color=white, opacity=0.3] (A) -- (B) -- (F) -- (G) -- (H) -- (D);
+\end{tikzpicture}

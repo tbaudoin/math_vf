@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+    \tikzmath{
+        \rayon = 1;
+        \hauteur = 2;
+    }
+    %arêtes
+    \draw (-\rayon,0) -- (-\rayon, \hauteur);
+    \draw (\rayon,0) -- (\rayon, \hauteur);
+    \draw (-\rayon,0) arc (180:360:\rayon{} and 0.3);
+    \draw[dashed] (-\rayon,0) arc (180:0:\rayon{} and 0.3);
+    \draw (-\rayon,\hauteur) arc (180:360:\rayon{} and 0.3);
+    \draw (-\rayon,\hauteur) arc (180:0:\rayon{} and 0.3);
+    \shade[color=white, opacity=0.3] (-\rayon,0) arc(180:360:\rayon{} and 0.3) -- (\rayon, \hauteur) arc (0:180:\rayon{} and 0.3);
+\end{tikzpicture}

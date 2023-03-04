@@ -5,32 +5,86 @@
 
 \faBookOpen~ Pages 63 à 69.
 
+\section{Caractéristiques des solides}
+
 Un solide est une figure à trois dimensions limitée par une surface fermée. Généralement, il possède des faces, des arêtes et des sommets.
 
 \begin{center}
     \includegraphics{chapitres/solides/tikz/cube_annote.tikz}
 \end{center}
 
-\begin{exercise}
-    Pour les solides ci-dessous, dénombre les faces, les arêtes et les sommets.
+En géométrie, l’apex est le nom parfois donné à un sommet distingué des autres. Par exemple, le sommet opposé à la base d'un triangle, d'une pyramide.
 
-    \includegraphics{chapitres/solides/tikz/sphere.tikz}
-    \includegraphics{chapitres/solides/tikz/cone.tikz}
+Notion de hauteur + dénombrement
+
+\begin{exercise}
+    Nomme les solides ci-dessous et dénombre les faces, les arêtes et les sommets.
     
     \begin{tblr}{
             hlines,
             vlines,
-            columns={1cm, c},
+            colspec={lX[c]X[c]X[c]X[c]X[c]X[c]},
+            % columns={1.5cm, c},
             rows={1cm, m},
-            column{1}={2cm, l},
+            % column{1}={2cm, l},
             vline{1}={1}{white},
             hline{1}={1}{white}
         }
-         & 1 & 2 & 3 & 4 & 5 & 6 \\
+        &
+        \includegraphics[width=1cm]{chapitres/solides/tikz/sphere.tikz}
+        &
+        \includegraphics[width=1cm]{chapitres/solides/tikz/cone.tikz}
+        &
+        \includegraphics[width=1cm]{chapitres/solides/tikz/tetraedre.tikz}
+        &
+        \includegraphics[width=1cm]{chapitres/solides/tikz/cylindre.tikz}
+        &
+        \includegraphics[width=1cm]{chapitres/solides/tikz/parallelepipede_rectangle.tikz}
+        &
+        \includegraphics[width=1cm]{chapitres/solides/tikz/prisme_droit_hexagone.tikz}\\
+        Noms \\
         Faces                    \\
         Arêtes                   \\
         Sommets
     \end{tblr}
 \end{exercise}
+
+\section{Classement des solides}
+
+\textbf{Réalisation d'un schéma dans lequel on classe les différents solides.}
+
+
+Parmi les solides que tu viens de rencontrer certains possèdes des faces planes et d'autre des faces courbes. On utilise ce critère pour différencier les polyèdres et les non-polyèdres. Autrement dit, les non-polyèdres sont des solides qui peuvent rouler, car ils possèdent une face courbe à l'inverse des polyèdres.
+
+Un prisme est un solide géométrique délimité par deux polygones, appelés les bases du prisme, images l'un de l'autre par une translation. Ces bases sont reliées entre elles par des parallélogrammes.
+
+Quand ces parallélogrammes sont des rectangles, on dit que le prisme est droit.
+
+
+\includegraphics{chapitres/solides/img/solides.png}
+
+Ne pas oublier de parler des polyèdres réguliers.
+
+\section{Représentation de solides}
+\subsection{Perspective cavalière}
+Lis la théorie page 65 puis réalise l'exercice.
+\begin{exercise}
+    Voici la face avant d'un cube. Représente le cube en perspective cavalière avec un angle de fuite de \ang{45} et un rapport de réduction de \(\dfrac{2}{3}\).
+
+   \includegraphics{chapitres/solides/tikz/cube_cavaliere.tikz}
+   
+\end{exercise}
+\subsection{Perspective à un point de fuite}
+Lis la théorie page 65 puis réalise l'exercice.
+\begin{exercise}
+    Voici la face avant d'un cube. Représente le cube en perspective à un point de fuite, le point \(F\).
+
+    \includegraphics{chapitres/solides/tikz/cube_fuite.tikz}
+\end{exercise}
+\section{Développement de solides}
+\section{Vues coordonnées}
+\section{Positions relatives d'un plan et d'une droite}
+\section{Positions relatives de deux droites}
+\section{Périmètre, aire et volume}
 
 \end{document}

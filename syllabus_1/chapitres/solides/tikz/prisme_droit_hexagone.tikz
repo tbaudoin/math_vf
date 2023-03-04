@@ -1,0 +1,32 @@
+\begin{tikzpicture}[join=bevel]
+    \tikzmath{
+        \hauteur=2;
+    }
+    % \draw[->] (-5,0,0) -- (5,0,0)node[right]{\(x\)};
+    % \draw[->] (0,-5,0) -- (0,5,0)node[above]{\(y\)};
+    % \draw[->] (0,0,-5) -- (0,0,5)node[below]{\(z\)};
+    \coordinate (A) at (-2,0,0);
+    \coordinate (B) at (-1,0,1);
+    \coordinate (C) at (1,0,1);
+    \coordinate (D) at (2,0,0);
+    \coordinate (E) at (1,0,-1);
+    \coordinate (F) at (-1,0,-1);
+    \coordinate (A') at (-2,\hauteur,0);
+    \coordinate (B') at (-1,\hauteur,1);
+    \coordinate (C') at (1,\hauteur,1);
+    \coordinate (D') at (2,\hauteur,0);
+    \coordinate (E') at (1,\hauteur,-1);
+    \coordinate (F') at (-1,\hauteur,-1);
+    \draw (A) -- (B) -- (C) -- (D);
+    \draw[dashed] (D) -- (E) -- (F) -- (A);
+    \draw (A')--(B')--(C')--(D')--(E')--(F')--cycle;
+    \draw (A) -- (A');
+    \draw (B) -- (B');
+    \draw (C) -- (C');
+    \draw (D) -- (D');
+    \draw[dashed] (E) -- (E');
+    \draw[dashed] (F) -- (F');
+    \shade[color=white, opacity=0.3] (A) -- (B) -- (C) -- (D) -- (D') -- (E') -- (F') -- (A');
+    % \foreach\n in {A,B,C,D,E,F}{\draw (\n) circle (1pt)node{\n};}
+    % \foreach\n in {A',B',C',D',E',F'}{\draw (\n) circle (1pt)node{\n};}
+\end{tikzpicture}

@@ -1,0 +1,19 @@
+\begin{tikzpicture}[join=bevel]
+    \tkzDefPoints{0/0/A, 3/0/B, 3/3/C, 0/3/D}
+    \tkzDefPoint(5,5){F}
+    \tkzDefPointOnLine[pos=.3](A,F)
+    \tkzGetPoint{A'}
+    \tkzDefLine[parallel=through A'](A,B)
+    \tkzInterLL(B,F)(A',tkzPointResult)\tkzGetPoint{B'}
+    \tkzDefLine[parallel=through A'](A,D)
+    \tkzInterLL(D,F)(A',tkzPointResult)\tkzGetPoint{D'}
+    \tkzDefLine[parallel=through B'](B,C)
+    \tkzInterLL(C,F)(B',tkzPointResult)\tkzGetPoint{C'}
+    
+    \tkzDrawLines[color=white](A,F B,F C,F D,F)
+    \tkzDrawPolygon[color=white](A',B',C',D')
+    \tkzDrawPoint[red](F)
+    \tkzLabelPoints[above left](F)
+    \tkzDrawPolygon(A,B,C,D)
+    
+\end{tikzpicture}

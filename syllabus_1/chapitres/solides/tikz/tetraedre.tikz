@@ -1,0 +1,21 @@
+\begin{tikzpicture}[>=latex, join=bevel]
+    \tikzmath{
+        \cote = 1;
+        \hauteur = 2;
+    }
+    % \draw[->] (-5,0,0) -- (5,0,0)node[right]{\(x\)};
+    % \draw[->] (0,-5,0) -- (0,5,0)node[above]{\(y\)};
+    % \draw[->] (0,0,-5) -- (0,0,5)node[below]{\(z\)};
+    \coordinate (S) at (0,\hauteur,0);
+    \coordinate (A) at (-\cote,0,\cote);
+    \coordinate (B) at (\cote,0,\cote);
+    \coordinate (C) at (\cote,0,-\cote);
+    \coordinate (D) at (-\cote,0,-\cote);
+    \draw (A) -- (S);
+    \draw (B) -- (S);
+    \draw (C) -- (S);
+    \draw[dashed] (D) -- (S);
+    \draw (A) -- (B) -- (C);
+    \draw[dashed] (C) -- (D) -- (A);
+    \shade[color=white, opacity=0.3] (A) -- (B) -- (C) -- (S) -- cycle;
+\end{tikzpicture}
