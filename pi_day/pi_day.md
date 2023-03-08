@@ -44,14 +44,21 @@ Chaque équipe reçoit 5 picross à compléter. Il trouve les nombres 1,1,3,4,5.
 ## Enigme 2
 Chaque équipe reçoit une photo dans laquelle est dissimulé un indice pour éliminer les pizzerias susceptibles d'avoir enlevé le nombre pi.
 
+- Photo 1 : Catania
+- Photo 2 : Drapeau Italien
+- Photo 3 : Premium Quality
+- Photo 4 : 22:00
+- Photo 5 : logo pizza
+
 ## Enigme 3
 Chaque équipe reçoit l'image de la pizzeria avec noté sur la porte un indice pour trouver le code qui permettra de la déverrouiller. Ils doivent utiliser la photo de l'énigme 2 pour compléter le QRCode et obtenir un bout de phrase. Les bouts de phrases mis ensemble permettront de trouver le code de la porte.
 
-Photo 1 : 3,2 
-Photo 2 : 8,1
-Photo 3 : 2,6
-Photo 4 : 5,7
-Photo 5 : 9,4
+
+- Photo 1 : 3,2
+- Photo 2 : 8,1
+- Photo 3 : 2,6
+- Photo 4 : 5,7
+- Photo 5 : 9,4
 
 ## Enigme 4
 La clé pour ouvrir la boîte est cachée quelque part dans la classe à eux de la retrouver.
