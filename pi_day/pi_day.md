@@ -14,33 +14,13 @@
 ## Escape game
 
 Thème : Pi a été kidnappé
-
-### Enigme 1
-Latifa a oublié son code de téléphone.
-- énigme pour trouver le code du téléphone de Latifa (sudoku)
-- on accède à une image
-
-### Enigme 2
-Trouver une énigme avec une photo où on voit Pi qui se fait kidnapper. Utilisation d’une lampe UV pour trouver des coordonnées géographiques.
-
-### Enigme 3
-Dans l’atlas il trouve une ville. Ils ont à disposition une feuille qui reprend l’alphabet et un calcul par lettre. Ils obtiennent alors un nombre par lettre du mot. Ils refont un calcul et trouve un nombre à deux chiffres qu’ils devront colorier sur le qrcode.
-Le qrcode leur donne le rayon d’un cercle (matos de départ).
-
-### Enigme 4
-Image avec plein d’élément qui contiennent le nombre pi. Trouver les coordonnées de ces figures ?
-
-### Final
-Les élèves ouvre une boîte remplie de bonbons dans laquelle un code est caché au fond. Ce code donne accès au cadena qui ouvre une boîte contenant une tarte avec une fêve en forme de pi.
-
-
 # Pitch
 
 ## Enigme 1 - Picross
 C'est une catastrophe, le nombre $\pi$ a été kidnappé par d'horrible malfrat. Chers détectives j'ai besoin de vous pour retrouver ce nombre si précieux ! Il semblerait qu'une certaine Latifa a pu prendre en photo l'enlèvement. Malheureusement elle est en état de choc et ne parvient plus à ce souvenir du code pour déverrouiller son smartphone. Grâce à la technologie de nos laboratoires nous avons pu récupérer des fragments de sa mémoire, mais nous avons besoin de votre intelligence pour les déchiffrer.
 
 ## Enigme 2 - Photo
-Bien joués détectives ! Grâce à vous nous allons pouvoir accéder à cette fameuse photo. Il semble que les malfrats ont emmenés $pi$ à bord d'une camionnette de livreur de Pizza. Nous avons plusieurs suspects mais rien sur la photo ne nous permet d'en éliminer, ils ont bien pris soin de camouflé leur trace ! Peut-être qu'en y jetant un oeil avec vos yeux d'enquéteur vous y trouverez des indices ?
+Bien joués détectives ! Grâce à vous nous allons pouvoir accéder à cette fameuse photo. Il semble que les malfrats ont emmenés $pi$ à bord d'une camionnette de livreur de Pizza. Nous avons plusieurs suspects, mais rien sur la photo ne nous permet d'en éliminer, ils ont bien pris soin de camouflé leur trace ! Peut-être qu'en y jetant un oeil avec vos yeux d'enquêteur vous y trouverez des indices ?
 
 Bravo détectives, je pense que nous sommes sur la bonne voie pour retrouver $pi$ !
 
@@ -55,3 +35,26 @@ Mince, ce maudit pizzaiolo avait prévu le coup ! Il nous faut un moyen de trouv
 
 ## Enigme 6 - Pi is free
 Félicitations détectives, vous avez été à la hauteur de votre réputation ! Grâce à vous le nombre $pi$ est libre !
+
+# Descriptif des énigmes
+
+## Enigme 1
+Chaque équipe reçoit 5 picross à compléter. Il trouve les nombres 1,1,3,4,5. Ils doivent les réarranger pour former 31415 qui est le code pour déverrouiller le smarthpone.
+
+## Enigme 2
+Chaque équipe reçoit une photo dans laquelle est dissimulé un indice pour éliminer les pizzerias susceptibles d'avoir enlevé le nombre pi.
+
+## Enigme 3
+Chaque équipe reçoit l'image de la pizzeria avec noté sur la porte un indice pour trouver le code qui permettra de la déverrouiller. Ils doivent utiliser la photo de l'énigme 2 pour compléter le QRCode et obtenir un bout de phrase. Les bouts de phrases mis ensemble permettront de trouver le code de la porte.
+
+Photo 1 : 3,2 
+Photo 2 : 8,1
+Photo 3 : 2,6
+Photo 4 : 5,7
+Photo 5 : 9,4
+
+## Enigme 4
+La clé pour ouvrir la boîte est cachée quelque part dans la classe à eux de la retrouver.
+
+## Enigme 5
+La boîte contient une autre boîte verrouillée par un cadenas à code. Sous la boîte est dissimulée une enveloppe qui contient 25 images. Dans chaque image les élèves doivent trouver le rayon du cercle. Ils doivent ensuite additionner tous les rayons pour trouver le code du cadenas.

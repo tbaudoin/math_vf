@@ -1,0 +1,3 @@
+import textwrap
+s  = "LE CODE EST DONNÉ PAR LES CHIFFRES QUI SE SITUENT ENTRE LA TROISIEME ET LA HUITIEME DECIMALE DE PI"
+print(textwrap.wrap(s,len(s)//4))
