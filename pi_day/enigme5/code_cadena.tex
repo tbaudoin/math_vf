@@ -1,0 +1,74 @@
+\documentclass[12pt,parskip=half-]{scrartcl}
+\usepackage[margin=0.8cm]{geometry}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{tabularray}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[charter]{mathdesign}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,xparse}
+\newcounter{fig}
+\setcounter{fig}{1}
+\pagestyle{empty}
+\begin{document}
+\foreach \r in {3,6,8,5,9,2,10,7,4}{
+        \tcbsidebyside[sidebyside adapt=left, title=figure \thefig]{
+            \begin{tikzpicture}
+                \draw[fill=black] (0,0) circle (1pt);
+                \draw[color=blue] (0,0) circle (2);
+                \draw (0,0) --node[above]{\r} (30:2);
+            \end{tikzpicture}
+        }{
+            Périmètre = 
+            \bigbreak
+            \begin{tblr}{hlines, vlines, columns={c,1.5cm}, rows={1cm}}
+                Dizaine & Unité \\
+                        &
+            \end{tblr}
+        }
+        \addtocounter{fig}{1}
+    }
+
+\foreach \r in {2,10,4,6,3,5,7,9,8}{
+        \tcbsidebyside[sidebyside adapt=left, title=figure \thefig]{
+            \begin{tikzpicture}
+                \draw[fill=black] (0,0) circle (1pt);
+                \draw[fill=blue, opacity=0.5] (0,0) circle (2);
+                \draw (0,0) --node[above]{\r} (30:2);
+            \end{tikzpicture}
+        }{
+            Aire = 
+            \bigbreak
+            \begin{tblr}{hlines, vlines, columns={c,1.5cm}, rows={1cm}}
+                Dizaine & Unité \\
+                        &
+            \end{tblr}
+        }
+        \addtocounter{fig}{1}
+    }
+
+\foreach \r in {7,9,4,2,3,5,8}{
+        \tcbsidebyside[sidebyside adapt=left, title=figure \thefig]{
+            \begin{tikzpicture}
+                \shade[ball color = blue, opacity = 0.3] (0,0) circle (2);
+                \draw[fill=black] (0,0) circle (1pt);
+                \draw (0,0) circle (2);
+                \draw (-2,0) arc (180:360:2 and 0.6);
+                \draw[dashed] (2,0) arc (0:180:2 and 0.6);
+                \draw (0,0) --node[above]{\r} (30:2);
+            \end{tikzpicture}
+        }{
+            Volume = 
+            \bigbreak
+            \begin{tblr}{hlines, vlines, columns={c,1.5cm}, rows={1cm}}
+                Dizaine & Unité \\
+                        &
+            \end{tblr}
+        }
+        \addtocounter{fig}{1}
+    }
+\end{document}
