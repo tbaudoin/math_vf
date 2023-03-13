@@ -15,7 +15,7 @@
 \setcounter{fig}{1}
 \pagestyle{empty}
 \begin{document}
-\foreach \r in {3,6,8,5,9,2,10,7,4}{
+\foreach \r in {3,6,8,5,9}{
         \tcbsidebyside[sidebyside adapt=left, title=figure \thefig]{
             \begin{tikzpicture}
                 \draw[fill=black] (0,0) circle (1pt);
@@ -33,7 +33,7 @@
         \addtocounter{fig}{1}
     }
 
-\foreach \r in {2,10,4,6,3,5,7,9,8}{
+\foreach \r in {2,10,4,6,3}{
         \tcbsidebyside[sidebyside adapt=left, title=figure \thefig]{
             \begin{tikzpicture}
                 \draw[fill=black] (0,0) circle (1pt);
@@ -51,7 +51,7 @@
         \addtocounter{fig}{1}
     }
 
-\foreach \r in {7,9,4,2,3,5,8}{
+\foreach \r in {9,4,2,3,5}{
         \tcbsidebyside[sidebyside adapt=left, title=figure \thefig]{
             \begin{tikzpicture}
                 \shade[ball color = blue, opacity = 0.3] (0,0) circle (2);

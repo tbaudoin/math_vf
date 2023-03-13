@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  10 MAR 2023 07:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  13 MAR 2023 10:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -841,15 +841,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <img/exemple.png, id=4, 84.315pt x 67.452pt>
 File: img/exemple.png Graphic file (type png)
 <use img/exemple.png>
-Package pdftex.def Info: img/exemple.png  used on input line 29.
+Package pdftex.def Info: img/exemple.png  used on input line 31.
 (pdftex.def)             Requested size: 84.31477pt x 67.45183pt.
 File: img/exemple.png Graphic file (type png)
 <use img/exemple.png>
-Package pdftex.def Info: img/exemple.png  used on input line 29.
+Package pdftex.def Info: img/exemple.png  used on input line 31.
 (pdftex.def)             Requested size: 84.31477pt x 67.45183pt.
 File: img/exemple.png Graphic file (type png)
 <use img/exemple.png>
-Package pdftex.def Info: img/exemple.png  used on input line 29.
+Package pdftex.def Info: img/exemple.png  used on input line 31.
 (pdftex.def)             Requested size: 84.31477pt x 67.45183pt.
  [1
 
@@ -857,38 +857,38 @@ Package pdftex.def Info: img/exemple.png  used on input line 29.
 <img/3.png, id=11, 205.5178pt x 246.9225pt>
 File: img/3.png Graphic file (type png)
 <use img/3.png>
-Package pdftex.def Info: img/3.png  used on input line 32.
+Package pdftex.def Info: img/3.png  used on input line 34.
 (pdftex.def)             Requested size: 227.62257pt x 227.6198pt.
 <img/1.png, id=12, 201.00093pt x 220.57407pt>
 File: img/1.png Graphic file (type png)
 <use img/1.png>
-Package pdftex.def Info: img/1.png  used on input line 33.
+Package pdftex.def Info: img/1.png  used on input line 35.
 (pdftex.def)             Requested size: 227.62218pt x 227.63135pt.
 <img/4.png, id=13, 226.59656pt x 201.00093pt>
 File: img/4.png Graphic file (type png)
 <use img/4.png>
-Package pdftex.def Info: img/4.png  used on input line 35.
+Package pdftex.def Info: img/4.png  used on input line 37.
 (pdftex.def)             Requested size: 227.6229pt x 227.62218pt.
 File: img/1.png Graphic file (type png)
 <use img/1.png>
-Package pdftex.def Info: img/1.png  used on input line 36.
+Package pdftex.def Info: img/1.png  used on input line 38.
 (pdftex.def)             Requested size: 227.62218pt x 227.63135pt.
 <img/5.png, id=14, 207.02344pt x 235.63031pt>
 File: img/5.png Graphic file (type png)
 <use img/5.png>
-Package pdftex.def Info: img/5.png  used on input line 38.
+Package pdftex.def Info: img/5.png  used on input line 40.
 (pdftex.def)             Requested size: 227.62854pt x 227.62631pt.
  [2 <./img/3.png (PNG copy)> <./img/1.png (PNG copy)> <./img/4.png (PNG copy)> <./img/5.png (PNG copy)>] (./picross.aux) ) 
 Here is how much of TeX's memory you used:
- 22715 strings out of 478238
- 461768 string characters out of 5850455
- 866960 words of memory out of 5000000
- 40629 multiletter control sequences out of 15000+600000
+ 22717 strings out of 478238
+ 461791 string characters out of 5850455
+ 867961 words of memory out of 5000000
+ 40631 multiletter control sequences out of 15000+600000
  472995 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,6n,106p,10686b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb>
-Output written on picross.pdf (2 pages, 160111 bytes).
+Output written on picross.pdf (2 pages, 160882 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream
