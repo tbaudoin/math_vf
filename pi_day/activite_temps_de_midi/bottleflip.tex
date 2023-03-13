@@ -1,0 +1,44 @@
+\documentclass[landscape,40pt,parskip=half-]{scrartcl}
+\usepackage[margin=1cm]{geometry}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{tabularray}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[charter]{mathdesign}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\pagestyle{empty}
+\begin{document}
+% \begin{tblr}{hlines, vlines, rows={.29\paperheight,m}, columns={.3\linewidth, c, font=\bfseries}}
+%     Rien & \(\pi\) & \(\pi\)\\
+%     \(\pi\) & {\(\pi\)\\Perds tout} & {\(\pi\)\\\(+14\)}\\
+%     \(\pi\) & \(\pi\) & Échange de points
+% \end{tblr}
+\begin{tikzpicture}
+    \draw (0,0) rectangle (.33\linewidth, -.33\textheight)node[midway]{\color{Red}\Huge\(\pi\)};
+    \draw (.33\linewidth,0) rectangle (.66\linewidth, -.33\textheight)node[midway]{\color{Fuchsia}\Huge\(\pi\)};
+    \draw (.66\linewidth,0) rectangle (\linewidth, -.33\textheight)node[midway]{\color{Rhodamine}\Huge\(\pi\)};
+
+    \draw (0,-.33\textheight) rectangle (.33\linewidth, -.66\textheight)node[midway]{\color{SeaGreen}\Huge\(\pi\)};
+    \draw (.33\linewidth,-.33\textheight) rectangle (.66\linewidth, -.66\textheight)node[midway]{\color{Turquoise}\Huge\(\pi\)};
+    \draw (.66\linewidth,-.33\textheight) rectangle (\linewidth, -.66\textheight)node[midway]{\color{Goldenrod}\Huge\(\pi\)};
+    
+    \draw (0,-.66\textheight) rectangle (.33\linewidth, -\textheight)node[midway]{\color{Green}\Huge\(\pi\)};
+    \draw (.33\linewidth,-.66\textheight) rectangle (.66\linewidth, -\textheight)node[midway]{\color{Apricot}\Huge\(\pi\)};
+    \draw (.66\linewidth,-.66\textheight) rectangle (\linewidth, -\textheight)node[midway]{\color{Brown}\Huge\(\pi\)};
+
+
+    \draw (.165\linewidth,-.33\textheight)node[above]{\small \(+1\)};
+    \draw (.5\linewidth,-.33\textheight)node[above]{\scriptsize Relance la bouteille};
+    \draw (.825\linewidth,-.33\textheight)node[above]{\small \(+3\)};
+    \draw (.165\linewidth, -.66\textheight)node[above]{\small \(+5\)};
+    \draw (.5\linewidth, -.66\textheight)node[above]{\scriptsize Perds tout !};
+    \draw (.825\linewidth, -.66\textheight)node[above]{\small \(+14\)};
+    \draw (.165\linewidth, -\textheight)node[above]{\small \(-1\)};
+    \draw (.5\linewidth, -\textheight)node[above]{\small \(+9\)};
+    \draw (.825\linewidth, -\textheight)node[above]{\scriptsize Échangez vos points};
+\end{tikzpicture}
+\end{document}

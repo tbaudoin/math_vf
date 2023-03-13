@@ -1,0 +1,24 @@
+\documentclass[12pt,parskip=half-]{scrartcl}
+\usepackage[margin=1in]{geometry}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{tabularray}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[charter]{mathdesign}
+\usepackage{seqsplit}
+\usepackage{tikz}
+
+\pagestyle{empty}
+\begin{document}
+\foreach \i in {1,...,8}{
+    \seqsplit{\(\pi = 3,14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196\)}
+    \medbreak
+    \rule{\linewidth}{1pt}
+    \medbreak
+}
+
+
+\end{document}
