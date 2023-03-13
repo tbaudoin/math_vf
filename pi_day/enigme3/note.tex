@@ -10,9 +10,11 @@
 \usepackage{tikz}
 \pagestyle{empty}
 \begin{document}
-\foreach \i in {1,...,5}{
+\foreach[count=\c] \i in {1,...,5}{
 La pizzeria est fermée. Pour les employés qui auraient oublié le code de la porte d'entrée, scanner le QRCode ci-dessous.
 \begin{center}
-    \includegraphics[width=.6\linewidth]{qrcode/qrcode\i.png}
+    \includegraphics[width=.5\linewidth]{qrcode/qrcode\i.png}\\
+    \hfill \c
+    \vspace*{1cm}
 \end{center}}
 \end{document}

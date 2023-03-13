@@ -9,11 +9,11 @@
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage[charter]{mathdesign}
+\usepackage{tikz}
 \pagestyle{empty}
 
 \begin{document}
-\section*{ÉNIGME 1}
-
+\foreach \i in {1,...,3}{
 Le but consiste à retrouver les cases noires dans chaque grille. Les chiffres donnés sur le côté et en haut de la grille vous donnent des indices. Ils indiquent la taille des blocs de cases noires de la ligne ou de la colonne sur laquelle ils se trouvent.
 
 Par exemple 3,4 à gauche d'une ligne indique qu'il y a, de gauche à droite, un bloc de 3 cases noires puis un bloc de 4 cases noires sur cette ligne.
@@ -24,6 +24,9 @@ Exemple :
 
 \includegraphics{img/exemple.png}
 
+\dotfill
+
+}
 \newpage
 
 \fbox{\includegraphics[height=8cm, width=8cm]{img/3.png}}
