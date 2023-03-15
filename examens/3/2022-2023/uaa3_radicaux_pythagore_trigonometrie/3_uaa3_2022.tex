@@ -1,0 +1,138 @@
+\documentclass[a4paper, 12pt, parskip=half-, twoside=semi]{scrartcl}
+\input{preambule.tex}
+\input{entete.tex}
+\begin{document}
+\pagestyle{empty}
+\entete
+\minisec{Quelques consignes}
+\begin{itemize}
+    \item Rends une copie soignée et aérée.
+    \item Respecte les conventions mathématiques et les notations.
+    \item Détail tous tes raisonnements, la réponse seule ne suffit pas.
+    \item Pour les problèmes, n'oublie pas de formuler ta réponse finale  avec une phrase.
+    \item Arrondis tes réponses finales (pas d'arrondis sur les réponses intermédiaires) au centième près.
+\end{itemize}
+\faIcon{exclamation-triangle} Tout manquement entraînera une perte de points, sois vigilant lors de ta relecture.
+\vfill
+\begin{flushright}
+    Bon travail !
+\end{flushright}
+\cleardoublepage
+\pagestyle{plain}
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\fbox{C1} Expliciter les savoirs et les procédures}
+\begin{connaitre}[points=8]
+    Vrai ou faux ? Justifie dans les deux cas.
+    \begin{enumerate}[itemsep=1em]
+        \item Deux nombres opposés ont la même racine carrée.
+        \item \(\sqrt{20}=10\sqrt{2}\).
+        \item Si \(ABC\) est un triangle rectangle en \(C\) alors \(\cos\left(\widehat{A}\right) = \dfrac{|AC|}{|BC|}\).
+        \item Si \(ABC\) est un triangle rectangle en \(C\) alors \(\cos\left(\widehat{A}\right) + \sin\left(\widehat{A}\right)=1\).
+        \item Dans tout triangle rectangle, la tangente des angles aigus est le rapport entre leur cosinus et leur sinus.
+        \item Dans un triangle rectangle isocèle, le sinus et le cosinus d'un même angle sont égaux.
+        \item \(\sqrt[3]{125}=5\).
+        \item Dans un triangle rectangle de côtés 10, 3 et \(\sqrt{91}\), un des angles mesure \ang{17,46} (l'angle est arrondi au centième).
+    \end{enumerate}
+\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\fbox{C2} Appliquer une procédure}
+\begin{appliquer}[points=2]
+    Les triangles ci-dessous sont-ils des triangles rectangles ?
+    \begin{tasks}(2)
+        \task \includegraphics{tikz/triangle07.tikz}
+        \task \includegraphics{tikz/triangle08.tikz}
+    \end{tasks}
+\end{appliquer}
+
+\begin{appliquer}[points=2]
+    Soit \(\mathscr{C}\) un cercle centré en \((3;4)\) et \(A\) \((4;-3)\) un point du cercle. Que vaut le rayon de ce cercle ?
+\end{appliquer}
+
+\newpage
+\begin{appliquer}[points=6]
+    Détermine les grandeurs inconnues représentées par la lettre \(x\) dans les triangles rectangles ci-dessous.
+    \begin{tasks}(3)
+        \task \includegraphics[width=\linewidth]{tikz/triangle01.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/triangle02.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/triangle03.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/triangle04.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/triangle05.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/triangle06.tikz}
+    \end{tasks}
+\end{appliquer}
+
+\begin{appliquer}[points=2]
+    Simplifie au maximum les radicaux suivants.
+    \begin{tasks}(2)
+        \task \(\sqrt{432}\)
+        \task \(4\sqrt{32}\)
+    \end{tasks}
+\end{appliquer}
+
+\begin{appliquer}[points=3]
+    Effectue.
+    \begin{tasks}(3)
+        \task \(3\sqrt{2} - 2\sqrt{8} + 5\sqrt{2}\)
+        \task \(\sqrt{5}\cdot\sqrt{18}\)
+        \task \(\left(\sqrt{2}+1\right)^2\)
+    \end{tasks}
+\end{appliquer}
+
+\begin{appliquer}[points=2]
+    Rends rationnel les dénominateurs des fractions suivantes.
+    \begin{tasks}(2)
+        \task \(\dfrac{5}{\sqrt{2}}\)
+        \task \(\dfrac{3}{3+\sqrt{5}}\)
+    \end{tasks}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{\fbox{C3} Résoudre un problème}
+\begin{transferer}[points=2]
+    Lors d'une tempête, la foudre a frappé le tronc d'un arbre à \SI{3}{m} du sol, il s'est alors brisé. La partie cassée forme un angle de \ang{58} avec le sol. Quelle était la hauteur de l'arbre avant la tempête ?
+\end{transferer}
+
+\begin{transferer}[points=2]
+    Lors de son déménagement, Allan doit transporter son réfrigérateur dans un camion. Pour l'introduire dans le camion, Allan le pose sur le bord comme indiqué sur la figure. Le schéma n'est pas à l'échelle. Allan pourra-t-il redresser le réfrigérateur en position verticale pour le rentrer dans le camion sans bouger le point d'appui $A$ ?
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{img/camion.png}
+    \end{center}
+\end{transferer}
+
+\begin{transferer}[points=3]
+    Quelle est la distance, en kilomètres, que doit parcourir le train pour aller de l'entrée du zoo (point \(A\)) jusqu'au lac aux crocodiles (point \(C\)) ?
+    \begin{center}
+        \includegraphics[width=\linewidth]{img/zoo.png}
+    \end{center}
+\end{transferer}
+
+\begin{transferer}[points=3]
+    Un ébéniste a découpé un bloc de chêne de forme parallélépipédique. Le triangle \(AFC\) formé est-il rectangle ?
+    \begin{center}
+        \includegraphics{tikz/parallelepipede.tikz}
+    \end{center}
+\end{transferer}
+
+\begin{transferer}[points=3]
+    Soit \(ABC\) un triangle équilatéral de \SI{4}{m} de côté. On a prélevé trois secteurs angulaires dont les centres sont les sommets du triangle.\\
+    Que vaut l'aire en bleu ?
+    \begin{center}
+        \includegraphics{tikz/triangle_secteur_angulaire.tikz}
+    \end{center}
+\end{transferer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+

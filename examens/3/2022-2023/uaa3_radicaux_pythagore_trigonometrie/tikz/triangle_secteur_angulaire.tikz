@@ -1,0 +1,15 @@
+\begin{tikzpicture}baseline=(current bounding box.north)]
+	\tkzDefPoints{0/0/B,8/0/C}
+	\tkzDefPoint(60:8){A}
+	\tkzDrawPolygon[fill=NavyBlue](A,B,C)
+	\tkzDefMidPoint(A,B)\tkzGetPoint{MAB}
+	\tkzDefMidPoint(B,C)\tkzGetPoint{MBC}
+	\tkzDefMidPoint(A,C)\tkzGetPoint{MAC}
+	\tkzDrawSector[fill=AntiqueWhite](B,MBC)(MAB)
+	\tkzDrawSector[fill=AntiqueWhite](C,MAC)(MBC)
+	\tkzDrawSector[fill=AntiqueWhite](A,MAB)(MAC)
+	\tkzMarkSegments[mark=||](A,MAB MAB,B B,MBC MBC,C C,MAC MAC,A)
+	\tkzLabelPoints[above](A)
+	\tkzLabelPoints[below left](B)
+	\tkzLabelPoints[below right](C)
+	\end{tikzpicture}

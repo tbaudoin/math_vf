@@ -1,0 +1,12 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoints{0/0/A}
+    \tkzDefPoint(-53:3){C}
+    \tkzDefPoint(-53-90:4){B}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[below](C)
+    \tkzLabelSegment[above left](A,B){\(\sqrt{3}\)}
+    \tkzLabelSegment[below](B,C){\(\sqrt{38}\)}
+    \tkzLabelSegment[above right](C,A){\(6\)}
+\end{tikzpicture}

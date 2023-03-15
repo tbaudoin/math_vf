@@ -1,4 +1,4 @@
-\documentclass[parskip=half-]{scrartcl}
+\documentclass[12pt,parskip=half-]{scrartcl}
 \usepackage[margin=1cm]{geometry}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
@@ -8,12 +8,14 @@
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage[charter]{mathdesign}
 
 \pagestyle{empty}
 \begin{document}
 \foreach \i in {1,...,5}{
     \begin{center}
         \includegraphics[height=0.9\paperheight]{img/kidnapping\i (1).png}
+        \smallbreak\hfill\textbf{\i}
     \end{center}
 }
 \end{document}

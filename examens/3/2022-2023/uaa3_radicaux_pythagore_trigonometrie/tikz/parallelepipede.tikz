@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+    \coordinate (A) at (0,0,0);
+    \coordinate (B) at (3,0,0);
+    \coordinate (C) at (3,2,0);
+    \coordinate (D) at (0,2,0);
+    \coordinate (E) at (5,3,3);
+    \coordinate (F) at (8,3,3);
+    \coordinate (G) at (8,5,3);
+    \coordinate (H) at (5,5,3);
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawSegments(B,F C,G D,H H,G G,F)
+    \tkzDrawSegments[dashed](H,E A,E E,F)
+    \tkzDrawPolygon[fill=NavyBlue, opacity=0.5](D,B,G)
+    \tkzLabelSegment[left](A,D){\SI{6}{cm}}
+    \tkzLabelSegment[below](A,B){\SI{10}{cm}}
+    \tkzLabelSegment[below right](B,F){\SI{20}{cm}}
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[above](D)
+    \tkzLabelPoints[below](E)
+    \tkzLabelPoints[below](F)
+    \tkzLabelPoints[above](G)
+    \tkzLabelPoints[above](H)
+
+\end{tikzpicture}

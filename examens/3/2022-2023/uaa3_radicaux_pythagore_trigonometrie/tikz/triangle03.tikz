@@ -1,0 +1,12 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoints{0/0/A, 4/0/B, 0/3/C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzMarkRightAngle(B,A,C)
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelSegment[above right](B,C){\(8\)}
+    \tkzLabelSegment[below](A,B){\(5\)}
+    \tkzMarkAngle(C,B,A)
+    \tkzLabelAngle[pos=1.25](C,B,A){\(x\)}
+\end{tikzpicture}
