@@ -1,0 +1,9 @@
+\begin{tikzpicture}[decoration={random steps, amplitude=2pt, segment length=0.4cm}]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(90:4){B}
+    \tkzDefPoint(-10:5){C}
+    \tkzDrawPolygon[decorate](A,B,C)
+    \tkzLabelSegment[left](A,B){\SI{4}{m}}
+    \tkzLabelSegment[above right](B,C){\SI{9}{m}}
+    \tkzLabelSegment[below](A,C){\SI{5}{m}}
+\end{tikzpicture}

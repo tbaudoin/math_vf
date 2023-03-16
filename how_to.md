@@ -1,3 +1,7 @@
+# regex vscode
+
+Trouve tous les contenus entre $ : \$(.*?)\$
+
 # siunitx
 
 ```latex
