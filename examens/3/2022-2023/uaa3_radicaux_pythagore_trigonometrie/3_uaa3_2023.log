@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  15 MAR 2023 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.26)  16 MAR 2023 11:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/tbaudoin/Documents/GitHub/math_vf/examens/3/2022-2023/uaa3_radicaux_pythagore_trigonometrie/3_uaa3_2022
-(/home/tbaudoin/Documents/GitHub/math_vf/examens/3/2022-2023/uaa3_radicaux_pythagore_trigonometrie/3_uaa3_2022.tex
+**/home/tbaudoin/Documents/GitHub/math_vf/examens/3/2022-2023/uaa3_radicaux_pythagore_trigonometrie/3_uaa3_2023
+(/home/tbaudoin/Documents/GitHub/math_vf/examens/3/2022-2023/uaa3_radicaux_pythagore_trigonometrie/3_uaa3_2023.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2021/11/13 v3.35 KOMA-Script document class (article)
@@ -1698,8 +1698,8 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 4.
  (/usr/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
-) (./3_uaa3_2022.aux)
-\openout1 = `3_uaa3_2022.aux'.
+) (./3_uaa3_2023.aux)
+\openout1 = `3_uaa3_2023.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 4.
 LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 4.
@@ -1885,15 +1885,15 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on in
 
 ]
 \l__xsim_file_contents_iow=\write4
-\openout4 = `xsim/3_uaa3_2022-connaitre-1-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-connaitre-1-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-connaitre-1-exercise-body.tex)
-\openout4 = `xsim/3_uaa3_2022-appliquer-2-exercise-body.tex'.
+ (./xsim/3_uaa3_2023-connaitre-1-exercise-body.tex)
+\openout4 = `xsim/3_uaa3_2023-appliquer-2-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-appliquer-2-exercise-body.tex (./tikz/triangle07.tikz) (./tikz/triangle08.tikz))
-\openout4 = `xsim/3_uaa3_2022-appliquer-3-exercise-body.tex'.
+ (./xsim/3_uaa3_2023-appliquer-2-exercise-body.tex (./tikz/triangle07.tikz) (./tikz/triangle08.tikz))
+\openout4 = `xsim/3_uaa3_2023-appliquer-3-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-appliquer-3-exercise-body.tex
+ (./xsim/3_uaa3_2023-appliquer-3-exercise-body.tex
 LaTeX Font Info:    Freeze math alphabet allocation in version normal.
 (Font)              Allocated math groups: 14 (local: 2) on input line 11.
 LaTeX Font Info:    Trying to load font information for U+jkpsyd on input line 11.
@@ -1905,9 +1905,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 ) [1]
-\openout4 = `xsim/3_uaa3_2022-appliquer-4-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-appliquer-4-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-appliquer-4-exercise-body.tex
+ (./xsim/3_uaa3_2023-appliquer-4-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
  (./tikz/triangle01.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 5.
@@ -2204,36 +2204,36 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 1.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 13.
 ))
-\openout4 = `xsim/3_uaa3_2022-appliquer-5-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-appliquer-5-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-appliquer-5-exercise-body.tex
+ (./xsim/3_uaa3_2023-appliquer-5-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 15.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 15.
 )
-\openout4 = `xsim/3_uaa3_2022-appliquer-6-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-appliquer-6-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-appliquer-6-exercise-body.tex
+ (./xsim/3_uaa3_2023-appliquer-6-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 16.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 16.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 16.
 )
-\openout4 = `xsim/3_uaa3_2022-appliquer-7-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-appliquer-7-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-appliquer-7-exercise-body.tex
+ (./xsim/3_uaa3_2023-appliquer-7-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 15.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 15.
 ) [2]
-\openout4 = `xsim/3_uaa3_2022-transferer-8-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-transferer-8-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-transferer-8-exercise-body.tex
+ (./xsim/3_uaa3_2023-transferer-8-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 )
-\openout4 = `xsim/3_uaa3_2022-transferer-9-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-transferer-9-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-transferer-9-exercise-body.tex
+ (./xsim/3_uaa3_2023-transferer-9-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 <img/camion.png, id=54, 313.17pt x 119.44624pt>
 File: img/camion.png Graphic file (type png)
@@ -2241,9 +2241,9 @@ File: img/camion.png Graphic file (type png)
 Package pdftex.def Info: img/camion.png  used on input line 13.
 (pdftex.def)             Requested size: 226.48395pt x 86.38579pt.
 )
-\openout4 = `xsim/3_uaa3_2022-transferer-10-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-transferer-10-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-transferer-10-exercise-body.tex
+ (./xsim/3_uaa3_2023-transferer-10-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 <img/zoo.png, id=56, 818.0666pt x 270.4537pt>
@@ -2252,9 +2252,9 @@ File: img/zoo.png Graphic file (type png)
 Package pdftex.def Info: img/zoo.png  used on input line 13.
 (pdftex.def)             Requested size: 452.9679pt x 149.74867pt.
 )
-\openout4 = `xsim/3_uaa3_2022-transferer-11-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-transferer-11-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-transferer-11-exercise-body.tex
+ (./xsim/3_uaa3_2023-transferer-11-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
  (./tikz/parallelepipede.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 1.
@@ -2272,9 +2272,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 23.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 24.
 ))
-\openout4 = `xsim/3_uaa3_2022-transferer-12-exercise-body.tex'.
+\openout4 = `xsim/3_uaa3_2023-transferer-12-exercise-body.tex'.
 
- (./xsim/3_uaa3_2022-transferer-12-exercise-body.tex
+ (./xsim/3_uaa3_2023-transferer-12-exercise-body.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 11.
@@ -2318,17 +2318,17 @@ Missing character: There is no ] in font nullfont!
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 12.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 13.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 14.
-)) [4] (./3_uaa3_2022.aux) ) 
+)) [4] (./3_uaa3_2023.aux) ) 
 Here is how much of TeX's memory you used:
- 56509 strings out of 478238
- 1388995 string characters out of 5850455
- 1931471 words of memory out of 5000000
- 73509 multiletter control sequences out of 15000+600000
- 539144 words of font info for 202 fonts, out of 8000000 for 9000
+ 56508 strings out of 478238
+ 1388979 string characters out of 5850455
+ 1930496 words of memory out of 5000000
+ 73508 multiletter control sequences out of 15000+600000
+ 539102 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,11n,149p,10721b,2017s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsyd.pfb>
-Output written on 3_uaa3_2022.pdf (6 pages, 337819 bytes).
+Output written on 3_uaa3_2023.pdf (6 pages, 337012 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
