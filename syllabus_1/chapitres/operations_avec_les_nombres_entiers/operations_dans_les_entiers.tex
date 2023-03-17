@@ -11,48 +11,57 @@
 
 \begin{enumerate}[itemsep=1cm, label=]
     \item Que vaut $B$?
-    \item Comment peut-on écrire $B$ sous la forme d'un produit?
-    \item Utilise cet exemple pour effectuer les produits suivants. 
-        \begin{enumerate}[cols=2, itemsep=1cm]
-            \item \((-3)\cdot 2=\)
-            \item \(6\cdot (-5)=\)
-            \item \(-3\cdot 4=\)
-            \item \(24\cdot (-2)=\)
-        \end{enumerate}
-    \item Complète la table de 2 suivante en te basant sur ce que tu as découvert juste au-dessus. \\ \includegraphics{chapitres/operations_avec_les_nombres_entiers/img/table3.png}
-    
+    \item Comment peut-on écrire $B$ sous la forme d'un produit ?
+    \item Utilise cet exemple pour effectuer les produits suivants.
+          \begin{enumerate}[cols=2, itemsep=1cm]
+              \item \((-3)\cdot 2=\)
+              \item \(6\cdot (-5)=\)
+              \item \(-3\cdot 4=\)
+              \item \(24\cdot (-2)=\)
+          \end{enumerate}
+    \item Complète la table de 2 suivante en te basant sur ce que tu as découvert juste au-dessus.
+
+          \begin{center}
+              \(\begin{tblr}{hlines, vlines, columns={1cm, c}, rows={1cm, m}}
+                  \tikzmark{A}4 & 3 & 2 & 1 & 0 & -1 & -2 & -3 & -4 \\
+                  \tikzmark{B}\phantom{4}  &   &   &   &   &    &    &    &
+              \end{tblr}\)
+          \end{center}
+          \begin{tikzpicture}[overlay, remember picture]
+            \draw[->, >=latex] ([xshift=-.6cm]pic cs:A) to[in=160, out=200]node[left]{\(\cdot 3\)} ([xshift=-.6cm]pic cs:B);    
+          \end{tikzpicture}
+
     \item Utilise ce que tu viens de découvrir pour effectuer les produits suivants.
-    \begin{enumerate}[cols=2, itemsep=1cm]
-        \item \(3\cdot (-2)=\)
-        \item \((-6)\cdot (-6)=\)
-        \item \((-3)\cdot (-2)=\)
-        \item \(-4\cdot (-15)=\)
-        \item \(-10\cdot (-12)=\)
-        \item \(-5\cdot 5=\)
-    \end{enumerate}
+          \begin{enumerate}[cols=2, itemsep=1cm]
+              \item \(3\cdot (-2)=\)
+              \item \((-6)\cdot (-6)=\)
+              \item \((-3)\cdot (-2)=\)
+              \item \(-4\cdot (-15)=\)
+              \item \(-10\cdot (-12)=\)
+              \item \(-5\cdot 5=\)
+          \end{enumerate}
 \end{enumerate}
 
-\newpage
-Pour multiplier deux entiers : 
+Pour multiplier deux entiers :
 \begin{enumerate}[label=$\bullet$]
     \item \dotsforanswer{3}[Si les entiers sont de même signe,]
-        \exemples
-        \begin{itemize}[cols=2, itemsep=1cm, label=]
-          \item $(-3)\cdot (-6)=$
-          \item $7\cdot 6=$
-          \item $-2\cdot (-3)=$
-          \item $8\cdot 7=$
-        \end{itemize}
-        \vspace{1cm}
+          \exemples
+          \begin{itemize}[cols=2, itemsep=1cm, label=]
+              \item $(-3)\cdot (-6)=$
+              \item $7\cdot 6=$
+              \item $-2\cdot (-3)=$
+              \item $8\cdot 7=$
+          \end{itemize}
+          \vspace{1cm}
     \item \dotsforanswer{3}[Si les entiers sont de signes contraires,]
-    \exemples
-    \begin{itemize}[cols=2, itemsep=1cm, label=]
-      \item $(-3)\cdot 6=$
-      \item $-7\cdot 6=$
-      \item $3\cdot -5=$
-      \item $-10\cdot 3=$
-    \end{itemize}
-    \vspace{1cm}
+          \exemples
+          \begin{itemize}[cols=2, itemsep=1cm, label=]
+              \item $(-3)\cdot 6=$
+              \item $-7\cdot 6=$
+              \item $3\cdot -5=$
+              \item $-10\cdot 3=$
+          \end{itemize}
+          \vspace{1cm}
 \end{enumerate}
 
 \begin{exercise}
@@ -74,7 +83,7 @@ Pour multiplier deux entiers :
 
 \newpage
 \begin{exercise}
-    Effectue les produits suivants. 
+    Effectue les produits suivants.
     \begin{enumerate}[cols=2, itemsep=1cm]
         \item \((-3)\cdot (-2) \cdot (-1)=\)
         \item \((-9)\cdot (-2) \cdot (-3)=\)
@@ -85,20 +94,316 @@ Pour multiplier deux entiers :
     \end{enumerate}
 \end{exercise}
 
-Comment déterminer le signe d'un produit de plusieurs facteurs? 
+Comment déterminer le signe d'un produit de plusieurs facteurs?
 
-Cas 1 : 
+Cas 1 :
 \begin{itemize}[label=]
     \item \((-3)\cdot 7 \cdot (-2)=\)
     \item \(5\cdot (-1) \cdot 2 \cdot (-10) \cdot (-1) \cdot (-2)=\)
 \end{itemize}
 \dotsforanswer{2}
 
-Cas 2 : 
+Cas 2 :
 \begin{itemize}[label=]
     \item \((-3)\cdot 7 \cdot 4=\)
     \item \(5\cdot (-1) \cdot 2 \cdot (-1) \cdot (-2)=\)
 \end{itemize}
 \dotsforanswer{2}
 
+\begin{exercise}
+    Complète ce tableau de multiplication.
+    \begin{center}
+        \(\begin{tblr}{hlines, vlines, columns={1cm,c}, rows={1cm, m}}
+            \cdot & -3 & +2 & -10 & +5 & -7 \\
+            - 5   &    &    &     &    &    \\
+            + 9   &    &    &     &    &    \\
+            - 6   &    &    &     &    &    \\
+        \end{tblr}\)
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Complète les pyramides suivantes si tu sais que chaque brique est le
+    produit des deux briques sur lesquelles elle repose.
+
+    \begin{tikzpicture}
+        \foreach \x/\l in {0/-2,2/2,4/-2,6/-2}{\draw(\x,0) rectangle node[midway]{\(\l\)}(\x+2,1);}
+        \foreach \x in {1,3,5}{\draw (\x,1) rectangle (\x+2,2);}
+        \foreach \x in {2,4}{\draw(\x,2) rectangle (\x+2,3);}
+        \draw (3,3) rectangle (5,4);
+    \end{tikzpicture}
+
+    \begin{tikzpicture}
+        \foreach \x/\l in {0/-3,2/2,4/-4,6/-1}{\draw(\x,0) rectangle node[midway]{\(\l\)}(\x+2,1);}
+        \foreach \x in {1,3,5}{\draw (\x,1) rectangle (\x+2,2);}
+        \foreach \x in {2,4}{\draw(\x,2) rectangle (\x+2,3);}
+        \draw (3,3) rectangle (5,4);
+    \end{tikzpicture}
+\end{exercise}
+
+\section{Puissances de nombres entiers}
+\begin{exercise}
+    Effectue les puissances suivantes. Si besoin, note les étapes intermédiaires.
+    \begin{enumerate}
+        \item \(3^{3} =\)
+        \item \(7^{1} =\)
+        \item \(( - 2)^{4} =\)
+        \item \({- 1}^{6} =\)
+        \item \(( - 1)^{6} =\)
+        \item \(( - 2)^{3} =\)
+    \end{enumerate}
+\end{exercise}
+
+Comment déterminer le signe d'une puissance à exposant naturel~?
+
+\begin{itemize}
+    \item Si la base est positive,\\
+          \(5^{2}=\) \hfil \(2^3=\)
+
+    \item Si la base est négative,
+          \begin{itemize}
+              \item Cas 1,\\
+                    \((- 3)^{2} = \)\hfil\( ( - 2)^{4} =\)
+
+              \item Cas 2,\\
+                    \(( - 3)^{3} = \)\hfil\( ( - 2)^{5} =\)
+          \end{itemize}
+\end{itemize}
+
+\section{Priorité des opérations}
+L'ordre des priorités des opérations qu'on a découvert dans les naturels
+est toujours d'actualité. Pour rappel, cet ordre est~:
+\begin{exercise}
+    Effectue. Attention à la priorité des opérations.
+    \begin{enumerate}
+        \item \(3^{2} + 5 \cdot ( - 2) =\)
+        \item \(- 15 + ( - 3 + 7)^{2} =\)
+        \item \(\left( - 3 + ( - 2) \right) \cdot (20 - 12) =\)
+        \item \(- 40 + ( - 2) \cdot ( - 8) =\)
+        \item \(14 \cdot ( - 2) + ( - 20) =\)
+        \item \(( - 3) + ( - 8) - ( - 8) \cdot 2 =\)
+        \item \(( - 3)^{3} + ( - 2) \cdot 8 =\)
+        \item \(( - 3)^{2} + \left( ( - 3) \cdot ( - 2) + 7 \right) =\)
+    \end{enumerate}
+\end{exercise}
+
+\section{Exercices de drill}
+\begin{exercise}
+    Effectue.
+    \minisec{Série 1}
+    \begin{enumerate}
+        \item \(- \ 8 \cdot ( - 7) =\)
+        \item \(- \ 9 \cdot ( - 6) =\)
+        \item \(- \ 3 \cdot ( - 6) =\)
+        \item \(- \ 12 \cdot ( - 12) =\)
+        \item \(- \ 4 \cdot ( - 5) =\)
+        \item \(- \ 8 \cdot 7 =\)
+        \item \(- \ 9 \cdot 6 =\)
+        \item \(- \ 3 \cdot 6 =\)
+        \item \(- \ 12 \cdot 12 =\)
+        \item \(- \ 4 \cdot 5 =\)
+    \end{enumerate}
+    \minisec{Série 2}
+    \begin{enumerate}
+        \item \(8 \cdot (\  - 9) =\)
+        \item \(7 \cdot ( - 2) =\)
+        \item \(10 \cdot ( - 6) =\)
+        \item \(11 \cdot ( - 2) =\)
+        \item \(8 \cdot ( - 4) =\)
+        \item \(( - 8) \cdot 9 =\)
+        \item \(- \ 8 \cdot ( - 3) =\)
+        \item \(- \ 13 \cdot ( - 6) =\)
+        \item \(- \ 1 \cdot ( - 24) =\)
+        \item \(- \ 1 \cdot ( - 8) =\)
+        \item \(( - 8) \cdot \ ( - 9) =\)
+        \item \(- \ 1 \cdot 3 =\)
+        \item \(- \ 3 \cdot 9 =\)
+        \item \(- \ 14 \cdot 2 =\)
+        \item \(- \ 8 \cdot 8 =\)
+    \end{enumerate}
+    \minisec{Série 3}
+    \begin{enumerate}
+        \item \(5 \cdot ( - 3)^{2} =\)
+        \item \(4 \cdot ( - 6)^{2} =\)
+        \item \(2 \cdot ( - 5)^{3} =\)
+        \item \(- \ 4 \cdot ( - 12) =\)
+        \item \(2^{3} \cdot ( - 5)^{2} =\)
+        \item \(- \ 4 \cdot ( - 3)^{3} =\)
+        \item \(- \ 2^{2} \cdot ( - 3) =\)
+        \item \(- \ 8 \cdot ( - 4) =\)
+        \item \(- \ 5 \cdot ( - 12) =\)
+              \item\(- \ 3 \cdot ( - 3)^{2} =\)
+        \item \(- \ 23 \cdot 3 =\)
+        \item \(- \ 5 \cdot 5 =\)
+        \item \(- \ 3 \cdot - \ 6 =\)
+        \item \(- \ 8 \cdot 9 =\)
+        \item \(- \ 4^{2} \cdot - \ 5 =\)
+    \end{enumerate}
+
+
+
+\end{exercise}
+
+\begin{exercise}
+    Effectue. Attention à la priorité des opérations.
+
+    \minisec{Série 1}
+    \begin{enumerate}
+        \item \(3 \cdot ( - 7) - 2 \cdot ( - 1) =\)
+        \item \(3 \cdot ( - 14) + ( - 2) \cdot ( - 2) =\)
+        \item \(12 \cdot ( - 4) + 12 \cdot ( - 1) =\)
+        \item \(6 \cdot ( - 7) + 4 \cdot ( - 1) =\)
+        \item \(6 \cdot ( - 7) - 5 \cdot ( - 1) =\)
+        \item \(20 \cdot ( - 7) + 4 \cdot ( - 60) =\)
+        \item \(3 \cdot ( - 14) - 2 \cdot ( - 2) =\)
+        \item \(30 \cdot 14 - 2 \cdot ( - 4) =\)
+        \item \(- \ 8 \cdot 7 - 8 \cdot ( - 1) =\)
+        \item \(- 6\  \cdot ( - 7) - 4 \cdot ( - 1) =\)
+        \item \(- \ 60 \cdot ( - 2) - 2 \cdot ( - 60) =\)
+        \item \(9 \cdot ( - 7) - 17 \cdot ( - 2) =\)
+    \end{enumerate}
+    \minisec{Série 2}
+    \begin{enumerate}
+        \item   \(3^{2} \cdot ( - 3) + 2^{3} \cdot ( - 2)^{2} =\)
+        \item \(- 1 \cdot ( - 30) - ( - 4) \cdot ( - 2)^{4} =\)
+        \item \(12 \cdot ( - 3)^{2} + 11 \cdot ( - 1)^{5} =\)
+        \item \(6^{2} \cdot ( - 2) - 2 \cdot 4^{2} =\)
+        \item \(3 \cdot ( - 5) + 5^{2} \cdot ( - 1) =\)
+        \item \(4 \cdot ( - 7)^{2} - 1 \cdot ( - 6) =\)
+        \item \(2 \cdot ( - 12) + 2^{3} \cdot ( - 2)^{3} =\)
+        \item \(13 \cdot 10^{2} - 2 \cdot ( - 2) =\)
+        \item \(9 \cdot ( - 4) + 2^{3} \cdot 1 =\)
+        \item \(- 3\  \cdot ( - 6)^{2} + 4 \cdot ( - 1)^{6} =\)
+        \item \(6 \cdot ( - 4)^{2} + 7 \cdot ( - 20) =\)
+        \item \(3^{3} \cdot ( - 2) - 14 \cdot ( - 2) =\)
+    \end{enumerate}
+    \minisec{Série 3}
+    \begin{enumerate}
+        \item \(2^{2} \cdot 4 + 1^{3} \cdot ( - 5)^{2} =\)
+        \item \(1 \cdot ( - 15) - ( - 2) \cdot ( - 4)^{2} =\)
+        \item \(7 \cdot ( - 1)^{2} + 110 \cdot ( - 1)^{5} =\)
+        \item \(8^{2} \cdot ( - 1) - 2 \cdot 6 =\)
+        \item \(- \ 3 \cdot ( - 5)^{2} + 2^{2} \cdot ( - 1) =\)
+        \item \(40 \cdot ( - 2)^{2} - 1 \cdot ( - 6)^{2} =\)
+        \item \(- 3^{2} \cdot ( - 7) - 2^{3} \cdot 2^{3} =\)
+        \item \(9 \cdot 10^{2} + 5 \cdot ( - 4) =\)
+        \item \(12 \cdot ( - 4) - 2^{3} \cdot 1^{23} =\)
+        \item \(( - 3)^{2}\  \cdot ( - 2)^{2} - 2 \cdot ( - 1)^{9} =\)
+        \item \(2 \cdot ( - 2)^{2} - 3 \cdot ( - 26) =\)
+        \item \(2^{3} \cdot ( - 4) + 34 \cdot ( - 3) =\)
+    \end{enumerate}
+\end{exercise}
+
+\section{Exercices mélangés}
+
+\begin{exercise}
+    Vrai ou faux~? Justifie dans tous les cas.
+    \begin{enumerate}
+        \item \(( - 4) \cdot a\) est toujours négatif.
+        \item \(a^{2}\) est toujours positif.
+        \item Le produit de \(a\) par son opposé est négatif.
+        \item Le double de \(a\) est positif.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Réponds aux questions suivantes.
+    \begin{enumerate}
+        \item Cicéron est né en l'an \(- 23\) et est mort en l'an \(38\). Combien de temps a-t-il vécu~?
+        \item Antoine est né en l'an \(- 35\) et est mort à l'âge de \(57\) ans. En quelle année est-il mort~?
+        \item L'empire de Césarius a été créé en \(- 330\) et s'est terminé en \(213\). Combien de temps a-t-il duré~?
+        \item Antoniosus est mort en \(- 158\) à l'âge de \(63\) ans. En quelle année est-il né~?
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Effectue.
+    \begin{enumerate}
+        \item \(( - 2)^{4}\)
+        \item \(3 \cdot 0 \cdot ( - 6)\)
+        \item \(( - 1)^{12} + 3 \cdot ( - 2)\)
+        \item \(( - 5) \cdot 6 \cdot ( - 2) \cdot ( - 2)\)
+        \item \(5 + 2 - 17\)
+        \item \(- 3 \cdot 6 + 1^{3}\)
+        \item \(- 7 + 5 + 7 - 5\)
+        \item \(( - 10)^{3} + ( - 540)\)
+        \item \(3 \cdot ( - 2)^{3} + 2 \cdot ( - 3)^{2}\)
+        \item \((1 + 4)^{2} - 2^{3} + 3\)
+        \item \((2 - 4)^{4} + \left( 2 \cdot ( - 3) + 2 \right)\)
+        \item \(2 \cdot 3^{2} + 1^{2}\)
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Quelle était la température à Namur sachant que~:
+    \begin{itemize}
+        \item L'écart avec Liège était le même que celui avec Bruxelles.
+        \item La température de Bruxelles était la moitié de celle d'Ostende où il faisait \SI{8}{\degreeCelsius}.
+        \item La température de Liège était l'opposée de celle d'Ostende.
+    \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+    Traduis les phrases suivantes par un calcul puis effectue-le.
+    \begin{enumerate}
+        \item La somme de l'opposé de \(4\) et de l'opposé de \(5\).
+        \item Le produit de la différence entre \(4\) et \(7\) par l'opposé de \(9\).
+        \item La différence entre \(5\) et le produit de \(7\) par l'opposé de \(2\).
+        \item Le produit de la somme de \(5\) et de l'opposé de \(2\) par la différence entre \(3\) et \(10.\)
+    \end{enumerate}
+
+\end{exercise}
+\begin{exercise}
+    Calcule la valeur numérique des expressions suivantes si tu sais que
+    \(a = 2\), \(b = - 3\) et \(c = - 1\).
+    \begin{enumerate}
+        \item \(ab + c\)
+        \item \(3b - 7a\)
+        \item \((c - b) + a\)
+        \item \(3bc - b^{2}\)
+        \item \(a + 2b - c\)
+        \item \(b \cdot ( - c)\)
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Donne le nom de la propriété utilisée dans chacune des égalités suivantes.
+    \begin{enumerate}
+        \item \(- 3 \cdot 2 = 2 \cdot ( - 3)\)
+        \item \(5 \cdot 2 \cdot ( - 7) = 5 \cdot \left( 2 \cdot ( - 7) \right)\)
+        \item \(- 8 + 0 = - 8\)
+        \item \(- 3 + \left( 2 + ( - 5) \right) = ( - 3 + 2) + ( - 5)\)
+        \item \(5 \cdot 1 \cdot ( - 7) = 5 \cdot ( - 7)\)
+        \item \(14 + ( - 5) = ( - 5) + 14\ \)
+        \item \(( - 12) \cdot ( - 3) \cdot 0 = 0\)
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Trouve deux nombres entiers qui respectent les conditions.
+    \begin{enumerate}
+        \item Leur produit est négatif et leur somme est positive.
+        \item Leur produit est négatif et la somme nulle.
+        \item Leur somme et le produit sont négatifs.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Aux États-Unis, la température est mesurée en degrés Fahrenheit (\SI{}{\degree F}). Il est possible de convertir de les convertir en degré Celsius (\SI{}{\degreeCelsius}) à l'aide de la formule suivante,
+    \[\SI{}{\degreeCelsius}=\frac{(\SI{}{\degree F} - 32)\cdot 5}{9}\]
+    \begin{enumerate}
+        \item A New-York, la température annoncée est de \SI{68}{\degree F}. Convertis  cette température en degrés Celsius à l'aide de la formule.
+
+        \item Au même moment, la ville de Chicago relève une température de \SI{23}{\degree F}.Convertis-la aussi.
+
+        \item  Bruxelles a mesuré une température de \SI{5}{\degreeCelsius} et au même moment, Flint, dans le Michigan, enregistrait une température de \SI{41}{\degree F}. Compare les deux températures.
+    \end{enumerate}
+\end{exercise}
+\begin{exercise}
+    Quentin achète 5 crayons à 0,50~€ pièce et 2 cahiers à 1,20~€ pièce. Le libraire lui fait une réduction de 0,50~€. Calcule la dépense de Quentin en écrivant un seul calcul.
+\end{exercise}
+\begin{exercise}
+    Martin désire courir les \SI{20}{km} de Bruxelles. Pour cela, il s'entraine chaque jour un petit peu. Du lundi au vendredi, il parcourt \SI{7400}{m} le matin et \SI{4600}{m} le soir. Le weekend,
+    lorsqu'il a un peu plus de temps, il parcourt \SI{15600}{m} chaque jour. Écris un calcul qui te permet de connaitre la distance qu'il parcourt en une semaine.
+\end{exercise}
 \end{document}
