@@ -1,0 +1,739 @@
+\documentclass[../../syllabus_1.tex]{subfiles}
+\begin{document}
+
+\chapter[short]{Dénombrement}
+
+\faIcon{book} Théorie pp ??????
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{17}
+%\item
+%  Dénombrement Attention couleur à changer~: impression pour les élèves
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{16}
+%\item
+%  Observe les figures ci-dessous.
+%\end{enumerate}
+%
+%\includegraphics[width=3.95833in,height=1.32361in]{media/image14.tmp}\includegraphics[width=1.76667in,height=1.32361in]{media/image14.tmp}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\item
+%  Complète le tableau ci-dessous.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.4135}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0977}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0978}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0977}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0978}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0977}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0978}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Nombre de carrés oranges (gris)
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[1\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[2\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[3\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[4\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[5\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[6\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Nombre de carrés verts (noir) & & & & & & \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\setcounter{enumi}{1}
+%\item
+%  Comment trouver le nombre de carrés verts sur une figure qui aurait 27
+%  carrés oranges~?
+%\item
+%  En utilisant \(v\) pour représenter le nombre de carrés verts, et
+%  \(n\) pour le nombre de carrés oranges, écris la relation qui lie les
+%  deux~:
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{17}
+%\item
+%  Observe les figures ci-dessous et complète le tableau qui suit.
+%  Couleur
+%\end{enumerate}
+%
+%\includegraphics[width=3.60833in,height=1.15029in]{media/image15.tmp}\includegraphics[width=1.74534in,height=1.13729in]{media/image15.tmp}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.3922}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0755}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0755}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0755}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0459}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0758}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0445}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0758}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1394}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Nombre de carrés oranges (gris)
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[1\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[2\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[3\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[\ldots\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[7\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[\ldots\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[30\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[n\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Nombre de carrés verts (noir) & & & & & & & & \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{18}
+%\item
+%  Observe les figures ci-dessous.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3036}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3353}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3611}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\includegraphics[width=1.38144in,height=1.52802in]{media/image16.tmp}
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\includegraphics[width=1.68041in,height=1.56813in]{media/image16.tmp}
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\includegraphics[width=1.92898in,height=1.57732in]{media/image16.tmp}
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Figure 1 & Figure 2 & Figure 3 \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\item
+%  Complète le tableau.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.4236}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0735}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0735}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0735}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0737}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0495}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0818}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1507}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Numéro de la figure
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[1\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[2\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[3\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[4\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[\ldots\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[12\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[n\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Nombre de rectangles & & & & & & & \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\setcounter{enumi}{1}
+%\item
+%  Quel sera le numéro de la figure qui contient \(41\) rectangles~?
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{19}
+%\item
+%  Dans un jeu de Monopoly en ligne, les hôtels sont représentés comme
+%  suit~:
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3290}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3327}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3383}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\includegraphics[width=0.675in,height=0.525in]{media/image17.tmp}
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\includegraphics[width=0.85007in,height=0.96675in]{media/image18.tmp}
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\includegraphics[width=1.11676in,height=1.39179in]{media/image19.tmp}
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Hôtel 1 & Hôtel 2 & Hôtel 3 \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\item
+%  Complète le tableau ci-dessous.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.4030}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0941}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0942}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0942}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0942}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0847}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1356}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Numéro de l'hôtel
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[1\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[2\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[3\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[4\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[\ldots\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[11\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Nombre de carrés & & & & & & \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\setcounter{enumi}{1}
+%\item
+%  Combien de carrés constitueront l'hôtel \(30\ \)?
+%\item
+%  Quelle est la formule qui lie le nombre de carrés (\(c\)) au numéro de
+%  l'hôtel \((n\))~?
+%\item
+%  Quel est le numéro de l'hôtel qui est composé de \(225\) carrés~?
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{18}
+%\item
+%  Équations (Chaine des opérations~: intérêt~?) Supprimer
+%\item
+%  \includegraphics[width=2.20713in,height=1.41667in]{media/image20.png}Introduction
+%  Cas 1~:
+%\end{enumerate}
+%
+%\begin{quote}
+%Le but de ce casse-tête est de trouver les valeurs cachées sous les
+%symboles pour que la somme de chaque ligne corresponde au nombre indiqué
+%à côté de celles-ci.
+%\end{quote}
+%
+%\begin{itemize}
+%\item
+%  Observe la première ligne du carré : si \emph{x} désigne le symbole □,
+%  écris une égalité traduisant la situation. Réduis ensuite les termes
+%  semblables.
+%\item
+%  La première balance à l'équilibre ci-dessous peut représenter cette
+%  égalité. Complète le plateau de droite dans la deuxième balance pour
+%  conserver l'égalité.
+%\item
+%  Quelle manipulation a-t-on effectuée pour conserver l'équilibre de la
+%  balance en passant de la première à la seconde ?
+%\end{itemize}
+%
+%\begin{quote}
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+%. . . .
+%\end{quote}
+%
+%\begin{itemize}
+%\item
+%  En t'inspirant de cette manipulation, écris la résolution de
+%  l'équation.
+%\end{itemize}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{20}
+%\item
+%  Sur base de l'exemple ci-dessus, résous les équations suivantes de
+%  type a + x = b. Laisse ta démarche visible et n'oublie pas d'aligner
+%  les égalités.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3493}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3363}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3144}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\[x\  + \ 7\  = \ 13\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[5\  + \ x\  = \ 2\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[20\  = \ x\ –\ 8\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%\bottomrule()
+%\end{longtable}
+%
+%\includegraphics[width=2.20713in,height=1.41667in]{media/image20.png}
+%
+%\begin{itemize}
+%\item
+%  Introduction Cas 2~:
+%\end{itemize}
+%
+%\begin{quote}
+%Le but de ce casse-tête est de trouver les valeurs cachées sous les
+%symboles pour que la somme de chaque ligne corresponde au nombre indiqué
+%à côté de celles-ci.
+%\end{quote}
+%
+%\begin{itemize}
+%\item
+%  Observe la deuxième ligne du carré : si \emph{x} désigne le symbole
+%  \includegraphics[width=0.20782in,height=0.22267in]{media/image21.png},
+%  écris une égalité traduisant la situation.
+%\item
+%  La première balance à l'équilibre ci-dessous peut représenter cette
+%  égalité. Complète le plateau de droite dans la deuxième balance pour
+%  conserver l'égalité.
+%\item
+%  Quelle manipulation a-t-on effectuée pour conserver l'équilibre de la
+%  balance en passant de la première à la seconde ?
+%\end{itemize}
+%
+%\begin{quote}
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+%. . . .
+%\end{quote}
+%
+%\begin{itemize}
+%\item
+%  En t'inspirant de cette manipulation, écris la résolution de
+%  l'équation.
+%\end{itemize}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{21}
+%\item
+%  Résous les équations suivantes de type ax = b en laissant visibles tes
+%  étapes.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3493}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3363}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3144}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\[2x\ \  = \ 12\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[7x\  = \ 49\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[20\  = 4x\ \]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{itemize}
+%\item
+%  \includegraphics[width=2.20713in,height=1.41667in]{media/image20.png}Introduction
+%  Cas 3~:
+%\end{itemize}
+%
+%\begin{quote}
+%Le but de ce casse-tête est de trouver les valeurs cachées sous les
+%symboles pour que la somme de chaque ligne corresponde au nombre indiqué
+%à côté de celles-ci.
+%\end{quote}
+%
+%\begin{itemize}
+%\item
+%  Observe la troisième ligne du carré : si \emph{x} désigne le symbole
+%  \includegraphics[width=0.21197in,height=0.23184in]{media/image22.png},
+%  écris une égalité traduisant la situation.
+%\item
+%  La première balance à l'équilibre ci-dessous peut représenter cette
+%  égalité. Complète le plateau de droite dans la deuxième balance pour
+%  conserver l'égalité.
+%\end{itemize}
+%
+%\begin{quote}
+%\includegraphics[width=5.33333in,height=0.80247in]{media/image23.png}
+%\end{quote}
+%
+%\begin{itemize}
+%\item
+%  Quelle manipulation a-t-on effectuée pour conserver l'équilibre de la
+%  balance en passant de la première à la seconde ?
+%\end{itemize}
+%
+%\begin{quote}
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+%. . . .
+%\end{quote}
+%
+%\begin{itemize}
+%\item
+%  En t'inspirant de cette manipulation, écris la résolution de
+%  l'équation.
+%\end{itemize}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{22}
+%\item
+%  Résous les équations suivantes de type ax + c = b en laissant visibles
+%  tes étapes.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3493}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3363}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3144}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\[2x + 6\ \  = \ 18\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[7 \cdot (x - 4)\  = \ 49\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[38\  = 5x + 8\ \]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{20}
+%\item
+%  Exercice de Drill
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\item
+%  Quelle est la valeur de x~?
+%\end{enumerate}
+%
+%Série 1~:
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2499}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2499}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\[x + 6 = 15\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[8 - x = 1\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[45\ :\ x\  = - \ 5\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[3・x\  - \ 2\  = 7\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%\(12 + x = - 12\) & \(4 \bullet x = \ 32\) & \(x\ :7 = 8\) &
+%\(3 \cdot x + 10 = - 2\) \\
+%\(x - 6 = - 20\) & \(x \bullet ( - 3) = \ 27\) & \(2x + \ 1 = 13\) &
+%\(3 - 4 \cdot x = - 13\) \\
+%\bottomrule()
+%\end{longtable}
+%
+%Série 2~:
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2499}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2499}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\[2x - 6 = 20\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[8 + 4x = 12\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[45\ :\ 2x\  = 25\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[16・x\  - \ 4\  = 12\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%\(x = 12\) & \(8x = \ 64\) & \(3x - 7 = 8\) &
+%\(2 \cdot x + 20 = - 2\) \\
+%\(10 \cdot x = 30\) & \(2x \bullet ( - 3) = \ 30\) &
+%\(2x \cdot \ 2 = 16\) & \(9 - 4 \cdot 2x = - 25\) \\
+%\bottomrule()
+%\end{longtable}
+%
+%Série 3~:
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2499}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2499}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\[x - 40 = 20\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[10\ (x\  + \ 15) = 50\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[7x + 4 = 53\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[x + 4\  = 7\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%\(10\ (x\  + 10) = 100\) & \(8(x - 2) = 80\) & \(- \ 4\ (x + 5) = 30\) &
+%\(4 \cdot x + 5\  = - 3\) \\
+%\(10x\  + 10 = 40\) & \(8x\  - 2 = 66\) & \(\ x + 4 = 24\) &
+%\(9 - 4 \cdot x = - 11\) \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{1}
+%\item
+%  ~Quelles sont les valeurs des expressions littérale si \ldots..?
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\item
+%  \begin{quote}
+%  x + 3
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(3x\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(6x + 2\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(9x - 9\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(- \ 1\ 2\ x + x + 10\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(2x - 4\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(x^{2} \cdot 5\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(5x + 8^{2}\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(10 - (x\ .\ 3)\)
+%  \end{quote}
+%\end{enumerate}
+%
+%Série 1~: x = 2 Série 2~: x = 3 Série 3~: x = 5
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{2}
+%\item
+%  Trace le dessin n°5. Combien y a-t-il de cases coloriées dans le
+%  dessin numéro n ? Un dessin pourrait-il comporter 242 cases coloriées
+%  ? 600 cases coloriées? Si oui, quel est le numéro du dessin ?
+%\end{enumerate}
+%
+%\includegraphics[width=4.25462in,height=1.42182in]{media/image24.png}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{21}
+%\item
+%  Exercices mélangés
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\item
+%  ~Soit la formule \(w = 5b - 6\). Que vaut \(w\) si \(b\) vaut 3~? Et
+%  si \(b\) vaut 8~?
+%\item
+%  ~Si \(p = 2\), quelles sont les expressions qui sont équivalentes~?
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\setcounter{enumi}{9}
+%\item
+%\item
+%  \begin{quote}
+%  \(3p + 2\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(p - 1\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(p^{2} + 2 - 3p\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(p + 6\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(3p - 6\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(p^{3}\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(p^{3} - 3p + 6\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(2p - 4\)
+%  \end{quote}
+%\item
+%  \begin{quote}
+%  \(20 - (p\ .\ 6)\)
+%  \end{quote}
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{2}
+%\item
+%  \includegraphics[width=2.15152in,height=1.31495in]{media/image25.png}L\textquotesingle aire
+%  de ce champ rectangulaire vaut 2 400 m2. Que vaut, en mètres, la
+%  largeur du terrain ?
+%\item
+%  Ta tante aimerait commander 3 paniers de fruits du maraicher par
+%  internet. Ta tante te dit que les frais d\textquotesingle envoi
+%  s\textquotesingle élèvent à 5,20 euros. Si tu sais
+%  qu\textquotesingle elle va payer 101,2 euros, RETROUVE le prix
+%  d\textquotesingle un panier de fruits.
+%\item
+%  Quelle est la mesure d\textquotesingle un côté d\textquotesingle un
+%  triangle équilatéral, si tu sais que son périmètre est de 22,5 cm?
+%\item
+%  Julie a commandé 3 paires de ballerines sur internet. Les frais
+%  d\textquotesingle envoi s\textquotesingle élèvent à 8,40 €. Si tu sais
+%  qu\textquotesingle elle a payé 62,40 €, retrouve le prix pour une
+%  paire de ballerines.
+%\item
+%  Le périmètre d\textquotesingle un rectangleest de 112 cm. Sa largeur
+%  vaut 2 cm. Quelle est la mesurede la longueur?
+%\item
+%  Le prix de5 bâtons de chocolata augmenté de 1,2 €. Ces cinq bâtons
+%  coûtent maintenant 6.7 €. Quel étaitleprix pour un bâton de chocolat
+%  avant l\textquotesingle augmentation du prix ?
+%\item
+%  ~Soit les configurations suivantes~: Détermine, pour chacune
+%  d'elles\ldots{}
+%
+%  \begin{enumerate}
+%  \def\labelenumii{\alph{enumii}.}
+%  \item
+%    \ldots{} la formule qui lie le nombre d'étoiles (\(e\)) au nombre de
+%    carrés (\(c\))
+%  \item
+%    \ldots{} la valeur de \(e\) pour un \(c = 7\)
+%  \end{enumerate}
+%\end{enumerate}
+%
+%\includegraphics[width=3.25in,height=5.025in]{media/image26.tmp}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{9}
+%\item
+%  ~La locomotive d'un train de marchandise possède 8 roues, et chaque
+%  wagon en compte \(4\).
+%
+%  \begin{enumerate}
+%  \def\labelenumii{\alph{enumii}.}
+%  \item
+%    Combien de roues possède le train s'il est constitué de \(1\)
+%    wagon~?\(\ 3\) wagons~? \(10\) wagons~?
+%  \item
+%    Quelle est la formule qui lie le nombre de wagons (\(w\)) et le
+%    nombre de roues totales du train~(\(r\)) ?
+%  \item
+%    De combien de wagons est constitué un train qui a \(108\) roues~?
+%    Laisse ta démarche visible.
+%  \end{enumerate}
+%\end{enumerate}
+%
+
+\end{document}
