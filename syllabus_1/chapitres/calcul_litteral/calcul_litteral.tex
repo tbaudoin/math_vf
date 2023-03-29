@@ -10,10 +10,17 @@
 Une expression algébrique (ou expression littérale) est une expression dans laquelle se mêlent des nombres et des lettres. Chaque terme se compose d'un \textbf{coefficient} et d'une \textbf{partie littérale}.
 
 \begin{center}
-    \includegraphics[width=3cm]{chapitres/calcul_litteral/img/5a.pdf}
+    \begin{tikzpicture}[>=latex, line width=0.5pt]
+        \begin{Huge}
+            \draw (0,0)node[inner sep=1pt, anchor=south,name=A]{\(5\)};
+            \draw (1.2ex,0)node[inner sep=1pt, anchor=south,name=B]{\(a\)};
+            \draw[->] (A.north) --++(0,0.25) --++(-0.5,0);
+            \draw[->] (B.south) --++(0,-.25) --++(0.5,0);
+        \end{Huge}
+    \end{tikzpicture}
 \end{center}
 
-Remarque : \(5a\) est l'écriture simplifiée de 
+Remarque : \(5a\) est l'écriture simplifiée de
 
 \begin{center}
     \includegraphics[]{chapitres/calcul_litteral/img/einstein1.png}
@@ -33,56 +40,34 @@ Remarque : \(5a\) est l'écriture simplifiée de
 \newpage
 \section{Valeurs numériques d'une expression algébrique}
 
-Calculer la valeur numérique d'une expression, c'est trouver le résultat d'une expression algébrique pour une valeur de partie littérale donnée. Prenons un exemple :
+Calculer la valeur numérique d'une expression consiste à remplacer les lettres (appelées variables) par des nombres donnés et à effectuer les opérations.
 \begin{equation*}
     8a+5
 \end{equation*}
 Calculer sa valeur numérique pour \(a = 2\) revient à remplacer \(a\) par \(2\) dans l'égalité de départ et à respecter les priorités des opérations pour calculer le résultat.
 
-Ici, cela nous donne~: 
-\begin{center}
-    $\begin{aligned}
-    8\ .\ 2 + 5\  &= 16 + 5 \\
-    &= 21
-  \end{aligned}$
-\end{center}
-
-  \exemple
-  Calcule la valeur numérique de l'expression \(3t + 5t^{2}\) si \(t = 6\).
-  \vspace{4cm}
-
-  \begin{exercise}
-    Calcule la valeur numérique de \(x^{2} + 3x - 10\) si tu sais que \(x = - 3\).
-    \vspace{4cm}
-  \end{exercise}
+Ici, cela nous donne,
+\begin{align*}
+    8 \cdot 2 + 5 & = 16 + 5 \\
+                  & = 21
+\end{align*}
 
 \begin{exercise}
-    Calcule les valeurs numériques suivants. Laisse tes étapes visibles.
-    \begin{enumerate}[itemsep=3.5cm]
-        \item \(10b-5\)
-        \begin{enumerate}[cols=2]
-            \item pour \(b=2\) 
-            \item pour \(b=12\)
-        \end{enumerate}
-        \newpage
-        \item \(a^2-1\)
-        \begin{enumerate}[cols=2]
-            \item pour \(a=-2\) 
-            \item pour \(a=11\)
-        \end{enumerate}
-        \item \(ab+2\)
-        \begin{enumerate}[cols=2]
-            \item pour \(a=1\) et \(b=2\)
-            \item pour \(a=-7\) et \(b=-8\)
-        \end{enumerate}
-        \item \(2a+3b-1\)
-        \begin{enumerate}[cols=2]
-            \item pour \(a=5\) et \(b=2\) 
-            \item pour \(a=-25\) et \(b=9\)
-        \end{enumerate}
+    Calcule la valeur numérique des expressions algébriques ci-dessous.
+    \begin{enumerate}[itemsep=3cm, cols=2]
+        \item \(3t + 5t^{2}\) \quad pour \(t = 6\).
+        \item \(x^{2} + 3x - 10\) \quad pour \(x = - 3\).
+        \item \(10b-5\) \quad pour \(b=12\).
+        \item \(a^2-1\) \quad pour \(a=-2\).
+        \item \(ab+2\)\quad pour \(a=-7\) et \(b=-8\).
+        \item \(2a+3b-1\) \quad pour \(a=-25\) et \(b=9\).
+        \item \((a+2b)\cdot 3\) pour \(a=-3\) et \(b=-2\).
+        \item \(\left(a^2 - 3ab\right)^2\) pour \(a=-1\) et \(b=0\).
     \end{enumerate}
-    \vspace{3cm}
+    \vspace*{3cm}
 \end{exercise}
+
+\newpage
 
 \begin{exercise}
     Code chaque phrase ci-dessous par une expression algébrique.
@@ -105,21 +90,21 @@ Ici, cela nous donne~:
 \end{center}
 
 \dotsforanswer{2}[Des termes semblables sont]
-\exemples 
+\exemples
 \vspace{4cm}
 %\FIXME: refaire ces petites synthèses en plus joli
 
-Comment réduire une somme algébrique? 
+Comment réduire une somme algébrique ?
 
-Pour additionner deux termes semblables, il suffit de :
+Pour additionner des termes semblables, il suffit :
 \begin{itemize}
-    \item additionner les coefficients 
-    \item conserver la partie littérale
+    \item d'additionner les coefficients.
+    \item de conserver (recopier) la partie littérale.
 \end{itemize}
 \vfil
-\exemples 
+\exemples
 \begin{enumerate}[cols=2, itemsep=1cm, label=]
-    \item \(3a+5a=\) 
+    \item \(3a+5a=\)
     \item \(7ab-11ab=\)
     \item \(2x^3 + x^3=\)
     \item \(3a^2 + 5a=\)
@@ -171,7 +156,13 @@ Pour additionner deux termes semblables, il suffit de :
 \newpage
 \section{Réduire un produit algébrique}
 %\FIXME: refaire ces petites synthèses en plus joli
-Comment réduire un produit algébrique? 
+Pour effectuer un produit entre des expressions algébriques, il suffit de :
+\begin{itemize}
+    \item multiplier les coefficients entre eux.
+    \item multiplier les facteurs littéraux entre eux. C'est-à-dire recopier les différentes lettres dans l'ordre alphabétique et noter en exposant le nombre de fois qu'elles apparaissent.'
+\end{itemize}
+
+Comment réduire un produit algébrique?
 
 Pour réduire un produit algébrique, il suffit de :
 \begin{itemize}
@@ -221,7 +212,7 @@ Pour réduire un produit algébrique, il suffit de :
 \begin{exercise}
     Réduis au maximum les expressions suivantes.
     \begin{enumerate}[cols=2, itemsep=.7cm]
-        \item \(- 3 \cdot 2a =\) 
+        \item \(- 3 \cdot 2a =\)
         \item \(- 5x \cdot ( - 2x) \cdot 3x =\)
         \item \(- 3a + 2a =\)
         \item \(- 2a - 4b =\)
@@ -260,14 +251,14 @@ Souviens-toi de la distributivité simple. Quel procédé utilise-t-on pour calc
 \vspace{4cm}
 
 \begin{exercise}
-   Calcule en utilisant la distributivité simple. 
-   \begin{enumerate}[itemsep=3cm]
-    \item \(23 \cdot 6 =\)
-    \item \(72 \cdot 11 =\)
-    \item \(26 \cdot 9 =\)
-    \item \(101 \cdot 27 =\)
-   \end{enumerate}
-   \vspace{3cm}
+    Calcule en utilisant la distributivité simple.
+    \begin{enumerate}[itemsep=3cm]
+        \item \(23 \cdot 6 =\)
+        \item \(72 \cdot 11 =\)
+        \item \(26 \cdot 9 =\)
+        \item \(101 \cdot 27 =\)
+    \end{enumerate}
+    \vspace{3cm}
 \end{exercise}
 
 La même méthode s'utilise dans le calcul algébrique.
@@ -276,9 +267,9 @@ La même méthode s'utilise dans le calcul algébrique.
 
 \newpage
 \textbf{Remarque} %\FIXME: refaire ces petites synthèses en plus joli
-Le signe $\cdot$ n'est pas nécessaire dans certains cas. En effet, il est sous-entendu : 
+Le signe $\cdot$ n'est pas nécessaire dans certains cas. En effet, il est sous-entendu :
 \begin{itemize}[itemsep=1.5cm]
-    \item Entre un coefficient et une partie littérale 
+    \item Entre un coefficient et une partie littérale
     \item Entre deux facteurs littéraux
     \item Entre un facteur et une parenthèse
     \item Entre deux parenthèses
@@ -355,7 +346,7 @@ Le signe $\cdot$ n'est pas nécessaire dans certains cas. En effet, il est sous-
 Quelle sont les règles à respecter lorsqu'on veut retirer des parenthèses~?
 
 \dotsforanswer{2}[Si la parenthèse est précédée d'un signe \(" + "\) : ]
-\exemples 
+\exemples
 \begin{enumerate}[itemsep=1.5cm, cols=2, label=]
     \item \(15 + (5a - 9) =\)
     \item \(2a + (10a + 2b) =\)
@@ -397,7 +388,7 @@ Quelle sont les règles à respecter lorsqu'on veut retirer des parenthèses~?
         \item \(3a\  + a \)
         \item \(4a\cdot3b \)
         \item \(\ 6x\cdot5x\  \)
-        \item \(3a\cdot2a \) 
+        \item \(3a\cdot2a \)
         \item \(- \ 5m + 2y \)
         \item \(3t\cdot( - 2t) \)
         \item \(x\cdot3y \)
@@ -519,7 +510,7 @@ Quelle sont les règles à respecter lorsqu'on veut retirer des parenthèses~?
         \item \(2\cdot 4x^{2} + 5\cdot 3x^{2} \)
         \item \(a^{2}\cdot 3b^{2} - a^{2}\cdot 4b^{2} \)
         \item \(\ 2\cdot (x + 3) + 10x\)
-        \item \(x \cdot (3x - 1) -5x^2 \)        
+        \item \(x \cdot (3x - 1) -5x^2 \)
         \item \(- \ 5c\cdot 2d - 3\cdot d\cdot c \)
         \item \((6a-b)\cdot (-2b) + 3b^2 \)
         \item \(ab\  + ab\  + 5ab\  + 6a^{2}b \)
@@ -529,7 +520,7 @@ Quelle sont les règles à respecter lorsqu'on veut retirer des parenthèses~?
         \item \(6\  + \ 5\ \cdot \ (\ b\  + 1) \)
         \item \(5 + 3\cdot \ (x - 2) \)
         \item \(2\cdot (p + 3) \)
-        \item \(8\cdot (8p - 2q) \) 
+        \item \(8\cdot (8p - 2q) \)
         \item \((5x\  + 3y)\cdot \ ( - a)\  \)
         \item \(4 + 7\cdot ( - 2f + 3) \)
         \item \(- \ 4\cdot ( - 6 - 7x) \)
@@ -537,7 +528,7 @@ Quelle sont les règles à respecter lorsqu'on veut retirer des parenthèses~?
 \end{exercise}
 
 \begin{exercise}
-    Réduis au maximum les expressions suivantes. 
+    Réduis au maximum les expressions suivantes.
     \begin{enumerate}[cols=2, itemsep=.8cm]
         \item \(5x \cdot 3\)
         \item \(ab\cdot a^3\cdot b^6 \cdot a^2b\)
