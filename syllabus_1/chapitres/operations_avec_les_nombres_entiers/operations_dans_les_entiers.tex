@@ -4,7 +4,7 @@
 
 
 \chapter{Opérations dans les nombres entiers}
-\faIcon{book} Pages 70 à 72 
+\faIcon{book} Pages 70 à 72
 
 \section{Multiplication d'entiers}
 
@@ -24,12 +24,12 @@
 
           \begin{center}
               \(\begin{tblr}{hlines, vlines, columns={1cm, c}, rows={1cm, m}}
-                  \tikzmark{A}4 & 3 & 2 & 1 & 0 & -1 & -2 & -3 & -4 \\
-                  \tikzmark{B}\phantom{4}  &   &   &   &   &    &    &    &
+                  \tikzmark{A}4           & 3 & 2 & 1 & 0 & -1 & -2 & -3 & -4 \\
+                  \tikzmark{B}\phantom{4} &   &   &   &   &    &    &    &
               \end{tblr}\)
           \end{center}
           \begin{tikzpicture}[overlay, remember picture]
-            \draw[->, >=latex] ([xshift=-.6cm]pic cs:A) to[in=160, out=200]node[left]{\(\cdot (- 3)\)} ([xshift=-.6cm]pic cs:B);    
+              \draw[->, >=latex] ([xshift=-.6cm]pic cs:A) to[in=160, out=200]node[left]{\(\cdot (- 3)\)} ([xshift=-.6cm]pic cs:B);
           \end{tikzpicture}
     \item Utilise ce que tu viens de découvrir pour effectuer les produits suivants.
           \begin{enumerate}[cols=2, itemsep=.5cm]
@@ -46,24 +46,24 @@
 Pour multiplier deux entiers :
 
 \textbf{Si les entiers sont de même signe,} \dotsforanswer{3}
-          \exemples
-          \begin{itemize}[cols=2, itemsep=1cm, label=]
-              \item $(-3)\cdot (-6)=$
-              \item $7\cdot 6=$
-              \item $-2\cdot (-3)=$
-              \item $8\cdot 7=$
-          \end{itemize}
-          \vspace{1cm}
+\exemples
+\begin{itemize}[cols=2, itemsep=1cm, label=]
+    \item $(-3)\cdot (-6)=$
+    \item $7\cdot 6=$
+    \item $-2\cdot (-3)=$
+    \item $8\cdot 7=$
+\end{itemize}
+\vspace{1cm}
 
-          \textbf{Si les entiers sont de signes contraires,} \dotsforanswer{3}
-          \exemples
-          \begin{itemize}[cols=2, itemsep=1cm, label=]
-              \item $(-3)\cdot 6=$
-              \item $-7\cdot 6=$
-              \item $3\cdot -5=$
-              \item $-10\cdot 3=$
-          \end{itemize}
-          \vspace{1cm}
+\textbf{Si les entiers sont de signes contraires,} \dotsforanswer{3}
+\exemples
+\begin{itemize}[cols=2, itemsep=1cm, label=]
+    \item $(-3)\cdot 6=$
+    \item $-7\cdot 6=$
+    \item $3\cdot -5=$
+    \item $-10\cdot 3=$
+\end{itemize}
+\vspace{1cm}
 
 \begin{exercise}
     Effectue.
@@ -134,54 +134,54 @@ Comment déterminer le signe d'un produit de plusieurs facteurs?
     produit des deux briques sur lesquelles elle repose.
 
     \begin{center}
-    \begin{tikzpicture}
-        \foreach \x/\l in {0/-2,2/2,4/-2,6/-2}{\draw(\x,0) rectangle node[midway]{\(\l\)}(\x+2,1);}
-        \foreach \x in {1,3,5}{\draw (\x,1) rectangle (\x+2,2);}
-        \foreach \x in {2,4}{\draw(\x,2) rectangle (\x+2,3);}
-        \draw (3,3) rectangle (5,4);
-    \end{tikzpicture}
-\vfil
-    \begin{tikzpicture}
-        \foreach \x/\l in {0/-3,2/2,4/-4,6/-1}{\draw(\x,0) rectangle node[midway]{\(\l\)}(\x+2,1);}
-        \foreach \x in {1,3,5}{\draw (\x,1) rectangle (\x+2,2);}
-        \foreach \x in {2,4}{\draw(\x,2) rectangle (\x+2,3);}
-        \draw (3,3) rectangle (5,4);
-    \end{tikzpicture}
-\end{center}
+        \begin{tikzpicture}
+            \foreach \x/\l in {0/-2,2/2,4/-2,6/-2}{\draw(\x,0) rectangle node[midway]{\(\l\)}(\x+2,1);}
+            \foreach \x in {1,3,5}{\draw (\x,1) rectangle (\x+2,2);}
+            \foreach \x in {2,4}{\draw(\x,2) rectangle (\x+2,3);}
+            \draw (3,3) rectangle (5,4);
+        \end{tikzpicture}
+        \vfil
+        \begin{tikzpicture}
+            \foreach \x/\l in {0/-3,2/2,4/-4,6/-1}{\draw(\x,0) rectangle node[midway]{\(\l\)}(\x+2,1);}
+            \foreach \x in {1,3,5}{\draw (\x,1) rectangle (\x+2,2);}
+            \foreach \x in {2,4}{\draw(\x,2) rectangle (\x+2,3);}
+            \draw (3,3) rectangle (5,4);
+        \end{tikzpicture}
+    \end{center}
 \end{exercise}
 
 \newpage
 \section{Puissances de nombres entiers}
-    Effectue les puissances suivantes. Si besoin, note les étapes intermédiaires.
-    \begin{enumerate}[itemsep=2cm, cols=2]
-        \item \(3^{3} =\)
-        \item \(7^{1} =\)
-        \item \(( - 2)^{4} =\)
-        \item \({- 1}^{6} =\)
-        \item \(( - 1)^{6} =\)
-        \item \(( - 2)^{3} =\)
-        \item \((-5)^3=\)
-        \item \(-3^2=\)
-    \end{enumerate}
-    \vspace{2cm}
+Effectue les puissances suivantes. Si besoin, note les étapes intermédiaires.
+\begin{enumerate}[itemsep=2cm, cols=2]
+    \item \(3^{3} =\)
+    \item \(7^{1} =\)
+    \item \(( - 2)^{4} =\)
+    \item \({- 1}^{6} =\)
+    \item \(( - 1)^{6} =\)
+    \item \(( - 2)^{3} =\)
+    \item \((-5)^3=\)
+    \item \(-3^2=\)
+\end{enumerate}
+\vspace{2cm}
 
 Comment déterminer le signe d'une puissance à exposant naturel~?
 \vfill
 \textbf{Si la base est positive,} \dotsforanswer{1}
-\exemples 
+\exemples
 \(5^{2}=\) \hfil \(2^3=\)
 \vfill
 \textbf{Si la base est négative}
-          \begin{itemize}[wide]
-              \item Cas 1 : \dotsforanswer{2}
-              \exemples
-                    \((- 3)^{2} = \)\hfil\( ( - 2)^{4} =\)
-                    \vfill
-              \item Cas 2 : \dotsforanswer{2}
-              \exemples
-                    \(( - 3)^{3} = \)\hfil\( ( - 2)^{5} =\)
-          \end{itemize}
-          \vspace{1cm}
+\begin{itemize}[wide]
+    \item Cas 1 : \dotsforanswer{2}
+          \exemples
+          \((- 3)^{2} = \)\hfil\( ( - 2)^{4} =\)
+          \vfill
+    \item Cas 2 : \dotsforanswer{2}
+          \exemples
+          \(( - 3)^{3} = \)\hfil\( ( - 2)^{5} =\)
+\end{itemize}
+\vspace{1cm}
 
 \newpage
 \section{Priorité des opérations}
@@ -237,9 +237,38 @@ L'ordre des priorités des opérations qu'on a découvert dans les naturels est 
         \item \(- \ 8 \cdot 8 \)
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}[cols=4]
+        \item \(56\)
+        \item \(18\)
+        \item \(144\)
+        \item \(20\)
+        \item \(-56\)
+        \item \(-54\)
+        \item \(-18\)
+        \item \(-144\)
+        \item \(-20\)
+        \item \(-24\)
+        \item \(56\)
+        \item \(-72\)
+        \item \(-14\)
+        \item \(-60\)
+        \item \(-22\)
+        \item \(-32\)
+        \item \(-72\)
+        \item \(24\)
+        \item \(78\)
+        \item \(24\)
+        \item \(8\)
+        \item \(72\)
+        \item \(-3\)
+        \item \(-28\)
+        \item \(-64\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
-    Effectue. 
+    Effectue.
     \begin{enumerate}[cols=3, itemsep=.3cm]
         \item \(4\cdot (-5) \cdot 7\)
         \item \(-2\cdot (-3)\cdot (-4)\)
@@ -255,9 +284,25 @@ L'ordre des priorités des opérations qu'on a découvert dans les naturels est 
         \item \(-2 \cdot 8 \cdot (-1) \cdot (-1)\)
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}[cols=4]
+        \item \(-140\)
+        \item \(-24\)
+        \item \(-2\)
+        \item \(28\)
+        \item \(200\)
+        \item \(-36\)
+        \item \(-1\)
+        \item \(-36\)
+        \item \(20\)
+        \item \(20\)
+        \item \(70\)
+        \item \(-16\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
-    Effectue les puissances suivantes. 
+    Effectue les puissances suivantes.
     \begin{enumerate}[itemsep=.3cm, cols=3]
         \item \(-5^2\)
         \item \((-3)^3\)
@@ -273,6 +318,22 @@ L'ordre des priorités des opérations qu'on a découvert dans les naturels est 
         \item \(5^0\)
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}[cols=4]
+        \item \(-25\)
+        \item \(-27\)
+        \item \(16\)
+        \item \(9\)
+        \item \(-16\)
+        \item \(125\)
+        \item \(64\)
+        \item \(-1\)
+        \item \(36\)
+        \item \(49\)
+        \item \(-1\)
+        \item \(1\)
+    \end{enumerate}
+\end{solution}
 
 \newpage
 \begin{exercise}
@@ -295,6 +356,25 @@ L'ordre des priorités des opérations qu'on a découvert dans les naturels est 
         \item \(- \ 8 \cdot 3^2 \)
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}[cols=4]
+        \item \(45\)
+        \item \(72\)
+        \item \(80\)
+        \item \(-250\)
+        \item \(48\)
+        \item \(200\)
+        \item \(270\)
+        \item \(12\)
+        \item \(-32\)
+        \item \(-60\)
+        \item \(27\)
+        \item \(69\)
+        \item \(-25\)
+        \item \(18\)
+        \item \(-72\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Effectue. Attention à la priorité des opérations.
@@ -313,10 +393,26 @@ L'ordre des priorités des opérations qu'on a découvert dans les naturels est 
         \item \(9 \cdot ( - 7) - 17 \cdot ( - 2) \)
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}[cols=4]
+        \item \(-19\)
+        \item \(-38\)
+        \item \(-60\)
+        \item \(-46\)
+        \item \(-37\)
+        \item \(-380\)
+        \item \(-38\)
+        \item \(428\)
+        \item \(-48\)
+        \item \(46\)
+        \item \(240\)
+        \item \(-29\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Effectue. Attention à la priorité des opérations.
-        \begin{enumerate}[itemsep=.4cm, cols=3]
+    \begin{enumerate}[itemsep=.4cm, cols=3]
         \item   \(3^{2} \cdot ( - 3) + 2^{3} \cdot ( - 2)^{2} \)
         \item \(- 1 \cdot ( - 30) - ( - 2)^{4} \)
         \item \(12 \cdot ( - 3)^{2} + 11 \cdot ( - 1)^{5} \)
@@ -331,6 +427,22 @@ L'ordre des priorités des opérations qu'on a découvert dans les naturels est 
         \item \(3^{3} \cdot ( - 2) - 14 \cdot ( - 2) \)
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}[cols=4]
+        \item \(5\)
+        \item \(14\)
+        \item \(97\)
+        \item \(-104\)
+        \item \(-40\)
+        \item \(202\)
+        \item \(-88\)
+        \item \(1304\)
+        \item \(-28\)
+        \item \(-104\)
+        \item \(-44\)
+        \item \(-26\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Effectue. Attention à la priorité des opérations.
@@ -349,6 +461,22 @@ L'ordre des priorités des opérations qu'on a découvert dans les naturels est 
         \item \(2^{3} \cdot ( - 4) + 34 \cdot ( - 3) \)
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}[cols=4]
+        \item \(41\)
+        \item \(17\)
+        \item \(-103\)
+        \item \(-76\)
+        \item \(-79\)
+        \item \(124\)
+        \item \(-1\)
+        \item \(880\)
+        \item \(-56\)
+        \item \(11\)
+        \item \(86\)
+        \item \(-134\)
+    \end{enumerate}
+\end{solution}
 
 \newpage
 \subsection{À toi de jouer !}
@@ -466,5 +594,8 @@ L'ordre des priorités des opérations qu'on a découvert dans les naturels est 
     Martin désire courir les \SI{20}{km} de Bruxelles. Pour cela, il s'entraine chaque jour un petit peu. Du lundi au vendredi, il parcourt \SI{7400}{m} le matin et \SI{4600}{m} le soir. Le weekend,
     lorsqu'il a un peu plus de temps, il parcourt \SI{15600}{m} chaque jour. Écris un calcul qui te permet de connaitre la distance qu'il parcourt en une semaine.
 \end{exercise}
+
+\newpage
+\printsolutions
 
 \end{document}
