@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  15 FEB 2023 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  21 APR 2023 16:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Amandine/Desktop/Rubrik à braks/VF/math_vf/devoirs/2/2-devoir-fevrier"
-(c:/Users/Amandine/Desktop/Rubrik à braks/VF/math_vf/devoirs/2/2-devoir-fevrier.tex
+**"c:/Users/Amandine/Desktop/Rubrik à braks/VF/math_vf/devoirs/2/2 - devoir_mai"
+(c:/Users/Amandine/Desktop/Rubrik à braks/VF/math_vf/devoirs/2/2 - devoir_mai.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-10-18> (c:/texlive/2021/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2021/06/25 v3.34 KOMA-Script document class (article)
@@ -1028,8 +1028,8 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 (scrlayer-scrpage)             `pagefoot' on input line 1109.
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
- (./2-devoir-fevrier.aux)
-\openout1 = `2-devoir-fevrier.aux'.
+ (./2 - devoir_mai.aux)
+\openout1 = `"2 - devoir_mai.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
 LaTeX Font Info:    ... okay on input line 100.
@@ -1108,11 +1108,11 @@ LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <24.88> not available
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <12> not available
 (Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 110.
 \l__xsim_file_contents_iow=\write4
-\openout4 = `2-devoir-fevrier-exercise-1-exercise-body.tex'.
+\openout4 = `"2 - devoir_mai-exercise-1-exercise-body.tex"'.
 
 LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <12> not available
 (Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 124.
- (./2-devoir-fevrier-exercise-1-exercise-body.tex
+ (./2 - devoir_mai-exercise-1-exercise-body.tex
 LaTeX Font Info:    Trying to load font information for OT1+cmbr on input line 12.
  (c:/texlive/2021/texmf-dist/tex/latex/cmbright/ot1cmbr.fd
 File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
@@ -1135,45 +1135,54 @@ LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <8> not available
 (Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 12.
  (c:/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd))
-\openout4 = `2-devoir-fevrier-exercise-2-exercise-body.tex'.
+\openout4 = `"2 - devoir_mai-exercise-2-exercise-body.tex"'.
 
- (./2-devoir-fevrier-exercise-2-exercise-body.tex)
-\openout4 = `2-devoir-fevrier-exercise-3-exercise-body.tex'.
+ (./2 - devoir_mai-exercise-2-exercise-body.tex)
+\openout4 = `"2 - devoir_mai-exercise-3-exercise-body.tex"'.
 
- (./2-devoir-fevrier-exercise-3-exercise-body.tex)
-\openout4 = `2-devoir-fevrier-exercise-4-exercise-body.tex'.
+ (./2 - devoir_mai-exercise-3-exercise-body.tex) [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- (./2-devoir-fevrier-exercise-4-exercise-body.tex)
-\openout4 = `2-devoir-fevrier-exercise-5-exercise-body.tex'.
+]
+\openout4 = `"2 - devoir_mai-exercise-4-exercise-body.tex"'.
 
- (./2-devoir-fevrier-exercise-5-exercise-body.tex [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ (./2 - devoir_mai-exercise-4-exercise-body.tex)
+\openout4 = `"2 - devoir_mai-exercise-5-exercise-body.tex"'.
 
-])
-\openout4 = `2-devoir-fevrier-exercise-6-exercise-body.tex'.
+ (./2 - devoir_mai-exercise-5-exercise-body.tex
+<img/pointAdroiteF.png, id=38, 326.4195pt x 209.583pt>
+File: img/pointAdroiteF.png Graphic file (type png)
+<use img/pointAdroiteF.png>
+Package pdftex.def Info: img/pointAdroiteF.png  used on input line 14.
+(pdftex.def)             Requested size: 326.41869pt x 209.58247pt.
+) [2 <./img/pointAdroiteF.png>]
+\openout4 = `"2 - devoir_mai-exercise-6-exercise-body.tex"'.
 
- (./2-devoir-fevrier-exercise-6-exercise-body.tex)
-\openout4 = `2-devoir-fevrier-exercise-7-exercise-body.tex'.
+ (./2 - devoir_mai-exercise-6-exercise-body.tex)
+\openout4 = `"2 - devoir_mai-exercise-7-exercise-body.tex"'.
 
- (./2-devoir-fevrier-exercise-7-exercise-body.tex)
-\openout4 = `2-devoir-fevrier-exercise-8-exercise-body.tex'.
+ (./2 - devoir_mai-exercise-7-exercise-body.tex)
+\openout4 = `"2 - devoir_mai-exercise-8-exercise-body.tex"'.
 
- (./2-devoir-fevrier-exercise-8-exercise-body.tex)
-\openout4 = `2-devoir-fevrier-exercise-9-exercise-body.tex'.
-
- (./2-devoir-fevrier-exercise-9-exercise-body.tex) [2] (./2-devoir-fevrier.aux) ) 
+ (./2 - devoir_mai-exercise-8-exercise-body.tex
+<img/cercle tangent.png, id=43, 332.442pt x 207.174pt>
+File: img/cercle tangent.png Graphic file (type png)
+<use img/cercle tangent.png>
+Package pdftex.def Info: img/cercle tangent.png  used on input line 13.
+(pdftex.def)             Requested size: 227.62204pt x 141.8501pt.
+) [3 <./img/cercle tangent.png>] (./2 - devoir_mai.aux) ) 
 Here is how much of TeX's memory you used:
- 34213 strings out of 478579
- 768167 string characters out of 5857457
- 1246125 words of memory out of 5000000
- 51393 multiletter control sequences out of 15000+600000
- 418649 words of font info for 80 fonts, out of 8000000 for 9000
+ 34191 strings out of 478579
+ 766947 string characters out of 5857457
+ 1242149 words of memory out of 5000000
+ 51368 multiletter control sequences out of 15000+600000
+ 418790 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,25n,111p,10723b,955s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,25n,111p,10721b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbmo8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb>
-Output written on 2-devoir-fevrier.pdf (2 pages, 70270 bytes).
+Output written on "2 - devoir_mai.pdf" (3 pages, 78149 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26733 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 26743 words of extra memory for PDF output out of 29859 (max. 10000000)
 
