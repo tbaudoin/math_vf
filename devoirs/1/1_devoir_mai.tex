@@ -1,0 +1,179 @@
+\documentclass[12pt,parskip=half-, twoside=semi]{scrartcl}
+\usepackage[T1]{fontenc} % encodage des caractères
+\usepackage[french]{babel} % texte en français
+\usepackage{microtype} % meilleur justification du texte
+\usepackage{cmbright} % police sans serif
+\usepackage[frenchmath]{mathastext} % pour le lettres majuscules droites
+\usepackage{stmaryrd} % \sslash pour le symbole parallèle
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{tikz, tkz-euclide}
+\usepackage{gensymb}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\alph*)}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\NewDocumentCommand{\dotsforanswer}{m o O{1ex}}%
+{%
+    \IfNoValueTF{#2}%
+    {
+        \foreach \i in {1,...,#1}{\dotfill\vskip #3}
+    }
+    {
+        #2\dotfill\vskip #3
+        \foreach \i in {2,...,#1}{\dotfill\vskip #3}
+    }
+
+}
+\SetEnumitemKey{cols}
+{
+    itemsep= 1em,
+    before = \raggedcolumns\begin{multicols}{#1},
+    after = \end{multicols},
+}
+\usepackage{tcolorbox}
+\newtcbox{\blackbox}{%
+    on line,
+    left=0pt,
+    right=0pt,
+    bottom=0pt,
+    top=0pt,
+    sharp corners,
+    colframe=black,
+    colback=black,
+    coltext=white,
+    fontupper=\bfseries
+}
+
+
+%%%%%%%%
+% XSIM %
+%%%%%%%%
+\usepackage[use-files, use-aux]{xsim}
+% Pour le template de l'interrogation
+\DeclareExerciseEnvironmentTemplate{interrogation_template}%
+{%
+    \GetExercisePropertyTF{points}%
+    % s'il y a des points
+    {
+        \blackbox%
+        {%
+            \XSIMmixedcase{\GetExerciseName}~\GetExerciseProperty{counter}%
+        }%
+        \hfill
+        \blackbox{
+            \GetExerciseProperty{points}
+        }
+        \par
+    }
+    % sinon
+    {
+        \blackbox%
+        {%
+            \XSIMmixedcase{\GetExerciseName}~\GetExerciseProperty{counter}%
+        }%
+        \par
+    }%
+}%
+{%
+    \par%
+}
+\xsimsetup{
+    exercise/template = interrogation_template,
+    solution/template = interrogation_template,
+    exercise/name = question,
+}
+
+% Changer le titre ici
+\newcommand{\montitre}{Devoir - Mai 2023}
+% Changer la date ici
+%\newcommand{\madate}{Lundi jj mm aaaa}
+
+
+% En-tête et pied de page
+\usepackage{scrlayer-scrpage}
+\setlength{\headheight}{50pt}
+\lohead{Nom :\\Prénom :\\Classe :}
+\rohead{\no~\fbox{\phantom{XX}}\\~\\ Date : }
+
+\begin{document}
+% Titre
+\begin{huge}
+    \bfseries
+    \montitre
+    \hfill
+    \dots/\TotalExerciseGoal{points}{}{}
+    \bigbreak
+\end{huge}
+	
+\begin{exercise}[points=6]
+	Effectue. 
+	\begin{enumerate}[cols=2, itemsep=4cm]
+		\item \(3\cdot 2 + 5 \cdot 3 =\)
+		\item \((-3 \cdot 2 + 7) - (-5)^2=\)
+		\item \((-7+10)^3 + 2 \cdot (-3)=\)
+		\item \(-4 + (-5) - (-2)=\)
+		\item \(-9 - 13 + 2 \cdot (-8 + 2)=\)
+		\item \(-1^4 + 3 \cdot (-6) - 10=\)
+	\end{enumerate}	
+    \vspace{4cm}
+\end{exercise}
+
+\newpage
+\begin{exercise}[points=3]
+	Complète les phrases suivantes avec le quadrilatère ou le triangle adéquat. 
+	\begin{enumerate}[itemsep=1.5cm]
+		\item J'ai tous mes angles droits mais pas de côtés isométriques  
+		\item J'ai trois côtés de longueurs différentes, mais tous mes angles sont aigus 
+		\item Mes diagonales sont isométriques et se croisent en leurs milieux, perpendiculairement  
+	\end{enumerate}
+    \vspace{1.5cm}
+\end{exercise}
+
+\begin{exercise}[points=6]
+    Calcule la valeur numérique des expressions suivantes. Laisse tes étapes visibles.
+    \begin{enumerate}[cols=2, itemsep=4cm]
+        \item \(-3x +x\) si \(x=-2\)
+        \item \(3ab + b^2\) si \(a=-2\) et \(b=-3\)
+        \item \(a + b - a\) si \(a=-8\) et \(b=-1\)
+        \item \(6xy + 3x - 2y\) si \(x=2\) et \(y=-3\)
+        \item \(7a + 3b^2 - b\) si \(a=-3\) et \(b=-5\)
+        \item \(x + 2y - 7 + 3x\) si \(x=-2\) et \(y=-7\)
+    \end{enumerate}
+    \vspace{4cm}
+\end{exercise}
+
+\newpage
+\begin{exercise}[points=10]
+    Réduis au maximum les expressions suivantes.
+    \begin{enumerate}[cols=2, itemsep=2cm]
+        \item \(3x + 2x =\)
+        \item \(-2a \cdot 5ab = \)
+        \item \(3(2a - 5)=\)
+        \item \(2a + 5b - 10a - 5b=\)
+        \item \(3a \cdot 7ab - 10 \cdot 2a^2b=\)
+        \item \(-2a \cdot (a-7)=\)
+        \item \(5y - 3x - 10y =\)
+        \item \(-a \cdot a \cdot a \cdot =\)
+        \item \(2e \cdot 4ef^3 \cdot -5e^3 = \)
+        \item \((2a - 7x) \cdot 2a=\)
+    \end{enumerate}
+\end{exercise}
+\vfil
+\begin{exercise}[points=2]
+	Décompose 144 et 150 en un produit de facteurs premiers.
+\end{exercise}
+
+\newpage
+\begin{exercise}[points=5]
+    Réduis au maximum les expressions suivantes. Laisse tes étapes visibles.
+    \begin{enumerate}[itemsep=4cm]
+        \item \(2\cdot 5a + 3a^2 - 2(2a+3)=\)
+        \item \(3a(2a-1) + 7(3a^2 - 7)=\)
+        \item \(4x + (2 - 7x) = \)
+        \item \(2a^2 - (-2 + 3a^2) + 5a^2 =\)
+        \item \(3x \cdot 6xy - 2x (8xy - 2y)=\)
+    \end{enumerate}
+\end{exercise}
+
+\end{document}
