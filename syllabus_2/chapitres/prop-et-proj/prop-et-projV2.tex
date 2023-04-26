@@ -137,6 +137,8 @@ Ainsi, lorsque nous nous retrouvons face à un tableau, nous pouvons déterminer
 
 %\end{exercise}
 
+\adf[Le graphique d'une relation proportionnelle entre deux grandeurs est toujours] {1} %une droite passant par l'origine.
+
 \section{Propriété fondamentale des proportions}
 Comme vu dans le chapitre sur les équations, lorsque nous avons une égalité de deux fractions $\dfrac{a}{b}=\dfrac{c}{d}$ nous pouvons la réécrire comme $a\cdot d = b \cdot c$.
 Ecris toutes les autres égalités possibles à partir de cette égalité $\dfrac{a}{b}=\dfrac{c}{d}$ si a, b,c et d sont différents de 0. 
@@ -154,19 +156,97 @@ b et c sont les moyens.
 \begin{exercise}
     Nathan et Samuel veulent repeindre le local de leur classe en vert clair. Pour obtenir cette couleur, il faut mélanger du bleu et de jaune. Nathan a estimé qu'il fallait une portion de bleu pour cinq de jaune. Il effectue le mélange. A ce moment-là Samuel arrive et lui dit "C'est beaucoup trop clair, il fallait faire le contraire: cinq portions de bleu et une de jaune". Combien Nathan doit-il rajouter de portions de bleu pour obtenir la bonne couleur ?
 \end{exercise}
+\vspace*{5cm}
 
-\begin{exercise}
-    Exercice fast-food
-\end{exercise}
 
 \section{Projections parallèles}
 
-Mise en situation avec les ombres
+    Sara va se promener sur la plage avec son petit frère Juan. Sara mesure 1,70m et Juan 1,20m. Elle remarque que l'ombre de Juan mesure 1,80m. Quelle est la longueur de son ombre? 
 
+    \begin{center}
+        \includegraphics[width=15cm]{chapitres/prop-et-proj/sun.jpg} 
+     \end{center}   
+
+
+
+
+ Le fait que la projection soit parallèle, cela conserve les proportions entre les différentes mesures. 
+ 
+ \begin{exercise}
+    Tu es parti en voyage à Tokyo. A 14h05, heure locale, tu remarques que ton ombre mesure 85cm. Tu mesures 1m50. A côté de toi, s'étend l'ombre du Tokyo Skytree, un de plus grand gratte ciel au monde. L'ombre mesure 338m. Ton frère te dit que ce gratte de ciel est plus grand que le Burj Khalifa à Dubaï qui mesure 828m. A-t-il raison ? Argumente.
+    %Faux, elle mesure 634m (338*8/15)
+ \end{exercise} 
+ \vspace*{7cm}
+
+ Te voici dans une situation délicate. Tu désires partager le segment [AB] en 4 segments de même longueur sans utiliser le moindre instrument de mesure. Comment vas-tu faire ? Aide toi des projections parallèles.
+\newline
+\includegraphics[width=10cm]{chapitres/prop-et-proj/segment.jpg} 
+
+\adf[Etape 1: ]{2} %On trace une demi-droite d'origine A
+\adf[Etape 2: ]{3} % Sur cette demi-droite on reporte 4 fois la même mesure à partir de A. On appelle les point obtenus respectivement C, D, E et F.
+\adf[Etape 3: ]{1} %On relie F à B
+\adf[Etape 4: ]{2} % On trace les parallèle à BF passant par C, D et E à l'aide de l'équerre
+
+\begin{exercise}
+    Partage le segment suivant en 6 segments de même longueur.
+    \newline
+    \includegraphics[width=11cm]{chapitres/prop-et-proj/segment.jpg} 
+\end{exercise}
+
+Une projection parallèle est une transformation du plan qui projete un élément sur une droite de façon parallèle. 
+Pour construire l'image du point A par la projection sur la droite d, parallèlement à la droite a:
+\begin{itemize}
+    \item Tracer la droite passant par A parallèle à a.
+    \item Pointer A' à l'interserction de cette parallèle et de d.
+    \begin{center}
+        \includegraphics[width=11cm]{chapitres/prop-et-proj/projection.jpg}   
+    \end{center} 
+\end{itemize}
+
+\begin{exercise}
+    Projette le triangle ABC, sur la droite d, parrallèlement à la droite a.
+    \begin{center}
+        \includegraphics[width=11cm]{chapitres/prop-et-proj/triangle.jpg}   
+    \end{center} 
+\end{exercise}
+
+\newpage
 \section{Agrandissement et réduction}
 
+Voici une image d'un chien et d'un ours. Complète la version réduite et agrandie de chacun, en respectant les proportions.
+\begin{center}
+    \includegraphics[width=15cm]{chapitres/prop-et-proj/dog.jpg} 
+    \includegraphics[width=15cm]{chapitres/prop-et-proj/bear.jpg}
+ \end{center}
+
+
+De quoi as-tu besoin de calculer pour pouvoir respecter les proportions ?
+\adf{1}
+%le coefficient de prop
+
+\newpage 
+Réalise une réduction, $k=\dfrac{1}{2}$
+    
+\begin{tikzpicture}[scale=0.7]
+    \draw[step=1cm,gray!50,very thin] (-15,-8) grid (10,7);
+    
+    \filldraw[fill=gray!20!white, draw=black] (0,0) -- (0,4) -- (4,6) -- (8,-2) -- (-2,-2) -- cycle;
+\end{tikzpicture}
+
+Réalise un agrandissement, $k =3$
+
+\begin{tikzpicture}[scale=0.7]
+    \draw[step=1cm,gray!50,very thin] (-15,-8) grid (10,7);
+    
+    \filldraw[fill=gray!20!white, draw=black] (1,1) -- (2,2) -- (4,2) -- (6,5) -- (2,6) -- cycle;
+\end{tikzpicture}
+
+
+\newpage
 A partir des exemples précendents, complète la synthèse suivante.
+\newline 
 \textbf{Synthèse}
+
 Les agrandissements et les réductions conservent:
 \begin{itemize}[label=$\bullet$]
     \item La forme des figures
@@ -180,6 +260,25 @@ Dans un agrandissement ou une réduction, les côtés homologues ont des longeur
     \item Pour une réduction: k < 1
     \item Pour une isométrie : k = 1
 \end{itemize}
+
+
+\textbf{Calcul de périmètre et d'aires} 
+
+La première figure est un réduction de facteur $\dfrac{1}{2}$ de la seconde figure. Calcule le périmètre et l'aire des deux figures. 
+\begin{center}
+    \includegraphics[width=12cm]{chapitres/prop-et-proj/trapèze.jpg} 
+ \end{center}
+
+Périmètre :
+
+Aire: 
+
+Que peux-tu conclure ?
+\adf{4}
+%Pour deux figures agrandies (ou réduites) avec un coefficient k:
+%- les longueurs (les périmètres) sont mulitpliés par k,
+%- les aires sont multipliées par k.
+
 
 \section{Exercices mélangés}
 
