@@ -1,0 +1,691 @@
+\documentclass[../../syllabus_1.tex]{subfiles}
+\begin{document}
+\chapter{Proportionnalité}
+
+\section{Tableaux de proportionnalite}
+
+Un petit vendeur de pâtisseries vend ses croissants à \(1,5\)€.
+
+\begin{enumerate}[itemsep=1.5cm]
+  \item Combien vas-tu payer pour \(6\) croissants~?
+  \item Complète le tableau suivant.
+  \begin{center}
+    \begin{tblr}{
+      hlines,
+      vlines,
+      columns={1.5cm, c},
+      rows={1cm,m},
+      column{1}={4cm, gray!40, font=\bfseries},
+  }
+  Nombre de croissants & 0 & 1 & & 8 & & \\ 
+  Prix (en €) & & & 6 & & 27 & 54 \\
+\end{tblr}
+
+  \end{center}
+\end{enumerate}
+
+\dotsforanswer{3}[Deux grandeurs directement proportionnelles sont]
+
+\begin{exercise}
+  Vrai ou faux~?
+  \begin{enumerate}[itemsep=.4cm]
+    \item Le nombre de bouteilles d'eau achetées et le prix payé sont proportionnels \dotfill
+    \item La taille d'une personne est proportionnelle à son âge \dotfill
+    \item Le salaire d'un professeur et le nombre de ses élèves en classe sont proportionnels \dotfill
+    \item Le prix d'un livre et le nombre de pages contenues dans ce livre sont proportionnels \dotfill
+    \item Le numéro d'un épisode de ta série préférée est proportionnel au temps de cet épisode \dotfill
+    \item Le périmètre d'un carré est proportionnel à la mesure de son côté \dotfill
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  En t'aidant de la définition des grandeurs proportionnelles, complète les tableaux ci-dessous en indiquant sur les flèches les produits effectués.
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/tableauxprop.png}
+  \end{center}
+\end{exercise}
+
+\dotsforanswer{2}[Le coefficient de proportionnalité (\(k\)) entre deux grandeurs proportionnelles (\(x\) et \(y\)) est]
+
+\exemples
+\begin{multicols}{2}
+    \begin{center}
+      \begin{tblr}{
+        hlines,
+        vlines,
+        columns={1cm, c},
+        rows={1cm,m},
+        column{1}={gray!40, font=\bfseries},
+    }
+    \(x\) & 3 & 5 & 7 \\
+    \(y\) & 12 & 20 & 28 \\
+\end{tblr}
+  \end{center}
+  
+    \begin{center}
+      \begin{tblr}{
+        hlines,
+        vlines,
+        columns={1cm, c},
+        rows={1cm,m},
+        column{1}={gray!40, font=\bfseries},
+    }
+    \(x\) & 2 & 8 & 9 \\
+    \(y\) & 5 & 20 & 22,5  \\
+\end{tblr}
+  \end{center}
+\end{multicols}
+
+\begin{exercise}
+  Détermine le coefficient de proportionnalité reliant le \(2\) grandeurs de chaque tableau de proportionnalité ci-dessous et utilise-le pour compléter les cases vides.
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/tableauxprop2.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  Dans chaque cas, détermine si les grandeurs \(x\) et \(y\) sont proportionnelles. Si oui, détermine le coefficient de proportionnalité. 
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/tableauxprop3.png}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  Complète les tableaux suivants grâce au coefficient de proportionnalité.
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/tableauxprop4.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\section{Règle de trois}
+\begin{exercise}
+  On sait que \(4\) kilos de pommes coûtent \(6€\). Que coûtent \(7\) kilos de pommes~?\\ 
+  Résous en complétant le tableau ci-dessous.
+
+  \begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={3cm, c},
+            rows={1cm,m},
+            row{1}={gray!40, font=\bfseries},
+        }
+        Masse (\(kg\)) & Prix (€)\\
+        4 & 6 \\
+        1 & \\
+        7 & \\
+    \end{tblr}
+\end{center}
+\end{exercise}
+
+\vfil
+
+\begin{exercise}
+  Ma voiture consomme, en moyenne, \(4\) litres de carburant pour \(100km\). Quelle distance pourrais-je parcourir avec un plein de \(50\) litres~?
+  
+\end{exercise}
+
+\vfil
+
+\begin{exercise}
+  Pour une exposition, un groupe de \(12\) élèves a payé \(84€\). Qu'auraient payé \(17\) élèves~?
+\end{exercise}
+
+\newpage
+\section{Graphiques et proportionnalité}
+\begin{exercise}
+  Voici les tarifs d'entrée à la piscine de la commune.
+  \begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={1cm, c},
+            rows={1cm,m},
+            column{1}={3cm, gray!40, font=\bfseries},
+        }
+        Nombre d'entrées & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+        Prix entrée enfants & 3 & 6 & 9 & 12 & 15 & 18 & 21 & 24 & 27 & 30 \\
+    \end{tblr}
+\end{center}
+
+\begin{enumerate}
+  \item Est-ce un tableau de proportionnalité? Justifie. 
+  \item Construis le graphique évolutif qyu traduit la situation. 
+\end{enumerate}
+\begin{center}
+  \begin{tikzpicture}[scale=0.25]
+      % Axes
+      \draw[->] (0,-0.20) -- (0,30) node[above] {$Prix$ (en €)};
+      \draw[->] (-0.20,0) -- (50,0) node[right] {$Nombre d'entrées$};
+      % Grille
+      \draw[gray, dotted] (0,0) grid (50,30);
+      % Graduations
+      \foreach \x in {1, 2,3,4,5,6,7,8,9,10} %\TODO: graduation
+          \draw (\x,-0.1) -- (\x,0.1) node[below=2pt] {\x};
+      \foreach \y in {5,10,15,20,25,30}
+          \draw (-0.1,\y) -- (0.1,\y) node[left=2pt] {\y};
+  \end{tikzpicture}
+\end{center}
+\end{exercise}
+
+%  Voici les tarifs d'entrée à la piscine de la commune.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.3094}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0670}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0670}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0670}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0632}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Nombre d'entrées
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[1\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[2\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[3\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[4\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[5\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[6\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[7\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[8\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[9\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[10\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Prix entrée enfants & \(3\) & \(6\) & \(9\) & \(12\) & \(15\) & \(18\) &
+%\(21\) & \(24\) & \(27\) & \(30\) \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\item
+%  Est-ce un tableau de proportionnalité~? Justifie.
+%\item
+%  Construis le graphique évolutif qui traduit la situation.
+%\end{enumerate}
+%
+%\includegraphics[width=5.22545in,height=4.74208in]{media/image3.tmp}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{9}
+%\item
+%  Parmi les graphiques suivants, quel est celui qui traduit une
+%  situation de proportionnalité~? Justifie en disant pourquoi les autres
+%  ne le sont pas.
+%\end{enumerate}
+%
+%\includegraphics[width=3.63333in,height=0.88333in]{media/image4.png}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{13}
+%\item
+%  L'Échelle
+%\end{enumerate}
+%
+%L'échelle
+%\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.
+%
+%\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots..\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.
+%
+%\[Echelle = \frac{longueur\ représentée}{longueur\ réel}\]
+%
+%\includegraphics[width=2.77014in,height=2.30278in]{media/image5.png}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\textbf{Mesure sur la carte (cm)}
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\textbf{Distance réelle (cm)}
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%1 & \\
+%2 & \\
+%3 & \\
+%\bottomrule()
+%\end{longtable}
+%
+%Exemple~: La Belgique est représenté à l'échelle~: 1 / 4 000 000
+%
+%L'échelle est
+%\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots..
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{14}
+%\item
+%  Exercices mélangés
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\item
+%  Sur un plan dont l'échelle est \(\frac{1}{2000}\), un champ
+%  rectangulaire est représenté par un rectangle mesurant \(2cm\) de long
+%  et \(1,4cm\) de large. Quelles sont les dimensions réelles de ce
+%  champ, en mètres~? Quelle est l'aire de ce champ en mètres carrés~?
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{1}
+%\item
+%  En 2 heures, Pierre a parcouru 180 km. À vitesse constante, combien de
+%  kilomètres parcourra-t-il en 5 heures~?
+%\item
+%  Un peintre a peint 3pièces de même superficie en 6 jours. À vitesse
+%  constante, de combien de jours a-t-il besoin pour peindre 4 pièces
+%  identiques?
+%\item
+%  Pour imprimer 28 journaux de l\textquotesingle école, li a fallu 112
+%  feuilles. Combien faudra-t-il de feuilles pour imprimer 84 journaux?
+%\item
+%  Anne roule à vélo à 15 km/h. Àvitesse constante, combien de temps
+%  mettra-t-elle pour parcourir 60 km ?
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{5}
+%\item
+%  Chez Colruyt, un lot de trois bouteilles de vin est affiché à \(21€\).
+%  On peut acheter les bouteilles à la pièce. Combien vais-je payer pour
+%  l'achat de \(10\) bouteilles~?
+%\item
+%  Exercice issu d'un CE1D.
+%\end{enumerate}
+%
+%Tableau A
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\[x\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[y\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%\(3\) & \(9\) \\
+%\(2,5\) & \(7,5\) \\
+%\(9\) & \(27\) \\
+%\(10,1\) & \(30,3\) \\
+%\bottomrule()
+%\end{longtable}
+%
+%Tableau B
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\[x\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[y\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%\(1\) & \(3\) \\
+%\(5\) & \(7\) \\
+%\(17\) & \(19\) \\
+%\(35\) & \(37\) \\
+%\bottomrule()
+%\end{longtable}
+%
+%\textbf{COCHE} la case du tableau qui montre une proportionnalité
+%directe entre la grandeur \(x\) et la grandeur \(y\).
+%
+%Pour ce tableau, \textbf{ÉCRIS} le coefficient de proportionnalité~:
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{6}
+%\item
+%  Vrai ou Faux~? Les situations suivantes sont-elles des situations de
+%  proportionnalité~?
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7980}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1037}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0983}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%Vrai
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%Faux
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Le gain au lotto par rapport à la mise de départ. & & \\
+%La masse d\textquotesingle une personne par rapport à son âge. & & \\
+%Le prix des oranges par rapport au nombre de kg achetés. & & \\
+%La distance parcourue par un automobiliste par rapport à sa vitesse de
+%
+%conduite (en supposant qu\textquotesingle il roule à une vitesse
+%constante de 70km/h). & & \\
+%La quantité de farine utilisée pour réaliser la recette de la pâte à
+%crêpes
+%
+%par rapport au nombre de crêpes voulu. & & \\
+%Ta movenne au cours de mathématique par rapport au temps de travail
+%
+%à la maison. & & \\
+%Le nombre de paniers de basket marqués par rapport au temps
+%d\textquotesingle une partie. & & \\
+%Le salaire d\textquotesingle un professeur par rapport au taux de
+%réussite d\textquotesingle élèves à son cours. & & \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{7}
+%\item
+%  Pour télécharger \(3\) chansons sur internet, à une certaine époque,
+%  il fallait \(1\) minute.
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\item
+%  Complète, en te basant sur ce temps moyen de téléchargement, le
+%  tableau de proportionnalité suivant~:
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4966}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5034}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Nombre de chansons
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%Durée de téléchargement
+%
+%(en secondes)
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%& 120 \\
+%\(9\) & \\
+%& 500 \\
+%& 60 \\
+%1 & \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\setcounter{enumi}{1}
+%\item
+%  Calcule le nombre de chansons que tu pourrais télécharger, à la même
+%  vitesse, en une demi-heure.
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{8}
+%\item
+%  Mathis achète la maquette d\textquotesingle une voiture reproduite à
+%  l\textquotesingle échelle 1:22.
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi})}
+%\item
+%  Le modèle réduit mesure après construction 19,8 cm. Quelle est la
+%  longueur réelle de cette voiture ?
+%\item
+%  Si la taille réelle d\textquotesingle une voiture était de 5,17 m,
+%  quelle serait la longueur de la maquette représentant cette voiture en
+%  utilisant la m ê m e échelle ?
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{9}
+%\item
+%  Si le monde était un village\ldots{}
+%\end{enumerate}
+%
+%\begin{quote}
+%En 1990, Donella Meadows écrivait un texte intitulé «~State of the
+%Village Report~», traduit en français sous le nom «~Si le monde était un
+%village~». Il ramenait toutes des statistiques du monde entier à une
+%population plus petite, celle d'un village de \textbf{100 personnes},
+%tout en conservant les proportions de tous les peuples existants sur la
+%terre. Il a été retravaillé plusieurs fois au cours des ans pour que les
+%chiffres collent à la réalité de la population grandissante, et nous
+%pouvons ainsi avoir une vision plus rapide de ces statistiques. Par
+%exemple, si le monde était un village de 100 personnes, 48 seraient des
+%hommes et 52 des femmes. Ou encore, si le monde était un village de 100
+%personnes, 6 personnes possèderaient 59\% de la richesse totale et tous
+%les 6 seraient originaires des USA.
+%
+%Voici quelques chiffres de ce texte. Réponds aux questions qui suivent
+%en laissant ta démarche visible.
+%\end{quote}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\item
+%  \emph{Si le monde était un village de 100 personnes, 68 respirent un
+%  air pur et 32 un air pollué.} Que seraient ces chiffres si le monde
+%  était un village de 25 personnes~?
+%\item
+%  \emph{Si le monde était un village de 100 personnes, 83 personnes ont
+%  accès à l'eau potable alors que 17 n'ont pas accès à de l'eau
+%  potable.} Combien de personnes auraient accès à l'eau potable si le
+%  monde était constitué de 40 personnes~? Arrondis.
+%\item
+%  \emph{Si le monde était un village de 100 personnes, 48 personnes ne
+%  peuvent pas parler ou agir en âme et conscience (prison, torture ou
+%  mort à la clef), alors que 52 personnes le peuvent.} Que seraient ces
+%  nombres pour une population mondiale de 350 personnes~?
+%\item
+%  \emph{Si le monde était un village de 100 personnes, 7 personnes ont
+%  un ordinateur, mais 93 personnes n'en ont pas.} Combien de personnes
+%  auraient accès à un ordinateur si le monde était constitué de 117
+%  personnes~? Arrondis.
+%\item
+%  \emph{Si le monde était un village de 100 personnes, 99 personnes
+%  n'auraient pas de formation universitaire, alors qu'une seule personne
+%  aurait un diplôme universitaire}. Quel pourcentage de la population
+%  mondiale a suivi un parcours universitaire~?
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{10}
+%\item
+%  Un robinet ouvert à fond remplit un seau de \(12\) litres en \(18\)
+%  secondes. Etudie le temps qu'il faudra pour remplir des seaux de
+%  différentes capacités.
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\item
+%  Complète le tableau suivant correspondant à la situation donnée.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.2997}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1400}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1400}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1401}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1400}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1401}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Quantité d'eau (en litres)
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[3\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[5\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[6\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[12\]
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%\[20\]
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Temps (en secondes) & & & & \(18\) & \\
+%\bottomrule()
+%\end{longtable}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\setcounter{enumi}{1}
+%\item
+%  Trace le graphique liant la quantité d'eau déversée par le robinet en
+%  fonction du temps.
+%\end{enumerate}
+%
+%\begin{quote}
+%\includegraphics[width=4.63333in,height=4.475in]{media/image6.png}
+%\end{quote}
+%
+%\begin{enumerate}
+%\def\labelenumi{\alph{enumi}.}
+%\setcounter{enumi}{2}
+%\item
+%  Justifie à l'aide du tableau \textbf{et} du graphique qu'il s'agit
+%  d'une situation de proportionnalité.
+%\end{enumerate}
+%
+%\begin{enumerate}
+%\def\labelenumi{\arabic{enumi}.}
+%\setcounter{enumi}{11}
+%\item
+%  Complète le portrait du Minion (page suivante) en calculant les
+%  valeurs ci-dessous.
+%\end{enumerate}
+%
+%\begin{longtable}[]{@{}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2133}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1966}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1967}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1966}}
+%  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1967}}@{}}
+%\toprule()
+%\begin{minipage}[b]{\linewidth}\raggedright
+%Une boite de bonbons coûte \(1,99€\). Trois boites coûtent
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%3,87
+%
+%\includegraphics[width=1.04176in,height=0.64172in]{media/image7.tmp}
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%4,90€
+%
+%\includegraphics[width=0.71673in,height=0.68339in]{media/image8.tmp}
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%5,97€
+%
+%\includegraphics[width=0.93341in,height=0.60839in]{media/image9.tmp}
+%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+%1,10€
+%
+%\includegraphics[width=1.05009in,height=0.47504in]{media/image10.tmp}
+%\end{minipage} \\
+%\midrule()
+%\endhead
+%Je prends mon pouls. En \(20\)s, je compte 25 pulsations. Si mon pouls
+%est régulier, en une minute, je compte & 65 pulsations
+%
+%\includegraphics[width=1.36678in,height=0.61672in]{media/image11.tmp} &
+%75 pulsations
+%
+%\includegraphics[width=1.27511in,height=0.62505in]{media/image12.tmp} &
+%125 pulsations
+%
+%\includegraphics[width=1.21677in,height=0.71673in]{media/image13.tmp} &
+%105 pulsations
+%
+%\includegraphics[width=1.29178in,height=0.63339in]{media/image14.tmp} \\
+%Sur l'autoroute, à vitesse constante, je parcours 6km en 3min. Donc en
+%5min, je parcours & 10km
+%
+%\includegraphics[width=1.1001in,height=0.55838in]{media/image15.tmp} &
+%8km
+%
+%\includegraphics[width=1.03342in,height=0.52505in]{media/image16.tmp} &
+%2km
+%
+%\includegraphics[width=1.14177in,height=0.48337in]{media/image17.tmp} &
+%11km
+%
+%\includegraphics[width=1.14177in,height=0.53338in]{media/image18.tmp} \\
+%10 gâteaux identiques pèsent 220g, donc 15 gâteaux pèsent &
+%440g\includegraphics[width=1.10843in,height=0.56672in]{media/image19.tmp}
+%& 225g
+%
+%\includegraphics[width=0.98342in,height=0.50838in]{media/image20.tmp} &
+%330g
+%
+%\includegraphics[width=0.96675in,height=0.7584in]{media/image21.tmp} &
+%235g
+%
+%\includegraphics[width=1.30845in,height=0.51671in]{media/image22.tmp} \\
+%Le son parcourt 300m en 1s. En une minute, il parcourt & 1800m
+%
+%\includegraphics[width=1.2001in,height=0.94175in]{media/image23.tmp} &
+%30km
+%
+%\includegraphics[width=1.24177in,height=0.90841in]{media/image24.tmp} &
+%359m
+%
+%\includegraphics[width=1.21677in,height=0.67506in]{media/image25.tmp} &
+%18km
+%
+%\includegraphics[width=1.18333in,height=1.19167in]{media/image26.tmp} \\
+%Pour faire un gâteau pour 4 personnes, il faut 100g de chocolat. Pour 6
+%personnes, il en faudra & 200g
+%
+%\includegraphics[width=1.2001in,height=1.07509in]{media/image27.tmp} &
+%102g
+%
+%\includegraphics[width=1.14177in,height=1.05843in]{media/image28.tmp} &
+%50g
+%
+%\includegraphics[width=1.175in,height=1.05in]{media/image29.tmp} & 150g
+%
+%\includegraphics[width=1.25844in,height=1.06676in]{media/image30.tmp} \\
+%\bottomrule()
+%\end{longtable}
+%
+%Dessin~:
+%
+%\includegraphics[width=3.74167in,height=5.13333in]{media/image31.tmp}
+\end{document}
