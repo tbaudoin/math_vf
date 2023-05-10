@@ -2,7 +2,7 @@
 \begin{document}
 \chapter{Proportionnalité}
 
-\section{Tableaux de proportionnalite}
+\section{Tableaux de proportionnalité}
 
 Un petit vendeur de pâtisseries vend ses croissants à \(1,5\)€.
 
@@ -99,6 +99,54 @@ Un petit vendeur de pâtisseries vend ses croissants à \(1,5\)€.
 \end{exercise}
 
 \newpage
+\section{Graphiques et proportionnalité}
+\begin{exercise}
+  Voici les tarifs d'entrée à la piscine de la commune.
+  \begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={1cm, c},
+            rows={1cm,m},
+            column{1}={3cm, gray!40, font=\bfseries},
+        }
+        Nombre d'entrées & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+        Prix entrée enfants & 3 & 6 & 9 & 12 & 15 & 18 & 21 & 24 & 27 & 30 \\
+    \end{tblr}
+\end{center}
+
+\begin{enumerate}[itemsep=2cm]
+  \item Est-ce un tableau de proportionnalité? Justifie. 
+  \item Construis le graphique évolutif qyu traduit la situation. 
+\end{enumerate}
+\begin{center}
+  \begin{tikzpicture}[scale=0.25]
+      % Axes
+      \draw[->] (0,-0.20) -- (0,30) node[above] {$Prix$ (en €)};
+      \draw[->] (-0.20,0) -- (50,0) node[right] {$Nombre d'entrees$};
+      % Grille
+      \draw[gray, dotted] (0,0) grid (50,30);
+      % Graduations
+      \foreach \x in {1, 2,3,4,5,6,7,8,9,10} %\TODO: graduation
+          \draw (\x,-0.1) -- (\x,0.1) node[below=2pt] {\x};
+      \foreach \y in {5,10,15,20,25,30}
+          \draw (-0.1,\y) -- (0.1,\y) node[left=2pt] {\y};
+  \end{tikzpicture}
+\end{center}
+\end{exercise}
+
+\textbf{Note} : Le graphique qui traduit une situation de proportionnalité est toujours 
+\vspace{2cm}
+
+\newpage
+\begin{exercise}
+  Parmi les graphiques suivants, quel est celui qui traduit une situation de proportionnalité~? Justifie en disant pourquoi les autres ne le sont pas.
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/graphesprop.png}
+  \end{center}
+  \vspace{3cm}
+\end{exercise}
+
 \section{Règle de trois}
 \begin{exercise}
   On sait que \(4\) kilos de pommes coûtent \(6€\). Que coûtent \(7\) kilos de pommes~?\\ 
@@ -109,7 +157,7 @@ Un petit vendeur de pâtisseries vend ses croissants à \(1,5\)€.
             hlines,
             vlines,
             columns={3cm, c},
-            rows={1cm,m},
+            rows={0.8cm,m},
             row{1}={gray!40, font=\bfseries},
         }
         Masse (\(kg\)) & Prix (€)\\
@@ -134,340 +182,161 @@ Un petit vendeur de pâtisseries vend ses croissants à \(1,5\)€.
 \end{exercise}
 
 \newpage
-\section{Graphiques et proportionnalité}
-\begin{exercise}
-  Voici les tarifs d'entrée à la piscine de la commune.
+\section{Échelles et proportionnalité}
+
+\dotsforanswer{3}[L'échelle est]
+
+Échelle = \(\dfrac{\text{dimension représentée} }{\text{dimension réelle}}\)
+
+\vfill
+
+  \exemple La Belgique ci-contre est représentée à l'échelle \(\dfrac{1}{60 000}\)
+\begin{multicols}{2}
   \begin{center}
     \begin{tblr}{
             hlines,
             vlines,
-            columns={1cm, c},
+            columns={3cm, c},
             rows={1cm,m},
-            column{1}={3cm, gray!40, font=\bfseries},
+            row{1}={gray!40, font=\bfseries},
         }
-        Nombre d'entrées & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
-        Prix entrée enfants & 3 & 6 & 9 & 12 & 15 & 18 & 21 & 24 & 27 & 30 \\
+        Distance sur la carte (en cm) & Distance réelle (en cm) \\
+        1 & \\
+        2 & \\
+        3 & \\
     \end{tblr}
 \end{center}
 
-\begin{enumerate}
-  \item Est-ce un tableau de proportionnalité? Justifie. 
-  \item Construis le graphique évolutif qyu traduit la situation. 
-\end{enumerate}
 \begin{center}
-  \begin{tikzpicture}[scale=0.25]
-      % Axes
-      \draw[->] (0,-0.20) -- (0,30) node[above] {$Prix$ (en €)};
-      \draw[->] (-0.20,0) -- (50,0) node[right] {$Nombre d'entrées$};
-      % Grille
-      \draw[gray, dotted] (0,0) grid (50,30);
-      % Graduations
-      \foreach \x in {1, 2,3,4,5,6,7,8,9,10} %\TODO: graduation
-          \draw (\x,-0.1) -- (\x,0.1) node[below=2pt] {\x};
-      \foreach \y in {5,10,15,20,25,30}
-          \draw (-0.1,\y) -- (0.1,\y) node[left=2pt] {\y};
-  \end{tikzpicture}
+  \includegraphics{chapitres/proportionnalite/img/belgique.png}
 \end{center}
+\end{multicols}
+
+\begin{exercise}
+  Quelle est la distance réelle entre Bruxelles et Louvain? Base-toi sur l'exemple précédent et laisse ton calcul visible. 
+  \vspace{2cm}
 \end{exercise}
 
-%  Voici les tarifs d'entrée à la piscine de la commune.
-%\end{enumerate}
-%
-%\begin{longtable}[]{@{}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.3094}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0670}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0670}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0670}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0711}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0632}}@{}}
-%\toprule()
-%\begin{minipage}[b]{\linewidth}\raggedright
-%Nombre d'entrées
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[1\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[2\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[3\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[4\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[5\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[6\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[7\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[8\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[9\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[10\]
-%\end{minipage} \\
-%\midrule()
-%\endhead
-%Prix entrée enfants & \(3\) & \(6\) & \(9\) & \(12\) & \(15\) & \(18\) &
-%\(21\) & \(24\) & \(27\) & \(30\) \\
-%\bottomrule()
-%\end{longtable}
-%
-%\begin{enumerate}
-%\def\labelenumi{\alph{enumi}.}
-%\item
-%  Est-ce un tableau de proportionnalité~? Justifie.
-%\item
-%  Construis le graphique évolutif qui traduit la situation.
-%\end{enumerate}
-%
-%\includegraphics[width=5.22545in,height=4.74208in]{media/image3.tmp}
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\setcounter{enumi}{9}
-%\item
-%  Parmi les graphiques suivants, quel est celui qui traduit une
-%  situation de proportionnalité~? Justifie en disant pourquoi les autres
-%  ne le sont pas.
-%\end{enumerate}
-%
-%\includegraphics[width=3.63333in,height=0.88333in]{media/image4.png}
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\setcounter{enumi}{13}
-%\item
-%  L'Échelle
-%\end{enumerate}
-%
-%L'échelle
-%\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.
-%
-%\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots..\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots.
-%
-%\[Echelle = \frac{longueur\ représentée}{longueur\ réel}\]
-%
-%\includegraphics[width=2.77014in,height=2.30278in]{media/image5.png}
-%
-%\begin{longtable}[]{@{}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-%\toprule()
-%\begin{minipage}[b]{\linewidth}\raggedright
-%\textbf{Mesure sur la carte (cm)}
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\textbf{Distance réelle (cm)}
-%\end{minipage} \\
-%\midrule()
-%\endhead
-%1 & \\
-%2 & \\
-%3 & \\
-%\bottomrule()
-%\end{longtable}
-%
-%Exemple~: La Belgique est représenté à l'échelle~: 1 / 4 000 000
-%
-%L'échelle est
-%\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots..
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\setcounter{enumi}{14}
-%\item
-%  Exercices mélangés
-%\end{enumerate}
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\item
-%  Sur un plan dont l'échelle est \(\frac{1}{2000}\), un champ
-%  rectangulaire est représenté par un rectangle mesurant \(2cm\) de long
-%  et \(1,4cm\) de large. Quelles sont les dimensions réelles de ce
-%  champ, en mètres~? Quelle est l'aire de ce champ en mètres carrés~?
-%\end{enumerate}
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\setcounter{enumi}{1}
-%\item
-%  En 2 heures, Pierre a parcouru 180 km. À vitesse constante, combien de
-%  kilomètres parcourra-t-il en 5 heures~?
-%\item
-%  Un peintre a peint 3pièces de même superficie en 6 jours. À vitesse
-%  constante, de combien de jours a-t-il besoin pour peindre 4 pièces
-%  identiques?
-%\item
-%  Pour imprimer 28 journaux de l\textquotesingle école, li a fallu 112
-%  feuilles. Combien faudra-t-il de feuilles pour imprimer 84 journaux?
-%\item
-%  Anne roule à vélo à 15 km/h. Àvitesse constante, combien de temps
-%  mettra-t-elle pour parcourir 60 km ?
-%\end{enumerate}
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\setcounter{enumi}{5}
-%\item
-%  Chez Colruyt, un lot de trois bouteilles de vin est affiché à \(21€\).
-%  On peut acheter les bouteilles à la pièce. Combien vais-je payer pour
-%  l'achat de \(10\) bouteilles~?
-%\item
-%  Exercice issu d'un CE1D.
-%\end{enumerate}
-%
-%Tableau A
-%
-%\begin{longtable}[]{@{}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-%\toprule()
-%\begin{minipage}[b]{\linewidth}\raggedright
-%\[x\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[y\]
-%\end{minipage} \\
-%\midrule()
-%\endhead
-%\(3\) & \(9\) \\
-%\(2,5\) & \(7,5\) \\
-%\(9\) & \(27\) \\
-%\(10,1\) & \(30,3\) \\
-%\bottomrule()
-%\end{longtable}
-%
-%Tableau B
-%
-%\begin{longtable}[]{@{}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-%\toprule()
-%\begin{minipage}[b]{\linewidth}\raggedright
-%\[x\]
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%\[y\]
-%\end{minipage} \\
-%\midrule()
-%\endhead
-%\(1\) & \(3\) \\
-%\(5\) & \(7\) \\
-%\(17\) & \(19\) \\
-%\(35\) & \(37\) \\
-%\bottomrule()
-%\end{longtable}
-%
-%\textbf{COCHE} la case du tableau qui montre une proportionnalité
-%directe entre la grandeur \(x\) et la grandeur \(y\).
-%
-%Pour ce tableau, \textbf{ÉCRIS} le coefficient de proportionnalité~:
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\setcounter{enumi}{6}
-%\item
-%  Vrai ou Faux~? Les situations suivantes sont-elles des situations de
-%  proportionnalité~?
-%\end{enumerate}
-%
-%\begin{longtable}[]{@{}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7980}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1037}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0983}}@{}}
-%\toprule()
-%\begin{minipage}[b]{\linewidth}\raggedright
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%Vrai
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%Faux
-%\end{minipage} \\
-%\midrule()
-%\endhead
-%Le gain au lotto par rapport à la mise de départ. & & \\
-%La masse d\textquotesingle une personne par rapport à son âge. & & \\
-%Le prix des oranges par rapport au nombre de kg achetés. & & \\
-%La distance parcourue par un automobiliste par rapport à sa vitesse de
-%
-%conduite (en supposant qu\textquotesingle il roule à une vitesse
-%constante de 70km/h). & & \\
-%La quantité de farine utilisée pour réaliser la recette de la pâte à
-%crêpes
-%
-%par rapport au nombre de crêpes voulu. & & \\
-%Ta movenne au cours de mathématique par rapport au temps de travail
-%
-%à la maison. & & \\
-%Le nombre de paniers de basket marqués par rapport au temps
-%d\textquotesingle une partie. & & \\
-%Le salaire d\textquotesingle un professeur par rapport au taux de
-%réussite d\textquotesingle élèves à son cours. & & \\
-%\bottomrule()
-%\end{longtable}
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\setcounter{enumi}{7}
-%\item
-%  Pour télécharger \(3\) chansons sur internet, à une certaine époque,
-%  il fallait \(1\) minute.
-%\end{enumerate}
-%
-%\begin{enumerate}
-%\def\labelenumi{\alph{enumi}.}
-%\item
-%  Complète, en te basant sur ce temps moyen de téléchargement, le
-%  tableau de proportionnalité suivant~:
-%\end{enumerate}
-%
-%\begin{longtable}[]{@{}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4966}}
-%  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5034}}@{}}
-%\toprule()
-%\begin{minipage}[b]{\linewidth}\raggedright
-%Nombre de chansons
-%\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-%Durée de téléchargement
-%
-%(en secondes)
-%\end{minipage} \\
-%\midrule()
-%\endhead
-%& 120 \\
-%\(9\) & \\
-%& 500 \\
-%& 60 \\
-%1 & \\
-%\bottomrule()
-%\end{longtable}
-%
-%\begin{enumerate}
-%\def\labelenumi{\alph{enumi}.}
-%\setcounter{enumi}{1}
-%\item
-%  Calcule le nombre de chansons que tu pourrais télécharger, à la même
-%  vitesse, en une demi-heure.
-%\end{enumerate}
-%
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\setcounter{enumi}{8}
-%\item
-%  Mathis achète la maquette d\textquotesingle une voiture reproduite à
-%  l\textquotesingle échelle 1:22.
-%\end{enumerate}
-%
-%\begin{enumerate}
-%\def\labelenumi{\alph{enumi})}
-%\item
-%  Le modèle réduit mesure après construction 19,8 cm. Quelle est la
-%  longueur réelle de cette voiture ?
-%\item
-%  Si la taille réelle d\textquotesingle une voiture était de 5,17 m,
-%  quelle serait la longueur de la maquette représentant cette voiture en
-%  utilisant la m ê m e échelle ?
+\newpage
+\section{Exercices mélangés}
+\setcounter{exercise}{0}
+
+\begin{exercise}
+  Sur un plan dont l'échelle est \(\dfrac{1}{2000}\), un champ rectangulaire est représenté par un rectangle mesurant \SI{2}{cm} de long et \SI{1,4}{cm} de large. Quelles sont les dimensions réelles de ce champ, en mètres~? Quelle est l'aire de ce champ, en mètres carrés~?
+\end{exercise}
+
+\begin{exercise}
+  En 2 heures, Hadrien a parcouru 180 km. À vitesse constante, combien de kilomètres parcourra-t-il en 5 heures~?
+\end{exercise}
+
+\begin{exercise}
+  Un peintre a peint 3 pièces de même superficie en 6 jours. À vitesse constante, de combien de jours a-t-il besoin pour peindre 4 pièces identiques?
+\end{exercise}
+
+\begin{exercise}
+  Pour imprimer 28 journaux de l'école, il a fallu 112 feuilles. Combien faudra-t-il de feuilles pour imprimer 84 journaux?
+\end{exercise}
+
+\begin{exercise}
+  Célia roule à vélo à 15 km/h. À vitesse constante, combien de temps mettra-t-elle pour parcourir 60 km ?
+\end{exercise}
+
+\begin{exercise}
+  Chez Colruyt, un lot de trois bouteilles de vin est affiché à \(21\) euros. On peut acheter les bouteilles à la pièce. Combien vais-je payer pour l'achat de \(10\) bouteilles~?
+\end{exercise}
+
+\begin{exercise}
+  Exercice issu d'un CE1D.
+
+  \begin{multicols}{2}
+    %\TODO: square en thin et pas plein
+    \begin{center}
+      \faIcon{square} Tableau A \\
+      \begin{tblr}{
+              hlines,
+              vlines,
+              columns={2cm, c},
+              rows={1cm,m},
+          }
+          \(x\) & \(y\) \\
+          3 & 9 \\
+          2,5 & 7,5 \\
+          9 & 27 \\
+          10,1 & 30,3 \\
+      \end{tblr}
+  \end{center}
+  
+  \begin{center}
+    \faIcon{square} Tableau B \\
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={2cm, c},
+            rows={1cm,m},
+        }
+        \(x\) & \(y\) \\
+        1 & 3 \\
+        5 & 7 \\
+        17 & 19 \\
+        35 & 37 \\
+    \end{tblr}
+\end{center}
+
+  \end{multicols}
+
+  \begin{enumerate}
+    \item Indique tableau qui montre une proportionnalité directe entre la grandeur \(x\) et la grandeur \(y\).
+    \item Pour ce tableau, écris le coefficient de proportionnalité
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Vrai ou Faux~? Les situations suivantes sont-elles des situations de proportionnalité~?
+  \begin{enumerate}
+    \item Le gain au lotto par rapport à la mise de départ.
+    \item La masse d'une personne par rapport à son âge.
+    \item Le prix des oranges par rapport au nombre de kg achetés.
+    \item La distance parcourue par un automobiliste par rapport à sa vitesse de conduite (en supposant qu'il roule à une vitesse constante de 70km/h).
+    \item La quantité de farine utilisée pour réaliser la recette de la pâte à crêpes par rapport au nombre de crêpes voulu.
+    \item Ta movenne au cours de mathématiques par rapport au temps de travail à la maison.
+    \item Le nombre de paniers de basket marqués par rapport au temps d'une partie.
+    \item Le salaire d'un professeur par rapport au taux de réussite d'élèves à son cours.
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Pour télécharger \(3\) chansons sur internet, à une certaine époque, il fallait \(1\) minute. 
+  \begin{enumerate}
+    \item Sur cette feuille, complète le tableau de proportionnalité en te basant sur ce temps moyen de téléchargement.
+    \begin{center}
+      \begin{tblr}{
+              hlines,
+              vlines,
+              columns={4cm, c},
+              rows={1cm,m},
+              row{1}={gray!40, font=\bfseries},
+          }
+          Nombre de chansons téléchargées & Durée du téléchargement (en secondes)\\
+           & 120 \\
+          9 & \\
+           & 500 \\
+           & 60 \\
+      \end{tblr}
+  \end{center}
+  
+    \item Calcule le nombre de chansons que tu pourrais télécharger, à la même vitesse, en une demi-heure.
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Mathis achète la maquette d'une voiture reproduite à l'échelle \(\dfrac{1}{22}\).
+  \begin{enumerate}
+    \item Le modèle réduit mesure après construction \SI{19,8}{cm} de hauteur. Quelle est la hauteur réelle de cette voiture ? 
+    \item Si la longueur réelle d'une seconde voiture était de \SI{5,17}{m}, quelle serait la longueur de la maquette représentant cette voiture en utilisant la même échelle ?
+  \end{enumerate}
+\end{exercise}
+
+%  
 %\end{enumerate}
 %
 %\begin{enumerate}
