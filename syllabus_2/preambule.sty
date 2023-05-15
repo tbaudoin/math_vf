@@ -257,3 +257,7 @@
 
 
 \DeclareExerciseCollection{div-mul-exos}
+
+% Pour des lettres ou du texte entouré par un cercle.
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
