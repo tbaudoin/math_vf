@@ -118,18 +118,7 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
   \item Construis le graphique évolutif qui traduit la situation. 
 \end{enumerate}
 \begin{center}
-  \begin{tikzpicture}[scale=0.25]
-      % Axes
-      \draw[->] (0,-0.20) -- (0,30) node[above] {$Prix$ (en €)};
-      \draw[->] (-0.20,0) -- (50,0) node[right] {$Nombre d'entrees$};
-      % Grille
-      \draw[gray, dotted] (0,0) grid (50,30);
-      % Graduations
-      \foreach \x in {1, 2,3,4,5,6,7,8,9,10} %\TODO: graduation
-          \draw (\x,-0.1) -- (\x,0.1) node[below=2pt] {\x};
-      \foreach \y in {5,10,15,20,25,30}
-          \draw (-0.1,\y) -- (0.1,\y) node[left=2pt] {\y};
-  \end{tikzpicture}
+\includegraphics{chapitres/proportionnalite/img/tikz002.tikz}
 \end{center}
 \end{exercise}
 
