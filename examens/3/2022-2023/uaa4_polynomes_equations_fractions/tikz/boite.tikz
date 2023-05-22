@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+    \def\s{2}
+    \draw[dashed] (0,0) rectangle (11,11);
+    \draw[fill=yellow] (\s,0) -- (11-\s,0) -- (11-\s,\s) -- (11,\s) -- (11, 11-\s) -- (11-\s, 11-\s) -- (11-\s, 11) -- (\s, 11) -- (\s, 11-\s) -- (0, 11-\s) -- (0, \s) -- (\s, \s) -- (\s, 0);
+    \draw[dashed] (\s,\s) rectangle (11-\s, 11-\s);
+    \draw[yshift=1cm, <->] (0,11) --node[fill=white]{\(x\)} (11,11);
+    \draw[xshift=-1cm, <->] (0,11) --node[fill=white]{\SI{4}{cm}} (0, 11-\s);
+\end{tikzpicture}

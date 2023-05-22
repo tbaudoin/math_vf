@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 30/0/B, 30/-12/C, 0/-12/D, 12/-12/M}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawPolygon[fill=yellow](A,D,M)
+    \tkzDrawPolygon[fill=blue!60](B,M,C)
+    \tkzLabelPoints[above](A,B)
+    \tkzLabelPoints[below](C,D,M)
+    \tkzLabelSegment[above](A,B){\SI{30}{cm}}
+    \tkzLabelSegment[right](B,C){\(x\)}
+    \tkzMarkSegments[mark=||](A,D D,M)
+\end{tikzpicture}
