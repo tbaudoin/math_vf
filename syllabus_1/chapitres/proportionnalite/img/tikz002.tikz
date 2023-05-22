@@ -1,0 +1,16 @@
+\begin{tikzpicture}[>=latex]
+    % Axes
+    \draw[->] (0,-0.20) -- (0,11) node[above] {Prix (euros)};
+    \draw[->] (-0.20,0) -- (12,0) node[right] {Nombre d'entrées};
+    % Grille
+    \draw[gray, dotted] (0,0) grid (12,11);
+    % Graduations
+    \foreach \x in {1,...,11}
+        {
+            \draw (\x,0.1) -- (\x,-0.1) node[below] {\fpeval{\x}};
+        }
+    \foreach \y in {1,...,10}
+        {
+            \draw (0.1,\y) -- (-0.1,\y) node[left] {\fpeval{\y*3}};
+        }
+\end{tikzpicture}

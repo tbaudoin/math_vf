@@ -2,10 +2,10 @@
 \begin{document}
 \chapter{Proportionnalité, projections parallèles}
 
-\section{Tableau de proportionnalité}
+\section{Tableaux de proportionnalité}
 
 \begin{exercise}
-    Pour son anniversaire, Diego reçoit un GSM. Il lui reste à choisir un abonnement. Il se rend chez un opérateur qui lui propose deux tarifs : le tarif standard à 0,50~€/minute d'appel et SMS illimités ou le tarif premium à 10~€ fixe et 0,25~€/minute d'appel et SMS illimités.
+    Pour son anniversaire, Diego reçoit un GSM. Il lui reste à choisir un abonnement. Il se rend chez un opérateur qui lui propose deux tarifs : le tarif standard à 0,50~€/minute d'appel et SMS illimités, ou le tarif premium à 10~€ fixe et 0,25~€/minute d'appel et SMS illimités.
     \begin{enumerate}
         \item Pour chaque tarif, établis un tableau : \\
               Tarif standard :
@@ -40,12 +40,12 @@
               \begin{center}
                   \includegraphics[width=\linewidth]{chapitres/prop-et-proj/tikz/tikz001.tikz}
               \end{center}
-
+              \newpage
         \item Ces deux tarifs représentent-ils des relations directement proportionnelles ? Justifie.
               \adf{2}
 
-              \hskip -20pt
-              \adf[\textbf{Définition :} Deux grandeurs sont proportionnelles si ]{3}
+              \minisec{Définition}
+              \adf[Deux grandeurs sont propotionelles si]{3}
               % on obtient la seconde grandeur en multipliant la première par un nombre constant. Ce nombre est appelé le coefficient de proportionnalité et est souvent noté k.
 
 
@@ -61,7 +61,7 @@
 Formule générale
 \[y = k \cdot x\]
 
-\[k = \text{coefficient de proportionnalité} = \dfrac{y}{x}= \dfrac{\text{seconde grandeur}}{\text{permière grandeur}}\]
+\[k = \text{coefficient de proportionnalité} = \dfrac{y}{x}= \dfrac{\text{seconde grandeur}}{\text{première grandeur}}\]
 
 Ainsi, lorsque nous nous retrouvons face à un tableau, nous pouvons déterminer le coefficient de proportionnalité en divisant la valeur dépendante par la valeur indépendante.
 
@@ -76,20 +76,20 @@ Ainsi, lorsque nous nous retrouvons face à un tableau, nous pouvons déterminer
 
     \begin{enumerate}
         \item  \begin{tblr}[t]{hlines, vlines, columns={c, 1cm}, rows={m, 1cm}}
-                  \(x\) & 5 & 8  & 10 & 16 \\
+                  \(x\) & 5 & 8  & 11 & 16 \\
                   \(y\) &   & 48 & 66 &
               \end{tblr}
               \hspace{1cm}
               \(k\) =
         \item \begin{tblr}[t]{hlines, vlines, columns={c,1cm}, rows={m,1cm}}
-                  \(x\) & 5 & 8  & 10 & 16 \\
-                  \(y\) &   & 48 & 66 &
+                  \(x\) & 21 & 42 & 7 & 28 \\
+                  \(y\) & 15 & & & 20 \\
               \end{tblr}
               \hspace{1cm}
               \(k\) =
         \item \begin{tblr}[t]{hlines, vlines, columns={c,1cm}, rows={m,1cm}}
-                  \(x\) & 5 & 8  & 10 & 16 \\
-                  \(y\) &   & 48 & 66 &
+                  \(x\) & 18 & & 2 & 4 \\
+                  \(y\) & & 15 & & 6 \\
               \end{tblr}
               \hspace{1cm}
               \(k\) =
@@ -134,7 +134,7 @@ Ainsi, lorsque nous nous retrouvons face à un tableau, nous pouvons déterminer
 \adf[Le graphique d'une relation proportionnelle entre deux grandeurs est toujours] {1} %une droite passant par l'origine.
 
 \newpage
-\section{Le produit en croix}
+\section{Produit en croix}
 
 \minisec{Définition}
 \adf[Une proportion est ]{1} %une égalité entre deux rapports.
@@ -169,17 +169,13 @@ Dans toute proportion,
     \item On peut permuter les extrêmes entre eux.
 \end{itemize}
 
-% \adf[Dans toute proportion,]{1} %le produit des extrêmes est égal au produit des moyens.
-
-% On peut donc échanger les moyens entre eux, et les extrêmes entre eux.
-
 \begin{exercise}
     Si pour ton cocktail d'anniversaire, tu utilises dix parts de jus d'ananas et quinze parts de jus d'orange, quelle doit être la part de jus d'orange pour un cocktail aux mêmes proportions si tu n'as que huit parts de jus d'ananas ?
 \end{exercise}
 \vspace*{5cm}
 
 \begin{exercise}
-    Lors d'un championnat de frisbee, on compte les points des équipes en fonction du nombre de buts marqués par rapport au nombre de tentatives. Deux équipes ont reçu le même nombre de points, la première équipe a marqué 10 buts sur 35 lancés et la deuxième équipe en a marqué 12. Combien de tentatives que la deuxième équipe a-t-elle effectuées ?
+    Lors d'un championnat de frisbee, on compte les points des équipes en fonction du nombre de buts marqués par rapport au nombre de tentatives. Deux équipes ont reçu le même nombre de points, la première équipe a marqué 10 buts sur 35 lancés et la deuxième équipe en a marqué 12. Combien de tentatives la deuxième équipe a-t-elle effectuées ?
 \end{exercise}
 \vspace*{5cm}
 
@@ -191,7 +187,7 @@ Dans toute proportion,
 \newpage
 \section{Projections parallèles}
 \subsection{Découverte}
-Le soleil étant très éloigné de la Terre, ses rayons peuvent être considérés comme étant tous parallèles. Il s'en dégage une propriété importante : il existe une relation de proportionnalité entre des objets et leurs ombres (qui sont les projections parallèles des objets sur le sol) à un même moment de la journée.
+Le soleil étant très éloigné de la Terre, ses rayons peuvent être considérés comme étant tous parallèles. Il s'en dégage une propriété importante : il existe une relation de proportionnalité entre la hauteur des objets et la longueur de leurs ombres (qui sont les projections parallèles des objets sur le sol) à un même moment de la journée.
 
 Grâce à ces informations peux-tu déterminer la taille de l'ombre de Sara grâce aux informations ci-dessous ?
 
@@ -201,25 +197,20 @@ Sara va se promener sur la plage avec son petit frère Juan. Sara mesure \SI{1,7
     \includegraphics[width=15cm]{chapitres/prop-et-proj/img/sun.jpg}
 \end{center}
 
-
-
-\vfill
-Remarque :  Le fait que la projection est parallèle conserve les proportions entre les différentes mesures.
-
 \newpage
 
 \begin{exercise}
     Tu es parti en voyage à Tokyo. À 14 h 05, heure locale, tu remarques que ton ombre mesure \SI{85}{cm}. Tu mesures \SI{1,50}{m}. À côté de toi, s'étend l'ombre du Tokyo Skytree, un de plus grand gratte-ciel au monde. L'ombre mesure \SI{338}{m}. Ton frère te dit que ce gratte-ciel est plus grand que le Burj Khalifa à Dubaï qui mesure \SI{828}{m}. A-t-il raison ? \\ Argumente.
-    %Faux, elle mesure 634m (338*8/15)
+    %Faux, elle mesure 596,47m
 \end{exercise}
 \vspace*{7cm}
 
 \subsection{Définition}
 Une projection parallèle est une transformation du plan qui projette un élément sur une droite de façon parallèle.
-Pour construire l'image du point \(A\) par la projection sur la droite \(b\), parallèlement à la droite \(a\) :
+Pour construire l'image du point \(A\) par la projection sur la droite \(b\), parallèlement à la droite \(a\), il faut:
 \begin{itemize}
     \item Tracer la droite passant par \(A \) parallèle à \(a\).
-    \item Pointer \(A'\) à l'intersection de cette parallèle et de \(b\).
+    \item Nommer \(A'\) à l'intersection de cette parallèle et de \(b\).
           \begin{center}
               \includegraphics[width=11cm]{chapitres/prop-et-proj/img/projection.jpg}
           \end{center}
@@ -318,10 +309,10 @@ La figure image est une réduction de facteur $\dfrac{1}{2}$ de la figure d'orig
 \end{center}
 
 Périmètres :
-\vspace{1cm}
+\vspace{0.7cm}
 
 Aires :
-\vspace{1cm}
+\vspace{0.7cm}
 
 Que peux-tu conclure ?
 \adf{3}
@@ -331,7 +322,8 @@ Que peux-tu conclure ?
 
 Que peux-tu en déduire en ce qui concerne le volume de deux solides semblables ? \adf{1}
 
-Nous avons vu trois méthodes de résolution de problèmes de proportionnalité. Nous pouvons généralement choisir la méthode qui nous semble la plus adaptée à la situation.
+\newpage
+Nous avons vu trois méthodes de résolution de problèmes de proportionnalité. Dans la plupart des cas, nous pouvons choisir la méthode qui nous semble la plus adaptée à la situation.
 
 
 \exemple Marie a acheté 4 Mangas de OnePiece et elle a payé \SI{20}{euros}. Combien aurait-elle payé pour 6 albums ? Écris tous tes calculs.
@@ -373,7 +365,7 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
     \begin{enumerate}
         \item  Complète, en te basant sur ce temps moyen de téléchargement, le tableau de proportionnalité suivant : (\emph{Sur cette feuille})\\
               \begin{center}
-                  \begin{tblr}{hlines, vlines, columns={c}, rows={m, 1cm}, row{1}={font=\bfseries}}
+                  \begin{tblr}{hlines, vlines, columns={c}, rows={m, 0.8cm}, row{1}={font=\bfseries}}
                       Nombre de chansons & Durée du téléchargement \\
                                          & 120                     \\
                       9                  &                         \\
@@ -386,7 +378,7 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
 \end{exercise}
 
 \begin{exercise}
-    Trace un semgent $[AT]$ de longueur quelconque. Ensuite, grâce à ce que tu as appris sur les projetions parallèles, place le point $S$ tel que $|AS|=\dfrac{3}{4}\cdot|AT|$
+    Trace un semgent $[AT]$ de longueur quelconque. Ensuite, grâce à ce que tu as appris sur les projetions parallèles et sans rien mesurer, place le point $S$ tel que $|AS|=\dfrac{3}{4}\cdot|AT|$
 \end{exercise}
 
 \begin{exercise}
@@ -399,7 +391,7 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
 \end{exercise}
 
 \begin{exercise}
-    Complète le tableau ci-dessous si tu sais que les solides $S$ et $S'$ sont semblables.\\
+    Détermine les valeurs des lettres entourées dans le tableau ci-dessous si tu sais que les solides $S$ et $S'$ sont semblables.\\
     Légende : \hfil P = Périmètre \hfil A = Aire \hfil V = Volume
     \begin{center}
         \begin{tblr}{
@@ -418,15 +410,16 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
 \end{exercise}
 
 \begin{exercise}
-    Un automobiliste n'échappe pas aux lois de la physique. Ainsi la force d'impact d'un véhicule lancé à \SI{120}{km/h} est 16 fois plus grande que celle d'un véhicule qui roule à \SI{30}{km/h}. La force d'impact d'un véhicule est-elle proportionnelle à sa vitesse ?
+    Un automobiliste n'échappe pas aux lois de la physique. Ainsi la force d'impact d'un véhicule lancé à \SI{120}{km/h} est 16 fois plus grande que celle d'un véhicule qui roule à \SI{30}{km/h}. La force d'impact d'un véhicule est-elle proportionnelle à sa vitesse ? Explique.
 \end{exercise}
+
 \begin{exercise}
     \begin{enumerate}
         \item Ce graphique illustre-t-il une situation de proportionnalité ? Justifie.
               \begin{center}
                   \includegraphics[width=.75\linewidth]{chapitres/prop-et-proj/img/graph_propo.png}
               \end{center}
-        \item La promenade dure \SI{3}{h} et s'effectue à vitesse constante. Complète le tableau suivant.
+        \item La promenade dure \SI{3}{h} et s'effectue à vitesse constante. Détermine les valeurs des lettres entourées dans le tableau suivant.
               \begin{center}
                   \begin{tblr}{hlines, vlines, rows={1cm, m},columns={1cm,c},column{1}={3cm, l, font=\bfseries}}
                       Distance (km) & \circled{A} & 40 & \circled{B} \\
