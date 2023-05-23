@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.11)  22 MAY 2023 23:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.11)  23 MAY 2023 11:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1717,16 +1717,19 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \c@numberofappliquers=\count449
 \c@soltransferer=\count450
 \c@numberoftransferers=\count451
+) (/usr/share/texmf-dist/tex/latex/polynom/polynom.sty
+Package: polynom 2017/07/17 0.19 (CH,HA)
+\pld@currstage=\count452
 ) (./entete.tex)
 \tikzscale@accuracy=\skip87
-\g_xsim_collection_exercise_in_all exercises_int=\count452
-\c@totalexerciseinall exercises=\count453
-\g_xsim_collection_connaitre_in_all exercises_int=\count454
-\c@totalconnaitreinall exercises=\count455
-\g_xsim_collection_appliquer_in_all exercises_int=\count456
-\c@totalappliquerinall exercises=\count457
-\g_xsim_collection_transferer_in_all exercises_int=\count458
-\c@totaltransfererinall exercises=\count459
+\g_xsim_collection_exercise_in_all exercises_int=\count453
+\c@totalexerciseinall exercises=\count454
+\g_xsim_collection_connaitre_in_all exercises_int=\count455
+\c@totalconnaitreinall exercises=\count456
+\g_xsim_collection_appliquer_in_all exercises_int=\count457
+\c@totalappliquerinall exercises=\count458
+\g_xsim_collection_transferer_in_all exercises_int=\count459
+\c@totaltransfererinall exercises=\count460
 LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 4.
  (/usr/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
@@ -1828,16 +1831,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count460
+\scratchcounter=\count461
 \scratchdimen=\dimen419
 \scratchbox=\box175
-\nofMPsegments=\count461
-\nofMParguments=\count462
+\nofMPsegments=\count462
+\nofMParguments=\count463
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count463
+\MPscratchCnt=\count464
 \MPscratchDim=\dimen420
-\MPnumerator=\count464
-\makeMPintoPDFobject=\count465
+\MPnumerator=\count465
+\makeMPintoPDFobject=\count466
 \everyMPtoPDFconversion=\toks57
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1959,28 +1962,31 @@ Package scrkbase Info: You've told me to use the font selection of the element
 \openout4 = `xsim/3_uaa4_2023-appliquer-11-exercise-body.tex'.
 
  (./xsim/3_uaa4_2023-appliquer-11-exercise-body.tex)
-\openout4 = `xsim/3_uaa4_2023-transferer-12-exercise-body.tex'.
+\openout4 = `xsim/3_uaa4_2023-appliquer-12-exercise-body.tex'.
 
- (./xsim/3_uaa4_2023-transferer-12-exercise-body.tex (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz))
+ (./xsim/3_uaa4_2023-appliquer-12-exercise-body.tex) [3
+
+
+]
 \openout4 = `xsim/3_uaa4_2023-transferer-13-exercise-body.tex'.
 
- (./xsim/3_uaa4_2023-transferer-13-exercise-body.tex) [3
+ (./xsim/3_uaa4_2023-transferer-13-exercise-body.tex (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz) (./tikz/triangles.tikz))
+\openout4 = `xsim/3_uaa4_2023-transferer-14-exercise-body.tex'.
 
-
-] (./3_uaa4_2023.aux) ) 
+ (./xsim/3_uaa4_2023-transferer-14-exercise-body.tex) [4] (./3_uaa4_2023.aux) ) 
 Here is how much of TeX's memory you used:
- 57280 strings out of 476025
- 1416943 string characters out of 5796532
- 2022618 words of memory out of 5000000
- 76571 multiletter control sequences out of 15000+600000
- 579488 words of font info for 190 fonts, out of 8000000 for 9000
+ 57742 strings out of 476025
+ 1426192 string characters out of 5796532
+ 2033145 words of memory out of 5000000
+ 77030 multiletter control sequences out of 15000+600000
+ 579093 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,7n,114p,10718b,1815s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb>
-Output written on 3_uaa4_2023.pdf (5 pages, 76992 bytes).
+Output written on 3_uaa4_2023.pdf (6 pages, 77739 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  53362 words of extra memory for PDF output out of 61914 (max. 10000000)
 
