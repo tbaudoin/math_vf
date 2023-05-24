@@ -1,79 +1,59 @@
 \documentclass[../../syllabus_2.tex]{subfiles}
 \begin{document}
 \chapter{Traitement de données}
-\section{Activité d'introduction}
-Combien d'enfants êtes-vous dans la famille ?
-Liste des réponses :\\
-\vspace{2cm}
-« Combien d’enfants êtes-vous dans la famille ? »\\
-Réponses de la classe : 
-\vspace{1cm}
-Réorganisation des réponses : 
-\begin{tblr}{|p{3cm}|p{3cm}|}
-    \hline
-    &\\
-    &\\
-    \hline
-    &\\
-    &\\
-    \hline
-    &\\
-    &\\
-    \hline
-    &\\
-    &\\
-    \hline
-    &\\
-    &\\
-    \hline
-    &\\
-    &\\
-    \hline
-    &\\
-    &\\
-    \hline
-\end{tblr}\\
 
-Et si on transformait tout ça en pourcentages…\\
-\vspace{3cm}
+\section{Activité d'introduction}
+
+De combien d'enfants sont formées les familles des élèves de 2ème ?
+
+\vspace{2cm}
+
+Réorganisation des réponses :
+
+\begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={4cm, c},
+            rows={1cm,m},
+            row{1}={gray!40, font=\bfseries},
+        }
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+    \end{tblr}
+\end{center}
+
 Quelle est la moyenne pour la classe ? 
 
 \section*{Vocabulaire}
-\begin{tblr}{|m{2cm}|p{10cm}|p{3cm}|}
-    \hline
-    Mot & \begin{center}Définition\end{center} & Dans notre exemple d'introduction \\
-    \hline
-    Variable & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    \hline
-    Population & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    \hline
-    Effectif & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    \hline
-    Effectif total & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    \hline
-    Mode & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    \hline
-    Etendue & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    & \dotfill & \\
-    \hline
-\end{tblr}
+
+\begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={3cm, c},
+            rows={3cm,m},
+            row{1}={1cm, gray!40, font=\bfseries},
+            column{2}={7cm},
+        }
+        Mot & Définition & Dans notre exemple \\
+        Variable & & \\
+        Population & & \\
+        Échantillon & & \\
+        Effectif & & \\
+        Effectif total & & \\
+        Mode & & \\
+        Étendue & & \\
+
+    \end{tblr}
+\end{center}
 
 \newpage
 
@@ -126,106 +106,84 @@ Quelle est la moyenne pour la classe ?
         \item Quelle est, en moyenne, le nombre d'oiseaux vus par une personne ?
     \end{enumerate}
 \vspace*{2cm}
-
-\end{exercise}
-
-\begin{exercise}
-    Ce graphique donne des renseignements à propos de la randonnée à vélo que Tobias a faite dimanche dernier. \\
-    
-    \begin{enumerate}[cols = 2, itemsep = 1cm]
-        \item [\label=]\includegraphics[]{img/velo.png}
-        \item Quelle est la distance parcourue?
-        \item Quelle est la durée de son trajet?
-        \item A quelle vitesse Tobias a-t-il parcouru le dernier tronçon?
-        \item Quelle est sa vitesse moyenne sur l'ensemble du parcours?
-    \end{enumerate}
 \end{exercise}
 
 \newpage
 \begin{exercise}
     On étudie les résultats de l’examen de math des élèves de 2ème de l’école Status. \\
-    Voici les cotes obtenues par les élèves de la classe de 2ème G. \\
-
-    {\renewcommand{\arraystretch}{1}
-  \begin{tabularx}{\textwidth}{|Y|Y|}
-      \hline
+    Voici les cotes obtenues par les élèves de la classe de 2ème G. \\      
+\begin{enumerate}
+    \begin{multicols}{2}
+    \item [\label=\ ]   \vspace{2cm} 
+    \begin{center}
+        \begin{tblr}{
+                hlines,
+                vlines,
+                columns={2cm, c},
+                rows={0.7cm,m},
+            }
        Albus & 8 \\
-      \hline
        Bloem & 2 \\
-      \hline
        Ducobu & 0 \\
-      \hline
        Dupont & 4 \\
-      \hline
        Enigma & 6 \\
-      \hline
        Fabulus & 7 \\
-      \hline
        Granger & 8 \\
-      \hline
        Gratin & 10 \\
-      \hline
        Joker & 9 \\
-      \hline
        Lux & 7 \\
-      \hline
        Potter & 8 \\
-      \hline
        Romain & 6 \\
-      \hline
        Twix & 6 \\
-      \hline
        Wisley & 8 \\
-      \hline
        Zak & 2 \\
-      \hline
-  \end{tabularx}}
-
-  \vspace{1cm}
-\begin{enumerate}[cols = 2, itemsep = 2cm]
+        \end{tblr}
+    \end{center}
+    \vspace{2cm}
     \item Quelle est la population observée ?
+    \vspace{2,5cm}
    \item Quel est l’échantillon observé ?
+   \vspace{2,5cm}
    \item Quel est le caractère observé ?
+   \vspace{2,5cm}
    \item Quelles sont les modalités de ce caractère ?
+   \vspace{2,5cm}
    \item Ce caractère est-il quantitatif ou qualitatif ?
+   \vspace{2,5cm}
    \item Quelle est l’étendue de cette série ?
+   \vspace{2,5cm}
    \item Quel est l’effectif total ?
-   \end{enumerate}
+    \end{multicols}
+    
    \newpage
+   \item Complète le tableau de distribution des cotes des élèves de 2G ci-dessous. \\
+   \begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={5cm, c},
+            rows={0.8cm,m},
+            row{1}={gray!40, font=\bfseries},
+        }
+        Variables & Effectif & Fréquences \\ 
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+        & & \\
+    \end{tblr}
+\end{center}
 
-   h)  Complète le tableau de distribution des cotes des élèves de 2G ci-dessous. \\
-   
-   {\renewcommand{\arraystretch}{2}
-   \begin{tabularx}{\textwidth}{|Y|Y|Y|}
-       \hline
-       Modalités & Effectif & Fréquences \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-       & & \\
-       \hline
-   \end{tabularx}}
-
-   i)  Trace le diagramme en bâtonnets qui représente la répartition des notes pour les élèves de 2G. \\
+   \item Trace le diagramme en bâtonnets qui représente la répartition des notes pour les élèves de 2G. \\
    \includegraphics[]{img/quadrillage.png}
+   \end{enumerate}
 \end{exercise}
 
 \newpage
@@ -243,15 +201,13 @@ Quelle est la moyenne pour la classe ?
        \item Quel est l’effectif total ?
        \item Quelle est la probabilité qu’une voiture vendue prise au hasard soit bleue ?
        \item Peut-on calculer l’étendue de cette série ?
-        
-    \end{enumerate}
-\newpage
-    i)  Complète le tableau de distribution des couleurs de voitures du garage de « Thomas et fils » et calcule l’amplitude des angles afin de tracer un diagramme circulaire. \\
-
-    {\renewcommand{\arraystretch}{2}
+       \newpage
+       \item Complète le tableau de distribution des couleurs de voitures du garage de « Thomas et fils » et calcule l’amplitude des angles afin de tracer un diagramme circulaire. \\
+       
+       {\renewcommand{\arraystretch}{2}
     \begin{tabularx}{\textwidth}{|Y|Y|Y|Y|}
         \hline
-        Modalités & Effectif & Fréquences & Amplitudes\\
+        Variables & Effectif & Fréquences & Amplitudes\\
         \hline
         & & & \\
         \hline
@@ -266,10 +222,9 @@ Quelle est la moyenne pour la classe ?
         & & & \\
         \hline
     \end{tabularx}}
-    \vspace*{0.7cm}
-
-    j) Trace le diagramme circulaire de la situation dans un cercle de $3 cm $ de rayon. N'oublie pas ta légende ! 
-    \vspace*{6cm}
+       \item Trace le diagramme circulaire de la situation dans un cercle de $3 cm $ de rayon. N'oublie pas ta légende ! 
+        
+    \end{enumerate}
 
 \end{exercise}
 
@@ -342,7 +297,13 @@ Quelle est la moyenne pour la classe ?
 
 \end{exercise}
 
-\vspace*{0.8cm}
+\vspace*{2cm}
+
+\begin{exercise}
+    Camille a obtenu trois cotes sur 20 (12, 17 et 16) en mathématiques pour le bulletin de la dernière période. Son professeur a donné autant d’importance à chaque interrogation. Mais en fin de période, le professeur a décidé d’organiser un bilan dont l’importance est double par rapport à chaque interrogation précédente. \\ Combien Camille doit-elle obtenir à cette interrogation pour avoir une moyenne de 80\% ?
+    \end{exercise}
+
+\newpage
 
 \begin{exercise}
     Tous les élèves de 2ème année d’une école ont assisté à une pièce de théâtre. A la fin du spectacle, on leur a demandé d’attribuer une cote sur 20 traduisant la qualité de la représentation. Voici le tableau des résultats.\\
@@ -353,7 +314,7 @@ Quelle est la moyenne pour la classe ?
         Nombres d'élèves & 3 & 15 & 23 & 13 & 21 & 21 & 35 & 14 & 7\\
         \hline
     \end{tabularx}
-    \begin{enumerate}[itemsep = 2cm]
+    \begin{enumerate}[itemsep = 3cm]
         \item Détermine le mode et calcule la moyenne de cette série statistique.
         \item Les professeurs de l’école estiment qu’un spectacle scolaire est une réussite si la moitié des élèves ont attribué une cote d’au moins 14/20. Tenant compte de cette affirmation, peux-tu dire si ce spectacle a été une réussite ? Explique.
         \item Quant aux acteurs de la troupe, ils estiment avoir bien joué leur rôle si seulement un quart des élèves au maximum ont attribué une cote en dessous de 10. Les acteurs peuvent-ils être satisfaits de leur prestation ? Explique.
@@ -362,12 +323,6 @@ Quelle est la moyenne pour la classe ?
 \end{exercise}
 
 \newpage
-\begin{exercise}
-Alice a obtenu trois cotes sur 20 (12, 17 et 16) en mathématiques pour le bulletin de la dernière période. Son professeur a donné autant d’importance à chaque interrogation. Mais en fin de période, le professeur a décidé d’organiser un bilan dont l’importance est double par rapport à chaque interrogation précédente. \\ Combien Alice doit-elle obtenir à cette interrogation pour avoir une moyenne de 80\% ?
-\end{exercise}
-
-\vspace*{3cm}
-
 \begin{exercise}
 Un agent immobilier prévoit de promouvoir la ville de \textit{Lounialand}. Pour ça, il a besoin de faire quelques relevés. \\ Voici les surfaces habitables, en $m^2$, de neuf maisons du quartier de \textit{La Calista}.\\
 
@@ -385,7 +340,19 @@ Un agent immobilier prévoit de promouvoir la ville de \textit{Lounialand}. Pour
     \item Quel est le type de caractère?
     \item Quelle est, en moyenne, la surface habitable d'une maison de ce quartier?
 \end{enumerate}
+\vspace{3cm}
+\end{exercise}
 
+\begin{exercise}
+    Ce graphique donne des renseignements à propos de la randonnée à vélo que Tobias a faite dimanche dernier. \\
+    
+    \begin{enumerate}[cols = 2, itemsep = 1cm]
+        \item [\label=]\includegraphics[]{img/velo.png}
+        \item Quelle est la distance parcourue?
+        \item Quelle est la durée de son trajet?
+        \item A quelle vitesse Tobias a-t-il parcouru le dernier tronçon?
+        \item Quelle est sa vitesse moyenne sur l'ensemble du parcours?
+    \end{enumerate}
 \end{exercise}
 
 \newpage
@@ -399,7 +366,7 @@ Un agent immobilier prévoit de promouvoir la ville de \textit{Lounialand}. Pour
       {\renewcommand{\arraystretch}{1.7}
       \begin{tabularx}{\linewidth}{|Y|Y|Y|}
         \hline
-          Taille des chaussures & Nombre de joueurs & Fréquence \\
+          Taille des chaussures & Nombre de joueurs & Fréquences \\
           \hline 
           & & \\
           \hline 
