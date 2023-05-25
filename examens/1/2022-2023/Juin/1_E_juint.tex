@@ -1,0 +1,290 @@
+\documentclass[parskip=half-,DIV=12,twoside=semi, 12pt]{scrartcl}
+% \usepackage{showframe}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[sfmath, light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathtools}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\textbf{\alph*)}}
+\usepackage{tasks}
+\settasks{label-format=\bfseries}
+\usepackage{eurosym} % \EUR{8} --> 8 €
+\usepackage[locale=FR]{siunitx}
+\DeclareSIUnit{\sieuro}{\mbox{\euro}}
+\usepackage{tikz}
+\usetikzlibrary{babel, patterns}
+\usepackage{tkz-base}
+\usepackage{tkz-euclide}
+\usepackage{tikzscale}
+\usepackage{pgf-pie}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\NewColumnType{C}[1][]{Q[c,co=1,#1]}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, xparse}
+\usepackage[use-aux, no-files]{xsim}
+
+\DeclareExerciseEnvironmentTemplate{interrogation}
+{%
+    {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
+    \GetExercisePropertyT{points}{\marginpar{\qquad/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue}
+}%
+{\bigbreak}
+
+% Mes environnements
+\DeclareExerciseType{connaitre}{
+exercise-env = connaitre ,
+solution-env = solconnaitre ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{appliquer}{
+exercise-env = appliquer ,
+solution-env = solappliquer ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+\DeclareExerciseType{transferer}{
+exercise-env = transferer ,
+solution-env = soltransferer ,
+exercise-name = \XSIMtranslate{question} ,
+exercises-name = \XSIMtranslate{questions} ,
+solution-name = \XSIMtranslate{solution} ,
+solutions-name = \XSIMtranslate{solutions} ,
+exercise-template = interrogation ,
+solution-template = interrogation ,
+exercise-heading = \subsection* ,
+solution-heading = \subsection*,
+counter = exercise
+}
+
+\xsimsetup{
+    exercise/template = interrogation,
+    solution/template = interrogation,
+}
+
+\newcommand{\figcolor}{white}
+\newcommand{\Titre}{TJF - Les inéquations}
+\newcommand{\Date}{Vendredi 25 novembre 2022}
+\newcommand{\Classe}{}
+
+% \usepackage{scrlayer-scrpage}
+% \setlength{\headheight}{50pt}
+% \lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
+% \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
+
+\setlength{\textheight}{700pt}
+
+\begin{document}
+\raggedbottom
+\pagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ENTETE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\includegraphics[width=\linewidth]{} \TODO: entete image
+\vspace{\smallskipamount}
+\begin{tblr}{%
+        width=\textwidth,%
+        colspec={|XXX|},%
+        cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+        cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+        cell{5}{1}={r=1,c=2}{l},
+        cell{5}{3}={r=4,c=1}{r},
+        cell{6}{1}={r=1,c=3}{l},%
+        cell{7}{1}={r=1,c=3}{l},%
+        cell{8}{1}={r=1,c=3}{l},%
+        cell{9}{1}={r=1,c=3}{r},%
+        rowsep=1ex%
+    }%
+    \hline
+    % cell1
+    Examen de mathématiques                                    &             &          \\
+    % cell2
+    Noël 2022                                                  &             &          \\
+    \hline
+    % cell3
+    Nom :                                                      &             & Classe : \\
+    % cell4
+    Prénom :                                                   &             & Numéro : \\
+    \hline
+    % cell5
+    Professeur : Baudoin, Debroux, Janssens                    &             &          \\
+    % cell6
+    Date et heure: Mardi 13 décembre 2022 de 8h20 à 10h30                               \\
+    % cell7
+    Matériel autorisé : Équerre multifonction, crayons de couleur, calculatrice         \\
+    % cell8
+    Matériel à distribuer : aucun                                                        \\
+    \hline
+    % cell9
+   Total : 
+   \qquad/\TotalExerciseGoal{points}{}{}
+   \quad\faIcon{arrow-right}\quad
+   \qquad/30&&\\
+   \hline
+\end{tblr}%
+\vspace{\smallskipamount}
+\begin{scriptsize}%
+    Rue de linthout, 30 - 1030 Bruxelles%
+\end{scriptsize}%
+\medbreak
+Quelques conseils pour réussir ton examen :
+\begin{enumerate}[itemsep=0.5cm, label=$\bullet$]
+    \item Toutes tes réponses doivent être soignées et écrites sur ce questionnaire.
+    \item Ne te précipite pas. Commence par identifier ce que tu dois faire en lisant correctement et attentivement l'énoncé.
+    \item S'il y a plusieurs questions dans un énoncé, veille à répondre à chacune d'entre elles.
+    \item Utilise le vocabulaire adéquat.
+    \item Veille à faire tes constructions au crayon et proprement.
+    \item Commence par répondre à ce que tu maitrises, et reviens ensuite sur les questions qui te demandent plus de temps.
+    \item Prends le temps de bien te relire !
+\end{enumerate}
+\vfill
+\begin{flushright}
+    Bon examen !
+\end{flushright}
+\cleardoublepage
+\setcounter{page}{1}
+\pagestyle{plain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONTENU %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{connaitre}[points=3]
+%\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{connaitre}[points=3]
+%\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{connaitre}[points=3]
+%\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{connaitre}[points=3]
+%\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{connaitre}[points=3]
+%\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{connaitre}[points=3]
+%\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{connaitre}[points=3]
+%\end{connaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=3]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appliquer}[points=2]
+%\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{transferer}[points=5]
+%\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
