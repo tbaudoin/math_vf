@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  25 MAY 2023 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  25 MAY 2023 16:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1493,20 +1493,25 @@ File: ujkpexa.fd 2006/08/15 v1.0
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 
-] (./1_E_juint.aux) ) 
+]
+
+Package xsim Warning: Exercise properties may have changed. Rerun to get them
+(xsim)                synchronized.
+
+[1] (./1_E_juint.aux) ) 
 Here is how much of TeX's memory you used:
- 42924 strings out of 478579
- 967363 string characters out of 5857457
- 1421314 words of memory out of 5000000
- 60009 multiletter control sequences out of 15000+600000
- 445946 words of font info for 113 fonts, out of 8000000 for 9000
+ 43159 strings out of 478579
+ 978552 string characters out of 5857457
+ 1429709 words of memory out of 5000000
+ 60234 multiletter control sequences out of 15000+600000
+ 447077 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,7n,108p,10706b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,7n,108p,10706b,762s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_juint.pdf (2 pages, 35299 bytes).
+Output written on 1_E_juint.pdf (3 pages, 38339 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 32877 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 36973 words of extra memory for PDF output out of 42996 (max. 10000000)
 
