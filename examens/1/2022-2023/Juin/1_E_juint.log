@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  25 MAY 2023 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  30 MAY 2023 17:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1493,25 +1493,47 @@ File: ujkpexa.fd 2006/08/15 v1.0
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 
-]
+] [1]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+<img/triangle.png, id=45, 178.86826pt x 164.41425pt>
+File: img/triangle.png Graphic file (type png)
+<use img/triangle.png>
+Package pdftex.def Info: img/triangle.png  used on input line 300.
+(pdftex.def)             Requested size: 448.13095pt x 411.97285pt.
+ [2]
 
 Package xsim Warning: Exercise properties may have changed. Rerun to get them
 (xsim)                synchronized.
 
-[1] (./1_E_juint.aux) ) 
+[3 <./img/triangle.png>] (./1_E_juint.aux) ) 
 Here is how much of TeX's memory you used:
- 43159 strings out of 478579
- 978552 string characters out of 5857457
- 1429709 words of memory out of 5000000
- 60234 multiletter control sequences out of 15000+600000
- 447077 words of font info for 119 fonts, out of 8000000 for 9000
+ 43588 strings out of 478579
+ 998966 string characters out of 5857457
+ 1471072 words of memory out of 5000000
+ 60619 multiletter control sequences out of 15000+600000
+ 464743 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,7n,108p,10706b,762s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_juint.pdf (3 pages, 38339 bytes).
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
+Output written on 1_E_juint.pdf (5 pages, 60504 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36973 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41074 words of extra memory for PDF output out of 42996 (max. 10000000)
 
