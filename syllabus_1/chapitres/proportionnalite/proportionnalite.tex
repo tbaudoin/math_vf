@@ -4,40 +4,43 @@
 
 \section{Tableaux de proportionnalité}
 
-Un petit boulanger vend ses croissants à \(1,5\)€.
+Un petit boulanger vend ses croissants à 1,5~€.
 
 \begin{enumerate}[itemsep=1cm]
   \item Combien vas-tu payer pour \(6\) croissants~?
   \item Complète le tableau suivant.
-  \begin{center}
-    \begin{tblr}{
-      hlines,
-      vlines,
-      columns={1.5cm, c},
-      rows={1cm,m},
-      column{1}={4cm, gray!40, font=\bfseries},
-  }
-  Nombre de croissants & 0 & 1 & & 8 & & \\ 
-  Prix (en €) & & & 6 & & 27 & 54 \\
-\end{tblr}
-
-  \end{center}
+        \bigbreak
+        \begin{center}
+          \begin{tblr}{
+              hlines,
+              vlines,
+              colspec={cXXXXXX},
+              rows={1cm,m},
+              column{1}={4cm, gray!40, font=\bfseries},
+            }
+            Nombre de croissants & 0 & 1 &   & 8 &    &    \\
+            Prix (en €)          &   &   & 6 &   & 27 & 54 \\
+          \end{tblr}
+        \end{center}
+        \bigbreak
 \end{enumerate}
 
-\vfil
-
 \dotsforanswer{3}[Deux grandeurs directement proportionnelles sont]
+\newpage
 
 \begin{exercise}
   Vrai ou faux~?
-  \begin{enumerate}[itemsep=.4cm]
-    \item Le nombre de bouteilles d'eau achetées et le prix payé sont proportionnels \dotfill
-    \item La taille d'une personne est proportionnelle à son âge \dotfill
-    \item Le salaire d'un professeur et le nombre de ses élèves en classe sont proportionnels \dotfill
-    \item Le prix d'un livre et le nombre de pages contenues dans ce livre sont proportionnels \dotfill
-    \item Le numéro d'un épisode de ta série préférée est proportionnel au temps de cet épisode \dotfill
-    \item Le périmètre d'un carré est proportionnel à la mesure de son côté \dotfill
-  \end{enumerate}
+
+  \begin{tblr}{hlines,vlines,colspec={Xcc},column{2}={1cm}, column{3}={1cm}, rows={1.25cm,m}, hline{1}={1}{white}, vline{1}={1}{white}}
+                                                                                          & Vrai                     & Faux                     \\
+    Le nombre de bouteilles d'eau achetées et le prix payé sont proportionnels            & \faIcon[regular]{square} & \faIcon[regular]{square} \\
+    La taille d'une personne est proportionnelle à son âge                                & \faIcon[regular]{square} & \faIcon[regular]{square} \\
+    Le salaire d'un professeur et le nombre de ses élèves en classe sont proportionnels   & \faIcon[regular]{square} & \faIcon[regular]{square} \\
+    Le prix d'un livre et le nombre de pages contenues dans ce livre sont proportionnels  & \faIcon[regular]{square} & \faIcon[regular]{square} \\
+    Le numéro d'un épisode de ta série préférée est proportionnel au temps de cet épisode & \faIcon[regular]{square} & \faIcon[regular]{square} \\
+    Le périmètre d'un carré est proportionnel à la mesure de son côté                     & \faIcon[regular]{square} & \faIcon[regular]{square} \\
+  \end{tblr}
+
 \end{exercise}
 
 \begin{exercise}
@@ -47,32 +50,50 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
   \end{center}
 \end{exercise}
 
-\dotsforanswer{2}[Le coefficient de proportionnalité (\(k\)) entre deux grandeurs proportionnelles (\(x\) et \(y\))]
+\dotsforanswer{2}[Le coefficient de proportionnalité (\(k\)) entre deux grandeurs proportionnelles (\(x\) et \(y\)) est ]
 
+\newpage
 \exemples
 \begin{multicols}{2}
-      \begin{tblr}{
-        hlines,
-        vlines,
-        columns={.7cm, c},
-        rows={1cm,m},
-        column{1}={gray!40, font=\bfseries},
+  \begin{tblr}{
+      hlines,
+      vlines,
+      columns={.7cm, c},
+      rows={1cm,m},
+      column{1}={gray!40, font=\bfseries},
     }
-    \(x\) & 3 & 5 & 7 \\
+    \(x\) & 3  & 5  & 7  \\
     \(y\) & 12 & 20 & 28 \\
-\end{tblr}
-  
-      \begin{tblr}{
-        hlines,
-        vlines,
-        columns={.7cm, c},
-        rows={1cm,m},
-        column{1}={gray!40, font=\bfseries},
+  \end{tblr}
+
+  \begin{tblr}{
+      hlines,
+      vlines,
+      columns={.7cm, c},
+      rows={1cm,m},
+      column{1}={gray!40, font=\bfseries},
     }
-    \(x\) & 2 & 8 & 9 \\
-    \(y\) & 5 & 20 & 22,5  \\
-\end{tblr}
+    \(x\) & 2 & 8  & 9    \\
+    \(y\) & 5 & 20 & 22,5 \\
+  \end{tblr}
 \end{multicols}
+
+\begin{exercise}
+  Complète les tableaux suivants grâce au coefficient de proportionnalité.
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/tableauxprop4.png}
+  \end{center}
+\end{exercise}
+
+
+\newpage
+\begin{exercise}
+  Dans chaque cas, détermine si les grandeurs \(x\) et \(y\) sont proportionnelles. Si oui, détermine le coefficient de proportionnalité.
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/tableauxprop3.png}
+  \end{center}
+\end{exercise}
+
 
 \begin{exercise}
   Détermine le coefficient de proportionnalité reliant le \(2\) grandeurs de chaque tableau de proportionnalité ci-dessous et utilise-le pour compléter les cases vides.
@@ -82,84 +103,69 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
 \end{exercise}
 
 \newpage
-\begin{exercise}
-  Dans chaque cas, détermine si les grandeurs \(x\) et \(y\) sont proportionnelles. Si oui, détermine le coefficient de proportionnalité. 
-  \begin{center}
-    \includegraphics{chapitres/proportionnalite/img/tableauxprop3.png}
-  \end{center}
-\end{exercise}
-
-\begin{exercise}
-  Complète les tableaux suivants grâce au coefficient de proportionnalité.
-  \begin{center}
-    \includegraphics{chapitres/proportionnalite/img/tableauxprop4.png}
-  \end{center}
-\end{exercise}
-
-\newpage
 \section{Graphiques et proportionnalité}
 \begin{exercise}
   Voici les tarifs d'entrée à la piscine de la commune.
   \begin{center}
     \begin{tblr}{
-            hlines,
-            vlines,
-            columns={1cm, c},
-            rows={1cm,m},
-            column{1}={3cm, gray!40, font=\bfseries},
-        }
-        Nombre d'entrées & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
-        Prix entrée enfants & 3 & 6 & 9 & 12 & 15 & 18 & 21 & 24 & 27 & 30 \\
+        hlines,
+        vlines,
+        colspec={cXXXXXXXXXX},
+        columns={c},
+        rows={1cm,m},
+        column{1}={3cm, gray!40, font=\bfseries},
+      }
+      Nombre d'entrées    & 1 & 2 & 3 & 4  & 5  & 6  & 7  & 8  & 9  & 10 \\
+      Prix entrée enfants & 3 & 6 & 9 & 12 & 15 & 18 & 21 & 24 & 27 & 30 \\
     \end{tblr}
-\end{center}
+  \end{center}
 
-\begin{enumerate}[itemsep=2cm]
-  \item Est-ce un tableau de proportionnalité? Justifie. 
-  \item Construis le graphique évolutif qui traduit la situation. 
-\end{enumerate}
-\begin{center}
-\includegraphics{chapitres/proportionnalite/img/tikz002.tikz}
-\end{center}
+  \begin{enumerate}[itemsep=2cm]
+    \item Est-ce un tableau de proportionnalité? Justifie.
+    \item Construis le graphique évolutif qui traduit la situation.
+  \end{enumerate}
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/tikz002.tikz}
+  \end{center}
 \end{exercise}
 
-\textbf{Note} : Le graphique qui traduit une situation de proportionnalité est toujours 
-\vspace{2cm}
+Comment peux-tu caractériser ce graphique ?
 
 \newpage
 \begin{exercise}
   Parmi les graphiques suivants, quel est celui qui traduit une situation de proportionnalité~? Justifie en disant pourquoi les autres ne le sont pas.
   \begin{center}
-    \includegraphics{chapitres/proportionnalite/img/graphesprop.png}
+    \includegraphics[width=\linewidth]{chapitres/proportionnalite/img/graphesprop.png}
   \end{center}
   \vspace{3cm}
 \end{exercise}
 
 \section{Règle de trois}
 \begin{exercise}
-  On sait que \SI{4}{kg} de pommes coûtent 6~€. Que coûtent \SI{7}{kg} de pommes~?\\ 
+  On sait que \SI{4}{kg} de pommes coûtent 6~€. Que coûtent \SI{7}{kg} de pommes~?\\
   Résous en complétant le tableau ci-dessous.
 
   \begin{center}
     \begin{tblr}{
-            hlines,
-            vlines,
-            columns={3cm, c},
-            rows={0.8cm,m},
-            row{1}={gray!40, font=\bfseries},
-        }
-        Masse (\SI{}{kg}) & Prix (€)\\
-        4 & 6 \\
-        1 & \\
-        7 & \\
+        hlines,
+        vlines,
+        columns={3cm, c},
+        rows={0.8cm,m},
+        row{1}={gray!40, font=\bfseries},
+      }
+      Masse (\SI{}{kg}) & Prix (€) \\
+      4                 & 6        \\
+      1                 &          \\
+      7                 &          \\
     \end{tblr}
-\end{center}
-\vspace{1cm}
+  \end{center}
+  \vspace{1cm}
 \end{exercise}
 
 
 \begin{exercise}
-  Ma voiture consomme, en moyenne, \(4\) litres de carburant pour \(100km\). Quelle distance pourrais-je parcourir avec un plein de \(50\) litres~?
-  
+  Ma voiture consomme, en moyenne,\SI{4}{l} de carburant pour \SI{100}{km}. Quelle distance pourrais-je parcourir avec un plein de \(50\) litres~?
+
 \end{exercise}
 
 \vfil
@@ -177,32 +183,32 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
 
 \vspace{2cm}
 
-  \exemple La Belgique ci-contre est représentée à l'échelle \(\dfrac{1}{60 000}\)
+\exemple La Belgique ci-contre est représentée à l'échelle \(\dfrac{1}{\num{60 000}}\)
 \begin{multicols}{2}
   \begin{center}
     \begin{tblr}{
-            hlines,
-            vlines,
-            columns={3cm, c},
-            rows={1cm,m},
-            row{1}={gray!40, font=\bfseries},
-        }
-        Distance sur la carte (en cm) & Distance réelle (en cm) \\
-        1 & \\
-        2 & \\
-        3 & \\
+        hlines,
+        vlines,
+        columns={3cm, c},
+        rows={1cm,m},
+        row{1}={gray!40, font=\bfseries},
+      }
+      Distance sur la carte (en cm) & Distance réelle (en cm) \\
+      1                             &                         \\
+      2                             &                         \\
+      3                             &                         \\
     \end{tblr}
-\end{center}
+  \end{center}
 
-\begin{center}
-  \includegraphics{chapitres/proportionnalite/img/belgique.png}
-\end{center}
+  \begin{center}
+    \includegraphics{chapitres/proportionnalite/img/belgique.png}
+  \end{center}
 \end{multicols}
 
 \dotsforanswer{2}[L'échelle est donc]
 
 \begin{exercise}
-  Quelle est la distance réelle entre Bruxelles et Louvain? Base-toi sur l'exemple précédent et laisse ton calcul visible. 
+  Quelle est la distance réelle entre Bruxelles et Louvain? Base-toi sur l'exemple précédent et laisse ton calcul visible.
   \vspace{2cm}
 \end{exercise}
 
@@ -211,7 +217,11 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
 \setcounter{exercise}{0}
 
 \begin{exercise}
-  Sur un plan dont l'échelle est \(\dfrac{1}{2000}\), un champ rectangulaire est représenté par un rectangle mesurant \SI{2}{cm} de long et \SI{1,4}{cm} de large. Quelles sont les dimensions réelles de ce champ, en mètres~? Quelle est l'aire de ce champ, en mètres carrés~?
+  Sur un plan dont l'échelle est \(1/\num{2000}\), un champ rectangulaire est représenté par un rectangle mesurant \SI{2}{cm} de long et \SI{1,4}{cm} de large. 
+  \begin{enumerate}
+    \item Quelles sont les dimensions réelles de ce champ, en mètres~? 
+    \item Quelle est l'aire de ce champ, en mètres carrés~?
+  \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
@@ -224,45 +234,42 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
 
 \begin{exercise}
   Exercice issu d'un CE1D.
-
-  \begin{multicols}{2}
-    \begin{center}
-      \faIcon[regular]{square} Tableau A \\
-      \begin{tblr}{
-              hlines,
-              vlines,
-              columns={2cm, c},
-              rows={1cm,m},
-          }
-          \(x\) & \(y\) \\
-          3 & 9 \\
-          2,5 & 7,5 \\
-          9 & 27 \\
-          10,1 & 30,3 \\
-      \end{tblr}
-  \end{center}
-  
   \begin{center}
-    \faIcon[regular]{square} Tableau B \\
-    \begin{tblr}{
-            hlines,
-            vlines,
-            columns={2cm, c},
-            rows={1cm,m},
+
+    \begin{multicols}{2}
+      Tableau A \smallbreak
+      \begin{tblr}{
+          hlines,
+          vlines,
+          columns={2cm, c},
+          rows={1cm,m},
         }
         \(x\) & \(y\) \\
-        1 & 3 \\
-        5 & 7 \\
-        17 & 19 \\
-        35 & 37 \\
-    \end{tblr}
-\end{center}
+        3     & 9     \\
+        2,5   & 7,5   \\
+        9     & 27    \\
+        10,1  & 30,3  \\
+      \end{tblr}
 
-  \end{multicols}
+      Tableau B \smallbreak
+      \begin{tblr}{
+          hlines,
+          vlines,
+          columns={2cm, c},
+          rows={1cm,m},
+        }
+        \(x\) & \(y\) \\
+        1     & 3     \\
+        5     & 7     \\
+        17    & 19    \\
+        35    & 37    \\
+      \end{tblr}
+    \end{multicols}
+  \end{center}
 
   \begin{enumerate}
-    \item Indique tableau qui montre une proportionnalité directe entre la grandeur \(x\) et la grandeur \(y\).
-    \item Pour ce tableau, écris le coefficient de proportionnalité
+    \item Indique quel tableau montre une proportionnalité directe entre la grandeur \(x\) et la grandeur \(y\).
+    \item Pour ce tableau, détermine le coefficient de proportionnalité.
   \end{enumerate}
 \end{exercise}
 
@@ -281,25 +288,25 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
 \end{exercise}
 
 \begin{exercise}
-  Pour télécharger \(3\) chansons sur internet, à une certaine époque, il fallait \(1\) minute. 
+  Pour télécharger \(3\) chansons sur internet, à une certaine époque, il fallait \(1\) minute.
   \begin{enumerate}
     \item \emph{(Sur cette feuille)}, complète le tableau de proportionnalité en te basant sur ce temps moyen de téléchargement.
-    \begin{center}
-      \begin{tblr}{
-              hlines,
-              vlines,
-              columns={4cm, c},
-              rows={.7cm,m},
-              row{1}={gray!40, font=\bfseries},
-          }
-          Nombre de chansons téléchargées & Durée du téléchargement (en secondes)\\
-           & 120 \\
-          9 & \\
-           & 500 \\
-           & 60 \\
-      \end{tblr}
-  \end{center}
-  
+          \begin{center}
+            \begin{tblr}{
+                hlines,
+                vlines,
+                columns={4cm, c},
+                rows={.7cm,m},
+                row{1}={gray!40, font=\bfseries},
+              }
+              Nombre de chansons téléchargées & Durée du téléchargement (en secondes) \\
+                                              & 120                                   \\
+              9                               &                                       \\
+                                              & 500                                   \\
+                                              & 60                                    \\
+            \end{tblr}
+          \end{center}
+
     \item Calcule le nombre de chansons que tu pourrais télécharger, à la même vitesse, en une demi-heure.
   \end{enumerate}
 \end{exercise}
@@ -307,7 +314,7 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
 \begin{exercise}
   Mathis achète la maquette d'une voiture reproduite à l'échelle \(\dfrac{1}{22}\).
   \begin{enumerate}
-    \item Le modèle réduit mesure après construction \SI{19,8}{cm} de hauteur. Quelle est la hauteur réelle de cette voiture ? 
+    \item Le modèle réduit mesure après construction \SI{19,8}{cm} de hauteur. Quelle est la hauteur réelle de cette voiture ?
     \item Si la longueur réelle d'une seconde voiture était de \SI{5,17}{m}, quelle serait la longueur de la maquette représentant cette voiture en utilisant la même échelle ?
   \end{enumerate}
 \end{exercise}
@@ -328,19 +335,19 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
   Un robinet ouvert à fond remplit un seau de \(12\) litres en \(18\) secondes. Etudie le temps qu'il faudra pour remplir des seaux de différentes capacités.
   \begin{enumerate}
     \item \emph{(Sur cette feuille)} Complète le tableau suivant correspondant à la situation donnée.
-    \begin{center}
-      \begin{tblr}{
-              hlines,
-              vlines,
-              columns={1.5cm, c},
-              rows={1cm,m},
-              column{1}={gray!40, font=\bfseries, 5cm},
-          }
-          Quantité d'eau (en litres) & 3 & 5 & 6 & 12 & 20 \\
-          Temps (en secondes) & & & & 18 & \\
-      \end{tblr}
-  \end{center}
-  
+          \begin{center}
+            \begin{tblr}{
+                hlines,
+                vlines,
+                columns={1.5cm, c},
+                rows={1cm,m},
+                column{1}={gray!40, font=\bfseries, 5cm},
+              }
+              Quantité d'eau (en litres) & 3 & 5 & 6 & 12 & 20 \\
+              Temps (en secondes)        &   &   &   & 18 &    \\
+            \end{tblr}
+          \end{center}
+
     \item Trace le graphique liant la quantité d'eau déversée par le robinet en fonction du temps. Choisis tes unités de graduation avec soin, que ton graphique soit lisible et propre.
     \item Justifie à l'aide du tableau \textbf{et} du graphique qu'il s'agit d'une situation de proportionnalité.
   \end{enumerate}
@@ -348,42 +355,42 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
 
 \begin{multicols}{2}
   \begin{exercise}
-  \emph{(Calculatrice autorisée) }Emrehan a dessiné la piscine de ses rêves, ci-contre. Tu sais que l'échelle est de \(\dfrac{1}{150}\).
-  \begin{enumerate}
-      \item Quelle sont les dimensions de la piscine en réalité? 
-      \item Quelle est la surface que cette piscine occupe? 
-      \item Si la piscine a en moyenne une profondeur de \SI{1,80}{m}, et en sachant qu'on remplit une piscine jusqu'à \SI{20}{cm} du rebord, quel est le volume d'eau contenue dans cette piscine?
-  \end{enumerate}
-  \begin{center}
+    \emph{(Calculatrice autorisée)} Emrehan a dessiné la piscine de ses rêves, ci-contre. Tu sais que l'échelle est de \(\dfrac{1}{150}\).
+    \begin{enumerate}
+      \item Quelle sont les dimensions de la piscine en réalité ?
+      \item Quelle est la surface que cette piscine occupe ?
+      \item Si la piscine a en moyenne une profondeur de \SI{1,80}{m}, et en sachant qu'on remplit une piscine jusqu'à \SI{20}{cm} du rebord, quel est le volume d'eau contenue dans cette piscine ?\\Rappel : \(V=l \times L \times h\)
+    \end{enumerate}
+    \begin{center}
       \includegraphics[width=9cm]{chapitres/proportionnalite/img/pisicne.png}
-  \end{center}
-\end{exercise}
+    \end{center}
+  \end{exercise}
 \end{multicols}
 
 \begin{exercise}
-  Laura a lancé une page instagram pour son chat, Chouchou. Elle a remarqué que son nombre d'abonnés était mutliplié par 3 tous les jours pendant la première semaine (le premier jour, Chouchou a 3 abonnés, le 2ème jour 9, \dots). 
+  Laura a lancé une page instagram pour son chat, Chouchou. Elle a remarqué que son nombre d'abonnés était mutliplié par 3 tous les jours pendant la première semaine (le premier jour, Chouchou a 3 abonnés, le 2\ieme jour 9, \dots).
   \begin{enumerate}
-      \item Construis un tableau avec les valeurs que cela représente pour les 7 jours de la semaine.
-      \item Reporte ses valeurs dans un graphique évolutif. Veille à choisir tes graduations avec soin pour que le graphique soit lisible et propre.
-      \item Est-ce une situation de proportionnalité? Justifie.
-  \end{enumerate}  
+    \item Construis un tableau avec les valeurs que cela représente pour les 7 jours de la semaine.
+    \item Reporte ses valeurs dans un graphique évolutif. Veille à choisir tes graduations avec soin pour que le graphique soit lisible et propre.
+    \item Est-ce une situation de proportionnalité? Justifie.
+  \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
-  Miguel dit à Emil que vu que sur une autoroute on peut rouler à du \SI{120}{km/h}, il nous faut une heure pour faire \SI{120}{km}. Emil trace alors un grapique qui représente le nombre de kilomètres parcourus en fonction du temps passé à cette même vitesse. 
+  Miguel dit à Emile que vu que sur une autoroute on peut rouler à du \SI{120}{km/h}, il nous faut une heure pour faire \SI{120}{km}. Emil trace alors un grapique qui représente le nombre de kilomètres parcourus en fonction du temps passé à cette même vitesse.
   \begin{enumerate}
-      \item Trace le graphique d'Emil. Veille à choisir tes graduations avec soin pour que le graphique soit lisible et propre.
-      \item Combien de temps faut-il pour parcourir \SI{180}{km} ?
-      \item Est-ce une situation de proportionnalité? Justifie.
+    \item Trace le graphique d'Emile. Veille à choisir tes graduations avec soin pour que le graphique soit lisible et propre.
+    \item Combien de temps faut-il pour parcourir \SI{180}{km} ?
+    \item Est-ce une situation de proportionnalité? Justifie.
   \end{enumerate}
 \end{exercise}
 
 \newpage
 \begin{exercise}
   Si le monde était un village\ldots \\
- En 1990,  Donella Meadows écrivait un texte intitulé «~State of the Village Report~», traduit en français sous le nom «~Si le monde était un village~». Il ramenait toutes des statistiques du monde entier à une population plus petite, celle d'un village de \textbf{100 personnes}, tout en conservant les proportions de tous les peuples existants sur la terre. Il a été retravaillé plusieurs fois au cours des ans pour que les chiffres collent à la réalité de la population grandissante, et nous pouvons ainsi avoir une vision plus rapide de ces statistiques. Par exemple, si le monde était un village de 100 personnes, 48 seraient des hommes et 52 des femmes. Ou encore, si le monde était un village de 100 personnes, 6 personnes possèderaient 59\% de la richesse totale et tous les 6 seraient originaires des USA. \\
- 
- Voici quelques chiffres de ce texte. Réponds aux questions qui suivent en laissant ta démarche visible.
+  En 1990,  Donella Meadows écrivait un texte intitulé «~State of the Village Report~», traduit en français sous le nom «~Si le monde était un village~». Il ramenait toutes des statistiques du monde entier à une population plus petite, celle d'un village de \textbf{100 personnes}, tout en conservant les proportions de tous les peuples existants sur la terre. Il a été retravaillé plusieurs fois au cours des ans pour que les chiffres collent à la réalité de la population grandissante, et nous pouvons ainsi avoir une vision plus rapide de ces statistiques. Par exemple, si le monde était un village de 100 personnes, 48 seraient des hommes et 52 des femmes. Ou encore, si le monde était un village de 100 personnes, 6 personnes possèderaient 59\% de la richesse totale et tous les 6 seraient originaires des USA. \\
+
+  Voici quelques chiffres de ce texte. Réponds aux questions qui suivent en laissant ta démarche visible.
   \begin{enumerate}[itemsep=.7cm]
     \item \emph{Si le monde était un village de 100 personnes, 68 respirent un air pur et 32 un air pollué.} Que seraient ces chiffres si le monde était un village de 25 personnes~?
     \item \emph{Si le monde était un village de 100 personnes, 83 personnes ont accès à l'eau potable alors que 17 n'ont pas accès à de l'eau potable.} Combien de personnes auraient accès à l'eau potable si le monde était constitué de 40 personnes~? Arrondis à l'unité.
@@ -395,11 +402,11 @@ Un petit boulanger vend ses croissants à \(1,5\)€.
 
 \newpage
 \begin{exercise}
-  Complète le portrait du Minion (page suivante) en répondant à chacun des énoncés suivants. 
+  Complète le portrait du Minion (page suivante) en répondant à chacun des énoncés suivants.
   \begin{center}
     \includegraphics{chapitres/proportionnalite/img/minion.png}
   \end{center}
-   
+
   \newpage
   \null\vfill
   \begin{center}
