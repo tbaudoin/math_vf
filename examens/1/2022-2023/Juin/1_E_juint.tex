@@ -14,6 +14,7 @@
 \usepackage{tasks}
 \settasks{label-format=\bfseries}
 \usepackage{eurosym} % \EUR{8} --> 8 €
+\usepackage{multicol}
 \usepackage[locale=FR]{siunitx}
 \DeclareSIUnit{\sieuro}{\mbox{\euro}}
 \usepackage{tikz}
@@ -179,13 +180,17 @@ Quelques conseils pour réussir ton examen :
     \end{enumerate}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{connaitre}[points=3]
+\begin{connaitre}[points=6]
     Coche la ou les bonnes réponses. 
     %\TODO: commande QCM à faire
     \begin{enumerate}
         \item Sont des nombres premiers.
         \item Dans une translation, l'élément caractéristique est 
         \item Quels sont les nombres carrés ?
+        \item Une droite qui partage un segment en deux parts égales, perpendiculairement, s'appelle une \dots 
+        \item Un triangle ayant trois côtés de longueurs différentes est un triangle \dots 
+        \item Des angles supplémentaires sont deux angles tels que \dots 
+        \item \(-3 \cdot 2 =\)
     \end{enumerate}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -248,7 +253,7 @@ Quelques conseils pour réussir ton examen :
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{appliquer}[points=8]
+\begin{appliquer}[points=11]
     \begin{enumerate}
         \item \(8u-4+3u=\)
         \item \(m\cdot m \cdot m \cdot =\)
@@ -258,6 +263,20 @@ Quelques conseils pour réussir ton examen :
         \item \(a^2 - a=\)
         \item \(4a\cdot 5a^2b + 2(5a^3b -7)=\)
         \item \(3x + 2x(3-x) + (2x^2-7x)=\)
+        \item \(3a \cdot (a+2)=\)
+        \item \(2x \cdot (-3y) - 6x + 7y=\)
+        \item \(6x \cdot (-3xy) + 7x^2 \cdot 2y=\)
+    \end{enumerate}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=4]
+    Complète les pointillés.
+    \begin{enumerate}
+        \item \(10a\cdot \ldots = 30a\)
+        \item \(a + \ldots = 2a\)
+        \item \(x \cdot \ldots = x^2\)
+        \item \(-(8x+6y)- (\ldots - \ldots ) = 10x + 2y\)
     \end{enumerate}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -295,41 +314,173 @@ Quelques conseils pour réussir ton examen :
 \begin{appliquer}[points=2]
     Trace en vert la hauteur issue de \(A \)et en bleu la médiane relative à \([AB]\). Code ton dessin.
     \begin{center}
-        \includegraphics[width=\linewidth]{img/triangle.png}
+        \includegraphics[width=10cm]{img/triangle.png}
     \end{center}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{appliquer}[points=2]
-%\end{appliquer}
+\begin{appliquer}[points=7]
+    Complète les cases vides du tableau par le(s) mot(s) adéquat(s).
+    \begin{center}
+        \begin{tblr}{
+                hlines,
+                vlines,
+                columns={4.5cm, c},
+                rows={1.5cm,m},
+                row{1}={gray!40, font=\bfseries},
+            }
+            Je suis \dots & Si j'avais aussi \dots & Je serais \dots \\
+            Un parallélogramme & les diagonales de même longueur &  \\
+            Un parallélogramme & au moins un angle droit &  \\
+            Un quadrilatère quelconque & & un trapèze \\
+            Un parallélogramme & & un losange \\
+            & les diagonales de même longueur & un carré \\
+            & les angles droits & un carré \\
+            & les côtés de même longueur & un carré \\
+        \end{tblr}
+    \end{center}
+    
+\end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{appliquer}[points=2]
-%\end{appliquer}
+\begin{appliquer}[points=2]
+    Factorise en mettant en évidence.
+    \begin{enumerate}
+        \item \(ab+6a^2=\)
+        \item \(6a^3b^6 - 9a^2b^3=\)
+    \end{enumerate}
+\end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{appliquer}[points=2]
-%\end{appliquer}
+\begin{appliquer}[points=2]
+    Trace un rectangle \(EXAM\) si tu sais que ses diagonales mesurent \SI{5}{cm} et que l’angle aigu entre ses diagonales est de \SI{40}{degrés}.  %\TODO: degré a refaire
+\end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{appliquer}[points=2]
-%\end{appliquer}
+\begin{appliquer}[points=3]
+    Voici un repère cartésien. \\
+    \includegraphics{img/graphe.png}
+    \begin{enumerate}
+        \item Écris les coordonnées des points suivants. \\
+        \(A(\ldots; \ldots)\) \hfill \(B(\ldots; \ldots)\) \hfill  \(C(\ldots; \ldots)\) \hfill  \(D(\ldots; \ldots)\)
+        \item Place le point \(X\) tel que \(X(-5;-2)\)
+        \item Complète les phrases suivantes par \(A, B, C\) ou \(D\).
+        %\begin{enumitem} \TODO: enumitem
+            \item Mon ordonnée vaut le double de mon abscisse, je suis le point \dotfill 
+            \item Nous avons la même ordonnée, nous sommes les points \dotfill
+        %\end{enumitem}
+    \end{enumerate}
+\end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{appliquer}[points=2]
-%\end{appliquer}
+\begin{appliquer}[points=2]
+    Réalise la construction demandée. Veille à laisser tes constructions visibles et à faire preuve de précision et de soin. 
+
+    \(t_{\overrightarrow{XY}}(ABCD)=A'B'C'D'\) 
+
+    \includegraphics{img/trans.png}
+\end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
+\begin{appliquer}[points=3]
+    Observe la figure dans son ensemble, puis suis les consignes ci-dessous. 
+    Pour chaque ligne du tableau : 
+    \begin{enumerate}
+        \item Dans la première colonne, indique s'il s'agit d'une translation (T), d'une symétrie centrale (SC) ou d'une symétrie orthogonale (SO).
+        \item Dans la deuxième colonne, cite l'élément caractéristique de cette transformation du plan.
+    \end{enumerate}
+    %\TODO: image examen 2017
+    \begin{center}
+        \begin{tblr}{
+                hlines,
+                vlines,
+                columns={4cm, c},
+                rows={1cm,m},
+                row{1}={gray!40, font=\bfseries},
+                column{1}={gray!40, font=\bfseries},
+            }
+            & Isométrie & Élément caractéristique \\
+            De 2 à 3 & & \\
+            De 3 à 4 & & \\
+            De 1 à 4 & & \\
+        \end{tblr}
+    \end{center}
+    
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=3]
+    Construis ce trapèze avec les dimensions réelles. 
+    %\TODO: image de l'examen de 2017   
+\end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
+\begin{transferer}[points=3]
+    Un automobiliste met du temps à payer son amende pour excès de vitesse de 90€. Il doit donc payer l’amende augmentée de 10%à refaire pourcentage.
+     Quel est le nouveau montant que l’automobiliste va payer ? Laisse ta démarche visible. 
+\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=4]
+    Dans le cadre d’une exposition, un artiste a empilé des canettes. L’illustration ci-dessous montre les trois rangées du haut du montage. 
+    \begin{multicols*}{2}
+        \begin{center}
+            \begin{tblr}{
+                    hlines,
+                    vlines,
+                    columns={3cm, c},
+                    rows={1cm,m},
+                    row{1}={gray!40, font=\bfseries},
+                } 
+                Numéro de la rangée & Nombre de canettes par rangées \\
+                1 & 1 \\
+                2 & 4 \\
+                3 & 7 \\
+                4 & \\
+                5 & \\
+                6 & 16 \\
+            \end{tblr}
+        \end{center}
+        
+        \includegraphics{img/cannettes.png}
+    \end{multicols*}
+
+    \begin{enumerate}
+        \item Complète le tableau.
+        \item Détermine le nombre de canettes de la 9ème rangée.
+        \item Détermine le nnuméro de la rangée qui comporte 31 canettes.
+        \item Propose une formule qui permet de calculer le nombre de canettes \(c\) nécessaire en fonction du numéro de la rangée \(n\). \\
+        \(c=\)
+    \end{enumerate}
+\end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
+\begin{transferer}[points=3]
+   Un club de sport va fêter ses 10 ans en septembre. Le secrétaire du club a rassemblé quelques données pour analyser l’évolution du club. \\ Réponds aux questions suivantes en observant le graphique. \\
+   \includegraphics{img/voitures.png}
+   \begin{enumerate}
+    \item Cite deux années où le club a compté le même nombre de membre.
+    \item En quelle année le nombre d'inscrits a-t-il le plus augmenté?
+    \item Est-il vrai que le nombre d'inscrits a doublé entre 2015 et 2019? Laisse ta démarche visible.
+   \end{enumerate}
+\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=4]
+    Voici le plan de deux salles de spectacle. Réponds aux questions.
+    %\TODO: image examen 2017 
+    \begin{enumerate}
+        \item Exprime à l'aide d'une expression littérale le périmètre de la salle de Stockholm.
+        \item Calcule l'aire de la salle de Berlin. Laisse tes étapes visibles.
+    \end{enumerate}
+    \end{transferer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{transferer}[points=4]
+    Observe le pavage ci-dessous puis complète les égalités. 
+    %\TODO: image exame 2017 
+
+\end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{transferer}[points=5]
