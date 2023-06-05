@@ -1,0 +1,12 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=latex]
+    \draw [shift={(0.,0.)}] (0,0) -- (0.:0.6) arc (0.:70.:0.6) -- cycle;
+    \draw [shift={(7.,0.)}] (0,0) -- (135.:0.6) arc (135.:180.:0.6) -- cycle;
+    \draw (3.5,0.2) -- (3.2,0.2) -- (3.2, 0.5);
+    \draw (0.,0.) -- (7.,0.) node[midway, below]{\SI{7}{cm}};
+    \draw (3.,3.)-- (3.,0.) node[midway,right]{\SI{3}{cm}};
+    \draw (0.,0.)-- (1.0919107027986075,3.);
+    \draw (1.0919107027986075,3.)-- (4.,3.);
+    \draw (4.,3.)-- (7.,0.);
+    \draw (0.8,0.5)node{\ang{70}};
+    \draw (6.2,0.3)node{\ang{40}};
+\end{tikzpicture}
