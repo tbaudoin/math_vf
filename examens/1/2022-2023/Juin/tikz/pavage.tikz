@@ -1,9 +1,30 @@
 \begin{tikzpicture}
-    \foreach \x in {0,...,4}
-    {
-        \foreach \y in {0,...,4}
-        {
-            \draw (\x,\y) circle (1pt);
-        }
-    }
+    \draw[dashed] (-0.9,-0.9) grid (4.9,4.9);
+    \foreach \y in {0,1,...,4}{
+        \foreach \x in {0,1,...,4}{\draw[fill=black] (\x,\y) circle (1pt) ;}}
+    \draw 	(0,0)node[above right]{\scriptsize \(A\)}
+            (1,0)node[above right]{\scriptsize \(B\)}
+            (2,0)node[above right]{\scriptsize \(C\)}
+            (3,0)node[above right]{\scriptsize \(D\)}
+            (4,0)node[above right]{\scriptsize \(E\)}
+            (0,1)node[above right]{\scriptsize \(F\)}
+            (1,1)node[above right]{\scriptsize \(G\)}
+            (2,1)node[above right]{\scriptsize \(H\)}
+            (3,1)node[above right]{\scriptsize \(I\)}
+            (4,1)node[above right]{\scriptsize \(J\)}
+            (0,2)node[above right]{\scriptsize \(K\)}
+            (1,2)node[above right]{\scriptsize \(L\)}
+            (2,2)node[above right]{\scriptsize \(M\)}
+            (3,2)node[above right]{\scriptsize \(N\)}
+            (4,2)node[above right]{\scriptsize \(O\)}
+            (0,3)node[above right]{\scriptsize \(P\)}
+            (1,3)node[above right]{\scriptsize \(Q\)}
+            (2,3)node[above right]{\scriptsize \(R\)}
+            (3,3)node[above right]{\scriptsize \(S\)}
+            (4,3)node[above right]{\scriptsize \(T\)}
+            (0,4)node[above right]{\scriptsize \(U\)}
+            (1,4)node[above right]{\scriptsize \(V\)}
+            (2,4)node[above right]{\scriptsize \(W\)}
+            (3,4)node[above right]{\scriptsize \(X\)}
+            (4,4)node[above right]{\scriptsize \(Y\)};
 \end{tikzpicture}

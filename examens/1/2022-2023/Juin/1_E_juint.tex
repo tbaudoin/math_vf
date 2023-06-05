@@ -102,12 +102,9 @@ counter = exercise
 % \lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
 % \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
 
-\setlength{\textheight}{700pt}		
-
-\newcommand{\Letter}[1]{\@Alph{#1}}
-\newcounter{mycounter}
-\setcounter{mycounter}{1}
-
+\setlength{\textheight}{700pt}
+\newcounter{l}
+\setcounter{l}{1}
 \begin{document}
 \raggedbottom
 \pagestyle{empty}
@@ -126,7 +123,8 @@ counter = exercise
         cell{6}{1}={r=1,c=3}{l},%
         cell{7}{1}={r=1,c=3}{l},%
         cell{8}{1}={r=1,c=3}{l},%
-        cell{9}{1}={r=1,c=3}{r},%
+        row{9} = {c},
+        cell{10}{1}={r=1,c=3}{r},%
         rowsep=1ex%
     }%
     \hline
@@ -150,6 +148,12 @@ counter = exercise
     Matériel à distribuer : aucun                                               \\
     \hline
     % cell9
+    C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}
+    &
+    C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}
+    &
+    C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}
+    \\
     Total :
     \qquad/\TotalExerciseGoal{points}{}{}
     \quad\faIcon{arrow-right}\quad
@@ -235,7 +239,7 @@ Quelques conseils pour réussir ton examen :
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=2]
-    Code/décode. Traduis en une phrase en français l'expressions mathématique, et inversément.
+    Code/décode. Traduis en une phrase en français l'expression mathématique, et inversement.
     \begin{enumerate}
         \item \((5-3)^2\)
         \item La somme de 5 et de l'opposé de 3
@@ -501,8 +505,22 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=4]
     Observe le pavage ci-dessous puis complète les égalités.
-    \begin{center}
-        \includegraphics[width=0.5\linewidth]{tikz/pavage.tikz}
-    \end{center}
+
+    \begin{minipage}{.5\linewidth}
+        \includegraphics[width=\linewidth]{tikz/pavage.tikz}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.25\linewidth}
+        \begin{enumerate}[itemsep=.4cm]
+            \item \(t_{\overrightarrow{NB}} (M)= \ldots\)
+            \item \(S_H(A)=\ldots\)
+            \item \(S_{WQ}(P)=\ldots\)
+            \item \(t_{\overrightarrow{E\ldots}}(G)=L\)
+            \item \(S_I(C)=\ldots\)
+            \item \(t_{\overrightarrow{UJ}}(Q)=\ldots\)
+            \item \(S_{MG}(A)=\ldots\)
+            \item \(S_{P\ldots}(F)=R\)
+        \end{enumerate}
+    \end{minipage}
 \end{transferer}
 \end{document}

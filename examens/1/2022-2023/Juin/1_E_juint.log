@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.11)  5 JUN 2023 07:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.11)  5 JUN 2023 22:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1381,7 +1381,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \c@numberofappliquers=\count427
 \c@soltransferer=\count428
 \c@numberoftransferers=\count429
-\c@mycounter=\count430
+\c@l=\count430
 \tikzscale@accuracy=\skip86
 \g_xsim_collection_exercise_in_all exercises_int=\count431
 \c@totalexerciseinall exercises=\count432
@@ -1391,63 +1391,63 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \c@totalappliquerinall exercises=\count436
 \g_xsim_collection_transferer_in_all exercises_int=\count437
 \c@totaltransfererinall exercises=\count438
-LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 111.
+LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 108.
  (/usr/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
 ) (./1_E_juint.aux)
 \openout1 = `1_E_juint.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 111.
-LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 111.
+LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 108.
+LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 108.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpl.fd
 File: omljkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 111.
-LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 111.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 108.
+LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 108.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkpl.fd
 File: omsjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 111.
-LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 111.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 108.
+LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 108.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpl.fd
 File: omxjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 111.
-LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 111.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 108.
+LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 108.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkplexa.fd
 File: ujkplexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Info: Redefining \degres on input line 111.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Info: Redefining \degres on input line 108.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 111.
+(french.ldf)             reported on input line 108.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 111.
-LaTeX Info: Redefining \up on input line 111.
-LaTeX Info: Redefining \microtypecontext on input line 111.
-Package microtype Info: Applying patch `item' on input line 111.
-Package microtype Info: Applying patch `toc' on input line 111.
-Package microtype Info: Applying patch `eqnum' on input line 111.
-Package microtype Info: Applying patch `footnote' on input line 111.
-Package microtype Info: Applying patch `verbatim' on input line 111.
+(french.ldf)             reported on input line 108.
+LaTeX Info: Redefining \up on input line 108.
+LaTeX Info: Redefining \microtypecontext on input line 108.
+Package microtype Info: Applying patch `item' on input line 108.
+Package microtype Info: Applying patch `toc' on input line 108.
+Package microtype Info: Applying patch `eqnum' on input line 108.
+Package microtype Info: Applying patch `footnote' on input line 108.
+Package microtype Info: Applying patch `verbatim' on input line 108.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 111.
+LaTeX Info: Redefining \showhyphens on input line 108.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1458,7 +1458,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 111.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 108.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count439
@@ -1483,7 +1483,7 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 <img/entete.pdf, id=29, 803.0pt x 50.1875pt>
 File: img/entete.pdf Graphic file (type pdf)
 <use img/entete.pdf>
-Package pdftex.def Info: img/entete.pdf  used on input line 117.
+Package pdftex.def Info: img/entete.pdf  used on input line 114.
 (pdftex.def)             Requested size: 448.13095pt x 28.00906pt.
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1492,10 +1492,10 @@ Package pdftex.def Info: img/entete.pdf  used on input line 117.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 158.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 162.
  (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)
 > Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 158.
+LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -1503,35 +1503,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 158.
+LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpss.fd
 File: omljkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 158.
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 158.
+LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpss.fd
 File: omxjkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 158.
+LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpssmia.fd
 File: ujkpssmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 158.
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 158.
+LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsssyb.fd
 File: ujkpsssyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 158.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 158.
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 162.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 ) [1
@@ -1698,18 +1698,18 @@ Package pdftex.def Info: img/voitures.png  used on input line 12.
 
  (./xsim/1_E_juint-transferer-26-exercise-body.tex (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz)) [9] (./1_E_juint.aux) ) 
 Here is how much of TeX's memory you used:
- 46983 strings out of 476025
- 1094154 string characters out of 5796532
+ 47067 strings out of 476025
+ 1095904 string characters out of 5796532
  1883388 words of memory out of 5000000
- 66368 multiletter control sequences out of 15000+600000
- 586105 words of font info for 206 fonts, out of 8000000 for 9000
+ 66439 multiletter control sequences out of 15000+600000
+ 602381 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,15n,106p,10691b,1489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,17n,106p,10691b,1489s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_juint.pdf (11 pages, 195708 bytes).
+Output written on 1_E_juint.pdf (11 pages, 197669 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 47243 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 53387 words of extra memory for PDF output out of 61914 (max. 10000000)
 
