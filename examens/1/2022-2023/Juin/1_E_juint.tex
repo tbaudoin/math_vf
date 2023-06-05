@@ -10,7 +10,14 @@
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{enumitem}
+\SetEnumitemKey{cols}{
+itemsep = 1\itemsep,
+parsep = 1\parsep,
+before = \raggedcolumns\begin{multicols}{#1},
+after = \end{multicols}}
 \setlist[enumerate]{label=\textbf{\alph*)}}
+\newlist{qcm}{itemize}{1}
+\setlist[qcm]{label=\faIcon[regular]{square}, cols=3}
 \usepackage{tasks}
 \settasks{label-format=\bfseries}
 \usepackage{eurosym} % \EUR{8} --> 8 €
@@ -28,7 +35,7 @@
 \NewColumnType{C}[1][]{Q[c,co=1,#1]}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins, xparse}
-\usepackage[use-aux, no-files]{xsim}
+\usepackage[use-aux, use-files]{xsim}
 
 \DeclareExerciseEnvironmentTemplate{interrogation}
 {%
@@ -80,6 +87,7 @@ counter = exercise
 }
 
 \xsimsetup{
+    path=xsim,
     exercise/template = interrogation,
     solution/template = interrogation,
 }
@@ -102,7 +110,7 @@ counter = exercise
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ENTETE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\includegraphics[width=\linewidth]{} \TODO: entete image
+\includegraphics[width=\linewidth]{img/entete.pdf}
 \vspace{\smallskipamount}
 \begin{tblr}{%
         width=\textwidth,%
@@ -119,30 +127,30 @@ counter = exercise
     }%
     \hline
     % cell1
-    Examen de mathématiques                                    &             &          \\
+    Examen de mathématiques                 &  &                                \\
     % cell2
-    Noël 2022                                                  &             &          \\
+    Juin 2023                               &  &                                \\
     \hline
     % cell3
-    Nom :                                                      &             & Classe : \\
+    Nom :                                   &  & Classe :                       \\
     % cell4
-    Prénom :                                                   &             & Numéro : \\
+    Prénom :                                &  & Numéro :                       \\
     \hline
     % cell5
-    Professeur : Baudoin, Debroux, Janssens                    &             &          \\
+    Professeur : Baudoin, Debroux, Janssens &  &                                \\
     % cell6
-    Date et heure: Mardi 13 décembre 2022 de 8h20 à 10h30                               \\
+    Date et heure : Mercredi 28 juin 2023 de 8 h 20 à 10 h 30                   \\
     % cell7
-    Matériel autorisé : Équerre multifonction, crayons de couleur, calculatrice         \\
+    Matériel autorisé : Équerre multifonction, crayons de couleur, calculatrice \\
     % cell8
-    Matériel à distribuer : aucun                                                        \\
+    Matériel à distribuer : aucun                                               \\
     \hline
     % cell9
-   Total : 
-   \qquad/\TotalExerciseGoal{points}{}{}
-   \quad\faIcon{arrow-right}\quad
-   \qquad/30&&\\
-   \hline
+    Total :
+    \qquad/\TotalExerciseGoal{points}{}{}
+    \quad\faIcon{arrow-right}\quad
+    \qquad/30                               &  &                                \\
+    \hline
 \end{tblr}%
 \vspace{\smallskipamount}
 \begin{scriptsize}%
@@ -173,7 +181,8 @@ Quelques conseils pour réussir ton examen :
     Vrai ou faux? Justifie dans tous les cas.
     \begin{enumerate}
         \item 24 est un diviseur de 12.
-        \item -3 est un nombre naturel.
+        \item \(-3\) est un nombre naturel.
+              % FIXME: bizarre dans un vrai ou faux.
         \item Dans un repère cartésien, l'axe vertical s'appelle l'axe des abscisses.
         \item Pour calculer \SI{7}{\%} d'une facture, on multiplie ce montant par 0,7.
         \item Le nombre de dents d'un enfant est proportionnel à son âge.
@@ -181,46 +190,48 @@ Quelques conseils pour réussir ton examen :
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=6]
-    Coche la ou les bonnes réponses. 
-    %\TODO: commande QCM à faire
+    Coche la ou les bonnes réponses.
     \begin{enumerate}
         \item Sont des nombres premiers.
-        \item Dans une translation, l'élément caractéristique est 
+              \begin{qcm}
+                  \item A
+                  \item B
+                  \item C
+              \end{qcm}
+        \item Dans une translation, l'élément caractéristique est
         \item Quels sont les nombres carrés ?
-        \item Une droite qui partage un segment en deux parts égales, perpendiculairement, s'appelle une \dots 
-        \item Un triangle ayant trois côtés de longueurs différentes est un triangle \dots 
-        \item Des angles supplémentaires sont deux angles tels que \dots 
+        \item Une droite qui partage un segment en deux parts égales, perpendiculairement, s'appelle une \dots
+        \item Un triangle ayant trois côtés de longueurs différentes est un triangle \dots
+        \item Des angles supplémentaires sont deux angles tels que \dots
         \item \(-3 \cdot 2 =\)
     \end{enumerate}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=1]
-    Quelle est la propriété illustrée par l'égalité suivante? 
-
-    \(13+82 = 82 + 13\)
+    Quelle est la propriété illustrée par l'égalité suivante ?
+    \[(13+82 = 82 + 13\]
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=1]
-    Calcule à l'aide de la distributivité simple. Laisse ta démarche visible. 
-
-    \(49 \cdot 8=\)
+    Calcule à l'aide de la distributivité simple. Laisse ta démarche visible.
+    \[49 \cdot 8=\]
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=3]
     Donne la définition des concepts suivants. Sois précis.
     \begin{enumerate}
-        \item Valeur absolue : 
+        \item Valeur absolue :
         \item Bissectrice :
-        \item Isométrie : 
+        \item Isométrie :
     \end{enumerate}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=1]
-    Donne un exemple de deux nombres opposés. 
+    Donne un exemple de deux nombres opposés.
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=2]
-    Code/décode. Traduis en une phrase en français l'expressions mathématique, et inversément. 
+    Code/décode. Traduis en une phrase en français l'expressions mathématique, et inversément.
     \begin{enumerate}
         \item \((5-3)^2\)
         \item La somme de 5 et de l'opposé de 3
@@ -228,13 +239,13 @@ Quelques conseils pour réussir ton examen :
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=1]
-    Traduis par une phrase la notation suivante. 
+    Traduis par une phrase la notation suivante.
 
     \(S_{PM}(ABC) = A'B'C'\)
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
-    Effectue. 
+    Effectue.
     \begin{enumerate}
         \item \((-3)^2 =\)
         \item \(-5 \cdot 2 = \)
@@ -290,8 +301,8 @@ Quelques conseils pour réussir ton examen :
                 columns={2cm, c},
                 rows={1cm,m},
             }
-            x & 8 & 27 & & 30 & \\
-            y & & & 6,3 & 15 & 30 
+            x & 8 & 27 &     & 30 &    \\
+            y &   &    & 6,3 & 15 & 30
         \end{tblr}
     \end{center}
 
@@ -302,11 +313,11 @@ Quelques conseils pour réussir ton examen :
                 columns={2cm, c},
                 rows={1cm,m},
             }
-            x & 2 & 5 & 9 & 10 & \\
-            y & & & 27 &  & 33
+            x & 2 & 5 & 9  & 10 &    \\
+            y &   &   & 27 &    & 33
         \end{tblr}
     \end{center}
-    %\TODO: fleche pour coefficient 
+    % TODO: fleche pour coefficient 
 
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -329,17 +340,17 @@ Quelques conseils pour réussir ton examen :
                 rows={1.5cm,m},
                 row{1}={gray!40, font=\bfseries},
             }
-            Je suis \dots & Si j'avais aussi \dots & Je serais \dots \\
-            Un parallélogramme & les diagonales de même longueur &  \\
-            Un parallélogramme & au moins un angle droit &  \\
-            Un quadrilatère quelconque & & un trapèze \\
-            Un parallélogramme & & un losange \\
-            & les diagonales de même longueur & un carré \\
-            & les angles droits & un carré \\
-            & les côtés de même longueur & un carré \\
+            Je suis \dots              & Si j'avais aussi \dots          & Je serais \dots \\
+            Un parallélogramme         & les diagonales de même longueur &                 \\
+            Un parallélogramme         & au moins un angle droit         &                 \\
+            Un quadrilatère quelconque &                                 & un trapèze      \\
+            Un parallélogramme         &                                 & un losange      \\
+                                       & les diagonales de même longueur & un carré        \\
+                                       & les angles droits               & un carré        \\
+                                       & les côtés de même longueur      & un carré        \\
         \end{tblr}
     \end{center}
-    
+
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -353,7 +364,7 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
-    Trace un rectangle \(EXAM\) si tu sais que ses diagonales mesurent \SI{5}{cm} et que l’angle aigu entre ses diagonales est de \SI{40}{degrés}.  %\TODO: degré a refaire
+    Trace un rectangle \(EXAM\) si tu sais que ses diagonales mesurent \SI{5}{cm} et que l’angle aigu entre ses diagonales est de \ang{40}.  
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -362,34 +373,34 @@ Quelques conseils pour réussir ton examen :
     \includegraphics{img/graphe.png}
     \begin{enumerate}
         \item Écris les coordonnées des points suivants. \\
-        \(A(\ldots; \ldots)\) \hfill \(B(\ldots; \ldots)\) \hfill  \(C(\ldots; \ldots)\) \hfill  \(D(\ldots; \ldots)\)
+              \(A(\ldots; \ldots)\) \hfill \(B(\ldots; \ldots)\) \hfill  \(C(\ldots; \ldots)\) \hfill  \(D(\ldots; \ldots)\)
         \item Place le point \(X\) tel que \(X(-5;-2)\)
         \item Complète les phrases suivantes par \(A, B, C\) ou \(D\).
-        %\begin{enumitem} \TODO: enumitem
-            \item Mon ordonnée vaut le double de mon abscisse, je suis le point \dotfill 
-            \item Nous avons la même ordonnée, nous sommes les points \dotfill
-        %\end{enumitem}
+              %\begin{enumitem} \TODO: enumitem (TITI : je ne comprends pas)
+        \item Mon ordonnée vaut le double de mon abscisse, je suis le point \dotfill
+        \item Nous avons la même ordonnée, nous sommes les points \dotfill
+              %\end{enumitem}
     \end{enumerate}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
-    Réalise la construction demandée. Veille à laisser tes constructions visibles et à faire preuve de précision et de soin. 
+    Réalise la construction demandée. Veille à laisser tes constructions visibles et à faire preuve de précision et de soin.
 
-    \(t_{\overrightarrow{XY}}(ABCD)=A'B'C'D'\) 
+    \(t_{\overrightarrow{XY}}(ABCD)=A'B'C'D'\)
 
     \includegraphics{img/trans.png}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=3]
-    Observe la figure dans son ensemble, puis suis les consignes ci-dessous. 
-    Pour chaque ligne du tableau : 
+    Observe la figure dans son ensemble, puis suis les consignes ci-dessous.
+    Pour chaque ligne du tableau :
     \begin{enumerate}
         \item Dans la première colonne, indique s'il s'agit d'une translation (T), d'une symétrie centrale (SC) ou d'une symétrie orthogonale (SO).
         \item Dans la deuxième colonne, cite l'élément caractéristique de cette transformation du plan.
     \end{enumerate}
-    %\TODO: image examen 2017
+    %TODO: image examen 2017
     \begin{center}
         \begin{tblr}{
                 hlines,
@@ -399,30 +410,30 @@ Quelques conseils pour réussir ton examen :
                 row{1}={gray!40, font=\bfseries},
                 column{1}={gray!40, font=\bfseries},
             }
-            & Isométrie & Élément caractéristique \\
-            De 2 à 3 & & \\
-            De 3 à 4 & & \\
-            De 1 à 4 & & \\
+                     & Isométrie & Élément caractéristique \\
+            De 2 à 3 &           &                         \\
+            De 3 à 4 &           &                         \\
+            De 1 à 4 &           &                         \\
         \end{tblr}
     \end{center}
-    
+
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=3]
-    Construis ce trapèze avec les dimensions réelles. 
+    Construis ce trapèze avec les dimensions réelles.
     %\TODO: image de l'examen de 2017   
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
     Un automobiliste met du temps à payer son amende pour excès de vitesse de 90€. Il doit donc payer l’amende augmentée de 10%à refaire pourcentage.
-     Quel est le nouveau montant que l’automobiliste va payer ? Laisse ta démarche visible. 
+    Quel est le nouveau montant que l’automobiliste va payer ? Laisse ta démarche visible.
 \end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=4]
-    Dans le cadre d’une exposition, un artiste a empilé des canettes. L’illustration ci-dessous montre les trois rangées du haut du montage. 
+    Dans le cadre d’une exposition, un artiste a empilé des canettes. L’illustration ci-dessous montre les trois rangées du haut du montage.
     \begin{multicols*}{2}
         \begin{center}
             \begin{tblr}{
@@ -431,17 +442,17 @@ Quelques conseils pour réussir ton examen :
                     columns={3cm, c},
                     rows={1cm,m},
                     row{1}={gray!40, font=\bfseries},
-                } 
+                }
                 Numéro de la rangée & Nombre de canettes par rangées \\
-                1 & 1 \\
-                2 & 4 \\
-                3 & 7 \\
-                4 & \\
-                5 & \\
-                6 & 16 \\
+                1                   & 1                              \\
+                2                   & 4                              \\
+                3                   & 7                              \\
+                4                   &                                \\
+                5                   &                                \\
+                6                   & 16                             \\
             \end{tblr}
         \end{center}
-        
+
         \includegraphics{img/cannettes.png}
     \end{multicols*}
 
@@ -450,19 +461,19 @@ Quelques conseils pour réussir ton examen :
         \item Détermine le nombre de canettes de la 9ème rangée.
         \item Détermine le nnuméro de la rangée qui comporte 31 canettes.
         \item Propose une formule qui permet de calculer le nombre de canettes \(c\) nécessaire en fonction du numéro de la rangée \(n\). \\
-        \(c=\)
+              \(c=\)
     \end{enumerate}
 \end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
-   Un club de sport va fêter ses 10 ans en septembre. Le secrétaire du club a rassemblé quelques données pour analyser l’évolution du club. \\ Réponds aux questions suivantes en observant le graphique. \\
-   \includegraphics{img/voitures.png}
-   \begin{enumerate}
-    \item Cite deux années où le club a compté le même nombre de membre.
-    \item En quelle année le nombre d'inscrits a-t-il le plus augmenté?
-    \item Est-il vrai que le nombre d'inscrits a doublé entre 2015 et 2019? Laisse ta démarche visible.
-   \end{enumerate}
+    Un club de sport va fêter ses 10 ans en septembre. Le secrétaire du club a rassemblé quelques données pour analyser l’évolution du club. \\ Réponds aux questions suivantes en observant le graphique. \\
+    \includegraphics{img/voitures.png}
+    \begin{enumerate}
+        \item Cite deux années où le club a compté le même nombre de membre.
+        \item En quelle année le nombre d'inscrits a-t-il le plus augmenté?
+        \item Est-il vrai que le nombre d'inscrits a doublé entre 2015 et 2019? Laisse ta démarche visible.
+    \end{enumerate}
 \end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -473,11 +484,11 @@ Quelques conseils pour réussir ton examen :
         \item Exprime à l'aide d'une expression littérale le périmètre de la salle de Stockholm.
         \item Calcule l'aire de la salle de Berlin. Laisse tes étapes visibles.
     \end{enumerate}
-    \end{transferer}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{transferer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=4]
-    Observe le pavage ci-dessous puis complète les égalités. 
+    Observe le pavage ci-dessous puis complète les égalités.
     %\TODO: image exame 2017 
 
 \end{transferer}
