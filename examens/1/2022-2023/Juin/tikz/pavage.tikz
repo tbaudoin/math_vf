@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+    \foreach \x in {0,...,4}
+    {
+        \foreach \y in {0,...,4}
+        {
+            \draw (\x,\y) circle (1pt);
+        }
+    }
+\end{tikzpicture}

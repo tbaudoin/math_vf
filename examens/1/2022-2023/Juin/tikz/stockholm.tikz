@@ -1,0 +1,17 @@
+\begin{tikzpicture}[baseline=(current bounding box.east)]
+    \tkzDefPoints{0/0/A, 4/-3/B,9/-3/C, 12/1/D, 9/4/E, 4/3/F}
+    \tkzDrawPolygon(A,B,C,D,E,F)
+    
+    \tkzMarkSegments[mark=|](F,E C,D)
+    \tkzMarkSegments[mark=||](A,F A,B B,C E,D)
+
+    \tkzLabelSegment[above](F,E){\(a+2b\)}
+    \tkzLabelSegment[below](B,C){\(2a+3b\)}
+    
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[above](D)
+    \tkzLabelPoints[above](E)
+
+\end{tikzpicture}

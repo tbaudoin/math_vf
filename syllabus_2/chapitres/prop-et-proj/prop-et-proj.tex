@@ -83,13 +83,13 @@ Ainsi, lorsque nous nous retrouvons face à un tableau, nous pouvons déterminer
               \(k\) =
         \item \begin{tblr}[t]{hlines, vlines, columns={c,1cm}, rows={m,1cm}}
                   \(x\) & 21 & 42 & 7 & 28 \\
-                  \(y\) & 15 & & & 20 \\
+                  \(y\) & 15 &    &   & 20 \\
               \end{tblr}
               \hspace{1cm}
               \(k\) =
         \item \begin{tblr}[t]{hlines, vlines, columns={c,1cm}, rows={m,1cm}}
-                  \(x\) & 18 & & 2 & 4 \\
-                  \(y\) & & 15 & & 6 \\
+                  \(x\) & 18 &    & 2 & 4 \\
+                  \(y\) &    & 15 &   & 6 \\
               \end{tblr}
               \hspace{1cm}
               \(k\) =
@@ -342,15 +342,24 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
 \begin{exercise}
     Ma voiture consomme, en moyenne, 4 litres de carburant pour \SI{100}{km}. Quelle distance pourrais-je parcourir avec un plein de 50 litres ?
 \end{exercise}
+\begin{solution}
+    \SI{1250}{km}
+\end{solution}
 
 \begin{exercise}
     Chez Colruyt, un lot de 4 bouteilles de vin est affiché à \SI{22}{euros}. On peut acheter les bouteilles à la pièce. \\
     Combien vais-je payer pour l'achat de 10 bouteilles ?
 \end{exercise}
+\begin{solution}
+    \SI{55}{euros}
+\end{solution}
 
 \begin{exercise}
     Pour une exposition, un groupe de 12 élèves a payé \SI{84}{euros}. Qu'auraient payé 17 élèves ?
 \end{exercise}
+\begin{solution}
+    \SI{119}{euros}
+\end{solution}
 
 \begin{exercise}
     Sur un plan à l'échelle \(1/\num{2000}\), un champ rectangulaire est représenté par un rectangle mesurant \SI{2}{cm} de long et \SI{1,4}{cm} de large.
@@ -359,6 +368,12 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
         \item Quelle est l'aire de ce champ (en mètres carrés) ?
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item \SI{40}{m} par \SI{28}{m}.
+        \item \SI{1120}{m^2}
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Pour télécharger 3 chansons sur internet, à une certaine époque, il fallait 1 minute.
@@ -376,10 +391,49 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
         \item  Calcule le nombre de chansons que tu pourrais télécharger, à la même vitesse, en une demi-heure.
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item
+              \begin{tblr}[t]{hlines, vlines, columns={c}, rows={m, 0.8cm}, row{1}={font=\bfseries}}
+                  Nombre de chansons & Durée du téléchargement \\
+                  360                & 120                     \\
+                  9                  & 3                       \\
+                  \num{1500}         & 500
+              \end{tblr}
+        \item 90 chansons
+    \end{enumerate}
+
+\end{solution}
 
 \begin{exercise}
-    Trace un semgent $[AT]$ de longueur quelconque. Ensuite, grâce à ce que tu as appris sur les projetions parallèles et sans rien mesurer, place le point $S$ tel que $|AS|=\dfrac{3}{4}\cdot|AT|$
+    Trace un segment $[AT]$ de longueur quelconque. Ensuite, grâce à ce que tu as appris sur les projetions parallèles et sans rien mesurer, place le point $S$ tel que $|AS|=\dfrac{3}{4}\cdot|AT|$
 \end{exercise}
+\begin{solution}
+    \begin{tikzpicture}[baseline=(current bounding box.north)]
+        \tkzDefPoints{0/0/A, 5/0/T}
+        \tkzDefPoint(-30:1){B}
+        \tkzDefPoint(-30:2){C}
+        \tkzDefPoint(-30:3){D}
+        \tkzDefPoint(-30:4){E}
+        \tkzDrawSegments(A,T A,E)
+        \tkzMarkSegments[mark=||](A,B B,C C,D D,E)
+        \tkzDrawLine(E,T)
+        \tkzDefLine[parallel=through B](E,T)
+        \tkzInterLL(B,tkzPointResult)(A,T)
+        \tkzGetPoint{B'}
+        \tkzDrawLine(B,B')
+        \tkzDefLine[parallel=through C](E,T)
+        \tkzInterLL(C,tkzPointResult)(A,T)
+        \tkzGetPoint{C'}
+        \tkzDrawLine(C,C')
+        \tkzDefLine[parallel=through D](E,T)
+        \tkzInterLL(D,tkzPointResult)(A,T)
+        \tkzGetPoint{D'}
+        \tkzDrawLine(D,D')
+        \tkzLabelPoints[above](A,T)
+        \tkzLabelPoint[above](D'){\(S\)}
+    \end{tikzpicture}
+\end{solution}
 
 \begin{exercise}
     Dans chaque situation, les figures \(F\) et \(F'\) sont semblables. Sans mesurer, détermine la valeur de \(x\).
@@ -389,6 +443,13 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
         \item \includegraphics[valign=t,width=.9\linewidth]{img/semblable03.png}
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item \(15\)
+        \item \(10,5\)
+        \item \(14\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Détermine les valeurs des lettres entourées dans le tableau ci-dessous si tu sais que les solides $S$ et $S'$ sont semblables.\\
@@ -408,11 +469,20 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
         \end{tblr}
     \end{center}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item[\circled{A}] \(30\)
+        \item[\circled{B}] \(50\)
+        \item[\circled{C}] \(\num{500}\)
+    \end{enumerate}
+\end{solution}
 
 \begin{exercise}
     Un automobiliste n'échappe pas aux lois de la physique. Ainsi la force d'impact d'un véhicule lancé à \SI{120}{km/h} est 16 fois plus grande que celle d'un véhicule qui roule à \SI{30}{km/h}. La force d'impact d'un véhicule est-elle proportionnelle à sa vitesse ? Explique.
 \end{exercise}
-
+\begin{solution}
+    Non la force d'impact d'un véhicule n'est pas proportionnelle à sa vitesse. Pour passer de \SI{30}{km/h} à \SI{120}{km/h}, la vitesse est multipliée par 4 alors que la force d'impact est multiplié par 16 et non par 4.
+\end{solution}
 \begin{exercise}
     \begin{enumerate}
         \item Ce graphique illustre-t-il une situation de proportionnalité ? Justifie.
@@ -422,11 +492,25 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
         \item La promenade dure \SI{3}{h} et s'effectue à vitesse constante. Détermine les valeurs des lettres entourées dans le tableau suivant.
               \begin{center}
                   \begin{tblr}{hlines, vlines, rows={1cm, m},columns={1cm,c},column{1}={3cm, l, font=\bfseries}}
-                      Distance (km) & \circled{A} & 40 & \circled{B} \\
-                      Durée (min)   & 45          & \circled{C}   & 165
+                      Distance (km) & \circled{A} & 40          & \circled{B} \\
+                      Durée (min)   & 45          & \circled{C} & 165
                   \end{tblr}
               \end{center}
 
     \end{enumerate}
 \end{exercise}
+\begin{solution}
+    \begin{enumerate}
+        \item Oui, c'est une droite qui passe par l'origine du repère.
+        \item
+              \begin{enumerate}
+                  \item[\circled{A}] \(15\)
+                  \item[\circled{B}] \(120\)
+                  \item[\circled{C}] \(55\)
+              \end{enumerate}
+    \end{enumerate}
+\end{solution}
+\newpage
+\printsolutions
+
 \end{document}

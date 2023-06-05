@@ -102,7 +102,11 @@ counter = exercise
 % \lohead{Nom :\smallbreak Prénom :\smallbreak Classe : \Classe}
 % \rohead{\No~\fbox{\phantom{XX}}\smallbreak ~\smallbreak \Date}
 
-\setlength{\textheight}{700pt}
+\setlength{\textheight}{700pt}		
+
+\newcommand{\Letter}[1]{\@Alph{#1}}
+\newcounter{mycounter}
+\setcounter{mycounter}{1}
 
 \begin{document}
 \raggedbottom
@@ -364,7 +368,7 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
-    Trace un rectangle \(EXAM\) si tu sais que ses diagonales mesurent \SI{5}{cm} et que l’angle aigu entre ses diagonales est de \ang{40}.  
+    Trace un rectangle \(EXAM\) si tu sais que ses diagonales mesurent \SI{5}{cm} et que l’angle aigu entre ses diagonales est de \ang{40}.
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -400,7 +404,9 @@ Quelques conseils pour réussir ton examen :
         \item Dans la première colonne, indique s'il s'agit d'une translation (T), d'une symétrie centrale (SC) ou d'une symétrie orthogonale (SO).
         \item Dans la deuxième colonne, cite l'élément caractéristique de cette transformation du plan.
     \end{enumerate}
-    %TODO: image examen 2017
+    \begin{center}
+        \includegraphics[width=\linewidth]{tikz/figure001.tikz}
+    \end{center}
     \begin{center}
         \begin{tblr}{
                 hlines,
@@ -422,7 +428,9 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=3]
     Construis ce trapèze avec les dimensions réelles.
-    %\TODO: image de l'examen de 2017   
+    \begin{center}
+        \includegraphics{tikz/figure002.tikz}
+    \end{center}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -479,7 +487,11 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=4]
     Voici le plan de deux salles de spectacle. Réponds aux questions.
-    %\TODO: image examen 2017 
+    \begin{center}
+        \includegraphics[width=.49\linewidth]{tikz/stockholm.tikz}
+        \hfill
+        \includegraphics[width=.49\linewidth]{tikz/berlin.tikz}
+    \end{center}
     \begin{enumerate}
         \item Exprime à l'aide d'une expression littérale le périmètre de la salle de Stockholm.
         \item Calcule l'aire de la salle de Berlin. Laisse tes étapes visibles.
@@ -489,56 +501,8 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=4]
     Observe le pavage ci-dessous puis complète les égalités.
-    %\TODO: image exame 2017 
-
+    \begin{center}
+        \includegraphics[width=0.5\linewidth]{tikz/pavage.tikz}
+    \end{center}
 \end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{transferer}[points=5]
-%\end{transferer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

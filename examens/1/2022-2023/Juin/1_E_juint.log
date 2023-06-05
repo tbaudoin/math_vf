@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.11)  1 JUN 2023 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.11)  5 JUN 2023 07:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1381,72 +1381,73 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \c@numberofappliquers=\count427
 \c@soltransferer=\count428
 \c@numberoftransferers=\count429
+\c@mycounter=\count430
 \tikzscale@accuracy=\skip86
-\g_xsim_collection_exercise_in_all exercises_int=\count430
-\c@totalexerciseinall exercises=\count431
-\g_xsim_collection_connaitre_in_all exercises_int=\count432
-\c@totalconnaitreinall exercises=\count433
-\g_xsim_collection_appliquer_in_all exercises_int=\count434
-\c@totalappliquerinall exercises=\count435
-\g_xsim_collection_transferer_in_all exercises_int=\count436
-\c@totaltransfererinall exercises=\count437
-LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 106.
+\g_xsim_collection_exercise_in_all exercises_int=\count431
+\c@totalexerciseinall exercises=\count432
+\g_xsim_collection_connaitre_in_all exercises_int=\count433
+\c@totalconnaitreinall exercises=\count434
+\g_xsim_collection_appliquer_in_all exercises_int=\count435
+\c@totalappliquerinall exercises=\count436
+\g_xsim_collection_transferer_in_all exercises_int=\count437
+\c@totaltransfererinall exercises=\count438
+LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 111.
  (/usr/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
 ) (./1_E_juint.aux)
 \openout1 = `1_E_juint.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 106.
-LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 106.
+LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 111.
+LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 111.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpl.fd
 File: omljkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 106.
-LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 106.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 111.
+LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 111.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkpl.fd
 File: omsjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 106.
-LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 106.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 111.
+LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 111.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpl.fd
 File: omxjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 106.
-LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 106.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 111.
+LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 111.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkplexa.fd
 File: ujkplexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Info: Redefining \degres on input line 106.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Info: Redefining \degres on input line 111.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 106.
+(french.ldf)             reported on input line 111.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 106.
-LaTeX Info: Redefining \up on input line 106.
-LaTeX Info: Redefining \microtypecontext on input line 106.
-Package microtype Info: Applying patch `item' on input line 106.
-Package microtype Info: Applying patch `toc' on input line 106.
-Package microtype Info: Applying patch `eqnum' on input line 106.
-Package microtype Info: Applying patch `footnote' on input line 106.
-Package microtype Info: Applying patch `verbatim' on input line 106.
+(french.ldf)             reported on input line 111.
+LaTeX Info: Redefining \up on input line 111.
+LaTeX Info: Redefining \microtypecontext on input line 111.
+Package microtype Info: Applying patch `item' on input line 111.
+Package microtype Info: Applying patch `toc' on input line 111.
+Package microtype Info: Applying patch `eqnum' on input line 111.
+Package microtype Info: Applying patch `footnote' on input line 111.
+Package microtype Info: Applying patch `verbatim' on input line 111.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 106.
+LaTeX Info: Redefining \showhyphens on input line 111.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1457,19 +1458,19 @@ Package microtype Info: Loading generic protrusion settings for font family
  (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 106.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 111.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count438
+\scratchcounter=\count439
 \scratchdimen=\dimen400
 \scratchbox=\box173
-\nofMPsegments=\count439
-\nofMParguments=\count440
+\nofMPsegments=\count440
+\nofMParguments=\count441
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count441
+\MPscratchCnt=\count442
 \MPscratchDim=\dimen401
-\MPnumerator=\count442
-\makeMPintoPDFobject=\count443
+\MPnumerator=\count443
+\makeMPintoPDFobject=\count444
 \everyMPtoPDFconversion=\toks47
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1482,7 +1483,7 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 <img/entete.pdf, id=29, 803.0pt x 50.1875pt>
 File: img/entete.pdf Graphic file (type pdf)
 <use img/entete.pdf>
-Package pdftex.def Info: img/entete.pdf  used on input line 112.
+Package pdftex.def Info: img/entete.pdf  used on input line 117.
 (pdftex.def)             Requested size: 448.13095pt x 28.00906pt.
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1491,10 +1492,10 @@ Package pdftex.def Info: img/entete.pdf  used on input line 112.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 153.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 158.
  (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)
 > Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 153.
+LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -1502,35 +1503,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 153.
+LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omljkpss.fd
 File: omljkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 153.
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 153.
+LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/omxjkpss.fd
 File: omxjkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 153.
+LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpssmia.fd
 File: ujkpssmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 153.
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 153.
+LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsssyb.fd
 File: ujkpsssyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 153.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 153.
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 158.
  (/usr/share/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 ) [1
@@ -1539,8 +1540,48 @@ File: ujkpexa.fd 2006/08/15 v1.0
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on input line 207.
- (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd) [1{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}]
+\l__xsim_file_contents_iow=\write4
+\openout4 = `xsim/1_E_juint-connaitre-1-exercise-body.tex'.
+
+ (./xsim/1_E_juint-connaitre-1-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-connaitre-2-exercise-body.tex'.
+
+ (./xsim/1_E_juint-connaitre-2-exercise-body.tex
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on input line 15.
+ (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd))
+\openout4 = `xsim/1_E_juint-connaitre-3-exercise-body.tex'.
+
+ (./xsim/1_E_juint-connaitre-3-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-connaitre-4-exercise-body.tex'.
+
+ (./xsim/1_E_juint-connaitre-4-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-connaitre-5-exercise-body.tex'.
+
+ (./xsim/1_E_juint-connaitre-5-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-connaitre-6-exercise-body.tex'.
+
+ (./xsim/1_E_juint-connaitre-6-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-connaitre-7-exercise-body.tex'.
+
+ (./xsim/1_E_juint-connaitre-7-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-connaitre-8-exercise-body.tex'.
+
+ (./xsim/1_E_juint-connaitre-8-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-appliquer-9-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-9-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-appliquer-10-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-10-exercise-body.tex [1{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{/usr/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}])
+\openout4 = `xsim/1_E_juint-appliquer-11-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-11-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-appliquer-12-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-12-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-appliquer-13-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-13-exercise-body.tex
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1557,12 +1598,19 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on in
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
+)
+\openout4 = `xsim/1_E_juint-appliquer-14-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-14-exercise-body.tex
 <img/triangle.png, id=49, 178.86826pt x 164.41425pt>
 File: img/triangle.png Graphic file (type png)
 <use img/triangle.png>
-Package pdftex.def Info: img/triangle.png  used on input line 329.
+Package pdftex.def Info: img/triangle.png  used on input line 13.
 (pdftex.def)             Requested size: 284.52756pt x 261.57042pt.
- [2]
+ [2])
+\openout4 = `xsim/1_E_juint-appliquer-15-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-15-exercise-body.tex
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1571,18 +1619,34 @@ Package pdftex.def Info: img/triangle.png  used on input line 329.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
- [3 <./img/triangle.png>]
+ [3 <./img/triangle.png>])
+\openout4 = `xsim/1_E_juint-appliquer-16-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-16-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-appliquer-17-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-17-exercise-body.tex)
+\openout4 = `xsim/1_E_juint-appliquer-18-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-18-exercise-body.tex
 <img/graphe.png, id=58, 314.67563pt x 267.24844pt>
 File: img/graphe.png Graphic file (type png)
 <use img/graphe.png>
-Package pdftex.def Info: img/graphe.png  used on input line 383.
+Package pdftex.def Info: img/graphe.png  used on input line 12.
 (pdftex.def)             Requested size: 314.67485pt x 267.24779pt.
- [4]
+ [4])
+\openout4 = `xsim/1_E_juint-appliquer-19-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-19-exercise-body.tex
 <img/trans.png, id=62, 147.68217pt x 128.82913pt>
 File: img/trans.png Graphic file (type png)
 <use img/trans.png>
-Package pdftex.def Info: img/trans.png  used on input line 392.
+Package pdftex.def Info: img/trans.png  used on input line 15.
 (pdftex.def)             Requested size: 147.6818pt x 128.8288pt.
+)
+\openout4 = `xsim/1_E_juint-appliquer-20-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-20-exercise-body.tex (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) [5 <./img/graphe.png> <./img/trans.png>]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1591,9 +1655,19 @@ Package pdftex.def Info: img/trans.png  used on input line 392.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
- [5 <./img/graphe.png> <./img/trans.png>]
+)
+\openout4 = `xsim/1_E_juint-appliquer-21-exercise-body.tex'.
+
+ (./xsim/1_E_juint-appliquer-21-exercise-body.tex (./tikz/figure002.tikz))
+\openout4 = `xsim/1_E_juint-transferer-22-exercise-body.tex'.
+
+ (./xsim/1_E_juint-transferer-22-exercise-body.tex
 LaTeX Font Info:    Faking \texteuro for font family jkpss
-(Font)              in TS1 encoding on input line 431.
+(Font)              in TS1 encoding on input line 11.
+)
+\openout4 = `xsim/1_E_juint-transferer-23-exercise-body.tex'.
+
+ (./xsim/1_E_juint-transferer-23-exercise-body.tex [6]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1602,36 +1676,40 @@ LaTeX Font Info:    Faking \texteuro for font family jkpss
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-<img/cannettes.png, id=69, 141.52875pt x 99.9735pt>
+<img/cannettes.png, id=72, 141.52875pt x 99.9735pt>
 File: img/cannettes.png Graphic file (type png)
 <use img/cannettes.png>
-Package pdftex.def Info: img/cannettes.png  used on input line 465.
+Package pdftex.def Info: img/cannettes.png  used on input line 31.
 (pdftex.def)             Requested size: 141.5284pt x 99.97324pt.
- [6 <./img/cannettes.png>]
-<img/voitures.png, id=75, 329.5512pt x 264.0264pt>
+ [7 <./img/cannettes.png>])
+\openout4 = `xsim/1_E_juint-transferer-24-exercise-body.tex'.
+
+ (./xsim/1_E_juint-transferer-24-exercise-body.tex
+<img/voitures.png, id=78, 329.5512pt x 264.0264pt>
 File: img/voitures.png Graphic file (type png)
 <use img/voitures.png>
-Package pdftex.def Info: img/voitures.png  used on input line 476.
+Package pdftex.def Info: img/voitures.png  used on input line 12.
 (pdftex.def)             Requested size: 329.55037pt x 264.02574pt.
+)
+\openout4 = `xsim/1_E_juint-transferer-25-exercise-body.tex'.
 
+ (./xsim/1_E_juint-transferer-25-exercise-body.tex (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) [8 <./img/voitures.png>])
+\openout4 = `xsim/1_E_juint-transferer-26-exercise-body.tex'.
 
-Package xsim Warning: Exercise properties may have changed. Rerun to get them
-(xsim)                synchronized.
-
-[7 <./img/voitures.png>] (./1_E_juint.aux) ) 
+ (./xsim/1_E_juint-transferer-26-exercise-body.tex (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz)) [9] (./1_E_juint.aux) ) 
 Here is how much of TeX's memory you used:
- 46566 strings out of 476025
- 1091281 string characters out of 5796532
+ 46983 strings out of 476025
+ 1094154 string characters out of 5796532
  1883388 words of memory out of 5000000
- 66079 multiletter control sequences out of 15000+600000
+ 66368 multiletter control sequences out of 15000+600000
  586105 words of font info for 206 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,15n,106p,10691b,803s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,15n,106p,10691b,1489s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/share/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_juint.pdf (9 pages, 190608 bytes).
+Output written on 1_E_juint.pdf (11 pages, 195708 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  47243 words of extra memory for PDF output out of 51595 (max. 10000000)
 
