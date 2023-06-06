@@ -10,13 +10,14 @@
 	path=xsim
 }
 \usepackage{ifthen}
+\usepackage{tcolorbox}
 \usepackage{fontawesome5}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage[locale=FR]{siunitx}
 \usepackage[explicit]{titlesec}
 \usepackage{ulem}
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
 \setlist[enumerate]{label=\textbf{\alph*)}, itemsep=1ex}
@@ -57,7 +58,7 @@ Classe : \\
 \normalsize
 
 \begin{center}
-	\textbf{Sur feuille annexe}
+	\textbf{Sur feuille annexe, à part si l'énoncé en dit autrement}
 \end{center}
 
 \begin{exercise}
@@ -238,7 +239,6 @@ Calcule les valeurs numériques des expressions suivantes, si tu sais que \(a=4\
 			\(y\) & & 28 & 35 & 49 \\
 		\end{tblr}
 	\end{center}
-	
 \end{exercise}
 
 \begin{exercise}
@@ -266,6 +266,43 @@ Calcule les valeurs numériques des expressions suivantes, si tu sais que \(a=4\
 \end{exercise}
 
 \begin{exercise}
+    Décode. 
+    \begin{enumerate}[cols=3]
+        \item $5+\left(-2\right)$
+        \item $8^3+3$ 
+        \item $t_{\overrightarrow{v}} ([AC])= [A'C']$
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    \emph{(Sur cette feuille)} Dans le repère suivant \dots \\
+    \begin{enumerate}
+        \item [\label=] \includegraphics[]{img/repere.png}
+        \item Détermine les coordonnées des points suivants.
+        \begin{enumerate}[cols=3, label=]
+            \item $A$
+            \item $B$
+            \item $C$
+            \item $D$
+            \item $E$
+            \item $F$
+            \item $G$
+            \item $H$
+        \end{enumerate}
+        \item Place les points dont voici les coordonnées.
+        \begin{enumerate}[cols=6, label=]
+            \item $X\left(2;5\right)$
+            \item $Y\left(-3;2\right)$
+            \item $Z\left(4:-3\right)$
+            \item $W\left(-2;-1\right)$
+            \item $T\left(4;0\right)$
+            \item $U\left(0;-3\right)$
+        \end{enumerate}
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
 	Réduis au maximum les expressions suivantes. 
 	\begin{enumerate}[cols=2]
 		\item \(-a + (-b – c )\)
@@ -290,10 +327,43 @@ Calcule les valeurs numériques des expressions suivantes, si tu sais que \(a=4\
 \end{exercise}
 
 \begin{exercise}
-	Construis un parallélogramme $ABCD$ sachant que $|AC|=$ 6 cm, $|BD|=$ 4cm et $ \widehat{DMA} = 70 \degres $ \\
-	\includegraphics{img/parallelogramme.png}
+    Construis un parallélogramme $ABCD$ si tu sais que $|AC|=$ \SI{6}{cm}, $|BD|=$ \SI{4}{cm} , $M$ est l'intersection des diagonales et $|\widehat{DMA}| = 70\degres $.
 \end{exercise}
 
+\begin{exercise}
+    Calcule. Laisse tes étapes visibles.
+    \begin{enumerate}[cols=2]
+        \item $2^2+5^2$
+        \item $3^3-3^2$
+        \item $2^2+5^3$
+        \item $-2\cdot 4^2$
+        \item $2 + \left(5+\left(-2\right)\right) \cdot 3$
+        \item $5^2 - 30$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Complète les phrases suivantes par les mots proposés : hauteur, médiane, médiatrice, bissectrice, diagonale.
+        \begin{center}
+           \includegraphics[width=5cm]{img/droitesrema.jpg} 
+        \end{center}
+    \begin{enumerate}
+        \item La droite $BD$ est une \ldots du rectangle $ABCD$.
+        \item La droite $CH$ est une \ldots du triangle $BCH$.
+        \item La demi-droite $ [HT $ est une \ldots du triangle $CHD$.
+        \item Le segment de droite $[GB]$ est une \ldots du triangle $ABD$.
+        \item La droite $EF$ est une \ldots du triangle $DTH$.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    \emph{(Sur cette feuille)} Trace l'image des points $A, B$ et $C$ par la symétrie orthogonale d'axe $d$. Laisse tes constructions visibles.
+    \begin{center}
+        \includegraphics[]{img/symportho.png}
+    \end{center}
+\end{exercise}
+
+\newpage
 \begin{exercise}
 	\emph{(Sur cette feuille)} Complète les suites de nombres suivantes. 
 	\begin{center}
@@ -346,8 +416,6 @@ Calcule les valeurs numériques des expressions suivantes, si tu sais que \(a=4\
 			& 83 & & 10 & 27 & \(10n - 7\)
 		\end{tblr}
 	\end{center}
-
-
 \end{exercise}
 
 \begin{exercise}
@@ -363,11 +431,6 @@ Calcule les valeurs numériques des expressions suivantes, si tu sais que \(a=4\
 		\item 2048
 		\item 90
 	\end{enumerate}
-\end{exercise}
-
-\begin{exercise}
-	Range les nombres suivants par ordre croissant. \\
-	\(-2,3\) \hfill 4 \hfill \(-3,2\) \hfill 4,5 \hfill \(-3,5\) \hfill \(-6,5\) \hfill 0 \hfill 1,78
 \end{exercise}
 
 \begin{exercise}
@@ -389,6 +452,11 @@ Calcule les valeurs numériques des expressions suivantes, si tu sais que \(a=4\
 \end{exercise}
 
 \begin{exercise}
+	Range les nombres suivants par ordre croissant. \\
+	\(-2,3\) \hfill 4 \hfill \(-3,2\) \hfill 4,5 \hfill \(-3,5\) \hfill \(-6,5\) \hfill 0 \hfill 1,78
+\end{exercise}
+
+\begin{exercise}
 	Que vaut \(m\) dans les équations suivantes ? Utilise les chaines d’opérations et laisse ta démarche visible.
 	\begin{enumerate}[cols=2]
 		\item \(4m+2=82\)
@@ -398,6 +466,20 @@ Calcule les valeurs numériques des expressions suivantes, si tu sais que \(a=4\
 		\item \(3m + 7 = 13\)
 		\item \(40=7m + 5\)
 	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Invente des coordonnées pour le point $P$ si tu sais que son ordonnée est égale à l'opposé de son abscisse, augmenté de 1.
+\end{exercise}
+
+\begin{exercise}
+    \emph{(Sur cette feuille)} Complète les couples de coordonnées suivantes pour que l'abscisse soit toujours le consécutif de l'ordonnée. 
+    \begin{enumerate}[cols=4, label=]
+        \item $A\left(5; \ldots\right)$
+        \item $M\left(-2; \ldots \right)$
+        \item $I\left(\ldots ; -8\right)$
+        \item $S\left(\ldots ; 0\right)$
+    \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
@@ -503,8 +585,13 @@ Maria compte faire ce cocktail pour les 12 personnes présentes à la fête.\\  
 \begin{multicols}{2}
 	\begin{exercise}
 	Voici un programme de calcul dont le résultat est -15 . Retrouve le nombre de départ. \\ Justifie ta réponse. \\
-
-	\includegraphics{img/nombreatrouver.png}
+	\begin{center}
+        \begin{minipage}{6cm}
+        \begin{tcolorbox}
+            Choisis un nombre. \\ Ajoute-lui 7. \\ Multiplie le résultat par 2. \\ Enlève 6 au résultat. 
+         \end{tcolorbox}
+     \end{minipage} 
+    \end{center}
 \end{exercise}
 
 \begin{exercise}
@@ -707,6 +794,16 @@ manquait 12€. Calcule le prix de vente d’un CD. Laisse ta démarche visible.
 \end{exercise}
 
 \begin{exercise}
+    Cite les nombres naturels qui sont \dots
+    \begin{enumerate}[cols=2]
+        \item diviseurs de 30
+        \item multiples impairs de 7 inférieurs à 50
+        \item multiples pairs de 3 inférieurs à 25
+        \item diviseurs de 100 multiples de 5
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
 	Une enquête a été réalisée au sein d’un école pour connaître le temps hebdomadaire moyen consacré au sport. Voici les résultats obtenus (en minutes) pour les six années. \\
 	1ère année : 160 \hfill 2ème année : 310 \hfill 3ème année : 330 \hfill 4ème année : 120 \hfill 5ème année : 150 \hfill 6ème année : 70 \\
 	Représente cette situation à l’aide d’un diagramme en bâtonnets.
@@ -724,7 +821,16 @@ manquait 12€. Calcule le prix de vente d’un CD. Laisse ta démarche visible.
 	Trace un pentagone \(PROUT\). Effectue ensuite sa translation de vecteur \(\overrightarrow{UT}\).
 \end{exercise}
 
-\newpage
+\begin{exercise}
+    \emph{(Sur cette feuille)} Complète les couples de coordonnées suivantes pour que l'abscisse soit toujours le consécutif de l'ordonnée. 
+    \begin{enumerate}[cols=4, label=]
+        \item $A\left(5; \ldots\right)$
+        \item $M\left(-2; \ldots \right)$
+        \item $I\left(\ldots ; -8\right)$
+        \item $S\left(\ldots ; 0\right)$
+    \end{enumerate}
+\end{exercise}
+
 \begin{exercise}
 	Exprime en une expression littérale réduite le périmètre et l’aire des figures ci-dessous. \\  Détermine, ensuite, le périmètre de chaque figure si \(x=3\).\\
 	\includegraphics{img/PetA.jpg}
