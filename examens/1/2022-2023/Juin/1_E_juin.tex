@@ -7,6 +7,8 @@
 \usepackage[sfmath, light]{kpfonts} %police
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{mathtools}
+\newcommand{\abs}[1]{\mid#1\mid}
+
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{enumitem}
@@ -39,7 +41,8 @@ after = \end{multicols}}
 
 \DeclareExerciseEnvironmentTemplate{interrogation}
 {%
-    {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
+    \colorbox{black}{\color{white}\bfseries\GetExerciseProperty{counter}}
+    % {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
     \GetExercisePropertyT{points}{\marginpar{\qquad/\bfseries\PropertyValue}}
     \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue}
 }%
@@ -129,17 +132,17 @@ counter = exercise
     }%
     \hline
     % cell1
-    Examen de mathématiques                 &  &                                \\
+    Examen de mathématiques                 &   &                               \\
     % cell2
-    Juin 2023                               &  &                                \\
+    Juin 2023                               &   &                               \\
     \hline
     % cell3
-    Nom :                                   &  & Classe :                       \\
+    Nom :                                   &   & Classe :                      \\
     % cell4
-    Prénom :                                &  & Numéro :                       \\
+    Prénom :                                &   & Numéro :                      \\
     \hline
     % cell5
-    Professeur : Baudoin, Debroux, Janssens &  &                                \\
+    Professeur : Baudoin, Debroux, Janssens &   &                               \\
     % cell6
     Date et heure : Mercredi 28 juin 2023 de 8 h 20 à 10 h 30                   \\
     % cell7
@@ -149,15 +152,15 @@ counter = exercise
     \hline
     % cell9
     C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}
-    &
+                                            &
     C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}
-    &
+                                            &
     C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}
     \\
     Total :
     \qquad/\TotalExerciseGoal{points}{}{}
     \quad\faIcon{arrow-right}\quad
-    \qquad/30                               &  &                                \\
+    \qquad/30                               &   &                               \\
     \hline
 \end{tblr}%
 \vspace{\smallskipamount}
@@ -190,9 +193,8 @@ Quelques conseils pour réussir ton examen :
     \begin{enumerate}
         \item 24 est un diviseur de 12.
         \item \(-3\) est un nombre naturel.
-              % FIXME: bizarre dans un vrai ou faux.
         \item Dans un repère cartésien, l'axe vertical s'appelle l'axe des abscisses.
-        \item Pour calculer \SI{7}{\%} d'une facture, on multiplie ce montant par 0,7.
+        \item Pour calculer \SI{7}{\%} d'un nombre, on le multiplie par 0,7.
         \item Le nombre de dents d'un enfant est proportionnel à son âge.
     \end{enumerate}
 \end{connaitre}
@@ -200,17 +202,42 @@ Quelques conseils pour réussir ton examen :
 \begin{connaitre}[points=6]
     Coche la ou les bonnes réponses.
     \begin{enumerate}
-        \item Sont des nombres premiers.
+        \item Quels sont les nombres qui sont premiers ?
               \begin{qcm}
-                  \item A
-                  \item B
-                  \item C
+                  \item 12
+                  \item 1
+                  \item 7
               \end{qcm}
-        \item Dans une translation, l'élément caractéristique est
+        \item Quel est l'élément caractéristique d'une translation ?
+              \begin{qcm}
+                  \item Le vecteur
+                  \item L'axe de symétrie
+                  \item Le centre de symétrie
+              \end{qcm}
         \item Quels sont les nombres carrés ?
-        \item Une droite qui partage un segment en deux parts égales, perpendiculairement, s'appelle une \dots
-        \item Un triangle ayant trois côtés de longueurs différentes est un triangle \dots
-        \item Des angles supplémentaires sont deux angles tels que \dots
+              \begin{qcm}
+                  \item 30
+                  \item 25
+                  \item 50
+              \end{qcm}
+        \item Comment s'appelle une droite qui partage un segment en deux parts égales, perpendiculairement ?
+              \begin{qcm}
+                  \item Une médiane
+                  \item Une médiatrice
+                  \item Une bissectrice
+              \end{qcm}
+        \item Quel nom donne-t-on à un triangle ayant trois côtés de longueurs différentes ?
+              \begin{qcm}
+                  \item Isocèle
+                  \item Équilatéral
+                  \item Scalène
+              \end{qcm}
+        \item \(\widehat{A}\) et \(\widehat{B}\) sont deux angles supplémentaires. Quelle égalité traduit cette proposition ?
+        \begin{qcm}
+            \item \(\abs{\widehat{A}} + \abs{\widehat{B}} = \ang{180}\)
+            \item \(\abs{\widehat{A}} +  \abs{\widehat{B}} = \ang{90}\)
+            \item \(\abs{\widehat{A}} \cdot \abs{\widehat{B}} = \ang{180}\)
+        \end{qcm}
         \item \(-3 \cdot 2 =\)
     \end{enumerate}
 \end{connaitre}
@@ -523,4 +550,22 @@ Quelques conseils pour réussir ton examen :
         \end{enumerate}
     \end{minipage}
 \end{transferer}
+
+\begin{appliquer}[points=1]
+    Donne l'ensemble des diviseurs de 100.
+\end{appliquer}
+
+\begin{connaitre}[points=2]
+    Cite :
+    \begin{enumerate}
+        \item Deux nombres premiers entre eux
+        \item Deux multiples de 4 consécutifs
+        \item Un nombre multiple de 4 et de 7.
+        \item Trois nombres premiers.
+    \end{enumerate}
+\end{connaitre}
+
+\begin{appliquer}[points=1]
+    Décompose 360 en un produit de facteurs premiers.
+\end{appliquer}
 \end{document}
