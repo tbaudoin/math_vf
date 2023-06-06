@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  6 JUN 2023 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  6 JUN 2023 17:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1669,16 +1669,6 @@ File: img/repere.png Graphic file (type png)
 <use img/repere.png>
 Package pdftex.def Info: img/repere.png  used on input line 13.
 (pdftex.def)             Requested size: 292.84334pt x 225.84319pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-[]
- []
-
-
-Overfull \hbox (3.71748pt too wide) in paragraph at lines 30--31
-\OML/jkpss/m/it/10 W []$ 
- []
-
 )
 \openout4 = `xsim/revisions_juin-exercise-16-exercise-body.tex'.
 
@@ -1706,10 +1696,10 @@ Missing character: There is no � in font jkpssmn7t!
 )
 \openout4 = `xsim/revisions_juin-exercise-17-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-17-exercise-body.tex)
+ (./xsim/revisions_juin-exercise-17-exercise-body.tex) [4 <./img/repere.png>]
 \openout4 = `xsim/revisions_juin-exercise-18-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-18-exercise-body.tex [4 <./img/repere.png>])
+ (./xsim/revisions_juin-exercise-18-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-19-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-19-exercise-body.tex
@@ -1811,13 +1801,7 @@ Overfull \hbox (48.62335pt too wide) in paragraph at lines 60--61
  (./xsim/revisions_juin-exercise-25-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-26-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-26-exercise-body.tex)
-\openout4 = `xsim/revisions_juin-exercise-27-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-27-exercise-body.tex)
-\openout4 = `xsim/revisions_juin-exercise-28-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-28-exercise-body.tex
+ (./xsim/revisions_juin-exercise-26-exercise-body.tex
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1843,17 +1827,28 @@ Overfull \hbox (48.62335pt too wide) in paragraph at lines 60--61
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 )
+\openout4 = `xsim/revisions_juin-exercise-27-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-27-exercise-body.tex)
+\openout4 = `xsim/revisions_juin-exercise-28-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-28-exercise-body.tex
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on input line 11.
+ (c:/texlive/2021/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd))
 \openout4 = `xsim/revisions_juin-exercise-29-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-29-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-30-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-30-exercise-body.tex
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on input line 11.
- (c:/texlive/2021/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd) [7])
+ (./xsim/revisions_juin-exercise-30-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-31-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-31-exercise-body.tex)
+ (./xsim/revisions_juin-exercise-31-exercise-body.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+[7])
 \openout4 = `xsim/revisions_juin-exercise-32-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-32-exercise-body.tex
@@ -1865,45 +1860,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 \openout4 = `xsim/revisions_juin-exercise-33-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-33-exercise-body.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-)
-\openout4 = `xsim/revisions_juin-exercise-34-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-34-exercise-body.tex
 <img/rectanglecarre.jpg, id=68, 234.1247pt x 78.2925pt>
 File: img/rectanglecarre.jpg Graphic file (type jpg)
 <use img/rectanglecarre.jpg>
 Package pdftex.def Info: img/rectanglecarre.jpg  used on input line 12.
 (pdftex.def)             Requested size: 234.12411pt x 78.2923pt.
 )
-Overfull \hbox (12.64017pt too wide) in paragraph at lines 11--600
+Overfull \hbox (12.64017pt too wide) in paragraph at lines 11--592
 [] 
  []
 
+\openout4 = `xsim/revisions_juin-exercise-34-exercise-body.tex'.
+
+(./xsim/revisions_juin-exercise-34-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-35-exercise-body.tex'.
 
-(./xsim/revisions_juin-exercise-35-exercise-body.tex)
+ (./xsim/revisions_juin-exercise-35-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-36-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-36-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-37-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-37-exercise-body.tex)
+ (./xsim/revisions_juin-exercise-37-exercise-body.tex
+<img/etang.png, id=69, 85.06781pt x 97.86563pt>
+File: img/etang.png Graphic file (type png)
+<use img/etang.png>
+Package pdftex.def Info: img/etang.png  used on input line 19.
+(pdftex.def)             Requested size: 85.0676pt x 97.86537pt.
+ [8 <./img/rectanglecarre.jpg> <./img/etang.png>])
 \openout4 = `xsim/revisions_juin-exercise-38-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-38-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-39-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-39-exercise-body.tex [8 <./img/rectanglecarre.jpg>]
-<img/etang.png, id=74, 85.06781pt x 97.86563pt>
-File: img/etang.png Graphic file (type png)
-<use img/etang.png>
-Package pdftex.def Info: img/etang.png  used on input line 19.
-(pdftex.def)             Requested size: 85.0676pt x 97.86537pt.
-)
+ (./xsim/revisions_juin-exercise-39-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-40-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-40-exercise-body.tex)
@@ -1912,27 +1902,7 @@ Package pdftex.def Info: img/etang.png  used on input line 19.
  (./xsim/revisions_juin-exercise-41-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-42-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-42-exercise-body.tex)
-\openout4 = `xsim/revisions_juin-exercise-43-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-43-exercise-body.tex)
-\openout4 = `xsim/revisions_juin-exercise-44-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-44-exercise-body.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
-
- []
-
-)
-\openout4 = `xsim/revisions_juin-exercise-45-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-45-exercise-body.tex)
-\openout4 = `xsim/revisions_juin-exercise-46-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-46-exercise-body.tex)
-\openout4 = `xsim/revisions_juin-exercise-47-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-47-exercise-body.tex [9 <./img/etang.png>]
+ (./xsim/revisions_juin-exercise-42-exercise-body.tex
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1951,60 +1921,77 @@ Overfull \hbox (7.77061pt too wide) in paragraph at lines 28--29
  []
 
 )
-\openout4 = `xsim/revisions_juin-exercise-48-exercise-body.tex'.
+\openout4 = `xsim/revisions_juin-exercise-43-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-48-exercise-body.tex
+ (./xsim/revisions_juin-exercise-43-exercise-body.tex)
+\openout4 = `xsim/revisions_juin-exercise-44-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-44-exercise-body.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+
+ []
+
+)
+\openout4 = `xsim/revisions_juin-exercise-45-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-45-exercise-body.tex) [9]
+\openout4 = `xsim/revisions_juin-exercise-46-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-46-exercise-body.tex
 <img/périmetre.png, id=79, 102.3825pt x 63.98906pt>
 File: img/périmetre.png Graphic file (type png)
 <use img/périmetre.png>
 Package pdftex.def Info: img/périmetre.png  used on input line 12.
 (pdftex.def)             Requested size: 102.38225pt x 63.98889pt.
 )
-\openout4 = `xsim/revisions_juin-exercise-49-exercise-body.tex'.
+\openout4 = `xsim/revisions_juin-exercise-47-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-49-exercise-body.tex
+ (./xsim/revisions_juin-exercise-47-exercise-body.tex)
+\openout4 = `xsim/revisions_juin-exercise-48-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-48-exercise-body.tex
 <img/triangleatracer.jpg, id=80, 111.41624pt x 60.225pt>
 File: img/triangleatracer.jpg Graphic file (type jpg)
 <use img/triangleatracer.jpg>
 Package pdftex.def Info: img/triangleatracer.jpg  used on input line 12.
 (pdftex.def)             Requested size: 111.41597pt x 60.22484pt.
 )
-\openout4 = `xsim/revisions_juin-exercise-50-exercise-body.tex'.
+\openout4 = `xsim/revisions_juin-exercise-49-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-50-exercise-body.tex
+ (./xsim/revisions_juin-exercise-49-exercise-body.tex
 <img/triangleatracer2.jpg, id=81, 105.39375pt x 70.01157pt>
 File: img/triangleatracer2.jpg Graphic file (type jpg)
 <use img/triangleatracer2.jpg>
 Package pdftex.def Info: img/triangleatracer2.jpg  used on input line 12.
 (pdftex.def)             Requested size: 105.39348pt x 70.01138pt.
 )
-\openout4 = `xsim/revisions_juin-exercise-51-exercise-body.tex'.
+\openout4 = `xsim/revisions_juin-exercise-50-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-51-exercise-body.tex
+ (./xsim/revisions_juin-exercise-50-exercise-body.tex
 <img/triangleatracer3.jpg, id=82, 135.50626pt x 70.76437pt>
 File: img/triangleatracer3.jpg Graphic file (type jpg)
 <use img/triangleatracer3.jpg>
 Package pdftex.def Info: img/triangleatracer3.jpg  used on input line 12.
 (pdftex.def)             Requested size: 135.5059pt x 70.76419pt.
 )
-\openout4 = `xsim/revisions_juin-exercise-52-exercise-body.tex'.
+\openout4 = `xsim/revisions_juin-exercise-51-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-52-exercise-body.tex
+ (./xsim/revisions_juin-exercise-51-exercise-body.tex
 <img/triangleatracer4.jpg, id=83, 102.3825pt x 74.52844pt>
 File: img/triangleatracer4.jpg Graphic file (type jpg)
 <use img/triangleatracer4.jpg>
 Package pdftex.def Info: img/triangleatracer4.jpg  used on input line 12.
 (pdftex.def)             Requested size: 102.38225pt x 74.52824pt.
 )
+\openout4 = `xsim/revisions_juin-exercise-52-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-52-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-53-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-53-exercise-body.tex)
+ (./xsim/revisions_juin-exercise-53-exercise-body.tex [10 <./img/périmetre.png> <./img/triangleatracer.jpg> <./img/triangleatracer2.jpg> <./img/triangleatracer3.jpg> <./img/triangleatracer4.jpg>])
 \openout4 = `xsim/revisions_juin-exercise-54-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-54-exercise-body.tex [10 <./img/périmetre.png> <./img/triangleatracer.jpg> <./img/triangleatracer2.jpg> <./img/triangleatracer3.jpg> <./img/triangleatracer4.jpg>])
-\openout4 = `xsim/revisions_juin-exercise-55-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-55-exercise-body.tex
+ (./xsim/revisions_juin-exercise-54-exercise-body.tex
 <img/suite.png, id=88, 455.301pt x 149.96025pt>
 File: img/suite.png Graphic file (type png)
 <use img/suite.png>
@@ -2016,6 +2003,9 @@ Overfull \hbox (2.33199pt too wide) in paragraph at lines 11--14
  []
 
 )
+\openout4 = `xsim/revisions_juin-exercise-55-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-55-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-56-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-56-exercise-body.tex)
@@ -2027,32 +2017,34 @@ Overfull \hbox (2.33199pt too wide) in paragraph at lines 11--14
  (./xsim/revisions_juin-exercise-58-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-59-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-59-exercise-body.tex)
+ (./xsim/revisions_juin-exercise-59-exercise-body.tex) [11 <./img/suite.png>]
 \openout4 = `xsim/revisions_juin-exercise-60-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-60-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-61-exercise-body.tex'.
 
- [11 <./img/suite.png>] (./xsim/revisions_juin-exercise-61-exercise-body.tex)
-\openout4 = `xsim/revisions_juin-exercise-62-exercise-body.tex'.
-
- (./xsim/revisions_juin-exercise-62-exercise-body.tex
+ (./xsim/revisions_juin-exercise-61-exercise-body.tex
 <img/PetA.jpg, id=93, 421.575pt x 167.12437pt>
 File: img/PetA.jpg Graphic file (type jpg)
 <use img/PetA.jpg>
 Package pdftex.def Info: img/PetA.jpg  used on input line 12.
 (pdftex.def)             Requested size: 421.57396pt x 167.12395pt.
-) [12 <./img/PetA.jpg>] (./revisions_juin.aux) ) 
+)
+
+Package xsim Warning: Exercise properties may have changed. Rerun to get them
+(xsim)                synchronized.
+
+[12 <./img/PetA.jpg>] (./revisions_juin.aux) ) 
 Here is how much of TeX's memory you used:
- 35500 strings out of 478579
- 802816 string characters out of 5857457
- 1116265 words of memory out of 5000000
- 52672 multiletter control sequences out of 15000+600000
+ 35465 strings out of 478579
+ 801264 string characters out of 5857457
+ 1115107 words of memory out of 5000000
+ 52640 multiletter control sequences out of 15000+600000
  450466 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,15n,108p,2169b,1070s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,15n,108p,2137b,1056s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmnc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on revisions_juin.pdf (12 pages, 244043 bytes).
+Output written on revisions_juin.pdf (12 pages, 243685 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
