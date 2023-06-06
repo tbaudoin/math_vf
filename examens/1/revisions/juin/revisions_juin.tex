@@ -1,18 +1,23 @@
 \documentclass[10pt,a4paper]{article}
+\usepackage[sfmath, light]{kpfonts} %police
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage[frenchb]{babel}
 \usepackage{numprint}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\usepackage{xsim}
+\usepackage[use-aux,use-files]{xsim}
+\xsimsetup{
+	path=xsim
+}
 \usepackage{ifthen}
 \usepackage{fontawesome5}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage[squaren,Gray]{SIunits}%unités internationales
+\usepackage[locale=FR]{siunitx}
 \usepackage[explicit]{titlesec}
 \usepackage{ulem}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage[top=2cm, bottom=2cm,left=1.5cm, right=1.5cm]{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
 \setlist[enumerate]{label=\textbf{\alph*)}, itemsep=1ex}
 % création d'un nouveau paramètre pour les listes de type <enumerate>. Pour afficher le contenu de la liste en plusieurs colonnes, utiliser [cols=<nombre de colonne>]
