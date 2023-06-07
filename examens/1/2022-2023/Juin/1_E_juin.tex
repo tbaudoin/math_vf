@@ -8,7 +8,6 @@
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{mathtools}
 \newcommand{\abs}[1]{\mid#1\mid}
-
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{enumitem}
@@ -20,23 +19,24 @@ after = \end{multicols}}
 \setlist[enumerate]{label=\textbf{\alph*)}}
 \newlist{qcm}{itemize}{1}
 \setlist[qcm]{label=\faIcon[regular]{square}, cols=3}
-\usepackage{tasks}
-\settasks{label-format=\bfseries}
+
 \usepackage{eurosym} % \EUR{8} --> 8 €
 \usepackage{multicol}
 \usepackage[locale=FR]{siunitx}
 \DeclareSIUnit{\sieuro}{\mbox{\euro}}
 \usepackage{tikz}
-\usetikzlibrary{babel, patterns}
+\usetikzlibrary{babel, patterns, matrix}
 \usepackage{tkz-base}
 \usepackage{tkz-euclide}
 \usepackage{tikzscale}
-\usepackage{pgf-pie}
+\usepackage{pgfplots}
+\pgfplotsset{width=15cm,compat=1.9}
 \usepackage{graphicx}
 \usepackage{tabularray}
 \NewColumnType{C}[1][]{Q[c,co=1,#1]}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins, xparse}
+\usepackage{ulem}
 \usepackage[use-aux, use-files]{xsim}
 
 \DeclareExerciseEnvironmentTemplate{interrogation}
@@ -93,6 +93,7 @@ counter = exercise
     path=xsim,
     exercise/template = interrogation,
     solution/template = interrogation,
+    blank/style=\dotuline{#1},
 }
 
 \newcommand{\figcolor}{white}
@@ -189,8 +190,9 @@ Quelques conseils pour réussir ton examen :
 % CONTENU %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=5]
+    %FIXME: Tout est faux. On peut mettre corrige les proposition ci-dessous. C'est plus simple à corriger.
     Vrai ou faux? Justifie dans tous les cas.
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=2cm, after=\vspace*{2cm}]
         \item 24 est un diviseur de 12.
         \item \(-3\) est un nombre naturel.
         \item Dans un repère cartésien, l'axe vertical s'appelle l'axe des abscisses.
@@ -226,6 +228,7 @@ Quelques conseils pour réussir ton examen :
                   \item Une médiatrice
                   \item Une bissectrice
               \end{qcm}
+              \newpage
         \item Quel nom donne-t-on à un triangle ayant trois côtés de longueurs différentes ?
               \begin{qcm}
                   \item Isocèle
@@ -233,55 +236,62 @@ Quelques conseils pour réussir ton examen :
                   \item Scalène
               \end{qcm}
         \item \(\widehat{A}\) et \(\widehat{B}\) sont deux angles supplémentaires. Quelle égalité traduit cette proposition ?
-        \begin{qcm}
-            \item \(\abs{\widehat{A}} + \abs{\widehat{B}} = \ang{180}\)
-            \item \(\abs{\widehat{A}} +  \abs{\widehat{B}} = \ang{90}\)
-            \item \(\abs{\widehat{A}} \cdot \abs{\widehat{B}} = \ang{180}\)
-        \end{qcm}
-        \item \(-3 \cdot 2 =\)
+              \begin{qcm}
+                  \item \(\abs{\widehat{A}} + \abs{\widehat{B}} = \ang{180}\)
+                  \item \(\abs{\widehat{A}} +  \abs{\widehat{B}} = \ang{90}\)
+                  \item \(\abs{\widehat{A}} \cdot \abs{\widehat{B}} = \ang{180}\)
+              \end{qcm}
+        \item Que vaut le produit de 3 par \(-2\) ?
+              \begin{qcm}
+                  \item 6
+                  \item 1
+                  \item \(-6\)
+              \end{qcm}
     \end{enumerate}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=1]
     Quelle est la propriété illustrée par l'égalité suivante ?
-    \[(13+82 = 82 + 13\]
+
+    \hfil \(13+82 = 82 + 13\) \hfil \blank[scale=2]{commutativité}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=1]
+    %FIXME: Est-ce qu'on imposerait pas le nombre à décomposer ? Pour une correction plus facile.
     Calcule à l'aide de la distributivité simple. Laisse ta démarche visible.
     \[49 \cdot 8=\]
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=3]
     Donne la définition des concepts suivants. Sois précis.
-    \begin{enumerate}
-        \item Valeur absolue :
-        \item Bissectrice :
-        \item Isométrie :
+    \begin{enumerate}[itemsep=2cm, after=\vspace*{2cm}]
+        \item Valeur absolue.
+        \item Bissectrice.
+        \item Isométrie.
     \end{enumerate}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=1]
     Donne un exemple de deux nombres opposés.
+    \vspace*{2cm}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{connaitre}[points=2]
-    Code/décode. Traduis en une phrase en français l'expression mathématique, et inversement.
-    \begin{enumerate}
+    Code ou décode les expressions mathématiques ci-dessous.
+    \begin{enumerate}[itemsep=1cm, after=\vspace*{1cm}]
         \item \((5-3)^2\)
         \item La somme de 5 et de l'opposé de 3
     \end{enumerate}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%FIXME: pourquoi ne pas mettre avec la précédente ? C'est aussi une question de codage, décodage.
 \begin{connaitre}[points=1]
-    Traduis par une phrase la notation suivante.
-
-    \(S_{PM}(ABC) = A'B'C'\)
+    Traduis par une phrase la notation suivante : \(S_{PM}(ABC) = A'B'C'\). \vspace*{2cm}
 \end{connaitre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
     Effectue.
-    \begin{enumerate}
+    \begin{enumerate}[cols=2]
         \item \((-3)^2 =\)
         \item \(-5 \cdot 2 = \)
     \end{enumerate}
@@ -289,20 +299,23 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=5]
     Effectue. Laisse tes étapes visibles.
-    \begin{enumerate}
+    \begin{enumerate}[cols=2, itemsep=2cm]
         \item \(8+(4-2)^2\cdot 3=\)
         \item \(5-2+4\cdot (3+2)=\)
         \item \(-2-(-7)\cdot 5=\)
         \item \(-5\cdot 3\cdot 0=\)
         \item \(-8 + 7 -(7+(-9))=\)
     \end{enumerate}
+    \vspace*{2cm}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=11]
-    \begin{enumerate}
+    Effectue. Si tu ne peux pas réduire l'expression, recopie-la.
+    %FIXME: Trop peu de place pour mettre sur deux colonnes, on peut utiliser task mais ...
+    \begin{enumerate}[itemsep=2cm]
         \item \(8u-4+3u=\)
-        \item \(m\cdot m \cdot m \cdot =\)
+        \item \(m\cdot m \cdot m =\)
         \item \(-2a(3a-5b)=\)
         \item \(4x\cdot 3p + 2p \cdot 7x=\)
         \item \(t-(3t-6) + 3t=\)
@@ -313,20 +326,22 @@ Quelques conseils pour réussir ton examen :
         \item \(2x \cdot (-3y) - 6x + 7y=\)
         \item \(6x \cdot (-3xy) + 7x^2 \cdot 2y=\)
     \end{enumerate}
+    \vspace*{2cm}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=4]
     Complète les pointillés.
-    \begin{enumerate}
-        \item \(10a\cdot \ldots = 30a\)
-        \item \(a + \ldots = 2a\)
-        \item \(x \cdot \ldots = x^2\)
-        \item \(-(8x+6y)- (\ldots - \ldots ) = 10x + 2y\)
+    \begin{enumerate}[cols=2]
+        \item \(10a\cdot \blank[width=1cm]{} = 30a\)
+        \item \(a + \blank[width=1cm]{} = 2a\)
+        \item \(x \cdot \blank[width=1cm]{} = x^2\)
+        \item \(-(8x+6y)- (\blank[width=1cm]{} - \blank[width=1cm]{} ) = 10x + 2y\)
     \end{enumerate}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TODO: Flèche sur le tableau
 \begin{appliquer}[points=4]
     Complète les tableaux de proportionnalité suivant. Indique ensuite le coefficient de proportionnalité relatif à chaque tableau.
     \begin{center}
@@ -352,7 +367,6 @@ Quelques conseils pour réussir ton examen :
             y &   &   & 27 &    & 33
         \end{tblr}
     \end{center}
-    % TODO: fleche pour coefficient 
 
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -360,7 +374,7 @@ Quelques conseils pour réussir ton examen :
 \begin{appliquer}[points=2]
     Trace en vert la hauteur issue de \(A \)et en bleu la médiane relative à \([AB]\). Code ton dessin.
     \begin{center}
-        \includegraphics[width=10cm]{img/triangle.png}
+        \includegraphics[width=10cm]{tikz/triangle.tikz}
     \end{center}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -391,7 +405,7 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
     Factorise en mettant en évidence.
-    \begin{enumerate}
+    \begin{enumerate}[cols=2]
         \item \(ab+6a^2=\)
         \item \(6a^3b^6 - 9a^2b^3=\)
     \end{enumerate}
@@ -399,16 +413,20 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
-    Trace un rectangle \(EXAM\) si tu sais que ses diagonales mesurent \SI{5}{cm} et que l’angle aigu entre ses diagonales est de \ang{40}.
+    Trace un rectangle \(EXAM\) si tu sais que ses diagonales mesurent \SI{5}{cm} et que l'angle aigu entre ses diagonales est de \ang{40}.
 \end{appliquer}
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=3]
-    Voici un repère cartésien. \\
-    \includegraphics{img/graphe.png}
+    Voici un repère cartésien.
+    \begin{center}
+        \includegraphics{tikz/repere.tikz}
+    \end{center}
+    % \includegraphics{img/graphe.png}
     \begin{enumerate}
         \item Écris les coordonnées des points suivants. \\
-              \(A(\ldots; \ldots)\) \hfill \(B(\ldots; \ldots)\) \hfill  \(C(\ldots; \ldots)\) \hfill  \(D(\ldots; \ldots)\)
+              \(A(\blank[width=1cm]{}; \blank[width=1cm]{})\) \hfill \(B(\blank[width=1cm]{}; \blank[width=1cm]{})\) \hfill  \(C(\blank[width=1cm]{}; \blank[width=1cm]{})\) \hfill  \(D(\blank[width=1cm]{}; \blank[width=1cm]{})\)
         \item Place le point \(X\) tel que \(X(-5;-2)\)
         \item Complète les phrases suivantes par \(A, B, C\) ou \(D\).
               %\begin{enumitem} \TODO: enumitem (TITI : je ne comprends pas)
@@ -421,10 +439,11 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=2]
     Réalise la construction demandée. Veille à laisser tes constructions visibles et à faire preuve de précision et de soin.
+    \begin{center}
+        \(t_{\overrightarrow{XY}}(ABCD)=A'B'C'D'\)
 
-    \(t_{\overrightarrow{XY}}(ABCD)=A'B'C'D'\)
-
-    \includegraphics{img/trans.png}
+        \includegraphics[width=.5\linewidth]{tikz/translation.tikz}
+    \end{center}
 \end{appliquer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -436,16 +455,19 @@ Quelques conseils pour réussir ton examen :
         \item Dans la deuxième colonne, cite l'élément caractéristique de cette transformation du plan.
     \end{enumerate}
     \begin{center}
-        \includegraphics[width=\linewidth]{tikz/figure001.tikz}
+        \includegraphics[width=.5\linewidth]{tikz/figure001.tikz}
     \end{center}
     \begin{center}
         \begin{tblr}{
                 hlines,
                 vlines,
+                hline{1}={1}{white},
+                vline{1}={1}{white},
                 columns={4cm, c},
                 rows={1cm,m},
                 row{1}={gray!40, font=\bfseries},
                 column{1}={gray!40, font=\bfseries},
+                cell{1}{1}={white}
             }
                      & Isométrie & Élément caractéristique \\
             De 2 à 3 &           &                         \\
@@ -459,60 +481,86 @@ Quelques conseils pour réussir ton examen :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appliquer}[points=3]
     Construis ce trapèze avec les dimensions réelles.
-    \begin{center}
-        \includegraphics{tikz/figure002.tikz}
-    \end{center}
+
+    \includegraphics[width=5cm]{tikz/figure002.tikz}
 \end{appliquer}
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=3]
-    Un automobiliste met du temps à payer son amende pour excès de vitesse de 90€. Il doit donc payer l’amende augmentée de 10%à refaire pourcentage.
-    Quel est le nouveau montant que l’automobiliste va payer ? Laisse ta démarche visible.
+    Un automobiliste met du temps à payer son amende pour excès de vitesse de \SI{9}{\sieuro}. Il doit donc payer l'amende augmentée de 10\%.\\
+    Quel est le nouveau montant que l'automobiliste va payer ? Laisse ta démarche visible.\vspace*{2cm}
 \end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{transferer}[points=4]
-    Dans le cadre d’une exposition, un artiste a empilé des canettes. L’illustration ci-dessous montre les trois rangées du haut du montage.
-    \begin{multicols*}{2}
-        \begin{center}
-            \begin{tblr}{
-                    hlines,
-                    vlines,
-                    columns={3cm, c},
-                    rows={1cm,m},
-                    row{1}={gray!40, font=\bfseries},
-                }
-                Numéro de la rangée & Nombre de canettes par rangées \\
-                1                   & 1                              \\
-                2                   & 4                              \\
-                3                   & 7                              \\
-                4                   &                                \\
-                5                   &                                \\
-                6                   & 16                             \\
-            \end{tblr}
-        \end{center}
+    Dans le cadre d'une exposition, un artiste a empilé des canettes. L'illustration ci-dessous montre les trois rangées du haut du montage.
 
-        \includegraphics{img/cannettes.png}
-    \end{multicols*}
+    \includegraphics{img/cannettes.png}
 
-    \begin{enumerate}
-        \item Complète le tableau.
-        \item Détermine le nombre de canettes de la 9ème rangée.
-        \item Détermine le nnuméro de la rangée qui comporte 31 canettes.
-        \item Propose une formule qui permet de calculer le nombre de canettes \(c\) nécessaire en fonction du numéro de la rangée \(n\). \\
-              \(c=\)
+    \begin{enumerate}[itemsep=1cm, after=\vspace*{
+        1cm
+    }]
+        \item Complète ce tableau.
+              \begin{center}
+                  \begin{tblr}{
+                          hlines,
+                          vlines,
+                          colspec={l*{6}{X[c]}},
+                          rows={1cm,m},
+                          column{1}={gray!40, font=\bfseries},
+                      }
+                      Numéro de la rangée & 1 & 2 & 3 & 4 & 5 & 6  \\
+                      Nombre de cannettes & 1 & 4 & 7 &   &   & 16
+                  \end{tblr}
+              \end{center}
+              \item Propose une formule qui permet de calculer le nombre de canettes \(c\) nécessaire en fonction du numéro de la rangée \(n\).
+              \item Détermine le numéro de la rangée qui comporte 31 canettes en utilisant ta formule.
+              \item Détermine le nombre de canettes de la 9\ieme{} rangée en utilisant ta formule.
     \end{enumerate}
 \end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \begin{transferer}[points=3]
-    Un club de sport va fêter ses 10 ans en septembre. Le secrétaire du club a rassemblé quelques données pour analyser l’évolution du club. \\ Réponds aux questions suivantes en observant le graphique. \\
-    \includegraphics{img/voitures.png}
-    \begin{enumerate}
-        \item Cite deux années où le club a compté le même nombre de membre.
-        \item En quelle année le nombre d'inscrits a-t-il le plus augmenté?
-        \item Est-il vrai que le nombre d'inscrits a doublé entre 2015 et 2019? Laisse ta démarche visible.
-    \end{enumerate}
+    Un club de sport va fêter ses 10 ans en septembre. Le secrétaire du club a rassemblé quelques données pour analyser l'évolution du club. \\ Réponds aux questions suivantes en observant le graphique.
+
+    % \begin{tikzpicture}
+    %     \begin{axis}[
+    %             x tick label style={/pgf/number format/1000 sep=},
+    %             ymin=0,
+    %             ymax=160,
+    %             xtick pos=left,
+    %             ytick pos=left,
+    %             ytick distance=10,
+    %             ymajorgrids,
+    %             y minor tick num =1,
+    %             yminorgrids
+    %         ]
+    %         \addplot coordinates{
+    %                 (2012,35)
+    %                 (2013,40)
+    %                 (2014,55)
+    %                 (2015,60)
+    %                 (2016,95)
+    %                 (2017,115)
+    %                 (2018,110)
+    %                 (2019,120)
+    %                 (2020,80)
+    %                 (2021,120)
+    %                 (2022,150)
+    %             };
+    %     \end{axis}
+    % \end{tikzpicture}
+    \begin{multicols}{2}
+        \includegraphics[width=\linewidth]{img/voitures.png}
+        \columnbreak
+        \begin{enumerate}[itemsep=1cm, after=\vspace*{1cm}]
+            \item Cite deux années où le club a compté le même nombre de membres.
+            \item En quelle année le nombre d'inscrits a-t-il le plus augmenté ?
+            \item Est-il vrai que le nombre d'inscrits a doublé entre 2015 et 2019 ? Laisse ta démarche visible.
+        \end{enumerate}
+    \end{multicols}
 \end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -523,13 +571,14 @@ Quelques conseils pour réussir ton examen :
         \hfill
         \includegraphics[width=.49\linewidth]{tikz/berlin.tikz}
     \end{center}
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=1cm, after=\vspace*{3cm}]
         \item Exprime à l'aide d'une expression littérale le périmètre de la salle de Stockholm.
         \item Calcule l'aire de la salle de Berlin. Laisse tes étapes visibles.
     \end{enumerate}
 \end{transferer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \begin{transferer}[points=4]
     Observe le pavage ci-dessous puis complète les égalités.
 
@@ -537,31 +586,33 @@ Quelques conseils pour réussir ton examen :
         \includegraphics[width=\linewidth]{tikz/pavage.tikz}
     \end{minipage}
     \hfill
-    \begin{minipage}{.25\linewidth}
-        \begin{enumerate}[itemsep=.4cm]
-            \item \(t_{\overrightarrow{NB}} (M)= \ldots\)
-            \item \(S_H(A)=\ldots\)
-            \item \(S_{WQ}(P)=\ldots\)
-            \item \(t_{\overrightarrow{E\ldots}}(G)=L\)
-            \item \(S_I(C)=\ldots\)
-            \item \(t_{\overrightarrow{UJ}}(Q)=\ldots\)
-            \item \(S_{MG}(A)=\ldots\)
-            \item \(S_{P\ldots}(F)=R\)
-        \end{enumerate}
+    \begin{minipage}{.45\linewidth}
+        \begin{center}
+            \begin{enumerate}[itemsep=.4cm]
+                \item \(t_{\overrightarrow{NB}} (M)= \blank[width=1cm]{}\)
+                \item \(S_H(A)=\blank[width=1cm]{}\)
+                \item \(S_{WQ}(P)=\blank[width=1cm]{}\)
+                \item \(t_{\overrightarrow{E\blank[width=1cm]{}}}(G)=L\)
+                \item \(S_I(C)=\blank[width=1cm]{}\)
+                \item \(t_{\overrightarrow{UJ}}(Q)=\blank[width=1cm]{}\)
+                \item \(S_{MG}(A)=\blank[width=1cm]{}\)
+                \item \(S_{P\blank[width=1cm]{}}(F)=R\)
+            \end{enumerate}
+        \end{center}
     \end{minipage}
 \end{transferer}
 
 \begin{appliquer}[points=1]
-    Donne l'ensemble des diviseurs de 100.
+    Donne l'ensemble des diviseurs de 100.\vspace*{1cm}
 \end{appliquer}
 
 \begin{connaitre}[points=2]
-    Cite :
-    \begin{enumerate}
-        \item Deux nombres premiers entre eux
-        \item Deux multiples de 4 consécutifs
-        \item Un nombre multiple de 4 et de 7.
-        \item Trois nombres premiers.
+    Écris :
+    \begin{enumerate}[itemsep=1em]
+        \item Deux nombres premiers entre eux :
+        \item Deux multiples de 4 consécutifs :
+        \item Un nombre multiple de 4 et de 7 :
+        \item Trois nombres premiers :
     \end{enumerate}
 \end{connaitre}
 

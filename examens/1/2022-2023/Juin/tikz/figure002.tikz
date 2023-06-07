@@ -1,12 +1,21 @@
-\begin{tikzpicture}[line cap=round,line join=round,>=latex]
-    \draw [shift={(0.,0.)}] (0,0) -- (0.:0.6) arc (0.:70.:0.6) -- cycle;
-    \draw [shift={(7.,0.)}] (0,0) -- (135.:0.6) arc (135.:180.:0.6) -- cycle;
-    \draw (3.5,0.2) -- (3.2,0.2) -- (3.2, 0.5);
-    \draw (0.,0.) -- (7.,0.) node[midway, below]{\SI{7}{cm}};
-    \draw (3.,3.)-- (3.,0.) node[midway,right]{\SI{3}{cm}};
-    \draw (0.,0.)-- (1.0919107027986075,3.);
-    \draw (1.0919107027986075,3.)-- (4.,3.);
-    \draw (4.,3.)-- (7.,0.);
-    \draw (0.8,0.5)node{\ang{70}};
-    \draw (6.2,0.3)node{\ang{40}};
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A,7/0/B,0/3/H1,2/0/H}
+    \tkzDefPoint(70:1){X}
+    \tkzDefShiftPoint[B](180-40:1){Y}
+    \tkzDefLine[parallel=through H1](A,B)
+    \tkzGetPoint{H2}
+    \tkzInterLL(A,X)(H1,H2)
+    \tkzGetPoint{D}
+    \tkzInterLL(B,Y)(H1,H2)
+    \tkzGetPoint{C}
+    \tkzDefLine[parallel=through H](A,H1)
+    \tkzInterLL(H,tkzPointResult)(D,C)
+    \tkzGetPoint{H3}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawSegment(H,H3)
+    \tkzMarkRightAngle(H3,H,A)
+    \tkzLabelSegment[right](H,H3){\SI{3}{cm}}
+    \tkzLabelSegment[below](A,B){\SI{7}{cm}}
+    \tkzLabelAngle[pos=1](B,A,D){\ang{70}}
+    \tkzLabelAngle[pos=1.5](C,B,A){\ang{40}}
 \end{tikzpicture}
