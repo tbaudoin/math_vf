@@ -15,12 +15,15 @@
     \tkzDrawPoints(A,B,C,D,M,E)
 
     \tkzMarkSegments[mark=||](B,M M,C)
-    \tkzLabelPoints[above right](M)
-    \tkzLabelPoints[below](E)
 
-    \tkzDefCentroid(A,B,C,D)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](A)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](B)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.1](C)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.1](D)
+    \foreach \name/\pos in {
+        A/above,
+        B/above,
+        C/below,
+        D/below,
+        M/above right,
+        E/below}
+    {
+        \tkzLabelPoints[\pos](\name)
+    }
 \end{tikzpicture}

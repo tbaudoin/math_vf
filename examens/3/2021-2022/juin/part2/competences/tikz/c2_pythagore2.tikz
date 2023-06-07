@@ -10,7 +10,7 @@
     \tkzDrawPolygon(E,F,D)
     % \tkzMarkAngle[mark=none](F,E,D)
 
-    \tkzMarkAngle(F,E,D)
+    % \tkzMarkAngle(F,E,D)
     % \tkzLabelAngle[pos=1.5](F,E,D){$\alpha$}
 
     % \tkzFillAngle[fill=gray](E,D,F)
@@ -26,11 +26,11 @@
     \tkzLabelSegment[above](E,D){$8$}
     \tkzLabelSegment[below](F,G){$6$}
     \tkzLabelSegment[left](G,E){$4$}
-    \tkzLabelSegment(D,F){$\sqrt{12}$}
+    \tkzLabelSegment[right](D,F){$\sqrt{12}$}
     \tkzLabelPoints[below](G,F)
     \tkzLabelPoints[above](E,D)
     \tkzDrawSegment(D,F)
 
-    \tkzDrawPoints(D,E,F,G)
+    % \tkzDrawPoints(D,E,F,G)
 
 \end{tikzpicture}

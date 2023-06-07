@@ -7,9 +7,7 @@
     \tkzMarkRightAngle(A,C,B)
     \tkzMarkAngle(B,A,C)
     \tkzLabelAngle[pos=1.5](B,A,C){\ang{25}}
-    \tkzDefCentroid(A,B,C)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.1](A)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](B)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](C)
+    \tkzDefTriangleCenter[circum](A,B,C)
+    \tkzAutoLabelPoints[center=tkzPointResult,anchor=center](A,B,C)
     \tkzLabelSegment[swap](A,B){$4$}
 \end{tikzpicture}

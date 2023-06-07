@@ -11,13 +11,15 @@
     \tkzDrawPoints(P,A,S,R,C)
     \tkzDrawSegments(P,A A,R P,S S,C A,S R,C)
 
-    \tkzDefCentroid(P,R,C)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.1](P)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](A)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.3](S)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.1](C)
-    \tkzAutoLabelPoints[center=tkzPointResult, dist=.2](R)
-
+    \foreach \name/\pos in {
+            P/above,
+            A/left,
+            S/above,
+            R/left,
+            C/above}
+        {
+            \tkzLabelPoints[\pos](\name)
+        }
     % \tkzLabelPoints[above](P)
     % \tkzLabelPoints[left](A)
     % \tkzLabelPoints[left](R)

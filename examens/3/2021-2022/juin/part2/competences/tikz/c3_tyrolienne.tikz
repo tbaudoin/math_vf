@@ -4,9 +4,7 @@
     \tkzDefPoint(3,0){C}
     \tkzDrawPolygon(A,B,C)
     \tkzMarkRightAngle(C,A,B)
-    \tkzLabelSegment[align=center](A,B){Falaise\\\SI{70}{m}}
-    \tkzLabelSegment(B,C){Corde}
-    \tkzLabelSegment(C,A){Sol}
+    \tkzLabelSegment[left](A,B){\SI{70}{m}}
     \tkzMarkAngle(A,B,C)
     \tkzLabelAngle[pos=1.2](A,B,C){$\alpha$}
     \tkzLabelPoint[above](B){Départ}
