@@ -14,4 +14,5 @@
     \tkzLabelPoints[above](D)
     \tkzLabelPoints[above](E)
 
+    \draw (current bounding box.south)node[below]{Stockholm};
 \end{tikzpicture}
