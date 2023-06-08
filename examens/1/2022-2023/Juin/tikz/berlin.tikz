@@ -3,4 +3,5 @@
     \draw (1,3) -- (1,1) -- (3,1);
     \draw (39,3) -- (39,1) -- (37,1);
     \draw (39, 12) -- (39,14) -- (37,14);
+    \draw (current bounding box.south)node[below]{Berlin};
 \end{tikzpicture}

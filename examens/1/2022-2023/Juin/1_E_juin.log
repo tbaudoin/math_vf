@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  7 JUN 2023 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  8 JUN 2023 12:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1497,7 +1497,7 @@ File: ujkpexa.fd 2006/08/15 v1.0
 \l__xsim_file_contents_iow=\write4
 \openout4 = `xsim/1_E_juin-connaitre-1-exercise-body.tex'.
 
- (./xsim/1_E_juin-connaitre-1-exercise-body.tex)
+ (./xsim/1_E_juin-connaitre-1-exercise-body.tex (./tikz/graphe_propo.tikz))
 \openout4 = `xsim/1_E_juin-connaitre-2-exercise-body.tex'.
 
  (./xsim/1_E_juin-connaitre-2-exercise-body.tex
@@ -1567,19 +1567,16 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on in
  [5])
 \openout4 = `xsim/1_E_juin-appliquer-15-exercise-body.tex'.
 
- (./xsim/1_E_juin-appliquer-15-exercise-body.tex)
+ (./xsim/1_E_juin-appliquer-15-exercise-body.tex) [6]
 \openout4 = `xsim/1_E_juin-appliquer-16-exercise-body.tex'.
 
- (./xsim/1_E_juin-appliquer-16-exercise-body.tex) [6]
+ (./xsim/1_E_juin-appliquer-16-exercise-body.tex (./tikz/repere.tikz))
 \openout4 = `xsim/1_E_juin-appliquer-17-exercise-body.tex'.
 
- (./xsim/1_E_juin-appliquer-17-exercise-body.tex (./tikz/repere.tikz))
+ (./xsim/1_E_juin-appliquer-17-exercise-body.tex (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz))
 \openout4 = `xsim/1_E_juin-appliquer-18-exercise-body.tex'.
 
- (./xsim/1_E_juin-appliquer-18-exercise-body.tex (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz) (./tikz/translation.tikz))
-\openout4 = `xsim/1_E_juin-appliquer-19-exercise-body.tex'.
-
- (./xsim/1_E_juin-appliquer-19-exercise-body.tex [7] (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz)
+ (./xsim/1_E_juin-appliquer-18-exercise-body.tex [7] (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz) (./tikz/figure001.tikz)
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1589,16 +1586,16 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on in
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 )
-\openout4 = `xsim/1_E_juin-appliquer-20-exercise-body.tex'.
+\openout4 = `xsim/1_E_juin-appliquer-19-exercise-body.tex'.
 
- (./xsim/1_E_juin-appliquer-20-exercise-body.tex (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz)) [8]
+ (./xsim/1_E_juin-appliquer-19-exercise-body.tex (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz) (./tikz/figure002.tikz)) [8]
+\openout4 = `xsim/1_E_juin-transferer-20-exercise-body.tex'.
+
+ (./xsim/1_E_juin-transferer-20-exercise-body.tex)
 \openout4 = `xsim/1_E_juin-transferer-21-exercise-body.tex'.
 
- (./xsim/1_E_juin-transferer-21-exercise-body.tex)
-\openout4 = `xsim/1_E_juin-transferer-22-exercise-body.tex'.
-
- (./xsim/1_E_juin-transferer-22-exercise-body.tex
-<img/cannettes.png, id=73, 141.52875pt x 99.9735pt>
+ (./xsim/1_E_juin-transferer-21-exercise-body.tex
+<img/cannettes.png, id=72, 141.52875pt x 99.9735pt>
 File: img/cannettes.png Graphic file (type png)
 <use img/cannettes.png>
 Package pdftex.def Info: img/cannettes.png  used on input line 13.
@@ -1612,10 +1609,10 @@ Package pdftex.def Info: img/cannettes.png  used on input line 13.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 ) [9 <./img/cannettes.png>]
-\openout4 = `xsim/1_E_juin-transferer-23-exercise-body.tex'.
+\openout4 = `xsim/1_E_juin-transferer-22-exercise-body.tex'.
 
- (./xsim/1_E_juin-transferer-23-exercise-body.tex
-<img/voitures.png, id=80, 329.5512pt x 264.0264pt>
+ (./xsim/1_E_juin-transferer-22-exercise-body.tex
+<img/voitures.png, id=79, 329.5512pt x 264.0264pt>
 File: img/voitures.png Graphic file (type png)
 <use img/voitures.png>
 Package pdftex.def Info: img/voitures.png  used on input line 41.
@@ -1626,34 +1623,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
  []
 
 )
-\openout4 = `xsim/1_E_juin-transferer-24-exercise-body.tex'.
+\openout4 = `xsim/1_E_juin-appliquer-23-exercise-body.tex'.
 
- (./xsim/1_E_juin-transferer-24-exercise-body.tex (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) [10 <./img/voitures.png>]) [11]
+ (./xsim/1_E_juin-appliquer-23-exercise-body.tex)
+\openout4 = `xsim/1_E_juin-connaitre-24-exercise-body.tex'.
+
+ (./xsim/1_E_juin-connaitre-24-exercise-body.tex) [10 <./img/voitures.png>]
 \openout4 = `xsim/1_E_juin-transferer-25-exercise-body.tex'.
 
- (./xsim/1_E_juin-transferer-25-exercise-body.tex (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz))
-\openout4 = `xsim/1_E_juin-appliquer-26-exercise-body.tex'.
+ (./xsim/1_E_juin-transferer-25-exercise-body.tex (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/stockholm.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz) (./tikz/berlin.tikz))
+\openout4 = `xsim/1_E_juin-transferer-26-exercise-body.tex'.
 
- (./xsim/1_E_juin-appliquer-26-exercise-body.tex)
-\openout4 = `xsim/1_E_juin-connaitre-27-exercise-body.tex'.
+ (./xsim/1_E_juin-transferer-26-exercise-body.tex (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz) (./tikz/pavage.tikz))
+\openout4 = `xsim/1_E_juin-appliquer-27-exercise-body.tex'.
 
- (./xsim/1_E_juin-connaitre-27-exercise-body.tex)
-\openout4 = `xsim/1_E_juin-appliquer-28-exercise-body.tex'.
-
- (./xsim/1_E_juin-appliquer-28-exercise-body.tex) [12] (./1_E_juin.aux) ) 
+ (./xsim/1_E_juin-appliquer-27-exercise-body.tex) [11] (./1_E_juin.aux) ) 
 Here is how much of TeX's memory you used:
- 53542 strings out of 478579
- 1335677 string characters out of 5857457
- 1923118 words of memory out of 5000000
- 70223 multiletter control sequences out of 15000+600000
- 493133 words of font info for 231 fonts, out of 8000000 for 9000
+ 53735 strings out of 478579
+ 1344600 string characters out of 5857457
+ 1931294 words of memory out of 5000000
+ 70416 multiletter control sequences out of 15000+600000
+ 493029 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,17n,126p,10705b,1746s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_juin.pdf (14 pages, 184693 bytes).
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
+Output written on 1_E_juin.pdf (13 pages, 181271 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 131 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  53372 words of extra memory for PDF output out of 61914 (max. 10000000)
 
