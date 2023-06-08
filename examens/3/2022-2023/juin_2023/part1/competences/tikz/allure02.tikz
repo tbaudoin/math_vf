@@ -1,0 +1,11 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=.75]
+    \tikzmath{
+        \M = -1;
+        \P = -1;
+    }
+    \tkzInit[xmin=-2,xmax=2,ymin=-2,ymax=2]
+    \tkzDrawX[noticks,right=1pt]
+    \tkzDrawY[noticks,above=1pt]
+    \tkzFct[domain=-2:2, line width=1.5pt]{(\M*\x + \P)}
+
+\end{tikzpicture}%

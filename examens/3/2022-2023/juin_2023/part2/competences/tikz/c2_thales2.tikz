@@ -1,0 +1,26 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tikzmath{
+        \myangle = 30;
+        \a = 1;
+        \b = 1.5;
+        \k = -3;
+    }
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(\a,0){B}
+    \tkzDefPoint(\myangle:\b){C}
+    \tkzDefPointBy[homothety=center A ratio \k](B)
+    \tkzGetPoint{D}
+    \tkzDefLine[parallel= through D](B,C)
+    \tkzInterLL(A,C)(D,tkzPointResult)
+    \tkzGetPoint{E}
+    \foreach \name/\pos in {A/above,B/below,C/above,D/above,E/below}{
+        \tkzLabelPoints[\pos](\name)
+    }
+    \tkzDrawPolygons(E,D,A B,A,C)
+
+    \tkzLabelSegment[below](A,B){$7$}
+    \tkzLabelSegment[above](A,C){$10$}
+    \tkzLabelSegment[below](A,E){$24$}
+    \tkzLabelSegment[left](D,E){$12$}
+
+\end{tikzpicture}

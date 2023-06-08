@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(3,0){B}
+    \tkzDefPoint(4,-2){C}
+    \tkzDefPoint(-2,-2){D}
+
+    \tkzDefMidPoint(B,C)\tkzGetPoint{M}
+    \tkzInterLL(A,M)(D,C)\tkzGetPoint{E}
+
+    \fill[blue!30] (A) -- (B) -- (M) -- cycle;
+    \fill[blue!30] (M) -- (C) -- (E) -- cycle;
+
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawLines[add=0 and 40pt](A,E D,E)
+    \tkzDrawPoints(A,B,C,D,M,E)
+
+    \tkzMarkSegments[mark=||](B,M M,C)
+
+    \foreach \name/\pos in {
+        A/above,
+        B/above,
+        C/below,
+        D/below,
+        M/above right,
+        E/below}
+    {
+        \tkzLabelPoints[\pos](\name)
+    }
+\end{tikzpicture}

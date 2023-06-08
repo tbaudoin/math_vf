@@ -1,0 +1,13 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoints{0/0/A,4/0/B}
+    \tkzDefMidPoint(A,B)\tkzGetPoint{M} %milieu de AB
+    \tkzDefPoint(25:1){I} % point intermédiaire
+    \tkzInterLC(A,I)(M,B)\tkzGetPoints{C}{X} 
+    \tkzDrawPolygon(A,B,C)
+    \tkzMarkRightAngle(A,C,B)
+    \tkzMarkAngle(B,A,C)
+    \tkzLabelAngle[pos=1.5](B,A,C){\ang{25}}
+    \tkzDefTriangleCenter[circum](A,B,C)
+    \tkzAutoLabelPoints[center=tkzPointResult,anchor=center](A,B,C)
+    \tkzLabelSegment[swap](A,B){$4$}
+\end{tikzpicture}
