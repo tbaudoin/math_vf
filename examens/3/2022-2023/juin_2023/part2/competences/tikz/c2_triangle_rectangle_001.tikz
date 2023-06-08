@@ -1,0 +1,15 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=1, rotate=60]
+    \tkzDefPoint(0,0){B}
+    \tkzDefPoint(3,0){A}
+    \tkzDefPoint(0,4){C}
+    \tkzDrawPolygon(A,B,C)
+    \foreach \name/\pos in {A/above,B/below,C/above}{
+        \tkzLabelPoints[\pos](\name)
+    }
+    \tkzMarkRightAngle[size=.5](C,B,A)
+    \tkzLabelSegment[below left](C,B){$\sqrt{32}$}
+    \tkzLabelSegment[right ](A,B){$\sqrt{17}$}
+    % \tkzLabelSegment[swap](A,C){$x$}
+    \tkzMarkAngles(B,C,A)
+    % \tkzLabelAngle[pos=1.3](B,C,A){$\alpha$}
+\end{tikzpicture}

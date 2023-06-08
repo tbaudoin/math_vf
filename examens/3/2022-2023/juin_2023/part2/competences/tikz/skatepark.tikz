@@ -1,0 +1,32 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), rotate=30, scale=0.7]
+
+    \tkzDefPoint(0,0){P}
+    \tkzDefPoint(0,-4){A}
+    \tkzDefPoint(3,-4){S}
+    \tkzDefPoint(0,-6){R}
+    \tkzDefPoint(4.5,-6){C}
+
+    \fill[pattern=north east lines] (A) -- (S) -- (C) -- (R) -- cycle ;
+
+    \tkzDrawPoints(P,A,S,R,C)
+    \tkzDrawSegments(P,A A,R P,S S,C A,S R,C)
+
+    \foreach \name/\pos in {
+            P/above,
+            A/left,
+            S/above,
+            R/left,
+            C/above}
+        {
+            \tkzLabelPoints[\pos](\name)
+        }
+    % \tkzLabelPoints[above](P)
+    % \tkzLabelPoints[left](A)
+    % \tkzLabelPoints[left](R)
+    % \tkzLabelPoints[above right](S)
+    % \tkzLabelPoints[right](C)
+
+    \tkzMarkRightAngle[size=.5](P,A,S)
+    \tkzMarkRightAngle[size=.5](A,R,C)
+
+\end{tikzpicture}

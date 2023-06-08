@@ -1,0 +1,22 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=1]
+    \tkzDefPoint(0,0){O}
+    \tkzDefPoint(60:2){D}
+    \tkzDefPoint(180:2){A}
+    \tkzDefPoint(0:2){B}
+    \tkzDefLine[parallel= through B](O,D)
+    \tkzInterLL(A,D)(B,tkzPointResult)
+    \tkzGetPoint{C}
+    
+    \tkzDrawPolygons(A,B,C A,O,D)
+    \tkzDrawCircle(O,B)
+
+    \tkzLabelPoints[below](O)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[above right](C)
+    \tkzLabelPoints[above](D)
+
+    \tkzLabelSegment[below](A,O){$2$}
+    \tkzMarkAngle[size=.5](B,O,D)
+    \tkzLabelAngle(B,O,D){\ang{60}}
+\end{tikzpicture}

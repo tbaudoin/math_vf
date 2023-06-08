@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0,5){B}
+    \tkzDefPoint(3,0){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzMarkRightAngle(C,A,B)
+    \tkzLabelSegment[left](A,B){\SI{70}{m}}
+    \tkzMarkAngle(A,B,C)
+    \tkzLabelAngle[pos=1.2](A,B,C){$\alpha$}
+    \tkzLabelPoint[above](B){Départ}
+    \tkzLabelPoint[right](C){Arrivée}
+\end{tikzpicture}

@@ -1,0 +1,36 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=0.7]
+    \tkzDefPoint(0,0){G}
+    \tkzDefPoint(0,4){E}
+    \tkzDefPoint(6,0){F}
+    \tkzDrawPolygon(G,E,F)
+    \tkzDefTriangle[pythagore](E,F)
+    \tkzGetPoint{X}
+    \tkzDefPointBy[symmetry=center F](X)
+    \tkzGetPoint{D}
+    \tkzDrawPolygon(E,F,D)
+    % \tkzMarkAngle[mark=none](F,E,D)
+
+    % \tkzMarkAngle(F,E,D)
+    % \tkzLabelAngle[pos=1.5](F,E,D){$\alpha$}
+
+    % \tkzFillAngle[fill=gray](E,D,F)
+    % \tkzLabelAngle[pos=1.5](E,D,F){$\beta$}
+
+    % \tkzFillAngle[fill=black](G,E,F)
+    % \tkzLabelAngle[pos=1.5](G,E,F){$\gamma$}
+
+    %\tkzMarkAngle(E,F,G)
+    % \tkzLabelAngle[pos=1.5](E,F,G){$\beta$}
+    
+    \tkzMarkRightAngles[size=.5](F,G,E)
+    \tkzLabelSegment[above](E,D){$8$}
+    \tkzLabelSegment[below](F,G){$6$}
+    \tkzLabelSegment[left](G,E){$4$}
+    \tkzLabelSegment[right](D,F){$\sqrt{12}$}
+    \tkzLabelPoints[below](G,F)
+    \tkzLabelPoints[above](E,D)
+    \tkzDrawSegment(D,F)
+
+    % \tkzDrawPoints(D,E,F,G)
+
+\end{tikzpicture}
