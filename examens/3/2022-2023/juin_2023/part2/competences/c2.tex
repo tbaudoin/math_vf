@@ -2,12 +2,67 @@
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EXERCICE
-\begin{exercise}[points=8]
+\begin{exercise}[points=2]
+    Résous le système d'équations ci-dessous.
+    \begin{enumerate}
+        \item
+              \(\left\{\begin{aligned}
+                  -3x+y & = 2 \\
+                  2x+y  & =-3
+              \end{aligned}\right.\)
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}[points=5]
+    Effectue les opérations ci-dessous. Simplifie au maximum ta réponse finale et n'oublie pas les conditions d'existence.
+    \begin{enumerate}[cols=2]
+        \item %3 pts
+              $\dfrac{x-1}{x^2-4} + \dfrac{3}{x+2}$
+        \item %2 pts
+              $\dfrac{x+1}{x-2}\cdot\dfrac{x^2-4x+4}{x}$
+    \end{enumerate}
+\end{exercise}
+% SOLUTION
+\begin{solution}
+    \begin{enumerate}
+        \item
+              Évaluation :
+              \begin{itemize}
+                  \item Factorisation \hfill 1
+                  \item Condition d'existence \hfill 1
+                  \item Simplification \hfill 0,5
+              \end{itemize}
+              $\begin{aligned}[t]
+                      \dfrac{4}{x(3+x)}\div\dfrac{x-3}{(x-3)(x+3)} & = \dfrac{4}{3+x}\cdot (x+3)
+                      \qquad\text{ C.E. : }x\ne 3\text{ et } x\ne -3                             \\
+                                                                   & = 4
+                  \end{aligned}$
+        \item
+              Évaluation :
+              \begin{itemize}
+                  \item Factorisation \hfill 1
+                  \item Condition d'existence \hfill 1
+                  \item Simplification \hfill 0,5
+              \end{itemize}
+              $\begin{aligned}[t]
+                      \dfrac{x+1}{x-2} \cdot \dfrac{(x-2)^2}{x}
+                       & = \dfrac{(x+1)(x-2)}{x}\qquad\text{C.E. : }x\ne 2 \text{ et } x \ne 0 \\
+                  \end{aligned}$
+    \end{enumerate}
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+\begin{exercise}[points=6]
     Pour chaque figure ci-dessous, détermine les grandeurs manquantes en mobilisant la théorie adéquate. Note tous tes raisonnements et arrondis tes réponses au dixième si nécessaire (une réponse sous forme de fraction ou de racine carrée est préférée).
 
     \begin{tasks}[after-item-skip=2cm](2)
         \task
-        $|AC| = ?$ et $|\widehat{C}|=?$.\\\input{tikz/c2_triangle_rectangle_001.tikz}
+        $|AC| = ?$ et $|\widehat{C}|=?$\\\input{tikz/c2_triangle_rectangle_001.tikz}
         % \task $|AD|$, $|\widehat{A}|=?$ et $|BC|=?$.\begin{center}
         %     \input{tikz/c2_thales_001.tikz}\medbreak
         %     $A,\ B,\ D$ appartiennent au cercle de centre $O$ et de diamètre $[AB]$ et $DO \parallel BC$.
@@ -20,16 +75,16 @@
         \end{center}
 
         \task
-        $DE \sslash BC$. $|AD|=?$ et $|BC|=?$
+        $DE \sslash BC$\\$|AD|=?$ et $|BC|=?$
         \begin{center}
             \input{tikz/c2_thales2.tikz}
         \end{center}
 
-        \task
-        A, B et C appartiennent au cercle de centre $O$. $|\widehat{ACB}|=?$
-        \begin{center}
-            \input{tikz/c2_cercle1.tikz}
-        \end{center}
+        % \task
+        % A, B et C appartiennent au cercle de centre $O$. $|\widehat{ACB}|=?$
+        % \begin{center}
+        %     \input{tikz/c2_cercle1.tikz}
+        % \end{center}
     \end{tasks}
 \end{exercise}
 % SOLUTION
@@ -171,32 +226,32 @@
         \item $3$
     \end{enumerate}
 \end{solution}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% EXERCICE
-\begin{exercise}[points=2]
-    Complète le tableau ci-dessous si tu sais que les solides $S$ et $S'$ sont semblables. Note tes réponses avec les valeurs exactes (laisse les racines carrées).
-    P : périmète, A : aire, V : volume.
-    \begin{center}
-        $\begin{tblr}{
-                hlines,
-                vlines,
-                columns = {1cm, c},
-                rows={1cm},
-                cell{1}{1}={r=1,c=3}{c},
-                cell{1}{4}={r=2,c=1}{c},
-                cell{1}{5}={r=1,c=3}{c},
-                column{4}={bg=gray!20},
-                row{1,2}={bg=gray!20}}
-                S  &     &    & k        & S' &    &    \\
-                P  & A   & V  &          & P' & A' & V' \\
-                50 & 125 &    &          & 10 &    & 8  \\
-                10 &     & 15 & \sqrt{2} &    & 90 &    \\
-                %    & 6  &   &   &    & 54  &     \\
-            \end{tblr}$
-    \end{center}
-\end{exercise}
-% SOLUTION
-\begin{solution}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % EXERCICE
+% \begin{exercise}[points=2]
+%     Complète le tableau ci-dessous si tu sais que les solides $S$ et $S'$ sont semblables. Note tes réponses avec les valeurs exactes (laisse les racines carrées).
+%     P : périmète, A : aire, V : volume.
+%     \begin{center}
+%         $\begin{tblr}{
+%                 hlines,
+%                 vlines,
+%                 columns = {1cm, c},
+%                 rows={1cm},
+%                 cell{1}{1}={r=1,c=3}{c},
+%                 cell{1}{4}={r=2,c=1}{c},
+%                 cell{1}{5}={r=1,c=3}{c},
+%                 column{4}={bg=gray!20},
+%                 row{1,2}={bg=gray!20}}
+%                 S  &     &    & k        & S' &    &    \\
+%                 P  & A   & V  &          & P' & A' & V' \\
+%                 50 & 125 &    &          & 10 &    & 8  \\
+%                 10 &     & 15 & \sqrt{2} &    & 90 &    \\
+%                 %    & 6  &   &   &    & 54  &     \\
+%             \end{tblr}$
+%     \end{center}
+% \end{exercise}
+% % SOLUTION
+% \begin{solution}
 
-\end{solution}
+% \end{solution}
 \end{document}

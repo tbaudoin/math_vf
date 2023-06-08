@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+    \tkzInit[xmin=-1,xmax=6,ymin=-1,ymax=11]
+    \tkzGrid[very thin, color=gray!40]
+    \tkzDefPoints{0/0/A,4/0/B,5/8/C,0/10/D,0/6/M}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawSegments(M,C M,B)
+    \tkzLabelPoints[left](A,M,D)
+    \tkzLabelPoints[right](B,C)
+    \tkzLabelSegment[left](M,D){\(x\)}
+    \tkzLabelSegment[left](M,A){\(6\)}
+    \tkzLabelSegment[below](A,B){\(4\)}
+    \tkzMarkRightAngle(M,A,B)
+\end{tikzpicture}
