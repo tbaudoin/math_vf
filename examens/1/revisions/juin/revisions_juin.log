@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  6 JUN 2023 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  12 JUN 2023 19:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1866,7 +1866,7 @@ File: img/rectanglecarre.jpg Graphic file (type jpg)
 Package pdftex.def Info: img/rectanglecarre.jpg  used on input line 12.
 (pdftex.def)             Requested size: 234.12411pt x 78.2923pt.
 )
-Overfull \hbox (12.64017pt too wide) in paragraph at lines 11--592
+Overfull \hbox (12.64017pt too wide) in paragraph at lines 11--595
 [] 
  []
 
@@ -1988,7 +1988,10 @@ Package pdftex.def Info: img/triangleatracer4.jpg  used on input line 12.
  (./xsim/revisions_juin-exercise-52-exercise-body.tex)
 \openout4 = `xsim/revisions_juin-exercise-53-exercise-body.tex'.
 
- (./xsim/revisions_juin-exercise-53-exercise-body.tex [10 <./img/périmetre.png> <./img/triangleatracer.jpg> <./img/triangleatracer2.jpg> <./img/triangleatracer3.jpg> <./img/triangleatracer4.jpg>])
+ (./xsim/revisions_juin-exercise-53-exercise-body.tex
+Overfull \vbox (3.12328pt too high) has occurred while \output is active []
+
+ [10 <./img/périmetre.png> <./img/triangleatracer.jpg> <./img/triangleatracer2.jpg> <./img/triangleatracer3.jpg> <./img/triangleatracer4.jpg>])
 \openout4 = `xsim/revisions_juin-exercise-54-exercise-body.tex'.
 
  (./xsim/revisions_juin-exercise-54-exercise-body.tex
@@ -2030,21 +2033,24 @@ File: img/PetA.jpg Graphic file (type jpg)
 Package pdftex.def Info: img/PetA.jpg  used on input line 12.
 (pdftex.def)             Requested size: 421.57396pt x 167.12395pt.
 )
+\openout4 = `xsim/revisions_juin-exercise-62-exercise-body.tex'.
+
+ (./xsim/revisions_juin-exercise-62-exercise-body.tex)
 
 Package xsim Warning: Exercise properties may have changed. Rerun to get them
 (xsim)                synchronized.
 
 [12 <./img/PetA.jpg>] (./revisions_juin.aux) ) 
 Here is how much of TeX's memory you used:
- 35465 strings out of 478579
- 801264 string characters out of 5857457
- 1115107 words of memory out of 5000000
- 52640 multiletter control sequences out of 15000+600000
+ 35502 strings out of 478579
+ 802880 string characters out of 5857457
+ 1115994 words of memory out of 5000000
+ 52674 multiletter control sequences out of 15000+600000
  450466 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,15n,108p,2137b,1056s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,14n,108p,2167b,1056s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmnc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on revisions_juin.pdf (12 pages, 243685 bytes).
+Output written on revisions_juin.pdf (12 pages, 244728 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
