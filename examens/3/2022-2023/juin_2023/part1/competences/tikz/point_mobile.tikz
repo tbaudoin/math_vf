@@ -1,13 +1,13 @@
-\begin{tikzpicture}
-    \tkzInit[xmin=-1,xmax=6,ymin=-1,ymax=11]
-    \tkzGrid[very thin, color=gray!40]
+\begin{tikzpicture}[baseline=(current bounding box.east)]
     \tkzDefPoints{0/0/A,4/0/B,5/8/C,0/10/D,0/6/M}
     \tkzDrawPolygon(A,B,C,D)
     \tkzDrawSegments(M,C M,B)
-    \tkzLabelPoints[left](A,M,D)
+    \tkzDefLine[perpendicular=through C](D,M)
+    \tkzInterLL(D,M)(tkzPointResult,C)
+    \tkzGetPoint{H}
+    \tkzDrawSegment[dashed](H,C)
+    \draw[<->, >=latex] ([shift={(-9pt,20pt)}]M) -- ([shift={(-9pt,-20pt)}]M);
+    \tkzLabelPoints[left, fill=white](A,M,D,H)
     \tkzLabelPoints[right](B,C)
-    \tkzLabelSegment[left](M,D){\(x\)}
-    \tkzLabelSegment[left](M,A){\(6\)}
-    \tkzLabelSegment[below](A,B){\(4\)}
-    \tkzMarkRightAngle(M,A,B)
+    \tkzMarkRightAngles(M,A,B C,H,D)
 \end{tikzpicture}
