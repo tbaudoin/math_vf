@@ -1,0 +1,145 @@
+\documentclass[a4paper, 12pt, parskip=half-, twoside=semi]{scrartcl}
+%====================================================================
+% PACKAGES
+%====================================================================
+% marge
+\usepackage[margin=1in]{geometry}
+% langue
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+% police
+\usepackage[sfmath,light, frenchstyle]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
+% math utils
+\usepackage{mathtools}
+% image
+\usepackage{graphicx}
+\usepackage{tikzscale} % insérer des *.tikz comme des images
+% dessin
+\usepackage{tikz}
+\usepackage{tkz-fct}
+\usepackage{tkz-tab}
+\usepackage{tkz-euclide}
+% plusieurs colonnes
+\usepackage{multicol}
+% soulignements différents
+\usepackage{ulem}
+% tableaux
+\usepackage{tabularray}
+% personnaliser les listes
+\usepackage{enumitem}
+% unités
+\usepackage{siunitx}
+% exercice
+% use-files -> xsim utilise mets chaque exercice dans un fichier séparé
+% use-aux -> xsim utilise le fichier aux de latex au lien d'en créer un nouveau
+\usepackage[use-files,use-aux]{xsim}
+\usepackage{tcolorbox}
+\usepackage{stmaryrd}
+%
+\usepackage{subfiles}
+\usepackage{fontawesome5}
+\usepackage{tasks}
+\faStyle{regular}
+%====================================================================
+% SETTINGS
+%====================================================================
+% XSIM
+\xsimsetup{
+    path=xsim,% stocker les fichiers auxiliaires dans ce dossier
+    %solution/print=true, % afficher les solutions en dessous des questions
+    blank/style=\dotuline{#1},
+    load-style=math-exam
+}
+
+% ENUMITEM
+% mettre les labels sous forme de lettre en gras
+\setlist[enumerate]{
+    label=\textbf{\alph*)},
+    itemsep=1ex}
+% nouveau paramètre pour mettre les listes sur plusieurs colonnes
+\SetEnumitemKey{cols}{%
+    itemsep = 1\itemsep,
+    parsep = 1\parsep,
+    before = \raggedcolumns\begin{multicols}{#1},
+        after = \end{multicols}}
+% \newlist{qcm}{itemize}{1}
+% \setlist[qcm]{label=\faSquare, cols=2}
+% TIKZ
+\usetikzlibrary{babel, math, patterns, calc}
+% TASKS
+\NewTasksEnvironment[label=\protect\mycirc{\Alph*}, label-width=20pt]{QCM}[\choice](2)
+\settasks{
+    label=\textbf{\alph*)},
+    label-width=12pt
+}
+%============================================
+% PERSONNAL MACRO
+%============================================
+\newtcolorbox{consigne}{colback=gray!5!white, colframe=gray!75!black}
+\newcommand*\mycirc[1]{%
+\begin{tikzpicture}[baseline=(C.base)]
+\node[draw,circle,inner sep=1pt,minimum size=3ex](C) {#1};
+\end{tikzpicture}}
+\begin{document}
+
+\pagestyle{empty}
+\includegraphics[width=\linewidth]{img/entete.pdf}
+    \vspace{\smallskipamount}
+    \begin{tblr}{%
+            hline{1,3,5,9,10},
+            vline{1,4},
+            colspec={XXX},%
+            cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+            cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+            cell{3}{1}={r=1,c=2}{l},
+            cell{4}{1}={r=1,c=2}{l},
+            cell{5}{1}={r=1,c=2}{l},
+            cell{5}{3}={r=2,c=1}{c},
+            cell{6}{1}={r=1,c=2}{l},%
+            cell{7}{1}={r=1,c=3}{l},%
+            cell{8}{1}={r=1,c=3}{l},%
+            row{9}={c},
+            rowsep=1ex%
+        }%
+        % cell1
+        Mathématiques &&\\
+        % cell2
+        Juin 2023&&\\
+        % cell3
+        Nom : && Classe : \\
+        % cell4
+        Prénom : && Numéro :  \\
+        % cell5
+        Professeurs :  Baudoin, Debroux, Regout &&\hspace*{1.5cm}\slash\TotalExerciseGoal{points}{}{}\(\rightarrow\)\hspace*{1.5cm}\slash 40\\
+        % cell6
+        Date et heure: Lundi 19 juin 2023&&\\
+        % cell7
+        Partie 1 :&&\\
+        % cell8
+        Partie 2 : &&\\
+        % cell9
+        C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}
+        &
+        C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}
+        &
+        C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}\\
+    \end{tblr}%
+    \vspace{\smallskipamount}
+    \begin{scriptsize}%
+        Rue de linthout, 30 - 1030 Bruxelles%
+    \end{scriptsize}%
+\cleardoublepage
+\pagestyle{plain}
+\setcounter{page}{1}
+%=========
+% PARTIE 1
+%=========
+\subfile{partie1.tex}
+%==========
+% PARTIE 2
+%==========
+\cleardoublepage
+\subfile{partie2.tex}
+\end{document}

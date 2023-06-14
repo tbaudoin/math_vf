@@ -1,0 +1,419 @@
+\documentclass[3_juin_2023.tex]{subfiles}
+\begin{document}
+\pagestyle{empty}
+\includegraphics[width=\linewidth]{img/entete.pdf}
+    \vspace{\smallskipamount}
+    \begin{tblr}{%
+            hline{1,3,5,9,10},
+            vline{1,4},
+            colspec={XXX},%
+            cell{1}{1} = {r=1, c=3}{c,font=\bfseries\Huge},%
+            cell{2}{1}= {r=1, c=3}{c,font=\bfseries\Large},%
+            cell{3}{1}={r=1,c=2}{l},
+            cell{4}{1}={r=1,c=2}{l},
+            cell{5}{1}={r=1,c=2}{l},
+            cell{5}{3}={r=2,c=1}{c},
+            cell{6}{1}={r=1,c=2}{l},%
+            cell{7}{1}={r=1,c=3}{l},%
+            cell{8}{1}={r=1,c=3}{l},%
+            row{9}={c},
+            rowsep=1ex%
+        }%
+        % cell1
+        Mathématiques &&\\
+        % cell2
+        Partie 1&&\\
+        % cell3
+        Nom : && Classe : \\
+        % cell4
+        Prénom : && Numéro :  \\
+        % cell5
+        Professeurs :  Baudoin, Debroux, Regout &&\\
+        % cell6
+        Date et heure: Lundi 19 juin 2023 de 8 h 20 à 10 h 30&&\\
+        % cell7
+        Matériel autorisé : \sout{calculatrice} &&\\
+        % cell8
+        Matériel à distribuer : feuille à en-tête, feuille de brouillon&&\\
+        % cell9
+        % C1 : \qquad/\TotalExerciseTypeGoal{connaitre}{points}{}{}
+        % &
+        % C2 : \qquad/\TotalExerciseTypeGoal{appliquer}{points}{}{}
+        % &
+        % C3 : \qquad/\TotalExerciseTypeGoal{transferer}{points}{}{}\\
+    \end{tblr}%
+    \vspace{\smallskipamount}
+    \begin{scriptsize}%
+        Rue de linthout, 30 - 1030 Bruxelles%
+    \end{scriptsize}%
+    \par%
+    \minisec{Quelques consignes}
+\begin{itemize}
+    \item Rendre une copie soignée et aérée.
+    \item Respecter les conventions mathématiques et les notations.
+    \item Détailler tous ses raisonnements, la réponse seule ne suffit pas.
+    \item Pour les problèmes, n'oubliez pas de formuler la réponse finale  avec une phrase complète.
+    \item Arrondir les réponses finales (pas d'arrondis sur les réponses intermédiaires) au centième près.
+\end{itemize}
+\faIcon{exclamation-triangle} Tout manquement entraînera une perte de points, soyez vigilant lors de la relecture.
+\vfill
+\begin{flushright}
+    Bon travail !
+\end{flushright}
+\cleardoublepage
+\pagestyle{plain}
+\setcounter{page}{1}
+
+%=========
+% C1
+%=========
+\begin{connaitre}[points=4]
+    Détermine la ou les bonnes réponses. Si tu oublies des bonnes réponses ou que tu en choisis des mauvaises, tu n'obtiens aucun point pour à la question.
+    \begin{enumerate}
+        \item Une fonction linéaire est une fonction qui \dots
+              \begin{QCM}(2)
+                  \choice passe par l'origine du repère
+                  \choice a une pente nulle
+                  \choice est toujours croissante
+                  \choice admet $0$ comme racine.
+              \end{QCM}
+        \item Combien de solution(s) admet l'équation $x^2+4=0$ ?
+              \begin{QCM}(3)
+                  \choice $2$
+                  \choice $1$
+                  \choice $0$
+              \end{QCM}
+        \item Quel est le degré du polynôme $x^6 + 5x^4 -2x^3 +23$ ?
+              \begin{QCM}(3)
+                  \choice $3$
+                  \choice $4$
+                  \choice $6$
+              \end{QCM}
+        \item Quelle(s) expression(s) sont équivalentes à $\dfrac{3}{\sqrt{2}}$ ?
+              \begin{QCM}(4)
+                  \choice $\dfrac{3\sqrt{2}}{2}$
+                  \choice $\dfrac{\sqrt{6}}{2}$
+                  \choice $\sqrt{\dfrac{3}{2}}$
+                  \choice $\sqrt{\dfrac{9}{2}}$
+              \end{QCM}
+    \end{enumerate}
+\end{connaitre}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Les bonnes réponses sont cochées et aucune mauvaise réponse n'est cochée \hfill 1
+    \end{itemize}
+    \begin{enumerate}
+        \item Une fonction linéaire est une fonction qui \dots
+              \begin{QCM}
+                  \choice[\faCheckSquare] passe par l'origine du repère
+                  \choice a une pente nulle
+                  \choice est toujours croissante
+                  \choice[\faCheckSquare] admet $0$ comme racine.
+              \end{QCM}
+        \item Combien de solution(s) admet l'équation $x^2+4=0$ ?
+              \begin{QCM}(3)
+                  \choice $2$
+                  \choice $1$
+                  \choice[\faCheckSquare] $0$
+              \end{QCM}
+        \item Quel est le degré du polynôme $x^6 + 5x^4 -2x^3 +23$ ?
+              \begin{QCM}(3)
+                  \choice $3$
+                  \choice $4$
+                  \choice[\faCheckSquare] $6$
+              \end{QCM}
+        \item Quelle(s) expression(s) est/sont équivalentes à $\dfrac{3}{\sqrt{2}}$ ?
+              \begin{QCM}(4)
+                  \choice[\faCheckSquare] $\dfrac{3\sqrt{2}}{2}$
+                  \choice $\dfrac{\sqrt{6}}{2}$
+                  \choice $\sqrt{\dfrac{3}{2}}$
+                  \choice[\faCheckSquare] $\sqrt{\dfrac{9}{2}}$
+              \end{QCM}
+    \end{enumerate}
+\end{solution}
+
+\begin{connaitre}[points=2]
+    Après avoir lu la légende, complète le tableau (sur cette feuille).
+
+    Type de fonction \hfill A : affine \hfill L : linéaire \hfill C : constante
+
+    Croissance de la fonction \hfill $\nearrow$  : croissante \hfill $\searrow$ : décroissante \hfill C : constante
+
+    \begin{tblr}{hlines,
+            vlines,
+            columns = {2cm,c},
+            rows={.9cm,m},
+            column{1} = {3cm, l},
+            cell{1}{1} = {c},
+            rowsep=1ex}
+        Expression analytique & Type de fonction & Pente & Croissance & Racine & Ordonnée à l'origine \\
+        % $f(x) = 2x-2$                                                                                 \\
+        % $f(x) = 5$                                                                                    \\
+        $f(x) = 3x$                                                                                   \\
+        %$f(x) = 8 - 3x$                                                                               \\
+        $f(x) = \dfrac{2x + 8}{4}$                                                                    \\
+    \end{tblr}
+\end{connaitre}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Il n'y pas d'erreur dans a ligne \hfill 1
+        \item Il y a une erreur dans la ligne \hfill 0,5
+    \end{itemize}
+    \begin{tblr}{hlines,
+            vlines,
+            columns = {2cm,c},
+            rows={.9cm,m},
+            column{1} = {3cm, l},
+            cell{1}{1} = {c},
+            rowsep=1ex}
+        Expression analytique      & Type de fonction & Pente          & Croissance & Racine & Ordonnée à l'origine \\
+        $f(x) = 3x$                & L                & 3              & $\nearrow$ & 0      & 0                    \\
+        % $f(x) = 8 - 3x$            & A                & $-3$           & $\searrow$ & $\dfrac{8}{3}$ & 8                    \\
+        $f(x) = \dfrac{2x + 8}{4}$ & A                & $\dfrac{1}{2}$ & $\nearrow$ & $-4$   & 2                    \\
+    \end{tblr}
+\end{solution}
+
+\begin{connaitre}[points=1]
+    Pour chaque graphe ci-dessous, détermine s'il s'agit d'une fonction (F) ou d'une relation (R).
+    \begin{tasks}(4)
+        \task \includegraphics[width=\linewidth]{tikz/fct_or_relation01.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/fct_or_relation02.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/fct_or_relation03.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/fct_or_relation04.tikz}
+    \end{tasks}
+\end{connaitre}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Toutes les réponses sont correctes\hfill 1
+        \item Il y a une erreur \hfill 0,5
+    \end{itemize}
+    \begin{enumerate}[cols=4]
+        \item Relation
+        \item Fonction
+        \item Relation
+        \item Fonction
+    \end{enumerate}
+\end{solution}
+
+\newpage
+\begin{connaitre}[points=2]
+    Associe chaque fonction à une allure.
+    \begin{tasks}(4)
+        \task $f(x) = 3x+2$
+        \task $f(x) = -x - 3$
+        \task $f(x) = 5x$
+        \task $f(x) = 2$
+    \end{tasks}
+
+    \begin{tasks}[label=\fbox{\arabic*}, label-width=15pt](3)
+        \task \input{tikz/allure06.tikz}
+        \task \input{tikz/allure01.tikz}
+        \task \input{tikz/allure02.tikz}
+        \task \input{tikz/allure05.tikz}
+        \task \input{tikz/allure04.tikz}
+        \task \input{tikz/allure03.tikz}
+    \end{tasks}
+\end{connaitre}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item L'allure est correcte \hfill 0,5
+    \end{itemize}
+    \begin{tasks}(4)
+        \task \fbox{2}
+        \task \fbox{3}
+        \task \fbox{6}
+        \task \fbox{5}
+    \end{tasks}
+\end{solution}
+%====
+% C2
+%====
+\begin{appliquer}[points=10]
+    Résous les équations et les inéquations suivantes. Note tes solutions sous forme d'un ensemble (\(S = \{\dots\}\)) ou d'un intervalle (\(x \in [\dots]\)).
+    \begin{enumerate}[cols=2]
+        \item %4 pts
+              $x^{3}+4x^{2}-3x -18=0$
+        \item %2pts
+              $9x^{2}+1=6x$
+        \item %3 pts
+              $3x^{3}-27x=0$
+        \item %2 pts
+              $x^{2}+2x-8 =0$
+        \item \(-3(x + 2)-4 > 2(x-3)\)
+        \item \(\dfrac{3x-2}{4}<5 + \dfrac{3x}{2}\)
+    \end{enumerate}
+\end{appliquer}
+% SOLUTION
+\begin{solution}
+    \begin{enumerate}
+        \item Évaluation :
+              \begin{itemize}
+                  \item Trouver une racine de $P(x)$\hfill 0,5
+                  \item Factoriser avec Horner\hfill 0,5
+                  \item Factoriser avec les produits remarquables\hfill 1
+                  \item Solutions \hfill 1
+              \end{itemize}
+              $x^{3}+4x^{2}-3x -18 = (x-2)(x+3)^2=0 \Leftrightarrow x = 2\text{~ou~} x= -3$
+
+        \item Évaluation :
+              \begin{itemize}
+                  \item Factoriser avec les produits remarquables\hfill 1
+                  \item Solution\hfill 1
+              \end{itemize}
+              $9x^2-6x+1 = (3x-1)^2 =0\Leftrightarrow x = \dfrac{1}{3}$
+
+        \item
+              \begin{itemize}
+                  \item Factoriser avec la mise en évidence \hfill 1
+                  \item Factoriser avec les produits remarquables\hfill 1
+                  \item Solutions \hfill 1
+              \end{itemize}
+              $3x^3-27x = 3x(x-3)(x+3)=0 \Leftrightarrow x=0 \text{~ou~}x=3\text{~ou~}x=-3$
+
+        \item
+              \begin{itemize}
+                  \item Factoriser avec somme produit\hfill 1
+                  \item Solution \hfill 1
+              \end{itemize}
+              $x^2+2x-8 = (x+4)(x-2) = 0\Leftrightarrow x=-4 \text{~ou~}x=2$
+    \end{enumerate}
+\end{solution}
+
+
+\begin{appliquer}[points=6]
+    Détermine l'expression analytique des fonctions suivantes à l'aide des informations fournies.
+    \begin{enumerate}
+        \item La fonction $f_1$ passe par les points $A(1;11)$ et $B(-2;2)$.
+              %\item La fonction $f_2$ est linéaire et passe par le point $C(2;-8)$
+
+        \item La racine de $f_3$ est $-2$ et son graphe est parallèle à celui de la fonction $g(x) = 2x + 2$.
+              %\item Un tableau de valeur de $f_5$ est le suivant.
+              %   $\begin{tblr}{hlines,vlines,columns={1cm,c}}
+              %           x    & 4  & 2    & -8 \\
+              %           f(x) & 13 & 12,5 & 4
+              %       \end{tblr}$
+        \item Le graphe de la fonction $f_2$ est le suivant. \hfil\input{tikz/m_p_fct01.tikz}
+    \end{enumerate}
+\end{appliquer}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Pente \hfill 1
+        \item Ordonnée à l'origine \hfill 1
+    \end{itemize}
+    \begin{enumerate}[cols=3]
+        \item $f_1(x) = 3x + 8$
+        \item $f_2(x) = 3x - 5$
+        \item $f_3(x) = 2x + 4$
+    \end{enumerate}
+\end{solution}
+
+\newpage
+\begin{appliquer}[points=1]
+    Réduis les expressions ci-dessous  et écris-les sans dénominateur en utilisant les propriétés des puissances.
+    \begin{enumerate}[cols=2]
+        \item $\dfrac{15x^{-2}}{5y^7}$
+        \item $\dfrac{x^7 y^{-2}}{x^{-2}y^5}$
+    \end{enumerate}
+\end{appliquer}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Expression correcte \hfill 0,5
+    \end{itemize}
+    \begin{enumerate}[cols=2]
+        \item $3x^{-2}y^{-7}$
+        \item $x^9y^{-7}$
+    \end{enumerate}
+\end{solution}
+
+\begin{appliquer}[points=3]
+    Effectue les opérations demandées. Simplifie au maximum ta réponse.
+    \begin{enumerate}[cols=3]
+        \item $\sqrt{35}\cdot\sqrt{20}$
+        \item $\sqrt{45}-\sqrt{80}$
+        \item $\left(3 + 2\sqrt{2}\right)^2$
+    \end{enumerate}
+\end{appliquer}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item L'expression est correcte \hfill 1
+    \end{itemize}
+    \begin{enumerate}[cols=3]
+        \item $10 \sqrt{7}$
+        \item $-\sqrt{5}$
+        \item $17+12\sqrt{2}$
+    \end{enumerate}
+\end{solution}
+%=====
+% C3
+%=====
+\begin{transferer}[points=4]
+    Détermine la valeur de \(x\) pour que ce triangle soit rectangle en \(A\).
+    \begin{center}
+        \input{tikz/c3_triangle_rectangle.tikz}
+    \end{center}
+    % \begin{enumerate}
+    %     \item % 2pts
+    %      Montre que l'équation qui lie les trois côtés de ce triangle est $x^2-100x = 0$.
+    %     \item %1 pt
+    %     Résous cette équation.
+    %     \item %1 pt
+    %     Quelles sont les longueurs des côtés de ce triangle ?
+    % \end{enumerate}
+\end{transferer}
+% SOLUTION
+\begin{solution}
+    Évaluation :
+    \begin{itemize}
+        \item Trouver l'équation \hfill 1
+        \item Factoriser \hfill 1
+        \item Résoudre \hfill 1
+        \item Interpréter \hfill 1
+    \end{itemize}
+    \begin{enumerate}
+        \item Comme le triangle $ABC$ est rectangle en $A$, le théorème de Pythagore me permet d'écrire,
+              \begin{align*}
+                  (x+1)^2               & = (x-1)^2 +  \left(\dfrac{x}{5}\right)^2 \\
+                  x^2+2x+1              & = x^2 - 2x + 1 + \dfrac{x^2}{25}         \\
+                  -4x + \dfrac{x^2}{25} & =0                                       \\
+                  x^2 -100x             & = 0
+              \end{align*}
+        \item Résolvons cette équation (mise en évidence et règle du produit nul)
+              \begin{align*}
+                  x^2 - 100x & = 0              \\
+                  x(x-100)   & = 0              \\
+                  x = 0      & \text{ ou }x=100
+              \end{align*}
+        \item Dans ce contexte, la solution $x=0$ est a rejetée car la longueur de côté d'un triangle ne peut être nul ou négative. Par conséquent, les longueurs des côtés de ce triangle sont \numlist{20;99;101}.
+    \end{enumerate}
+
+\end{solution}
+
+\begin{transferer}[points=2]
+    \(M\) est un point mobile sur \([AD]\) a une distance \(x\) de \(D\). Déterminez l'ensemble des valeurs de \(x\)pour que le triangle \(MDC\) ait une aire plus petite que celle du triangle \(MAB\).
+
+    \parbox{3cm}{%
+        \(\lvert AD \rvert=10\)\medbreak
+        \(\lvert HC \rvert=5\)\medbreak
+        \(\lvert AB \rvert=4\)%
+    }
+    \hfil\input{tikz/point_mobile.tikz}
+\end{transferer}
+% SOLUTION
+\begin{solution}
+
+\end{solution}
+\end{document}
