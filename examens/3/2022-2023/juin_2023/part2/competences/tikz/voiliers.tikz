@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/H, 4/0/A, 9/0/B, 0/4/P}
+    \tkzDrawLine(H,B)
+    \tkzDrawSegments(H,P P,A P,B)
+    \tkzMarkAngle[mark=](P,A,H)
+    \tkzMarkAngle[mark=](P,B,H)
+    \tkzMarkAngle[mark=](H,P,A)
+    \tkzLabelAngle[pos=1.5, mark=](H,P,A){\ang{62}}
+    \tkzMarkAngle[size=2, mark=, color=red](H,P,B)
+    \tkzLabelAngle[pos=2.5, color=red](H,P,B){\ang{76}}
+    \tkzMarkRightAngle(P,H,A)
+    \tkzLabelPoints[below](A,B,H)
+    \tkzLabelPoints[above](P)
+    \draw[<->,>=latex] (-0.5,0) -- (-0.5,4);
+    \tkzLabelSegment[left, fill=white](P,H){\SI{40}{m}}
+    \tkzLabelPoint[inner sep=0pt, above right](A){\includegraphics[width=1cm]{img/voilier.jpg}}
+    \tkzLabelPoint[inner sep=0pt, above right](B){\includegraphics[width=1cm]{img/voilier.jpg}}
+    \tkzDrawPoints(A,B,H,P)
+\end{tikzpicture}

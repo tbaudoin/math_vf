@@ -3,10 +3,15 @@ entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/tbaudoin/Documents/GitHub/math_vf/examens/3/2022-2023/juin_2023/part2/partie2
-(/home/tbaudoin/Documents/GitHub/math_vf/examens/3/2022-2023/juin_2023/part2/partie2.tex
+**/home/tbaudoin/Documents/GitHub/math_vf/examens/3/2022-2023/juin_2023/part2/competences/c3
+(/home/tbaudoin/Documents/GitHub/math_vf/examens/3/2022-2023/juin_2023/part2/competences/c3.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
+L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../partie2.tex'
+(/usr/share/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+) (../partie2.tex (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2022/10/12 v3.38 KOMA-Script document class (article)
 (/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2022/10/12 v3.38 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
@@ -122,7 +127,7 @@ Package tocbasic Info: omitting babel extension for `lot'
 \c@table=\count193
 Class scrartcl Info: Redefining `\numberline' on input line 6397.
 \bibindent=\dimen140
-) (./inputs/preambule.tex (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+) (..//inputs/preambule.tex (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -1213,9 +1218,7 @@ LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
 ) (/usr/share/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
- (/usr/share/texmf-dist/tex/latex/import/import.sty
-Package: import 2020/04/01  v 6.2
-)) (/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+) (/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
  (/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
 Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fontawesome5
@@ -1266,27 +1269,27 @@ Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
 \tikz@math@toks=\toks48
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybabel.code.tex
 File: tikzlibrarybabel.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (./inputs/entete.tex) (./inputs/xsim_template.tex)
+)) (..//inputs/entete.tex) (..//inputs/xsim_template.tex)))
 \tikzscale@accuracy=\skip87
 \g_xsim_collection_exercise_in_all exercises_int=\count435
 \c@totalexerciseinall exercises=\count436
- (./partie2.aux)
-\openout1 = `partie2.aux'.
+ (./c3.aux)
+\openout1 = `c3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1322,27 +1325,27 @@ LaTeX Font Info:    ... okay on input line 5.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 5.
+LaTeX Info: Redefining \degres on input line 2.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 5.
+(french.ldf)             reported on input line 2.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 5.
-LaTeX Info: Redefining \up on input line 5.
-LaTeX Info: Redefining \microtypecontext on input line 5.
-Package microtype Info: Applying patch `item' on input line 5.
-Package microtype Info: Applying patch `toc' on input line 5.
-Package microtype Info: Applying patch `eqnum' on input line 5.
-Package microtype Info: Applying patch `footnote' on input line 5.
-Package microtype Info: Applying patch `verbatim' on input line 5.
+(french.ldf)             reported on input line 2.
+LaTeX Info: Redefining \up on input line 2.
+LaTeX Info: Redefining \microtypecontext on input line 2.
+Package microtype Info: Applying patch `item' on input line 2.
+Package microtype Info: Applying patch `toc' on input line 2.
+Package microtype Info: Applying patch `eqnum' on input line 2.
+Package microtype Info: Applying patch `footnote' on input line 2.
+Package microtype Info: Applying patch `verbatim' on input line 2.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 5.
+LaTeX Info: Redefining \showhyphens on input line 2.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1387,45 +1390,32 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 ) (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 5.
-<img/entete.pdf, id=29, 803.0pt x 50.1875pt>
-File: img/entete.pdf Graphic file (type pdf)
-<use img/entete.pdf>
-Package pdftex.def Info: img/entete.pdf  used on input line 6.
-(pdftex.def)             Requested size: 452.9679pt x 28.31079pt.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 2.
+\l__xsim_file_contents_iow=\write4
+\openout4 = `xsim/c3-exercise-1-exercise-body.tex'.
+
 LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <12> not available
-(Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <24.88> not available
-(Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <17.28> not available
-(Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 6.
-> Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 6.
+(Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 107.
+ (./xsim/c3-exercise-1-exercise-body.tex (./tikz/trapeze.tikz
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 5.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 6.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 5.
  (/usr/share/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 6.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 5.
  (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 6.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 5.
  (/usr/share/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 6.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 5.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1433,112 +1423,61 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 6.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 5.
  (/usr/share/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 6.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 5.
  (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 6.
+(Font)              scaled to size 12.50409pt on input line 5.
  (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 6.
+(Font)              scaled to size 9.37807pt on input line 5.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 6.
+(Font)              scaled to size 7.29405pt on input line 5.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 6.
+(Font)              scaled to size 12.50409pt on input line 5.
  (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 6.
+(Font)              scaled to size 9.37807pt on input line 5.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 6.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./img/entete.pdf>] (./competences/c1.tex
-\l__xsim_file_contents_iow=\write4
-\openout4 = `xsim/partie2-exercise-1-exercise-body.tex'.
-
- (./xsim/partie2-exercise-1-exercise-body.tex
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on input line 28.
- (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd) (./competences//tikz/c1_thales.tikz))
-\openout4 = `xsim/partie2-exercise-1-solution-body.tex'.
-
-) [2{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}] (./competences/c2.tex
-\openout4 = `xsim/partie2-exercise-2-exercise-body.tex'.
-
- (./xsim/partie2-exercise-2-exercise-body.tex)
-\openout4 = `xsim/partie2-exercise-2-solution-body.tex'.
-
-\openout4 = `xsim/partie2-exercise-3-exercise-body.tex'.
-
- (./xsim/partie2-exercise-3-exercise-body.tex)
-\openout4 = `xsim/partie2-exercise-3-solution-body.tex'.
-
-\openout4 = `xsim/partie2-exercise-4-exercise-body.tex'.
-
- (./xsim/partie2-exercise-4-exercise-body.tex (./competences//tikz/c2_triangle_rectangle_001.tikz) (./competences//tikz/c2_trigonometrie1.tikz
+(Font)              scaled to size 7.29405pt on input line 5.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (./competences//tikz/c2_thales2.tikz))
-\openout4 = `xsim/partie2-exercise-4-solution-body.tex'.
-
-\openout4 = `xsim/partie2-exercise-5-exercise-body.tex'.
-
- (./xsim/partie2-exercise-5-exercise-body.tex [3] (./competences//tikz/c2_pythagore2.tikz))
-\openout4 = `xsim/partie2-exercise-5-solution-body.tex'.
-
-\openout4 = `xsim/partie2-exercise-6-exercise-body.tex'.
-
- (./xsim/partie2-exercise-6-exercise-body.tex (./competences//tikz/analyse_fct01.tikz
+) (./tikz/graphe_trapeze.tikz
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 6.
+(Font)              scaled to size 8.33606pt on input line 5.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 6.
+(Font)              scaled to size 6.25204pt on input line 5.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 6.
+(Font)              scaled to size 5.21004pt on input line 5.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 6.
+(Font)              scaled to size 8.33606pt on input line 5.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 6.
+(Font)              scaled to size 6.25204pt on input line 5.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 6.
- ( FP-EVAL ( FP-UPN ( FP-SUB ) ) ) ( FP-EVAL ( FP-UPN ( FP-SUB ) ) ) ( FP-DIV ) ( FP-DIV )
-\openout3 = `partie2.tkzfonct.gnuplot'.
+(Font)              scaled to size 5.21004pt on input line 5.
+ ( FP-EVAL ( FP-UPN ) ) ( FP-EVAL ( FP-UPN ) ) ( FP-DIV ) ( FP-DIV )
+\openout3 = `c3.tkzfonct.gnuplot'.
 
-runsystem(gnuplot partie2.tkzfonct.gnuplot)...executed.
-
- ( FP-EVAL ( FP-UPN ( FP-SUB ) ) ) ( FP-EVAL ( FP-UPN ( FP-ADD ) ( FP-MUL ) ( FP-ADD ) ( FP-MUL ) ) ) ( FP-EVAL ( FP-UPN ( FP-SUB ) ) ) ( FP-EVAL ( FP-UPN ) ) ( FP-DIV ) ( FP-DIV )
-\openout3 = `partie2.tkzfonct.gnuplot'.
-
-runsystem(gnuplot partie2.tkzfonct.gnuplot)...executed.
-
-) [4])
-\openout4 = `xsim/partie2-exercise-6-solution-body.tex'.
-
-) (./competences/c3.tex
-\openout4 = `xsim/partie2-exercise-7-exercise-body.tex'.
-
- (./xsim/partie2-exercise-7-exercise-body.tex (./competences//tikz/trapeze.tikz) (./competences//tikz/graphe_trapeze.tikz ( FP-EVAL ( FP-UPN ) ) ( FP-EVAL ( FP-UPN ) ) ( FP-DIV ) ( FP-DIV )
-\openout3 = `partie2.tkzfonct.gnuplot'.
-
-runsystem(gnuplot partie2.tkzfonct.gnuplot)...executed.
+runsystem(gnuplot c3.tkzfonct.gnuplot)...executed.
 
  ( FP-EVAL ( FP-UPN ) ) ( FP-EVAL ( FP-UPN ) ) ( FP-DIV ) ( FP-DIV )
-\openout3 = `partie2.tkzfonct.gnuplot'.
+\openout3 = `c3.tkzfonct.gnuplot'.
 
-runsystem(gnuplot partie2.tkzfonct.gnuplot)...executed.
+runsystem(gnuplot c3.tkzfonct.gnuplot)...executed.
 
 )
 Overfull \hbox (12.22969pt too wide) in paragraph at lines 13--31
@@ -1551,33 +1490,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--31
  []
 
 )
-\openout4 = `xsim/partie2-exercise-7-solution-body.tex'.
+\openout4 = `xsim/c3-exercise-1-solution-body.tex'.
 
-) [5] (./xsim/partie2-exercise-1-solution-body.tex
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 29.
- (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)) (./xsim/partie2-exercise-2-solution-body.tex) (./xsim/partie2-exercise-3-solution-body.tex) (./xsim/partie2-exercise-4-solution-body.tex [6{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}] [7]) (./xsim/partie2-exercise-5-solution-body.tex) (./xsim/partie2-exercise-6-solution-body.tex) (./xsim/partie2-exercise-7-solution-body.tex [8]) (./xsim/partie2-exercise-8-solution-body.tex) (./xsim/partie2-exercise-9-solution-body.tex) (./xsim/partie2-exercise-10-solution-body.tex)
+
 
 Package xsim Warning: Exercise properties may have changed. Rerun to get them
 (xsim)                synchronized.
 
-[9] (./partie2.aux) )
-(\end occurred inside a group at level 1)
+[1
 
-### semi simple group (level 1) entered at line 28 (\begingroup)
-### bottom level 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}] (./c3.aux) ) 
 Here is how much of TeX's memory you used:
- 47000 strings out of 476025
- 1060626 string characters out of 5796532
- 1888388 words of memory out of 5000000
- 66421 multiletter control sequences out of 15000+600000
- 552579 words of font info for 187 fonts, out of 8000000 for 9000
+ 45036 strings out of 476025
+ 1011159 string characters out of 5796532
+ 1882388 words of memory out of 5000000
+ 64588 multiletter control sequences out of 15000+600000
+ 543824 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,13n,177p,10702b,1778s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbmr8.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on partie2.pdf (9 pages, 180092 bytes).
+ 128i,8n,131p,10749b,1328s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on c3.pdf (1 page, 77664 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 39026 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 30829 words of extra memory for PDF output out of 35830 (max. 10000000)
 
