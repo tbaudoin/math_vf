@@ -1,4 +1,5 @@
-\documentclass[3_juin_2023.tex]{subfiles}
+\documentclass[a4paper, 12pt, parskip=half-, twoside=semi]{scrartcl}
+\input{preambule.tex}
 \begin{document}
 \pagestyle{empty}
 \includegraphics[width=\linewidth]{img/entete.pdf}
@@ -28,7 +29,7 @@
         % cell4
         Prénom : && Numéro :  \\
         % cell5
-        Professeurs :  Baudoin, Debroux, Regout &&\\
+        Professeurs :  Baudoin, Debroux, Regout &&\TotalExerciseGoal{points}{~point}{~points}\\
         % cell6
         Date et heure: Lundi 19 juin 2023 de 8 h 20 à 10 h 30&&\\
         % cell7
@@ -68,7 +69,7 @@
 % C1
 %=========
 \begin{connaitre}[points=4]
-    Détermine la ou les bonnes réponses. Si tu oublies des bonnes réponses ou que tu en choisis des mauvaises, tu n'obtiens aucun point pour à la question.
+    Détermine la ou les bonnes réponses. Si tu oublies des bonnes réponses ou que tu en choisis des mauvaises, tu n'obtiens aucun point pour la question.
     \begin{enumerate}
         \item Une fonction linéaire est une fonction qui \dots
               \begin{QCM}(2)
@@ -248,7 +249,7 @@
         \item %2 pts
               $x^{2}+2x-8 =0$
         \item \(-3(x + 2)-4 > 2(x-3)\)
-        \item \(\dfrac{3x-2}{4}<5 + \dfrac{3x}{2}\)
+        \item \(\dfrac{3x-2}{4} \le 5 + \dfrac{3x}{2}\)
     \end{enumerate}
 \end{appliquer}
 % SOLUTION
@@ -318,7 +319,7 @@
 \end{solution}
 
 \newpage
-\begin{appliquer}[points=1]
+\begin{appliquer}[points=2]
     Réduis les expressions ci-dessous  et écris-les sans dénominateur en utilisant les propriétés des puissances.
     \begin{enumerate}[cols=2]
         \item $\dfrac{15x^{-2}}{5y^7}$
@@ -340,7 +341,7 @@
 \begin{appliquer}[points=3]
     Effectue les opérations demandées. Simplifie au maximum ta réponse.
     \begin{enumerate}[cols=3]
-        \item $\sqrt{35}\cdot\sqrt{20}$
+        \item $\sqrt{63}\cdot\sqrt{20}$
         \item $\sqrt{45}-\sqrt{80}$
         \item $\left(3 + 2\sqrt{2}\right)^2$
     \end{enumerate}
@@ -360,7 +361,7 @@
 %=====
 % C3
 %=====
-\begin{transferer}[points=4]
+\begin{transferer}[points=3]
     Détermine la valeur de \(x\) pour que ce triangle soit rectangle en \(A\).
     \begin{center}
         \input{tikz/c3_triangle_rectangle.tikz}
@@ -403,7 +404,7 @@
 \end{solution}
 
 \begin{transferer}[points=2]
-    \(M\) est un point mobile sur \([AD]\) a une distance \(x\) de \(D\). Déterminez l'ensemble des valeurs de \(x\)pour que le triangle \(MDC\) ait une aire plus petite que celle du triangle \(MAB\).
+    \(M\) est un point mobile sur \([AD]\) a une distance \(x\) de \(D\). Déterminez l'ensemble des valeurs de \(x\) pour que le triangle \(MDC\) ait une aire plus petite que celle du triangle \(MAB\).
 
     \parbox{3cm}{%
         \(\lvert AD \rvert=10\)\medbreak

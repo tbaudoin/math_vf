@@ -1,4 +1,5 @@
-\documentclass[3_juin_2023.tex]{subfiles}
+\documentclass[a4paper, 12pt, parskip=half-, twoside=semi]{scrartcl}
+\input{preambule.tex}
 \begin{document}
 \pagestyle{empty}
 \includegraphics[width=\linewidth]{img/entete.pdf}
@@ -28,7 +29,7 @@
     % cell4
     Prénom :                                                        &   & Numéro :                                          \\
     % cell5
-    Professeurs :  Baudoin, Debroux, Regout                          &   & \\
+    Professeurs :  Baudoin, Debroux, Regout                          &   & \TotalExerciseGoal{points}{~point}{~points}\\
     % cell6
     Date et heure: Lundi 19 juin 2023 de 10 h 45 à 12 h 50          &   &                                                   \\
     % cell7
@@ -69,7 +70,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EXERCICE
 \begin{connaitre}[points=3]
-    Détermine la ou les bonnes réponses. Si tu oublies des bonnes réponses ou que tu coches des mauvaises réponses, tu n'obtiens aucun point pour l'énoncé.
+    Détermine la ou les bonnes réponses. Si tu oublies des bonnes réponses ou que tu en choisis des mauvaises, tu n'obtiens aucun point pour la question.
     \begin{enumerate}
         % \item \parbox[t]{.6\linewidth}{Dans le cercle ci-contre de centre $O$, les points $A,\ B,\ C,\ D$ et $E$ appartiennent au cercle. Les points $B,\ O$ et $C$ sont alignés.}
         %       \hfill
@@ -193,7 +194,7 @@
         \item %3 pts
               $\dfrac{x-1}{x^2-4} + \dfrac{3}{x+2}$
         \item %2 pts
-              $\dfrac{x+1}{x-2}\cdot\dfrac{x^2-4x+4}{x}$
+              $\dfrac{x+1}{x-2}\cdot\dfrac{x^2-4x+4}{x+1}$
     \end{enumerate}
 \end{appliquer}
 % SOLUTION
@@ -346,7 +347,7 @@
     \end{itemize}
 \end{solution}
 
-\begin{appliquer}[points=8]
+\begin{appliquer}[points=5]
     Pour la fonction $f$ ci-dessous, détermine les éléments suivants.
 
     \begin{minipage}{.48\linewidth}
