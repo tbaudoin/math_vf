@@ -3,9 +3,9 @@
     \tkzInit[xmin=-10, xmax=5, ymin=-5,ymax=10]
     \tkzGrid
     \tkzDrawX[right=1pt]
-    \tkzLabelX[font=\scriptsize, orig=false]
+    \tkzLabelX[font=\tiny, orig=false]
     \tkzDrawY[above=1pt]
-    \tkzLabelY[font=\scriptsize, orig=false]
+    \tkzLabelY[font=\tiny, orig=false]
     % POINTS
     % \tkzDefPoints{%
     % -8/-3/A,
