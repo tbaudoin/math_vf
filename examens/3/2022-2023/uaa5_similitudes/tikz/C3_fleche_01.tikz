@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/O,9/0/E',24/0/E,9/3/R',24/8/R}
+    \tkzDrawLines(O,R O,E)
+    % \tkzDrawPoints(O,R,R',E,E')
+    \tkzDrawSegments[>=latex,->](E',R' E,R)
+    \foreach \name/\pos in {
+        O/above,
+        R/above,
+        R'/above,
+        E/below,
+        E'/below}
+        {
+            \tkzLabelPoints[\pos](\name)
+        }
+        \tkzLabelSegment[right](R,E){\SI{8}{cm}}
+        \tkzLabelSegment[below](O,E'){\SI{9}{cm}}
+        \tkzLabelSegment[below](E,E'){\SI{15}{cm}}
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=0.8]
+    \tkzDefPoints{0/0/A,3/0/B, 4/1/V}
+    \tkzInterCC[R](A,2 cm)(B,4 cm)\tkzGetPoints{C}{Y}
+    \tkzDrawPolygon(A,B,C)
+    \tkzDefPointsBy[homothety=center A ratio 2.1](A,B,C){D,E,F}
+    \tkzDefPointsBy[rotation=center A angle -60](D,E,F){D,E,F}
+    \tkzDefPointsBy[translation=from A to V](D,E,F){D,E,F}
+    \tkzDrawPolygon(D,E,F)
+    \tkzDrawPoints(A,B,C,D,E,F)
+    \tkzLabelPoints[below](A,B,E)
+    \tkzLabelPoints[above](F,C)
+    \tkzLabelPoints[left](D)
+    \tkzLabelSegment[below](A,B){3}
+    \tkzLabelSegment[above](B,C){4}
+    \tkzLabelSegment[left](A,C){2}
+    \tkzLabelSegment[below left](D,E){5,55}
+    \tkzLabelSegment[right](E,F){\(x\)}
+    \tkzLabelSegment[above left](D,F){3,7}
+    \tkzLabelAngle[anchor=south west, pos=0](B,A,C){\ang{104}}
+    \tkzLabelAngle[pos=1](E,D,F){\ang{104}}
+\end{tikzpicture}

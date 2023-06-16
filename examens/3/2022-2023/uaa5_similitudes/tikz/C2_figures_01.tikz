@@ -1,0 +1,16 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    %constructions
+    \tkzDefPoints{0/0/A, 3/0/B, 1/2/C}
+    \tkzDefPointWith[colinear=at C,K=0.4](A,B)\tkzGetPoint{D}
+    \tkzInterLL(A,C)(B,D)\tkzGetPoint{E}
+    \tkzDrawSegments(A,B C,D A,E B,E)
+    \tkzDrawPoints(A,B,C,D,E)
+    %labels     
+    \tkzLabelPoints[right](D,B)
+    \tkzLabelPoints[left](A,C)
+    \tkzLabelPoints[above](E)
+    \tkzLabelSegment[left](A,C){2,5}
+    \tkzLabelSegment[below](A,B){3}
+    \tkzLabelSegment[left](E,C){1,5}
+    \tkzLabelSegment[below](C,D){$x$}
+\end{tikzpicture}

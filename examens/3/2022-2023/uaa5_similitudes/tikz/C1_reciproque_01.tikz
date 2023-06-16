@@ -1,0 +1,20 @@
+\begin{tikzpicture}[baseline=(current bounding box.east)]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(-20:4){B}
+    \tkzDefPoint(-20:10){C}
+    \tkzDefPoint(0,0){D}
+    \tkzDefShiftPoint[D](10:3){E}
+    \tkzDefShiftPoint[D](10:7.5){F}
+    \tkzDrawLines(A,C D,F)
+    \tkzDrawLines(A,D B,E C,F)
+    \tkzDrawPoints(A,B,C,E,F)
+    \foreach \name/\pos in {A/below,
+    B/below, C/below left, E/above, F/above right}
+    {
+        \tkzLabelPoints[\pos](\name)
+    }
+    \tkzLabelSegment[below](A,B){4}
+    \tkzLabelSegment[below](B,C){6}
+    \tkzLabelSegment[above](A,E){3}
+    \tkzLabelSegment[above](E,F){4,5}
+\end{tikzpicture}

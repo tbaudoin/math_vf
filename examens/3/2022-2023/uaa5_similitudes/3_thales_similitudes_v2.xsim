@@ -1,0 +1,53 @@
+\providecommand\numberofexercises{}
+\providecommand\numberofconnaitres{}
+\providecommand\numberofappliquers{}
+\providecommand\numberoftransferers{}
+\XSIM{goal}{exercise}{points}{0}
+\XSIM{goal}{connaitre}{points}{4}
+\XSIM{goal}{appliquer}{points}{3}
+\XSIM{goal}{transferer}{points}{3}
+\XSIM{totalgoal}{points}{10}
+\XSIM{goal}{exercise}{bonus-points}{0}
+\XSIM{goal}{connaitre}{bonus-points}{0}
+\XSIM{goal}{appliquer}{bonus-points}{0}
+\XSIM{goal}{transferer}{bonus-points}{0}
+\XSIM{totalgoal}{bonus-points}{0}
+\XSIM{order}{1||2||3||4||5||6}
+\XSIM{use}{}
+\XSIM{use!}{}
+\XSIM{used}{connaitre-1=={true}||connaitre-2=={true}||connaitre-3=={true}||appliquer-4=={true}||transferer-5=={true}||transferer-6=={true}}
+\XSIM{print}{}
+\XSIM{print!}{}
+\XSIM{printed}{connaitre-1=={true}||connaitre-2=={true}||connaitre-3=={true}||appliquer-4=={true}||transferer-5=={true}||transferer-6=={true}}
+\XSIM{total-number}{6}
+\XSIM{exercise}{0}
+\XSIM{connaitre}{3}
+\XSIM{appliquer}{1}
+\XSIM{transferer}{2}
+\XSIM{types}{exercise||connaitre||appliquer||transferer}
+\XSIM{idtypes}{1=={connaitre}||2=={connaitre}||3=={connaitre}||4=={appliquer}||5=={transferer}||6=={transferer}}
+\XSIM{collections}{connaitre-1=={all exercises}||connaitre-2=={all exercises}||connaitre-3=={all exercises}||appliquer-4=={all exercises}||transferer-5=={all exercises}||transferer-6=={all exercises}}
+\XSIM{collection:all exercises}{connaitre-1||connaitre-2||connaitre-3||appliquer-4||transferer-5||transferer-6}
+\setcounter{totalexerciseinall exercises}{0}
+\setcounter{totalconnaitreinall exercises}{3}
+\setcounter{totalappliquerinall exercises}{1}
+\setcounter{totaltransfererinall exercises}{2}
+\XSIM{id}{connaitre-1=={1}||connaitre-2=={2}||connaitre-3=={3}||appliquer-4=={4}||transferer-5=={5}||transferer-6=={6}}
+\XSIM{ID}{connaitre-1=={1}||connaitre-2=={2}||connaitre-3=={3}||appliquer-4=={4}||transferer-5=={5}||transferer-6=={6}}
+\XSIM{counter}{connaitre-1=={1}||connaitre-2=={2}||connaitre-3=={3}||appliquer-4=={4}||transferer-5=={5}||transferer-6=={6}}
+\XSIM{counter-value}{connaitre-1=={1}||connaitre-2=={2}||connaitre-3=={3}||appliquer-4=={4}||transferer-5=={5}||transferer-6=={6}}
+\XSIM{solution}{}
+\XSIM{section-value}{connaitre-1=={0}||connaitre-2=={0}||connaitre-3=={0}||appliquer-4=={0}||transferer-5=={0}||transferer-6=={0}}
+\XSIM{section}{connaitre-1=={0}||connaitre-2=={0}||connaitre-3=={0}||appliquer-4=={0}||transferer-5=={0}||transferer-6=={0}}
+\XSIM{sectioning}{connaitre-1=={{0}{0}{0}{0}{0}}||connaitre-2=={{0}{0}{0}{0}{0}}||connaitre-3=={{0}{0}{0}{0}{0}}||appliquer-4=={{0}{0}{0}{0}{0}}||transferer-5=={{0}{0}{0}{0}{0}}||transferer-6=={{0}{0}{0}{0}{0}}}
+\XSIM{subtitle}{}
+\XSIM{points}{connaitre-1=={2}||connaitre-2=={1}||connaitre-3=={1}||appliquer-4=={3}||transferer-5=={2}||transferer-6=={1}}
+\XSIM{bonus-points}{}
+\XSIM{page-value}{connaitre-1=={1}||connaitre-2=={1}||connaitre-3=={1}||appliquer-4=={1}||transferer-5=={1}||transferer-6=={2}}
+\XSIM{page}{connaitre-1=={1}||connaitre-2=={1}||connaitre-3=={1}||appliquer-4=={1}||transferer-5=={1}||transferer-6=={2}}
+\XSIM{tags}{}
+\XSIM{topics}{}
+\XSIM{userpoints}{connaitre-1=={2}||connaitre-2=={1}||connaitre-3=={1}||appliquer-4=={3}||transferer-5=={2}||transferer-6=={1}}
+\XSIM{bodypoints}{}
+\XSIM{userbonus-points}{}
+\XSIM{bodybonus-points}{}

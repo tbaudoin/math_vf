@@ -1,0 +1,56 @@
+\xsimstyle{math-exam}
+\DeclareExerciseEnvironmentTemplate{math}{%
+    \IfInsideSolutionTF%
+    %TRUE
+    {%
+        \colorbox{black}{\color{white}\bfseries\large\GetExerciseProperty{counter}}\quad%
+    }%
+    %FALSE
+    {%
+        \colorbox{black}{\color{white}\bfseries\large\GetExerciseProperty{counter}}\quad%
+        \GetExercisePropertyT{points}{\marginpar{\bfseries\quad\slash\PropertyValue}}%
+    }%
+}%
+{\bigbreak}
+
+
+% Mes environnements
+\DeclareExerciseType{connaitre}{
+    exercise-env = connaitre ,
+    solution-env = solconnaitre ,
+    exercise-name = \XSIMtranslate{question} ,
+    exercises-name = \XSIMtranslate{questions} ,
+    solution-name = \XSIMtranslate{solution} ,
+    solutions-name = \XSIMtranslate{solutions} ,
+    exercise-template =math ,
+    solution-template =math ,
+    exercise-heading = \subsection* ,
+    solution-heading = \subsection*,
+    counter = exercise
+}
+\DeclareExerciseType{appliquer}{
+    exercise-env = appliquer ,
+    solution-env = solappliquer ,
+    exercise-name = \XSIMtranslate{question} ,
+    exercises-name = \XSIMtranslate{questions} ,
+    solution-name = \XSIMtranslate{solution} ,
+    solutions-name = \XSIMtranslate{solutions} ,
+    exercise-template =math ,
+    solution-template =math ,
+    exercise-heading = \subsection* ,
+    solution-heading = \subsection*,
+    counter = exercise
+}
+\DeclareExerciseType{transferer}{
+    exercise-env = transferer ,
+    solution-env = soltransferer ,
+    exercise-name = \XSIMtranslate{question} ,
+    exercises-name = \XSIMtranslate{questions} ,
+    solution-name = \XSIMtranslate{solution} ,
+    solutions-name = \XSIMtranslate{solutions} ,
+    exercise-template =math ,
+    solution-template =math ,
+    exercise-heading = \subsection* ,
+    solution-heading = \subsection*,
+    counter = exercise
+}
