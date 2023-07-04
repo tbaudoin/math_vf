@@ -13,9 +13,8 @@
                   \begin{tblr}{
                           hlines,
                           vlines,
-                          columns={c},
-                          rows={m},
-                          column{1}={5cm,l}
+                          colspec={l*{8}{X[c]}},
+                          rows={m,1cm}
                       }
                       Minutes appelées  & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 \\
                       Prix à payer en € &   &   &    &    &    &    &    &
@@ -27,9 +26,8 @@
                   \begin{tblr}{
                           hlines,
                           vlines,
-                          columns={c},
-                          rows={m},
-                          column{1}={5cm,l}
+                          colspec={l*{8}{X[c]}},
+                          rows={m,1cm}
                       }
                       Minutes appelées  & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 \\
                       Prix à payer en € &   &   &    &    &    &    &    &
@@ -38,11 +36,11 @@
 
         \item Représente graphiquement ces deux tarifs ci-dessous.
               \begin{center}
-                  \includegraphics[width=\linewidth]{chapitres/prop-et-proj/tikz/tikz001.tikz}
+                  \includegraphics[width=.8\linewidth]{chapitres/prop-et-proj/tikz/tikz001.tikz}
               \end{center}
               \newpage
         \item Ces deux tarifs représentent-ils des relations directement proportionnelles ? Justifie.
-              \adf{2}
+              \adf{3}
 
               \minisec{Définition}
               \adf[Deux grandeurs sont propotionelles si]{3}
@@ -107,7 +105,10 @@ Ainsi, lorsque nous nous retrouvons face à un tableau, nous pouvons déterminer
         \end{tblr}
     \end{center}
 
-    Elena, elle, est arrivée en retard. Voici ce qu'elle explique à son éducateur : \textit{\og Je sais qu'il est 08:45 Monsieur, mais je n'ai pas eu de chance ce matin. Je suis partie de chez moi à 7:50, au début, j'allais à mon aise (10 km/h). À 8:05, je me suis arrêtée pour attendre Batuhan. Il est arrivé à 8:10, et comme on était déjà un peu en retard, on a accéléré (15 km/h). Malheureusement, à 08:20 j'ai roulé sur un clou et j'ai crevé mon pneu. On a essayé de le réparer pendant 10 minutes, mais ça n'a pas marché. Je suis donc montée sur le porte-bagage de Batuhan et il a pédalé pour deux. C'était plus dur (10 km/h). On est désolé Monsieur, on a fait de notre mieux.\fg}
+    %FIXME: à revérifier
+    Elena, elle, est arrivée en retard. Voici ce qu'elle explique à son éducateur : \textit{\og Je sais qu'il est 08:45 Monsieur, mais je n'ai pas eu de chance ce matin. Je suis partie de chez moi à 7:50, au début, j'allais à mon aise (12 km/h). À 8:05, je me suis arrêtée pour attendre Batuhan. Il est arrivé à 8:10, et comme on était déjà un peu en retard, on a accéléré (18 km/h). Malheureusement, à 08:20 j'ai roulé sur un clou et j'ai crevé mon pneu. On a donc terminé le chemin à pieds (5 km/h).\fg}
+
+    % On a essayé de le réparer pendant 10 minutes, mais ça n'a pas marché. Je suis donc montée sur le porte-bagage de Batuhan et il a pédalé pour deux. C'était plus dur (10 km/h). On est désolé Monsieur, on a fait de notre mieux.\fg}
 
     \begin{enumerate}
         \item Complète le tableau de valeurs pour le trajet d'Elena.
@@ -121,7 +122,7 @@ Ainsi, lorsque nous nous retrouvons face à un tableau, nous pouvons déterminer
               \newpage
         \item Trace le graphique qui représente le trajet d'Elena ainsi que celui de Cristina. Utilise des couleurs différentes.
               \begin{center}
-                  \includegraphics[width=\linewidth]{chapitres/prop-et-proj/tikz/tikz002.tikz}
+                  \includegraphics{chapitres/prop-et-proj/tikz/tikz002.tikz}
               \end{center}
         \item Quel graphique représente une relation proportionnelle entre distance et temps ?
               \adf{1}
@@ -189,7 +190,7 @@ Dans toute proportion,
 \subsection{Découverte}
 Le soleil étant très éloigné de la Terre, ses rayons peuvent être considérés comme étant tous parallèles. Il s'en dégage une propriété importante : il existe une relation de proportionnalité entre la hauteur des objets et la longueur de leurs ombres (qui sont les projections parallèles des objets sur le sol) à un même moment de la journée.
 
-Grâce à ces informations peux-tu déterminer la taille de l'ombre de Sara grâce aux informations ci-dessous ?
+Grâce aux informations ci-dessous, peux-tu déterminer la taille de l'ombre de Sara ?
 
 Sara va se promener sur la plage avec son petit frère Juan. Sara mesure \SI{1,70}{m} et Juan \SI{1,20}{m}. Elle remarque que l'ombre de Juan mesure \SI{1,80}{m}.
 
@@ -224,9 +225,11 @@ Pour construire l'image du point \(A\) par la projection sur la droite \(b\), pa
 \end{exercise}
 
 \begin{exercise}
-    Te voici dans une situation délicate. Tu désires partager le segment \([AB]\) en 4 segments de même longueur sans utiliser le moindre instrument de mesure. Comment vas-tu faire ? Aide-toi des projections parallèles. \\
+    Te voici dans une situation délicate. Tu désires partager le segment \([AB]\) en 4 segments de même longueur mais tu as oublié ton mètre ! Comment vas-tu faire ? Aide-toi des projections parallèles.
+    \begin{center}
+        \includegraphics[width=10cm]{chapitres/prop-et-proj/img/segment.jpg}
+    \end{center}
 
-    \includegraphics[width=10cm]{chapitres/prop-et-proj/img/segment.jpg}
 \end{exercise}
 
 \newpage
@@ -376,7 +379,7 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
 \end{solution}
 
 \begin{exercise}
-    Pour télécharger 3 chansons sur internet, à une certaine époque, il fallait 1 minute.
+    (CE1D) Pour télécharger 3 chansons sur internet, à une certaine époque, il fallait 1 minute.
     \begin{enumerate}
         \item  Complète, en te basant sur ce temps moyen de téléchargement, le tableau de proportionnalité suivant : (\emph{Sur cette feuille})\\
               \begin{center}
@@ -395,9 +398,9 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
     \begin{enumerate}
         \item
               \begin{tblr}[t]{hlines, vlines, columns={c}, rows={m, 0.8cm}, row{1}={font=\bfseries}}
-                  Nombre de chansons & Durée du téléchargement \\
-                  360                & 120                     \\
-                  9                  & 3                       \\
+                  Nombre de chansons & Durée du téléchargement (s) \\
+                  360                & 120                         \\
+                  9                  & 3                           \\
                   \num{1500}         & 500
               \end{tblr}
         \item 90 chansons
@@ -453,7 +456,7 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
 
 \begin{exercise}
     Détermine les valeurs des lettres entourées dans le tableau ci-dessous si tu sais que les solides $S$ et $S'$ sont semblables.\\
-    Légende : \hfil P = Périmètre \hfil A = Aire \hfil V = Volume
+    Légende : A = Aire \hfil V = Volume
     \begin{center}
         \begin{tblr}{
                 hlines,
@@ -463,9 +466,9 @@ Nous avons vu trois méthodes de résolution de problèmes de proportionnalité.
                 cell{1}{1}={r=1,c=3}{c},
                 cell{1}{4}={r=2,c=1}{c},
                 cell{1}{5}={r=1,c=3}{c}}
-            S &   &   & k & S'          &             &             \\
-            P & A & V &   & P'          & A'          & V'          \\
-            6 & 2 & 4 & 5 & \circled{A} & \circled{B} & \circled{C} \\
+            S &   &   & k           & S'          &  & \\
+            A & V &   & A'          & V'               \\
+            2 & 4 & 5 & \circled{B} & \circled{C}      \\
         \end{tblr}
     \end{center}
 \end{exercise}
