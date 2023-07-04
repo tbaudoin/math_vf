@@ -1,7 +1,7 @@
-\begin{tikzpicture}[>=latex]
+\begin{tikzpicture}[>=latex, x=1cm, y=1cm]
     % Axes
     \draw[->] (0,-0.20) -- (0,10) node[above] {Distance parcourue (km)};
-    \draw[->] (-0.20,0) -- (7,0) node[right] {Temps(heure)};
+    \draw[->] (-0.20,0) -- (7,0) node[right] {Temps(min)};
     % Grille
     \draw[gray, dotted] (0,0) grid (7,10);
     % Graduations
