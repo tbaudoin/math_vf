@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  4 JUL 2023 13:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.29)  4 JUL 2023 17:26
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -711,22 +711,33 @@ Package: tasks 2021/02/20 v1.3a lists with columns filled horizontally
 Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
 (xtemplate)             line 450.
 
- (c:/texlive/2021/texmf-dist/tex/latex/tasks/tasks.cfg)) (c:/texlive/2021/texmf-dist/tex/latex/xsim/xsim.sty (c:/texlive/2021/texmf-dist/tex/latex/xsim/xsimverb.sty
+ (c:/texlive/2021/texmf-dist/tex/latex/tasks/tasks.cfg)) (c:/texlive/2021/texmf-dist/tex/latex/tikzscale/tikzscale.sty
+Package: tikzscale 2013/05/22 v0.2.6 tikzscale LaTeX package
+ (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (c:/texlive/2021/texmf-dist/tex/generic/xstring/xstring.sty (c:/texlive/2021/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count343
+\decimalpart=\count344
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+\tikzscale@measuredSize=\box88
+) (c:/texlive/2021/texmf-dist/tex/latex/xsim/xsim.sty (c:/texlive/2021/texmf-dist/tex/latex/xsim/xsimverb.sty
 Package: xsimverb 2021/01/31 v0.3 write environments verbatim to files
-\l__xsimverb_tmpa_int=\count343
-\l_xsim_line_gobble_int=\count344
+\l__xsimverb_tmpa_int=\count345
+\l_xsim_line_gobble_int=\count346
 )
 Package: xsim 2021/02/03 v0.20c eXercise Sheets IMproved
 Loading module `base' ...
 \l__xsim_tmpa_dim=\dimen309
 \l__xsim_tmpb_dim=\dimen310
 \l__xsim_tmpc_dim=\dimen311
-\l__xsim_tmpa_int=\count345
-\l__xsim_tmpb_int=\count346
-\l__xsim_tmpc_int=\count347
-\l__xsim_tmpa_box=\box88
-\l__xsim_tmpb_box=\box89
-\l__xsim_tmpc_box=\box90
+\l__xsim_tmpa_int=\count347
+\l__xsim_tmpb_int=\count348
+\l__xsim_tmpc_int=\count349
+\l__xsim_tmpa_box=\box89
+\l__xsim_tmpb_box=\box90
+\l__xsim_tmpc_box=\box91
 Loading module `auxfile' ...
 Loading module `properties' ...
 Loading module `environments' ...
@@ -734,33 +745,33 @@ Loading module `templates' ...
 Loading module `tags' ...
 Loading module `goals' ...
 Loading module `exercises' ...
-\g_xsim_id_int=\count348
-\g_xsim_max_id_int=\count349
+\g_xsim_id_int=\count350
+\g_xsim_max_id_int=\count351
 Loading module `solutions' ...
-\l_xsim_printsolutions_section_int=\count350
-\l_xsim_printsolutions_chapter_int=\count351
+\l_xsim_printsolutions_section_int=\count352
+\l_xsim_printsolutions_chapter_int=\count353
 Loading module `collections' ...
 Loading module `blanks' ...
 \l__xsim_blank_dim=\dimen312
 \l__xsim_blank_line_increment_dim=\dimen313
 \l__xsim_blank_line_minimum_length_dim=\dimen314
-\l__xsim_blank_box=\box91
+\l__xsim_blank_box=\box92
 Loading module `grades' ...
 Loading module `random' ...
-\g__xsim_random_list_id_int=\count352
+\g__xsim_random_list_id_int=\count354
 Loading module `translations' ...
 Loading module `interface' ...
 Loading module `definitions' ...
-\c@exercise=\count353
-\c@solution=\count354
-\c@numberofexercises=\count355
+\c@exercise=\count355
+\c@solution=\count356
+\c@numberofexercises=\count357
 ) (c:/texlive/2021/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty
 2020/03/18 3.06c tkz-euclide.sty
 Package: tkz-euclide 2020/03/18 3.06c for euclidan geometry 
 (c:/texlive/2021/texmf-dist/tex/latex/tkz-base/tkz-base.sty
 2020/03/18 3.06c tkz-base.sty
 Package: tkz-base 2020/03/18 3.06c tkz-base
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(c:/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen315
@@ -771,7 +782,7 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count356
+\pgf@plot@mark@count=\count358
 \pgfplotmarksize=\dimen317
 )
 \tikz@lastx=\dimen318
@@ -782,21 +793,21 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@lastmovetoy=\dimen323
 \tikzleveldistance=\dimen324
 \tikzsiblingdistance=\dimen325
-\tikz@figbox=\box92
-\tikz@figbox@bg=\box93
-\tikz@tempbox=\box94
-\tikz@tempbox@bg=\box95
-\tikztreelevel=\count357
-\tikznumberofchildren=\count358
-\tikznumberofcurrentchild=\count359
-\tikz@fig@count=\count360
+\tikz@figbox=\box93
+\tikz@figbox@bg=\box94
+\tikz@tempbox=\box95
+\tikz@tempbox@bg=\box96
+\tikztreelevel=\count359
+\tikznumberofchildren=\count360
+\tikznumberofcurrentchild=\count361
+\tikz@fig@count=\count362
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count361
-\pgfmatrixcurrentcolumn=\count362
-\pgf@matrix@numberofcolumns=\count363
+\pgfmatrixcurrentrow=\count363
+\pgfmatrixcurrentcolumn=\count364
+\pgf@matrix@numberofcolumns=\count365
 )
-\tikz@expandcount=\count364
+\tikz@expandcount=\count366
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex
@@ -822,17 +833,17 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfdecoratedinputsegmentcompleteddistance=\dimen333
 \pgfdecoratedinputsegmentremainingdistance=\dimen334
 \pgf@decorate@distancetomove=\dimen335
-\pgf@decorate@repeatstate=\count365
+\pgf@decorate@repeatstate=\count367
 \pgfdecorationsegmentamplitude=\dimen336
 \pgfdecorationsegmentlength=\dimen337
 )
-\tikz@lib@dec@box=\box96
+\tikz@lib@dec@box=\box97
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.shapes.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.shapes.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.text.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.text.code.tex
-\pgf@lib@dec@text@box=\box97
+\pgf@lib@dec@text@box=\box98
 )
-\tikz@lib@dec@te@box=\box98
+\tikz@lib@dec@te@box=\box99
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-\pgf@intersect@solutions=\count366
+\pgf@intersect@solutions=\count368
 )) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
@@ -863,18 +874,18 @@ Package: xfp 2021-08-27 L3 Floating point unit
 Package: fp 1995/04/02
  `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (c:/texlive/2021/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count367
+\actioncount=\count369
 ) (c:/texlive/2021/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count368
-\FP@xia=\count369
-\FP@xib=\count370
-\FP@xfa=\count371
-\FP@xfb=\count372
-\FP@rega=\count373
-\FP@regb=\count374
-\FP@regs=\count375
-\FP@times=\count376
+\FP@xs=\count370
+\FP@xia=\count371
+\FP@xib=\count372
+\FP@xfa=\count373
+\FP@xfb=\count374
+\FP@rega=\count375
+\FP@regb=\count376
+\FP@regs=\count377
+\FP@times=\count378
 ) (c:/texlive/2021/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
 ) (c:/texlive/2021/texmf-dist/tex/latex/fp/fp-snap.sty
@@ -887,7 +898,7 @@ Package: fp-trigo 1995/04/14
 Package: fp-pas 1994/08/29
 ) (c:/texlive/2021/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count377
+\FPseed=\count379
 ) (c:/texlive/2021/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
 ) (c:/texlive/2021/texmf-dist/tex/latex/fp/fp-upn.sty
@@ -914,7 +925,7 @@ Package: fp-eval 1995/04/03
 \tkz@tcy=\dimen354
 \tkz@tdx=\dimen355
 \tkz@tdy=\dimen356
-\tkz@cntmk=\count378
+\tkz@cntmk=\count380
 
 Local configuration file tkz-base.cfg found and used
 (c:/texlive/2021/texmf-dist/tex/latex/tkz-base/tkz-base.cfg
@@ -1019,19 +1030,19 @@ File: pgflibrarycurvilinear.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 Package: witharrows 2021/03/04 v2.6c Draws arrows for explanations on the right
  (c:/texlive/2021/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box99
-\sift@deathcycles=\count379
+\@vwid@box=\box100
+\sift@deathcycles=\count381
 \@vwid@loff=\dimen370
 \@vwid@roff=\dimen371
 )
-\g__witharrows_last_env_int=\count380
-\l__witharrows_pos_env_int=\count381
-\l__witharrows_pos_arrow_int=\count382
-\g__witharrows_arrow_int=\count383
-\g__witharrows_line_int=\count384
-\g__witharrows_col_int=\count385
-\g__witharrows_static_col_int=\count386
-\l__witharrows_nb_cols_int=\count387
+\g__witharrows_last_env_int=\count382
+\l__witharrows_pos_env_int=\count383
+\l__witharrows_pos_arrow_int=\count384
+\g__witharrows_arrow_int=\count385
+\g__witharrows_line_int=\count386
+\g__witharrows_col_int=\count387
+\g__witharrows_static_col_int=\count388
+\l__witharrows_nb_cols_int=\count389
 \l__witharrows_arrow_width_dim=\dimen372
 \l__witharrows_up_and_down_radius_dim=\dimen373
 \l__witharrows_xoffset_for_o_arrows_dim=\dimen374
@@ -1047,23 +1058,25 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: pgf-pie 2021/07/30 v0.6 Some LaTeX macros for pie chart by using PGF/Tikz package.
  (c:/texlive/2021/texmf-dist/tex/latex/pgf-pie/tikzlibrarypie.code.tex
 \pgfpie@angleEnd=\dimen382
-\pgfpie@explodeLength=\count388
-\pgfpie@colorLength=\count389
-\pgfpie@sliceLength=\count390
+\pgfpie@explodeLength=\count390
+\pgfpie@colorLength=\count391
+\pgfpie@sliceLength=\count392
 )) (c:/texlive/2021/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )) (c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box100
-\UL@hyphenbox=\box101
+\UL@box=\box101
+\UL@hyphenbox=\box102
 \UL@skip=\skip84
 \UL@hook=\toks49
 \UL@height=\dimen383
-\UL@pe=\count391
+\UL@pe=\count393
 \UL@pixel=\dimen384
-\ULC@box=\box102
+\ULC@box=\box103
 Package: ulem 2019/11/18
 \ULdepth=\dimen385
 )
+\tikzscale@accuracy=\skip85
+
 No file travail_de_vacances.aux.
 \openout1 = `travail_de_vacances.aux'.
 
@@ -1106,16 +1119,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count392
+\scratchcounter=\count394
 \scratchdimen=\dimen386
-\scratchbox=\box103
-\nofMPsegments=\count393
-\nofMParguments=\count394
+\scratchbox=\box104
+\nofMPsegments=\count395
+\nofMParguments=\count396
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count395
+\MPscratchCnt=\count397
 \MPscratchDim=\dimen387
-\MPnumerator=\count396
-\makeMPintoPDFobject=\count397
+\MPnumerator=\count398
+\makeMPintoPDFobject=\count399
 \everyMPtoPDFconversion=\toks51
 ) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1216,7 +1229,7 @@ LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <14.4> not available
 \openout4 = `xsim/travail_de_vacances-exercise-14-exercise-body.tex'.
 
  (./xsim/travail_de_vacances-exercise-14-exercise-body.tex (./tikz/knowing_two_angles.tikz))
-Overfull \hbox (15.25984pt too wide) in paragraph at lines 11--666
+Overfull \hbox (15.25984pt too wide) in paragraph at lines 11--668
 []$[]$ $[]$ 
  []
 
@@ -1224,27 +1237,28 @@ Overfull \hbox (15.25984pt too wide) in paragraph at lines 11--666
 
 \openout4 = `xsim/travail_de_vacances-exercise-15-exercise-body.tex'.
 
-[4] (./xsim/travail_de_vacances-exercise-15-exercise-body.tex (./tikz/angle_1.tikz) (./tikz/angle_2.tikz) (./tikz/angle_3.tikz)
+[4] (./xsim/travail_de_vacances-exercise-15-exercise-body.tex (./tikz/trapeze.tikz))
+\openout4 = `xsim/travail_de_vacances-exercise-15-solution-body.tex'.
+
+ [5]
+\openout4 = `xsim/travail_de_vacances-exercise-16-exercise-body.tex'.
+
+ (./xsim/travail_de_vacances-exercise-16-exercise-body.tex (./tikz/angle_1.tikz) (./tikz/angle_2.tikz) (./tikz/angle_3.tikz)
 Overfull \hbox (47.05759pt too wide) in paragraph at lines 18--18
 []
  []
 
-[5])
-\openout4 = `xsim/travail_de_vacances-exercise-15-solution-body.tex'.
-
-\openout4 = `xsim/travail_de_vacances-exercise-16-exercise-body.tex'.
-
- (./xsim/travail_de_vacances-exercise-16-exercise-body.tex (./tikz/trapeze.tikz))
+)
 \openout4 = `xsim/travail_de_vacances-exercise-16-solution-body.tex'.
 
 \openout4 = `xsim/travail_de_vacances-exercise-17-exercise-body.tex'.
 
- (./xsim/travail_de_vacances-exercise-17-exercise-body.tex (./tikz/sumixorp.tikz))
+ (./xsim/travail_de_vacances-exercise-17-exercise-body.tex)
 \openout4 = `xsim/travail_de_vacances-exercise-17-solution-body.tex'.
 
 \openout4 = `xsim/travail_de_vacances-exercise-18-exercise-body.tex'.
 
- (./xsim/travail_de_vacances-exercise-18-exercise-body.tex [6])
+ (./xsim/travail_de_vacances-exercise-18-exercise-body.tex [6] (./tikz/sumixorp.tikz))
 \openout4 = `xsim/travail_de_vacances-exercise-18-solution-body.tex'.
 
 \openout4 = `xsim/travail_de_vacances-exercise-19-exercise-body.tex'.
@@ -1259,18 +1273,15 @@ Missing character: There is no ) in font nullfont!
  [7]
 \openout4 = `xsim/travail_de_vacances-exercise-20-exercise-body.tex'.
 
- (./xsim/travail_de_vacances-exercise-20-exercise-body.tex
-<images/cocktail.jpg, id=69, 496.85625pt x 496.85625pt>
-File: images/cocktail.jpg Graphic file (type jpg)
-<use images/cocktail.jpg>
-Package pdftex.def Info: images/cocktail.jpg  used on input line 12.
-(pdftex.def)             Requested size: 134.44064pt x 134.44107pt.
-)
+ (./xsim/travail_de_vacances-exercise-20-exercise-body.tex)
 \openout4 = `xsim/travail_de_vacances-exercise-20-solution-body.tex'.
 
+ [8]
 \openout4 = `xsim/travail_de_vacances-exercise-21-exercise-body.tex'.
 
- (./xsim/travail_de_vacances-exercise-21-exercise-body.tex [8 <./images/cocktail.jpg>])
+ (./xsim/travail_de_vacances-exercise-21-exercise-body.tex
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 14.
+ (c:/texlive/2021/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd))
 \openout4 = `xsim/travail_de_vacances-exercise-21-solution-body.tex'.
 
 \openout4 = `xsim/travail_de_vacances-exercise-22-exercise-body.tex'.
@@ -1281,26 +1292,30 @@ Package pdftex.def Info: images/cocktail.jpg  used on input line 12.
 \openout4 = `xsim/travail_de_vacances-exercise-23-exercise-body.tex'.
 
  (./xsim/travail_de_vacances-exercise-23-exercise-body.tex
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 14.
- (c:/texlive/2021/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd))
+<images/cocktail.jpg, id=72, 496.85625pt x 496.85625pt>
+File: images/cocktail.jpg Graphic file (type jpg)
+<use images/cocktail.jpg>
+Package pdftex.def Info: images/cocktail.jpg  used on input line 12.
+(pdftex.def)             Requested size: 134.44064pt x 134.44107pt.
+)
 \openout4 = `xsim/travail_de_vacances-exercise-23-solution-body.tex'.
 
- [9]
+ [9 <./images/cocktail.jpg>]
 
 Package xsim Warning: Exercise properties may have changed. Rerun to get them
 (xsim)                synchronized.
 
 [1] (./travail_de_vacances.aux) ) 
 Here is how much of TeX's memory you used:
- 41324 strings out of 478579
- 957150 string characters out of 5857457
- 1357574 words of memory out of 5000000
- 58287 multiletter control sequences out of 15000+600000
+ 41804 strings out of 478579
+ 965941 string characters out of 5857457
+ 1361475 words of memory out of 5000000
+ 58755 multiletter control sequences out of 15000+600000
  417998 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,10n,114p,10712b,1455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,10n,114p,10712b,1466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on travail_de_vacances.pdf (11 pages, 244098 bytes).
+Output written on travail_de_vacances.pdf (11 pages, 244137 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream

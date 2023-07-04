@@ -508,11 +508,13 @@
 \end{solution}
 
 \begin{exercise}
-    Un marchand dispose de $\np{1600}$ pommes qu'il doit partager
-    pour 3 de ses clients.\\
-    Le 3\ieme client à demandé 300 pommes de plus que le 2\ieme.\\
-    Le 2\ieme en a demandé 200 de plus que le 1\ier.\par
-    Combien de pommes doit-il donner au 1\ier client ?
+    Un marchand dispose de $\np{1600}$ pommes qu'il doit partager pour 3 de ses clients.
+
+    Le troisième client a demandé 300 pommes de plus que le deuxième.
+
+    Le deuxième en a demandé 200 de plus que le premier.
+
+    Combien de pommes doit-il donner au premier client ?
 \end{exercise}
 \begin{solution}
     \begin{itemize}[label=\faAngleRight]
@@ -685,13 +687,33 @@
 \end{solution}
 
 \begin{exercise}
+    La figure suivante est-elle un trapèze ? Justifie ton raisonnement.
+    \begin{center}
+        \inputtikz{trapeze}
+    \end{center}
+\end{exercise}
+\begin{solution}
+    $ABCD$ est un trapèze s'il possède deux côtés parallèles.
+
+    $\widehat{A_1}$ et $\widehat{A_2}$ forment un angle plat, donc
+    \begin{align*}
+        \widehat{A_2} & = 180\degres - \widehat{A_1} \\
+        \widehat{A_2} & = 180\degres - 100\degres    \\
+        \widehat{A_2} & = 80\degres                  \\
+    \end{align*}
+    $\widehat{A_2}$ et $\widehat{D_1}$ sont alternes internes et de même
+    amplitude, donc $DC\sslash AB$. Par conséquent, $ABCD$ est un trapèze.
+\end{solution}
+
+\newpage
+\begin{exercise}
     Détermine l'amplitude de l'angle demandé en justifiant ta réponse.
     \begin{tasks}(2)
         \task $\widehat{A_1}=40\degres$, $\widehat{A_2} = ?$.\\\inputtikz{angle_1}
         \task $\widehat{A_1}=60\degres$, $\widehat{B_1} = ?$.
         \\$d_1\sslash d_2$\\\inputtikz{angle_2}
-            \task $\widehat{A_1}=45\degres$, $\widehat{B_2} = ?$, $\widehat{C_1}=?$.
-            \\$ABCD$ est un parallélogramme\\\inputtikz{angle_3}
+            \task $ABCD$ est un parallélogramme \\ $\widehat{A_1}=45\degres$, $\widehat{B_2} = ?$, $\widehat{C_1}=?$.
+            \\\inputtikz{angle_3}
     \end{tasks}
 \end{exercise}
 \begin{solution}
@@ -737,40 +759,9 @@
 \end{solution}
 
 \begin{exercise}
-    La figure suivante est-elle un trapèze ? Justifie ton raisonnement.
-    \begin{center}
-        \inputtikz{trapeze}
-    \end{center}
-\end{exercise}
-\begin{solution}
-    $ABCD$ est un trapèze s'il possède deux côtés parallèles.
-
-    $\widehat{A_1}$ et $\widehat{A_2}$ forment un angle plat, donc
-    \begin{align*}
-        \widehat{A_2} & = 180\degres - \widehat{A_1} \\
-        \widehat{A_2} & = 180\degres - 100\degres    \\
-        \widehat{A_2} & = 80\degres                  \\
-    \end{align*}
-    $\widehat{A_2}$ et $\widehat{D_1}$ sont alternes internes et de même
-    amplitude, donc $DC\sslash AB$. Par conséquent, $ABCD$ est un trapèze.
-\end{solution}
-
-\begin{exercise}
-    Sumixorp veut placer une nouvelle antenne téléphonique. Où doivent-ils la
-    placer pour qu'elle soit à la même distance des trois villes $A$, $B$ et $C$ ?
-    Laisse tes constructions visibles.
-    \begin{center}
-        \inputtikz{sumixorp}
-    \end{center}
-\end{exercise}
-\begin{solution}
-    \inputtikz{sumixorp_sol}
-\end{solution}
-
-\begin{exercise}
     Factorise au maximum les expressions algébriques ci-dessous à l'aide
     de la mise en évidence.
-    \begin{tasks}(2)
+    \begin{tasks}(3)
         \task $3a-3b$
         \task $6abc+12ab$
         \task $24bc+36cd$
@@ -799,6 +790,18 @@
 \end{solution}
 
 \begin{exercise}
+    Sumixorp veut placer une nouvelle antenne téléphonique. Où doivent-ils la
+    placer pour qu'elle soit à la même distance des trois villes $A$, $B$ et $C$ ?
+    Laisse tes constructions visibles.
+    \begin{center}
+        \inputtikz{sumixorp}
+    \end{center}
+\end{exercise}
+\begin{solution}
+    \inputtikz{sumixorp_sol}
+\end{solution}
+
+\begin{exercise}
     Complète les phrases à l'aide de la figure suivante.
     \begin{center}
         \inputtikz{triangle}
@@ -819,50 +822,6 @@
 
 \pagebreak
 
-\begin{exercise}
-    \begin{wrapfigure}{r}{.3\linewidth}
-        \includegraphics[width=\linewidth]{images/cocktail.jpg}
-    \end{wrapfigure}
-    Un délicieux jus de fruits frais est composé de :
-    \begin{itemize}
-        \item $\dfrac{2}{3}$ de jus d'oranges.
-        \item $\dfrac{1}{3}$ de jus de pamplemousses.
-    \end{itemize}
-
-    Il faut presser \SI{1}{kg} d'oranges pour obtenir \SI{40}{cl} de jus et
-    \SI{1}{kg} de pamplemousses pour obtenir \SI{25}{cl} de jus.\par
-    Dans le commerce tu peux trouver des oranges et des pamplemousses au prix
-    suivant :
-    \begin{description}
-        \item[Oranges] 12€/\SI{5}{kg}
-        \item[Pamplemousses] 10,80€/\SI{4}{kg}
-    \end{description}
-    Que coûte la préparation de \SI{4,5}{l} de ce cocktail de fruis frais si
-    tu achètes la quantité exacte de fruis ?
-\end{exercise}
-\begin{solution}
-    Si je veux préparer \SI{4,5}{l} de cocktail dans les proportions données,
-    il me faut,
-    \begin{align*}
-         & \text{Jus d'orange}                               &  & \text{Jus de pamplemousse}                         \\
-         & \dfrac{2}{3}\cdot 4,5  = \SI{3}{l} = \SI{300}{cl} &  & \dfrac{1}{3}\cdot 4,5 = \SI{1,5}{l} = \SI{150}{cl} \\
-    \end{align*}
-    Déterminons maintenant le nombre de kilogrammes à acheter pour chaque fruit,
-    \begin{align*}
-         & \text{Orange}                                                                        &  & \text{Pamplemousse}                                                                \\
-         & \SI{40}{cl}\longrightarrow\SI{1}{kg}                                                 &  & \SI{25}{cl}\longrightarrow\SI{1}{kg}                                               \\
-         & \SI{1}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{1}{40}}{kg}                  &  & \SI{1}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{1}{25}}{kg}                \\
-         & \SI{300}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{300}{40}}{kg}=\SI{7,5}{kg} &  & \SI{150}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{150}{25}}{kg}=\SI{6}{kg} \\
-    \end{align*}
-    Par la même logique, nous pouvons calculer le prix pour chaque fruit
-    \begin{align*}
-         & \text{Orange}                         &  & \text{Pamplemousse}                   \\
-         & \SI{5}{kg}\longrightarrow\SI{12}{€}   &  & \SI{4}{kg}\longrightarrow\SI{10,8}{€} \\
-         & \SI{2,5}{kg}\longrightarrow\SI{6}{€}  &  & \SI{2}{kg}\longrightarrow\SI{5,4}{€}  \\
-         & \SI{7,5}{kg}\longrightarrow\SI{18}{€} &  & \SI{6}{kg}\longrightarrow\SI{16,2}{€}
-    \end{align*}
-    Préparer \SI{4,5}{l} de ce cocktail coûtera donc $18+16,2=\SI{34,2}{€}$.
-\end{solution}
 
 \begin{exercise}
     Dans la classe de 3\ieme\ de Christophe, la question suivante a été posée :
@@ -889,6 +848,7 @@
         d’actions \fg\ ou \og films romantiques \fg ?
         \task Christophe a choisi la catégorie qui a été choisie par un sixième
         de la classe. Quelle est-elle ? Justifie.
+        \task Construis un diagramme circulaire qui représente cette répartition. Choisis un rayon de \SI{4}{cm}.
     \end{tasks}
 \end{exercise}
 \begin{solution}
@@ -913,7 +873,41 @@
         \end{tabular}
         \task $16,67 + 12,5 = 29,17$.
         \task Films d'actions.
+        \task \TODO: correctif du diagramme circulaire.
     \end{tasks}
+\end{solution}
+
+
+\newpage
+\begin{exercise}
+    Ziane va faire un cocktail pour ses amies fin de journée.
+    Elle est tombée sur cette recette pour 2 personnes :
+    \begin{itemize}[label=\faCocktail]
+        \item 30cl de jus d’orange
+        \item 2cl de grenadine
+        \item 50g de glaçons
+        \item 150cl d’eau pétillante
+    \end{itemize}
+    Elle va préparer la même boisson pour 15 personnes.
+    Détermine la quantité de chaque aliment.\\
+    Laisse ta démarche visible.
+\end{exercise}
+\begin{solution}
+    \tikzexternaldisable
+    \begin{tabular}{lcc}
+        \toprule
+        Nombre de personnes & \tikzmarknode[inner sep=2pt]{a}{2} & \tikzmarknode[inner sep=2pt]{b}{15} \\
+        \midrule
+        Jus d’orange        & \SI{30}{cl}                        & \SI{225}{cl}                        \\
+        Grenadine           & \SI{2}{cl}                         & \SI{15}{cl}                         \\
+        Glaçons             & \SI{50}{g}                         & \SI{375}{g}                         \\
+        Eau pétillante      & \SI{150}{cl}                       & \SI{1125}{cl}                       \\
+        \bottomrule
+    \end{tabular}
+    \begin{tikzpicture}[overlay, remember picture, >=latex]
+        \draw[->] (a.north) to[bend left=90]node[midway, above]{$\cdot \dfrac{15}{2}$} (b.north);
+    \end{tikzpicture}
+    \tikzexternalenable
 \end{solution}
 
 \begin{exercise}
@@ -961,35 +955,50 @@
 \end{solution}
 
 \begin{exercise}
-    Ziane va faire un cocktail pour ses amies fin de journée.
-    Elle est tombée sur cette recette pour 2 personnes :
-    \begin{itemize}[label=\faCocktail]
-        \item 30cl de jus d’orange
-        \item 2cl de grenadine
-        \item 50g de glaçons
-        \item 150cl d’eau pétillante
+    \begin{wrapfigure}{r}{.3\linewidth}
+        \includegraphics[width=\linewidth]{images/cocktail.jpg}
+    \end{wrapfigure}
+    Un délicieux jus de fruits frais est composé de :
+    \begin{itemize}
+        \item $\dfrac{2}{3}$ de jus d'oranges.
+        \item $\dfrac{1}{3}$ de jus de pamplemousses.
     \end{itemize}
-    Elle va préparer la même boisson pour 15 personnes.
-    Détermine la quantité de chaque aliment.\\
-    Laisse ta démarche visible.
+
+    Il faut presser \SI{1}{kg} d'oranges pour obtenir \SI{40}{cl} de jus et
+    \SI{1}{kg} de pamplemousses pour obtenir \SI{25}{cl} de jus.\par
+    Dans le commerce tu peux trouver des oranges et des pamplemousses au prix
+    suivant :
+    \begin{description}
+        \item[Oranges] 12€/\SI{5}{kg}
+        \item[Pamplemousses] 10,80€/\SI{4}{kg}
+    \end{description}
+    Que coûte la préparation de \SI{4,5}{l} de ce cocktail de fruis frais si
+    tu achètes la quantité exacte de fruis ?
 \end{exercise}
 \begin{solution}
-    \tikzexternaldisable
-    \begin{tabular}{lcc}
-        \toprule
-        Nombre de personnes & \tikzmarknode[inner sep=2pt]{a}{2} & \tikzmarknode[inner sep=2pt]{b}{15} \\
-        \midrule
-        Jus d’orange        & \SI{30}{cl}                        & \SI{225}{cl}                        \\
-        Grenadine           & \SI{2}{cl}                         & \SI{15}{cl}                         \\
-        Glaçons             & \SI{50}{g}                         & \SI{375}{g}                         \\
-        Eau pétillante      & \SI{150}{cl}                       & \SI{1125}{cl}                       \\
-        \bottomrule
-    \end{tabular}
-    \begin{tikzpicture}[overlay, remember picture, >=latex]
-        \draw[->] (a.north) to[bend left=90]node[midway, above]{$\cdot \dfrac{15}{2}$} (b.north);
-    \end{tikzpicture}
-    \tikzexternalenable
+    Si je veux préparer \SI{4,5}{l} de cocktail dans les proportions données,
+    il me faut,
+    \begin{align*}
+         & \text{Jus d'orange}                               &  & \text{Jus de pamplemousse}                         \\
+         & \dfrac{2}{3}\cdot 4,5  = \SI{3}{l} = \SI{300}{cl} &  & \dfrac{1}{3}\cdot 4,5 = \SI{1,5}{l} = \SI{150}{cl} \\
+    \end{align*}
+    Déterminons maintenant le nombre de kilogrammes à acheter pour chaque fruit,
+    \begin{align*}
+         & \text{Orange}                                                                        &  & \text{Pamplemousse}                                                                \\
+         & \SI{40}{cl}\longrightarrow\SI{1}{kg}                                                 &  & \SI{25}{cl}\longrightarrow\SI{1}{kg}                                               \\
+         & \SI{1}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{1}{40}}{kg}                  &  & \SI{1}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{1}{25}}{kg}                \\
+         & \SI{300}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{300}{40}}{kg}=\SI{7,5}{kg} &  & \SI{150}{cl}\longrightarrow\SI[parse-numbers=false]{\frac{150}{25}}{kg}=\SI{6}{kg} \\
+    \end{align*}
+    Par la même logique, nous pouvons calculer le prix pour chaque fruit
+    \begin{align*}
+         & \text{Orange}                         &  & \text{Pamplemousse}                   \\
+         & \SI{5}{kg}\longrightarrow\SI{12}{€}   &  & \SI{4}{kg}\longrightarrow\SI{10,8}{€} \\
+         & \SI{2,5}{kg}\longrightarrow\SI{6}{€}  &  & \SI{2}{kg}\longrightarrow\SI{5,4}{€}  \\
+         & \SI{7,5}{kg}\longrightarrow\SI{18}{€} &  & \SI{6}{kg}\longrightarrow\SI{16,2}{€}
+    \end{align*}
+    Préparer \SI{4,5}{l} de ce cocktail coûtera donc $18+16,2=\SI{34,2}{€}$.
 \end{solution}
+
 \newpage
 \section{Solutions}
 \setcounter{page}{1}
