@@ -1,16 +1,16 @@
 \documentclass[../../syllabus_2.tex]{subfiles}
 \begin{document}
 \chapter{Distances et lieux}
-\faIcon{book} Théorie pages 141 à 146 et 152 à 156.
+% \faIcon{book} Théorie pages 141 à 146 et 152 à 156.
 \section{Rappels : triangles, quadrilatères, cercles et droites remarquables}
 
-\faIcon{book} Théorie page 54 et suivantes.
+% \faIcon{book} Théorie page 54 et suivantes.
 %TODO: styliser le tableau
-\begin{tblr}{hlines, vlines}
-                      & Triangle scalène                                                   & Triangle isocèle                                                   & Triangle équilatéral                                        \\
-  Triangle acutangle  & \includegraphics{figures/theorie/triangle_scalene_acutangle.tikz}  & \includegraphics{figures/theorie/triangle_isocele_acutangle.tikz}  & \includegraphics{figures/theorie/triangle_equilateral.tikz} \\
-  Triangle rectangle  & \includegraphics{figures/theorie/triangle_scalene_rectangle.tikz}  & \includegraphics{figures/theorie/triangle_isocele_rectangle.tikz}  &                                                             \\
-  Triangle obtusangle & \includegraphics{figures/theorie/triangle_scalene_obtusangle.tikz} & \includegraphics{figures/theorie/triangle_isocele_obtusangle.tikz} &
+\begin{tblr}{hlines, vlines, columns={c}}
+                      & Triangle scalène                                                               & Triangle isocèle                                                               & Triangle équilatéral                                                    \\
+  Triangle acutangle  & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_acutangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_acutangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_equilateral.tikz} \\
+  Triangle rectangle  & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_rectangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_rectangle.tikz}  &                                                                         \\
+  Triangle obtusangle & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_obtusangle.tikz} & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_obtusangle.tikz} &
 \end{tblr}
 
 \begin{exercise}
@@ -18,7 +18,7 @@
 
   \begin{tcolorbox}[enhanced,sidebyside, frame hidden, interior hidden,segmentation hidden]
     \includegraphics[height=4cm]{tikz/nature_triangles.tikz}
-    \tcblower %\FIXME: figures wtf
+    \tcblower
     \begin{enumerate}
       \item Triangle 1 : \dotfill
       \item Triangle 2 : \dotfill
@@ -106,6 +106,13 @@ Mateo demande à Aleksi de tracer le triangle \(MAT\) dont les dimensions sont r
   \vspace*{4cm}
 \end{exercise}
 
+\section{Position relative d'un point par rapport à une droite}
+Nathan ne sait pas bien nager, il aimerait rejoindre la plage le plus vite possible. Quel chemin doit-il choisir ? Et pourquoi ?
+
+\includegraphics{img/distance_point_droite.png}
+
+\adf[Lorsqu'on parle de la distance entre un point et une droite, on sous-entend]{2}
+
 \section{Positions relatives d'une droite et d'un cercle}
 
 Quelles sont les différentes positions d'une droite et d'un cercle~? \\
@@ -113,41 +120,41 @@ Quelles sont les différentes positions d'une droite et d'un cercle~? \\
 
 \begin{tabularx}{\linewidth}{|Y|Y|Y|}
   \hline
-  Le cercle et la droite n'ont aucun point d'intersection & Le cercle et la droite ont un point d'intersection & Le cercle et la droite ont deux points d'intersection \\
+                                              &                                           &                                          \\
+  \input{figures/Cercle.tikz}                 & \input{figures/Cercle.tikz}               & \input{figures/Cercle.tikz}              \\
   \hline
-                                                          &                                                    &                                                       \\
-  \input{figures/Cercle.tikz}                             & \input{figures/Cercle.tikz}                        & \input{figures/Cercle.tikz}                           \\
-  \hline
-  La droite est \textbf{extérieure} au cercle             & La droite est \textbf{tangente} au cercle          & La droite est \textbf{sécante} au cercle              \\
+  La droite est \textbf{extérieure} au cercle & La droite est \textbf{tangente} au cercle & La droite est \textbf{sécante} au cercle \\
   \hline
 \end{tabularx}
 
-Note : Comment tracer la droite tangente à un cercle en \(A\) ?
+Comment tracer la droite tangente à un cercle en \(A\) ?
 \begin{enumerate}[label=\arabic*, cols=2]
   \item On trace le rayon \(r\) joignant le centre du cercle au point \(A\).
   \item On trace \(d\), la droite perpendiculaire au rayon \(r\) passant par \(A\).
   \item [\label=] \input{figures/Cercle.tikz}
 \end{enumerate}
 
+\begin{exercise}
+  Trace un cercle de centre \(A\) tangent à la droite \(d\)
+  \begin{center}
+    \includegraphics{tikz/cercle_tangent_droite.tikz}
+  \end{center}
+\end{exercise}
 
+Construis les tangentes $t_1$ et $t_2$ en deux points du cercle sachant que l'amplitude de l'angle aigu formé par ces deux droites est de \ang{55}.
+\begin{center}
+  \includegraphics{tikz/cercle_deux_tangentes.tikz}
+\end{center}
 \newpage
 \begin{exercise}
   Complète le tableau suivant. \\
-
-  {\renewcommand{\arraystretch}{1.7}
-  \begin{tabularx}{\linewidth}{|X|X|X|X|}
-    \hline
-    \textbf{Rayon du cercle (cm)} & \textbf{Distance entre le centre du cercle et la droite \(d\) (cm)} & \textbf{Conditions} & \textbf{Position relative de la droite et du cercle} \\
-    \hline
-    \(3\)                         & \(2\)                                                               &                     &                                                      \\
-    \hline
-    \(4\)                         & \(6\)                                                               &                     &                                                      \\
-    \hline
-                                  & \(5\)                                                               &                     & tangente                                             \\
-    \hline
-    \(2\)                         &                                                                     &                     & sécante                                              \\
-    \hline
-  \end{tabularx}}\\
+  \begin{tblr}{hlines, vlines, rows={1cm, m}, columns={c}, colspec={*{4}{X}}}
+    \textbf{Rayon du cercle (cm) de centre \(\mathbf{O}\)} & \textbf{Distance entre le centre du cercle et la droite \(\mathbf{a}\) (cm)} & \textbf{Conditions} & \textbf{Position relative de la droite et du cercle} \\
+    \(3\)                                                  & \(2\)                                                                        &                     &                                                      \\
+    \(4\)                                                  & \(6\)                                                                        &                     &                                                      \\
+                                                           & \(5\)                                                                        &                     & tangente                                             \\
+    \(2\)                                                  &                                                                              &                     & sécante                                              \\
+  \end{tblr}
 
   Si tu en as besoin pour visualiser les situations, utilise le bas de cette page comme brouillon.
   \begin{tblr}{hlines, vlines, rowsep=4cm}
@@ -163,51 +170,32 @@ Sur base de leur définition, détermine à quel terme chaque situation correspo
 \textbf{tangents intérieurs} - \textbf{disjoints extérieurs} - \textbf{concentriques} - \textbf{tangents extérieurs} -\\
 \textbf{sécants} - \textbf{disjoints intérieurs}  \\
 
-
-{\renewcommand{\arraystretch}{2.7}
-\begin{tabularx}{\linewidth}{|Y|Y|Y|}
-  \hline
+\begin{tblr}{hlines,vlines,colspec={XXX}, columns={c},row{3,6}={1cm}}
   Les cercles n'ont aucun point d'intersection et sont extérieurs l'un à l'autre & Les cercles ont un point d'intersection et sont extérieurs l'un à l'autre       & Les cercles ont deux points d'intersection \\
-  \hline
   \input{figures/DisjExt.tikz}                                                   & \input{figures/TanExt.tikz}                                                     & \input{figures/Sécants.tikz}               \\
-  \hline
                                                                                  &                                                                                 &                                            \\
-  \hline
-  \hline
   Les cercles ont un point d'intersection et sont intérieurs l'un à l'autre      & Les cercles n'ont pas de point d'intersection et sont intérieurs l'un à l'autre & Les cercles ont le même centre             \\
-  \hline
   \input{figures/TanInt.tikz}                                                    & \input{figures/DisInt.tikz}                                                     & \input{figures/Concentriques.tikz}         \\
-  \hline
                                                                                  &                                                                                 &                                            \\
-  \hline
-\end{tabularx}}
+\end{tblr}
 
 
 \newpage
 \begin{exercise}
   Complète le tableau suivant. \\
 
-  {\renewcommand{\arraystretch}{1.7}
-  \begin{tabularx}{\linewidth}{|X|X|X|X|}
-    \hline
+  \begin{tblr}{hlines, vlines, rows={1cm, m}, columns={c}, colspec={*{4}{X}}}
     \textbf{Distance entre les deux centres (cm)} & \textbf{Rayon 1 (cm)} & \textbf{Rayon 2 (cm)} & \textbf{Position relative des deux cercles} \\
-    \hline
     \(4\)                                         & \(2\)                 & \(3\)                 &                                             \\
-    \hline
     \(6\)                                         & \(2\)                 & \(3\)                 &                                             \\
-    \hline
                                                   & \(3\)                 & \(1\)                 & concentriques                               \\
-    \hline
                                                   & \(3\)                 & \(5\)                 & tangents intérieurs                         \\
-    \hline
-  \end{tabularx}}
+  \end{tblr}
 \end{exercise}
 
-\begin{exercise}
-  Trace un cercle de centre \(O\) et de rayon \(2\)cm. Place un point \(T\) sur le cercle. Trace ensuite la droite \(d\) tangente au cercle passant par le point \(T\).
-\end{exercise}
-
-\vspace*{7cm}
+% \begin{exercise}
+%   Trace un cercle de centre \(O\) et de rayon \SI{2}{cm}. Place un point \(T\) sur le cercle. Trace ensuite la droite \(d\) tangente au cercle passant par le point \(T\).
+% \end{exercise}
 
 \begin{exercise}
   Trace deux cercles tangents intérieurs dont la distance entre les centres vaut \(1\)cm.
@@ -219,17 +207,38 @@ Sur base de leur définition, détermine à quel terme chaque situation correspo
 La distance par rapport à un point se trouve à l'aide \dotfill
 
 \begin{exercise}
-  Place, à l'intérieur des cadres, en vert, le lieu des points situés \dots
-  \begin{enumerate}[cols=2]
-    \item \dots exactement à \(3\) cm de \(A\).
-          \includegraphics[width=8cm]{img/pointA.png}
-    \item \dots à moins de \(2\) cm de \(B\).
-          \includegraphics[width=8cm]{img/pointB.png}
-    \item [\label=]
-    \item \dots à minimum \(2\) cm de \(D\).
-          \includegraphics[width=8cm]{img/pointD.png}
-    \item \dots à exactement \(3\) cm de \(B\) et exactement \(2,5\) cm de \(C\).
-          \includegraphics[width=8cm]{img/pointsBetC.png}
+  Place, à l'intérieur des cadres, en vert, le lieu des points qui respectent les conditions.
+
+  \begin{enumerate}
+    \item Les points situés à \SI{3}{cm} de \(A\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.25\linewidth,2) circle(1pt)node[above right]{\(A\)};
+            \end{tikzpicture}
+          \end{center}
+    \item Les points situés à moins de \SI{2}{cm} de \(B\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.25\linewidth,2) circle(1pt)node[above right]{\(B\)};
+            \end{tikzpicture}
+          \end{center}
+    \item Les points situés à minimum \SI{2}{cm} de \(D\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.25\linewidth,2) circle(1pt)node[above right]{\(D\)};
+            \end{tikzpicture}
+          \end{center}
+    \item Les points situés à \SI{3}{cm} de \(B\) et à \SI{2,5}{cm} de \(C\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.15\linewidth,1.5) circle(1pt)node[above right]{\(C\)};
+              \draw[fill=black] (.35\linewidth,2.5) circle(1pt)node[above right]{\(B\)};
+            \end{tikzpicture}
+          \end{center}
   \end{enumerate}
 \end{exercise}
 
@@ -239,15 +248,29 @@ La distance par rapport à un point se trouve à l'aide \dotfill
 La distance par rapport à deux points se trouve à l'aide \dotfill
 
 \adf[Définition : ]{1}
-\adf[Propriété : ]{2}
+\adf[Propriété : ]{1}
+\adf[Nouvelle Définition : ]{1}
 
 \begin{exercise}
-  Place, à l'intérieur des cadres, en vert, le lieu des points situés \dots
+
+  Place, à l'intérieur des cadres, en vert, le lieu des points situés qui respectent les conditions.
   \begin{enumerate}
-    \item \dots à égale distance de \(A\) et de \(B\).\\
-          \includegraphics[width=9cm]{img/pointsAetB.png}
-    \item \dots plus proche de \(E\) que de \(B\) et à exactement \(3\) cm de \(B\). \\
-          \includegraphics[width=9cm]{img/pointsEetB.png}
+    \item Les points situés à égale distance de \(A\) et \(B\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.15\linewidth,1.5) circle(1pt)node[above right]{\(B\)};
+              \draw[fill=black] (.35\linewidth,1) circle(1pt)node[above right]{\(A\)};
+            \end{tikzpicture}
+          \end{center}
+    \item Les points plus proche de \(E\) que de \(B\) et à \SI{3}{cm} de \(B\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.15\linewidth,1.5) circle(1pt)node[above right]{\(B\)};
+              \draw[fill=black] (.35\linewidth,2.5) circle(1pt)node[above right]{\(E\)};
+            \end{tikzpicture}
+          \end{center}
   \end{enumerate}
 \end{exercise}
 
@@ -257,14 +280,20 @@ La distance par rapport à deux points se trouve à l'aide \dotfill
 \adf[La distance par rapport à une droite se trouve à l'aide]{1}
 
 \begin{exercise}
-  Place, à l'intérieur des cadres, en vert, le lieu des points situés \dots
+  Place, à l'intérieur des cadres, en vert, le lieu des points qui respectent les conditions.
   \begin{enumerate}
-    \item \dots à \(3\) cm de \(d\).\\
-          \includegraphics[]{img/droited.png}
-    \item \dots à moins de \(2,5\) cm de \(d\).\\
-          \includegraphics[]{img/droited2.png}
-    \item \dots à \(2\) cm ou plus de \(d\) et plus proche de \(A\) que de \(B\).\\
-          \includegraphics[height=5cm]{img/droitedAB.png}
+    \item Les points situés à \(3\) cm de \(d\).
+          \begin{center}
+            \includegraphics[]{img/droited.png}
+          \end{center}
+    \item Les points situés à moins de \(2,5\) cm de \(d\).
+          \begin{center}
+            \includegraphics[]{img/droited2.png}
+          \end{center}
+    \item Les points situés à \(2\) cm ou plus de \(d\) et plus proche de \(A\) que de \(B\).
+          \begin{center}
+            \includegraphics[height=5cm]{img/droitedAB.png}
+          \end{center}
   \end{enumerate}
 \end{exercise}
 
@@ -274,20 +303,26 @@ La distance par rapport à deux points se trouve à l'aide \dotfill
 La distance par rapport à deux droites se trouve à l'aide \dotfill \\
 \adf[Définition :]{1}
 \adf[Propriété : ]{1}
+\adf[Nouvelle définition : ]{1}
 
 \begin{exercise}
-  Place, à l'intérieur des cadres, en vert, le lieu des points situés \dots
+  Place, à l'intérieur des cadres, en vert, le lieu des points qui respectent les conditions.
   \begin{enumerate}
-    \item \dots à égale distance des droites \(f\) et \(d\).\\
-          \includegraphics[]{img/droitesdetf.png}
-    \item \dots à moins de \(3\) cm de \(A\), et à égale distance entre \(f\) et \(d\).\\
-          \includegraphics[]{img/droitesdetfA.png}
+    \item Les points situés à égale distance des droites \(f\) et \(d\).
+          \begin{center}
+            \includegraphics[]{img/droitesdetf.png}
+          \end{center}
+    \item Les points situés à moins de \(3\) cm de \(A\), et à égale distance entre \(f\) et \(d\).
+          \begin{center}
+            \includegraphics[]{img/droitesdetfA.png}
+          \end{center}
   \end{enumerate}
 \end{exercise}
 
 \newpage
 \section{Cercles inscrits, cercles circonscrits}
 
+% Bien coder les constructions !
 Pour tracer un \textbf{cercle inscrit} dans un triangle, autrement dit un cercle tangent aux trois côtés de ce triangle, il faut tracer les bissectrices des trois angles de ce triangle.
 \begin{itemize}[label=\(\triangle\)]
   \item Son centre est l'intersection des bissectrices
@@ -300,6 +335,7 @@ Pour tracer un \textbf{cercle inscrit} dans un triangle, autrement dit un cercle
 \end{center}
 
 
+% Bien coder les constructions !
 Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cercle passant par les trois sommets de ce triangle, il faut tracer les médiatrices des trois côtés de ce triangle.
 
 \begin{itemize}[label=\(\triangle\)]
