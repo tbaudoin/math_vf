@@ -17,53 +17,7 @@
 
 \dotsforanswer{2}[Les quatre isométries vues l'année passée sont]
 
-\faBookOpen~Arbre des transformations du plan pour rappel à la page 103
-
-\newpage
-\subsection{La translation}
-
-Une translation est un isométrie qui déplace tout point~:
-
-\begin{itemize}[label=\faIcon{angle-right}]
-    \item dans une même direction,
-    \item dans un même sens,
-    \item et de même distance que la longueur du vecteur.
-\end{itemize}
-
-L'élément caractéristique d'une translation est un segment orienté (symbolisé par une flèche) appelée vecteur.
-
-\faTools~Construis l'image de $ABCDE$ par la translation de vecteur $\overrightarrow{v}$
-
-\vfil
-\begin{center}
-    \input{figures/translation_exemple.tikz}
-\end{center}
-\[t_{\overrightarrow{v}}(ABCDE) = A'B'C'D'E'\]
-
-\newpage
-
-\begin{exercise}
-    À l'aide de tes instruments, réalise les constructions demandées.
-    Veille à laisser tes constructions visibles et à ce que tes images soient clairement dessinées.
-    \begin{enumerate}[itemsep=\fill]
-        \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
-              \begin{center}
-                  \includegraphics[height=.15\paperheight]{figures/t01}
-              \end{center}
-        \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
-              \begin{center}
-                  \includegraphics[height=.15\paperheight]{figures/t02}
-              \end{center}
-        \item $t_{\overrightarrow{BA}}(ABCD)=A'B'C'D'$
-              \begin{center}
-                  \includegraphics[height=.15\paperheight]{figures/t03}
-              \end{center}
-        \item $t_{\overrightarrow{FG}}(ABCDE)=A'B'C'D'E'$
-              \begin{center}
-                  \includegraphics[height=.15\paperheight]{figures/t04}
-              \end{center}
-    \end{enumerate}
-\end{exercise}
+\faBookOpen~Arbre des transformations du plan et encadre les isométries
 
 \newpage
 \subsection{La symétrie orthogonale}
@@ -77,13 +31,14 @@ point~:
 L'élément caractéristique d'une symétrie orthogonale est une droite
 appelée axe.
 
-\faTools~Construis l'image de $ABCDE$ par la symétrie orthogonale d'axe $d$.
+Construis l'image de $ABCDE$ par la symétrie orthogonale d'axe $d$.
 
 \vfil
 \begin{center}
     \input{figures/orthogonale_exemple.tikz}
 \end{center}
 \[S_d (ABCDE) = A'B'C'D'E'\]
+%Bien écrire avec eux le décodage: Le pentagone A'B'C'D'E' est l'image du pentagone ABCDE par une symétrie orthogonale d'axe d %
 \newpage
 \begin{exercise}
     À l'aide de tes instruments, réalise les constructions demandées.
@@ -120,14 +75,14 @@ Une symétrie centrale est un isométrie qui déplace tout point~:
 
 L'élément caractéristique d'une symétrie centrale est un point appelé centre de symétrie.
 
-\faTools~Construis l'image de $ABCDE$ par la symétrice central de centre $M$.
+Construis l'image de $ABCDE$ par la symétrice central de centre $M$.
 
 \vfil
 \begin{center}
     \input{figures/centrale_exemple.tikz}
 \end{center}
 \[S_{M}(ABCDE)=A'B'C'D'E'\]
-
+%Bien écrire avec eux le décodage: Le pentagone A'B'C'D'E' est l'image du pentagone ABCDE par une symétrie centrale de centre M%
 \newpage
 \begin{exercise}
     A l'aide de tes instruments, réalise les constructions demandées.
@@ -153,9 +108,55 @@ L'élément caractéristique d'une symétrie centrale est un point appelé centr
 \end{exercise}
 
 \newpage
-\section{La rotation}
-Une rotation est un isométrie qui déplace tout point~:
+\subsection{La translation}
 
+Une translation est un isométrie qui déplace tout point~:
+
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item dans une même direction,
+    \item dans un même sens,
+    \item et de même distance que la longueur du vecteur.
+\end{itemize}
+
+L'élément caractéristique d'une translation est un segment orienté (symbolisé par une flèche) appelée vecteur.
+
+Construis l'image de $ABCDE$ par la translation de vecteur $\overrightarrow{v}$
+
+\vfil
+\begin{center}
+    \input{figures/translation_exemple.tikz}
+\end{center}
+\[t_{\overrightarrow{v}}(ABCDE) = A'B'C'D'E'\]
+%Bien écrire avec eux le décodage: Le pentagone A'B'C'D'E' est l'image du pentagone ABCDE par une translation de vecteur v %
+\newpage
+
+\begin{exercise}
+    À l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images soient clairement dessinées.
+    \begin{enumerate}[itemsep=\fill]
+        \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+              \begin{center}
+                  \includegraphics[height=.15\paperheight]{figures/t01}
+              \end{center}
+        \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+              \begin{center}
+                  \includegraphics[height=.15\paperheight]{figures/t02}
+              \end{center}
+        \item $t_{\overrightarrow{BA}}(ABCD)=A'B'C'D'$
+              \begin{center}
+                  \includegraphics[height=.15\paperheight]{figures/t03}
+              \end{center}
+        \item $t_{\overrightarrow{FG}}(ABCDE)=A'B'C'D'E'$
+              \begin{center}
+                  \includegraphics[height=.15\paperheight]{figures/t04}
+              \end{center}
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{La rotation} 
+Une rotation est un isométrie qui déplace tout point~:
+%Etapes de constructions : segment, arc, angle, point%
 \begin{itemize}[label=\faIcon{angle-right}]
     \item à la même distance par rapport au centre
     \item selon une amplitude donnée
@@ -189,13 +190,14 @@ le sens anti-horloger. S'il est négatif, on tourne dans le sens horloger.
     \end{tikzpicture}
 \end{center}
 
-\faTools~Construis l'image de $ABCDE$ par la rotation de centre $M$ et d'angle $\ang{-120}$.
+Construis l'image de $ABCDE$ par la rotation de centre $M$ et d'angle $\ang{-120}$.
 
 \vfil
 \begin{center}
     \input{figures/rotation_exemple.tikz}
 \end{center}
 \[r_{M;\ang{-120}}(ABCDE) = (A'B'C'D'E')\]
+%Bien écrire avec eux le décodage: Le pentagone A'B'C'D'E' est l'image du pentagone ABCDE par une rotation de centre M et de rotation -120%
 
 \newpage
 \begin{exercise}
@@ -241,7 +243,21 @@ le sens anti-horloger. S'il est négatif, on tourne dans le sens horloger.
         \includegraphics[height=2cm]{img/maggie_rot.eps}   &     &                    &                         \\
     \end{tblr}
 \end{center}
-\emph{Remarque : la symétrie centrale est une rotation de $180\degres$}
+
+\emph{Remarque : la symétrie centrale est une rotation de \ang{180}}
+
+Les invariants communs aux isométries
+\begin{itemize}
+    \item L’alignement des points
+    \item La longueur des segments
+    \item L’amplitude des angles 
+    \item La parallélisme des droites
+    \item La perpendicularité des droites
+    \item Le milieu d’un segment
+    \item Le périmètre des figures
+    \item L’aire des figures
+\end{itemize}
+Les isométries conservent donc la forme et la grandeur des figures
 
 \begin{exercise}
     Décode les expressions suivantes.
