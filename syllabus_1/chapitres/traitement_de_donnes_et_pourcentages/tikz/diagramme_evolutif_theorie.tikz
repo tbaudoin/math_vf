@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+    \begin{axis}[
+      axis lines=left,
+      xtick distance=2,
+      grid=both,
+    ]
+        \addplot coordinates{
+          (0, 3)
+          (2, 2)
+          (4, 0)
+          (6, 4)
+          (8, 4)
+          (10,8) 
+          (12,10) 
+          (14,13) 
+          (16,14) 
+          (18,12) 
+          (20,8) 
+          (22,6) 
+          (24,4)   
+        };
+    \end{axis}
+\end{tikzpicture}

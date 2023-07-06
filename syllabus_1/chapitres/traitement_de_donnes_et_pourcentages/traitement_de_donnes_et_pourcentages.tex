@@ -292,6 +292,22 @@ Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant l
 \newpage
 
 \section{Lecture de graphiques, analyse de données}
+Dans ce chapitre, nous rencontrerons 3 types de graphique qui permettent de visualiser des données.
+\begin{enumerate}
+    \item Le graphique évolutif. Ce type de graphique s'utilise pour montrer l'évolution d'une grandeur par rapport à une autre.
+          \begin{center}
+              \includegraphics{tikz/diagramme_evolutif_theorie.tikz}
+          \end{center}
+    \item Le diagramme en bâton.Ce diagramme s'utilise pour comparer des données.
+          \begin{center}
+              \includegraphics{tikz/diagramme_baton_theorie.tikz}
+          \end{center}
+    \item Le diagramme circulaire. Ce diagramme s'utilise pour représenter des données dont on connaît la répartition par rapport à un tout.
+          \begin{center}
+              \includegraphics{tikz/diagramme_circulaire_theorie.tikz}
+          \end{center}
+\end{enumerate}
+
 \begin{exercise}
     Un concessionnaire automobile a vendu ce mois-ci 85 véhicules de tous types. En voici un descriptif partiel.
     \begin{center}
@@ -406,7 +422,7 @@ Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu
         Latin                 &                 &             &           \\
         Renforcement math     &                 &             &           \\
         Expression corporelle &                 &             &           \\
-        Total & & & \\
+        Total                 &                 &             &           \\
     \end{tblr}
 \end{center}
 
@@ -473,41 +489,41 @@ Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu
 
 \newpage
 \begin{exercise}
-Lors d'une enquête menée par Anais parmi les élèves de 3\ieme{} maternelle, elle a noté les couleurs préférées des enfants.
-\begin{center}
-    \begin{tblr}{
-            hlines,
-            vlines,
-            columns={1.5cm, c},
-            rows={.7cm, m},
-            row{1}={gray!40, font=\bfseries}
-        }
-        Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre & Total\\
-        3     & 2     & 5    & 2    & 7    & 5      & 3    &  \\
-    \end{tblr}
-\end{center}
-\vfill
+    Lors d'une enquête menée par Anais parmi les élèves de 3\ieme{} maternelle, elle a noté les couleurs préférées des enfants.
+    \begin{center}
+        \begin{tblr}{
+                hlines,
+                vlines,
+                columns={1.5cm, c},
+                rows={.7cm, m},
+                row{1}={gray!40, font=\bfseries}
+            }
+            Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre & Total \\
+            3     & 2     & 5    & 2    & 7    & 5      & 3     &       \\
+        \end{tblr}
+    \end{center}
+    \vfill
 
-\begin{enumerate}
-    \item Combien d'enfants se trouvent dans la classe?
-    \item Détermine le pourcentage d'enfants qui préfèrent le bleu.
-    \item Construis un diagramme circulaire qui représente la situation.
-          \begin{center}
-              \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
-          \end{center}
-    \item Construis un diagramme en bâtonnets qui représente la situation.\bigbreak
-          \begin{center}
-              \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
-          \end{center}
-\end{enumerate}
+    \begin{enumerate}
+        \item Combien d'enfants se trouvent dans la classe?
+        \item Détermine le pourcentage d'enfants qui préfèrent le bleu.
+        \item Construis un diagramme circulaire qui représente la situation.
+              \begin{center}
+                  \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
+              \end{center}
+        \item Construis un diagramme en bâtonnets qui représente la situation.\bigbreak
+              \begin{center}
+                  \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
+              \end{center}
+    \end{enumerate}
 
-% \tcbsidebyside[sidebyside adapt=left, blanker]%
-% {%
-%     \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
-% }
-% {%
-%     \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
-% }
+    % \tcbsidebyside[sidebyside adapt=left, blanker]%
+    % {%
+    %     \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
+    % }
+    % {%
+    %     \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
+    % }
 \end{exercise}
 
 \end{document}

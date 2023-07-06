@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+    \begin{axis}[
+        ybar,
+        axis lines=left,
+        ymin=0,
+        ymax=180,
+        xmin=0,
+        xmax=6,
+        ytick distance=20,
+        xtick={1,2,3,4,5},
+        xticklabels={Lundi, Mardi, Mercredi, Jeudi, Vendredi},
+        xscale=2,
+    ]
+        \addplot coordinates{
+            (1,100)
+            (2,120)
+            (3,135)
+            (4,80)
+            (5,64)
+        };
+    \end{axis}
+\end{tikzpicture}
