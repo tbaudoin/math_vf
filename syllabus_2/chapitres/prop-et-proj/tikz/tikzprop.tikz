@@ -1,0 +1,6 @@
+\begin{tikzpicture}[>=latex]
+    \draw[->] (-2, 0) -- (3, 0) node[right] {$x$};
+    \draw[->] (0, -2) -- (0, 2) node[above] {$y$};
+    \draw[thick] (-2, -1) -- (3, 2);
+    %\filldraw[red] (1, 0.5) circle (2pt) node[anchor=west] {$(1, 0.5)$};
+  \end{tikzpicture}
