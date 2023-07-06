@@ -16,12 +16,12 @@ Les caractères de divisibilité permettent de reconnaitre si un nombre est divi
 
 \begin{exercise}
       Réponds en justifiant.
-      \begin{enumerate}
-            \item \dotsforanswer{2}[\num{52035} est-il divisible par 5 ? ]
-            \item \dotsforanswer{2}[\num{1000003} est-il divisible par 3 ?]
-            \item \dotsforanswer{2}[\num{819} est-il divisible par 9 ?]
-            \item \dotsforanswer{2}[\num{35150} est-il divisible par 25 ?]
-            \item \dotsforanswer{2}[\num{5014} est-il divisible par 4 ?]
+      \begin{enumerate}[itemsep=1cm, after=\vspace*{1cm}]
+            \item \num{52035} est-il divisible par 5 ?
+            \item \num{1000003} est-il divisible par 3 ?
+            \item \num{819} est-il divisible par 9 ?
+            \item \num{35150} est-il divisible par 25 ?
+            \item \num{5014} est-il divisible par 4 ?
       \end{enumerate}
 \end{exercise}
 
@@ -43,7 +43,7 @@ Les caractères de divisibilité permettent de reconnaitre si un nombre est divi
             \begin{tblr}{
                         hlines,
                         vlines,
-                        columns={.9cm, c},
+                        colspec={l*{8}{X[c]}},
                         rows={.7cm, m},
                         row{1}={gray!40, font=\bfseries},
                         column{1}={gray!40, font=\bfseries},
@@ -131,8 +131,11 @@ Que représentent ces dimensions par rapport aux nombres de carrés ?
 \end{exercise}
 
 \begin{exercise}
-      Vrai ou faux ? Plus un nombre naturel est grand, plus il admet de diviseurs.
-      \vspace*{3cm}
+      Vrai ou faux ?
+      \begin{enumerate}[itemsep=1cm]
+            \item Plus un nombre naturel est grand, plus il admet de diviseurs.
+            \item 1 divise tous les nombres.
+      \end{enumerate}
 \end{exercise}
 
 \newpage
@@ -157,7 +160,7 @@ l'un d'eux possèdera deux facteurs identiques.
       2 \cdot 8         & = 16  \\
       \Aboxed{4 \cdot 4 & = 16}
 \end{align*}
-On trouvera donc que les $div~16=\lbrace 1,2,4,8,16 \rbrace$.
+On trouvera donc que les $div~16=\big\lbrace 1,2,4,8,16 \big\rbrace$.
 
 Géométriquement, les nombres carrés font référence à l'aire d'un carré.
 
@@ -210,6 +213,7 @@ Dans le quadrillage ci-dessous, trace en bleu tous les rectangles constitués de
 \dotsforanswer{3}[Que remarques-tu ?]
 \dotsforanswer{2}[Un nombre premier est]
 
+%TODO: Est-ce que ça à vraiment du sens de donner cela comme ça ? Est-ce qu'on ne noterait pas plutôt une liste des nombres premiers inférieurs à 100 ?
 \begin{center}
 
       Crible d'Hératostène pour les nombres premiers inférieurs à 100.
@@ -261,12 +265,12 @@ Dans le quadrillage ci-dessous, trace en bleu tous les rectangles constitués de
 \newpage
 \begin{exercise}
       Vrai ou faux ? Justifie dans les deux cas.
-      \begin{enumerate}
-            \item 1 est un nombre premier.\par\dotsforanswer{2}
-            \item Tous les nombres impairs sont des nombres premiers.\par\dotsforanswer{2}
-            \item La différence entre deux nombres premiers vaut toujours deux.\par\dotsforanswer{2}
-            \item Il n'existe aucun nombre premier qui soit pair.\par\dotsforanswer{2}
-            \item Il n'existe pas de nombres premiers consécutifs.\par\dotsforanswer{2}
+      \begin{enumerate}[itemsep=1cm, after=\vspace*{1cm}]
+            \item 1 est un nombre premier.
+            \item Tous les nombres impairs sont des nombres premiers.
+            \item La différence entre deux nombres premiers vaut toujours deux.
+            \item Il n'existe aucun nombre premier qui soit pair.
+            \item Il n'existe pas de nombres premiers consécutifs.
       \end{enumerate}
 \end{exercise}
 
@@ -304,11 +308,11 @@ Voici un exemple :
             \draw (decomp-1-2.north west) rectangle node[right=7pt]{facteurs premiers} (decomp-5-2.south east);
       \end{tikzpicture}
 \end{center}
-      \begin{align*}
-            120
-             & = 2\cdot 2 \cdot 2 \cdot 3 \cdot 5 \\
-             & = 2^3 \cdot 3 \cdot 5              \\
-      \end{align*}
+\begin{align*}
+      120
+       & = 2\cdot 2 \cdot 2 \cdot 3 \cdot 5 \\
+       & = 2^3 \cdot 3 \cdot 5              \\
+\end{align*}
 \vfill
 
 \begin{exercise}
@@ -416,19 +420,31 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
 \begin{exercise}
       Complète les phrases suivantes avec les mots \textbf{diviseur} ou \textbf{multiple}.
       \begin{enumerate}[cols=2, itemsep=2em]
-            \item 3 est un \dotfill de 12.
-            \item 150 est un \dotfill de 1.
-            \item 8 est un \dotfill de 4.
-            \item 20 est un \dotfill de 5 et de 10.
-            \item 0 est un \dotfill de 17.
-            \item 1 est un \dotfill de tous les naturels.
-            \item 13 est un \dotfill de 26.
-            \item 125 est un \dotfill de 625.
+            \item 3 est un \blank[scale=2]{diviseur} de 12.
+            \item 150 est un \blank[scale=2]{multiple} de 1.
+            \item 8 est un \blank[scale=2]{multiple} de 4.
+            \item 20 est un \blank[scale=2]{multiple} de 5 et de 10.
+            \item 0 est un \blank[scale=2]{multiple} de 17.
+            \item 1 est un \blank[scale=2]{diviseur} de tous les naturels.
+            \item 13 est un \blank[scale=2]{diviseur} de 26.
+            \item 125 est un \blank[scale=2]{diviseur} de 625.
       \end{enumerate}
 \end{exercise}
 
 \newpage
 \section{Propriétés fondamentales de la divisibilité}
+\begin{enumerate}[wide]
+      \item Si un nombre en divise un autre, alors il divise tous les multiples de cet autre nombre.
+
+            \(a,b,n \in \mathbb{N}\), si \(a\) divise \(b\), alors \(a\) divise \(b \cdot n\).
+      \item Si un nombre en divise deux autres, alors il divise leur somme.
+
+            \(a,b,c \in \mathbb{N}\), si \(a\) divise \(b\) et \(c\), alors \(a\) divise \(b + c\).
+      \item Si un nombre en divise deux autres, alors il divise leur différence.
+            \(a,b,c \in \mathbb{N}\), si \(a\) divise \(b\) et \(c\), alors \(a\) divise \(b - c\) (\(b > c\)).
+\end{enumerate}
+
+
 
 %\faBookOpen~ page 37.
 
@@ -538,7 +554,7 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
             Multiples de 9 &     &     &    &     \\
             18             & 45  & 9   & 64 & 24  \\
             25             & 40  & 27  & 52 & 84  \\
-            36             & 54  & 63   & 57 & 77  \\
+            36             & 54  & 63  & 57 & 77  \\
             99             & 182 & 70  & 35 & 56  \\
             90             & 81  & 108 & 72 & 180 \\
       \end{tblr}
