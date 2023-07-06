@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+    \pie[
+      rotate=90,
+      text=legend,
+     hide number,
+     color={Aquamarine,Apricot,Plum,Goldenrod,Green,OrangeRed}
+     ]{25/Fruitiers, 12.5/Blé, 50/Vigne, 5/Betteraves, 5/Pommes de terre, 2.5/Asperges}
+  \end{tikzpicture}
