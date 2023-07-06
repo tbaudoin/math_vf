@@ -6,12 +6,17 @@
 
 % \faIcon{book} Théorie page 54 et suivantes.
 %TODO: styliser le tableau
-\begin{tblr}{hlines, vlines, columns={c}}
-                      & Triangle scalène                                                               & Triangle isocèle                                                               & Triangle équilatéral                                                    \\
-  Triangle acutangle  & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_acutangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_acutangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_equilateral.tikz} \\
-  Triangle rectangle  & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_rectangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_rectangle.tikz}  &                                                                         \\
-  Triangle obtusangle & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_obtusangle.tikz} & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_obtusangle.tikz} &
-\end{tblr}
+\minisec{Nature d'un triangle}
+\begin{center}
+  \begin{tblr}{hlines, vlines, columns={c}}
+                                        & Triangle scalène                                                               & Triangle isocèle                                                               & Triangle équilatéral                                                    \\
+    \rotatebox{90}{Triangle acutangle } & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_acutangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_acutangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_equilateral.tikz} \\
+    \rotatebox{90}{Triangle rectangle } & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_rectangle.tikz}  & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_rectangle.tikz}  &                                                                         \\
+    \rotatebox{90}{Triangle obtusangle} & \includegraphics[height=2cm]{figures/theorie/triangle_scalene_obtusangle.tikz} & \includegraphics[height=2cm]{figures/theorie/triangle_isocele_obtusangle.tikz} &
+  \end{tblr}
+\end{center}
+
+\newpage
 
 \begin{exercise}
   Donne la nature des triangles suivants.
@@ -45,7 +50,7 @@
     Colorie en vert le disque, et en rouge le cercle.
   \end{tcolorbox}
 \end{exercise}
-\newpage
+
 
 \begin{exercise}
   Dans ces deux quadrilatères, trace les médianes en vert et les diagonales en rouge. Code ton dessin.
@@ -58,6 +63,8 @@
 
   \end{center}
 \end{exercise}
+
+\newpage
 
 \begin{exercise}
   Trace la médiane relative à \([AB]\) en bleu, la hauteur issue de \(B\) en vert et la médiatrice relative à \([BC]\) au crayon.\\
@@ -74,7 +81,7 @@
   \end{center}
 \end{exercise}
 
-\newpage
+
 
 \section{Inégalité triangulaire}
 
@@ -84,6 +91,7 @@ Mateo demande à Aleksi de tracer le triangle \(MAT\) dont les dimensions sont r
 
 À quelles conditions peut-on construire un triangle? \\
 \adf[Pour qu'un triangle soit constructible, il faut]{3}
+% que la longueur d’n côté soit inférieur à la somme des longueurs des deux autres côtés et supérieur à leur différence (positive).
 
 \begin{exercise}
   Pour chacun des cas ci-dessous, détermine si nous pourrions tracer le triangle demandé.
@@ -106,12 +114,16 @@ Mateo demande à Aleksi de tracer le triangle \(MAT\) dont les dimensions sont r
   \vspace*{4cm}
 \end{exercise}
 
+\newpage
+
 \section{Position relative d'un point par rapport à une droite}
 Nathan ne sait pas bien nager, il aimerait rejoindre la plage le plus vite possible. Quel chemin doit-il choisir ? Et pourquoi ?
 
-\includegraphics{img/distance_point_droite.png}
+\includegraphics[width=.2\linewidth]{img/distance_point_droite.png}
 
 \adf[Lorsqu'on parle de la distance entre un point et une droite, on sous-entend]{2}
+% la distance entre ce point et le pied de la perpendiculaire à la droite passant par ce point.
+
 
 \section{Positions relatives d'une droite et d'un cercle}
 
@@ -120,10 +132,10 @@ Quelles sont les différentes positions d'une droite et d'un cercle~? \\
 
 \begin{tabularx}{\linewidth}{|Y|Y|Y|}
   \hline
-                                              &                                           &                                          \\
-  \input{figures/Cercle.tikz}                 & \input{figures/Cercle.tikz}               & \input{figures/Cercle.tikz}              \\
+                                                    &                                                   &                                                   \\
+  \includegraphics[height=2cm]{figures/Cercle.tikz} & \includegraphics[height=2cm]{figures/Cercle.tikz} & \includegraphics[height=2cm]{figures/Cercle.tikz} \\
   \hline
-  La droite est \textbf{extérieure} au cercle & La droite est \textbf{tangente} au cercle & La droite est \textbf{sécante} au cercle \\
+  La droite est \textbf{extérieure} au cercle       & La droite est \textbf{tangente} au cercle         & La droite est \textbf{sécante} au cercle          \\
   \hline
 \end{tabularx}
 
@@ -131,8 +143,13 @@ Comment tracer la droite tangente à un cercle en \(A\) ?
 \begin{enumerate}[label=\arabic*, cols=2]
   \item On trace le rayon \(r\) joignant le centre du cercle au point \(A\).
   \item On trace \(d\), la droite perpendiculaire au rayon \(r\) passant par \(A\).
+        \columnbreak
   \item [\label=] \input{figures/Cercle.tikz}
 \end{enumerate}
+\adf[La tangent en un point d'un cercle est ]{1}
+%La tangente (t) en un point d’un cercle est la droite perpendiculaire au rayon aboutissant à ce point
+
+\newpage
 
 \begin{exercise}
   Trace un cercle de centre \(A\) tangent à la droite \(d\)
@@ -145,7 +162,7 @@ Construis les tangentes $t_1$ et $t_2$ en deux points du cercle sachant que l'am
 \begin{center}
   \includegraphics{tikz/cercle_deux_tangentes.tikz}
 \end{center}
-\newpage
+
 \begin{exercise}
   Complète le tableau suivant. \\
   \begin{tblr}{hlines, vlines, rows={1cm, m}, columns={c}, colspec={*{4}{X}}}
@@ -161,7 +178,7 @@ Construis les tangentes $t_1$ et $t_2$ en deux points du cercle sachant que l'am
   \end{tblr}
 \end{exercise}
 
-\newpage
+
 \section{Positions relatives de deux cercles}
 
 Quelles sont les différentes positions possibles de deux cercles~? \\
@@ -202,9 +219,14 @@ Sur base de leur définition, détermine à quel terme chaque situation correspo
 \end{exercise}
 
 \newpage
+
 \section{Distance dans le plan par rapport à un point}
 
 La distance par rapport à un point se trouve à l'aide \dotfill
+
+\adf[Définition : ]{1}
+% un cercle est le lieu des points équidistants d'un point appelé le centre du cercle.
+
 
 \begin{exercise}
   Place, à l'intérieur des cadres, en vert, le lieu des points qui respectent les conditions.
@@ -242,6 +264,20 @@ La distance par rapport à un point se trouve à l'aide \dotfill
   \end{enumerate}
 \end{exercise}
 
+\begin{exercise}
+  Deux chèvres sont attachées par une corde à un piquet. Ont-elles toutes les deux accès à l'abreuvoir ? Justifie en mobilisant la théorie que tu viens de découvrir.
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/chevres_abreuvoir.png}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  À quel(s) point(s) peut correspondre le point \(A\) pour que\\ \(\SI{2}{cm}<|AP|\le\SI{3,5}{cm}\) ?
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/nuage_points.png}
+  \end{center}
+\end{exercise}
+
 \newpage
 \section{Distance dans le plan par rapport à deux points}
 
@@ -252,7 +288,6 @@ La distance par rapport à deux points se trouve à l'aide \dotfill
 \adf[Nouvelle Définition : ]{1}
 
 \begin{exercise}
-
   Place, à l'intérieur des cadres, en vert, le lieu des points situés qui respectent les conditions.
   \begin{enumerate}
     \item Les points situés à égale distance de \(A\) et \(B\).
@@ -274,10 +309,24 @@ La distance par rapport à deux points se trouve à l'aide \dotfill
   \end{enumerate}
 \end{exercise}
 
-\newpage
-\section{Distance dans le plan par rapport à une droite}
+\begin{exercise}
+  Monsieur Debroux est chef scout. Il organise une attaque de camp que les chefs
+  doivent protéger. Il y a l'équipe A et l'équipe B. Il chercher l'endroit où il pourrait
+  placer son camp.
+
+  Ne voulant pas favoriser une équipe, les chefs décident de placer leur camp à égale
+  distance des points de départ des deux équipes. Où les chefs pourront placer le
+  camp à défendre ? Trace ces emplacements en noir sur le dessin.
+
+  \begin{center}
+    \includegraphics[width=\linewidth]{img/scout.png}
+  \end{center}
+\end{exercise}
+
+\section  {Distance dans le plan par rapport à une droite}
 
 \adf[La distance par rapport à une droite se trouve à l'aide]{1}
+% 
 
 \begin{exercise}
   Place, à l'intérieur des cadres, en vert, le lieu des points qui respectent les conditions.
@@ -297,7 +346,14 @@ La distance par rapport à deux points se trouve à l'aide \dotfill
   \end{enumerate}
 \end{exercise}
 
-\newpage
+\begin{exercise}
+  Michel veut installer des arbres à \SI{1,5}{m} de la route.
+  Trace l'ensemble des points sur lequel Michel pourrait mettre des arbres.
+  \begin{center}
+    \includegraphics[width=.5\linewidth]{img/route.png}
+  \end{center}
+\end{exercise}
+
 \section{Distance dans le plan par rapport à deux droites sécantes}
 
 La distance par rapport à deux droites se trouve à l'aide \dotfill \\
@@ -319,7 +375,15 @@ La distance par rapport à deux droites se trouve à l'aide \dotfill \\
   \end{enumerate}
 \end{exercise}
 
-\newpage
+\begin{exercise}
+  Une nouvelle antenne 4G doit être placée dans la région. Afin que le signal soit
+  optimal, elle devra être située à égale distance des deux routes et de la ligne de
+  chemin de fer. Place cette antenne sur le dessin. Sois précis et laisse tes constructions.
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/antenne_4G.png}
+  \end{center}
+\end{exercise}
+
 \section{Cercles inscrits, cercles circonscrits}
 
 % Bien coder les constructions !
@@ -336,6 +400,7 @@ Pour tracer un \textbf{cercle inscrit} dans un triangle, autrement dit un cercle
 
 
 % Bien coder les constructions !
+\newpage
 Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cercle passant par les trois sommets de ce triangle, il faut tracer les médiatrices des trois côtés de ce triangle.
 
 \begin{itemize}[label=\(\triangle\)]
@@ -349,7 +414,20 @@ Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cerc
 \end{center}
 \vspace*{2cm}
 
+\begin{exercise}
+  Dylan a gagné au Lotto et voudrait construire une immense piscine circulaire. Il
+  voudrait mettre le trou d'évacuation au centre. Peux-tu en trouver
+  l'emplacement ? Laisse tes constructions visibles.
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0,0) circle (2cm);
+    \end{tikzpicture}
+  \end{center}
+\end{exercise}
+
+%TODO: Cercle circonscrit avec centre en dehors du triangle.
 \newpage
+
 \section{Exercices issus de CE1D}
 
 \begin{exercise}
@@ -359,7 +437,7 @@ Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cerc
   \end{center}
 \end{exercise}
 
-\newpage
+
 \begin{exercise}
   \begin{center}
     \includegraphics[]{img/Ce1D2a.png}\\
@@ -386,7 +464,7 @@ Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cerc
   \end{center}
 \end{exercise}
 
-\newpage
+
 \begin{exercise}
   \begin{center}
     \includegraphics[]{img/Ce1D6a.png}\\
@@ -394,14 +472,14 @@ Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cerc
   \end{center}
 \end{exercise}
 
-\newpage
+
 \begin{exercise}
   \begin{center}
     \includegraphics[]{img/Ce1D7.png}
   \end{center}
 \end{exercise}
 
-\newpage
+
 \begin{exercise}
   \begin{center}
     \includegraphics[]{img/Ce1D8.png}
@@ -414,14 +492,14 @@ Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cerc
   \end{center}
 \end{exercise}
 
-\newpage
+
 \begin{exercise}
   \begin{center}
     \includegraphics[]{img/Ce1D10.png}
   \end{center}
 \end{exercise}
 
-\newpage
+
 \begin{exercise}
   \begin{center}
     \includegraphics[]{img/ce1D11a.png}\\
