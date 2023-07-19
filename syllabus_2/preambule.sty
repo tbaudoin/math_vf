@@ -6,8 +6,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
 \usepackage{cmbright}
-\usepackage{frenchmath}
 \usepackage{mathtools, amssymb}
+\usepackage{mathrsfs} % fir 
 \usepackage[export]{adjustbox}
 \usepackage[locale=FR,group-minimum-digits=3]{siunitx}
 \usepackage{array, booktabs, tabularx, makecell}
@@ -44,7 +44,7 @@
 \usepackage{centernot}
 \usepackage[normalem]{ulem}
 \usepackage{tasks}
-\settasks{label-width=15pt, before-skip=1em, after-item-skip=1em}
+\settasks{label-width=15pt,label-format=\bfseries}
 \usepackage[use-files]{xsim}
 \xsimsetup{%
     path = xsim,
@@ -262,3 +262,13 @@
 % Pour des lettres ou du texte entouré par un cercle.
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
             \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+
+% un essaie pour que les exercices ne s'étale pas sur plusieurs pages
+\BeforeBeginEnvironment{exercise}{%
+%   \vspace{3.5ex plus 1ex minus .2ex}
+  \noindent\begin{minipage}{\linewidth}%
+}
+\AfterEndEnvironment{exercise}{%
+  \end{minipage}\par
+}
