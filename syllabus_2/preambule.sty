@@ -1,11 +1,14 @@
 % boost compilation ? 
 %\pdfcompresslevel=0
 %\pdfobjcompresslevel=0
+% \usepackage{showframe}
 \usepackage[french]{babel}
 %\usepackage{fontspec}
 \usepackage[T1]{fontenc}
-\usepackage[margin=1in]{geometry}
-\usepackage{cmbright}
+% \usepackage[margin=1in]{geometry}
+% \usepackage{cmbright}
+\usepackage[sfmath,light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{mathtools, amssymb}
 \usepackage{mathrsfs} % fir 
 \usepackage[export]{adjustbox}
@@ -249,26 +252,30 @@
 }
 
 
-\newcommand*{\etai}{}
 
-% \usepackage{setspace}
-% \onehalfspacing
-%\AfterTOCHead{\singlespacing}
 \usepackage{subfiles}
 
 
-\DeclareExerciseCollection{div-mul-exos}
-
 % Pour des lettres ou du texte entouré par un cercle.
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
-
+        \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
 % un essaie pour que les exercices ne s'étale pas sur plusieurs pages
 \BeforeBeginEnvironment{exercise}{%
-%   \vspace{3.5ex plus 1ex minus .2ex}
-  \noindent\begin{minipage}{\linewidth}%
+    %   \vspace{3.5ex plus 1ex minus .2ex}
+    \noindent\begin{minipage}{\linewidth}%
+        }
+        \AfterEndEnvironment{exercise}{%
+    \end{minipage}\par
 }
-\AfterEndEnvironment{exercise}{%
-  \end{minipage}\par
+
+% nouvelle page pour chaque section sauf pour la section 1
+\makeatletter
+\renewcommand\sectionlinesformat[4]{%
+    \ifnum\value{section}=1
+        #3#4% Afficher seulement le titre de la première section sans numéro
+    \else
+        \clearpage #3#4% Ajouter un saut de page pour les autres sections
+    \fi
 }
+\makeatother
