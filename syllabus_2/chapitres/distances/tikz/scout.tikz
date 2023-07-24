@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+    \tikzmath{
+        \h = 5;
+    }
+    \draw (0,0) rectangle (\linewidth,\h);
+    \draw[fill=black] (.25\linewidth,.75*\h)circle(1pt)node[above]{\(A\)};
+    \draw[fill=black] (.75\linewidth,.4*\h)circle(1pt)node[above]{\(B\)};
+\end{tikzpicture}
