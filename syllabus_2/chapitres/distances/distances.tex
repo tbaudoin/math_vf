@@ -356,6 +356,15 @@ La distance par rapport à deux points se trouve à l'aide \dotfill
   \end{center}
 \end{exercise}
 
+\begin{exercise}
+  Trouve le centre de ce cercle en utilisant la théorie que tu viens de découvrir et les propriétés du cercle.
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0,0) circle (2cm);
+    \end{tikzpicture}
+  \end{center}
+\end{exercise}
+
 \section  {Distance dans le plan par rapport à une droite}
 
 \adf[La distance par rapport à une droite se trouve à l'aide]{1}
@@ -386,7 +395,6 @@ La distance par rapport à deux points se trouve à l'aide \dotfill
   {\includegraphics[height=5cm]{img/route.png}}
 \end{exercise}
 
-%FIXME: je suis ici !
 \section{Distance dans le plan par rapport à deux droites sécantes}
 
 La distance par rapport à deux droites se trouve à l'aide \dotfill \\
@@ -400,7 +408,7 @@ La distance par rapport à deux droites se trouve à l'aide \dotfill \\
     \item Les points situés à égale distance des droites \(f\) et \(d\).
           \begin{center}
             \includegraphics[]{img/droitesdetf.png}
-          \end{center}
+          \end{center}\newpage
     \item Les points situés à moins de \(3\) cm de \(A\), et à égale distance entre \(f\) et \(d\).
           \begin{center}
             \includegraphics[]{img/droitesdetfA.png}
@@ -427,39 +435,23 @@ Pour tracer un \textbf{cercle inscrit} dans un triangle, autrement dit un cercle
 \end{itemize}
 
 \begin{center}
-
-  \input{tikz/Triangle pas rectangle.tikz}\\
+  \includegraphics{tikz/Triangle pas rectangle.tikz}
 \end{center}
 
 
 % Bien coder les constructions !
-\newpage
 Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cercle passant par les trois sommets de ce triangle, il faut tracer les médiatrices des trois côtés de ce triangle.
 
 \begin{itemize}[label=\(\triangle\)]
   \item Son centre est l'intersection des médiatrices
   \item Son rayon est la distance entre le centre et l'un des sommets.
 \end{itemize}
-\vspace*{3,5cm}
 
 \begin{center}
-  \input{tikz/Triangle pas rectangle.tikz}\\
+  \includegraphics{tikz/Triangle pas rectangle.tikz}
+  \vfill
+  \includegraphics[width=.4\linewidth]{tikz/triangle_scalene_obtusangle_2.tikz}
 \end{center}
-\vspace*{2cm}
-
-\begin{exercise}
-  Dylan a gagné au Lotto et voudrait construire une immense piscine circulaire. Il
-  voudrait mettre le trou d'évacuation au centre. Peux-tu en trouver
-  l'emplacement ? Laisse tes constructions visibles.
-  \begin{center}
-    \begin{tikzpicture}
-      \draw (0,0) circle (2cm);
-    \end{tikzpicture}
-  \end{center}
-\end{exercise}
-
-%TODO: Cercle circonscrit avec centre en dehors du triangle.
-\newpage
 
 \section{Exercices issus de CE1D}
 
