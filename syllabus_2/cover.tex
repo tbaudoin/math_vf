@@ -1,0 +1,40 @@
+\documentclass{scrartcl}
+\KOMAoptions{
+    BCOR=12mm,
+    DIV=15,
+    paper=a4,
+    twoside=semi,
+    fontsize=12pt,
+    parskip=half-}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[sfmath,light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage{scrlayer-scrpage}
+\cfoot{\textcolor{gray}{Année scolaire 2023 - 2024}}
+\ofoot{}
+\usepackage{pbox}
+\usepackage{tabularray}
+\pagestyle{scrheadings}
+\begin{document}
+\pbox[t]{\linewidth}{Institut de la Vierge Fidèle\\
+    Rue de Linthout, 30\\
+    1030 Bruxelles}
+\hfill
+\pbox[t]{\linewidth}{220}
+\vfill
+\begin{center}
+    \begin{tblr}{hlines, columns={c, font=\Large}, colspec={X}, rowsep=1em}
+        Mathémathiques
+    \end{tblr}
+
+    2\ieme commune
+
+\end{center}
+\vfill
+\pbox[b]{\linewidth}{Prénom et nom :\medbreak
+    Classe : \hspace*{2cm}\no : }
+\hfill
+\pbox[b]{\linewidth}{Baudoin\\ Debroux\\ Janssens\\ Van de Werve}
+\end{document}
