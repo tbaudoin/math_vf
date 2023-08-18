@@ -1,0 +1,85 @@
+\documentclass[12pt,parskip=half-, twoside=semi]{scrartcl}
+\usepackage[T1]{fontenc} % encodage des caractères
+\usepackage[french]{babel} % texte en français
+\usepackage{microtype} % meilleur justification du texte
+\usepackage{cmbright} % police sans serif
+\usepackage[frenchmath]{mathastext} % pour le lettres majuscules droites
+\usepackage{stmaryrd} % \sslash pour le symbole parallèle
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{tikz, tkz-euclide}
+\usepackage{gensymb}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\alph*)}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\NewDocumentCommand{\dotsforanswer}{m o O{1ex}}%
+{%
+    \IfNoValueTF{#2}%
+    {
+        \foreach \i in {1,...,#1}{\dotfill\vskip #3}
+    }
+    {
+        #2\dotfill\vskip #3
+        \foreach \i in {2,...,#1}{\dotfill\vskip #3}
+    }
+
+}
+\SetEnumitemKey{cols}
+{
+    itemsep= 1em,
+    before = \raggedcolumns\begin{multicols}{#1},
+    after = \end{multicols},
+}
+\usepackage{tcolorbox}
+\newtcbox{\blackbox}{%
+    on line,
+    left=0pt,
+    right=0pt,
+    bottom=0pt,
+    top=0pt,
+    sharp corners,
+    colframe=black,
+    colback=black,
+    coltext=white,
+    fontupper=\bfseries
+}
+
+
+%%%%%%%%
+% XSIM %
+%%%%%%%%
+
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+
+% En-tête et pied de page
+\usepackage{scrlayer-scrpage}
+\setlength{\headheight}{50pt}
+\lohead{Nom :\\Prénom :\\Classe :}
+\rohead{\no~\fbox{\phantom{XX}}\\~\\ Date : }
+
+\begin{document}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Progressions : fiches d'exercices de drill 
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    2ème année
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+Sur cette feuille, que tu garderas préciseusement tout au long de l'année, tu pourras marquer ta progression dans les chapitres qui auront des exercices de drill sur des fiches hors de ton syllabus. 
+
+Pour être prêt à une interrogation, autrement dit pour maitriser la matière, tu dois pouvoir faire des fiches de niveau 3 sans trop de difficultés. Les deux premiers niveaux sont là pour avancer pas à pas dans l'apprentissage, et le dernier niveau est du dépassement, du challenge pour les chapitres dans lesquels tu te sentirais le plus à l'aise. 
+
+Pour marquer visuellement tes acquis et donc ta progression, nous te conseillons de revenir à cette feuille et colorier dans la couleur adéquate le petit dessin qui correspond à une fiche du niveau de difficulté. 
+
+Petit conseil : avant de passer au niveau supérieur, tu dois pouvoir faire minimum 3 fiches facilement (coloriées en vert). 
+
+\end{document}
