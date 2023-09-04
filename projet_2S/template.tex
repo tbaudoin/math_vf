@@ -2,6 +2,7 @@
 \usepackage[sans, frenchstyle]{kpfonts-otf}
 %\usepackage{showframe}
 \usepackage{polyglossia}
+\setlist[enumerate]{label=\textbf{\alph*)}}
 \setmainlanguage{french}
 \usepackage{xcolor}
 \usepackage{tabularray}
@@ -19,11 +20,12 @@
     exercise/template=mytemplate,
 }
 \begin{document}
-\chapter{Nombres entiers}
 
-À faire sur feuille annexe.
-
+\setcounter{section}{1}
 \section{Exercices}
+
+L'exercice 1 est à sur cette feuille. Les suivants sont à faire sur feuille annexe.
+
 \begin{exercise}
     Complète le tableau en calculant la valeur numérique des expressions suivantes.
     \begin{center}
@@ -47,13 +49,50 @@
 \end{exercise}
 
 \begin{exercise}
-    Place les élements suivants sur une droite graduée en graduant de sorte que $1cm = 1$ unité. \\
-
-    $\hfil abs~A = 3 \hfil abs~B=-2 \hfil abs~C=-1 \hfil abs~D=2 \hfil abs~E=5$
+    Effectue en une seule étape les puissances suivantes.
+    \begin{enumerate}[cols=4, itemsep=1em]
+        \item \((-3)^2\)
+        \item \(-1^6\)
+        \item \(-5^2\)
+        \item \((-3)^3\)
+        \item \((-2)^4\)
+        \item \(-1^5\)
+        \item \(3^0\)
+        \item \(25^1\)
+        \item \((-8)^0\)
+        \item \(0^7\)
+        \item \(3^{3} \)
+        \item \(7^{1} \)
+        \item \(( - 2)^{4} \)
+        \item \({- 1}^{6} \)
+        \item \(( - 1)^{6} \)
+        \item \(( - 2)^{3} \)
+        \item \((-5)^3\)
+        \item \(-3^2\)
+    \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
-    \begin{enumerate}[cols=3]
+    Effectue.
+    \begin{enumerate}[cols=3, itemsep=.3cm]
+        \item \(4\cdot (-5) \cdot 7\)
+        \item \(-2\cdot (-3)\cdot (-4)\)
+        \item \(2\cdot (-1)\cdot 1\)
+        \item \(7\cdot (-2)\cdot (-2)\)
+        \item \(-5\cdot (-2)\cdot (-2)\cdot  (-10)\)
+        \item \(6\cdot (-3) \cdot 2\)
+        \item \(-1 \cdot 1 \cdot (-1) \cdot (-1)\)
+        \item \(3\cdot (-3) \cdot 4\)
+        \item \(-2\cdot (-2) \cdot 5\)
+        \item \(5 \cdot 2 \cdot (-2) \cdot (-1)\)
+        \item \(-10 \cdot (-1) \cdot 7\)
+        \item \(-2 \cdot 8 \cdot (-1) \cdot (-1)\)
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Effectue. 
+    \begin{enumerate}[cols=3, itemsep=1em]
         \item $(-7)+(-10)$
         \item $( + 7) + ( - 10)$
         \item $25 - ( + 7)$
@@ -99,64 +138,28 @@
 \end{exercise}
 
 \begin{exercise}
-    Effectue en une seule étape les puissances suivantes.
-    \begin{enumerate}[cols=2, itemsep=0.5cm]
-        \item \((-3)^2=\)
-        \item \(-1^6=\)
-        \item \(-5^2=\)
-        \item \((-3)^3=\)
-        \item \((-2)^4=\)
-        \item \(-1^5=\)
-        \item \(3^0=\)
-        \item \(25^1\)
-        \item \((-8)0\)
-        \item \(0^7\)
-        \item \(3^{3} =\)
-        \item \(7^{1} =\)
-        \item \(( - 2)^{4} =\)
-        \item \({- 1}^{6} =\)
-        \item \(( - 1)^{6} =\)
-        \item \(( - 2)^{3} =\)
-        \item \((-5)^3=\)
-        \item \(-3^2=\)
-    \end{enumerate}
-\end{exercise}
-
-\begin{exercise}
     Effectue.
     \begin{enumerate}[cols=2, itemsep=4cm]
-        \item \(3^{2} + 5 \cdot ( - 2) =\)
-        \item \(- 15 + ( - 3 + 7)^{2} =\)
-        \item \(\left( - 3 + ( - 2) \right) \cdot (20 - 12) =\)
-        \item \(- 40 + ( - 2) \cdot ( - 8) =\)
-        \item \(14 \cdot ( - 2) + ( - 20) =\)
-        \item \(( - 3) + ( - 8) - ( - 8) \cdot 2 =\)
-        \item \(( - 3)^{3} + ( - 2) \cdot 8 =\)
-        \item \(( - 3)^{2} + \left( ( - 3) \cdot ( - 2) + 7 \right) =\)
+        \item \(3^{2} + 5 \cdot ( - 2) \)
+        \item \(- 15 + ( - 3 + 7)^{2} \)
+        \item \(\left( - 3 + ( - 2) \right) \cdot (20 - 12) \)
+        \item \(- 40 + ( - 2) \cdot ( - 8) \)
+        \item \(14 \cdot ( - 2) + ( - 20) \)
+        \item \(( - 3) + ( - 8) - ( - 8) \cdot 2 \)
+        \item \(( - 3)^{3} + ( - 2) \cdot 8 \)
+        \item \(( - 3)^{2} + \left( ( - 3) \cdot ( - 2) + 7 \right) \)
     \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
-    Effectue.
-    \begin{enumerate}[cols=3, itemsep=.3cm]
-        \item \(4\cdot (-5) \cdot 7\)
-        \item \(-2\cdot (-3)\cdot (-4)\)
-        \item \(2\cdot (-1)\cdot 1\)
-        \item \(7\cdot (-2)\cdot (-2)\)
-        \item \(-5\cdot (-2)\cdot (-2)\cdot  (-10)\)
-        \item \(6\cdot (-3) \cdot 2\)
-        \item \(-1 \cdot 1 \cdot (-1) \cdot (-1)\)
-        \item \(3\cdot (-3) \cdot 4\)
-        \item \(-2\cdot (-2) \cdot 5\)
-        \item \(5 \cdot 2 \cdot (-2) \cdot (-1)\)
-        \item \(-10 \cdot (-1) \cdot 7\)
-        \item \(-2 \cdot 8 \cdot (-1) \cdot (-1)\)
-    \end{enumerate}
+    Place les élements suivants sur une droite graduée en graduant de sorte que $1cm = 1$ unité. \\
+
+    $\hfil abs~A = 3 \hfil abs~B=-2 \hfil abs~C=-1 \hfil abs~D=2 \hfil abs~E=5$
 \end{exercise}
 
 \begin{exercise}
     Effectue.
-    \begin{enumerate}[itemsep=.4cm, cols=3]
+    \begin{enumerate}[itemsep=.4cm, cols=2]
         \item   \(3^{2} \cdot ( - 3) + 2^{3} \cdot ( - 2)^{2} \)
         \item \(- 1 \cdot ( - 30) \cdot ( - 2)^{4} \)
         \item \(12 \cdot ( - 3)^{2} \)
@@ -169,6 +172,8 @@
         \item \(- 3\  \cdot ( - 6)^{2} + ( - 1)^{6} \)
         \item \( ( - 4)^{2} + 7 \cdot ( - 20) \)
         \item \(3^{3} \cdot ( - 2) - 14 \cdot ( - 2) \)
+        \item \(-7 + 7 \cdot 2 - (-3)^2\)
+        \item \(5 \cdot (-5) \cdot (-2) + \left(30:(-5)\cdot7- (-2)\right)\)
     \end{enumerate}
 \end{exercise}
 
@@ -193,6 +198,8 @@
         \item \(3bc - b^{2}\)
         \item \(a + 2b - c\)
         \item \(b \cdot ( - c)\)
+        \item \(-2b+c-(10-3)\)
+        \item \(a^3 - b^2 - c^6\)
     \end{enumerate}
 \end{exercise}
 
@@ -203,6 +210,7 @@
         \item \(a^{2}\) est toujours positif.
         \item Le produit de \(a\) par son opposé est négatif.
         \item Le double de \(a\) est positif.
+        \item \(\dfrac{-3}{7}\) est l'inverse de \(frac{3}{7}\)
     \end{enumerate}
 \end{exercise}
 
