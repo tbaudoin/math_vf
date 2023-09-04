@@ -2,12 +2,12 @@
 \usepackage[sans, frenchstyle]{kpfonts-otf}
 %\usepackage{showframe}
 \usepackage{polyglossia}
-\setlist[enumerate]{label=\textbf{\alph*)}}
 \setmainlanguage{french}
 \usepackage{xcolor}
 \usepackage{tabularray}
 \usepackage{multicol}
 \usepackage{enumitem}
+\setlist[enumerate]{label=\textbf{\alph*)}}
 \SetEnumitemKey{cols}
 {
     before = \begin{multicols}{#1},
@@ -21,10 +21,17 @@
 }
 \begin{document}
 
-\setcounter{section}{1}
-\section{Exercices}
+\begin{huge}
+    Chapitre 1 : les entiers
+\end{huge}
 
-L'exercice 1 est à sur cette feuille. Les suivants sont à faire sur feuille annexe.
+\medbreak
+
+L'exercice 1 est à faire sur cette feuille. Les suivants sont à faire sur feuille annexe. Pour chaque calcul à effectuer, recopie-le d'abord sur ta feuille. 
+
+Utilise des couleurs, souligne les éléments importants, tout ce qui pourra t'aider à retenir et progresser.
+
+\medbreak
 
 \begin{exercise}
     Complète le tableau en calculant la valeur numérique des expressions suivantes.
@@ -33,9 +40,9 @@ L'exercice 1 est à sur cette feuille. Les suivants sont à faire sur feuille an
         \begin{tblr}{
                 hlines,
                 vlines,
-                colspec={*{5}{X[c]}},
-                rows={1cm,m},
-                row{1}={gray!40},
+                colspec={*{3}{c}*{2}{X[c]}}, 
+                rows={2.5cm,m},
+                row{1}={1cm, gray!40},
                 column{1-3}={gray!40}
             }
             a  & b  & c  & a+b-c & a-(b+c) \\
@@ -50,7 +57,7 @@ L'exercice 1 est à sur cette feuille. Les suivants sont à faire sur feuille an
 
 \begin{exercise}
     Effectue en une seule étape les puissances suivantes.
-    \begin{enumerate}[cols=4, itemsep=1em]
+    \begin{enumerate}[cols=6, itemsep=1em]
         \item \((-3)^2\)
         \item \(-1^6\)
         \item \(-5^2\)
@@ -72,24 +79,7 @@ L'exercice 1 est à sur cette feuille. Les suivants sont à faire sur feuille an
     \end{enumerate}
 \end{exercise}
 
-\begin{exercise}
-    Effectue.
-    \begin{enumerate}[cols=3, itemsep=.3cm]
-        \item \(4\cdot (-5) \cdot 7\)
-        \item \(-2\cdot (-3)\cdot (-4)\)
-        \item \(2\cdot (-1)\cdot 1\)
-        \item \(7\cdot (-2)\cdot (-2)\)
-        \item \(-5\cdot (-2)\cdot (-2)\cdot  (-10)\)
-        \item \(6\cdot (-3) \cdot 2\)
-        \item \(-1 \cdot 1 \cdot (-1) \cdot (-1)\)
-        \item \(3\cdot (-3) \cdot 4\)
-        \item \(-2\cdot (-2) \cdot 5\)
-        \item \(5 \cdot 2 \cdot (-2) \cdot (-1)\)
-        \item \(-10 \cdot (-1) \cdot 7\)
-        \item \(-2 \cdot 8 \cdot (-1) \cdot (-1)\)
-    \end{enumerate}
-\end{exercise}
-
+\pagebreak
 \begin{exercise}
     Effectue. 
     \begin{enumerate}[cols=3, itemsep=1em]
@@ -108,6 +98,24 @@ L'exercice 1 est à sur cette feuille. Les suivants sont à faire sur feuille an
         \item $- 5 + ( - 7) - ( + 8)$
         \item $- 12 - 13 - 14 + 15$
         \item $(-3)- (-5) - 10$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Effectue.
+    \begin{enumerate}[cols=3, itemsep=.3cm]
+        \item \(4\cdot (-5) \cdot 7\)
+        \item \(-2\cdot (-3)\cdot (-4)\)
+        \item \(2\cdot (-1)\cdot 1\)
+        \item \(7\cdot (-2)\cdot (-2)\)
+        \item \(-5\cdot (-2)\cdot (-2)\cdot  (-10)\)
+        \item \(6\cdot (-3) \cdot 2\)
+        \item \(-1 \cdot 1 \cdot (-1) \cdot (-1)\)
+        \item \(3\cdot (-3) \cdot 4\)
+        \item \(-2\cdot (-2) \cdot 5\)
+        \item \(5 \cdot 2 \cdot (-2) \cdot (-1)\)
+        \item \(-10 \cdot (-1) \cdot 7\)
+        \item \(-2 \cdot 8 \cdot (-1) \cdot (-1)\)
     \end{enumerate}
 \end{exercise}
 
@@ -137,9 +145,10 @@ L'exercice 1 est à sur cette feuille. Les suivants sont à faire sur feuille an
     \end{enumerate}
 \end{exercise}
 
+\pagebreak
 \begin{exercise}
     Effectue.
-    \begin{enumerate}[cols=2, itemsep=4cm]
+    \begin{enumerate}[cols=2, itemsep=1emm]
         \item \(3^{2} + 5 \cdot ( - 2) \)
         \item \(- 15 + ( - 3 + 7)^{2} \)
         \item \(\left( - 3 + ( - 2) \right) \cdot (20 - 12) \)
