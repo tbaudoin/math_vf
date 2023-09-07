@@ -213,54 +213,57 @@ Dans le quadrillage ci-dessous, trace en bleu tous les rectangles constitués de
 \dotsforanswer{3}[Que remarques-tu ?]
 \dotsforanswer{2}[Un nombre premier est]
 
+Les nombres premiers à retenir : 
+% \numlist{2;3;5;7;11;13;17;19}
 %TODO: Est-ce que ça à vraiment du sens de donner cela comme ça ? Est-ce qu'on ne noterait pas plutôt une liste des nombres premiers inférieurs à 100 ?
-\begin{center}
+% TITI : je l'enlève mais ça peut être bien de le montrer aux élèves.
+% \begin{center}
 
-      Crible d'Hératostène pour les nombres premiers inférieurs à 100.
+%       Crible d'Hératostène pour les nombres premiers inférieurs à 100.
 
-      \begin{tblr}{
-                  hlines,
-                  vlines,
-                  columns={.7cm,c},
-                  rows={.7cm, m},
-                  cell{1}{2}={gray!40, font=\bfseries},
-                  cell{1}{3}={gray!40, font=\bfseries},
-                  cell{1}{5}={gray!40, font=\bfseries},
-                  cell{1}{7}={gray!40, font=\bfseries},
-                  cell{2}{1}={gray!40, font=\bfseries},
-                  cell{2}{3}={gray!40, font=\bfseries},
-                  cell{2}{7}={gray!40, font=\bfseries},
-                  cell{2}{9}={gray!40, font=\bfseries},
-                  cell{3}{3}={gray!40, font=\bfseries},
-                  cell{3}{9}={gray!40, font=\bfseries},
-                  cell{4}{1}={gray!40, font=\bfseries},
-                  cell{4}{7}={gray!40, font=\bfseries},
-                  cell{5}{1}={gray!40, font=\bfseries},
-                  cell{5}{3}={gray!40, font=\bfseries},
-                  cell{5}{7}={gray!40, font=\bfseries},
-                  cell{6}{3}={gray!40, font=\bfseries},
-                  cell{6}{9}={gray!40, font=\bfseries},
-                  cell{7}{1}={gray!40, font=\bfseries},
-                  cell{7}{7}={gray!40, font=\bfseries},
-                  cell{8}{1}={gray!40, font=\bfseries},
-                  cell{8}{3}={gray!40, font=\bfseries},
-                  cell{8}{9}={gray!40, font=\bfseries},
-                  cell{9}{3}={gray!40, font=\bfseries},
-                  cell{9}{9}={gray!40, font=\bfseries},
-                  cell{10}{7}={gray!40, font=\bfseries},
-            }
-            1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  & 10  \\
-            11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20  \\
-            21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30  \\
-            31 & 32 & 33 & 34 & 35 & 36 & 37 & 38 & 39 & 40  \\
-            41 & 42 & 43 & 44 & 45 & 46 & 47 & 48 & 49 & 50  \\
-            51 & 52 & 53 & 54 & 55 & 56 & 57 & 58 & 59 & 60  \\
-            61 & 62 & 63 & 64 & 65 & 66 & 67 & 68 & 69 & 70  \\
-            71 & 72 & 73 & 74 & 75 & 76 & 77 & 78 & 79 & 80  \\
-            81 & 82 & 83 & 84 & 85 & 86 & 87 & 88 & 89 & 90  \\
-            91 & 92 & 93 & 94 & 95 & 96 & 97 & 98 & 99 & 100 \\
-      \end{tblr}
-\end{center}
+%       \begin{tblr}{
+%                   hlines,
+%                   vlines,
+%                   columns={.7cm,c},
+%                   rows={.7cm, m},
+%                   cell{1}{2}={gray!40, font=\bfseries},
+%                   cell{1}{3}={gray!40, font=\bfseries},
+%                   cell{1}{5}={gray!40, font=\bfseries},
+%                   cell{1}{7}={gray!40, font=\bfseries},
+%                   cell{2}{1}={gray!40, font=\bfseries},
+%                   cell{2}{3}={gray!40, font=\bfseries},
+%                   cell{2}{7}={gray!40, font=\bfseries},
+%                   cell{2}{9}={gray!40, font=\bfseries},
+%                   cell{3}{3}={gray!40, font=\bfseries},
+%                   cell{3}{9}={gray!40, font=\bfseries},
+%                   cell{4}{1}={gray!40, font=\bfseries},
+%                   cell{4}{7}={gray!40, font=\bfseries},
+%                   cell{5}{1}={gray!40, font=\bfseries},
+%                   cell{5}{3}={gray!40, font=\bfseries},
+%                   cell{5}{7}={gray!40, font=\bfseries},
+%                   cell{6}{3}={gray!40, font=\bfseries},
+%                   cell{6}{9}={gray!40, font=\bfseries},
+%                   cell{7}{1}={gray!40, font=\bfseries},
+%                   cell{7}{7}={gray!40, font=\bfseries},
+%                   cell{8}{1}={gray!40, font=\bfseries},
+%                   cell{8}{3}={gray!40, font=\bfseries},
+%                   cell{8}{9}={gray!40, font=\bfseries},
+%                   cell{9}{3}={gray!40, font=\bfseries},
+%                   cell{9}{9}={gray!40, font=\bfseries},
+%                   cell{10}{7}={gray!40, font=\bfseries},
+%             }
+%             1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  & 10  \\
+%             11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20  \\
+%             21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30  \\
+%             31 & 32 & 33 & 34 & 35 & 36 & 37 & 38 & 39 & 40  \\
+%             41 & 42 & 43 & 44 & 45 & 46 & 47 & 48 & 49 & 50  \\
+%             51 & 52 & 53 & 54 & 55 & 56 & 57 & 58 & 59 & 60  \\
+%             61 & 62 & 63 & 64 & 65 & 66 & 67 & 68 & 69 & 70  \\
+%             71 & 72 & 73 & 74 & 75 & 76 & 77 & 78 & 79 & 80  \\
+%             81 & 82 & 83 & 84 & 85 & 86 & 87 & 88 & 89 & 90  \\
+%             91 & 92 & 93 & 94 & 95 & 96 & 97 & 98 & 99 & 100 \\
+%       \end{tblr}
+% \end{center}
 
 \newpage
 \begin{exercise}
@@ -287,9 +290,8 @@ Par exemple, le nombre $10$ peut s'écrire sous la forme $2\cdot 5$ et le nombre
 
 Pour décomposer un nombre en facteurs premiers, il faut diviser successivement ce nombre par des nombres premiers jusqu'à obtenir le nombre 1.\\
 Voici un exemple :
-% FIXME: refaire la mise en page
 \begin{center}
-      \begin{tikzpicture}
+      \begin{tikzpicture}[baseline=(current bounding box.east)]
             \matrix (decomp) [
                   matrix of nodes,
                   column sep=.5cm,
@@ -307,13 +309,13 @@ Voici un exemple :
             \draw (T) -- (B);
             \draw (decomp-1-2.north west) rectangle node[right=7pt]{facteurs premiers} (decomp-5-2.south east);
       \end{tikzpicture}
+      \hfil
+      \(\begin{aligned}
+            120
+             & = 2\cdot 2 \cdot 2 \cdot 3 \cdot 5 \\
+             & = 2^3 \cdot 3 \cdot 5              \\
+      \end{aligned}\)
 \end{center}
-\begin{align*}
-      120
-       & = 2\cdot 2 \cdot 2 \cdot 3 \cdot 5 \\
-       & = 2^3 \cdot 3 \cdot 5              \\
-\end{align*}
-\vfill
 
 \begin{exercise}
       Écris les nombres suivants en un produit de puissances de facteurs premiers, en utilisant la décomposition en facteurs premiers.
@@ -393,7 +395,7 @@ Voici un exemple :
 
 La notation sous forme d'ensemble est un moyen plus court d'écrire les multiples d'un nombre (autrement dit, la table de multiplication de ce nombre).
 \begin{center}
-      \begin{tikzpicture}
+      \begin{tikzpicture}[node distance=1ex, -latex]
             \node (A){$6\mathbb{N} = \lbrace 0, 6, 12, 18, 24, \dots \rbrace$};
             \node [right=5cm of A](B){$6 \cdot 2 = 12$};
             \node [above=of B](C){$6 \cdot 1 = 6$};
@@ -401,10 +403,10 @@ La notation sous forme d'ensemble est un moyen plus court d'écrire les multiple
             \node [below=of B](E){$6 \cdot 3 = 18$};
             \node [below=of E](F){$6 \cdot 4 = 24$};
             \draw[->] (A.east) -- (B.west);
-            \draw[->] (A.east) -- (C.west);
-            \draw[->] (A.east) -- (D.west);
-            \draw[->] (A.east) -- (E.west);
-            \draw[->] (A.east) -- (F.west);
+            \draw[->] (A.east) to[bend left] (C.west);
+            \draw[->] (A.east) to[bend left] (D.west);
+            \draw[->] (A.east) to[bend right] (E.west);
+            \draw[->] (A.east) to[bend right] (F.west);
       \end{tikzpicture}
 \end{center}
 
@@ -736,7 +738,6 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
       \end{enumerate}
 \end{exercise}
 
-\newpage
 \begin{exercise}
       Effectue. Laisse tes étapes visibles.
       \begin{enumerate}[cols=2]
