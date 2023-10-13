@@ -1,8 +1,8 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=0.75]
     \begin{axis}[
       axis lines=left,
       xtick distance=2,
-      grid=both,
+      grid=both
     ]
         \addplot coordinates{
           (0, 3)
