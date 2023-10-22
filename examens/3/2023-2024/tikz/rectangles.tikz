@@ -1,0 +1,12 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    \tkzDefPoints{0/0/A, 9/0/B, 9/8/C, 0/8/D}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDefPoints{14/8/E,14/-9/F,9/-9/G}
+    \tkzDrawPolygon(C,E,F,G)
+    \path (A) -- (C)node[midway]{A};
+    \path (C) -- (F)node[midway]{B};
+    \draw[|-|] ([yshift=2cm] D) --node[fill=white]{10} ([yshift=2cm]E);
+    \draw[|-|] ([xshift=-2cm] D) --node[fill=white]{8} ([xshift=-2cm]A);
+    \draw[|-|] ([yshift=-2cm] G) --node[fill=white]{\(x\)} ([yshift=-2cm]F);
+    \draw[|-|] ([xshift=2cm] E) --node[fill=white]{17} ([xshift=2cm]F);
+\end{tikzpicture}

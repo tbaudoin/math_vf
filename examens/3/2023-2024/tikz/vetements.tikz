@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+    \tkzInit[xmin=0, xmax=15, ymin=0, ymax=60, ystep=5, xstep=1]
+    \tkzGrid
+    \tkzAxeXY
+    \tkzFct[domain=0:100]{2*\x+25}
+    \tkzFct{1.5*\x+35}
+    \tkzDefPoints{15/55/A, 15/57.5/B}
+    \tkzLabelPoint[right](A){\(A\)}
+    \tkzLabelPoint[right](B){\(B\)}
+\end{tikzpicture}

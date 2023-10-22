@@ -1,0 +1,281 @@
+\documentclass[a4paper, 12pt, parskip=half-, twoside=semi]{scrartcl}
+\input{preambule.tex}
+\begin{document}
+
+\entete
+\minisec{Quelques consignes}
+\begin{tasks}
+    \task Rends une copie soignée (titre et questions soulignés à la latte).
+    \task N'oublie pas de remplir l'en-tête de l'examen et de chaque feuille à en-tête.
+    \task Vérifie ton orthographe.
+    \task Pour les vrais ou faux, sois précis dans tes justifications, je ne dois rien déduire, tout doit être dit explicitement.
+    \task Structure tes raisonnements.
+    \task Respecte les conventions mathématiques et les notations.
+    \task Détail tes raisonnements, la réponse seule ne suffit pas.
+    \task Pour les problèmes, n'oublie pas de formuler ta réponse finale avec une phrase complète et de noter tout ton raisonnement.
+\end{tasks}
+\cleardoublepage
+\section{Expliciter les savoirs et les procédures}
+
+\begin{connaitre}[points=1]
+    Pour chaque graphe ci-dessous. Détermine s'il s'agit d'une fonction ou d'une relation.
+    \begin{tasks}(4)
+        \task \includegraphics[width=\linewidth]{tikz/fct_or_relation02.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/fct_or_relation01.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/fct_or_relation04.tikz}
+        \task \includegraphics[width=\linewidth]{tikz/fct_or_relation03.tikz}
+    \end{tasks}
+\end{connaitre}
+\begin{solconnaitre}
+    % -0,5 point par mauvaise réponse
+    \begin{tasks}(4)
+        \task Fonction
+        \task Relation
+        \task Fonction
+        \task Relation
+    \end{tasks}
+\end{solconnaitre}
+
+\begin{connaitre}[points=1]
+    Donne un exemple de système d'équations dont la solution est le point \((-2,3)\).
+\end{connaitre}
+\begin{solconnaitre}
+    Par exemple,
+    \[\systeme{x+y = 1, x+3y = 7}\]
+\end{solconnaitre}
+
+\begin{connaitre}[points=1]
+    Donne un exemple de fonction affine décroissante dont la racine vaut 2.
+\end{connaitre}
+\begin{solconnaitre}
+    Par exemple,
+    \[f(x) = -2x + 4\]
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=4]
+    Les affirmations suivantes sont-elles vraies ou fausses? Justifie dans les deux cas.
+    \begin{tasks}
+        \task \(-3x > 2 \Leftrightarrow x > -\dfrac{2}{3}\).
+        \task Le point $(0,8)$ appartient au graphe de la fonction $f(x)=2x + 8$.
+        \task Si un système est indéterminé alors les deux droites qu'il représente sont parallèles.
+        \task Si une fonction du premier est croissante, sa racine est toujours positive.
+    \end{tasks}
+\end{connaitre}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solconnaitre}
+    \begin{tasks}
+        \task Faux. Les deux membres ont été divisés par \(-3\), il faut donc changer le sens de l'inégalité.
+        \task Vrai. Si \(x=0\) alors \(f(0) = 2\cdot 0 + 8 = 8\).
+        \task Faux. Les deux droites sont confondues.
+        \task Faux. Cela dépend du signe de son ordonnée à l'origine, si elle est positive alors la racine est négative sinon la racine est positive.
+    \end{tasks}
+\end{solconnaitre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{connaitre}[points=3]
+    Après avoir lu la légende, complète le tableau sur cette feuille.
+
+    Type de fonction \hfill A : affine \hfill L : linéaire \hfill C : constante
+
+    Croissance de la fonction \hfill $\nearrow$  : croissante \hfill $\searrow$ : décroissante \hfill C : constante
+
+    \begin{tblr}{%
+            hlines,
+            vlines,
+            colspec={cXXXXX},
+            columns={c, mode=math},
+            row{1}={mode=text},
+            rows={1cm}
+        }
+        {Expression                           \\analytique} & Type de fonction & Pente & Croissance & Racine & Ordonnée à l'origine \\
+        f(x) = 12               &  &  &  &  & \\
+        f(x) = \dfrac{3x+12}{2} &  &  &  &  & \\
+        f(x) = -7x              &  &  &  &  & \\
+    \end{tblr}
+\end{connaitre}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Appliquer une procédure}
+\begin{appliquer}[points=2]
+    Résous le système suivant par la méthode de ton choix. N'oublie pas de noter l'ensemble des solutions.
+    \[\systeme{5x+y=7, -3x+2y=-12}\]
+\end{appliquer}
+\begin{solappliquer}
+    \[S=\big\lbrace (2,-3)\big\rbrace\]
+\end{solappliquer}
+
+\begin{appliquer}[points=6]
+    Résous les inéquations suivantes puis représente les solutions sous forme d'un intervalle et sur une droite graduée.
+    \begin{tasks}(2)
+        \task \(2x+1<3\)
+        \task \(1-3x \ge -5\)
+        \task \(2 + 4x \ge -5 - 8x\)
+        \task \(\dfrac{2x}{3} \le 14\)
+    \end{tasks}
+\end{appliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{appliquer}[points=5]
+    \begin{center}
+        \includegraphics[width=.7\linewidth]{tikz/analyse_fct01.tikz}
+    \end{center}
+    Pour la fonction $f$ ci-dessus, détermine les éléments suivants :
+    \begin{tasks}(2)
+        \task son domaine;
+        \task son ensemble image;
+        \task son ordonnée à l'origine;
+        \task ses racines;
+        \task son tableau de signes;
+        \task son tableau de variation;
+        \task l'image de $-5$;
+        \task le nombre d'antécédents de $-3$.
+    \end{tasks}
+\end{appliquer}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solappliquer}
+    % 1 point par bonne réponse.
+    % 2 point pour le tableau de signe.
+    % 2 point pour le tableau de variation.
+    % -1 point par erreur dans les tableaux de signes et de variations.
+    \begin{tasks}(2)
+        \task todo
+    \end{tasks}
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appliquer}[points=6]
+    Détermine l'expression analytique des fonctions suivantes grâce aux informations données. N'oublie pas d'écrire l'expression complète de la fonction.
+    \begin{tasks}
+        \task Le graphe de la fonction est une droite qui passe par les points \((3,1)\) et \(-3,-5\).
+        \task La fonction admet \(-2\) comme racine et son graphe passe par le point \((2,10)\).
+        \task Un tableau de valeur de la fonction est le suivant :
+        \begin{center}
+            \begin{tblr}{hlines, vline{1,2,5}, columns={mode=math, c, 1cm}}
+                x    & -2 & 4 & 10 \\
+                f(x) & 5  & 8 & 11 \\
+            \end{tblr}
+        \end{center}
+    \end{tasks}
+\end{appliquer}
+% SOLUTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solappliquer}
+    % 1 point pour $m$ et 1 point pour $p$.\\
+    % -0,5 point si l'expression entière n'est pas notée.
+    \begin{tasks}
+        \task
+        \begin{tblr}[t]{columns={leftsep=0pt},
+                row{1}={font=\bfseries},
+                colspec={XX},
+                cell{3}{1}={r=1,c=2}{c}
+            }
+            Déterminons m                        & Déterminons p         \\
+            $m = \dfrac{12}{-8} = -\dfrac{3}{2}$ &
+            $(-2;8)\in f_1 \Rightarrow \begin{aligned}[t]
+                                               8 & = -\dfrac{3}{2}\cdot (-2) + p \\
+                                               8 & = 3 + p                       \\
+                                               p & = 5                           \\
+                                           \end{aligned}$ \\
+            \fbox{$f_1(x) = -\dfrac{3}{2}x + 5$} &
+        \end{tblr}
+        \task
+        \begin{tblr}[t]{columns={leftsep=0pt},
+                row{1}={font=\bfseries},
+                colspec={XX},
+                cell{3}{1}={r=1,c=2}{c}
+            }
+            Déterminons m                      & Déterminons p \\
+            $m = \dfrac{14}{4} = \dfrac{7}{2}$ &
+            $f_2$ est linéaire $\Rightarrow p = 0$             \\
+            \fbox{$f_2(x) = \dfrac{7}{2}x$}    &
+        \end{tblr}
+        \task
+        \begin{tblr}[t]{columns={leftsep=0pt},
+                row{1}={font=\bfseries},
+                colspec={XX},
+                cell{3}{1}={r=1,c=2}{c}
+            }
+            Déterminons m                              & Déterminons p \\
+            $G_{f_3} \parallel G_g \Rightarrow m = -5$ &
+            $(-2;0)\in f_3 \Rightarrow \begin{aligned}[t]
+                                               0 & = -5 \cdot (-2) + p \\
+                                               0 & = 10 + p            \\
+                                               p & = -10               \\
+                                           \end{aligned}$         \\
+            \fbox{$f_3(x) = -5x - 10$}                 &
+        \end{tblr}
+        \task
+        Les deux points ont la même ordonnée $\Rightarrow$ la fonction est constante.\\
+        \begin{center}
+            \fbox{$f_4(x) = -3$}
+        \end{center}
+        \task
+        Les points $(0,1)$ et $(4,0)$ appartiennent à $f_5$ par lecture graphique.\par
+        \begin{tblr}[t]{columns={leftsep=0pt},
+                row{1}={font=\bfseries},
+                colspec={XX},
+                cell{3}{1}={r=1,c=2}{c}
+            }
+            Déterminons m                    & Déterminons p                  \\
+            $m=-\dfrac{1}{4}$                & $(0,1)\in f_5 \Rightarrow p=1$ \\
+            \fbox{$f_5(x)=-\dfrac{1}{4}x+1$} &
+        \end{tblr}
+    \end{tasks}
+\end{solappliquer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EXERCICE
+% \begin{exercise}
+%     Résous le système suivante par la méthode de substitution.
+
+%     $\left\{\begin{aligned}
+%             6x - 2y & = 0  \\
+%             x-2y    & =-10
+%         \end{aligned}\right.$
+% \end{exercise}
+% % SOLUTION
+% \begin{solution}
+
+% \end{solution}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % EXERCICE
+% \begin{exercise}
+%     Résous le système suivante par la méthode de combinaison.
+
+%     $\left\{\begin{aligned}
+%             3x - 4y & = 3 \\
+%             -2x+3y  & =-1
+%         \end{aligned}\right.$
+% \end{exercise}
+% % SOLUTION
+% \begin{solution}
+
+% \end{solution}
+\section{Résoudre un problème}
+\begin{transferer}[points=2]
+    \tcbsidebyside[blanker,sidebyside align=top,righthand width=5cm]{
+        Pour quelles valeurs de \(x\), le périmètre du rectangle \(A\) est il strictement supérieur à celui du rectangle \(B\) ?
+    }{
+        \includegraphics[width=\linewidth]{tikz/rectangles.tikz}
+    }
+
+\end{transferer}
+
+\begin{transferer}[points=3]
+    Pour la sortie de classe, vos titulaires vous proposent un laser game.
+
+    Le graphique ci-dessous représente le prix de la partie (\(y\)) en fonction du nombre de participants (\(x\)) qui sont proposé par deux entreprises A et B.
+
+    Détermine algébriquement à partir de combien de personnes l'entreprise A sera plus avantageuse que l'entreprise B.
+
+    \enlargethispage*{\baselineskip}
+    \includegraphics[width=\linewidth]{tikz/vetements.tikz}
+    
+\end{transferer}
+\end{document}
+
