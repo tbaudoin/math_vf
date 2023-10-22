@@ -1,0 +1,524 @@
+\documentclass[12pt,parskip=half-, twoside=semi]{scrartcl}
+\usepackage{mathtools}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{cmbright} % police sans serif
+\usepackage{enumitem}
+\SetEnumitemKey{cols}
+{
+  before = \begin{multicols}{#1},
+    after = \end{multicols}
+    }
+\setlist[enumerate]{label=\textbf{\alph*)}, itemsep=1em}
+\usepackage[use-files]{xsim}
+\xsimsetup{
+    path=xsim,
+    load-style=mytemplate,
+    exercise/template=mytemplate,
+}
+
+
+\usepackage[french]{babel}
+\usepackage{fontawesome5}
+\usepackage{tabularray}
+\usepackage{scrlayer-scrpage}
+\setlength{\headheight}{50pt}
+\lohead{Fiches d'exercices de drill}
+\rohead{Chapitre 3 - Diviseurs et multiples}
+
+%Début du document
+\begin{document}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 3 - Diviseurs et multiples
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 1 \faIcon{star} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\begin{exercise}
+  Décomposition en facteur premiers niveau 1
+  \begin{enumerate}[cols=3]
+      \item 18
+      \item 24
+      \item 12
+      \item 30
+      \item 45
+      \item 36
+      \item 15
+      \item 28
+      \item 20
+      \item 60
+      \item 63
+      \item 42
+      \item 54
+      \item 56
+      \item 72
+      \item 90
+      \item 48
+      \item 70
+      \item 84
+      \item 66
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Correctif
+\begin{enumerate}[cols=3]
+    \item 18 = $2 \cdot 3 \cdot 3$
+    \item 24 = $2 \cdot 2 \cdot 2 \cdot 3$
+    \item 12 = $2 \cdot 2 \cdot 3$
+    \item 30 = $2 \cdot 3 \cdot 5$
+    \item 45 = $3 \cdot 3 \cdot 5$
+    \item 36 = $2 \cdot 2 \cdot 3 \cdot 3$
+    \item 15 = $3 \cdot 5$
+    \item 28 = $2 \cdot 2 \cdot 7$
+    \item 20 = $2 \cdot 2 \cdot 5$
+    \item 60 = $2 \cdot 2 \cdot 3 \cdot 5$
+    \item 63 = $3 \cdot 3 \cdot 7$
+    \item 42 = $2 \cdot 3 \cdot 7$
+    \item 54 = $2 \cdot 3 \cdot 3 \cdot 3$
+    \item 56 = $2 \cdot 2 \cdot 2 \cdot 7$
+    \item 72 = $2 \cdot 2 \cdot 2 \cdot 3 \cdot 3$
+    \item 90 = $2 \cdot 3 \cdot 3 \cdot 5$
+    \item 48 = $2 \cdot 2 \cdot 2 \cdot 2 \cdot 3$
+    \item 70 = $2 \cdot 5 \cdot 7$
+    \item 84 = $2 \cdot 2 \cdot 3 \cdot 7$
+    \item 66 = $2 \cdot 3 \cdot 11$
+  \end{enumerate}
+\end{exercise}
+
+
+\begin{exercise}
+  Division euclidienne niveau 1 
+  \begin{enumerate}[cols=3]
+    \item $15 / 4$
+    \item $25 / 6$
+    \item $14 / 3$
+    \item $32 / 5$
+    \item $18 / 7$
+    \item $27 / 8$
+    \item $19 / 9$
+    \item $21 / 4$
+    \item $31 / 6$
+    \item $16 / 5$
+    \item $33 / 7$
+    \item $20 / 9$
+    \item $30 / 8$
+    \item $28 / 7$
+    \item $35 / 6$
+    \item $45 / 9$
+    \item $24 / 5$
+    \item $22 / 4$
+    \item $39 / 7$
+    \item $42 / 6$
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Correctif 
+\begin{enumerate}
+  \item $15 = 4 \cdot 3 + 3$
+  \item $25 = 6 \cdot 4 + 1$
+  \item $14 = 3 \cdot 4 + 2$
+  \item $32 = 5 \cdot 6 + 2$
+  \item $18 = 7 \cdot 2 + 4$
+  \item $27 = 8 \cdot 3 + 3$
+  \item $19 = 9 \cdot 2 + 1$
+  \item $21 = 4 \cdot 5 + 1$
+  \item $31 = 6 \cdot 5 + 1$
+  \item $16 = 5 \cdot 3 + 1$
+  \item $33 = 7 \cdot 4 + 5$
+  \item $20 = 9 \cdot 2 + 2$
+  \item $30 = 8 \cdot 3 + 6$
+  \item $28 = 7 \cdot 4 + 0$
+  \item $35 = 6 \cdot 5 + 5$
+  \item $45 = 9 \cdot 5 + 0$
+  \item $24 = 5 \cdot 4 + 4$
+  \item $22 = 4 \cdot 5 + 2$
+  \item $39 = 7 \cdot 5 + 4$
+  \item $42 = 6 \cdot 7 + 0$
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  PGCD niveau 1
+\begin{enumerate}[cols=3]
+    \item 12 et 18
+    \item 24 et 36
+    \item 15 et 25
+    \item 9 et 27
+    \item 14 et 28
+    \item 8 et 12
+    \item 20 et 30
+    \item 10 et 50 
+    \item 7 et 21
+    \item 16 et 24
+    \item 40 et 60
+    \item 3 et 9
+    \item 6 et 9
+    \item 25 et 35
+    \item 11 et 22
+    \item 28 et 49
+    \item 8 et 10
+    \item 12 et 30
+    \item 14 et 21
+    \item 36 et 48.
+ \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Correctif
+\begin{enumerate}[cols=3]
+    \item 6
+    \item 12
+    \item 5
+    \item 9
+    \item 14
+    \item 4
+    \item 10
+    \item 10
+    \item 7
+    \item 8
+    \item 20
+    \item 3
+    \item 3
+    \item 5
+    \item 11
+    \item 7
+    \item 2
+    \item 6
+    \item 7
+    \item 12
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  PPCM niveau 1
+  \begin{enumerate}[cols=3]
+    \item 4 et 6
+    \item 8 et 12
+    \item 5 et 10
+    \item 7 et 14
+    \item 9 et 15
+    \item 10 et 20
+    \item 12 et 18
+    \item 14 et 28
+    \item 6 et 9
+    \item 16 et 24
+    \item 20 et 30
+    \item  15 et 25
+    \item 3 et 9
+    \item 6 et 12
+    \item 25 et 35
+    \item 8 et 10
+    \item 12 et 30
+    \item 14 et 21
+    \item 36 et 48
+    \item 11 et 22
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Correctif
+\begin{enumerate}
+    \item 12
+    \item 24
+    \item 10
+    \item 14
+    \item 45
+    \item 20
+    \item 36
+    \item 28
+    \item 18
+    \item 48
+    \item 30
+    \item 75
+    \item 9
+    \item 12
+    \item 175
+    \item 40
+    \item 60
+    \item 42
+    \item 144
+    \item 22
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Expressions littérales niveau 1
+    \begin{enumerate}[]
+        \item Deux multiples de 3.
+        \item Un nombre impair.
+        \item Un nombre pair.
+        \item Un multiple de 4 et 8.
+        \item La moitié d'un nombre. 
+        \item Un multiple de 3 augmenté de 3.
+        \item Deux nombres pairs consécutifs.
+        \item Trois nombres impairs consécutifs.
+        \item Un nombre impair soustrait de 1.
+        \item La somme de deux multiples de 3.
+        \item La différence entre un multiple de 4 et 8.
+        \item Le double d'un nombre.
+        \item Un nombre impair diminué de 5.
+        \item Trois fois un nombre pair.
+        \item La moitié d'un multiple de 4. 
+        \item Un multiple de 3 augmenté de 21.
+        \item Un nombre impair soustrait de 13.
+        \item Un nombre pair multiplié par 4.
+        \item La somme de trois nombres pairs.
+        \item Deux nombres consécutifs. 
+        \item Un nombre impair multiplié par 4.
+        \item La somme de cinq nombres consécutifs.
+        \item Un multiple de 4 augmenté de 7.
+        \item La moitié de la différence entre deux nombres.
+        \item Un nombre impair diminué de 2.
+        %\item La somme de quatre nombres pairs.
+        %\item Un nombre divisible par 6 soustrait de 18.
+        %\item Un nombre impair multiplié par 9.
+        %\item Un nombre pair soustrait de 6.
+    \end{enumerate}
+  \end{exercise}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 3 - Diviseurs et multiples
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 1 \faIcon{star} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+\begin{exercise}
+  Calcule.
+  \begin{enumerate}[cols=3]
+    \item x
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Calcule.
+  \begin{enumerate}[cols=3]
+    \item x
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Écris les nombres suivants en notation scientifique. 
+  \begin{enumerate}[cols=3]
+    \item x
+  \end{enumerate}
+\end{exercise}
+
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 3 - Diviseurs et multiples
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 2 \faIcon{star} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+%\setcounter{exercise}{0}
+
+%\begin{exercise}
+%    Décompose les nombres suivants en un produit de facteurs premiers.
+%    \vspace*{-\bigskipamount}
+%    \begin{multicols}{3}
+%        \begin{enumerate}
+%            \item $180$
+%            \item $360$
+%            \item $54$
+%            \item $77$
+%        \end{enumerate}
+%
+%        \begin{enumerate}
+%            \item $120$
+%            \item $48$
+%            \item $128$
+%            \item $\num{2048}$
+%        \end{enumerate}
+%
+%        \begin{enumerate}
+%            \item $91$
+%            \item $144$
+%            \item $630$
+%            \item $64$
+%        \end{enumerate}
+%    \end{multicols}
+%\end{exercise}
+%\begin{solution}
+%    \begin{enumerate}[cols=3]
+%        \item $180 = 2^2 \cdot 3^2 \cdot 5$
+%        \item $360 = 2^3 \cdot 3^2 \cdot 5$
+%        \item $54 = 2 \cdot 3^3$
+%        \item $77 = 7 \cdot 11$
+%        \item $120 = 2^3 \cdot 3 \cdot 5$
+%        \item $48 = 2^4 \cdot 3$
+%        \item $128 = 2^7$
+%        \item $\num{2048} = 2^11$
+%        \item $91 = 7 \cdot 13$
+%        \item $144 = 2^4 \cdot 3^2$
+%        \item $630 = 2 \cdot 3^2 \cdot 5 \cdot 7$
+%        \item $64 = 2^6$
+%    \end{enumerate}
+%\end{solution}
+%
+%\begin{exercise}
+%    Effectue les divisions euclidiennes suivantes et écris l'égalité euclidienne qui en découle.
+%    \begin{enumerate}[cols=3]
+%        \item $\num{186} : 5$
+%        \item $\num{8652} : 11$
+%        \item $\num{657} : 3$
+%        \item $\num{8756} : 20$
+%        \item $\num{86} : 6$
+%        \item $\num{946} : 12$
+%        \item $\num{308} : 6$
+%        \item $\num{1685} : 5$
+%        \item $\num{242424} :12$
+%        \item $\num{9063} : 7 $
+%        \item $\num{658} : 12$
+%        \item $\num{1385} : 15$
+%    \end{enumerate}
+%\end{exercise}
+%\begin{solution}
+%    \begin{enumerate}[cols=3]
+%        \item $\opidiv[displayintermediary=all,voperation=top]{186}{5}$\medbreak $186=5\cdot37+1$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{8652}{11}$\medbreak $8652=11\cdot786+6$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{657}{3}$\medbreak $657=3\cdot219+0$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{8756}{20}$\medbreak $8756=20\cdot437+16$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{86}{6}$\medbreak $86=6\cdot14+2$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{946}{12}$\medbreak $946=12\cdot78+10$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{308}{6}$\medbreak $308=6\cdot51+2$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{1685}{5}$\medbreak $1685=5\cdot337+0$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{242424}{12}$\medbreak $242424=12\cdot20202+0$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{9063}{7}$\medbreak $9063=7\cdot1294+5$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{658}{12}$\medbreak $658=12\cdot54+10$
+%        \item $\opidiv[displayintermediary=all,voperation=top]{1385}{15}$\medbreak $1385=15\cdot92+5$
+%    \end{enumerate}
+%\end{solution}
+%
+%\begin{exercise}
+%    Écris l'expression générale des expressions suivantes.
+%    \begin{enumerate}[cols=2]
+%        \item Un nombre pair.
+%        \item Trois multiples de 7 consécutifs.
+%        \item La somme de deux nombres impairs consécutifs.
+%        \item Un multiple de 6 augmenté de 1.
+%        \item Un multiple de 5.
+%        \item Un nombre impair.
+%        \item Deux multiples de 3 différents.
+%        \item Un multiple de 10 augmenté de 3.
+%        \item La différence entre deux nombres pairs consécutifs.
+%        \item Deux multiples de 5 consécutifs.
+%        \item Deux nombres impairs différents et non consécutifs.
+%        \item La somme d'un multiple de 11 et d'un multiple de 4.
+%        \item Deux nombres pairs consécutifs.
+%    \end{enumerate}
+%\end{exercise}
+%\begin{solution}
+%    \begin{enumerate}[cols=3]
+%        \item $2n$
+%        \item $7n$,$7n+7$ et $7n+14$
+%        \item $(2n+1) + (2n+3) = 4n+4$
+%        \item $6n+1$
+%        \item $5n$
+%        \item $2n+1$
+%        \item $3n$ et $3n+3$
+%        \item $10n+3$
+%        \item $2n+2 - (2n) = 2$
+%        \item $5n$ et $5n+5$
+%        \item $2n+1$ et $2n+5$
+%        \item $11n + 4m$
+%        \item $2n$ et $2n+2$
+%    \end{enumerate}
+%\end{solution}
+%
+%\pagebreak
+%\begin{exercise}
+%    Calcule les PGCD des nombres suivants.
+%    \begin{enumerate}[cols=3]
+%        \item $84$ et $12$
+%        \item $75, 125$ et $300$
+%        \item $14$ et $15$
+%        \item $900$ et $360$
+%        \item $9,30$ et $15$
+%        \item $100$ et $50$
+%        \item $625$ et $650$
+%        \item $81$ et $540$
+%        \item $18, 36$ et $66$
+%        \item $144$ et $288$
+%        \item $17$ et $23$
+%        \item $180$ et $168$
+%    \end{enumerate}
+%\end{exercise}
+%\begin{solution}
+%    \begin{enumerate}[cols=4]
+%        \item  $12$
+%        \item $25$
+%        \item $1$
+%        \item $180$
+%        \item $3$
+%        \item $50$
+%        \item $25$
+%        \item $27$
+%        \item $6$
+%        \item $144$
+%        \item $1$
+%        \item $12$
+%    \end{enumerate}
+%
+%\end{solution}
+%
+%\begin{exercise}
+%    Calcule les PPCM des nombres suivants.
+%    \begin{enumerate}[cols=3]
+%        \item $40$ et $16$
+%        \item $75$ et $90$
+%        \item $90$ et $48$
+%        \item $80$ et $84$
+%        \item $44$ et $55$
+%        \item $150$ et $300$
+%        \item $2$ et $3$
+%        \item $12$ et $15$
+%        \item $50$ et $75$
+%        \item $16$ et $12$
+%        \item $14$ et $10$
+%        \item $60$ et $35$
+%    \end{enumerate}
+%\end{exercise}
+%\begin{solution}
+%    \begin{enumerate}[cols=4]
+%        \item $80$
+%        \item $450$
+%        \item $720$
+%        \item $1680$
+%        \item $220$
+%        \item $300$
+%        \item $6$
+%        \item $60$
+%        \item $150$
+%        \item $48$
+%        \item $70$
+%        \item $420$
+%    \end{enumerate}
+%\end{solution}
+\end{document}
