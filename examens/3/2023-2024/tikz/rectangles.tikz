@@ -1,4 +1,4 @@
-\begin{tikzpicture}[baseline=(current bounding box.north)]
+\begin{tikzpicture}[rotate=90]
     \tkzDefPoints{0/0/A, 9/0/B, 9/8/C, 0/8/D}
     \tkzDrawPolygon(A,B,C,D)
     \tkzDefPoints{14/8/E,14/-9/F,9/-9/G}
