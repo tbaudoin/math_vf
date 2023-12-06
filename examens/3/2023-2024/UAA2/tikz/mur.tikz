@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A,1/0/B,1/5/C,0/5/D}
+    \tkzDrawPolygon[pattern = bricks](A,B,C,D)
+    %
+    \tkzDefPoints{10/0/E,11/0/F,11/2/G,10/2/H}
+    \tkzDrawPolygon[pattern = bricks](E,F,G,H)
+    %
+    \tkzDrawSegment[style=dashed](B,H)
+    \tkzDrawSegment[style=dashed](E,C)
+    \tkzInterLL(C,E)(B,H)\tkzGetPoint{I}
+    %
+    \tkzLabelSegment[above right](C,I){$3,5$}
+    \tkzLabelSegment[below left](E,I){$1,4$}
+    \tkzLabelSegment[below right](B,I){$3$}
+    \tkzLabelSegment[above left](H,I){$1,2$}
+    %
+    \tkzDrawLine(A,F)
+    %
+    \tkzLabelPoint[above](C){$A$}
+    \tkzLabelPoint[above](H){$C$}
+    \tkzLabelPoint[below](E){$D$}
+    \tkzLabelPoint[below](B){$B$}
+    \tkzDrawPoints(C,H,E,B)
+    
+    \end{tikzpicture}

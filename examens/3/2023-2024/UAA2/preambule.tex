@@ -1,0 +1,43 @@
+% marge
+\usepackage[margin=1in]{geometry}
+% langue
+\usepackage[sans, frenchstyle]{kpfonts-otf}
+\usepackage{polyglossia}
+\setmainlanguage{french}
+\usepackage{microtype}
+\usepackage{fontawesome5}
+% couleurs
+\usepackage[dvipsnames]{xcolor}
+% image
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+% dessin
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,xparse}
+\usepackage{tabularray}
+\usepackage[locale=FR, group-minimum-digits=3]{siunitx}
+% personnaliser les listes
+\usepackage{tasks}
+% unités
+\settasks{
+    label=\arabic*.,
+    label-format=\bfseries,
+    label-width=15pt
+}
+% exercice
+% use-files -> xsim utilise mets chaque exercice dans un fichier séparé
+% use-aux -> xsim utilise le fichier aux de latex au lien d'en créer un nouveau
+\usepackage[use-files,use-aux]{xsim}
+\input{xsim_template.tex}
+\xsimsetup{
+    path=xsim,% stocker les fichiers auxiliaires dans ce dossier
+    % solution/print=true, % afficher les solutions en dessous des questions
+    blank/style=\dotuline{#1},
+    exercise/template=math-exam,
+    solution/template=math-exam,
+    exercise/name=Question,
+}
+\addtokomafont{section}{\clearpage}
+\input{entete.tex}

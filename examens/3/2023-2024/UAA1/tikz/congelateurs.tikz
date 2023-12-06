@@ -1,0 +1,15 @@
+\begin{tikzpicture}[baseline=(current bounding box.north),scale=0.6]
+    \tkzInit[xmin=0, ymin=0, xmax= 5,ymax=1000, ystep=100]
+    \tkzGrid
+    \tkzDrawX[right, label= Temps (année)]
+    \tkzLabelX
+    \tkzDrawY[above, label= Prix (€)]
+    \tkzLabelY
+    \tkzFct[domain=0:10]{500+75*x}
+    \tkzDefPointByFct(5)
+    \tkzLabelPoint[below right](tkzPointResult){AEG}
+
+    \tkzFct[domain=0:10]{700+50*x}
+    \tkzDefPointByFct(5)
+    \tkzLabelPoint[above right](tkzPointResult){BOSCH}
+\end{tikzpicture}

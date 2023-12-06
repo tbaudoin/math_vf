@@ -1,0 +1,35 @@
+\begin{tikzpicture}[rotate=-20]
+    \tikzmath{
+        \myangle = 50;
+        \a = 1.5;
+        \b = 2;
+        \k = -2;
+    }
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(\a,0){B}
+    \tkzDefPoint(\myangle:\b){C}
+    \tkzDefPointBy[homothety=center A ratio \k](B)
+    \tkzGetPoint{D}
+    \tkzDefLine[parallel= through D](B,C)
+    \tkzInterLL(A,C)(D,tkzPointResult)
+    \tkzGetPoint{E}
+
+    \tkzDrawLines(B,D C,E)
+    \tkzDrawLines(B,C D,E)
+    \tkzDrawPoints(A,B,C,D,E)
+    %labels
+    \tkzLabelPoints[inner sep=2pt, below](A)
+    \tkzLabelPoints[inner sep=2pt, above right](B)
+    \tkzLabelPoints[inner sep=2pt, above left](C)
+    \tkzLabelPoints[inner sep=2pt, below left](D)
+    \tkzLabelPoints[inner sep=2pt, above left](E)
+    %valeurs
+    \tkzLabelSegment[inner sep=2pt,below](A,B){$3$}
+    \tkzLabelSegment[inner sep=2pt,left](D,E){$25,5$}
+    \tkzLabelSegment[inner sep=2pt,right](B,C){$5$}
+    \tkzLabelSegment[inner sep=2pt,below right](A,E){$17$}
+    \tkzLabelSegment[inner sep=2pt,above](D,A){?}
+    \tkzLabelSegment[inner sep=2pt,above](A,C){?}
+
+    \draw (current bounding box.north)node{$CB\parallele ED$};
+\end{tikzpicture}

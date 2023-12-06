@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0:2){R1}
+    \tkzDefPoint(180:2){R2}
+    \tkzDefPoint(20:2){B}
+    \tkzDefPoint(50:2){C}
+    \tkzDefPoint(120:2){D}
+    \tkzDefPoint(150:2){E}
+    \tkzDrawPolygons(A,B,C A,D,E)
+    \tkzDrawSegment(R1,R2)
+    \tkzDrawSemiCircle[line width=0.8pt](A,R1)
+    \tkzMarkSegments[mark=||](B,C E,D)
+    \tkzLabelPoints(A)
+    \tkzLabelPoints[above right](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[above](D)
+    \tkzLabelPoints[above left](E)
+    \tkzLabelPoint[above right](R1){$\mathscr{C}$}
+\end{tikzpicture}

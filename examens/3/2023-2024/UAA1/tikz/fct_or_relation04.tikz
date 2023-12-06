@@ -1,0 +1,8 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+    % AXES + GRILLES
+    \tkzInit[xmin=-2, xmax=2, ymin=-2,ymax=2]
+    \tkzDrawX[noticks,right=1pt]
+    \tkzDrawY[noticks,above=1pt]
+    % POINTS
+    \tkzFct[domain=-2:2]{(1.5*abs(\x))-1.5}
+\end{tikzpicture}

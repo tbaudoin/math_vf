@@ -1,0 +1,103 @@
+\documentclass[a4paper, 12pt, parskip=half-, twoside=semi]{scrartcl}
+\input{preambule.tex}
+
+\newcommand{\propo}[4]{$\dfrac{#1}{#2}=\dfrac{#3}{#4}$}
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\newcommand{\amp}[1]{\abs{\widehat{#1}}}
+\renewcommand{\parallel}{\mathrel{/\mkern-5mu/}}
+
+\begin{document}
+
+\entete
+\minisec{Quelques consignes}
+\begin{tasks}
+    \task Rends une copie soignée (titre et questions soulignés à la latte).
+    \task N'oublie pas de remplir l'en-tête de l'examen et de chaque feuille à en-tête.
+    \task Vérifie ton orthographe.
+    \task Pour les vrais ou faux, sois précis dans tes justifications, je ne dois rien déduire, tout doit être dit explicitement.
+    \task Structure tes raisonnements.
+    \task Respecte les conventions mathématiques et les notations.
+    \task Détail tes raisonnements, la réponse seule ne suffit pas.
+    \task Pour les problèmes, n'oublie pas de formuler ta réponse finale avec une phrase complète et de noter tout ton raisonnement.
+\end{tasks}
+\cleardoublepage
+
+\section{Expliciter les savoirs et les procédures}
+\begin{connaitre}[points=1]
+    Parmis les proportions ci-dessous, une seule d'entre elles est fausse, laquelle ?
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{tikz/config-1_01.pdf}
+    \end{center}
+    \begin{tasks}(4)
+        \task \propo{\abs{AB}}{\abs{AD}}{\abs{AC}}{\abs{AE}}
+        \task \propo{\abs{BD}}{\abs{CE}}{\abs{AB}}{\abs{AC}}
+        \task \propo{\abs{AB}}{\abs{AC}}{\abs{AD}}{\abs{AE}}
+        \task \propo{\abs{AB}}{\abs{AD}}{\abs{AE}}{\abs{AC}}
+    \end{tasks}
+\end{connaitre}
+
+\begin{connaitre}[points=1]
+    Écris deux proportions équivalentes à la propotion suivante \propo{a}{b}{c}{d}.
+\end{connaitre}
+
+\begin{connaitre}[points=1]
+    Dans les figures ci-dessous, quel cas d'isométrie te permet d'affirme que les triangles $BAC$ et $DAE$ sont isométriques ? Cite uniquement le cas.
+    \begin{tasks}(2)
+        \task  $\mathscr{C}$ est un demi cercle de centre $A$ et $B,C,D,E \in \mathscr{C}$.\\
+        \includegraphics[width=\linewidth]{tikz/iso_01.pdf}
+        \task  $EBCD$ est un rectangle et $A$ est le milieu de $[EB]$.\\
+        \includegraphics[width=\linewidth]{tikz/iso_02.pdf}
+    \end{tasks}
+\end{connaitre}
+
+\begin{connaitre}[points=1]
+    Découpe le segment $[AB]$ en 5 parties égales à l'aide des projections parallèles. Laisse ta construction visible !
+    \begin{center}
+        \includegraphics{tikz/segment_01.pdf}
+    \end{center}
+\end{connaitre}
+
+\section{Appliquer une procédure}
+\begin{appliquer}[points=10]
+    Détermine les longueurs demandées (elles sont notées par le symbole "?"). Note bien tout ton raisonnement de façon structurée et rigoureuse.
+    \begin{tasks}
+        \task \includegraphics[valign=t]{tikz/sim_01.pdf}%3
+        \task \includegraphics[valign=t]{tikz/thales_01.pdf}%2
+        \task \includegraphics[valign=t]{tikz/thales_02.pdf}%3
+        \task \includegraphics[valign=t]{tikz/thales_03.pdf}%4
+    \end{tasks}
+\end{appliquer}
+
+\begin{appliquer}[points=2]
+    Des ouvriers ont construit un premier mur. En commençant la construction du deuxième, ils se demandents si les murs sont bien parallèles.
+    Qu'en penses-tu ? Justifie.
+    \begin{center}
+        \includegraphics{tikz/mur.pdf}
+    \end{center}
+\end{appliquer}
+\section{Résoudre un problème}
+\begin{transferer}[points=2]
+    Deux échelles sont posées contre un mur.\\
+    La première atteint une hauteur de \qty{3}{m} par rapport au pied du mur et est posée à \qty{1,2}{m} du pied du mur.\\
+    La seconde atteint une hauteur de \qty{4,2}{m} et est posée à \qty{1,6}{m} du pied du mur.\\
+    Les deux échelles ont-elles la même inclinaison par rapport au sol ? \\
+    Écris tout ton raisonnement de façon structurée et rigoureuse.
+\end{transferer}
+
+\begin{transferer}[points=3]
+    Soit un triangle quelconque $ABC$ et $M,N$ respectivement les milieux des côtés $[AC]$ et $[CB]$.\\
+    Démontre que $[MN]$ est parallèles à $[AB]$ et que $\abs{MN} = \dfrac{1}{2}\abs{AB}$.
+    \begin{center}
+        \includegraphics{tikz/demo_01.pdf}
+    \end{center}
+    \end{transferer}
+
+\begin{transferer}[points=4]
+    Soient $ABC$ et $CDB$ deux triangles tels que $A,D$ et $B$ sont alignés.\\
+    Démontre que $\abs{CB} \cdot \abs{AC} = \abs{AB} \cdot \abs{CD}$
+    \begin{center}
+        \includegraphics{tikz/demo_02.pdf}
+    \end{center}
+\end{transferer}
+\end{document}
+

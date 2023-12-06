@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(-60:1){A1}
+    \tkzDefPoint(-60:2){A2}
+    \tkzDefPoint(-60:3){D}
+    \tkzDefPoint(-60:4){B}
+    \tkzDefShiftPoint[B](180:2){C}
+    \tkzDefShiftPoint[B](180:1){B1}
+    \tkzDrawPolygon(A,B,C)
+    \tkzDrawSegment(C,D)
+    \tkzMarkSegments[mark=|](A,A1 A1,A2 A2,D D,B B,B1 B1,C)
+    \tkzDrawPoints(A1,A2,B1)
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[below left](C)
+    \tkzLabelPoints[right](D)
+\end{tikzpicture}

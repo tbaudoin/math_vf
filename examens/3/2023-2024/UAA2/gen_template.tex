@@ -1,0 +1,23 @@
+\documentclass{standalone}
+\usepackage[sans, frenchstyle]{kpfonts-otf}
+\usepackage{tikz}
+\usetikzlibrary{math, patterns}
+\usepackage{tkz-euclide}
+\usepackage{siunitx}
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\newcommand{\amp}[1]{\abs{\widehat{#1}}}
+\renewcommand{\parallel}{\mathrel{/\mkern-5mu/}}
+\newcommand{\parallele}{\mathrel{/\mkern-5mu/}}
+\makeatletter
+\newcommand{\notparallele}{%
+  \mathrel{\mathpalette\not@parallele\relax}%
+}
+\newcommand{\not@parallele}[2]{%
+  \ooalign{\reflectbox{$\m@th#1\setminus$}\cr\hfil$\m@th#1\parallele$\cr}%
+}
+\makeatother
+\begin{document}
+\tikzset{every picture/.style={line width=0.8pt}}
+\tkzSetUpLine[line width=0.8pt]
+\input{PATHTOFILE}
+\end{document}

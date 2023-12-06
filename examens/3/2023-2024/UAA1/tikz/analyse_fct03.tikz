@@ -1,0 +1,23 @@
+\begin{tikzpicture}[scale=.7]
+    % AXES + GRILLES
+    \tkzInit[xmin=-10, xmax=10, ymin=-5,ymax=5]
+    \tkzGrid
+    \tkzDrawX[right=1pt]
+    \tkzLabelX[font=\scriptsize, orig=false]
+    \tkzDrawY[above=1pt]
+    \tkzLabelY[font=\scriptsize, orig=false]
+    % POINTS
+    \tkzDefPoints{%
+        -3/0/A,
+        0/1/B,
+        1/4/C}
+    \draw plot[smooth, tension=1] coordinates {(A) (B) (C)};
+    \tkzDefPoints{%
+    2/2/D,
+    3/0/E,
+    7/-2/X,
+    8/-5/F}
+    \draw plot[smooth, tension=0.5] coordinates {(D) (E) (X) (F)};
+    \tkzDrawPoints[fill=black, size=5pt](A,D)
+    \tkzDrawPoints[fill=white, size=5pt](C,F)
+\end{tikzpicture}

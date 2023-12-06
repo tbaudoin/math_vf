@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(65:2.4){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkAngle[size=.5](B,A,C)
+    \tkzLabelAngle[pos=.8](B,A,C){\ang{65}}
+    \tkzMarkAngle[size=.5](A,C,B)
+    \tkzLabelAngle[pos=.8](A,C,B){\ang{85}}
+    \tkzLabelSegment[below](A,B){5}
+    \tkzLabelSegment[above right](B,C){4,5}
+    \tkzLabelSegment[above left](A,C){2,4}
+    \begin{scope}[scale=2.25, shift={(6,2)}, rotate=180]
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(5,0){B}
+        \tkzDefPoint(65:2.4){C}
+        \tkzDrawPolygon(A,B,C)
+        \tkzLabelPoint[above right](A){K}
+        \tkzLabelPoint[above left](B){M}
+        \tkzLabelPoint[below](C){L}
+        \tkzMarkAngle[size=.5](B,A,C)
+        \tkzLabelAngle[pos=.8](B,A,C){\ang{65}}
+        \tkzMarkAngle[size=.5](C,B,A)
+        \tkzLabelAngle[pos=.8](C,B,A){\ang{30}}
+        \tkzLabelSegment[above](A,B){?}
+        \tkzLabelSegment[below left](B,C){11,25}
+        \tkzLabelSegment[below right](A,C){?}
+    \end{scope}
+\end{tikzpicture}
