@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.25]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(-3.9223227027636822,-19.6116135138184){B}
+    \tkzDefPoint(-0.7844645405527365,-3.9223227027636804){C}
+    \tkzDefPoint(-2.35339362165821,-11.766968108291042){D}
+    \tkzDefPoint(25,0){E}
+    \tkzDefPoint(5,0){F}
+    \tkzDefPoint(15,0){G}
+    \tkzDrawLines(A,E A,B)
+    \tkzDrawLines(C,F D,G B,E)
+    \tkzLabelPoints[inner sep=2pt, above left](A)
+    \tkzLabelPoints[inner sep=1pt, above left](B)
+    \tkzLabelPoints[inner sep=1pt, above left](C)
+    \tkzLabelPoints[inner sep=1pt, above left](D)
+    \tkzLabelPoints[inner sep=2pt, above left](E)
+    \tkzLabelPoints[inner sep=2pt, above left](F)
+    \tkzLabelPoints[inner sep=2pt, above left](G)
+    \tkzLabelSegment[inner sep=1pt, left](A,C){?}
+    \tkzLabelSegment[inner sep=1pt, above](A,F){?}
+    \tkzLabelSegment(D,G){?}
+    \tkzLabelSegment[left](C,D){8}
+    \tkzLabelSegment[left](D,B){8}
+    \tkzLabelSegment[above](F,G){10}
+    \tkzLabelSegment[above](G,E){10}
+    \tkzLabelSegment[below right](C,F){7}
+    \tkzLabelSegment[below right](B,E){35}
+    \path (B) -| node[above left]{$CF \parallele DG \parallele BE$} (E) ;
+\end{tikzpicture}

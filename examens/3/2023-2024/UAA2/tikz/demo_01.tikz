@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A,4/0/B,3/4/C}
+    \tkzDrawSegment(A,B)
+    \tkzDrawSegment(B,C)
+    \tkzDrawSegment(A,C)
+    %
+    \tkzDefMidPoint(A,C)\tkzGetPoint{M}
+    \tkzDefMidPoint(B,C)\tkzGetPoint{N}
+    \tkzDrawPoints(M,N)
+    \tkzDrawSegment[style=dashed](M,N)
+    %
+    \tkzLabelPoints[inner sep=2pt, below left](A)
+    \tkzLabelPoints[inner sep=2pt, below right](B)
+    \tkzLabelPoints[left](M)
+    \tkzLabelPoints[right](N)
+    \tkzLabelPoints[inner sep=2pt, above](C)
+    \end{tikzpicture}

@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+
+    \begin{axis}[
+            title=Évolution du nombre de malades en fonction du temps,
+            grid=both,
+            xlabel=Temps (en jours),
+            ylabel=Nombre de malades (en milliers),
+            ymax=4.5,
+            xmax=32,
+            xtick={0,2,...,32},
+            ytick={0,0.5,...,4.5},
+            axis lines=left,
+            axis line style={shorten >=-10pt}
+        ]
+        \addplot[domain=0:30, samples=200, thick, color=red]{-0.001*x^3 +0.03*x^2};
+    \end{axis}
+\end{tikzpicture}

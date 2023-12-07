@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    \tikzmath{
+        \myangle = 30;
+        \a = 1.5;
+        \b = 2;
+        \k = 2;
+    }
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(\a,0){B}
+    \tkzDefPoint(\myangle:\b){C}
+    \tkzDefPointBy[homothety=center A ratio \k](B)
+    \tkzGetPoint{D}
+    \tkzDefLine[parallel= through D](B,C)
+    \tkzInterLL(A,C)(D,tkzPointResult)
+    \tkzGetPoint{E}
+
+    \tkzDrawLines(A,E A,D)
+    \tkzDrawLines[add=0 and 0](B,C D,E)
+    \tkzDrawPoints(A,B,C,D,E)
+    %labels
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[below](D)
+    \tkzLabelPoints[above](E)
+    %valeurs
+    \draw (current bounding box.north)node{$CB\parallele ED$};
+\end{tikzpicture}
