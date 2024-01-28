@@ -11,11 +11,35 @@
     after = \end{multicols}
     }
 \setlist[enumerate]{label=\textbf{\alph*)}, itemsep=1em}
-\usepackage[use-files]{xsim}
+\usepackage{xsim}
+\DeclareExerciseEnvironmentTemplate{mytemplate}
+{%
+    \newtcbox{\xmybox}[1][black]{
+        on line,
+        %box align=center,
+        %boxsep=0pt,
+        left=0pt,
+        right=0pt,
+        bottom=0pt,
+        top=0pt,
+        sharp corners,
+        rounded corners=downhill,
+        colback=white,
+        colframe=black,
+        %colback=#1!10!white,
+        %colframe=#1!50!black
+        }
+    \medbreak
+    {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
+    \GetExercisePropertyT{points}{\marginpar{\makebox[4ex]{\dotfill}/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue\par}
+    }%
+{\par}
+
 \xsimsetup{
     path=xsim,
-    load-style=mytemplate,
-    exercise/template=mytemplate,
+    % load-style=mytemplate,
+    % exercise/template=mytemplate,
 }
 
 
@@ -447,5 +471,6 @@
       \item  $\frac{x^2y^3}{x^3y} \cdot \frac{x^4y}{3x}=$
       \item  $\frac{15x^3y^4}{2xy^2} \cdot \frac{3x^2y}{7x}=$
     \end{enumerate}
-
+  \end{exercise}
+    
   \end{document}
