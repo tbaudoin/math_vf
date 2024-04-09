@@ -1,8 +1,0 @@
-\begin{tikzpicture}[baseline=(current bounding box.north)]
-    % AXES + GRILLES
-    \tkzInit[xmin=-20, xmax=20, ymin=-20,ymax=20]
-    \tkzDrawX[noticks,right=1pt]
-    \tkzDrawY[noticks,above=1pt]
-    % POINTS
-    \tkzFctPar[domain=0:2*pi]{16*(sin(t))**3}{13*cos(t)-5*cos(2*t)-2*cos(3*t)-cos(4*t)}
-\end{tikzpicture}

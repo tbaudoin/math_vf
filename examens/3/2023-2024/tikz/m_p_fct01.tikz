@@ -1,9 +1,0 @@
-\begin{tikzpicture}[baseline=(current bounding box.east), scale=0.7]
-    \tkzInit[xmin=-2,xmax=5,ymin=-3, ymax=3]
-    \tkzGrid
-    \tkzDrawX[right=1pt]
-    \tkzLabelX[orig=false, font=\scriptsize]
-    \tkzDrawY[above=1pt]
-    \tkzLabelY[orig=false, font=\scriptsize]
-    \tkzFct[domain=-5:5] {-.25*x + 1}
-\end{tikzpicture}
