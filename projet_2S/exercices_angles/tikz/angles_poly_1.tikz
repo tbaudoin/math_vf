@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(-80:4){B}
+    \tkzDefPoint(180:4){C}
+    \tkzDefPointWith[colinear= at B](A,C)
+    \tkzGetPoint{E}
+    \tkzDefShiftPoint[C](-20:1){T2}
+    \tkzInterLL(C,T2)(A,B)
+    \tkzGetPoint{D}
+    \tkzDrawLine(A,C)
+    \tkzDrawLine(A,B)
+    \tkzDrawLine(B,E)
+    \tkzDrawLine(C,D)
+    \tkzDrawPoints(A,B,C,D,E)
+    %label
+    \tkzMarkAngle(D,C,A)
+    \tkzLabelAngle[pos=1.4,inner sep=0pt](D,C,A){\ang{20}}
+    \tkzMarkAngle(A,D,C)
+    \tkzLabelAngle[pos=1.3,inner sep=0pt](A,D,C){\ang{60}}
+    \tkzMarkAngle(A,B,E)
+    \tkzLabelAngle[pos=1.2,inner sep=0pt](A,B,E){?}
+    \tkzLabelPoints[above right](A)
+    \tkzLabelPoints[below left](B)
+    \tkzLabelPoints(C)
+    \tkzLabelPoints[below left](D)
+    \tkzLabelPoints[below left](E)
+    % //
+    \draw (current bounding box.south)node[below]{$AC\parallel BE$};
+\end{tikzpicture}

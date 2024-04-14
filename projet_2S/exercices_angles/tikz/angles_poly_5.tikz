@@ -1,0 +1,21 @@
+\begin{tikzpicture}[rotate=-10]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0:-1){B}
+    \tkzDefPoint(40:1){C}
+    \tkzDefPoint(180+40:3){D}
+    \tkzDefShiftPoint[D](0:1){E}
+    \tkzDrawLine[add=.5 and .5](A,D)
+    \tkzDrawLine[add=1.5 and .5](A,B)
+    \tkzDrawLine[add=1.5 and .5](D,E)
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzMarkAngle[size=.5](C,A,B)
+    \tkzLabelAngle[pos=0.8](C,A,B){?}
+    \tkzMarkAngle[size=.8](E,D,A)
+    \tkzLabelAngle[pos=1.2](E,D,A){\ang{40}}
+    \tkzLabelPoints(A)
+    \tkzLabelPoints(B)
+    \tkzLabelPoints[above left](C)
+    \tkzLabelPoints(D)
+    \tkzLabelPoints(E)
+    \draw (current bounding box.south) node[below]{$DE\parallel AB$};
+\end{tikzpicture}

@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){O}
+    \tkzDefPoint(0:2){A}
+    \tkzDefPoint(55:2){B}
+    \tkzDefPoint((180-55)/2+55:2){C}
+    \tkzDrawPoints(O,A,B,C)
+    \tkzDrawPolygon(O,A,B)
+    \tkzDrawCircle(O,A)
+    \tkzDrawLine[add=1.2 and .2](O,C)
+    \tkzMarkAngle[size=0.6](A,O,B)
+    \tkzLabelAngle[pos=1](A,O,B){\ang{55}}
+    \tkzLabelPoints[below right](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[left=4pt](C)
+    \tkzLabelPoints[below left](O)
+    \draw (current bounding box.south)node[below]{$OC \parallel BA$};
+\end{tikzpicture}

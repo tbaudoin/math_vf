@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(3,0){B}
+    \tkzDefPoint(0,2){C}
+    \tkzDefPointWith[colinear= at B](A,C)
+    \tkzGetPoint{D}
+    \tkzDefPoint(20:1){T}
+    \tkzInterLL(A,T)(B,D)
+    \tkzGetPoint{E}
+    \tkzDefShiftPoint[E](20:1){F}
+    \tkzDrawLine(A,B)
+    \tkzDrawLines(A,C B,D)
+    \tkzDrawLine[add=0.2 and 0.5](A,E)
+    \tkzDrawPoints(A,B,C,D,E,F)
+    \tkzLabelPoints[above left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[left](C)
+    \tkzLabelPoints[left](D)
+    \tkzLabelPoints[below right](E)
+    \tkzLabelPoints[below right](F)
+    \tkzMarkAngle(B,A,E)
+    \tkzLabelAngle[pos=1.4](B,A,E){\ang{20}}
+    \tkzMarkRightAngles(B,A,C A,B,D)
+    \tkzMarkAngle[size=.5](A,E,B)
+    \tkzLabelAngle[pos=.7](A,E,B){$?$}
+    \tkzMarkAngle[size=.5](F,E,D)
+    \tkzLabelAngle[pos=.7](F,E,D){?}
+\end{tikzpicture}

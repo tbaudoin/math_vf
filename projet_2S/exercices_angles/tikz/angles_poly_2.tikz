@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0:6){B}
+    \tkzDefPoint(-100:6*sin(pi/9)/sin(pi/3)){D}
+    \tkzDefShiftPoint[D](-100:1.5){E}
+    \tkzDefShiftPoint[D](-160:1.5){F}
+    \tkzDefPointWith[colinear=at D](A,B)
+    \tkzGetPoint{C}
+    \tkzDrawLines(A,B B,C C,D)
+    \tkzDrawLine[add=.3 and .2](D,B)
+    \tkzDrawLine[add=.2 and .75](A,D)
+    \tkzDrawPoints(A,B,C,D,E,F)
+    % label
+    \tkzMarkAngle[size=0.6](D,A,B)
+    \tkzLabelAngle(D,A,B){\ang{100}}
+    \tkzMarkAngle[size=0.6](D,B,C)
+    \tkzLabelAngle(D,B,C){?}
+    \tkzMarkAngle[size=0.6](F,D,E)
+    \tkzLabelAngle(F,D,E){\ang{60}}
+    \tkzMarkAngle[size=0.6](B,D,A)
+    \tkzLabelAngle(B,D,A){?}
+    \tkzLabelPoints[above right](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[below right](C)
+    \tkzLabelPoints[below right](D)
+    \tkzLabelPoints[below right](E)
+    \tkzLabelPoints[above left](F)
+    % //
+    \draw (current bounding box.south)node[below]{$ABCD$ est un parallélogramme};
+\end{tikzpicture}
