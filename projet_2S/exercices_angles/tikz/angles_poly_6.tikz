@@ -7,8 +7,11 @@
     \tkzDrawPolygon(O,A,B)
     \tkzDrawCircle(O,A)
     \tkzDrawLine[add=1.2 and .2](O,C)
+    %label
     \tkzMarkAngle[size=0.6](A,O,B)
     \tkzLabelAngle[pos=1](A,O,B){\ang{55}}
+    \tkzMarkAngle[size=1](B,O,C)
+    \tkzLabelAngle[pos=1.2](B,O,C){?}
     \tkzLabelPoints[below right](A)
     \tkzLabelPoints[above](B)
     \tkzLabelPoints[left=4pt](C)

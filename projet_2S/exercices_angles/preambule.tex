@@ -1,8 +1,23 @@
+\usepackage{showframe}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
 \usepackage{kpfonts}
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{tasks}
 \usepackage{mathtools}
 \usepackage{tkz-euclide}
-\usetikzlibrary{babel}
+\usetikzlibrary{babel, backgrounds}
+% baseline to the nord of the tikz file for better inclusion in list environnement
+\tikzset{
+    baseline=(current bounding box.north),
+    every picture/.style={tight background, show background rectangle}
+    }
 \usepackage[locale=FR]{siunitx}
+\usepackage[use-aux, use-files]{xsim}
+\xsimsetup{
+    path=xsim
+}

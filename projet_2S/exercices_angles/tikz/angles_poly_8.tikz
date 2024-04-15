@@ -2,22 +2,34 @@
     \tkzDefPoint(0,0){A}
     \tkzDefPoint(0:2){B}
     \tkzDefShiftPoint[B](180-50:1){T1}
+    \tkzDefShiftPoint[B](0:1){D}
     \tkzDefPoint(110:1){T2}
     \tkzInterLL(B,T1)(A,T2)
     \tkzGetPoint{C}
-    \tkzDefPoint(180:1){D}
-    \tkzDefShiftPoint[C](110:1){E}
-    \tkzDefShiftPoint[C](110+20:1){F}
-    \tkzDrawPoints(A,B,C,D,E,F)
-    \tkzDrawLines(D,B E,A F,B)
+    \tkzDefShiftPoint[C](110:2.5){E}
+    \tkzDefShiftPoint[C](110+20:2.5){F}
+    \tkzDefLine[bisector](B,A,C)
+    \tkzDefPointWith[linear,K=2](A,tkzPointResult)
+    \tkzGetPoint{G}
+    \tkzDrawLine[add=0 and 0.2](A,G)
+    \tkzDrawLine(A,D)
+    \tkzDrawLines[add=0.5cm and 0.5cm](A,E B,F)
+    \tkzDrawPoints(A,B,C,D,E,F,G)
     % angles
-    \tkzMarkAngle(C,A,D)
-    \tkzMarkAngle(E,C,F)
+    \tkzMarkAngle[size=1.6](E,C,F)
+    \tkzLabelAngle[pos=2](E,C,F){\ang{30}}
+    \tkzMarkAngle[size=0.5](D,B,C)
+    \tkzLabelAngle[pos=1](D,B,C){\ang{130}}
+    \tkzMarkAngle[size=0.5](B,A,G)
+    \tkzLabelAngle[pos=0.7](B,A,G){?}
     %label
-    \tkzLabelPoints(A)
-    \tkzLabelPoints(B)
-    \tkzLabelPoints(C)
-    \tkzLabelPoints(D)
-    \tkzLabelPoints(E)
-    \tkzLabelPoints(F)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below left](B)
+    \tkzLabelPoints[above right](C)
+    \tkzLabelPoints[below right](D)
+    \tkzLabelPoints[right](E)
+    \tkzLabelPoints[below left](F)
+    \tkzLabelPoints[above left](G)
+    % info
+    \draw (current bounding box.south)node[below]{$AG$ est la bissectrice de $\widehat{BAG}$};
 \end{tikzpicture}

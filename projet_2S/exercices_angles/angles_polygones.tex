@@ -1,10 +1,44 @@
-\documentclass[12pt, parskip=half-]{scrartcl}
+\documentclass[DIV=15,12pt, parskip=half-]{scrartcl}
 \input{preambule.tex}
+\newcounter{exo}
+\NewDocumentCommand{\autonum}{}{
+    \stepcounter{exo}
+    \alph{exo})
+}
+
 \begin{document}
 \begin{Huge}
     \bfseries
     Exercices sur les angles
 \end{Huge}
+\begin{exercise}
+    Détermine l'amplitude des angles marqués d'un "?".\\
+    Justifie en mobilisant la théorie adéquate.
 
-\input{tikz/angles_poly_8.tikz}
+        \autonum\input{tikz/angles_poly_1.tikz}
+        \hfil
+        \autonum\input{tikz/angles_poly_3.tikz}
+
+        \autonum\input{tikz/angles_poly_2.tikz}
+        \hfil
+        \autonum\input{tikz/angles_poly_6.tikz}
+
+        \autonum\input{tikz/angles_poly_4.tikz}
+        \hfil
+        \autonum\input{tikz/angles_poly_5.tikz}
+
+        \autonum\input{tikz/angles_poly_7.tikz}
+        \hfil
+        \autonum\input{tikz/angles_poly_8.tikz}
+\end{exercise}
+
+\begin{exercise}
+    Voici un octogone régulier.\\
+    Détermine l'amplitude des angles marqués d'un "?" en justifiant.
+\end{exercise}
+
+\begin{exercise}
+    Je suis un polygone régulier dont un des angles vaut \ang{75}.\\
+    Quel nom me donne-t-on ? Explique.
+\end{exercise}
 \end{document}
