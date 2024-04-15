@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.30)  15 APR 2024 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.30)  15 APR 2024 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -117,36 +117,10 @@ Package tocbasic Info: omitting babel extension for `lot'
 \c@table=\count194
 Class scrartcl Info: Redefining `\numberline' on input line 6495.
 \bibindent=\dimen140
-) (./preambule.tex (c:/texlive/2023/texmf-dist/tex/latex/eso-pic/showframe.sty
-Package: showframe 2020/10/14 v0.1j showframe (new impl., RN)
- (c:/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen141
-\ESO@tempdimb=\dimen142
- (c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 227.
- (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-) (c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-))
-\SF@tempdima=\dimen143
-) (c:/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+) (./preambule.tex (c:/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2023/10/25 v3.96 The Babel package
 \babel@savecnt=\count195
-\U@D=\dimen144
+\U@D=\dimen141
 \l@unhyphenated=\language87
  (c:/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -164,20 +138,20 @@ Package babel Info: Making ! an active character on input line 397.
 Package babel Info: Making ? an active character on input line 398.
 \FBguill@level=\count198
 \FBold@everypar=\toks18
-\FB@Mht=\dimen145
+\FB@Mht=\dimen142
 \mc@charclass=\count199
 \mc@charfam=\count266
 \mc@charslot=\count267
 \std@mcc=\count268
 \dec@mcc=\count269
-\FB@parskip=\dimen146
-\listindentFB=\dimen147
-\descindentFB=\dimen148
-\labelindentFB=\dimen149
-\labelwidthFB=\dimen150
-\leftmarginFB=\dimen151
-\parindentFFN=\dimen152
-\FBfnindent=\dimen153
+\FB@parskip=\dimen143
+\listindentFB=\dimen144
+\descindentFB=\dimen145
+\labelindentFB=\dimen146
+\labelwidthFB=\dimen147
+\leftmarginFB=\dimen148
+\parindentFFN=\dimen149
+\FBfnindent=\dimen150
 )) (c:/texlive/2023/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
 Package babel Info: Importing font and identification data for french
 (babel)             from babel-fr.ini. Reported on input line 11.
@@ -219,10 +193,10 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen154
+\ex@=\dimen151
 )) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen155
+\pmbraise@=\dimen152
 ) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -243,7 +217,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen156
+\big@size=\dimen153
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count282
@@ -261,12 +235,12 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count287
 \maxfields@=\count288
 \andhelp@=\toks22
-\eqnshift@=\dimen157
-\alignsep@=\dimen158
-\tagshift@=\dimen159
-\tagwidth@=\dimen160
-\totwidth@=\dimen161
-\lineht@=\dimen162
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
 \@envbody=\toks23
 \multlinegap=\skip65
 \multlinetaggap=\skip66
@@ -278,86 +252,86 @@ LaTeX Info: Redefining \] on input line 2954.
 \c@mv@boldrm=\count290
 \c@mv@sf=\count291
 \c@mv@boldsf=\count292
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 377.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 374.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/jkp/m/n on input line 377.
+(Font)                  OT1/cmr/m/n --> OT1/jkpss/m/n on input line 374.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/jkp/m/n on input line 377.
+(Font)                  OT1/cmr/bx/n --> OT1/jkpss/m/n on input line 374.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `rm'
-(Font)                  OT1/cmr/m/n --> OT1/jkp/m/n on input line 377.
+(Font)                  OT1/cmr/m/n --> OT1/jkpss/m/n on input line 374.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `boldrm'
-(Font)                  OT1/cmr/m/n --> OT1/jkp/m/n on input line 377.
+(Font)                  OT1/cmr/m/n --> OT1/jkpss/m/n on input line 374.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `sf'
-(Font)                  OT1/cmr/m/n --> OT1/jkp/m/n on input line 377.
+(Font)                  OT1/cmr/m/n --> OT1/jkpss/m/n on input line 374.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `boldsf'
-(Font)                  OT1/cmr/m/n --> OT1/jkp/m/n on input line 377.
+(Font)                  OT1/cmr/m/n --> OT1/jkpss/m/n on input line 374.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/jkp/m/n --> OT1/jkp/b/n on input line 378.
+(Font)                  OT1/jkpss/m/n --> OT1/jkpss/b/n on input line 375.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `rm'
-(Font)                  OT1/jkp/m/n --> OT1/jkp/m/n on input line 380.
+(Font)                  OT1/jkpss/m/n --> OT1/jkpl/m/n on input line 380.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `boldrm'
-(Font)                  OT1/jkp/m/n --> OT1/jkp/b/n on input line 381.
+(Font)                  OT1/jkpss/m/n --> OT1/jkpl/b/n on input line 381.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `sf'
-(Font)                  OT1/jkp/m/n --> OT1/jkpss/m/n on input line 382.
+(Font)                  OT1/jkpss/m/n --> OT1/jkpss/m/n on input line 382.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `boldsf'
-(Font)                  OT1/jkp/m/n --> OT1/jkpss/b/n on input line 383.
+(Font)                  OT1/jkpss/m/n --> OT1/jkpss/b/n on input line 383.
 LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 387.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/jkp/m/n --> OT1/jkp/b/n on input line 388.
+(Font)                  OT1/jkpl/m/n --> OT1/jkpl/b/n on input line 388.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `rm'
-(Font)                  OT1/jkp/m/n --> OT1/jkp/m/n on input line 389.
+(Font)                  OT1/jkpl/m/n --> OT1/jkpl/m/n on input line 389.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `boldrm'
-(Font)                  OT1/jkp/m/n --> OT1/jkp/b/n on input line 390.
+(Font)                  OT1/jkpl/m/n --> OT1/jkpl/b/n on input line 390.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `sf'
-(Font)                  OT1/jkp/m/n --> OT1/jkp/m/n on input line 391.
+(Font)                  OT1/jkpl/m/n --> OT1/jkp/m/n on input line 391.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `boldsf'
-(Font)                  OT1/jkp/m/n --> OT1/jkp/b/n on input line 392.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 401.
+(Font)                  OT1/jkpl/m/n --> OT1/jkp/b/n on input line 392.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 398.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/jkp/b/n on input line 401.
+(Font)                  OT1/cmr/bx/n --> OT1/jkpss/b/n on input line 398.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/jkp/b/n on input line 401.
+(Font)                  OT1/cmr/bx/n --> OT1/jkpss/b/n on input line 398.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `rm'
-(Font)                  OT1/cmr/bx/n --> OT1/jkp/b/n on input line 401.
+(Font)                  OT1/cmr/bx/n --> OT1/jkpss/b/n on input line 398.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `boldrm'
-(Font)                  OT1/cmr/bx/n --> OT1/jkp/b/n on input line 401.
+(Font)                  OT1/cmr/bx/n --> OT1/jkpss/b/n on input line 398.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `sf'
-(Font)                  OT1/cmr/bx/n --> OT1/jkp/b/n on input line 401.
+(Font)                  OT1/cmr/bx/n --> OT1/jkpss/b/n on input line 398.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `boldsf'
-(Font)                  OT1/cmr/bx/n --> OT1/jkp/b/n on input line 401.
+(Font)                  OT1/cmr/bx/n --> OT1/jkpss/b/n on input line 398.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/jkp/b/n --> OT1/jkp/b/n on input line 402.
+(Font)                  OT1/jkpss/b/n --> OT1/jkpss/b/n on input line 399.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `rm'
-(Font)                  OT1/jkp/b/n --> OT1/jkp/b/n on input line 404.
+(Font)                  OT1/jkpss/b/n --> OT1/jkpl/b/n on input line 404.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `boldrm'
-(Font)                  OT1/jkp/b/n --> OT1/jkp/b/n on input line 405.
+(Font)                  OT1/jkpss/b/n --> OT1/jkpl/b/n on input line 405.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `sf'
-(Font)                  OT1/jkp/b/n --> OT1/jkpss/b/n on input line 406.
+(Font)                  OT1/jkpss/b/n --> OT1/jkpss/b/n on input line 406.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `boldsf'
-(Font)                  OT1/jkp/b/n --> OT1/jkpss/b/n on input line 407.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 413.
+(Font)                  OT1/jkpss/b/n --> OT1/jkpss/b/n on input line 407.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 410.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/jkp/m/it on input line 413.
+(Font)                  OT1/cmr/m/it --> OT1/jkpss/m/it on input line 410.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/jkp/m/it on input line 413.
+(Font)                  OT1/cmr/bx/it --> OT1/jkpss/m/it on input line 410.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `rm'
-(Font)                  OT1/cmr/m/it --> OT1/jkp/m/it on input line 413.
+(Font)                  OT1/cmr/m/it --> OT1/jkpss/m/it on input line 410.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `boldrm'
-(Font)                  OT1/cmr/m/it --> OT1/jkp/m/it on input line 413.
+(Font)                  OT1/cmr/m/it --> OT1/jkpss/m/it on input line 410.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `sf'
-(Font)                  OT1/cmr/m/it --> OT1/jkp/m/it on input line 413.
+(Font)                  OT1/cmr/m/it --> OT1/jkpss/m/it on input line 410.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `boldsf'
-(Font)                  OT1/cmr/m/it --> OT1/jkp/m/it on input line 413.
+(Font)                  OT1/cmr/m/it --> OT1/jkpss/m/it on input line 410.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/jkp/m/it --> OT1/jkp/b/it on input line 414.
+(Font)                  OT1/jkpss/m/it --> OT1/jkpss/b/it on input line 411.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `rm'
-(Font)                  OT1/jkp/m/it --> OT1/jkp/m/it on input line 416.
+(Font)                  OT1/jkpss/m/it --> OT1/jkpl/m/it on input line 416.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `boldrm'
-(Font)                  OT1/jkp/m/it --> OT1/jkp/b/it on input line 417.
+(Font)                  OT1/jkpss/m/it --> OT1/jkpl/b/it on input line 417.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `sf'
-(Font)                  OT1/jkp/m/it --> OT1/jkpss/m/it on input line 418.
+(Font)                  OT1/jkpss/m/it --> OT1/jkpss/m/it on input line 418.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `boldsf'
-(Font)                  OT1/jkp/m/it --> OT1/jkpss/b/it on input line 419.
+(Font)                  OT1/jkpss/m/it --> OT1/jkpss/b/it on input line 419.
 LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 424.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> OT1/jkpss/m/n on input line 424.
@@ -404,59 +378,59 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `sf'
 (Font)                  OT1/jkptt/m/n --> OT1/jkptt/m/n on input line 437.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `boldsf'
 (Font)                  OT1/jkptt/m/n --> OT1/jkptt/b/n on input line 438.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 446.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 443.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/jkp/m/it on input line 446.
+(Font)                  OML/cmm/m/it --> OML/jkpss/m/it on input line 443.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/jkp/m/it on input line 446.
+(Font)                  OML/cmm/b/it --> OML/jkpss/m/it on input line 443.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `rm'
-(Font)                  OML/cmm/m/it --> OML/jkp/m/it on input line 446.
+(Font)                  OML/cmm/m/it --> OML/jkpss/m/it on input line 443.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `boldrm'
-(Font)                  OML/cmm/m/it --> OML/jkp/m/it on input line 446.
+(Font)                  OML/cmm/m/it --> OML/jkpss/m/it on input line 443.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `sf'
-(Font)                  OML/cmm/m/it --> OML/jkp/m/it on input line 446.
+(Font)                  OML/cmm/m/it --> OML/jkpss/m/it on input line 443.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `boldsf'
-(Font)                  OML/cmm/m/it --> OML/jkp/m/it on input line 446.
+(Font)                  OML/cmm/m/it --> OML/jkpss/m/it on input line 443.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/jkp/m/it --> OML/jkp/bx/it on input line 447.
+(Font)                  OML/jkpss/m/it --> OML/jkpss/bx/it on input line 444.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `rm'
-(Font)                  OML/jkp/m/it --> OML/jkp/m/it on input line 449.
+(Font)                  OML/jkpss/m/it --> OML/jkpl/m/it on input line 449.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `boldrm'
-(Font)                  OML/jkp/m/it --> OML/jkp/bx/it on input line 450.
+(Font)                  OML/jkpss/m/it --> OML/jkpl/bx/it on input line 450.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `sf'
-(Font)                  OML/jkp/m/it --> OML/jkpss/m/it on input line 451.
+(Font)                  OML/jkpss/m/it --> OML/jkpss/m/it on input line 451.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `boldsf'
-(Font)                  OML/jkp/m/it --> OML/jkpss/bx/it on input line 452.
+(Font)                  OML/jkpss/m/it --> OML/jkpss/bx/it on input line 452.
 \symlettersA=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
-(Font)                  U/jkpmia/m/it --> U/jkpmia/bx/it on input line 462.
+(Font)                  U/jkpssmia/m/it --> U/jkpssmia/bx/it on input line 459.
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `rm'
-(Font)                  U/jkpmia/m/it --> U/jkpmia/m/it on input line 464.
+(Font)                  U/jkpssmia/m/it --> U/jkplmia/m/it on input line 464.
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `boldrm'
-(Font)                  U/jkpmia/m/it --> U/jkpmia/bx/it on input line 465.
+(Font)                  U/jkpssmia/m/it --> U/jkplmia/bx/it on input line 465.
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `sf'
-(Font)                  U/jkpmia/m/it --> U/jkpssmia/m/it on input line 466.
+(Font)                  U/jkpssmia/m/it --> U/jkpssmia/m/it on input line 466.
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `boldsf'
-(Font)                  U/jkpmia/m/it --> U/jkpssmia/bx/it on input line 467.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 479.
+(Font)                  U/jkpssmia/m/it --> U/jkpssmia/bx/it on input line 467.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 476.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 479.
+(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 476.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/jkp/m/n on input line 479.
+(Font)                  OMS/cmsy/b/n --> OMS/jkp/m/n on input line 476.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `rm'
-(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 479.
+(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 476.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `boldrm'
-(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 479.
+(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 476.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `sf'
-(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 479.
+(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 476.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `boldsf'
-(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 479.
+(Font)                  OMS/cmsy/m/n --> OMS/jkp/m/n on input line 476.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/jkp/m/n --> OMS/jkp/bx/n on input line 480.
+(Font)                  OMS/jkp/m/n --> OMS/jkp/bx/n on input line 477.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `rm'
-(Font)                  OMS/jkp/m/n --> OMS/jkp/m/n on input line 482.
+(Font)                  OMS/jkp/m/n --> OMS/jkpl/m/n on input line 482.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `boldrm'
-(Font)                  OMS/jkp/m/n --> OMS/jkp/bx/n on input line 483.
+(Font)                  OMS/jkp/m/n --> OMS/jkpl/bx/n on input line 483.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `sf'
 (Font)                  OMS/jkp/m/n --> OMS/jkp/m/n on input line 484.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `boldsf'
@@ -474,66 +448,66 @@ LaTeX Font Info:    Overwriting symbol font `AMSa' in version `boldsf'
 (Font)                  U/jkpsya/m/n --> U/jkpsya/bx/n on input line 503.
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
-(Font)                  U/jkpsyb/m/n --> U/jkpsyb/bx/n on input line 552.
+(Font)                  U/jkpsssyb/m/n --> U/jkpsssyb/bx/n on input line 545.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `rm'
-(Font)                  U/jkpsyb/m/n --> U/jkpsyb/m/n on input line 553.
+(Font)                  U/jkpsssyb/m/n --> U/jkplsyb/m/n on input line 546.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `boldrm'
-(Font)                  U/jkpsyb/m/n --> U/jkpsyb/bx/n on input line 554.
+(Font)                  U/jkpsssyb/m/n --> U/jkplsyb/bx/n on input line 547.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `sf'
-(Font)                  U/jkpsyb/m/n --> U/jkpsssyb/m/n on input line 555.
+(Font)                  U/jkpsssyb/m/n --> U/jkpsssyb/m/n on input line 548.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `boldsf'
-(Font)                  U/jkpsyb/m/n --> U/jkpsssyb/bx/n on input line 556.
+(Font)                  U/jkpsssyb/m/n --> U/jkpsssyb/bx/n on input line 549.
 \symsymbolsC=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
-(Font)                  U/jkpsyc/m/n --> U/jkpsyc/bx/n on input line 572.
+(Font)                  U/jkpsyc/m/n --> U/jkpsyc/bx/n on input line 569.
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `rm'
-(Font)                  U/jkpsyc/m/n --> U/jkpsyc/m/n on input line 574.
+(Font)                  U/jkpsyc/m/n --> U/jkplsyc/m/n on input line 574.
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `boldrm'
-(Font)                  U/jkpsyc/m/n --> U/jkpsyc/bx/n on input line 575.
+(Font)                  U/jkpsyc/m/n --> U/jkplsyc/bx/n on input line 575.
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `sf'
 (Font)                  U/jkpsyc/m/n --> U/jkpsyc/m/n on input line 576.
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `boldsf'
 (Font)                  U/jkpsyc/m/n --> U/jkpsyc/bx/n on input line 577.
 LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `bold'
-(Font)                  U/jkpsyd/m/n --> U/jkpsyd/bx/n on input line 606.
+(Font)                  U/jkpsyd/m/n --> U/jkpsyd/bx/n on input line 603.
 LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `rm'
-(Font)                  U/jkpsyd/m/n --> U/jkpsyd/m/n on input line 608.
+(Font)                  U/jkpsyd/m/n --> U/jkplsyd/m/n on input line 608.
 LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `boldrm'
-(Font)                  U/jkpsyd/m/n --> U/jkpsyd/bx/n on input line 609.
+(Font)                  U/jkpsyd/m/n --> U/jkplsyd/bx/n on input line 609.
 LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `sf'
 (Font)                  U/jkpsyd/m/n --> U/jkpsyd/m/n on input line 610.
 LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `boldsf'
 (Font)                  U/jkpsyd/m/n --> U/jkpsyd/bx/n on input line 611.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 621.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/jkp/m/n on input line 621.
+(Font)                  OMX/cmex/m/n --> OMX/jkpss/m/n on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/jkp/m/n on input line 621.
+(Font)                  OMX/cmex/m/n --> OMX/jkpss/m/n on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `rm'
-(Font)                  OMX/cmex/m/n --> OMX/jkp/m/n on input line 621.
+(Font)                  OMX/cmex/m/n --> OMX/jkpss/m/n on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `boldrm'
-(Font)                  OMX/cmex/m/n --> OMX/jkp/m/n on input line 621.
+(Font)                  OMX/cmex/m/n --> OMX/jkpss/m/n on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `sf'
-(Font)                  OMX/cmex/m/n --> OMX/jkp/m/n on input line 621.
+(Font)                  OMX/cmex/m/n --> OMX/jkpss/m/n on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `boldsf'
-(Font)                  OMX/cmex/m/n --> OMX/jkp/m/n on input line 621.
+(Font)                  OMX/cmex/m/n --> OMX/jkpss/m/n on input line 618.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/jkp/m/n --> OMX/jkp/bx/n on input line 622.
+(Font)                  OMX/jkpss/m/n --> OMX/jkpss/bx/n on input line 619.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `rm'
-(Font)                  OMX/jkp/m/n --> OMX/jkp/m/n on input line 624.
+(Font)                  OMX/jkpss/m/n --> OMX/jkpl/m/n on input line 624.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `boldrm'
-(Font)                  OMX/jkp/m/n --> OMX/jkp/bx/n on input line 625.
+(Font)                  OMX/jkpss/m/n --> OMX/jkpl/bx/n on input line 625.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `sf'
-(Font)                  OMX/jkp/m/n --> OMX/jkpss/m/n on input line 626.
+(Font)                  OMX/jkpss/m/n --> OMX/jkpss/m/n on input line 626.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `boldsf'
-(Font)                  OMX/jkp/m/n --> OMX/jkpss/bx/n on input line 627.
+(Font)                  OMX/jkpss/m/n --> OMX/jkpss/bx/n on input line 627.
 \symlargesymbolsA=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
-(Font)                  U/jkpexa/m/n --> U/jkpexa/bx/n on input line 638.
+(Font)                  U/jkpexa/m/n --> U/jkpexa/bx/n on input line 635.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `rm'
-(Font)                  U/jkpexa/m/n --> U/jkpexa/m/n on input line 640.
+(Font)                  U/jkpexa/m/n --> U/jkplexa/m/n on input line 640.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldrm'
-(Font)                  U/jkpexa/m/n --> U/jkpexa/bx/n on input line 641.
+(Font)                  U/jkpexa/m/n --> U/jkplexa/bx/n on input line 641.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `sf'
 (Font)                  U/jkpexa/m/n --> U/jkpexa/m/n on input line 642.
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldsf'
@@ -550,9 +524,11 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
-)
-\Gin@req@height=\dimen163
-\Gin@req@width=\dimen164
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
 ) (c:/texlive/2023/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
  (c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -571,22 +547,22 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box55
 )
-\tc@llx=\dimen165
-\tc@lly=\dimen166
-\tc@urx=\dimen167
-\tc@ury=\dimen168
+\tc@llx=\dimen162
+\tc@lly=\dimen163
+\tc@urx=\dimen164
+\tc@ury=\dimen165
 Package trimclip Info: Using driver 'tc-pdftex.def'.
  (c:/texlive/2023/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen169
-\adjbox@Height=\dimen170
-\adjbox@Depth=\dimen171
-\adjbox@Totalheight=\dimen172
-\adjbox@pwidth=\dimen173
-\adjbox@pheight=\dimen174
-\adjbox@pdepth=\dimen175
-\adjbox@ptotalheight=\dimen176
+\adjbox@Width=\dimen166
+\adjbox@Height=\dimen167
+\adjbox@Depth=\dimen168
+\adjbox@Totalheight=\dimen169
+\adjbox@pwidth=\dimen170
+\adjbox@pheight=\dimen171
+\adjbox@pdepth=\dimen172
+\adjbox@ptotalheight=\dimen173
  (c:/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count294
@@ -594,8 +570,8 @@ Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box56
 \sift@deathcycles=\count295
-\@vwid@loff=\dimen177
-\@vwid@roff=\dimen178
+\@vwid@loff=\dimen174
+\@vwid@roff=\dimen175
 )) (c:/texlive/2023/texmf-dist/tex/latex/tasks/tasks.sty (c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2023-10-23 L3 programming layer (loader) 
  (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -606,7 +582,7 @@ File: l3backend-pdftex.def 2023-10-23 L3 backend support: PDF output (pdfTeX)
 Package: xparse 2023-10-10 L3 Experimental document command parser
 ) (c:/texlive/2023/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen179
+\l__xtemplate_tmp_dim=\dimen176
 \l__xtemplate_tmp_int=\count297
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip67
@@ -620,16 +596,16 @@ Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
 \l__tasks_item_columns_int=\count303
 \g__tasks_env_int=\count304
 \l__tasks_start_int=\count305
-\l__tasks_item_indent_dim=\dimen180
-\l__tasks_item_default_indent_dim=\dimen181
-\l__tasks_item_width_dim=\dimen182
-\l__tasks_label_width_dim=\dimen183
-\l__tasks_label_default_width_dim=\dimen184
-\l__tasks_label_offset_dim=\dimen185
-\l__tasks_label_default_offset_dim=\dimen186
-\l__tasks_column_sep_dim=\dimen187
-\l__tasks_correction_dim=\dimen188
-\l__tasks_full_width_dim=\dimen189
+\l__tasks_item_indent_dim=\dimen177
+\l__tasks_item_default_indent_dim=\dimen178
+\l__tasks_item_width_dim=\dimen179
+\l__tasks_label_width_dim=\dimen180
+\l__tasks_label_default_width_dim=\dimen181
+\l__tasks_label_offset_dim=\dimen182
+\l__tasks_label_default_offset_dim=\dimen183
+\l__tasks_column_sep_dim=\dimen184
+\l__tasks_correction_dim=\dimen185
+\l__tasks_full_width_dim=\dimen186
 \l__tasks_after_item_skip=\skip68
 \l__tasks_custom_after_item_skip=\skip69
 \l__tasks_before_list_skip=\skip70
@@ -651,8 +627,8 @@ Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count309
 \calc@Bcount=\count310
-\calc@Adimen=\dimen190
-\calc@Bdimen=\dimen191
+\calc@Adimen=\dimen187
+\calc@Bdimen=\dimen188
 \calc@Askip=\skip72
 \calc@Bskip=\skip73
 LaTeX Info: Redefining \setlength on input line 80.
@@ -663,23 +639,23 @@ LaTeX Info: Redefining \addtolength on input line 81.
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count312
-\l_MT_multwidth_dim=\dimen192
+\l_MT_multwidth_dim=\dimen189
 \origjot=\skip75
-\l_MT_shortvdotswithinadjustabove_dim=\dimen193
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen194
-\l_MT_above_intertext_sep=\dimen195
-\l_MT_below_intertext_sep=\dimen196
-\l_MT_above_shortintertext_sep=\dimen197
-\l_MT_below_shortintertext_sep=\dimen198
+\l_MT_shortvdotswithinadjustabove_dim=\dimen190
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen191
+\l_MT_above_intertext_sep=\dimen192
+\l_MT_below_intertext_sep=\dimen193
+\l_MT_above_shortintertext_sep=\dimen194
+\l_MT_below_shortintertext_sep=\dimen195
 \xmathstrut@box=\box62
-\xmathstrut@dim=\dimen199
+\xmathstrut@dim=\dimen196
 ) (c:/texlive/2023/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty
 2023/10/26 5.04c tkz-euclide.sty
 Package: tkz-euclide  2023/10/26 5.04c for pure Euclidean Geometry 
 (c:/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks27
-\pgfutil@tempdima=\dimen256
-\pgfutil@tempdimb=\dimen257
+\pgfutil@tempdima=\dimen197
+\pgfutil@tempdimb=\dimen198
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box63
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -694,16 +670,16 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks30
 ))
-\pgf@x=\dimen258
-\pgf@y=\dimen259
-\pgf@xa=\dimen260
-\pgf@ya=\dimen261
-\pgf@xb=\dimen262
-\pgf@yb=\dimen263
-\pgf@xc=\dimen264
-\pgf@yc=\dimen265
-\pgf@xd=\dimen266
-\pgf@yd=\dimen267
+\pgf@x=\dimen199
+\pgf@y=\dimen256
+\pgf@xa=\dimen257
+\pgf@ya=\dimen258
+\pgf@xb=\dimen259
+\pgf@yb=\dimen260
+\pgf@xc=\dimen261
+\pgf@yc=\dimen262
+\pgf@xd=\dimen263
+\pgf@yd=\dimen264
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
 \c@pgf@counta=\count313
@@ -728,10 +704,26 @@ File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@bigbuffer@items=\count319
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen268
+\pgfmath@dimen=\dimen265
 \pgfmath@count=\count320
 \pgfmath@box=\box64
 \pgfmath@toks=\toks34
@@ -741,28 +733,28 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 \c@pgfmathroundto@lastzeros=\count321
 )) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen269
-\pgf@picmaxx=\dimen270
-\pgf@picminy=\dimen271
-\pgf@picmaxy=\dimen272
-\pgf@pathminx=\dimen273
-\pgf@pathmaxx=\dimen274
-\pgf@pathminy=\dimen275
-\pgf@pathmaxy=\dimen276
-\pgf@xx=\dimen277
-\pgf@xy=\dimen278
-\pgf@yx=\dimen279
-\pgf@yy=\dimen280
-\pgf@zx=\dimen281
-\pgf@zy=\dimen282
+\pgf@picminx=\dimen266
+\pgf@picmaxx=\dimen267
+\pgf@picminy=\dimen268
+\pgf@picmaxy=\dimen269
+\pgf@pathminx=\dimen270
+\pgf@pathmaxx=\dimen271
+\pgf@pathminy=\dimen272
+\pgf@pathmaxy=\dimen273
+\pgf@xx=\dimen274
+\pgf@xy=\dimen275
+\pgf@yx=\dimen276
+\pgf@yy=\dimen277
+\pgf@zx=\dimen278
+\pgf@zy=\dimen279
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen283
-\pgf@path@lasty=\dimen284
+\pgf@path@lastx=\dimen280
+\pgf@path@lasty=\dimen281
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen285
-\pgf@shorten@start@additional=\dimen286
+\pgf@shorten@end@additional=\dimen282
+\pgf@shorten@start@additional=\dimen283
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box65
@@ -771,12 +763,12 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picture@serial@count=\count322
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen287
+\pgflinewidth=\dimen284
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen288
-\pgf@pt@y=\dimen289
-\pgf@pt@temp=\dimen290
+\pgf@pt@x=\dimen285
+\pgf@pt@y=\dimen286
+\pgf@pt@temp=\dimen287
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -785,10 +777,10 @@ File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen291
+\pgfarrowsep=\dimen288
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen292
+\pgf@max=\dimen289
 \pgf@sys@shading@range@num=\count323
 \pgf@shadingcount=\count324
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
@@ -811,14 +803,14 @@ File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen293
-\pgf@nodesepend=\dimen294
+\pgf@nodesepstart=\dimen290
+\pgf@nodesepend=\dimen291
 ) (c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen295
-\pgffor@skip=\dimen296
+\pgffor@iter=\dimen292
+\pgffor@skip=\dimen293
 \pgffor@stack=\toks37
 \pgffor@toks=\toks38
 )) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
@@ -826,16 +818,16 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count325
-\pgfplotmarksize=\dimen297
+\pgfplotmarksize=\dimen294
 )
-\tikz@lastx=\dimen298
-\tikz@lasty=\dimen299
-\tikz@lastxsaved=\dimen300
-\tikz@lastysaved=\dimen301
-\tikz@lastmovetox=\dimen302
-\tikz@lastmovetoy=\dimen303
-\tikzleveldistance=\dimen304
-\tikzsiblingdistance=\dimen305
+\tikz@lastx=\dimen295
+\tikz@lasty=\dimen296
+\tikz@lastxsaved=\dimen297
+\tikz@lastysaved=\dimen298
+\tikz@lastmovetox=\dimen299
+\tikz@lastmovetoy=\dimen300
+\tikzleveldistance=\dimen301
+\tikzsiblingdistance=\dimen302
 \tikz@figbox=\box70
 \tikz@figbox@bg=\box71
 \tikz@tempbox=\box72
@@ -859,13 +851,13 @@ File: tikzlibraryangles.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen306
+\arrowsize=\dimen303
 )) (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen307
-\pgfarrowlength=\dimen308
-\pgfarrowwidth=\dimen309
-\pgfarrowlinewidth=\dimen310
+\pgfarrowinset=\dimen304
+\pgfarrowlength=\dimen305
+\pgfarrowwidth=\dimen306
+\pgfarrowlinewidth=\dimen307
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerbox@background=\box74
@@ -873,14 +865,14 @@ File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen311
-\pgfdecoratedremainingdistance=\dimen312
-\pgfdecoratedinputsegmentcompleteddistance=\dimen313
-\pgfdecoratedinputsegmentremainingdistance=\dimen314
-\pgf@decorate@distancetomove=\dimen315
+\pgfdecoratedcompleteddistance=\dimen308
+\pgfdecoratedremainingdistance=\dimen309
+\pgfdecoratedinputsegmentcompleteddistance=\dimen310
+\pgfdecoratedinputsegmentremainingdistance=\dimen311
+\pgf@decorate@distancetomove=\dimen312
 \pgf@decorate@repeatstate=\count334
-\pgfdecorationsegmentamplitude=\dimen316
-\pgfdecorationsegmentlength=\dimen317
+\pgfdecorationsegmentamplitude=\dimen313
+\pgfdecorationsegmentlength=\dimen314
 )
 \tikz@lib@dec@box=\box76
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.shapes.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.shapes.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.text.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.text.code.tex
@@ -891,7 +883,7 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@intersect@solutions=\count335
 )) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex)
 \tikz@math@for@depth=\count336
-\tikz@math@dimen=\dimen318
+\tikz@math@dimen=\dimen315
 \tikz@math@toks=\toks39
 ) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -912,17 +904,17 @@ Package: xfp 2023-10-10 L3 Floating point unit
 ) (c:/texlive/2023/texmf-dist/tex/latex/xpatch/xpatch.sty
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 )
-\tkzRadius=\dimen319
-\tkzLength=\dimen320
-\tkz@radi=\dimen321
-\tkz@ax=\dimen322
-\tkz@ay=\dimen323
-\tkz@bx=\dimen324
-\tkz@by=\dimen325
-\tkz@cx=\dimen326
-\tkz@cy=\dimen327
-\tkz@dx=\dimen328
-\tkz@dy=\dimen329
+\tkzRadius=\dimen316
+\tkzLength=\dimen317
+\tkz@radi=\dimen318
+\tkz@ax=\dimen319
+\tkz@ay=\dimen320
+\tkz@bx=\dimen321
+\tkz@by=\dimen322
+\tkz@cx=\dimen323
+\tkz@cy=\dimen324
+\tkz@dx=\dimen325
+\tkz@dy=\dimen326
 \tkz@cntmk=\count337
 
 Local configuration file tkz-euclide.cfg found and used
@@ -1008,7 +1000,7 @@ Package: siunitx 2023-10-07 v3.3.7 A comprehensive (SI) units package
 \l__siunitx_number_group_first_int=\count345
 \l__siunitx_number_group_size_int=\count346
 \l__siunitx_number_group_minimum_int=\count347
-\l__siunitx_angle_tmp_dim=\dimen330
+\l__siunitx_angle_tmp_dim=\dimen327
 \l__siunitx_angle_marker_box=\box79
 \l__siunitx_angle_unit_box=\box80
 \l__siunitx_compound_count_int=\count348
@@ -1026,23 +1018,23 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
 \l__siunitx_table_tmp_box=\box81
-\l__siunitx_table_tmp_dim=\dimen331
-\l__siunitx_table_column_width_dim=\dimen332
+\l__siunitx_table_tmp_dim=\dimen328
+\l__siunitx_table_column_width_dim=\dimen329
 \l__siunitx_table_integer_box=\box82
 \l__siunitx_table_decimal_box=\box83
 \l__siunitx_table_uncert_box=\box84
 \l__siunitx_table_before_box=\box85
 \l__siunitx_table_after_box=\box86
-\l__siunitx_table_before_dim=\dimen333
-\l__siunitx_table_carry_dim=\dimen334
+\l__siunitx_table_before_dim=\dimen330
+\l__siunitx_table_carry_dim=\dimen331
 \l__siunitx_unit_tmp_int=\count349
 \l__siunitx_unit_position_int=\count350
 \l__siunitx_unit_total_int=\count351
  (c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen335
+\col@sep=\dimen332
 \ar@mcellbox=\box87
-\extrarowheight=\dimen336
+\extrarowheight=\dimen333
 \NC@list=\toks40
 \extratabsurround=\skip76
 \backup@length=\skip77
@@ -1056,9 +1048,9 @@ Package: xsimverb 2022/02/12 v0.4 write environments verbatim to files
 )
 Package: xsim 2022/02/12 v0.21 eXercise Sheets IMproved
 Loading module `base' ...
-\l__xsim_tmpa_dim=\dimen337
-\l__xsim_tmpb_dim=\dimen338
-\l__xsim_tmpc_dim=\dimen339
+\l__xsim_tmpa_dim=\dimen334
+\l__xsim_tmpb_dim=\dimen335
+\l__xsim_tmpc_dim=\dimen336
 \l__xsim_tmpa_int=\count354
 \l__xsim_tmpb_int=\count355
 \l__xsim_tmpc_int=\count356
@@ -1079,9 +1071,9 @@ Loading module `solutions' ...
 \l_xsim_printsolutions_chapter_int=\count360
 Loading module `collections' ...
 Loading module `blanks' ...
-\l__xsim_blank_dim=\dimen340
-\l__xsim_blank_line_increment_dim=\dimen341
-\l__xsim_blank_line_minimum_length_dim=\dimen342
+\l__xsim_blank_dim=\dimen337
+\l__xsim_blank_line_increment_dim=\dimen338
+\l__xsim_blank_line_minimum_length_dim=\dimen339
 \l__xsim_blank_box=\box92
 Loading module `grades' ...
 Loading module `random' ...
@@ -1094,77 +1086,81 @@ Loading module `definitions' ...
 \c@numberofexercises=\count364
  (c:/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen343
-\lightrulewidth=\dimen344
-\cmidrulewidth=\dimen345
-\belowrulesep=\dimen346
-\belowbottomsep=\dimen347
-\aboverulesep=\dimen348
-\abovetopsep=\dimen349
-\cmidrulesep=\dimen350
-\cmidrulekern=\dimen351
-\defaultaddspace=\dimen352
+\heavyrulewidth=\dimen340
+\lightrulewidth=\dimen341
+\cmidrulewidth=\dimen342
+\belowrulesep=\dimen343
+\belowbottomsep=\dimen344
+\aboverulesep=\dimen345
+\abovetopsep=\dimen346
+\cmidrulesep=\dimen347
+\cmidrulekern=\dimen348
+\defaultaddspace=\dimen349
 \@cmidla=\count365
 \@cmidlb=\count366
-\@aboverulesep=\dimen353
-\@belowrulesep=\dimen354
+\@aboverulesep=\dimen350
+\@belowrulesep=\dimen351
 \@thisruleclass=\count367
 \@lastruleclass=\count368
-\@thisrulewidth=\dimen355
-)))
+\@thisrulewidth=\dimen352
+))
 \c@exo=\count369
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
 \g_xsim_collection_exercise_in_all exercises_int=\count370
 \c@totalexerciseinall exercises=\count371
-LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 9.
+LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 3.
  (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
 ) (./angles_polygones.aux)
 \openout1 = `angles_polygones.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 9.
-LaTeX Font Info:    Trying to load font information for OML+jkp on input line 9.
- (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omljkp.fd
-File: omljkp.fd 2006/08/15 v1.0
+LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 3.
+LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 3.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omljkpl.fd
+File: omljkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 9.
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 9.
- (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omsjkp.fd
-File: omsjkp.fd 2006/08/15 v1.0
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 3.
+LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 3.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omsjkpl.fd
+File: omsjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 9.
-LaTeX Font Info:    Trying to load font information for OMX+jkp on input line 9.
- (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omxjkp.fd
-File: omxjkp.fd 2006/08/15 v1.0
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 3.
+LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 3.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omxjkpl.fd
+File: omxjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 9.
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 9.
- (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
-File: ujkpexa.fd 2006/08/15 v1.0
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 3.
+LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 3.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkplexa.fd
+File: ujkplexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Info: Redefining \degres on input line 3.
+LaTeX Info: Redefining \up on input line 3.
+Package csquotes Info: Making character " active on input line 3.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count372
-\scratchdimen=\dimen356
+\scratchdimen=\dimen353
 \scratchbox=\box93
 \nofMPsegments=\count373
 \nofMParguments=\count374
 \everyMPshowfont=\toks41
 \MPscratchCnt=\count375
-\MPscratchDim=\dimen357
+\MPscratchDim=\dimen354
 \MPnumerator=\count376
 \makeMPintoPDFobject=\count377
 \everyMPtoPDFconversion=\toks42
@@ -1173,37 +1169,53 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-LaTeX Info: Redefining \degres on input line 9.
-LaTeX Info: Redefining \up on input line 9.
-Package csquotes Info: Making character " active on input line 9.
- (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
+)) (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 9.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 3.
 \l__xsim_file_contents_iow=\write4
 \openout4 = `xsim/angles_polygones-exercise-1-exercise-body.tex'.
 
  (./xsim/angles_polygones-exercise-1-exercise-body.tex (./tikz/angles_poly_1.tikz
-LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 17.
- (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
-File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
+LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 17.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ot1jkpss.fd
+File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
-LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 17.
- (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpmia.fd
-File: ujkpmia.fd 2006/08/15 v1.0
+LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 17.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omljkpss.fd
+File: omljkpss.fd 2006/08/15 v1.0
+)
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 17.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omsjkp.fd
+File: omsjkp.fd 2006/08/15 v1.0
+)
+LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 17.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/omxjkpss.fd
+File: omxjkpss.fd 2006/08/15 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 17.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpssmia.fd
+File: ujkpssmia.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 17.
  (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 17.
- (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpsyb.fd
-File: ujkpsyb.fd 2006/08/15 v1.0
+LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 17.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpsssyb.fd
+File: ujkpsssyb.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 17.
  (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 17.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
+File: ujkpexa.fd 2006/08/15 v1.0
+)
+LaTeX Font Info:    Trying to load font information for OT1+jkpl on input line 17.
+ (c:/texlive/2023/texmf-dist/tex/latex/kpfonts/ot1jkpl.fd
+File: ot1jkpl.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkpl.
 )) (./tikz/angles_poly_3.tikz) (./tikz/angles_poly_2.tikz) (./tikz/angles_poly_6.tikz) (./tikz/angles_poly_4.tikz) (./tikz/angles_poly_5.tikz) (./tikz/angles_poly_7.tikz) (./tikz/angles_poly_8.tikz))
 \openout4 = `xsim/angles_polygones-exercise-2-exercise-body.tex'.
 
@@ -1212,25 +1224,28 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] (./xsim/angles_polygones-exercise-2-exercise-body.tex)
 \openout4 = `xsim/angles_polygones-exercise-3-exercise-body.tex'.
 
- (./xsim/angles_polygones-exercise-3-exercise-body.tex) [2] (./angles_polygones.aux)
+ (./xsim/angles_polygones-exercise-3-exercise-body.tex)
+\openout4 = `xsim/angles_polygones-exercise-4-exercise-body.tex'.
+
+ (./xsim/angles_polygones-exercise-4-exercise-body.tex) [2] (./angles_polygones.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34598 strings out of 474404
- 781715 string characters out of 5754457
- 2005036 words of memory out of 5000000
- 56021 multiletter control sequences out of 15000+600000
- 594524 words of font info for 78 fonts, out of 8000000 for 9000
+ 34610 strings out of 474404
+ 783104 string characters out of 5754457
+ 2003036 words of memory out of 5000000
+ 56017 multiletter control sequences out of 15000+600000
+ 602064 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,14n,143p,10997b,1462s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on angles_polygones.pdf (2 pages, 52848 bytes).
+ 110i,7n,143p,10997b,1458s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpsyc.pfb>
+Output written on angles_polygones.pdf (2 pages, 45016 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

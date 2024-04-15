@@ -1,9 +1,9 @@
-\usepackage{showframe}
+% \usepackage{showframe}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{csquotes}
 \MakeOuterQuote{"}
-\usepackage{kpfonts}
+\usepackage[frenchstyle, sfmath, light]{kpfonts}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
@@ -14,10 +14,18 @@
 % baseline to the nord of the tikz file for better inclusion in list environnement
 \tikzset{
     baseline=(current bounding box.north),
-    every picture/.style={tight background, show background rectangle}
+    circle style/.style={color=black},
+    % every picture/.style={tight background, show background rectangle}
     }
 \usepackage[locale=FR]{siunitx}
 \usepackage[use-aux, use-files]{xsim}
 \xsimsetup{
     path=xsim
+}
+
+%% COMMANDES PERSO
+\newcounter{exo}
+\NewDocumentCommand{\autonum}{}{
+    \stepcounter{exo}
+    \alph{exo})
 }

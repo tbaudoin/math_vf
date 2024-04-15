@@ -25,5 +25,5 @@
     \tkzLabelPoints[below left](D)
     \tkzLabelPoints[below left](E)
     % //
-    \draw (current bounding box.south)node[below]{$AC\parallel BE$};
+    \draw (current bounding box.south)node[below]{$AC\varparallel BE$};
 \end{tikzpicture}

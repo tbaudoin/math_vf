@@ -17,5 +17,5 @@
     \tkzLabelPoints[above left](C)
     \tkzLabelPoints(D)
     \tkzLabelPoints(E)
-    \draw (current bounding box.south) node[below]{$DE\parallel AB$};
+    \draw (current bounding box.south) node[below]{$DE\varparallel AB$};
 \end{tikzpicture}

@@ -1,11 +1,5 @@
 \documentclass[DIV=15,12pt, parskip=half-]{scrartcl}
 \input{preambule.tex}
-\newcounter{exo}
-\NewDocumentCommand{\autonum}{}{
-    \stepcounter{exo}
-    \alph{exo})
-}
-
 \begin{document}
 \begin{Huge}
     \bfseries
@@ -40,5 +34,20 @@
 \begin{exercise}
     Je suis un polygone régulier dont un des angles vaut \ang{75}.\\
     Quel nom me donne-t-on ? Explique.
+\end{exercise}
+
+\begin{exercise}
+    \begin{tasks}
+        \task L'angle au sommet d'un triangle isocèle a
+        une amplitude de \ang{50}, trouve l'amplitude des deux
+        autres angles.
+        \task Un des deux angles à la base d'un triangle isocèle a
+        une amplitude de \ang{20}, trouve l'amplitude des deux
+        autres.
+        \task Un triangle rectangle a un angle dont l'amplitude
+        vaut \ang{30}, trouve l'amplitude des deux autres angles.
+        \task Un triangle isocèle a un angle droit, quelle est
+        l'amplitude des deux autres ?
+    \end{tasks}
 \end{exercise}
 \end{document}
