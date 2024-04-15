@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(35:4){B}
+    \tkzDefPoint(-35:4){D}
+    \tkzDefPoint(0:8*cos(deg(35))){C}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDefShiftPoint[C](180-35:6){E}
+    \tkzDrawSegment(C,E)
+    \tkzDrawPoints(A,B,C,D,E)
+    %angle
+    \tkzMarkAngle(B,C,D)
+    \tkzLabelAngle[pos=1.4](B,C,D){\ang{70}}
+    \tkzMarkAngle(C,D,A)
+    \tkzLabelAngle[pos=1.25](C,D,A){?}
+    \tkzMarkAngle(E,B,A)
+    \tkzLabelAngle[pos=1.25](E,B,A){?}
+    %label
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[right](C)
+    \tkzLabelPoints[below](D)
+    \tkzLabelPoints[above](E)
+    % info
+    \draw (current bounding box.south)node[below]{$ABCD$ est un losange};
+\end{tikzpicture}

@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0:2){B}
+    \tkzDefShiftPoint[B](180-50:1){T1}
+    \tkzDefPoint(110:1){T2}
+    \tkzInterLL(B,T1)(A,T2)
+    \tkzGetPoint{C}
+    \tkzDefPoint(180:1){D}
+    \tkzDefShiftPoint[C](110:1){E}
+    \tkzDefShiftPoint[C](110+20:1){F}
+    \tkzDrawPoints(A,B,C,D,E,F)
+    \tkzDrawLines(D,B E,A F,B)
+    % angles
+    \tkzMarkAngle(C,A,D)
+    \tkzMarkAngle(E,C,F)
+    %label
+    \tkzLabelPoints(A)
+    \tkzLabelPoints(B)
+    \tkzLabelPoints(C)
+    \tkzLabelPoints(D)
+    \tkzLabelPoints(E)
+    \tkzLabelPoints(F)
+\end{tikzpicture}
