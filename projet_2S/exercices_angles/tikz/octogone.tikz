@@ -1,0 +1,20 @@
+\begin{tikzpicture}[scale=0.75]
+    \tkzDefPoints{0/0/O, 2/0/A}
+    \tkzDefRegPolygon[sides=8,center](O,A)
+    \tkzDrawPolygon(P1,P...,P8)
+    \tkzDrawPoints(P1,P...,P8)
+    \tkzDrawPoint(O)
+    \tkzMarkAngle(P1,O,P2)
+    \tkzLabelAngle[pos=1.2](P1,O,P2){?}
+    \tkzMarkAngle(P8,P7,P6)
+    \tkzLabelAngle[pos=1.2](P8,P7,P6){?}
+    \tkzDrawSegments(O,P1 O,P2)
+    \tkzLabelPoint[right](P1){A}
+    \tkzLabelPoint[above right](P2){B}
+    \tkzLabelPoint[above](P3){C}
+    \tkzLabelPoint[above left](P4){D}
+    \tkzLabelPoint[left](P5){E}
+    \tkzLabelPoint[below left](P6){F}
+    \tkzLabelPoint[below](P7){G}
+    \tkzLabelPoint[below right](P8){H}
+\end{tikzpicture}
