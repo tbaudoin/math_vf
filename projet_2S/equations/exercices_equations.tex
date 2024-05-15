@@ -1,0 +1,59 @@
+\documentclass[parskip=half-, 12pt, DIV=15, twoside=semi]{scrbook}
+\usepackage[sans, frenchstyle]{kpfonts-otf}
+%\usepackage{showframe}
+\usepackage{polyglossia}
+\setmainlanguage{french}
+\usepackage{xcolor}
+\usepackage{tabularray}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[enumerate]{label=\textbf{\alph*)}}
+\SetEnumitemKey{cols}
+{
+    before = \begin{multicols}{#1},
+    after = \end{multicols}
+}
+\usepackage[use-files]{xsim}
+\xsimsetup{
+    path=xsim,
+    load-style=mytemplate,
+    exercise/template=mytemplate,
+}
+\begin{document}
+
+\begin{huge}
+    9.3 Exercices
+\end{huge}
+
+\medbreak
+
+\begin{exercise}
+    Les solutions sont-elles vraies? Laisse ta démarche visible.
+    \begin{enumerate}[itemsep=1em]
+        \item -5 est-il solution de l'équation \(2x +3 = x -2\)?
+        \item 3 est-il solution de l'équation \((x+3)\cdot 2- 2 = 5x \) ?
+        \item 0 est-il solution de l'équation \(3x + 7 = (x + 8) - 1\)?
+    \end{enumerate}
+    \vspace{2em}
+\end{exercise}
+
+\begin{exercise}
+    Résous les équations suivantes. Laisse tes étapes visibles, utilise des couleurs ou des flèches si nécessaire.\\ Veille à ce que ton résultat soit irréductible. 
+    \begin{enumerate}[cols=2, itemsep=1em]
+        \item \(3x + 2 = 7\)
+        \item \(52 = 2x + 4\)
+        \item \(5(x+3)=17\)
+        \item \(15x - 2 = 10x + 7\)
+        \item \(20 + 3x - 8x = 10x - 8\)
+        \item \(5x - 5 = 45\)
+        \item \(40 = 5x - 2x + 3\)
+        \item \(3(x+3)= 2(6x-9)\)
+        \item \(14 + 4x - 2 = 0\)
+        \item \(\left(5x - 2\right)\left(2x - 7\right) = 10x^2 - 7 \)
+        \item \(3x + 2 = 5\)
+        \item \(56 x - 2 = 34 \)
+    \end{enumerate}
+\end{exercise}
+
+
+\end{document}
