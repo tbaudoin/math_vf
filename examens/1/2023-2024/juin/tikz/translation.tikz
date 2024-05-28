@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 0/-3/D, 2/-3/C, 3/-1/B}
+    \tkzDefPoints{0/1/X, 5/2/Y}
+    \tkzDrawSegment[->, >=latex](X,Y)
+    \tkzDefPointsBy[translation=from X to Y](A,B,C,D){}
+    \tkzDrawPolygon[white](A',B',C',D')
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[below](C)
+    \tkzLabelPoints[below](D)
+    \tkzLabelPoints[above](X)
+    \tkzLabelPoints[above](Y)
+\end{tikzpicture}
