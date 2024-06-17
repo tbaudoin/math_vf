@@ -1,10 +1,10 @@
 \begin{tikzpicture}
-    \draw (0,0)node[below]{$A$} -- (4,0)node[below right]{$B$} -- (6,2) node[above right]{$C$} -- (2,2)node[above left]{$D$} -- cycle;
+    \draw (0,0) -- (4,0) -- (6,2)  -- (2,2) -- cycle;
     \draw (3,1)node{$1$};
-    \draw (0,0) -- (0,4)node[right]{$E$} -- (-2,6)node[above]{$F$}-- (-2,2)node[above left]{$G$} -- cycle;
+    \draw (0,0) -- (0,4) -- (-2,6)-- (-2,2) -- cycle;
     \draw (-1,3)node{$2$};
-    \draw (0,0) -- (-4,0)node[left]{$H$} -- (-6,2)node[above left]{$I$} -- (-2,2) -- cycle;
+    \draw (0,0) -- (-4,0) -- (-6,2) -- (-2,2) -- cycle;
     \draw (-3,1)node{$3$};
-    \draw (0,0) -- (-4,0) -- (-6,-2)node[below left]{$J$} -- (-2,-2)node[below right]{$K$} -- cycle;
+    \draw (0,0) -- (-4,0) -- (-6,-2) -- (-2,-2) -- cycle;
     \draw (-3,-1)node{$4$};
 \end{tikzpicture}

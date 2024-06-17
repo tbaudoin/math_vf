@@ -8,11 +8,11 @@
     \tkzLabelSegment[above](F,E){\(a+2b\)}
     \tkzLabelSegment[below](B,C){\(2a+3b\)}
     
-    \tkzLabelPoints[above](A)
-    \tkzLabelPoints[above](B)
-    \tkzLabelPoints[above](C)
-    \tkzLabelPoints[above](D)
-    \tkzLabelPoints[above](E)
+    % \tkzLabelPoints[above](A)
+    % \tkzLabelPoints[above](B)
+    % \tkzLabelPoints[above](C)
+    % \tkzLabelPoints[above](D)
+    % \tkzLabelPoints[above](E)
 
-    \draw (current bounding box.south)node[below]{Stockholm};
+    \draw (current bounding box.center)node[below]{Stockholm};
 \end{tikzpicture}
