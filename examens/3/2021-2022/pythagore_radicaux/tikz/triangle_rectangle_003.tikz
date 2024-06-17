@@ -3,8 +3,9 @@
     \tkzDefPoint(0,4){E}
     \tkzDefPoint(6,0){F}
     \tkzDrawPolygon(G,E,F)
-    \tkzDrawTriangle[pythagore](E,F)
+    \tkzDefTriangle[pythagore](E,F)
     \tkzGetPoint{D}
+    \tkzDrawPolygon(E,D,F)
     % \tkzMarkAngle[mark=none](F,E,D)
     \tkzFillAngle[fill=black](F,E,D)
     \tkzLabelAngle[pos=1.5](F,E,D){$\alpha$}

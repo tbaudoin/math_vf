@@ -1,8 +1,9 @@
 \begin{tikzpicture}[baseline=(current bounding box.east), scale=1]
     \tkzDefPoint(0,0){A}
     \tkzDefPoint(4,0){B}
-    \tkzDrawTriangle[pythagore](A,B)
+    \tkzDefTriangle[pythagore](A,B)
     \tkzGetPoint{C}
+    \tkzDrawPolygon(A,B,C)
     \tkzLabelPoints[below](C)
     \tkzLabelPoints[above](A,B)
     \tkzMarkRightAngle[size=.5](C,B,A)

@@ -3,8 +3,9 @@
         \tkzDefPoint(0,0){A}
         \tkzDefPoint(0,3){B}
     \end{scope}
-    \tkzDrawTriangle[pythagore](B,A)
+    \tkzDefTriangle[pythagore](B,A)
     \tkzGetPoint{C}
+    \tkzDrawPolygon(A,B,C)
     \tkzLabelPoints[above](A,B)
     \tkzLabelPoints[below](C)
     \tkzMarkRightAngle[size=.5](B,A,C)
