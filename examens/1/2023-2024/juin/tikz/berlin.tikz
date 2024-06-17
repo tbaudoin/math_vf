@@ -1,0 +1,7 @@
+\begin{tikzpicture}[baseline=(current bounding box.east)]
+    \draw (0,0)node[below left]{$K$} -- (40,0)node[below right]{$L$} node[midway,below]{$40\ m$} -- (40,15)node[above right]{$M$} node[midway,right]{$15\ m$}-- (4,15)node[above]{$N$} node[midway, above]{$36\ m$} -- (0,12)node[left]{$O$} node[midway,above left]{$5\ m$}-- (0,0)node[midway, left]{$12\ m$};
+    \draw (1,3) -- (1,1) -- (3,1);
+    \draw (39,3) -- (39,1) -- (37,1);
+    \draw (39, 12) -- (39,14) -- (37,14);
+    \draw (current bounding box.south)node[below]{Berlin};
+\end{tikzpicture}

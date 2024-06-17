@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 2/3/B, 5/-2/C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[below](C)
+\end{tikzpicture}
