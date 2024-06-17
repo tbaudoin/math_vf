@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.18)  17 JUN 2024 08:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.18)  17 JUN 2024 16:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1552,7 +1552,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpl' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./tikz/graphe_propo.tikz))
+)
 \openout4 = `xsim/1_E_juin-connaitre-2-exercise-body.tex'.
 
  (./xsim/1_E_juin-connaitre-2-exercise-body.tex
@@ -1699,15 +1699,15 @@ L3 programming layer <2023-08-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 55938 strings out of 475189
- 1406442 string characters out of 5763838
- 2032748 words of memory out of 5000000
- 75987 multiletter control sequences out of 15000+600000
+ 55931 strings out of 475189
+ 1406266 string characters out of 5763838
+ 2031749 words of memory out of 5000000
+ 75983 multiletter control sequences out of 15000+600000
  656879 words of font info for 264 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,17n,126p,10990b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkplmn8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpssmn8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpssmne.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_juin.pdf (13 pages, 187080 bytes).
+Output written on 1_E_juin.pdf (13 pages, 186725 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
