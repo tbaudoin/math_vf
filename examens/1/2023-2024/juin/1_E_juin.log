@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.31)  19 JUN 2024 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.31)  20 JUN 2024 14:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -637,25 +637,66 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \mult@nat@firstbox=\box101
 \colbreak@box=\box102
 \mc@col@check@num=\count302
-) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip74
-\enit@outerparindent=\dimen180
-\enit@toks=\toks27
-\enit@inbox=\box103
-\enit@count@id=\count303
-\enitdp@description=\count304
+) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tasks\tasks.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\xtemplate.sty
+Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen180
+\l__xtemplate_tmp_int=\count303
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip74
 )
-\enitdp@qcm=\count305
+Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
+\g__tasks_total_items_int=\count304
+\l__tasks_columns_int=\count305
+\g__tasks_rows_int=\count306
+\g__tasks_current_col_num_int=\count307
+\g__tasks_current_row_num_int=\count308
+\l__tasks_item_columns_int=\count309
+\g__tasks_env_int=\count310
+\l__tasks_start_int=\count311
+\l__tasks_item_indent_dim=\dimen181
+\l__tasks_item_default_indent_dim=\dimen182
+\l__tasks_item_width_dim=\dimen183
+\l__tasks_label_width_dim=\dimen184
+\l__tasks_label_default_width_dim=\dimen185
+\l__tasks_label_offset_dim=\dimen186
+\l__tasks_label_default_offset_dim=\dimen187
+\l__tasks_column_sep_dim=\dimen188
+\l__tasks_correction_dim=\dimen189
+\l__tasks_full_width_dim=\dimen190
+\l__tasks_after_item_skip=\skip75
+\l__tasks_custom_after_item_skip=\skip76
+\l__tasks_before_list_skip=\skip77
+\l__tasks_after_list_skip=\skip78
+\l__tasks_item_coffin=\box103
+\l__tasks_label_coffin=\box104
+\c@task=\count312
+\l__tasks_tmpa_int=\count313
+\l__tasks_tmpb_int=\count314
+\l__tasks_tmpa_coffin=\box105
+\l__tasks_tmpa_box=\box106
+
+Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
+(xtemplate)             line 450.
+
+ (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tasks\tasks.cfg)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip79
+\enit@outerparindent=\dimen191
+\enit@toks=\toks27
+\enit@inbox=\box107
+\enit@count@id=\count315
+\enitdp@description=\count316
+)
+\enitdp@qcm=\count317
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box104
+\@eurobox=\box108
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2023-07-26 v3.2.9 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen181
-\l__siunitx_angle_marker_box=\box105
-\l__siunitx_angle_unit_box=\box106
-\l__siunitx_compound_count_int=\count306
+\l__siunitx_angle_tmp_dim=\dimen192
+\l__siunitx_angle_marker_box=\box109
+\l__siunitx_angle_unit_box=\box110
+\l__siunitx_compound_count_int=\count318
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
@@ -669,43 +710,43 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-\l__siunitx_number_exponent_fixed_int=\count307
-\l__siunitx_number_min_decimal_int=\count308
-\l__siunitx_number_min_integer_int=\count309
-\l__siunitx_number_round_precision_int=\count310
-\l__siunitx_number_lower_threshold_int=\count311
-\l__siunitx_number_upper_threshold_int=\count312
-\l__siunitx_number_group_first_int=\count313
-\l__siunitx_number_group_size_int=\count314
-\l__siunitx_number_group_minimum_int=\count315
-\l__siunitx_table_tmp_box=\box107
-\l__siunitx_table_tmp_dim=\dimen182
-\l__siunitx_table_column_width_dim=\dimen183
-\l__siunitx_table_integer_box=\box108
-\l__siunitx_table_decimal_box=\box109
-\l__siunitx_table_uncert_box=\box110
-\l__siunitx_table_before_box=\box111
-\l__siunitx_table_after_box=\box112
-\l__siunitx_table_before_dim=\dimen184
-\l__siunitx_table_carry_dim=\dimen185
-\l__siunitx_unit_tmp_int=\count316
-\l__siunitx_unit_position_int=\count317
-\l__siunitx_unit_total_int=\count318
+\l__siunitx_number_exponent_fixed_int=\count319
+\l__siunitx_number_min_decimal_int=\count320
+\l__siunitx_number_min_integer_int=\count321
+\l__siunitx_number_round_precision_int=\count322
+\l__siunitx_number_lower_threshold_int=\count323
+\l__siunitx_number_upper_threshold_int=\count324
+\l__siunitx_number_group_first_int=\count325
+\l__siunitx_number_group_size_int=\count326
+\l__siunitx_number_group_minimum_int=\count327
+\l__siunitx_table_tmp_box=\box111
+\l__siunitx_table_tmp_dim=\dimen193
+\l__siunitx_table_column_width_dim=\dimen194
+\l__siunitx_table_integer_box=\box112
+\l__siunitx_table_decimal_box=\box113
+\l__siunitx_table_uncert_box=\box114
+\l__siunitx_table_before_box=\box115
+\l__siunitx_table_after_box=\box116
+\l__siunitx_table_before_dim=\dimen195
+\l__siunitx_table_carry_dim=\dimen196
+\l__siunitx_unit_tmp_int=\count328
+\l__siunitx_unit_position_int=\count329
+\l__siunitx_unit_total_int=\count330
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen186
-\ar@mcellbox=\box113
-\extrarowheight=\dimen187
+\col@sep=\dimen197
+\ar@mcellbox=\box117
+\extrarowheight=\dimen198
 \NC@list=\toks28
-\extratabsurround=\skip75
-\backup@length=\skip76
-\ar@cellbox=\box114
+\extratabsurround=\skip80
+\backup@length=\skip81
+\ar@cellbox=\box118
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen188
-\pgfutil@tempdimb=\dimen189
+\pgfutil@tempdima=\dimen199
+\pgfutil@tempdimb=\dimen256
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
-\pgfutil@abb=\box115
+\pgfutil@abb=\box119
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
@@ -723,8 +764,8 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen190
-\Gin@req@width=\dimen191
+\Gin@req@height=\dimen257
+\Gin@req@width=\dimen258
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
@@ -733,26 +774,26 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen192
-\pgf@y=\dimen193
-\pgf@xa=\dimen194
-\pgf@ya=\dimen195
-\pgf@xb=\dimen196
-\pgf@yb=\dimen197
-\pgf@xc=\dimen198
-\pgf@yc=\dimen199
-\pgf@xd=\dimen256
-\pgf@yd=\dimen257
+\pgf@x=\dimen259
+\pgf@y=\dimen260
+\pgf@xa=\dimen261
+\pgf@ya=\dimen262
+\pgf@xb=\dimen263
+\pgf@yb=\dimen264
+\pgf@xc=\dimen265
+\pgf@yc=\dimen266
+\pgf@xd=\dimen267
+\pgf@yd=\dimen268
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count319
-\c@pgf@countb=\count320
-\c@pgf@countc=\count321
-\c@pgf@countd=\count322
+\c@pgf@counta=\count331
+\c@pgf@countb=\count332
+\c@pgf@countc=\count333
+\c@pgf@countd=\count334
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count323
+\pgf@sys@id@count=\count335
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -763,8 +804,8 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count324
-\pgfsyssoftpath@bigbuffer@items=\count325
+\pgfsyssoftpath@smallbuffer@items=\count336
+\pgfsyssoftpath@bigbuffer@items=\count337
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
@@ -786,52 +827,52 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen258
-\pgfmath@count=\count326
-\pgfmath@box=\box116
+\pgfmath@dimen=\dimen269
+\pgfmath@count=\count338
+\pgfmath@box=\box120
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
 \pgfmath@stack@operation=\toks38
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count327
+\c@pgfmathroundto@lastzeros=\count339
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen259
-\pgf@picmaxx=\dimen260
-\pgf@picminy=\dimen261
-\pgf@picmaxy=\dimen262
-\pgf@pathminx=\dimen263
-\pgf@pathmaxx=\dimen264
-\pgf@pathminy=\dimen265
-\pgf@pathmaxy=\dimen266
-\pgf@xx=\dimen267
-\pgf@xy=\dimen268
-\pgf@yx=\dimen269
-\pgf@yy=\dimen270
-\pgf@zx=\dimen271
-\pgf@zy=\dimen272
+\pgf@picminx=\dimen270
+\pgf@picmaxx=\dimen271
+\pgf@picminy=\dimen272
+\pgf@picmaxy=\dimen273
+\pgf@pathminx=\dimen274
+\pgf@pathmaxx=\dimen275
+\pgf@pathminy=\dimen276
+\pgf@pathmaxy=\dimen277
+\pgf@xx=\dimen278
+\pgf@xy=\dimen279
+\pgf@yx=\dimen280
+\pgf@yy=\dimen281
+\pgf@zx=\dimen282
+\pgf@zy=\dimen283
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen273
-\pgf@path@lasty=\dimen274
+\pgf@path@lastx=\dimen284
+\pgf@path@lasty=\dimen285
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen275
-\pgf@shorten@start@additional=\dimen276
+\pgf@shorten@end@additional=\dimen286
+\pgf@shorten@start@additional=\dimen287
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box117
-\pgf@hbox=\box118
-\pgf@layerbox@main=\box119
-\pgf@picture@serial@count=\count328
+\pgfpic=\box121
+\pgf@hbox=\box122
+\pgf@layerbox@main=\box123
+\pgf@picture@serial@count=\count340
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen277
+\pgflinewidth=\dimen288
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen278
-\pgf@pt@y=\dimen279
-\pgf@pt@temp=\dimen280
+\pgf@pt@x=\dimen289
+\pgf@pt@y=\dimen290
+\pgf@pt@temp=\dimen291
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
@@ -840,17 +881,17 @@ File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen281
+\pgfarrowsep=\dimen292
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen282
-\pgf@sys@shading@range@num=\count329
-\pgf@shadingcount=\count330
+\pgf@max=\dimen293
+\pgf@sys@shading@range@num=\count341
+\pgf@shadingcount=\count342
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box120
+\pgfexternal@startupbox=\box124
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
@@ -861,51 +902,51 @@ File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box121
+\pgfnodeparttextbox=\box125
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen283
-\pgf@nodesepend=\dimen284
+\pgf@nodesepstart=\dimen294
+\pgf@nodesepend=\dimen295
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen285
-\pgffor@skip=\dimen286
+\pgffor@iter=\dimen296
+\pgffor@skip=\dimen297
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count331
-\pgfplotmarksize=\dimen287
+\pgf@plot@mark@count=\count343
+\pgfplotmarksize=\dimen298
 )
-\tikz@lastx=\dimen288
-\tikz@lasty=\dimen289
-\tikz@lastxsaved=\dimen290
-\tikz@lastysaved=\dimen291
-\tikz@lastmovetox=\dimen292
-\tikz@lastmovetoy=\dimen293
-\tikzleveldistance=\dimen294
-\tikzsiblingdistance=\dimen295
-\tikz@figbox=\box122
-\tikz@figbox@bg=\box123
-\tikz@tempbox=\box124
-\tikz@tempbox@bg=\box125
-\tikztreelevel=\count332
-\tikznumberofchildren=\count333
-\tikznumberofcurrentchild=\count334
-\tikz@fig@count=\count335
+\tikz@lastx=\dimen299
+\tikz@lasty=\dimen300
+\tikz@lastxsaved=\dimen301
+\tikz@lastysaved=\dimen302
+\tikz@lastmovetox=\dimen303
+\tikz@lastmovetoy=\dimen304
+\tikzleveldistance=\dimen305
+\tikzsiblingdistance=\dimen306
+\tikz@figbox=\box126
+\tikz@figbox@bg=\box127
+\tikz@tempbox=\box128
+\tikz@tempbox@bg=\box129
+\tikztreelevel=\count344
+\tikznumberofchildren=\count345
+\tikznumberofcurrentchild=\count346
+\tikz@fig@count=\count347
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count336
-\pgfmatrixcurrentcolumn=\count337
-\pgf@matrix@numberofcolumns=\count338
+\pgfmatrixcurrentrow=\count348
+\pgfmatrixcurrentcolumn=\count349
+\pgf@matrix@numberofcolumns=\count350
 )
-\tikz@expandcount=\count339
+\tikz@expandcount=\count351
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybabel.code.tex
@@ -925,36 +966,36 @@ File: tikzlibraryangles.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen296
+\arrowsize=\dimen307
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen297
-\pgfarrowlength=\dimen298
-\pgfarrowwidth=\dimen299
-\pgfarrowlinewidth=\dimen300
+\pgfarrowinset=\dimen308
+\pgfarrowlength=\dimen309
+\pgfarrowwidth=\dimen310
+\pgfarrowlinewidth=\dimen311
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box126
-\pgf@layerboxsaved@background=\box127
+\pgf@layerbox@background=\box130
+\pgf@layerboxsaved@background=\box131
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen301
-\pgfdecoratedremainingdistance=\dimen302
-\pgfdecoratedinputsegmentcompleteddistance=\dimen303
-\pgfdecoratedinputsegmentremainingdistance=\dimen304
-\pgf@decorate@distancetomove=\dimen305
-\pgf@decorate@repeatstate=\count340
-\pgfdecorationsegmentamplitude=\dimen306
-\pgfdecorationsegmentlength=\dimen307
+\pgfdecoratedcompleteddistance=\dimen312
+\pgfdecoratedremainingdistance=\dimen313
+\pgfdecoratedinputsegmentcompleteddistance=\dimen314
+\pgfdecoratedinputsegmentremainingdistance=\dimen315
+\pgf@decorate@distancetomove=\dimen316
+\pgf@decorate@repeatstate=\count352
+\pgfdecorationsegmentamplitude=\dimen317
+\pgfdecorationsegmentlength=\dimen318
 )
-\tikz@lib@dec@box=\box128
+\tikz@lib@dec@box=\box132
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.markings.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.markings.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.shapes.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.shapes.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.text.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.text.code.tex
-\pgf@lib@dec@text@box=\box129
+\pgf@lib@dec@text@box=\box133
 )
-\tikz@lib@dec@te@box=\box130
+\tikz@lib@dec@te@box=\box134
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryintersections.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
-\pgf@intersect@solutions=\count341
+\pgf@intersect@solutions=\count353
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
@@ -977,41 +1018,41 @@ File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarythrough.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/numprint\numprint.sty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-\c@nprt@mantissa@digitsbefore=\count342
-\c@nprt@mantissa@digitsafter=\count343
-\c@nprt@exponent@digitsbefore=\count344
-\c@nprt@exponent@digitsafter=\count345
-\nprt@digitwidth=\skip77
-\nprt@sepwidth=\skip78
-\nprt@decimalwidth=\skip79
-\nprt@blockwidth=\skip80
+\c@nprt@mantissa@digitsbefore=\count354
+\c@nprt@mantissa@digitsafter=\count355
+\c@nprt@exponent@digitsbefore=\count356
+\c@nprt@exponent@digitsafter=\count357
+\nprt@digitwidth=\skip82
+\nprt@sepwidth=\skip83
+\nprt@decimalwidth=\skip84
+\nprt@blockwidth=\skip85
 \nprt@digittoks=\toks41
 \nprt@pretoks=\toks42
 \nprt@posttoks=\toks43
-\nprt@thisdigit=\count346
-\nprt@curpos=\count347
-\nprt@rndpos=\count348
-\c@nprt@digitsfirstblock=\count349
-\c@nprt@blockcnt=\count350
-\c@nprt@cntprint=\count351
+\nprt@thisdigit=\count358
+\nprt@curpos=\count359
+\nprt@rndpos=\count360
+\c@nprt@digitsfirstblock=\count361
+\c@nprt@blockcnt=\count362
+\c@nprt@cntprint=\count363
  No configuration file `numprint.cfg' found.) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xfp\xfp.sty
 Package: xfp 2023-02-02 L3 Floating point unit
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
 Package: fp 1995/04/02
  `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count352
+\actioncount=\count364
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count353
-\FP@xia=\count354
-\FP@xib=\count355
-\FP@xfa=\count356
-\FP@xfb=\count357
-\FP@rega=\count358
-\FP@regb=\count359
-\FP@regs=\count360
-\FP@times=\count361
+\FP@xs=\count365
+\FP@xia=\count366
+\FP@xib=\count367
+\FP@xfa=\count368
+\FP@xfb=\count369
+\FP@rega=\count370
+\FP@regb=\count371
+\FP@regs=\count372
+\FP@times=\count373
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
@@ -1024,7 +1065,7 @@ Package: fp-trigo 1995/04/14
 Package: fp-pas 1994/08/29
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count362
+\FPseed=\count374
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
@@ -1032,23 +1073,23 @@ Package: fp-upn 1996/10/21
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 ))
-\tkz@ax=\dimen308
-\tkz@ay=\dimen309
-\tkz@bx=\dimen310
-\tkz@by=\dimen311
-\tkz@cx=\dimen312
-\tkz@cy=\dimen313
-\tkz@dx=\dimen314
-\tkz@dy=\dimen315
-\tkz@tax=\dimen316
-\tkz@tay=\dimen317
-\tkz@tbx=\dimen318
-\tkz@tby=\dimen319
-\tkz@tcx=\dimen320
-\tkz@tcy=\dimen321
-\tkz@tdx=\dimen322
-\tkz@tdy=\dimen323
-\tkz@cntmk=\count363
+\tkz@ax=\dimen319
+\tkz@ay=\dimen320
+\tkz@bx=\dimen321
+\tkz@by=\dimen322
+\tkz@cx=\dimen323
+\tkz@cy=\dimen324
+\tkz@dx=\dimen325
+\tkz@dy=\dimen326
+\tkz@tax=\dimen327
+\tkz@tay=\dimen328
+\tkz@tbx=\dimen329
+\tkz@tby=\dimen330
+\tkz@tcx=\dimen331
+\tkz@tcy=\dimen332
+\tkz@tdx=\dimen333
+\tkz@tdy=\dimen334
+\tkz@cntmk=\count375
 
 Local configuration file tkz-base.cfg found and used
 (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-base.cfg
@@ -1089,9 +1130,9 @@ File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-euclide.sty
 2023/02/03 5.02c tkz-euclide.sty
 Package: tkz-euclide  2023/02/03 5.02c for pure Euclidean Geometry 
-\tkzRadius=\dimen324
-\tkzLength=\dimen325
-\tkz@radi=\dimen326
+\tkzRadius=\dimen335
+\tkzLength=\dimen336
+\tkz@radi=\dimen337
 (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide/obj\tkz-obj-eu-points.tex
 2023/02/03 5.02c tkz-obj-eu-points.tex
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide/obj\tkz-obj-eu-points-by.tex
@@ -1139,132 +1180,132 @@ Package: tikzscale 2013/05/22 v0.2.6 tikzscale LaTeX package
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
-\integerpart=\count364
-\decimalpart=\count365
+\integerpart=\count376
+\decimalpart=\count377
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 )
-\tikzscale@measuredSize=\box131
+\tikzscale@measuredSize=\box135
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
 \t@pgfplots@toka=\toks44
 \t@pgfplots@tokb=\toks45
 \t@pgfplots@tokc=\toks46
-\pgfplots@tmpa=\dimen327
-\c@pgfplots@coordindex=\count366
-\c@pgfplots@scanlineindex=\count367
+\pgfplots@tmpa=\dimen338
+\c@pgfplots@coordindex=\count378
+\c@pgfplots@scanlineindex=\count379
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks47
 \t@pgf@tokb=\toks48
 \t@pgf@tokc=\toks49
 (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count368
+\c@pgfplotsarray@tmp=\count380
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count369
+\c@pgfplotstable@counta=\count381
 \t@pgfplotstable@a=\toks50
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count370
+\c@pgfplotslibrarysurf@no=\count382
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count371
-\pgfplots@xmin@reg=\dimen328
-\pgfplots@xmax@reg=\dimen329
-\pgfplots@ymin@reg=\dimen330
-\pgfplots@ymax@reg=\dimen331
-\pgfplots@zmin@reg=\dimen332
-\pgfplots@zmax@reg=\dimen333
+\pgfplots@numplots=\count383
+\pgfplots@xmin@reg=\dimen339
+\pgfplots@xmax@reg=\dimen340
+\pgfplots@ymin@reg=\dimen341
+\pgfplots@ymax@reg=\dimen342
+\pgfplots@zmin@reg=\dimen343
+\pgfplots@zmax@reg=\dimen344
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.sty
 Package: tabularray 2023-03-01 v2023A Typeset tabulars and arrays with LaTeX3
-\l__tblr_a_int=\count372
-\l__tblr_c_int=\count373
-\l__tblr_r_int=\count374
-\l__tblr_d_dim=\dimen334
-\l__tblr_h_dim=\dimen335
-\l__tblr_o_dim=\dimen336
-\l__tblr_p_dim=\dimen337
-\l__tblr_q_dim=\dimen338
-\l__tblr_r_dim=\dimen339
-\l__tblr_s_dim=\dimen340
-\l__tblr_t_dim=\dimen341
-\l__tblr_v_dim=\dimen342
-\l__tblr_w_dim=\dimen343
-\l__tblr_a_box=\box132
-\l__tblr_b_box=\box133
-\l__tblr_c_box=\box134
-\l__tblr_d_box=\box135
-\g__tblr_table_count_int=\count375
-\c@rownum=\count376
-\c@colnum=\count377
-\c@rowcount=\count378
-\c@colcount=\count379
-\abovesep=\dimen344
-\belowsep=\dimen345
-\leftsep=\dimen346
-\rightsep=\dimen347
-\g_tblr_level_int=\count380
-\g__tblr_data_row_key_count_int=\count381
-\g__tblr_data_column_key_count_int=\count382
-\g__tblr_data_cell_key_count_int=\count383
-\g__tblr_array_int=\count384
-\l__tblr_key_count_int=\count385
-\l__tblr_key_quotient_int=\count386
-\l__tblr_key_quotient_two_int=\count387
-\l__tblr_key_remainder_int=\count388
-\g__tblr_data_str_value_count_int=\count389
-\rulewidth=\dimen348
-\l__tblr_strut_dp_dim=\dimen349
-\l__tblr_strut_ht_dim=\dimen350
-\g__tblr_cell_wd_dim=\dimen351
-\g__tblr_cell_ht_dim=\dimen352
-\g__tblr_cell_head_dim=\dimen353
-\g__tblr_cell_foot_dim=\dimen354
-\l__column_target_dim=\dimen355
-\l__tblr_caption_box=\box136
-\l__tblr_caption_left_box=\box137
-\l__tblr_row_head_box=\box138
-\l__tblr_row_foot_box=\box139
-\l__tblr_row_head_foot_dim=\dimen356
-\tablewidth=\dimen357
-\l__tblr_table_firsthead_box=\box140
-\l__tblr_table_middlehead_box=\box141
-\l__tblr_table_lasthead_box=\box142
-\l__tblr_table_firstfoot_box=\box143
-\l__tblr_table_middlefoot_box=\box144
-\l__tblr_table_lastfoot_box=\box145
-\l__tblr_remain_height_dim=\dimen358
-\l__tblr_long_from_int=\count390
-\l__tblr_long_to_int=\count391
-\l__tblr_curr_i_int=\count392
-\l__tblr_prev_i_int=\count393
-\l__tblr_table_page_int=\count394
-\l__tblr_table_head_box=\box146
-\l__tblr_table_foot_box=\box147
-\l__tblr_table_head_foot_dim=\dimen359
-\l__tblr_table_head_body_foot_dim=\dimen360
-\l__tblr_table_box=\box148
-\l__tblr_table_hlines_box=\box149
-\l__tblr_hline_box=\box150
-\l__tblr_row_box=\box151
-\l__tblr_col_o_wd_dim=\dimen361
-\l__tblr_col_b_wd_dim=\dimen362
-\l__tblr_hline_leftskip_dim=\dimen363
-\l__tblr_hline_rightskip_dim=\dimen364
-\l__tblr_row_ht_dim=\dimen365
-\l__tblr_row_dp_dim=\dimen366
-\l__tblr_row_abovesep_dim=\dimen367
-\l__tblr_row_belowsep_dim=\dimen368
-\l__tblr_row_vlines_box=\box152
-\l__tblr_vline_box=\box153
-\l__tblr_cell_box=\box154
-\l__row_upper_dim=\dimen369
-\l__row_lower_dim=\dimen370
-\l__row_vpace_dim=\dimen371
-\l__tblr_vline_aboveskip_dim=\dimen372
-\l__tblr_vline_belowskip_dim=\dimen373
-\l__tblr_cell_wd_dim=\dimen374
-\l__tblr_cell_ht_dim=\dimen375
-\l__tblr_diag_box=\box155
+\l__tblr_a_int=\count384
+\l__tblr_c_int=\count385
+\l__tblr_r_int=\count386
+\l__tblr_d_dim=\dimen345
+\l__tblr_h_dim=\dimen346
+\l__tblr_o_dim=\dimen347
+\l__tblr_p_dim=\dimen348
+\l__tblr_q_dim=\dimen349
+\l__tblr_r_dim=\dimen350
+\l__tblr_s_dim=\dimen351
+\l__tblr_t_dim=\dimen352
+\l__tblr_v_dim=\dimen353
+\l__tblr_w_dim=\dimen354
+\l__tblr_a_box=\box136
+\l__tblr_b_box=\box137
+\l__tblr_c_box=\box138
+\l__tblr_d_box=\box139
+\g__tblr_table_count_int=\count387
+\c@rownum=\count388
+\c@colnum=\count389
+\c@rowcount=\count390
+\c@colcount=\count391
+\abovesep=\dimen355
+\belowsep=\dimen356
+\leftsep=\dimen357
+\rightsep=\dimen358
+\g_tblr_level_int=\count392
+\g__tblr_data_row_key_count_int=\count393
+\g__tblr_data_column_key_count_int=\count394
+\g__tblr_data_cell_key_count_int=\count395
+\g__tblr_array_int=\count396
+\l__tblr_key_count_int=\count397
+\l__tblr_key_quotient_int=\count398
+\l__tblr_key_quotient_two_int=\count399
+\l__tblr_key_remainder_int=\count400
+\g__tblr_data_str_value_count_int=\count401
+\rulewidth=\dimen359
+\l__tblr_strut_dp_dim=\dimen360
+\l__tblr_strut_ht_dim=\dimen361
+\g__tblr_cell_wd_dim=\dimen362
+\g__tblr_cell_ht_dim=\dimen363
+\g__tblr_cell_head_dim=\dimen364
+\g__tblr_cell_foot_dim=\dimen365
+\l__column_target_dim=\dimen366
+\l__tblr_caption_box=\box140
+\l__tblr_caption_left_box=\box141
+\l__tblr_row_head_box=\box142
+\l__tblr_row_foot_box=\box143
+\l__tblr_row_head_foot_dim=\dimen367
+\tablewidth=\dimen368
+\l__tblr_table_firsthead_box=\box144
+\l__tblr_table_middlehead_box=\box145
+\l__tblr_table_lasthead_box=\box146
+\l__tblr_table_firstfoot_box=\box147
+\l__tblr_table_middlefoot_box=\box148
+\l__tblr_table_lastfoot_box=\box149
+\l__tblr_remain_height_dim=\dimen369
+\l__tblr_long_from_int=\count402
+\l__tblr_long_to_int=\count403
+\l__tblr_curr_i_int=\count404
+\l__tblr_prev_i_int=\count405
+\l__tblr_table_page_int=\count406
+\l__tblr_table_head_box=\box150
+\l__tblr_table_foot_box=\box151
+\l__tblr_table_head_foot_dim=\dimen370
+\l__tblr_table_head_body_foot_dim=\dimen371
+\l__tblr_table_box=\box152
+\l__tblr_table_hlines_box=\box153
+\l__tblr_hline_box=\box154
+\l__tblr_row_box=\box155
+\l__tblr_col_o_wd_dim=\dimen372
+\l__tblr_col_b_wd_dim=\dimen373
+\l__tblr_hline_leftskip_dim=\dimen374
+\l__tblr_hline_rightskip_dim=\dimen375
+\l__tblr_row_ht_dim=\dimen376
+\l__tblr_row_dp_dim=\dimen377
+\l__tblr_row_abovesep_dim=\dimen378
+\l__tblr_row_belowsep_dim=\dimen379
+\l__tblr_row_vlines_box=\box156
+\l__tblr_vline_box=\box157
+\l__tblr_cell_box=\box158
+\l__row_upper_dim=\dimen380
+\l__row_lower_dim=\dimen381
+\l__row_vpace_dim=\dimen382
+\l__tblr_vline_aboveskip_dim=\dimen383
+\l__tblr_vline_belowskip_dim=\dimen384
+\l__tblr_cell_wd_dim=\dimen385
+\l__tblr_cell_ht_dim=\dimen386
+\l__tblr_diag_box=\box159
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
 Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
@@ -1277,17 +1318,17 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box156
-\tcb@upperbox=\box157
-\tcb@lowerbox=\box158
-\tcb@phantombox=\box159
-\c@tcbbreakpart=\count395
-\c@tcblayer=\count396
-\c@tcolorbox@number=\count397
-\tcb@temp=\box160
-\tcb@temp=\box161
-\tcb@temp=\box162
-\tcb@temp=\box163
+\tcb@titlebox=\box160
+\tcb@upperbox=\box161
+\tcb@lowerbox=\box162
+\tcb@phantombox=\box163
+\c@tcbbreakpart=\count407
+\c@tcblayer=\count408
+\c@tcolorbox@number=\count409
+\tcb@temp=\box164
+\tcb@temp=\box165
+\tcb@temp=\box166
+\tcb@temp=\box167
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.0.3'
 (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image.sty
@@ -1296,38 +1337,38 @@ Package: tikzfill.image 2022/07/20 v1.0.0 Image filling library for TikZ
 Package: tikzfill-common 2022/07/20 v1.0.0 Auxiliary code for tikzfill
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2022/07/20 v1.0.0 Image filling library
-\l__tikzfill_img_box=\box164
+\l__tikzfill_img_box=\box168
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.3'
 )) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbxparse.code.tex
 Library (tcolorbox): 'tcbxparse.code.tex' version '6.0.3'
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
-\UL@box=\box165
-\UL@hyphenbox=\box166
-\UL@skip=\skip81
+\UL@box=\box169
+\UL@hyphenbox=\box170
+\UL@skip=\skip86
 \UL@hook=\toks53
-\UL@height=\dimen376
-\UL@pe=\count398
-\UL@pixel=\dimen377
-\ULC@box=\box167
+\UL@height=\dimen387
+\UL@pe=\count410
+\UL@pixel=\dimen388
+\ULC@box=\box171
 Package: ulem 2019/11/18
-\ULdepth=\dimen378
+\ULdepth=\dimen389
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/xsim\xsim.sty (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/xsim\xsimverb.sty
 Package: xsimverb 2022/02/12 v0.4 write environments verbatim to files
-\l__xsimverb_tmpa_int=\count399
-\l_xsim_line_gobble_int=\count400
+\l__xsimverb_tmpa_int=\count411
+\l_xsim_line_gobble_int=\count412
 )
 Package: xsim 2022/02/12 v0.21 eXercise Sheets IMproved
 Loading module `base' ...
-\l__xsim_tmpa_dim=\dimen379
-\l__xsim_tmpb_dim=\dimen380
-\l__xsim_tmpc_dim=\dimen381
-\l__xsim_tmpa_int=\count401
-\l__xsim_tmpb_int=\count402
-\l__xsim_tmpc_int=\count403
-\l__xsim_tmpa_box=\box168
-\l__xsim_tmpb_box=\box169
-\l__xsim_tmpc_box=\box170
+\l__xsim_tmpa_dim=\dimen390
+\l__xsim_tmpb_dim=\dimen391
+\l__xsim_tmpc_dim=\dimen392
+\l__xsim_tmpa_int=\count413
+\l__xsim_tmpb_int=\count414
+\l__xsim_tmpc_int=\count415
+\l__xsim_tmpa_box=\box172
+\l__xsim_tmpb_box=\box173
+\l__xsim_tmpc_box=\box174
 Loading module `auxfile' ...
 Loading module `properties' ...
 Loading module `environments' ...
@@ -1335,119 +1376,119 @@ Loading module `templates' ...
 Loading module `tags' ...
 Loading module `goals' ...
 Loading module `exercises' ...
-\g_xsim_id_int=\count404
-\g_xsim_max_id_int=\count405
+\g_xsim_id_int=\count416
+\g_xsim_max_id_int=\count417
 Loading module `solutions' ...
-\l_xsim_printsolutions_section_int=\count406
-\l_xsim_printsolutions_chapter_int=\count407
+\l_xsim_printsolutions_section_int=\count418
+\l_xsim_printsolutions_chapter_int=\count419
 Loading module `collections' ...
 Loading module `blanks' ...
-\l__xsim_blank_dim=\dimen382
-\l__xsim_blank_line_increment_dim=\dimen383
-\l__xsim_blank_line_minimum_length_dim=\dimen384
-\l__xsim_blank_box=\box171
+\l__xsim_blank_dim=\dimen393
+\l__xsim_blank_line_increment_dim=\dimen394
+\l__xsim_blank_line_minimum_length_dim=\dimen395
+\l__xsim_blank_box=\box175
 Loading module `grades' ...
 Loading module `random' ...
-\g__xsim_random_list_id_int=\count408
+\g__xsim_random_list_id_int=\count420
 Loading module `translations' ...
 Loading module `interface' ...
 Loading module `definitions' ...
-\c@exercise=\count409
-\c@solution=\count410
-\c@numberofexercises=\count411
+\c@exercise=\count421
+\c@solution=\count422
+\c@numberofexercises=\count423
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen385
-\lightrulewidth=\dimen386
-\cmidrulewidth=\dimen387
-\belowrulesep=\dimen388
-\belowbottomsep=\dimen389
-\aboverulesep=\dimen390
-\abovetopsep=\dimen391
-\cmidrulesep=\dimen392
-\cmidrulekern=\dimen393
-\defaultaddspace=\dimen394
-\@cmidla=\count412
-\@cmidlb=\count413
-\@aboverulesep=\dimen395
-\@belowrulesep=\dimen396
-\@thisruleclass=\count414
-\@lastruleclass=\count415
-\@thisrulewidth=\dimen397
+\heavyrulewidth=\dimen396
+\lightrulewidth=\dimen397
+\cmidrulewidth=\dimen398
+\belowrulesep=\dimen399
+\belowbottomsep=\dimen400
+\aboverulesep=\dimen401
+\abovetopsep=\dimen402
+\cmidrulesep=\dimen403
+\cmidrulekern=\dimen404
+\defaultaddspace=\dimen405
+\@cmidla=\count424
+\@cmidlb=\count425
+\@aboverulesep=\dimen406
+\@belowrulesep=\dimen407
+\@thisruleclass=\count426
+\@lastruleclass=\count427
+\@thisrulewidth=\dimen408
 ))
-\c@solconnaitre=\count416
-\c@numberofconnaitres=\count417
-\c@solappliquer=\count418
-\c@numberofappliquers=\count419
-\c@soltransferer=\count420
-\c@numberoftransferers=\count421
-\c@l=\count422
-\tikzscale@accuracy=\skip82
-\g_xsim_collection_exercise_in_all exercises_int=\count423
-\c@totalexerciseinall exercises=\count424
-\g_xsim_collection_connaitre_in_all exercises_int=\count425
-\c@totalconnaitreinall exercises=\count426
-\g_xsim_collection_appliquer_in_all exercises_int=\count427
-\c@totalappliquerinall exercises=\count428
-\g_xsim_collection_transferer_in_all exercises_int=\count429
-\c@totaltransfererinall exercises=\count430
-LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 112.
+\c@solconnaitre=\count428
+\c@numberofconnaitres=\count429
+\c@solappliquer=\count430
+\c@numberofappliquers=\count431
+\c@soltransferer=\count432
+\c@numberoftransferers=\count433
+\c@l=\count434
+\tikzscale@accuracy=\skip87
+\g_xsim_collection_exercise_in_all exercises_int=\count435
+\c@totalexerciseinall exercises=\count436
+\g_xsim_collection_connaitre_in_all exercises_int=\count437
+\c@totalconnaitreinall exercises=\count438
+\g_xsim_collection_appliquer_in_all exercises_int=\count439
+\c@totalappliquerinall exercises=\count440
+\g_xsim_collection_transferer_in_all exercises_int=\count441
+\c@totaltransfererinall exercises=\count442
+LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 117.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
 ) (1_E_juin.aux)
 \openout1 = `1_E_juin.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 112.
-LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 112.
+LaTeX Font Info:    Checking defaults for OML/jkpl/m/it on input line 117.
+LaTeX Font Info:    Trying to load font information for OML+jkpl on input line 117.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omljkpl.fd
 File: omljkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 112.
-LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 112.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/jkpl/m/n on input line 117.
+LaTeX Font Info:    Trying to load font information for OMS+jkpl on input line 117.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omsjkpl.fd
 File: omsjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 112.
-LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 112.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/jkpl/m/n on input line 117.
+LaTeX Font Info:    Trying to load font information for OMX+jkpl on input line 117.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omxjkpl.fd
 File: omxjkpl.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 112.
-LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 112.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/jkplexa/m/n on input line 117.
+LaTeX Font Info:    Trying to load font information for U+jkplexa on input line 117.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkplexa.fd
 File: ujkplexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Info: Redefining \degres on input line 112.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Info: Redefining \degres on input line 117.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 112.
+(french.ldf)             reported on input line 117.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 112.
-LaTeX Info: Redefining \up on input line 112.
-LaTeX Info: Redefining \microtypecontext on input line 112.
-Package microtype Info: Applying patch `item' on input line 112.
-Package microtype Info: Applying patch `toc' on input line 112.
-Package microtype Info: Applying patch `eqnum' on input line 112.
-Package microtype Info: Applying patch `footnote' on input line 112.
-Package microtype Info: Applying patch `verbatim' on input line 112.
+(french.ldf)             reported on input line 117.
+LaTeX Info: Redefining \up on input line 117.
+LaTeX Info: Redefining \microtypecontext on input line 117.
+Package microtype Info: Applying patch `item' on input line 117.
+Package microtype Info: Applying patch `toc' on input line 117.
+Package microtype Info: Applying patch `eqnum' on input line 117.
+Package microtype Info: Applying patch `footnote' on input line 117.
+Package microtype Info: Applying patch `verbatim' on input line 117.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 112.
+LaTeX Info: Redefining \showhyphens on input line 117.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1458,19 +1499,19 @@ Package microtype Info: Loading generic protrusion settings for font family
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 112.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 117.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count431
-\scratchdimen=\dimen398
-\scratchbox=\box172
-\nofMPsegments=\count432
-\nofMParguments=\count433
+\scratchcounter=\count443
+\scratchdimen=\dimen409
+\scratchbox=\box176
+\nofMPsegments=\count444
+\nofMParguments=\count445
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count434
-\MPscratchDim=\dimen399
-\MPnumerator=\count435
-\makeMPintoPDFobject=\count436
+\MPscratchCnt=\count446
+\MPscratchDim=\dimen410
+\MPnumerator=\count447
+\makeMPintoPDFobject=\count448
 \everyMPtoPDFconversion=\toks55
 ) (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1486,7 +1527,7 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 <img/entete.pdf, id=28, 803.0pt x 50.1875pt>
 File: img/entete.pdf Graphic file (type pdf)
 <use img/entete.pdf>
-Package pdftex.def Info: img/entete.pdf  used on input line 118.
+Package pdftex.def Info: img/entete.pdf  used on input line 123.
 (pdftex.def)             Requested size: 448.13095pt x 28.00906pt.
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1495,10 +1536,10 @@ Package pdftex.def Info: img/entete.pdf  used on input line 118.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 166.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree0.fd)
 > Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 166.
+LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -1506,35 +1547,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 166.
+LaTeX Font Info:    Trying to load font information for OML+jkpss on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omljkpss.fd
 File: omljkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 166.
+LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 166.
+LaTeX Font Info:    Trying to load font information for OMX+jkpss on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omxjkpss.fd
 File: omxjkpss.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 166.
+LaTeX Font Info:    Trying to load font information for U+jkpssmia on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpssmia.fd
 File: ujkpssmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 166.
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 166.
+LaTeX Font Info:    Trying to load font information for U+jkpsssyb on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsssyb.fd
 File: ujkpsssyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 166.
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 166.
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 171.
  (C:\Users\Amandine\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 ) [1
@@ -1557,31 +1598,36 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpl' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1{C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free3.enc}])
+)
 \openout4 = `xsim/1_E_juin-connaitre-2-exercise-body.tex'.
 
  (xsim/1_E_juin-connaitre-2-exercise-body.tex)
 \openout4 = `xsim/1_E_juin-connaitre-3-exercise-body.tex'.
 
- (xsim/1_E_juin-connaitre-3-exercise-body.tex)
+ (xsim/1_E_juin-connaitre-3-exercise-body.tex
+Underfull \hbox (badness 10000) in paragraph at lines 281--12
+
+ []
+
+) [1{C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free3.enc}{C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}]
 \openout4 = `xsim/1_E_juin-connaitre-4-exercise-body.tex'.
 
  (xsim/1_E_juin-connaitre-4-exercise-body.tex)
 \openout4 = `xsim/1_E_juin-connaitre-5-exercise-body.tex'.
 
  (xsim/1_E_juin-connaitre-5-exercise-body.tex)
-\openout4 = `xsim/1_E_juin-connaitre-6-exercise-body.tex'.
+\openout4 = `xsim/1_E_juin-appliquer-6-exercise-body.tex'.
 
- (xsim/1_E_juin-connaitre-6-exercise-body.tex [2{C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}])
-\openout4 = `xsim/1_E_juin-appliquer-7-exercise-body.tex'.
+ (xsim/1_E_juin-appliquer-6-exercise-body.tex) [2]
+\openout4 = `xsim/1_E_juin-connaitre-7-exercise-body.tex'.
 
- (xsim/1_E_juin-appliquer-7-exercise-body.tex)
+ (xsim/1_E_juin-connaitre-7-exercise-body.tex)
 \openout4 = `xsim/1_E_juin-appliquer-8-exercise-body.tex'.
 
- (xsim/1_E_juin-appliquer-8-exercise-body.tex)
+ (xsim/1_E_juin-appliquer-8-exercise-body.tex) [3]
 \openout4 = `xsim/1_E_juin-appliquer-9-exercise-body.tex'.
 
- (xsim/1_E_juin-appliquer-9-exercise-body.tex [3]) [4]
+ (xsim/1_E_juin-appliquer-9-exercise-body.tex) [4]
 \openout4 = `xsim/1_E_juin-appliquer-10-exercise-body.tex'.
 
  (xsim/1_E_juin-appliquer-10-exercise-body.tex)
@@ -1634,7 +1680,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  (xsim/1_E_juin-appliquer-17-exercise-body.tex (tikz/translation.tikz) (tikz/translation.tikz) (tikz/translation.tikz) (tikz/translation.tikz) (tikz/translation.tikz) (tikz/translation.tikz) (tikz/translation.tikz))
 \openout4 = `xsim/1_E_juin-appliquer-18-exercise-body.tex'.
 
- (xsim/1_E_juin-appliquer-18-exercise-body.tex [7] (tikz/figure001.tikz) (tikz/figure001.tikz) (tikz/figure001.tikz) (tikz/figure001.tikz) (tikz/figure001.tikz) (tikz/figure001.tikz) (tikz/figure001.tikz)
+ (xsim/1_E_juin-appliquer-18-exercise-body.tex [7] (tikz/figure001.tikz) (tikz/figure001.tikz) (tikz/figure001.tikz) (tikz/figure001.tikz) (tikz/figure001.tikz)
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1643,20 +1689,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-)
-\openout4 = `xsim/1_E_juin-appliquer-19-exercise-body.tex'.
+) [8]
+\openout4 = `xsim/1_E_juin-transferer-19-exercise-body.tex'.
 
- (xsim/1_E_juin-appliquer-19-exercise-body.tex (tikz/figure002.tikz) (tikz/figure002.tikz) (tikz/figure002.tikz) (tikz/figure002.tikz) (tikz/figure002.tikz)) [8]
-\openout4 = `xsim/1_E_juin-transferer-20-exercise-body.tex'.
-
- (xsim/1_E_juin-transferer-20-exercise-body.tex)
-\openout4 = `xsim/1_E_juin-transferer-21-exercise-body.tex'.
-
- (xsim/1_E_juin-transferer-21-exercise-body.tex
+ (xsim/1_E_juin-transferer-19-exercise-body.tex
 <img/cannettes.png, id=72, 141.52875pt x 99.9735pt>
 File: img/cannettes.png Graphic file (type png)
 <use img/cannettes.png>
-Package pdftex.def Info: img/cannettes.png  used on input line 13.
+Package pdftex.def Info: img/cannettes.png  used on input line 14.
 (pdftex.def)             Requested size: 141.5284pt x 99.97324pt.
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1667,44 +1707,63 @@ Package pdftex.def Info: img/cannettes.png  used on input line 13.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 ) [9 <./img/cannettes.png>]
-\openout4 = `xsim/1_E_juin-transferer-22-exercise-body.tex'.
+\openout4 = `xsim/1_E_juin-transferer-20-exercise-body.tex'.
 
- (xsim/1_E_juin-transferer-22-exercise-body.tex
-<img/voitures.png, id=79, 329.5512pt x 264.0264pt>
+ (xsim/1_E_juin-transferer-20-exercise-body.tex
+<img/voitures.png, id=78, 329.5512pt x 264.0264pt>
 File: img/voitures.png Graphic file (type png)
 <use img/voitures.png>
 Package pdftex.def Info: img/voitures.png  used on input line 41.
-(pdftex.def)             Requested size: 219.06548pt x 175.50685pt.
+(pdftex.def)             Requested size: 448.13095pt x 359.04697pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
-[]\T1/jkpss/m/n/12 (+20) Cite deux an-nées où le club
+
+Package tasks Warning: The width of `label-width' is too small on line 49.
+(tasks)                Please set it at least to 12.04799pt.
+
+
+Package tasks Warning: The width of `label-width' is too small on line 49.
+(tasks)                Please set it at least to 11.91599pt.
+
+
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 49--49
+\T1/jkpss/b/n/12 (-20) b) | 
  []
 
-)
-\openout4 = `xsim/1_E_juin-appliquer-23-exercise-body.tex'.
 
- (xsim/1_E_juin-appliquer-23-exercise-body.tex)
-\openout4 = `xsim/1_E_juin-connaitre-24-exercise-body.tex'.
+Package tasks Warning: The width of `label-width' is too small on line 49.
+(tasks)                Please set it at least to 11.29199pt.
 
- (xsim/1_E_juin-connaitre-24-exercise-body.tex) [10 <./img/voitures.png>]
+) [10 <./img/voitures.png>]
+\openout4 = `xsim/1_E_juin-appliquer-21-exercise-body.tex'.
+
+ (xsim/1_E_juin-appliquer-21-exercise-body.tex)
+\openout4 = `xsim/1_E_juin-connaitre-22-exercise-body.tex'.
+
+ (xsim/1_E_juin-connaitre-22-exercise-body.tex)
+\openout4 = `xsim/1_E_juin-transferer-23-exercise-body.tex'.
+
+ (xsim/1_E_juin-transferer-23-exercise-body.tex (tikz/stockholm.tikz) (tikz/stockholm.tikz) (tikz/stockholm.tikz) (tikz/stockholm.tikz) (tikz/stockholm.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz))
+\openout4 = `xsim/1_E_juin-transferer-24-exercise-body.tex'.
+
+ (xsim/1_E_juin-transferer-24-exercise-body.tex (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz)) [11]
 \openout4 = `xsim/1_E_juin-transferer-25-exercise-body.tex'.
 
- (xsim/1_E_juin-transferer-25-exercise-body.tex (tikz/stockholm.tikz) (tikz/stockholm.tikz) (tikz/stockholm.tikz) (tikz/stockholm.tikz) (tikz/stockholm.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz) (tikz/berlin.tikz))
-\openout4 = `xsim/1_E_juin-transferer-26-exercise-body.tex'.
+ (xsim/1_E_juin-transferer-25-exercise-body.tex)
+\openout4 = `xsim/1_E_juin-appliquer-26-exercise-body.tex'.
 
- (xsim/1_E_juin-transferer-26-exercise-body.tex (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz) (tikz/pavage.tikz)) [11] (1_E_juin.aux) ) 
+ (xsim/1_E_juin-appliquer-26-exercise-body.tex (tikz/figure002.tikz) (tikz/figure002.tikz) (tikz/figure002.tikz) (tikz/figure002.tikz) (tikz/figure002.tikz)) [12] (1_E_juin.aux) ) 
 Here is how much of TeX's memory you used:
- 56042 strings out of 476331
- 1427393 string characters out of 5786349
- 2021308 words of memory out of 5000000
- 75209 multiletter control sequences out of 15000+600000
- 610702 words of font info for 257 fonts, out of 8000000 for 9000
+ 56807 strings out of 476331
+ 1453970 string characters out of 5786349
+ 2053809 words of memory out of 5000000
+ 75974 multiletter control sequences out of 15000+600000
+ 610111 words of font info for 253 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,17n,126p,11009b,1769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkplmn8a.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpssbn8a.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpssmn8a.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpssmn8a.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpssmne.pfb><C:/Users/Amandine/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on 1_E_juin.pdf (13 pages, 202296 bytes).
+Output written on 1_E_juin.pdf (14 pages, 202984 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  69756 words of extra memory for PDF output out of 74296 (max. 10000000)
 
