@@ -27,8 +27,8 @@
     \begin{itemize}[label=$\bullet$]
         \item Le travail est à réaliser sur feuille à en tête.
         \item Le travail est vivement conseillé. Un correctif sera déposé sur smartschool début août.
-        \item  L'élève travaille de manière autonome.
-        \item Le travail sera à déposer à l’accueil dans une enveloppe le lundi 28 août durant les heures d'ouverture de l'école contre accusé de réception.
+        \item L'élève travaille de manière autonome.
+        \item Le travail sera déposer à l’accueil dans une enveloppe le lundi 26 août, de 9h00 à 15h30, contre accusé de réception.
     \end{itemize}
 \end{tcolorbox}
 \newpage~
@@ -613,7 +613,7 @@
 \end{exercise}
 \begin{solution}
     \begin{center}
-        \inputtikz{bm}
+        \input{tikz/bm.tikz}
     \end{center}
     Après le premier rebond, la balle remonte de,
     \begin{equation*}
@@ -632,27 +632,27 @@
     Représente les deux angles demandés.
     \begin{tasks}(2)
         \task Opposés par le sommet\\
-        \inputtikz{drawing_two_angles}
+        \input{tikz/drawing_two_angles.tikz}
         \task Alternes internes\\
-        \inputtikz{drawing_two_angles}
+        \input{tikz/drawing_two_angles.tikz}
         \task Correspondants\\
-        \inputtikz{drawing_two_angles}
+        \input{tikz/drawing_two_angles.tikz}
         \task Alternes externes\\
-        \inputtikz{drawing_two_angles}
+        \input{tikz/drawing_two_angles.tikz}
     \end{tasks}
 \end{exercise}
 \begin{solution}
     \begin{tasks}(2)
-        \task Opposés par le sommet\\\inputtikz{opp_sommet_sol}
-        \task Alternes internes\\\inputtikz{alt_int_sol}
-        \task Correspondants\\\inputtikz{corr_sol}
-        \task Alternes externes\\\inputtikz{alt_ext_sol}
+        \task Opposés par le sommet\\\input{tikz/opp_sommet_sol.tikz}
+        \task Alternes internes\\\input{tikz/alt_int_sol.tikz}
+        \task Correspondants\\\input{tikz/corr_sol.tikz}
+        \task Alternes externes\\\input{tikz/alt_ext_sol.tikz}
     \end{tasks}
     \pagebreak
 \end{solution}
 
 \begin{exercise}
-    \parbox{.3\linewidth}{\inputtikz{knowing_two_angles}}
+    \parbox{.3\linewidth}{\input{tikz/knowing_two_angles.tikz}}
     \parbox{.7\linewidth}{%
         \begin{tasks}
             \task Les angles $\widehat{A_1}$ et \dotfill\ sont supplémentaires.
@@ -688,7 +688,7 @@
 \begin{exercise}
     La figure suivante est-elle un trapèze ? Justifie ton raisonnement.
     \begin{center}
-        \inputtikz{trapeze}
+        \input{tikz/trapeze.tikz}
     \end{center}
 \end{exercise}
 \begin{solution}
@@ -708,11 +708,11 @@
 \begin{exercise}
     Détermine l'amplitude de l'angle demandé en justifiant ta réponse.
     \begin{tasks}(2)
-        \task $\widehat{A_1}=40\degres$, $\widehat{A_2} = ?$.\\\inputtikz{angle_1}
+        \task $\widehat{A_1}=40\degres$, $\widehat{A_2} = ?$.\\\input{tikz/angle_1.tikz}
         \task $\widehat{A_1}=60\degres$, $\widehat{B_1} = ?$.
-        \\$d_1\sslash d_2$\\\inputtikz{angle_2}
+        \\$d_1\sslash d_2$\\\input{tikz/angle_2.tikz}
             \task $ABCD$ est un parallélogramme \\ $\widehat{A_1}=45\degres$, $\widehat{B_2} = ?$, $\widehat{C_1}=?$.
-        \\\inputtikz{angle_3}
+        \\\input{tikz/angle_3.tikz}
     \end{tasks}
 \end{exercise}
 \begin{solution}
@@ -793,17 +793,17 @@
     placer pour qu'elle soit à la même distance des trois villes $A$, $B$ et $C$ ?
     Laisse tes constructions visibles.
     \begin{center}
-        \inputtikz{sumixorp}
+        \input{tikz/sumixorp.tikz}
     \end{center}
 \end{exercise}
 \begin{solution}
-    \inputtikz{sumixorp_sol}
+    \input{tikz/sumixorp_sol.tikz}
 \end{solution}
 
 \begin{exercise}
     Complète les phrases à l'aide de la figure suivante.
     \begin{center}
-        \inputtikz{triangle}
+        \input{tikz/triangle.tikz}
     \end{center}
     \begin{tasks}
         \task La droite $GB$ est une \dotfill du triangle $ABC$.
@@ -872,7 +872,7 @@
         \end{tabular}
         \task $16,67 + 12,5 = 29,17$.
         \task Films d'actions.
-        \task \TODO: correctif du diagramme circulaire.
+        \task %TODO: correctif du diagramme circulaire.
     \end{tasks}
 \end{solution}
 
@@ -997,4 +997,7 @@
     \end{align*}
     Préparer \SI{4,5}{l} de ce cocktail coûtera donc $18+16,2=\SI{34,2}{€}$.
 \end{solution}
+
+% \newpage
+% \printsolutions
 \end{document}
