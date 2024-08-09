@@ -1,4 +1,4 @@
-\begin{tikzpicture}[>=latex, x=1cm, baseline=(current bounding box.east)]
+\begin{tikzpicture}[>=latex,x=1cm,baseline=(current bounding box.east)]
     \tikzmath{
         \xmin=0;
         \xmax=6;

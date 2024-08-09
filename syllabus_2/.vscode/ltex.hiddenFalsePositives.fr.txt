@@ -1,0 +1,1 @@
+{"rule":"IMP_PRON","sentence":"^\\QEntoure la ou les bonne(s) réponse(s).\\E$"}
