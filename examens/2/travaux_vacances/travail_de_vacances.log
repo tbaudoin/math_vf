@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.30)  1 JUL 2024 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.30)  21 AUG 2024 18:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1278,25 +1278,48 @@ Package pdftex.def Info: images/cocktail.jpg  used on input line 12.
 )
 \openout4 = `xsim/travail_de_vacances-exercise-23-solution-body.tex'.
 
- [9{c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc} <./images/cocktail.jpg>] (./travail_de_vacances.aux)
+ [9{c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc} <./images/cocktail.jpg>] (./xsim/travail_de_vacances-exercise-1-solution-body.tex) (./xsim/travail_de_vacances-exercise-2-solution-body.tex
+\l__witharrows_x_dim=\dimen381
+\l__witharrows_initial_int=\count401
+\l__witharrows_final_int=\count402
+\l__witharrows_arrow_int=\count403
+\l__witharrows_pos_of_arrow_int=\count404
+\l__witharrows_jump_int=\count405
+\l__witharrows_env_box=\box110
+\l__witharrows_first_arrow_of_group_int=\count406
+\l__witharrows_first_line_of_group_int=\count407
+\l__witharrows_last_line_of_group_int=\count408
+\l__witharrows_first_arrow_int=\count409
+\l__witharrows_last_arrow_int=\count410
+\g__witharrows_x_initial_dim=\dimen382
+\g__witharrows_x_final_dim=\dimen383
+\g__witharrows_y_initial_dim=\dimen384
+\g__witharrows_y_final_dim=\dimen385
+LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10.95> not available
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 145.
+ [10] [11] [12]) (./xsim/travail_de_vacances-exercise-3-solution-body.tex [13]) (./xsim/travail_de_vacances-exercise-4-solution-body.tex [14]) (./xsim/travail_de_vacances-exercise-5-solution-body.tex [15]) (./xsim/travail_de_vacances-exercise-6-solution-body.tex) (./xsim/travail_de_vacances-exercise-7-solution-body.tex) (./xsim/travail_de_vacances-exercise-8-solution-body.tex [16]) (./xsim/travail_de_vacances-exercise-9-solution-body.tex) (./xsim/travail_de_vacances-exercise-10-solution-body.tex [17]) (./xsim/travail_de_vacances-exercise-11-solution-body.tex) (./xsim/travail_de_vacances-exercise-12-solution-body.tex (./tikz/bm.tikz) [18]) (./xsim/travail_de_vacances-exercise-13-solution-body.tex (./tikz/opp_sommet_sol.tikz) (./tikz/alt_int_sol.tikz) (./tikz/corr_sol.tikz) (./tikz/alt_ext_sol.tikz)) [19] (./xsim/travail_de_vacances-exercise-14-solution-body.tex) (./xsim/travail_de_vacances-exercise-15-solution-body.tex) (./xsim/travail_de_vacances-exercise-16-solution-body.tex [20] [21]) [22] (./xsim/travail_de_vacances-exercise-17-solution-body.tex) (./xsim/travail_de_vacances-exercise-18-solution-body.tex (./tikz/sumixorp_sol.tikz)) (./xsim/travail_de_vacances-exercise-19-solution-body.tex) (./xsim/travail_de_vacances-exercise-20-solution-body.tex [23]) (./xsim/travail_de_vacances-exercise-21-solution-body.tex) [24] (./xsim/travail_de_vacances-exercise-22-solution-body.tex) (./xsim/travail_de_vacances-exercise-23-solution-body.tex [25]) [26] (./travail_de_vacances.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 43126 strings out of 474404
- 1016610 string characters out of 5754457
- 1962036 words of memory out of 5000000
- 64317 multiletter control sequences out of 15000+600000
- 572550 words of font info for 100 fonts, out of 8000000 for 9000
+ 45185 strings out of 474404
+ 1059751 string characters out of 5754457
+ 1992036 words of memory out of 5000000
+ 66287 multiletter control sequences out of 15000+600000
+ 577576 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,10n,166p,10999b,1577s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on travail_de_vacances.pdf (10 pages, 242247 bytes).
+ 108i,26n,174p,10999b,1577s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on travail_de_vacances.pdf (27 pages, 331711 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 183 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 24599 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 34839 words of extra memory for PDF output out of 35830 (max. 10000000)
 
