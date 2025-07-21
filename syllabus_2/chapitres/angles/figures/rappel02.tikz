@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=.6]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0:1){C}
+    \tkzDefPoint(-180:2){B}
+    \tkzDrawLines[add=0 and .3](A,B A,C)
+    \tkzMarkAngle[mark=none, size=0.5](C,A,B)
+    \tkzDrawPoints(A,B,C)
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[above](C)
+\end{tikzpicture}

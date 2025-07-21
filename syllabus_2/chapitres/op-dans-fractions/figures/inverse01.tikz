@@ -1,0 +1,4 @@
+\begin{tikzpicture}[remember picture, overlay, >=latex]
+        \draw[shorten <=3pt, shorten >=3pt,<->] (num1.east) -- (deno2.west);
+        \draw[shorten <=3pt, shorten >=3pt,<->] (num2.west) -- (deno1.east);
+\end{tikzpicture}

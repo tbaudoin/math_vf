@@ -1,0 +1,10 @@
+Remarques
+- site pour retirer le watermark (texte mis en fond d'une image) : https://www.watermarkremover.io/fr
+- structure pour utiliser les boucles foreach en tikz : \foreach \var in {val1, val2, ..., valn}{contenu a répéter ;}
+- créer un dossier img pour mettre les images
+- créer un dossier xsim pour mettre les fichiers auxiliaires de xsim
+- créer un dossier tikz pour mettre les dessins fait en tikz (*.tikz)
+- utiliser \( \) pour les maths plutôt que $ $
+- alignement vertical des tableaux : \begin{tblr}[t] (t pour top , b pour bottom)
+- pour les graduations des axes, l'ordre est important pour le placement des labels dans la commandes \draw (0.1, \x) -- (-0.1, \x) node{}; Ici on placera le label par rapport à la position (-0.1, \x) c'est à dire par rapport au bas de la graduation !
+- pour les nombres à plus de 3 chiffres utiliser la commande \num{} pour grouper les chiffres par paquet de 3 : 1000 -> \num{1000} -> 1 000

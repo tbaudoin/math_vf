@@ -1,0 +1,5 @@
+\begin{tikzpicture}[>=latex]
+  \draw[->] (-2, 0) -- (2, 0) node[right] {$x$};
+  \draw[->] (0, -2) -- (0, 2) node[above] {$y$};
+  \draw[domain=-1.5:1.5, smooth, variable=\x, thick] plot ({\x}, {\x*\x});
+\end{tikzpicture}

@@ -1,0 +1,14 @@
+\begin{tikzpicture}[>=latex, baseline=(current bounding box.north)]
+    \tkzDefPoints{0/0/A, 2/0/B}
+    \tkzDefPoint(-30:2){C}
+
+    \tkzFillAngle[fill=blue!20](C,A,B)
+    \tkzMarkAngle[mark=](C,A,B)
+    \tkzLabelAngle[pos=1.4](C,A,B){$30\degres$}
+
+    \tkzDrawLines[add=0 cm and .5 cm](A,B A,C)
+    \tkzDrawPoints(A,B,C)
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[below](C)
+\end{tikzpicture}

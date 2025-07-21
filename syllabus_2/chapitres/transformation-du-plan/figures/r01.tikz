@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=2]
+    \tkzDefPoints{0/0/A, 4/0.5/D}
+    \tkzDefPoint(-80:2){B}
+    \tkzDefPoint(70:2){C}
+    \tkzDefPointsBy[rotation= center D angle -60](A,B,C){}
+    \tkzDrawPolygon[color=\corcolor](A',B',C')
+    \tkzDrawPolygon(A,B,C)
+    \tkzDrawPoints(A,B,C,D)
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[above](C,D)
+    \tkzLabelPoints[below](B)
+\end{tikzpicture}

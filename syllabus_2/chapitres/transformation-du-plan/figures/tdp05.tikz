@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A,2/2/B,4/0/C,2/1/D}
+    \tkzDefPoints{0/-2/A'}
+    \tkzDefPointsBy[translation=from A to A'](A,B,C,D){}
+    \tkzDrawPolygon[color=\corcolor](A',B',C',D')
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawPoints(A,B,C,D,A')
+    \tkzLabelPoints[below left](A,A')
+    \tkzLabelPoints[below right](C)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[below](D)
+\end{tikzpicture}

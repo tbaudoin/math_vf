@@ -1,0 +1,28 @@
+\begin{tikzpicture}[baseline=(current bounding box.north), scale=1, rotate=-50]
+    \tkzDefPoint(0,0){C}
+    \tkzDefPoint(0:2){E}
+    \tkzDefTriangle[two angles=70 and 58](C,E)
+    \tkzGetPoint{D}
+    \tkzDrawPolygon(C,E,D)
+    \tkzDefPointWith[colinear=at E,K=3](E,C)
+    \tkzGetPoint{A}
+    \tkzDefTriangle[two angles=70 and 58](C,A)
+    \tkzGetPoint{B}
+    \tkzDrawPolygon(A,B,C)
+    \tkzMarkAngle[mark=none, size=.5](C,D,E)
+    \tkzLabelAngle[pos=.7](C,D,E){\scriptsize$52\degres$}
+    \tkzMarkAngle[mark=none, size=.5](D,E,C)
+    \tkzLabelAngle[pos=.7](D,E,C){\scriptsize$58\degres$}
+    \tkzMarkAngle[mark=none, size=.5](A,C,B)
+    \tkzLabelAngle[pos=.75](A,C,B){\scriptsize$70\degres$}
+    \tkzLabelAngle[pos=.5](B,A,C){\scriptsize \faIcon{star}}
+    \tkzLabelAngle[pos=.5](E,C,D){\scriptsize \faIcon{square}}
+    \tkzLabelAngle[pos=.6](C,B,A){\scriptsize$52\degres$}
+    \tkzDrawPoints(A,B,C,D,E)
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[below=1ex](C)
+    \tkzLabelPoints[above](D)
+    \tkzLabelPoints[below](E)
+    \draw (current bounding box.north)node[above]{$AB \parallelsum DE$};
+\end{tikzpicture}

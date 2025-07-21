@@ -1,0 +1,18 @@
+\begin{tikzpicture}[baseline=(current bounding box.north),scale=2]
+    \tkzDefPoint(0,0){E}
+    \tkzDefPoint(-51.5:2){C}
+    \tkzDefPoint(-103:2){D}
+    \tkzDefPoint(0:1.5){A}
+    \tkzDefPoint(180:2){G}
+    \tkzDrawLines(G,A E,D E,C D,C G,D)
+    \begin{scriptsize}
+        \tkzLabelPoints[below left= 0 and 0](D)
+        \tkzLabelPoints[above right](E)
+        \tkzLabelPoints[below right = -.1 and .1](C)
+        \tkzLabelPoints[above](A)
+        \tkzLabelPoints[above right](G)
+        \tkzMarkSegments[mark=||](E,D E,C)
+        \tkzLabelAngle[pos=.25](D,G,E){$70\degres$}
+        \tkzLabelAngle[pos=.25](E,D,G){$33\degres$}
+    \end{scriptsize}
+\end{tikzpicture}

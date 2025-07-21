@@ -1,0 +1,1606 @@
+\documentclass[12pt,parskip=half-, twoside=semi]{scrartcl}
+\usepackage{mathtools}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{cmbright}  %police sans serif
+\usepackage{enumitem}
+\SetEnumitemKey{cols}
+{
+  before = \begin{multicols}{#1},
+    after = \end{multicols}
+    }
+\setlist[enumerate]{label=\textbf{\alph*)}, itemsep=1em}
+\usepackage[use-files]{xsim}
+
+
+\DeclareExerciseEnvironmentTemplate{mytemplate}
+{%
+    \medbreak
+    {\bfseries\XSIMmixedcase{\GetExerciseName}\nobreakspace\GetExerciseProperty{counter}.}%
+    \GetExercisePropertyT{points}{\marginpar{\makebox[4ex]{\dotfill}/\bfseries\PropertyValue}}
+    \GetExercisePropertyT{subtitle}{\normalfont\itshape\PropertyValue\par}
+    }%
+{\par}
+
+\xsimsetup{
+    path=xsim,
+    exercise/template=mytemplate
+}
+
+
+\usepackage[french]{babel}
+\usepackage{fontawesome5}
+\usepackage{tabularray}
+\usepackage{scrlayer-scrpage}
+%  \setlength{\headheight}{50pt}
+%  \lohead{Fiches d'exercices de drill}
+%  \rohead{Chapitre 4 - Fractions}
+\pagestyle{empty}
+
+
+\begin{document}
+
+%Niveau 1: calcul littéral de base + distributivité simple + produits remarquables + mise en évidence simple
+%Niveau 2: calcul littéral avec priorité des opérations + distributivité simple avec réductions + distributivité double + prod remarquables
+%Niveau 3: calcul littéral pour aller plus loin + distributivité double avec priorités op + mise en évidence en transfo + prod remarquables facto
+%Niveau 4: distributivité simple avec priorité des opérations + distrib pour aller plus loin + mise en évidence pour aller plus loin + factorisation + prod remarquables pour aller plus loin
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 1 \faIcon{star} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+%calcul litt
+\begin{exercise} Effectue.
+  \begin{enumerate}[cols=3]
+      \item \(12 a-5+7 a\)
+      \item \(-(6 x+3-7 x)\)
+      \item \(14 a^2+3 a-9 a^2\)
+      \item \(a-(2 b-6 a-b)\)
+      \item \(6 b-5 b+9 b\)
+      \item \(-(2 x-6 x+9 x)\)
+  \end{enumerate}
+\end{exercise}
+
+%distrib simple 
+\begin{exercise} Effectue les distributivités simples suivantes.
+  \begin{enumerate}[cols=2]
+    \item $-x \cdot(-a+2)$
+    \item $7 \cdot(-4 b-3 a)$
+    \item $5 \cdot(-2-a)$
+    \item $5 a \cdot(2-3 x)$
+    \item $(6 x-3 a) \cdot\left(-5 a^2\right)$
+    \item $-2 a \cdot(3-4 x)$
+    \item $(-4 a x-3 a b) \cdot(-5 x)$
+    \item $5 x \cdot(-a-x)$
+  \end{enumerate}
+\end{exercise}
+
+%produits remarquables simples
+\begin{exercise} Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=2]
+    \item $(a+b)^2$
+    \item $(2 x+1)^2$
+    \item $(a-b)^2$
+    \item $(3 x-3)^2$
+    \item $(-b+a)^2$
+    \item $(-x-y) \cdot(x-y)$
+    \item $\left(x^8-y^7\right) \cdot\left(-y^7-x^8\right)$
+    \item $\left(-x^3+a^6\right) \cdot\left(-a^6-x^3\right)$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence
+\begin{exercise} Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+    \item $-x^2 z-a z$
+    \item $-13 x z-39 x y$
+    \item $8x-16ax$
+    \item $a^2x -ax^2$
+  \end{enumerate}
+\end{exercise}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+%Correctif
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 1 \faIcon{star} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+%calcul litt
+\begin{exercise} Effectue.
+  \begin{enumerate}[cols=3]
+      \item \(-(5-2 x+1)\)
+      \item \(6 x-(3+4 x)\)
+      \item \(-6 a^2+3 a^2-25 a\)
+      \item \(-(-7 y-y+4)\)
+      \item \(2 b-(-5-9-b)\)
+      \item \(7 a+(-12 a)-7 a\)
+  \end{enumerate}
+\end{exercise}
+
+%distrib simple 
+\begin{exercise} Effectue les distributivités simples suivantes.
+  \begin{enumerate}[cols=2]
+    \item $(a x+6 a x) \cdot 3 a$
+    \item $-4 a \cdot(-5 x+1)$
+    \item $\left(2 a^2 x-5 a c\right), 4 b c$.
+    \item $(-2 c+4 x) \cdot(-9 a x)$
+    \item $-3 a \cdot(-8-9 x)$
+    \item $(3 x+2) \cdot 5 x$
+    \item $-3 \cdot(-5 x+2 c)$
+    \item $-a \cdot(-3+2 a)$
+  \end{enumerate}
+\end{exercise}
+
+%produits remarquables simples
+\begin{exercise} Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=2]
+    \item $(-c-y)^2$
+    \item $(7 x+1)^2$
+    \item $(-3 x-9)^2$
+    \item $(-x+2)^2$
+    \item $(x+9)^2$
+    \item $(-8 x+3) \cdot(-3-8 x)$
+    \item $\left(-x^{11}-y^2\right) \cdot\left(-y^2+x^{11}\right)$
+    \item $\left(a^9-b^6\right) \cdot\left(-b^6-a^9\right)$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence
+\begin{exercise} Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+    \item $a^2+a b$
+    \item $15 a+5 a b$
+    \item $x y+x^2 y$
+    \item $16 x-32 x y$
+  \end{enumerate}
+\end{exercise}
+
+
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%CORRECTIF 
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 1 \faIcon{star} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+%calcul litt
+\begin{exercise} Effectue.
+  \begin{enumerate}[cols=3]
+      \item \(19a-5\)
+      \item \(x-3\)
+      \item \(5a^2+3a\)
+      \item \(7a-b\)
+      \item \(10b\)
+      \item \(-5x\)
+  \end{enumerate}
+\end{exercise}
+
+%distrib simple 
+\begin{exercise} Effectue les distributivités simples suivantes.
+  \begin{enumerate}[cols=2]
+    \item $ax-2x$
+    \item $-28b-21a$
+    \item $-10-5a$
+    \item $10a-15ax$
+    \item $-30a^2x+15a^3$
+    \item $-6a+8ax$
+    \item $20ax^2+15abx$
+    \item $-5ax-5x^2$
+  \end{enumerate}
+\end{exercise}
+
+%produits remarquables simples
+\begin{exercise} Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=2]
+    \item $a^2+2ab+b^2$
+    \item $4x^2+4x+1$
+    \item $a^2-2ab+b^2$
+    \item $9x^2-18x+9$
+    \item $a^2-2ab+b^2$
+    \item $y^2-x^2$
+    \item $y^{14}-x^{16}$
+    \item $x^6-a^{12}$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence
+\begin{exercise} Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+    \item $-z(x^2+a)$
+    \item $-13x(z+3y)$
+    \item $8x(1-2a)$
+    \item $ax(a-x)$
+  \end{enumerate}
+\end{exercise}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 1 \faIcon{star} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+%calcul litt
+\begin{exercise} Effectue.
+  \begin{enumerate}[cols=3]
+      \item \(-6+2x\)
+      \item \(2x-3\)
+      \item \(-3a^2-25a\)
+      \item \(8y-4\)
+      \item \(3b+14\)
+      \item \(-12a\)
+  \end{enumerate}
+\end{exercise}
+
+%distrib simple 
+\begin{exercise} Effectue les distributivités simples suivantes.
+  \begin{enumerate}[cols=2]
+    \item $21a^2x$
+    \item $20ax-4a$
+    \item $8a^2bcx-20abc^2$
+    \item $18acx-36ax^2$
+    \item $24a+27ax$
+    \item $15x^2+10x$
+    \item $15x-6c$
+    \item $3a-2a^2$
+  \end{enumerate}
+\end{exercise}
+
+%produits remarquables simples
+\begin{exercise} Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=2]
+    \item $c^2+2cy+y^2$
+    \item $49x^2+14x+1$
+    \item $9x^2+54x+81$
+    \item $x^2-4x+4$
+    \item $x^2+18x+81$
+    \item $64x^2-9$
+    \item $y^4-x^{22}$
+    \item $b^{12}-a^{18}$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence
+\begin{exercise} Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+    \item $a(a+b)$
+    \item $5a(3+b)$
+    \item $xy(1+x)$
+    \item $16x(1-2y)$
+  \end{enumerate}
+\end{exercise}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 1 \faIcon{star} - Fiche 3
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+%calcul litt
+\begin{exercise}Effectue.
+  \begin{enumerate}[cols=3]
+      \item \(12 c-(4 c-3 c)\)
+      \item \(-6 a x+13 a x-9\)
+      \item \(-(4-7+2)\)
+      \item \(9 a-(-5 a-5)\)
+      \item \(-6 a b-9 a b-15 a b\)
+      \item \(-(-8 b+b-16 b)\)
+  \end{enumerate}
+\end{exercise}
+
+%distrib simple 
+\begin{exercise}Effectue les distributivités simples suivantes.
+  \begin{enumerate}[cols=2]
+    \item $-4 \cdot(5 a+3)$
+    \item $x \cdot(2 a-6)$
+    \item $2 \cdot(-3 x+2 a)$
+    \item $\left(7 a x^2+3 a b\right) \cdot(-2 a c)$
+    \item $2 x \cdot(x+4)$
+    \item $(-b+4 a c) \cdot 2 c$
+    \item $7 a \cdot(-a+3 x)$
+    \item $(-a-b) \cdot(-5 a)$
+  \end{enumerate}
+\end{exercise}
+
+%produits remarquables simples
+\begin{exercise}Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=2]
+    \item $(2 x+1)^2$
+    \item $(3 x-3)^2$
+    \item $(-2+5 x)^2$
+    \item $(-b-a)^2$
+    \item $(5-x)^2$
+    \item $(x-y) \cdot(-y-x)$
+    \item $(-5 x-1) \cdot(-1+5 x)$
+    \item $\left(-2 b^2+3 x\right) \cdot\left(-3 x-2 b^2\right)$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence
+\begin{exercise}Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+    \item $x z^2+x$
+    \item $17 a z+51 a$
+    \item $-a^2 x^2+a x$
+    \item $-60 x+15 a x$
+  \end{enumerate}
+\end{exercise}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 2 \faIcon{star}\faIcon{star} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral avec priorité
+\begin{exercise}Effectue en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+    \item $-17 a-(5 a+3 a)$
+    \item $5 x y+3 x y \cdot (-2)-(5x+3y)$
+    \item $13 \cdot 2 a-5 y: 5+2 x-1$
+    \item $-4 a+2 \cdot(a-5)-(-6 a-3 a-2)$
+    \item $6 a+(3 b-2)+4 \cdot 3 a$
+    \item $122:(-2)+33 \cdot(2-x)$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité simple avec réductions
+\begin{exercise}Effectue les distributivités simples suivantes. Attention à toujours réduire aux maximum.
+  \begin{enumerate}[cols=2]
+    \item $-a \cdot(4 x+2)-2 x \cdot(3 a-1)$
+    \item $(4 x-6) \cdot(-2 a)-(-8 a x)$
+    \item $10 x^2+3 x \cdot(6 x-2 a)+6 a x$
+    \item $5 \cdot 2 x+3 \cdot(6 x-3 a)+2 \cdot(3 a-5 x)$
+    \item $5 a \cdot(-2-4 x)-3 \cdot(2 a+5)$
+    \item $10 \cdot(-4 x-a)-5 \cdot(8 x+2 a)$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité double 
+\begin{exercise}Effectue les distributivités doubles suivantes.
+  \begin{enumerate}[cols=3]
+    \item $(2 a-1) \cdot(a+2)$
+    \item $(-x+c) \cdot(-d+x)$
+    \item $(5+a) \cdot(2-x)$.
+    \item $(-b+a) \cdot(a+x)$
+    \item $(-4+x) \cdot(x+1)$
+    \item $(x-c) \cdot(-x+c)$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables
+\begin{exercise}Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+      \item $(-c-y)^2$
+      \item $(7 x+1)^2$
+      \item $(b-a)^2$
+      \item $(-3 x-9)^2$
+      \item $(6 b-2) \cdot(6 b+2)$
+      \item $\left(-4 a^3 x-1\right)^2$
+      \item $(-y-x)^2$
+      \item $(-x+2)^2$
+      \item $(11 y+8) \cdot(11 y+8)$
+      \item $(5 x-3) \cdot(-3+5 x)$
+      \item $(2+y) \cdot(y+2)$
+      \item $(-8 b+2) \cdot(-8 b+2)$
+  \end{enumerate}
+\end{exercise}
+
+
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%CORRECTIF 
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%CORRECTIF 
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 1 \faIcon{star} - Fiche 3
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+%calcul litt
+\begin{exercise}Effectue.
+  \begin{enumerate}[cols=3]
+      \item \(11c\)
+      \item \(7ax-9\)
+      \item \(1\)
+      \item \(14a+5\)
+      \item \(-30ab\)
+      \item \(23b\)
+  \end{enumerate}
+\end{exercise}
+
+%distrib simple 
+\begin{exercise}Effectue les distributivités simples suivantes.
+  \begin{enumerate}[cols=2]
+    \item $-20a-12$
+    \item $2ax-6x$
+    \item $-6x+4a$
+    \item $-14a^2cx^2-6a^2bc$
+    \item $2x^2+8x$
+    \item $-2bc+8ac^2$
+    \item $-7a^2+21ax$
+    \item $5a^2+5ab$
+  \end{enumerate}
+\end{exercise}
+
+%produits remarquables simples
+\begin{exercise}Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=2]
+    \item $4x^2+4x+1$
+    \item $9x^2-18x+9$
+    \item $25x^2-20x+4$
+    \item $b^2+2ab+a^2$
+    \item $x^2-10x+25$
+    \item $y^2-x^2$
+    \item $1-25x^2$
+    \item $4b^4-9x^2$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence
+\begin{exercise}Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+    \item $x(z^2+1)$
+    \item $17a(z+3)$
+    \item $-ax(ax-1)$
+    \item $-15x(4-a)$
+  \end{enumerate}
+\end{exercise}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 2 \faIcon{star}\faIcon{star} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral avec priorité
+\begin{exercise}Effectue en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+    \item $-25a$
+    \item $-xy-5x-3y$
+    \item $26a-y+2x-1$
+    \item $7a-8$
+    \item $18a+3b-2$
+    \item $5-33x$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité simple avec réductions
+\begin{exercise}Effectue les distributivités simples suivantes. Attention à toujours réduire aux maximum.
+  \begin{enumerate}[cols=2]
+    \item $-10ax-2a+2x$
+    \item $12a$
+    \item $28x^2$
+    \item $18x-3a$
+    \item $-16a-20ax-15$
+    \item $-80x-20a$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité double 
+\begin{exercise}Effectue les distributivités doubles suivantes.
+  \begin{enumerate}[cols=3]
+    \item $2a^2+3a-2$
+    \item $dx-x^2-cd+cx$
+    \item $10-5x+2a-ax$
+    \item $-ab-bx+a^2+ax$
+    \item $x^2-3x-4$
+    \item $-x^2+2cx-c^2$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables
+\begin{exercise}Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+      \item $c^2+2cy+y^2$
+      \item $49x^2+14x+1$
+      \item $b^2-2ab+a^2$
+      \item $9x^2+54x+81$
+      \item $36b^2-4$
+      \item $16a^6x^2+8a^3x+1$
+      \item $y^2+2xy+x^2$
+      \item $x^2-4x+4$
+      \item $121y^2+176y+64$
+      \item $25x^2-30x+9$
+      \item $y^2+4y+4$
+      \item $64b^2-32b+4$
+  \end{enumerate}
+\end{exercise}
+
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 2 \faIcon{star}\faIcon{star} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral avec priorité
+\begin{exercise}Effectue en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+    \item $-5 a \cdot 2 b+3 a$
+    \item $17 a^2+3 \cdot\left(a^2+1\right)$
+    \item $7 y \cdot 2+5 x \cdot 3-(5 x+3 y)$
+    \item $15 a b+3 a \cdot(2 b+6)-5 \cdot(a-3 a b)$
+    \item $12 x \cdot(-3)-3-(2 x+a)$
+    \item $7 a \cdot(x+2)-(7 x+3 a x)$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité simple avec réductions
+\begin{exercise}Effectue les distributivités simples suivantes. Attention à toujours réduire aux maximum.
+  \begin{enumerate}[cols=2]
+    \item $-5-3 \cdot(x-1)+9 x$
+    \item $-12 a+3 \cdot(7 x-1)-2 a \cdot(5+3 x)$
+    \item $7 \cdot(2 a-3 b)+13 \cdot 5 b$
+    \item $9 \cdot 3 a+15 \cdot(2 a-7)-a \cdot(-2+x)$
+    \item $(-7 x+3) \cdot 7-7 x \cdot(9 a-7)$
+    \item $-5 \cdot(2 a-7 x+3 b)-(a-b+x)$
+  \end{enumerate}
+\end{exercise}
+
+
+%distributivité double 
+\begin{exercise}Effectue les distributivités doubles suivantes.
+  \begin{enumerate}[cols=3]
+    \item $(-b+c) \cdot(-b+c)$.
+    \item $(x+2) \cdot(-9+a)$
+    \item $(a+x) \cdot(a-x)$
+    \item $(-c+3) \cdot(-6-c)$
+    \item $(x-c) \cdot(-c+a)$
+    \item $(-1-a) \cdot(5+b)$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables
+\begin{exercise}Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+      \item $(a+b)^2$
+      \item $(2 x+1)^2$
+      \item $(a-b)^2$
+      \item $(3 x-3)^2$
+      \item $(2-5 x) \cdot(-5 x-2)$
+      \item $\left(5-a^4\right) \cdot\left(-a^4-5\right)$
+      \item $(-c+b)^2$
+      \item $(-2+5 x)^2$
+      \item $(-b-a)^2$
+      \item $(4+3 y)^2$
+      \item $(2 a-3) \cdot(-3+2 a)$
+      \item $(-5-x) \cdot(-x-5)$
+  \end{enumerate}
+\end{exercise}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 2 \faIcon{star}\faIcon{star} - Fiche 3
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral avec priorité
+\begin{exercise}Effectue en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+    \item $-50 a:(-2)+13 a-b$
+    \item $4 x^2+4 x \cdot x-2 \cdot\left(5 x^2-3\right)$
+    \item $-(3 x+7)-(2-4 x)-(-2-9 x)$
+    \item $-50:(-2)-a \cdot(3 b+4)-(5 b+6 a b)$
+    \item $15:(-3)+12 a-(a+5)$
+    \item $6 a-(5 a+3-2 b)-(6 b+9 a)$
+  \end{enumerate}
+\end{exercise}
+ 
+%distributivité simple avec réductions 
+\begin{exercise}Effectue les distributivités simples suivantes. Attention à toujours réduire aux maximum.
+  \begin{enumerate}[cols=2]
+    \item $12 \cdot(a+3)+5 \cdot(x-9)$
+    \item $-4 x \cdot(2 a-3 c)+3 \cdot 5 c-4 a$
+    \item $-6 \cdot(x-6)+6 \cdot(x+6)$
+    \item $(-8-2 a) \cdot(-x)+5 a \cdot(3 x-1)$
+    \item $10 \cdot(3 x-2)+3 \cdot(2 x+1)$
+    \item $-2 \cdot(3 a-8)-6 \cdot(-a+3)$
+  \end{enumerate}
+\end{exercise}
+
+
+%distributivité double 
+\begin{exercise}Effectue les distributivités doubles suivantes.
+  \begin{enumerate}[cols=3]
+    \item $(-a-b) \cdot(-c-d)$
+    \item $(x+2) \cdot(c-6)$.
+    \item $[b-(-c)] \cdot(x+a)$
+    \item $(a+8) \cdot(-a+5)$
+    \item $(-c-a) \cdot(x+b)$
+    \item $(b-4) \cdot(3-a)$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables
+\begin{exercise}Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+      \item $(-b+a)^2$
+      \item $(5-x)^2$
+      \item $(x+y)^2$
+      \item $(3 a-x) \cdot(-3 a-x)$
+      \item $(5a+3) \cdot(-5a+3)$
+      \item $\left(-b^2+x\right)^2$
+      \item $(x+9)^2$
+      \item $(x-y)^2$
+      \item $(12-3 x)^2$
+      \item $(10 x+3) \cdot(10 x+3)$
+      \item $(3 x-6) \cdot(-6+3 x)$
+      \item $(7 a+2) \cdot(2+7 a)$
+  \end{enumerate}
+\end{exercise}
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%CORRECTIF
+
+
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%CORRECTIF
+
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 2 \faIcon{star}\faIcon{star} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral avec priorité
+\begin{exercise}Effectue en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+    \item $-10ab+3a$
+    \item $20a^2+3$
+    \item $11y+10x$
+    \item $36ab+13a$
+    \item $-38x-3-a$
+    \item $4ax+14a-7x$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité simple avec réductions
+\begin{exercise}Effectue les distributivités simples suivantes. Attention à toujours réduire aux maximum.
+  \begin{enumerate}[cols=2]
+    \item $-2+6X$
+    \item $-22a+21x-3-6ax$
+    \item $14a+44b$
+    \item $59a-105-ax$
+    \item $21-63ax$
+    \item $-11a+34x-14b$
+  \end{enumerate}
+\end{exercise}
+
+
+%distributivité double 
+\begin{exercise}Effectue les distributivités doubles suivantes.
+  \begin{enumerate}[cols=3]
+    \item $c^2-2bc+b^2$
+    \item $-9x+ax-18+2a$
+    \item $a^2-x^2$
+    \item $c^2+3c-18$
+    \item $-cx+ax+c^2-ac$
+    \item $-5-b-5a-ab$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables
+\begin{exercise}Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+      \item $a^2+2ab+b^2$
+      \item $4x^2+4x+1$
+      \item $a^2-2ab+b^2$
+      \item $9x^2-18x+9$
+      \item $25x^2-4$
+      \item $a^8-25$
+      \item $b^2-2bc+c^2$
+      \item $25x^2-20x+4$
+      \item $b^2+2ab+a^2$
+      \item $9y^2+24y+16$
+      \item $4a^2-12a+9$
+      \item $x^2+10x+25$
+  \end{enumerate}
+\end{exercise}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 2 \faIcon{star}\faIcon{star} - Fiche 3
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral avec priorité
+\begin{exercise}Effectue en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+    \item $38a-b$
+    \item $-2x^2+6$
+    \item $10x-7$
+    \item $25-9ab-4a-5b$
+    \item $-10+11a$
+    \item $-8a-3-4b$
+  \end{enumerate}
+\end{exercise}
+ 
+%distributivité simple avec réductions 
+\begin{exercise}Effectue les distributivités simples suivantes. Attention à toujours réduire aux maximum.
+  \begin{enumerate}[cols=2]
+    \item $12a-9+5x$
+    \item $-8ax+12cx+15c-4a$
+    \item $72$
+    \item $8x+17ax-5a$
+    \item $36x-17$
+    \item $-2$
+  \end{enumerate}
+\end{exercise}
+
+
+%distributivité double 
+\begin{exercise}Effectue les distributivités doubles suivantes.
+  \begin{enumerate}[cols=3]
+    \item $ac+ad+bc+bd$
+    \item $cx-6x+2c-12$
+    \item $bx+ab+cx+ac$
+    \item $-a^2-3a+40$
+    \item $-cx-bc-ax-ab$
+    \item $3b-ab-12+4a$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables
+\begin{exercise}Effectue les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+      \item $a^2-2ab+b^2$
+      \item $x^2-10x+25$
+      \item $x^2+2xy+y^2$
+      \item $x^2-9a^2$
+      \item $9-25a^2$
+      \item $x^2-2b^2x+b^4$
+      \item $x^2+18x+81$
+      \item $x^2-2xy+y^2$
+      \item $9x^2-72x+144$
+      \item $100x^2+60x+9$
+      \item $9x^2-36x+36$
+      \item $49a^2+28a+4$
+  \end{enumerate}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 3 \faIcon{star}\faIcon{star}\faIcon{star} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+
+%calcul littéral pour aller plus loin 
+\begin{exercise}Effectue.
+  \begin{enumerate}[cols=2]
+    \item $-\left(3 a+5 a^2\right)-7 a \cdot a+12 a:(-6)$
+    \item $5 a-7 \cdot(-a)+4 \cdot(2 a-6)+3$
+    \item $-5 x y+7 x \cdot(-3 y-2 x)+4 x \cdot 3 x$
+    \item $75 \cdot(a-b)-15 a-6 a:(-2)$
+    \item $-4 x-[7 x+2-(3 x+1)-3 x]-[x-(2 x+7-1)-3 \cdot(-2 x)]$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité double avec priorités op 
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+     \item $-(x+b) \cdot(c+a)$
+     \item $-(a-x) \cdot(-c-a)$
+     \item $-(8+x) \cdot(-x-8)$
+     \item $\left(a^4-y^2\right) \cdot\left(a^3 y^7-a^6 y^6\right)$.
+     \item $\left(8 x^4-a^6 x^3\right) \cdot\left(3 a+2 a^7 x^2\right)$
+     \item $\left(-a^{10} b^5+b^4 x^8\right) \cdot\left(-a b^3-a^5 b^7 x^3\right)$
+     \item $\left(-5 a^2+2 x^4\right) \cdot\left(-3 a^7-2 a x^7\right)$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence en transfo 
+\begin{exercise}Mets en évidence en pensant à transformer l'écriture si nécessaire.
+  \begin{enumerate}[cols=2]
+      \item $12 a^3-6 a^2 b$
+      \item $10 a^2 b-15 a b^2+45 a^2 b$
+      \item $-16 x^4-36 a x^5$
+      \item $9 y z+27 y^2 z^2+36 y z^2$
+      \item $-20 b^2 z^6+30 b z^8$
+      \item $6 x^7 z^2-54 x^7 z$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables facto
+\begin{exercise}Factorise les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+    \item $x^2-y^2$
+    \item $1-x^2$
+    \item $121 x^4+16-88 x^2$
+    \item $9 x^2+9 y^2+18 x y$
+    \item $4 x^2+36 y^4-24 x y^2$
+    \item $64+49 x^2+112 x$
+  \end{enumerate}
+\end{exercise}
+
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 3 \faIcon{star}\faIcon{star}\faIcon{star} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral pour aller plus loin 
+\begin{exercise}Effectue.
+  \begin{enumerate}[cols=2]
+    \item $-[-3+5 a \cdot(-2)+6]+2 a \cdot(-5)-13$
+    \item $(15 a+1) \cdot 2+6-[3 a-2-(5+a)]$
+    \item $-[-(-3 b+2 a)-(5 a-2 b)]+4 b$
+    \item $7 a^2 b-5 b+\left[2-6 a^2 \cdot 3 b+2 \cdot(-8 b)\right]$
+    \item $3 a b+5 a \cdot(3 b-2)-(-6 a \cdot b)+77: 11$
+  \end{enumerate}
+\end{exercise}
+
+
+%distributivité double avec priorités op 
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+     \item $-(5 x+6) \cdot(-6 b+1)$
+     \item $-(a+b) \cdot(a-c)$
+     \item $-(2 x+1) \cdot(5+a)$
+     \item $\left(a^{10}-b^5 c^6\right) \cdot\left(a^2-c^{11}\right)$
+     \item $\left(-6 b^3 x^2-7 a^8 x^3\right) \cdot\left(-5 b x^3+8 a b^5 x^4\right)$
+     \item $\left(x^8 y^3+a^2 x^6\right) \cdot\left(-a^8+x^4 y^3\right)$
+     \item $\left(7 a^8 c^5+a^2\right) \cdot\left(9 a b c^5+6 c^6\right)$
+  \end{enumerate}
+\end{exercise}
+
+
+%mise en évidence en transfo 
+\begin{exercise}Mets en évidence en pensant à transformer l'écriture si nécessaire.
+  \begin{enumerate}[cols=2]
+      \item $-20 b z^2-4 b^2 z-28 b^2 z^2$
+      \item $9 x^2 y^6+15 x^5 y^4$
+      \item $144 a z^2+24 a^2+48 a^2 z^2$
+      \item $-7 z^9-10 z^6$
+      \item $-12 y^2 z^2-44 y z-56 y^2 z$
+      \item $-11 a^2 b^2-15 a^2 b-7 a b^2$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables facto
+\begin{exercise}Factorise les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+    \item $4 x^4+16 y^2-16 x^2 y$
+    \item $36 b^2+49+84 b$
+    \item $a^8-b^2$
+    \item $144-16 y^4$
+    \item $100 x^2-64 x^2 y^2$
+    \item $81 x^2-36$
+  \end{enumerate}
+\end{exercise}
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%CORRECTIF
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 3 \faIcon{star}\faIcon{star}\faIcon{star} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+
+%calcul littéral pour aller plus loin 
+\begin{exercise}Effectue.
+  \begin{enumerate}[cols=2]
+    \item $-5a-12a^2$
+    \item $20a-21$
+    \item $-26xy-2x^2$
+    \item $63a-75b$
+    \item $-10x+5$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité double avec priorités op 
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+     \item $-(cx+ax+bc+ab)$
+     \item $-(-ac-a^2+cx+ax)$
+     \item $x^2+16x+64$
+     \item $a^7y^7-a^9y^6-a^3y^9+a^5y^8$
+     \item $24ax^4+16a^7x^6-3a^7x^3-2a^{13}x^5$
+     \item $a^{11}b^8+a{15}b{12}x^3-ab^7x^8-a^5b^{11}x{11}$
+     \item $15a^9+10a^3x^7-6a^7x^4-4ax{11}$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence en transfo 
+\begin{exercise}Mets en évidence en pensant à transformer l'écriture si nécessaire.
+  \begin{enumerate}[cols=2]
+      \item $6a^2(2a-b)$
+      \item $55a^2b-15ab^2$
+      \item $-4x^4(4+9ax)$
+      \item $9yz(1+3yz+4z)$
+      \item $-10bz^6(2b-3z^2)$
+      \item $6x^7z(z-9)$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables facto
+\begin{exercise}Factorise les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+    \item $(x-y)(x+y)$
+    \item $(1-x)(1+x)$
+    \item $(11x^2-4)^2$
+    \item $9(x+y)^2$
+    \item $4(x-3y^2)^2$
+    \item $(8+7x)^2$
+  \end{enumerate}
+\end{exercise}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 3 \faIcon{star}\faIcon{star}\faIcon{star} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral pour aller plus loin 
+\begin{exercise}Effectue.
+  \begin{enumerate}[cols=2]
+    \item $-16$
+    \item $28a+15$
+    \item $-b+7a$
+    \item $-11a^2b-21b+2$
+    \item $24ab-10a+7$
+  \end{enumerate}
+\end{exercise}
+
+
+%distributivité double avec priorités op 
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+     \item $30bx-5x+36b-6$
+     \item $-(a^2-ac+ab-bc)$
+     \item $-10x-2ax-5-a$
+     \item $a^{12}-a^{10}c^{11}-a^2b^5c^6+b^5c^{17}$
+     \item $30b^4x^5-48ab^8x^6+35a^8bx^6-56a^9b^5x^7$
+     \item $-a^8x^8y^3+x^{12}y^6-a^{10}x^6+a^2x^{10}y^3$
+     \item $63a^9bc^{10}+42a^8c^{11}+9a^3bc^5+6a^2c^6$
+  \end{enumerate}
+\end{exercise}
+
+
+%mise en évidence en transfo 
+\begin{exercise}Mets en évidence en pensant à transformer l'écriture si nécessaire.
+  \begin{enumerate}[cols=3]
+      \item $-4bz(5z+b+7bz)$
+      \item $3x^2y^4(3y^2+5x^3)$
+      \item $24a(6z^2+a+2az^2)$
+      \item $-z^6(7z^3+10)$
+      \item $-4yz(3yz+11+14y)$
+      \item $-ab(11ab+15a+7b)$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables facto
+\begin{exercise}Factorise les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+    \item $4(x^2-2y)^2$
+    \item $(6b+7)^2$
+    \item $(a^4-b)(a^4+b)$
+    \item $(12-4y^2)(12+4y^2)$
+    \item $(10x-8xy)(10x-8xy)$
+    \item $(9x-6)(9x+6)$
+  \end{enumerate}
+\end{exercise}
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 3 \faIcon{star}\faIcon{star}\faIcon{star} - Fiche 3
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral pour aller plus loin 
+\begin{exercise}Effectue.
+  \begin{enumerate}[cols=2]
+    \item $4 a-(b+2 a)-a \cdot a+5 b \cdot(-2 a)$
+    \item $40:(-2)-(-5 x)-(2 x-6)+(-1)$
+    \item $4 y \cdot(-4)-5 x \cdot(-2)-(7 x-3 y)+y$
+    \item $6 b c-[a \cdot(2 b+c)-c \cdot(3 a-5 b)]$
+    \item $-(a-3)-(-a-3)+(-a-3)-(-a+3)$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité double avec priorités op 
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+     \item $-(-a+x) \cdot(a+c)$
+     \item $-(x-c) \cdot(-a+c)$
+     \item $-(-6 x+1) \cdot(-2 x-3)$
+     \item $\left(-x^7+a^6 x^3\right) \cdot\left(x^9+a^8\right)$
+     \item $\left(-2 a^3+11 c^5 x^5\right) \cdot\left(11 a^2+10 c^6\right)$
+     \item $\left(-b^{15} c^7-x^6\right) \cdot\left(-b^3 x^{11}-c^5 x^6\right)$
+     \item $\left(10 a^2-4 b^2 x^4\right) \cdot\left(6 a b^4-2 a x^7\right)$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence en transfo 
+\begin{exercise}Mets en évidence en pensant à transformer l'écriture si nécessaire.
+  \begin{enumerate}[cols=2]
+      \item $11 a^8 b^2+33 a^7 b^5$
+      \item $8 a-72 a^2 b+40 a x^2$
+      \item $2 b^7 z^2-8 b^5 z$
+      \item $-12 y^2 z^2+15 y z-18 y^2 z$
+      \item $-10 a x^7-75 a^3 x^5$
+      \item $-14 b^5 x^4+70 b^3 x^2$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables facto
+\begin{exercise}Factorise les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+    \item $81 x^2+25+90 x$
+    \item $x^2+9+6 x$
+    \item $121+16 x^2-88 x$
+    \item $a^2+b^2+2 a b$
+    \item $4 x^4-81$
+    \item $9 a^2-25$
+  \end{enumerate}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 4 \faIcon{crown} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+ 
+\setcounter{exercise}{0}
+
+%distributivité simple avec priorité des opérations
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate} [cols=2]
+      \item $-9 x^8 \cdot\left(a^6+2 x^3\right)$
+      \item $16 x \cdot 2 a x^4+3 x^3 \cdot\left(2 x^2-1\right)$
+      \item $-\left(5 a^2 b^3-8 a^7 x\right)+5 b^2 \cdot a^2 b$
+      \item $-8 x+2 \cdot(5 x-1)-(4 x-3) \cdot(8+1)$
+      \item $5 x^2 \cdot 3 a+4 a^2 \cdot(5 x-1)+2 a \cdot 5 a x$
+      \item $8 x^2-3 \cdot(5-4 x)+\left(x^2-1\right) \cdot(a-3)$
+  \end{enumerate}
+\end{exercise}
+
+
+%mise en évidence pour aller plus loin 
+\begin{exercise}Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+      \item $7 a \cdot(4 a-4)+(-4 a+4) \cdot 8$
+      \item $(9+x) \cdot(x+9)-(-x-9) \cdot(x+3)$
+      \item $(b y+6) \cdot(b-y)+b y \cdot(-b+y)$
+      \item $(7-x) \cdot(6-x)+(-x+7) \cdot(-6-x)$
+      \item $4 a b \cdot(5 a+2)-(-2-5 a) \cdot 5$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables pour aller plus loin
+\begin{exercise}Effectue. Attention aux produits remarquables.
+  \begin{enumerate}
+      \item $12: 4-3 \cdot\left[4 x^4-1+(2 x \cdot 3 x)\right]+\left(x^2-3 x\right) \cdot\left(-3 x-x^2\right)$
+      \item $(5+2 x) \cdot(2 x+5)-(7 x+3) \cdot(-7 x+3)-(x-1)^2$
+      \item $-(x-1)^2+4 x \cdot 2$
+      \item $-[2 x-(-3+5)]+(x-5)^2$
+      \item $(5+2 x) \cdot(2 x+5)-(7 x+3) \cdot(-7 x+3)-(x-1)^2$
+      \item $12: 4-3 \cdot\left[4 x^4-1+(2 x \cdot 3 x)\right]+\left(x^2-3 x\right) \cdot\left(-3 x-x^2\right)$
+  \end{enumerate}
+\end{exercise}
+
+
+\newpage 
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%CORRECTIF 
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 3 \faIcon{star}\faIcon{star}\faIcon{star} - Fiche 3
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+
+\setcounter{exercise}{0}
+
+%calcul littéral pour aller plus loin 
+\begin{exercise}Effectue.
+  \begin{enumerate}[cols=2]
+    \item $2a-b-a^2-10ab$
+    \item $-15+3X$
+    \item $-12y+3X$
+    \item $bc-2ab+2ac$
+    \item $0$
+  \end{enumerate}
+\end{exercise}
+
+%distributivité double avec priorités op 
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+     \item $-(a^2-ac+ax+cx)$
+     \item $-(-ax+cx+ac-c^2)$
+     \item $-12x^2-16x+3$
+     \item $-x^{16}-a^9x^7+a^6x^{12}+a^{15}x^3$
+     \item $-22a^5-20a^3c^6+121a^2c^5x^5+110c^{11}x^5$
+     \item $b^18c^7x^{11}+b^{15}c{^12}+b^3x^{17}+c^5x^6$
+     \item $60a^3b^4-20a^3x^7-24ab^6x^4+8ab^2x^{11}$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence en transfo 
+\begin{exercise}Mets en évidence en pensant à transformer l'écriture si nécessaire.
+  \begin{enumerate}[cols=2]
+      \item $11a^3b^2(1+3a^4b^3)$
+      \item $8a(1-9ab+5x^2)$
+      \item $2b^5(b^2z-4)$
+      \item $-3yz(4yz-5+6y)$
+      \item $-5ax^5(2x^2+15a^2)$
+      \item $-14b^3x^2(b^2x^2-5)$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables facto
+\begin{exercise}Factorise les produits remarquables suivants.
+  \begin{enumerate}[cols=3]
+    \item $(9x+5)^2$
+    \item $(x+3)^2$
+    \item $(11-4x)^2$
+    \item $(a+b)^2$
+    \item $(2x^2-9)(2x^2+9)$
+    \item $(3a-5)(3a+5)$
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 4 \faIcon{crown} - Fiche 1
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+ 
+\setcounter{exercise}{0}
+
+%distributivité simple avec priorité des opérations
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+      \item $-9a^6x^8-18x^{11}$
+      \item $32ax^5+6x^5-3x^3$
+      \item $8a^7x$ 
+      \item $-34x+25$
+      \item $15ax^2+30a^2x-4a^2$
+      \item $5x^2-12+12x+ax^2-a$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence pour aller plus loin 
+\begin{exercise}Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+      \item $28a^2-60a+32$
+      \item $2x^2+30x+108$
+      \item $6b-6y$
+      \item $-14x+2x^2$
+      \item $20a^2b+8ab+10+25a$
+  \end{enumerate}
+\end{exercise}
+
+
+%prod remarquables pour aller plus loin
+\begin{exercise}Effectue. Attention aux produits remarquables.
+  \begin{enumerate}
+      \item $-13x^4+9x^2+3x+6$
+      \item $52x^2+22x+15$
+      \item $-x^2+10x-1$
+      \item $x^2-12x+27$
+      \item $52x^2+22x+15$
+      \item $-13x^4-9x^2+6$
+  \end{enumerate}
+\end{exercise}
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%CORRECTIF
+
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%CORRECTIF
+\newpage
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 4 \faIcon{crown} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+ 
+\setcounter{exercise}{0}
+
+%distributivité simple avec priorité des opérations
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+      \item $4 a^2 x \cdot\left(2 a-a^7\right)$
+      \item $-2 x \cdot\left(7 a^2\right)+2 x^2 \cdot\left(3 x-5 x^3\right)$
+      \item $3 b^2 c \cdot 3 a b^5-\left(7 a \cdot 3 a b^7\right)+1$ 
+      \item $\left(4 x^2-3\right) \cdot x^2+3 x^2 \cdot(4 x-3)$
+      \item $-a^3 \cdot\left(2 x-a^2\right)-x \cdot\left(-2 a^2+4 a^3\right)$
+      \item $\left(2 x^2-3 a^3\right) \cdot\left(5 a-x^2\right)+4 x^3 \cdot(2 x-1)$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence pour aller plus loin 
+\begin{exercise}Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+      \item $(-x+a) \cdot(a+x)+(a-2) \cdot(x-a)$
+      \item $(5-y) \cdot 7 y-(y-5) \cdot(2 y+1)$
+      \item $(6 x-b) \cdot(6+a)+(b-6 x) \cdot 4 a$
+      \item $(-y-a) \cdot(-3+y)-(y-3) \cdot(y+1)$
+      \item $(2 b-1) \cdot(-1+b)-(-1+b) \cdot(-2 b-1)$
+  \end{enumerate}
+\end{exercise}
+
+
+%prod remarquables pour aller plus loin
+\begin{exercise}Effectue. Attention aux produits remarquables.
+  \begin{enumerate}
+      \item $-(x-1)^2+4 x \cdot 2$
+      \item $-[2 x-(-3+5)]+(x-5)^2$
+      \item $-(2-6 x) \cdot(-6 x-2)+5 x \cdot(2 x-5)$
+      \item $10 x \cdot(-2+x)-(7+7 x) \cdot(7 x+x)$
+      \item $(4-6 x) \cdot(-6 x-4)-6 x \cdot(6 x-8)$
+      \item $-(4 x+1) \cdot(1+4 x)-(4 x+1)^2$
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    Chapitre 7 - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 4 \faIcon{crown} - Fiche 3
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+ 
+\setcounter{exercise}{0}
+
+
+%distributivité simple avec priorité des opérations
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+      \item $-4 \cdot 2 x^2+3 a x^2 \cdot\left(2 a^4-3 x^2\right)$
+      \item $5 a^2 \cdot\left(-3 a^8 b+10\right)-25 a \cdot 2 a$.
+      \item $x^2\left(2 a x^3-4 a^5 x\right)+10 a^5$
+      \item $4 x \cdot 2 a-3 a \cdot(5-4 x)$
+      \item $-5 x^2 \cdot(2-7 a)-4 x \cdot(-3 a x+2)$
+      \item $(2 x-3+5 x) \cdot(3 x+4 a)-10 \cdot 2 x^2$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence pour aller plus loin 
+\begin{exercise}Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+      \item $(-x+2) \cdot(4+x)+(4+x) \cdot(-x-6)$
+      \item $(a-3) \cdot(2 x+5)-(-a+3) \cdot(x-1)$
+      \item $(6+y) \cdot(y-3)+(-y+3) \cdot(5 y-1)$
+      \item $(a+b) \cdot(a-b)+(a-b) \cdot(-a+b)$
+      \item $(-x+10) \cdot(-3 x)+(4-x) \cdot(x-10)$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables pour aller plus loin
+\begin{exercise}Effectue. Attention aux produits remarquables.
+  \begin{enumerate}
+      \item $-(2-6 x) \cdot(-6 x-2)+5 x \cdot(2 x-5)$
+      \item $10 x \cdot(-2+x)-(7+7 x) \cdot(7 x+x)$
+      \item $-(4 x+3) \cdot(9-x)+(12-x)^2$
+      \item $16 \cdot(-2 x)+4:(-2)-(5 x+9) \cdot(-9+5 x)$
+      \item $(4-6 x) \cdot(-6 x-4)-6 x \cdot(6 x-8)$
+      \item $-(4 x+1) \cdot(1+4 x)-(4 x+1)^2$
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 4 \faIcon{crown} - Fiche 2
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+ 
+\setcounter{exercise}{0}
+
+%distributivité simple avec priorité des opérations
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate} [cols=2]
+      \item $^8a^3x-4a^9x$
+      \item $-14a^2x+6x^3-10x^5$
+      \item $9ab^7c-21a^2b^7+1$
+      \item $4x4+12x^3-12x^2$
+      \item $-6a^3x+a^5+2a^2x$
+      \item $10ax^2+6x^4-15a^4+3a^3x^2$
+  \end{enumerate}
+\end{exercise}
+
+
+%mise en évidence pour aller plus loin 
+\begin{exercise}Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+      \item $-x^2+ax-2x+2a$
+      \item $-9y^2+44y+5$
+      \item $36x-18ax-6b+3ab$
+      \item $5y+3a+3-2y^2-ay$
+      \item $-4b+4b^2$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables pour aller plus loin
+\begin{exercise}Effectue. Attention aux produits remarquables.
+  \begin{enumerate}
+      \item $-x^2+10x-1$
+      \item $x^2-12x+27$
+      \item $-26x^2-25x+4$
+      \item $-76x-46x^2$
+      \item $-16+48x$
+      \item $-32x^2-16x-2$
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%CORRECTIF
+
+\begin{center}
+  \bfseries
+  \begin{Huge}
+    CORRECTIF - Calcul Littéral
+  \end{Huge}
+  \smallbreak
+  \begin{large}
+    Niveau 4 \faIcon{crown} - Fiche 3
+  \end{large}
+  \smallbreak
+  \rule[10pt]{.5\linewidth}{1 pt}
+\end{center}
+ 
+\setcounter{exercise}{0}
+
+
+%distributivité simple avec priorité des opérations
+\begin{exercise}Effectue les distributivités suivantes en respectant l'ordre de priorité des opérations.
+  \begin{enumerate}[cols=2]
+      \item $-8x^2+6a^5x^2-9ax^4$
+      \item $-15a^{10}b$
+      \item $2ax^5-4a^5x^3+10a^5$
+      \item $20ax-15a$
+      \item $-10x^2+47ax^2-8x$
+      \item $x^2+28ax-9x-12a$
+  \end{enumerate}
+\end{exercise}
+
+%mise en évidence pour aller plus loin 
+\begin{exercise}Effectue les mises en évidence suivantes.
+  \begin{enumerate}[cols=2]
+      \item $-2x^2-12x-16$
+      \item $3ax+4a-9x-12$
+      \item $-4y^2+19y-21$
+      \item $2ab-2b^2$
+      \item $2x^2-16x-40$
+  \end{enumerate}
+\end{exercise}
+
+%prod remarquables pour aller plus loin
+\begin{exercise}Effectue. Attention aux produits remarquables.
+  \begin{enumerate}
+      \item $-36x^2+3x+9$
+      \item $-76x-46x^2$
+      \item $5x^2-57x+117$
+      \item $-25x^2-32x+79$
+      \item $-16+48x$
+      \item $-32x2-16x-2$
+  \end{enumerate}
+\end{exercise}
+
+
+\end{document}

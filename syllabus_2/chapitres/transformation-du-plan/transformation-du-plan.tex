@@ -1,0 +1,511 @@
+\documentclass[../../syllabus_2.tex]{subfiles}
+\begin{document}
+\chapter{Les transformations du plan}
+%\faBookOpen~Pages 103 à 108.
+
+\section{Rappels}
+\subsection{Isométries}
+
+\begin{exercise}
+    Barre, parmi les transformations du plan suivantes, celles qui ne représentent pas une isométrie par rapport à la figure de base (en haut à gauche). \\
+    \begin{center}
+        \includegraphics[width=8cm]{img/isometrie_v2.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+
+\dotsforanswer{2}[Une isométrie est ]
+\dotsforanswer{2}[Un invariant  est ]
+On peut donc lister des invariants communs à toutes les isométries : 
+\begin{itemize}[itemsep=1cm]
+    \item L’alignement des points
+    \item La longueur des segments
+    \item L’amplitude des angles 
+    \item Le parallélisme des droites
+    \item La perpendicularité des droites
+    \item Le périmètre des figures
+    \item L’aire des figures
+    \item 
+\end{itemize}
+
+Les quatre isométries vues l'année passée sont
+\begin{itemize}[itemsep=1cm]
+     \item  
+     \item  
+     \item  
+     \item 
+\end{itemize}
+
+\newpage
+
+\faBookOpen~Réalise l'arbre des transformations du plan et encadre les isométries
+
+\newpage
+\subsection{La symétrie orthogonale}
+Une symétrie orthogonale est une isométrie qui envoie tout
+point~:
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item de l'autre côté de l'axe,
+    \item sur la droite perpendiculaire à l'axe passant par ce point,
+    \item et à une même distance de l'axe.
+\end{itemize}
+L'élément caractéristique d'une symétrie orthogonale est une droite
+appelée axe.
+
+Construis l'image de $ABCDE$ par la symétrie orthogonale d'axe $d$.
+
+\vfil
+\begin{center}
+    \input{figures/orthogonale_exemple.tikz}
+\end{center}
+\[S_d (ABCDE) = A'B'C'D'E'\]
+%Bien écrire avec eux le décodage: Le pentagone A'B'C'D'E' est l'image du pentagone ABCDE par une symétrie orthogonale d'axe d %
+\newpage
+\begin{exercise}
+    À l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images
+    soient clairement dessinées.
+    \begin{enumerate}[itemsep=\fill]
+        \item \(S_{f}(ABC)=A'B'C'\)
+              \begin{center}
+                  \includegraphics[height=5cm]{figures/So01}
+              \end{center}
+        \item \(S_{a}(CDEF)=C'D'E'F'\)
+              \begin{center}
+                  \includegraphics[height=5cm]{figures/So03}
+              \end{center}
+        \item \(S_{AC}(ABC)=A'B'C'\)
+              \begin{center}
+                  \includegraphics[height=5cm]{figures/So02}
+              \end{center}
+        %\item \(S_{BD}(fig.~1)=fig.~1'\)
+              %\begin{center}
+              %    \includegraphics[height=5cm]{figures/So04}
+              %\end{center}
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\subsection{La symétrie centrale}
+Une symétrie centrale est une isométrie qui déplace tout point~:
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item de l'autre côté du centre,
+    \item sur la droite passant par le point et le centre,
+    \item et à une même distance du centre.
+\end{itemize}
+
+L'élément caractéristique d'une symétrie centrale est un point appelé centre de symétrie.
+
+Construis l'image de $ABCDE$ par la symétrie central de centre $M$.
+
+\vfil
+\begin{center}
+    \input{figures/centrale_exemple.tikz}
+\end{center}
+\[S_{M}(ABCDE)=A'B'C'D'E'\]
+%Bien écrire avec eux le décodage: Le pentagone A'B'C'D'E' est l'image du pentagone ABCDE par une symétrie centrale de centre M%
+\newpage
+\begin{exercise}
+    A l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images soient clairement dessinées.
+    \begin{enumerate}[itemsep=\fill]
+        \item \(S_{D}(ABC)=A'B'C'\)
+              \begin{center}
+                  \includegraphics[height=5cm]{figures/Sc01}
+              \end{center}
+        \item \(S_{E}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \includegraphics[height=5cm]{figures/Sc03}
+              \end{center}
+        \item \(S_{C}(ABC)=A'B'C'\)
+              \begin{center}
+                  \includegraphics[height=5cm]{figures/Sc02}
+              \end{center}
+       % \item \(S_{F}(fig.~2)=fig.~2'\)
+       %       \begin{center}
+       %           \includegraphics[height=5cm]{figures/Sc04}
+       %       \end{center}
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\subsection{La translation}
+
+Une translation est une isométrie qui déplace tout point~:
+
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item dans une même direction,
+    \item dans un même sens,
+    \item et de même distance que la longueur du vecteur.
+\end{itemize}
+
+L'élément caractéristique d'une translation est un segment orienté (symbolisé par une flèche) appelée vecteur.
+
+Construis l'image de $ABCDE$ par la translation de vecteur $\overrightarrow{v}$
+
+\vfil
+\begin{center}
+    \input{figures/translation_exemple.tikz}
+\end{center}
+\[t_{\overrightarrow{v}}(ABCDE) = A'B'C'D'E'\]
+%Bien écrire avec eux le décodage: Le pentagone A'B'C'D'E' est l'image du pentagone ABCDE par une translation de vecteur v %
+\newpage
+
+\begin{exercise}
+    À l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images soient clairement dessinées.
+    \begin{enumerate}[itemsep=\fill]
+        \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+              \begin{center}
+                  \includegraphics[height=.15\paperheight]{figures/t01}
+              \end{center}
+        \item $t_{\overrightarrow{DE}}(ABC)=A'B'C'$
+              \begin{center}
+                  \includegraphics[height=.15\paperheight]{figures/t02}
+              \end{center}
+        \item $t_{\overrightarrow{BA}}(ABCD)=A'B'C'D'$
+              \begin{center}
+                  \includegraphics[height=.15\paperheight]{figures/t03}
+              \end{center}
+        \item $t_{\overrightarrow{FG}}(ABCDE)=A'B'C'D'E'$
+              \begin{center}
+                  \includegraphics[height=.15\paperheight]{figures/t04}
+              \end{center}
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{La rotation} 
+Une rotation est une isométrie qui déplace tout point:
+%Etapes de constructions : segment, arc, angle, point%
+\begin{itemize}[label=\faIcon{angle-right}]
+    \item à la même distance par rapport au centre
+    \item selon une amplitude donnée
+    \item selon un sens donné
+\end{itemize}
+
+Les éléments caractéristiques d'une rotation sont
+un centre, une amplitude et un sens.
+
+Le sens est donné par le signe de l'amplitude. S'il est positif, on tourne dans
+le sens anti-horloger. S'il est négatif, on tourne dans le sens horloger.
+\begin{center}
+    \begin{tikzpicture}[>=latex, -latex]
+        \tkzDefPoints{0/0/O}
+        \tkzDefPoint(100:1){A}
+        \tkzDefPoint(80:1){B}
+        \tkzDrawArc[->, black](O,A)(B)
+        \tkzLabelPoint[anchor=center](O){$+$}
+        \tkzDefPoint(90:1){Label}
+        \tkzLabelPoint[above](Label){sens anti-horloger}
+    \end{tikzpicture}
+    \hfil
+    \begin{tikzpicture}[>=latex, -latex]
+        \tkzDefPoints{0/0/O}
+        \tkzDefPoint(100:1){A}
+        \tkzDefPoint(80:1){B}
+        \tkzDrawArc[<-, black](O,A)(B)
+        \tkzLabelPoint[anchor=center](O){$-$}
+        \tkzDefPoint(90:1){Label}
+        \tkzLabelPoint[above](Label){sens horloger}
+    \end{tikzpicture}
+\end{center}
+
+Construis l'image de $ABCDE$ par la rotation de centre $M$ et d'angle $\ang{-120}$.
+
+\vfil
+\begin{center}
+    \input{figures/rotation_exemple.tikz}
+\end{center}
+\[r_{M;\ang{-120}}(ABCDE) = (A'B'C'D'E')\]
+%Bien écrire avec eux le décodage: Le pentagone A'B'C'D'E' est l'image du pentagone ABCDE par une rotation de centre M et de rotation -120%
+
+\newpage
+\begin{exercise}
+    À l'aide de tes instruments, réalise les constructions demandées.
+    Veille à laisser tes constructions visibles et à ce que tes images
+    soient clairement dessinées.
+    \begin{enumerate}[itemsep=\fill]
+        \item \(r_{D,-60\degres}(ABC)=A'B'C'\)
+              \begin{center}
+                  \includegraphics[height=10cm]{figures/r01}
+              \end{center}
+        \item \(r_{A,45\degres}(ABC)=A'B'C'\)
+              \begin{center}
+                  \includegraphics[height=10cm]{figures/r02}
+              \end{center}
+              \newpage
+        \item \(r_{E,-120\degres}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \includegraphics[height=10cm]{figures/r03}
+              \end{center}
+        \item \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \includegraphics[height=10cm]{figures/r04}
+              \end{center}
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Tableau de synthèse : les 4 quatre isométries}
+
+\begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={.22\linewidth, c},
+            rows={2cm,m},
+            row{1}={gray!40, font=\bfseries, 1cm},
+        }
+        Image                                               & Nom & Verbe de mouvement & Élément caractéristique \\
+        \includegraphics[height=2cm]{img/maggie_trans.eps} &     &                    &                         \\
+        \includegraphics[height=2cm]{img/maggie_sc.eps}    &     &                    &                         \\
+        \includegraphics[height=2cm]{img/maggie_so.eps}    &     &                    &                         \\
+        \includegraphics[height=2cm]{img/maggie_rot.eps}   &     &                    &                         \\
+    \end{tblr}
+\end{center}
+
+\emph{Remarque : la symétrie centrale est une rotation de \ang{180}}
+
+\begin{exercise}
+    Décode les expressions suivantes.
+    \begin{enumerate}
+        \item \(r_{D;- 70\degres}\left(ABC\right) = A'B'C'\)\bigbreak\dotsforanswer{2}
+        \item \(S_{P}(M)=M'\)\bigbreak\dotsforanswer{2}
+        \item \(S_{b}([CD])=[C'D']\)\bigbreak\dotsforanswer{2}
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Effets des transformations du plan sur les coordonnées}
+\subsection{Rappel sur le repérage dans un plan}
+\begin{center}
+    \input{figures/repere.tikz}
+\end{center}
+\begin{exercise}
+    \begin{enumerate}
+        \item Quelle est l'abscisse du point $A$ ?
+        \item Quelle est l'ordonnée du point $B$ ?
+    \end{enumerate}
+\end{exercise}
+\begin{exercise}
+    Place les points suivants sur le repère ci-dessus.
+    \begin{enumerate}
+        \item $C(-4;5)$
+        \item $D$ tel que son abscisse vaut celle de $B$ et son ordonnée est l'opposée de celle de $A$.
+        \item $E$ tel que son abscisse est négative et son ordonnée positive.
+        \item $F$ tel qu'il soit l'image du point $A$ par une symétrie orthogonale d'axe $x$.
+        \item $G$ tel qu'il soit l'image du point B par symétrie centrale dont le centre est l'origine du repère.
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\subsection{Effets des transformations du plan}
+Lors d'un jeu télévisé, des aventuriers débarquent sur une île en bateau.
+Le présentateur les conduit au point de départ ($D$). À cet endroit précis il
+distribue à chaque participant une carte ainsi qu'une consigne précise qui doit
+les mener jusqu'à l'endroit où ils devront touver un collier afin de ne pas
+être éliminés.
+
+Voici les consignes que reçoivent les participants.
+
+\begin{scriptsize}
+    \begin{tblr}%
+        {
+            hlines,
+            vlines,
+            columns={.22\linewidth,c},
+            rows={.7cm, m},
+            row{1} = {gray!40, font=\bfseries\boldmath}
+        }
+        Participants & Consignes reçues au départ de $D$ & Point d'arrivée au départ de $D$ & Point d'arrivée au départ de $(x;y)$ \\
+        Laurent      & $S_y(D)=L$                        &                                  &                                      \\
+        Nathan       & $S_x(D)=N$                        &                                  &                                      \\
+        Mickael      & $S_O(D)=M$                        &                                  &                                      \\
+        Élodie       & $t_{\overrightarrow{OP}}(D)=E$    &                                  &                                      \\
+        Albert       & $r_{O;-90\degres}(D)=A$           &                                  &                                      \\
+        Frédéric     & $r_{O;90\degres}(D)=F$            &                                  &                                      \\
+    \end{tblr}
+\end{scriptsize}
+
+\begin{itemize}[label=\faIcon{map-marker-alt}]
+    \item Trace sur la carte ci-dessous l'endroit où les aventuriers sont
+          censés retrouver leur collier d'immunité et complète le tableau.
+    \item Retrouve les coordonnées de chaque participant si les coordonnées de
+          départ étaient $(x;y)$ et complète le tableau.
+\end{itemize}
+\begin{center}
+    \includegraphics[width=\linewidth]{img/map.jpg}
+\end{center}
+
+\newpage
+\section{Axes et centres de symétrie}
+
+Un axe de symétrie d’une figure est une droite \(a\) telle que l’image de cette figure par la symétrie orthogonale d’axe \(a\) est la figure elle-même.
+
+Le centre de symétrie d’une figure est un point \(C\) tel que l’image de cette figure par la symétrie centrale de centre \(C\) est la figure elle-même. 
+
+\begin{exercise}
+    Trace, s'ils existent, les axes de symétrie des figures suivantes en vert et place, s'il existe, leur centre de symétrie en rouge.
+    \begin{center}
+        \includegraphics{chapitres/transformation-du-plan/img/quadrilatere.png}
+    \end{center}
+    \includegraphics[width=3cm]{chapitres/transformation-du-plan/img/triangle1.png} \hfill \includegraphics[width=5cm]{chapitres/transformation-du-plan/img/triangle2.png} \hfill \includegraphics[width=5cm]{chapitres/transformation-du-plan/img/triangle3.png}
+\end{exercise}
+
+\begin{exercise}
+    Dans chaque panneau de signalisation suivant, trace, s'ils existent, les axes de symétrie des figures suivantes en vert et place, s'il existe, leur centre de symétrie en rouge.
+    \begin{center}
+        \includegraphics{chapitres/transformation-du-plan/img/panneaux.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+
+Complète le tableau suivant d'une croix si la figure proposée admet des axes ou centre de symétrie. 
+
+
+\begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={1.7cm, c},
+            rows={1cm,m},
+            row{1}={gray!40, font=\bfseries},
+            column{1}={4cm, gray!40, font=\bfseries},
+        }
+        & 1 centre & 1 axe & 2 axes & 3 axes & 4 axes \\
+        Triangle scalène & & & & & \\
+        Triangle isocèle & & & & & \\
+        Triangle équilatéral & & & & & \\
+        Triangle rectangle & & & & & \\
+        Triangle isocèle rectangle & & & & & \\ 
+        Trapèze quelconque & & & & & \\
+        Trapèze isocèle & & & & & \\ 
+        Parallélogramme & & & & & \\
+        Rectangle & & & & & \\ 
+        Losange & & & & & \\
+        Carré & & & & & \\
+        Pentagone régulier & & & & & \\ 
+        Hexagone régulier & & & & & \\ 
+    \end{tblr}
+\end{center}
+
+Notes : 
+Un polygone régulier a autant d’axes de symétrie que de côtés. 
+
+Seuls les polygones réguliers qui possèdent un nombre pair de côtés admettent un centre de symétrie. 
+
+
+\newpage
+\section{Exercices mélangés}
+\setcounter{exercise}{0}
+
+\begin{exercise}
+    À partir du rectangle $ADLI$, réponds aux questions ci-dessous.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{img/ex02.png}
+    \end{center}
+    \begin{enumerate}
+        \item Quelle est l'image de $A$ par la symétrie d'axe $BJ$ ?
+        \item Quelle est l'image de $F$ par la symétrie de centre $G$ ?
+        \item Si $G$ est l'image de $I$ par une translation alors quelle est l'image de $K$ par cette même translation ?
+        \item Quelle est l'image de $K$ par la symétrie d'axe $IC$ ?
+        \item Quelle est l'image de $K$ s'il subit la translation qui applique $G$ sur $B$ ?
+        \item Quel est le centre de la symétrie centrale qui applique $J$ sur $D$.
+    \end{enumerate}
+\end{exercise}
+
+%\begin{exercise}
+%    À partir de la figure ci-dessous, complète les égalités, en sachant que $M$ représente le milieu de $\lbrack BC \rbrack$.
+%
+%    \begin{minipage}{.3\linewidth}
+%        \includegraphics[width=\linewidth]{img/ex03.png}
+%    \end{minipage}
+%    \hfill
+%    \begin{minipage}{.6\linewidth}
+%        \begin{enumerate}[cols=2]
+%            \item $S_{M}(ABC)=?$
+%            \item $S_{AC}(B) = ?$
+%            \item $t_{\overrightarrow{EF}}(\left\lbrack JK\rbrack)\right) = ?$
+%            \item $S_{BK}(G) = ? $
+%            \item $t_{\overrightarrow{HB}}(?) =  ABC$
+%            \item $S_{?}(C) = H$
+%            \item $S_{FB}(?)=  HGF$
+%            \item $S_{M}(\left\lbrack EG \right\rbrack) = ? $
+%        \end{enumerate}
+%    \end{minipage}
+%\end{exercise}
+
+\begin{exercise}
+    Cette figure schématise un système d'engrenages de plusieurs roues dentées. Le nombre de dents est indiqué à côté de chaque roue. Deux disques concentriques représentent des roues solidaires du même axe.
+
+    Si $A$ tourne dans le sens négatif, dans quel sens tourne la roue $B$
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{img/ex04.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+
+
+\begin{exercise}
+    Sans utiliser de compas, construis l'image de chaque triangle par la rotation de centre $A$ et de $+ 90\degres$.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{img/exo05.png}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Construis l'image des figures suivantes par la symétrie orthogonale d'axe~$d$.
+    \begin{center}
+        \includegraphics[width=.5\linewidth]{img/quadrillage_ortho.png}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Construis l'image des figures suivantes par la translation de vecteur~$\overrightarrow{AB}$.
+    \begin{center}
+        \includegraphics[width=.6\linewidth]{img/quadrillage_trans.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Réalise les constructions demandées. Veille à ton soin, ta précision et ta lisibilité.
+    % \renewcommand{\corcolor}{red}
+    \begin{enumerate}[itemsep=\fill]
+        \item \(S_{C}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \includegraphics[height=6cm]{figures/tdp01}
+              \end{center}
+
+        \item \(r_{B,-60\degres}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \includegraphics[height=6cm]{figures/tdp02}
+              \end{center}
+
+        \item \(S_{CD}([AB])=[A'B']\)
+              \begin{center}
+                  \includegraphics[height=6cm]{figures/tdp03}
+              \end{center}
+
+              \newpage
+        \item \(r_{A,90\degres}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \includegraphics[height=6cm]{figures/tdp04}
+              \end{center}
+
+        \item \(t_{\overrightarrow{AA'}}(ABCD)=A'B'C'D'\)
+              \begin{center}
+                  \includegraphics[height=6cm]{figures/tdp05}
+              \end{center}
+
+        \item \(S_{d}(fig.~1)=fig.~1'\)
+              \begin{center}
+                  \includegraphics[height=6cm]{figures/tdp06}
+              \end{center}
+    \end{enumerate}
+\end{exercise}
+\end{document}

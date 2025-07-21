@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+    \tkzDefPoint(1.2,-0.2){C};
+    \tkzDrawPoint(C);
+    \tkzDefPoint(1,1.5){A};
+    \tkzDrawPoint(A);
+\draw (1.2,-0.2) circle (1) ;
+\draw (1,1.5) circle (1.5) ;
+\end{tikzpicture}

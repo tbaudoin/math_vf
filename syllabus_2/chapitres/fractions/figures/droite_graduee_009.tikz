@@ -1,0 +1,16 @@
+\begin{tikzpicture}[>=latex, x=1cm, baseline=(current bounding box.east)]
+    \tikzmath{
+        \xmin=-2;
+        \xmax=4;
+        \xstep=1;
+        \firststep=\xmin + \xstep;
+        \laststep=\xmax - \xstep;
+        \secondaryticks = 2;
+        \primaryticks = 4;}
+    % droite
+    \draw[->] (\xmin,0) -- (\xmax,0)node[right]{$x$};
+    % graduations principales
+    \foreach \x in {-2,...,3}
+        {\draw[fill=black] (\x,\primaryticks pt) -- (\x, -\primaryticks pt) node[below]{\x};};
+    % points spéciaux
+\end{tikzpicture}

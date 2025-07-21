@@ -1,0 +1,781 @@
+\documentclass[../../syllabus_2.tex]{subfiles}
+\begin{document}
+
+\chapter{Puissances de nombres entiers}
+\section{Pour se rappeler}
+%===============================================================================
+%===============================================================================
+\begin{exercise}
+	Coche la ou les bonne(s) réponse(s).\par
+	\begin{enumerate}[itemsep=1em]
+		\item L'aire d'un carré de côté \(2a\) est
+		      \begin{qcm}
+			      \choice \(8a\)
+			      \choice \(2a^2\)
+			      \choice \(4a^2\)
+		      \end{qcm}
+
+		\item Le volume d'un cube d'arête \(a\) est
+		      \begin{qcm}
+			      \choice \(3a\)
+			      \choice \(a^2 \cdot a\)
+			      \choice \(a^3\)
+		      \end{qcm}
+
+		\item \(20^0\) vaut
+		      \begin{qcm}
+			      \choice \(1\)
+			      \choice \(20\)
+			      \choice \(0\)
+		      \end{qcm}
+
+		\item Le carré de \(13\) est
+		      \begin{qcm}
+			      \choice \(121\)
+			      \choice \(144\)
+			      \choice \(169\)
+		      \end{qcm}
+
+		\item Une puissance paire d'un nombre négatif est un nombre
+		      \begin{qcm}
+			      \choice négatif
+			      \choice positif
+			      \choice sans avis
+		      \end{qcm}
+	\end{enumerate}
+\end{exercise}
+\vspace{1.5em}
+%===============================================================================
+\begin{solution}
+	Coche la bonne réponse.\par
+	\begin{tasks}
+		\task L'aire d'un carré de côté \(2a\) est
+		\begin{qcm}
+			\choice \(8a\)
+			\choice \(2a^2\)
+			\correct \(4a^2\)
+		\end{qcm}
+
+		\task Le volume d'un cube d'arête \(a\) est
+		\begin{qcm}
+			\choice \(3a\)
+			\choice \(a^2 \cdot a\)
+			\correct \(a^3\)
+		\end{qcm}
+
+		\task Le carré de \(13\) est
+		\begin{qcm}
+			\choice \(121\)
+			\choice \(144\)
+			\correct \(169\)
+		\end{qcm}
+
+		\task \(\dfrac{2^3\cdot 3\cdot 5^2}{5\cdot 3^2}\) équivaut à
+		\begin{qcm}
+			\correct \(2^3\cdot 3\cdot 5\)
+			\choice \(\dfrac{2^3\cdot5}{3}\)
+			\choice \(2^3\)
+		\end{qcm}
+
+		\task Une puissance paire d'un nombre négatif est un nombre
+		\begin{qcm}
+			\choice négatif
+			\correct positif
+			\choice sans avis
+		\end{qcm}
+	\end{tasks}
+\end{solution}
+%===============================================================================
+%===============================================================================
+\begin{exercise}
+	Complète les pointillés par le nombre qui convient.
+	\begin{enumerate}[cols=2, itemsep=2em]
+		\item \(3 + 3 + 3 + 3 = \ldots \cdot 3\)
+		\item  \(6\cdot 6 \cdot 6 \cdot 6 = 6^{\dots}\)
+		\item  \(8=2^{\dots}\)
+		\item  \((-5)\cdot(-5)\cdot(-5) = (-5)^{\dots}\)
+	\end{enumerate}
+\end{exercise}
+%===============================================================================
+\begin{solution}
+	Remplace \(n\) par le nombre qui convient.
+	\begin{tasks}
+		\task \(6\cdot 6 \cdot 6 \cdot 6 = 6^4\)
+		\task \(8=2^3\)
+		\task \((-5)\cdot(-5)\cdot(-5) = (-5)^3\)
+	\end{tasks}
+\end{solution}
+%===============================================================================
+%===============================================================================
+\begin{exercise}
+	Donne un exemple de puissance et nomme chaque élément qui la constitue.
+	\vspace*{3cm}
+\end{exercise}
+%===============================================================================
+%===============================================================================
+\begin{exercise}
+	Calcule.
+	\begin{enumerate}[cols=3, itemsep=1.8em]
+		\item  \(8^2=\)
+		\item \((-3)^3=\)
+		\item \(-2^4=\)
+		\item \(5^3=\)
+		\item \(\left(-7\right)^2=\)
+		\item \(-1^{18}=\)
+	\end{enumerate}
+\end{exercise}
+%===============================================================================
+%===============================================================================
+\begin{exercise}
+	À quelles conditions une puissance est-elle un nombre négatif?
+	\vspace{2cm}
+\end{exercise}
+
+\begin{exercise}
+	Traduis chaque expression par une phrase puis effectue.
+	\begin{enumerate}[itemsep=2cm]
+		\item \(5^2\)
+		\item \((-5)^2\)
+		\item \(-5^2\)
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+	Effectue les opérations en écrivant les étapes de ton raisonnement.
+	\begin{enumerate}[cols=2, itemsep=2cm]
+		\item \(7^2 - 1^3=\)
+		\item \(8\cdot(3-5)^2+4=\)
+		\item \(3+2^2\cdot4^2=\)
+		\item \(\left( 3^2 + 1 \right)^2 \cdot (-3)^2 + 5=\)
+	\end{enumerate}
+\end{exercise}
+
+\section{Produit de puissances de même base}
+Voici une liste de produits de puissances. Décompose-les, si besoin, sous forme de produits et écris ensuite la puissance de \(5\) correspondante.
+
+\exemple
+\(\begin{aligned}[t]
+	5^3 \cdot 5^7 & = \overbrace{5 \cdot 5 \cdot 5}^{5^3} \cdot \overbrace{5 \cdot 5 \cdot 5 \cdot 5 \cdot 5 \cdot 5 \cdot 5}^{5^7} \\
+	              & = 5^{10}
+\end{aligned}\)
+
+%===============================================================================
+%===============================================================================
+\begin{enumerate}[cols=2, itemsep=2.5cm]
+	\item \(5^3 \cdot 5=\)
+	\item \(5^2 \cdot 5^4=\)
+	\item \(5^2 \cdot 5^3=\)
+	\item \(5^5 \cdot 5=\)
+	\item \(5^3 \cdot 5^2 \cdot 5^2=\)
+	\item \(5^{10} \cdot 5^2 \cdot 5=\)
+\end{enumerate}
+\vspace*{2cm}
+
+En observant la liste ci-dessus, écris \(17^{10}\cdot17^{26}\) comme une puissance de \(17\) : \dotfill
+
+\adf[Pour réduire un produit de puissances de même base,]{2}
+\begin{center}
+	\mybox{\(a^b\cdot a^c=\hspace*{1 in}\)}
+\end{center}
+
+\newpage
+\begin{exercise}
+	Réduis les produits suivants sous la forme \(a^n\).
+	\begin{enumerate} [cols=2, itemsep=2cm]
+		\item \(7^4\cdot7=\)
+		\item \((-6)^3\cdot(-6)^5=\)
+		\item \(3^9\cdot 3^{-5}=\)
+		\item \(8^{-1}\cdot 8^3\cdot 8^2=\)
+		\item \(12\cdot 12\cdot 12^3=\)
+		\item \(\left(\dfrac{3}{2}\right)^7\cdot\left(\dfrac{3}{2}\right)^{-1}=\)
+	\end{enumerate}
+	\vspace{2cm}
+\end{exercise}
+
+\begin{exercise}
+	Complète les égalités suivantes.
+	\begin{enumerate} [cols=2, itemsep=2cm]
+		\item \(6\cdot6^{10}\cdot6^3\cdot \ldots \cdot 6=6^{20}\)
+		\item \(11\cdot11^4\cdot 11^7=11^{\ldots}\)
+		\item \((-3)^3\cdot(-3)^4\cdot \ldots \cdot (-3)=(-3)^{13}\)
+		\item \(\left(\dfrac{2}{5}\right)^6\cdot\left(\dfrac{2}{5}\right)^2 \cdot \dfrac{2}{5} \cdot \ldots = \left(\dfrac{2}{5}\right)^{20}\)
+	\end{enumerate}
+\end{exercise}
+
+\section{Puissance d'un produit}
+Tanguy et Johanna se retrouvent devant un énoncé qu'ils n'ont jamais vu : \((2\cdot3)^2\)
+
+Voici ce que chacun effectue comme calcul:
+
+\parbox{.5\linewidth}{%
+	\centering
+	Méthode de Tanguy :
+	\begin{align*}
+		(2\cdot 3)^2
+		 & = (6)^2 \\
+		 & = 6^2   \\
+		 & = 36
+	\end{align*}}
+\parbox{.5\linewidth}{%
+	\centering
+	Méthode de Johanna :
+	\begin{align*}
+		(2\cdot 3)^2
+		 & = 2^2\cdot3^2 \\
+		 & = 4\cdot 9    \\
+		 & = 36
+	\end{align*}
+}
+
+Ils sont étonnés de voir qu'ils n'ont pas utilisé le même procédé, mais que leur résultat est identique !
+
+L'énoncé suivant est algébrique : \((m\cdot p)^b\) . Le professeur leur demande d'écrire le même calcul sans parenthèses.
+
+Johanna s'écrie \og J'ai trouvé !\fg{} et écris : \((m\cdot p)^b=\)\dotfill
+
+Explique comment procéder pour élever un produit à une puissance :
+
+\adf{2}
+
+\begin{center}
+	\mybox{\((a\cdot b)^c=\hspace{1in}\)}
+\end{center}
+
+
+\begin{exercise}
+	Complète les égalités suivantes.
+	\begin{enumerate} [cols=2]
+		\item \((2\cdot11)^3=\dots^3\cdot\dots^3\)
+		\item \(14^3=2^{\dots}\cdot7^{\dots}\)
+		\item \((2\cdot5)^8=10^{\dots}\)
+		\item \((e\cdot t)^7=\)
+		\item \((-2gh)^3=\)
+		\item \((3\cdot3\cdot7)^3=3^{\dots}\cdot 7^{\dots}\)
+		\item \(2^{\dots} \cdot 5^{\dots}\cdot 49 = 10^4\cdot 7^{\dots}\)
+		\item \(3^{\dots}\cdot5^{\dots}\cdot7^{\dots}=21^2\cdot125\)
+		\item \((5ab)^2=\)
+		\item \((3\cdot2\cdot11)^2=6^{\dots}\cdot121\)
+	\end{enumerate}
+\end{exercise}
+
+\pagebreak
+\section{Puissance d'une puissance}
+Barre les fausses égalités.
+\begin{enumerate} [cols=3, itemsep=0.8cm, label=]
+	\item \((3^2)^3=3^5\)
+	\item \((3^2)^3=3^2\cdot 3^2\cdot 3^2\)
+	\item \( (3^2)^3=3^6\)
+	\item \((3^3)^2=3^5\)
+	\item \((3^3)^2=3^3\cdot3^3\)
+	\item \((3^3)^2=3^6\)
+\end{enumerate}
+
+Explique comment procéder pour élever une puissance à une puissance :
+
+\adf{2}
+
+\begin{center}
+	\mybox{\((a^b)^c=\hspace{1 in}\)}
+\end{center}
+
+\begin{exercise}
+	Réduis les produits suivants sous la forme \(a^n\).
+	\begin{enumerate} [cols=3, itemsep=2em]
+		\item \((5^2)^4=\)
+		\item \((a^6)^3=\)
+		\item \(\left((-2)^6\right)^2=\)
+		\item \(\left(b^2\cdot b\right)^3=\)
+		\item \(\left(2\cdot 2^7\right)^3=\)
+		\item \(\left(13^4\cdot13^2\right)^2=\)
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+	Complète les égalités suivantes.
+	\begin{enumerate} [cols=2, itemsep=2em]
+		\item \(6^{14}=(6^2)^{\dots}\)
+		\item \(2^7\cdot(2^3)^2=2^{\dots}\)
+		\item \(2^{\dots}\cdot 3^{\dots}=(6^2)^2\)
+		\item \(\left(2\cdot 3^5\right)^{\dots}=2^3\cdot 3^{\dots}\)
+		\item \(\left(2a^3\right)^2=\dots a^{\dots}\)
+		\item \(36a^6b^8=\left(6a^{\dots}b^{\dots}\right)^{\dots}\)
+	\end{enumerate}
+\end{exercise}
+
+\pagebreak
+
+\section{Quotient de puissances de même base}
+Nous savons qu'une fraction représente le quotient du numérateur par le dénominateur.
+
+Écris les quotients suivants sous forme soit d'une puissance de 2, soit d'un produit d'une puissance de 2 et d'une puissance de 5.
+
+\begin{enumerate}[cols=2,itemsep=4em]
+	\item \(\dfrac{2^5}{2}=\)
+	\item \(\dfrac{2^5}{2^2}=\)
+	\item \(\dfrac{2^5}{2^3}=\)
+	\item \(\dfrac{2^5}{2^4}=\)
+	\item \(\dfrac{2^3\cdot 5^3}{2\cdot 5}=\)
+	\item \(\dfrac{2^7\cdot 5^3}{2^4\cdot 5^2}=\)
+	\item \(\dfrac{2^8\cdot 5^6}{2^8\cdot 5^6}=\)
+	\item \(\dfrac{5^3\cdot 2^4}{2^3\cdot 5^2}=\)
+\end{enumerate}
+\vspace*{3em}
+
+Comment procéder pour déterminer le quotient de puissances de même base?
+
+\adf{2}
+
+\begin{center}
+	\mybox{\(\dfrac{a^b}{a^c}=\hspace{1in}\)}
+\end{center}
+
+\begin{exercise}
+	Écris sous la forme \(a^n\).
+	\begin{tasks}(4)
+		\task \(\dfrac{6^7}{6^5}=\)
+		\task \(\dfrac{19^9}{19^3}=\)
+		\task \(\dfrac{(-8)^7}{(-8)^3}=\)
+		\task \(\dfrac{\left(\dfrac{3}{4}\right)^{10}}{\left(\dfrac{3}{4}\right)^8}=\)
+	\end{tasks}
+\end{exercise}
+
+\pagebreak
+\section{Puissance d'un quotient}
+\adf[Lorsqu'on élève une fraction à une puissance, on ]{2}
+
+\begin{center}
+	\mybox{\(\left(\dfrac{a}{b}\right)^c=\hspace{1in}\)}
+\end{center}
+
+\begin{exercise}
+	Effectue. Veille à ce que ton résultat soit irréductible.
+	\begin{enumerate}[cols=2, itemsep=3cm]
+		\item \(\left(\dfrac{8}{3}\right)^2=\)
+		\item \(\left(\dfrac{-14}{7}\right)^5=\)
+		\item \(\left(\dfrac{5}{7}\right)^2=\)
+		\item \(\left(\dfrac{-3}{4}\right)^3=\)
+		\item \(\left(\dfrac{4}{16}\right)^3=\)
+		\item \(\left(\dfrac{1}{-2}\right)^4=\)
+		\item \(\left(\dfrac{10}{15}\right)^4=\)
+		\item \(\left(\dfrac{-11}{-77}\right)^2=\)
+	\end{enumerate}
+\end{exercise}
+
+\section{Synthèse sur les propriétés des puissances}
+
+
+\begin{tblr}{
+		hlines,
+		vlines,
+		rowsep=1.5ex,
+		colspec={lXX},
+		row{1}={gray!40,font=\bfseries, c}
+	}
+	Nom des propriétés                   & Propriété & Exemple \\
+	Produit de puissances de même base   &           &         \\
+	Puissance d'une puissance            &           &         \\
+	Puissance d'un produit               &           &         \\
+	Quotient de puissances de même base  &           &         \\
+	Puissance d'un quotient              &           &         \\
+	Puissance dont l'exposant vaut \(0\) &           &         \\
+	Puissance dont l'exposant vaut \(1\) &           &         \\
+	Puissance dont la base vaut \(0\)    &           &         \\
+	Puissance dont la base vaut \(1\)    &           &         \\
+\end{tblr}
+
+\begin{exercise}
+	Complète les égalités suivantes.
+	\begin{enumerate}[itemsep=1.5cm, cols=2]
+		\item \(2^{\dots}\cdot 8^{\dots}=16^5\)
+		\item \(\left(\dotfillbox [1cm] \right)^2=16x^2y^6\)
+		\item \(\left(-6^4\right)^4=\)
+		\item \(9^{\ldots} = 1\)
+		\item \(3^3\cdot 3^9\cdot 3^{-2}\cdot 3^{\dots}=3^{15}\)
+		\item \(\left(17^{\dots}\cdot 3^{\dots}\right)^3\cdot 9=3^{17}\cdot 17^6\)
+		\item \(\left(9a^2b^5\right)^2=\ldots \cdot a^{\dots} \cdot b^{\dots}\)
+		\item \(2^3\cdot 6^3=12^{\dots}\)
+		\item \(\ldots^{1} = 12\)
+		\item \(\left(5\cdot 2\cdot 11\right)^2=10^{\dots}\cdot 121\)
+		\item \(3^2\cdot 9^2=3^{\dots}\)
+		\item \(\left(\dfrac{6}{3}\right)^3=\)
+	\end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+	Repère la seule expression qui correspond exactement à la proposition. Justifie ensuite en donnant le nom de la ou des propriété(s) correspondante(s).
+	\begin{tasks}
+		\task \((3x^3)^2\)
+		\begin{qcm}[4]
+			\choice \(9x^5\)
+			\choice \(3x^6\)
+			\choice \(9x^6\)
+			\choice \(6x^5\)
+		\end{qcm}
+		\adf[Propriété(s) :]{1}
+		\task \(2x^2\cdot 3x^3\)
+		\begin{qcm}[4]
+			\choice \(36x^5\)
+			\choice \(6x^5\)
+			\choice \(108x^5\)
+			\choice \(6x^6\)
+		\end{qcm}
+		\adf[Propriété(s) :]{1}
+		\task \((2x)^2\cdot (2x)^3\)
+		\begin{qcm}[4]
+			\choice \(32x^6\)
+			\choice \(25x^5\)
+			\choice \((2x)^5\)
+			\choice \(4x^5\)
+		\end{qcm}
+		\adf[Propriété(s) :]{1}
+		\task \(3x^3\cdot 2x^3\)
+		\begin{qcm}[4]
+			\choice \(5x^3\)
+			\choice \(5x^6\)
+			\choice \(6x^6\)
+			\choice \(6x^9\)
+		\end{qcm}
+		\adf[Propriété(s) :]{1}
+	\end{tasks}
+\end{exercise}
+
+
+
+% \begin{exercise}
+% 	Simplifie les fractions suivantes. Laisse ta démarche visible.
+% 	\begin{tasks} (2)
+% 		\task \(\dfrac{20^4\cdot 3^4}{3^3\cdot 10^3}\)
+% 		\task \(\dfrac{18^2}{12^3}\)
+% 		\task \(\dfrac{36\cdot 10^2}{30^2}\)
+% 	\end{tasks}
+% \end{exercise}
+% L'exercice précédent n'a pas de sens pour moi, on n'aura pas encore fait les fractions et l'année passée avec les premières, on ne l'aura pas fait... On devrait peut-être complètement l'enlever 
+
+\begin{exercise}
+	Écris les exposants manquants.
+	\begin{tasks}(2)
+		\task \(24^9\) est le produit de \(24^7\) par \(24^{\dots}\)
+		\task Le double de \(2^6\) est \(2^{\dots}\)
+	\end{tasks}
+\end{exercise}
+
+\newpage
+\section{Puissances de 10}
+
+Complète le tableau suivant.
+
+\begin{tblr}{hlines, vlines,row{1}={c,gray!40, font=\bfseries},
+	rowsep=1.5ex, colspec={X[l]X[l]}}
+	Puissance de 10 & Nom usuels \\
+	\(10^{-3} = \)  &            \\	\(10^{-2} = \)    &            \\
+	\(10^{-1} = \)  &            \\
+	\(10^0 = \)     &            \\
+	\(10^1 = \)     &            \\
+	\(10^2 = \)     &            \\
+	\(10^3 = \)     &            \\
+	\(10^4 = \)     &            \\
+	\(10^5 = \)     &            \\
+	\(10^6 = \)     &            \\
+	\(10^9 = \)     &            \\
+\end{tblr}
+
+\bigbreak
+Tu viens d'utiliser les puissances de 10 (positives ou négatives).
+
+Quelle est donc la signification des puissances de 10 ?\\
+\begin{align*}
+	10^n=\underbrace{100\dots0}_{\text{n zéros}} &  &
+	10^{-n}=\underbrace{0,0\dots01}_{\text{n zéros}}
+\end{align*}
+
+\adf[Les puissances de 10 à exposants positifs représentent]{1} % de très grands nombres
+
+
+\adf[Les puissances de 10 à exposants négatifs représentent]{1} % de très petits nombres
+
+\newpage
+
+\begin{tcolorbox}
+	Note : les propriétés des puissances s'appliquent aussi aux exposants négatifs !
+
+	\exemple \(\left(10^{-2}\right)^3 = 10^{-6}\)
+\end{tcolorbox}
+
+\begin{exercise}
+	Effectue.
+	\begin{enumerate} [cols=2, itemsep=1.7cm]
+		\item \(8\cdot 10^9=\)
+		\item \(12\cdot 10^{-2}=\)
+		\item \(0,00023\cdot 10^8=\)
+		\item \(157\cdot 10^{-5}=\)
+		\item \(4,5478\cdot 10^8=\)
+		\item \(82,68\cdot 10^{-7}=\)
+		\item \(150000000\cdot 10^{-9}=\)
+		\item \(0,857\cdot 10^4=\)
+		\item \(45000\cdot 10^{-6}=\)
+		\item \(3,1415 \cdot 10^0=\)
+		\item \(3 \cdot 10^{-2} \cdot 10^3=\)
+		\item \(0,006 \cdot (10^2)^2=\)
+		\item \(345 \cdot (10^2)^{-3}=\)
+		\item \(0 \cdot 10^{-7}=\)
+	\end{enumerate}
+\end{exercise}
+
+\section{Notation scientifique}
+Jean et Muriel ont classé correctement en deux colonnes les expressions qui leur ont été données par leur professeur : les notations scientifiques, et celles qui ne le sont pas.
+
+En observant le tableau, peux-tu trouver les éléments qui caractérisent la notation scientifique.
+
+\begin{center}
+	\begin{tabularx}{.8\linewidth}{YY} %
+		\toprule
+		\textbf{Notations scientifiques} & \textbf{\sout{Notations scientifiques}} \\
+		\midrule
+		\(3,2\cdot 10^3\)                & \(123\cdot 2^3\)                        \\
+		\(2\cdot 10^{-2}\)               & \(0,05 - 10^{-3}\)                      \\
+		\(3,25\cdot 10^9\)               & \(32,4\cdot 3^9\)                       \\
+		\(6,456 \cdot 10^{-1}\)          & \(0,68\cdot 10^{-6}\)                   \\
+		\(1,2\cdot 10^2\)                & \(92 + 10^{-1}\)                        \\
+		\(3,056\cdot 10^{-12}\)          & \(83\cdot 10^2\)                        \\
+	\end{tabularx}
+\end{center}
+
+\adf{4}
+
+\exemples
+\begin{itemize}[label=\(\blacksquare\)]
+	\item l'écriture scientifique du nombre \num{456 789 000} est \dotfill
+	\item l'écriture scientifique du nombre \num{0,0000056} est \dotfill
+\end{itemize}
+
+\begin{exercise}
+	Parmi les notations suivantes, barre celles qui ne sont pas des notations scientifiques.
+	\begin{enumerate}[cols=4, label=\,]
+		\item \(0,5\cdot 10^9\)
+		\item \(9,68\cdot 10^{-6}\)
+		\item \(685\cdot 10^3\)
+		\item \(1,23\cdot 20^3\)
+		\item \(1,36\cdot 10^4\)
+		\item \(25,6\cdot 10^{-3}\)
+		\item \(123,123\cdot 10^2\)
+		\item \(3,5^3\)
+	\end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+	Transforme les nombres suivants en écriture décimale et en notation scientifique.
+
+	\begin{tblr}{
+		hlines,
+		vlines,
+		colspec={cX[c]X[c]},
+		row{1}={gray!40, font=\bfseries},
+		rowsep=1ex
+		}
+		Nombre                 & Écriture décimale & Notation scientifique \\
+		3 milliards            &                   &                       \\
+		\(12,85\cdot 10^5\)    &                   &                       \\
+		\(0,036\cdot 10^7\)    &                   &                       \\
+		\(135,9\cdot 10^{-6}\) &                   &                       \\
+	\end{tblr}
+
+\end{exercise}
+
+\begin{exercise}
+	Classe les nombres suivants dans l'ordre croissant.
+	\begin{enumerate}[cols=3,label=\,]
+		\item \(A=\num{123000}\cdot 10^{-4}\)
+		\item \(B=123\)
+		\item \(C=1,23\cdot 10^{-3}\)
+		\item \(D=\num{0,0000123}\cdot 10^5\)
+		\item \(E=1,23\cdot 10^3\)
+	\end{enumerate}
+
+	Classement :
+	\vspace{2cm}
+\end{exercise}
+
+\begin{exercise}
+	Écris les produits suivants sous la forme d'une notation scientifique.
+	\begin{enumerate}[cols=2]
+		\item \(\left(10^5\right)^2\cdot 5\cdot 10^{-2}\cdot 4\cdot \left(10^2\right)^4\)
+		\item \(7\cdot 10^{-9}\cdot 10^{-1}\cdot \left(10^7\right)^3\cdot 8\)
+	\end{enumerate}
+\end{exercise}
+
+\section{Exercices mélangés}
+\setcounter{exercise}{0}
+\begin{exercise}
+	Vrai ou faux? Justifie dans tous les cas.
+	\begin{enumerate}
+		\item \((a)^3\) sera toujours positif.
+		\item \(\left(\dfrac{3a}{bc}\right)^3 =\dfrac{3a^3}{b^3c^3}\)
+		\item \((-2)^2=-2^2\)
+		\item \(-5a^3\cdot 6a= -30a^3\)
+		\item Vanessa prétend que le cube de \(10^2\) est égal au carré de \(10^3\).
+		\item Nathan a écrit \((10^3)^2=10^9\).
+		\item Nina pense que le cube d'une somme de deux nombres est égal à la somme des cubes de ces nombres.
+		\item Karim pense que le cube d'un produit de deux nombres est égal au produit des cubes de ces nombres.
+		\item Marie pense que le tiers de \(3^{12}\) est \(3^4\).
+	\end{enumerate}
+\end{exercise}
+
+%\begin{exercise}
+%	Écris les produits suivants sous forme réduite et sans parenthèse.
+%	\begin{enumerate}[cols=2]
+%		\item  \(2x^2\cdot 3x\)
+%		\item  \(5a^2\cdot a\cdot 3a^3\)
+%		\item  \(\dfrac{(2ab)^2}{2a}\)
+%		\item  \((2x)^3\cdot (2x)^3\)
+%		\item  \(\dfrac{\left(x^4\cdot x^6\right)}{x^2}\)
+%		\item  \((2x)^2\cdot xy^2\)
+%		\item  \(\dfrac{a^7b^9\cdot a}{a^7\cdot b^3}\)
+%		\item  \(10(2a^2\cdot 5a^8)\)
+%		\item  \(5a^2\cdot 2a\cdot 3b\cdot 2b^2\)
+%		\item  \((2x^2)^3\)
+%		\item  \((3ab)^3\)
+%		\item  \((3xy)^2\cdot 2x^3y^6\)
+%		\item  \(10\left(3x^2\cdot (x^3)^2\right)\)
+%		\item  \(\dfrac{x^3\cdot x^6}{x^2\cdot x^2}\)
+%	\end{enumerate}
+%\end{exercise}
+
+%\begin{exercise}
+%	Quel est le nom de la propriété utilisée dans chacune des égalités suivantes?
+%	\renewcommand{\etai}{\(\vphantom{\left(\dfrac{5}{2}\right)^3=\dfrac{5^3}{2^3}}\)}
+%	\begin{enumerate} [cols=2]
+%		\item  \(\left(\dfrac{5}{2}\right)^3=\dfrac{5^3}{2^3}\)
+%		\item  \(\dfrac{8^7}{8^6}=8\)
+%		\item  \((5\cdot 9)^6=5^6\cdot 9^6\)\etai
+%		\item  \(x^6\cdot x=x^7\)
+%	\end{enumerate}
+%\end{exercise}
+%
+
+%\begin{exercise}
+%	Cite la ou les propriété(s) utilisées dans les égalités suivantes.
+%	\begin{enumerate}[cols=2]
+%		\item  \((2\cdot 10)^3=8\cdot 1000\)
+%		\item  \(x^8\cdot (x^2)^3=x^{14}\)
+%	\end{enumerate}
+%\end{exercise}
+%
+%\begin{exercise}
+%	Écris le résultat sous forme de puissance d'un seul nombre.
+%	\renewcommand{\etai}{\(\vphantom{\dfrac{5^{37}}{5^{25}}}\)}
+%	\begin{enumerate} [cols=3]
+%		\item  \(7^{25}\cdot 7^{31}\)\etai
+%		\item  \((-9)^{16}\cdot (-9)^7\)
+%		\item  \(\dfrac{5^{37}}{5^{25}}\)
+%		\item  \(6^3\cdot (6^3)^2\)
+%		\item  \(\dfrac{9^8}{9^6}\)\etai
+%		\item  \((9^2)^6\)
+%	\end{enumerate}
+%\end{exercise}
+%
+%\begin{exercise}
+%	Réduis au maximum les produits suivants.
+%	\begin{enumerate}[cols=2]
+%		\item  \(5a^4\cdot 2a\cdot 3b\cdot 2b^2\)
+%		\item  \(3a^2\cdot a\cdot a^3b\cdot 3c^2\)
+%		\item  \(x^2\cdot x\cdot x\cdot x^3\cdot x^7\)
+%		\item  \(2^3\cdot (a^2)^3\)
+%		\item  \((3a^2b)^3\)
+%		\item  \((a^2)^4\cdot ab\cdot (b^3)^2\)
+%		\item  \(2\cdot 3a^2\cdot a^3\cdot 2^2\cdot (a^3)^6\)
+%		\item  \((3xy)^2\)
+%		\item  \((3ab\cdot2ab)^3\)
+%		\item  \((5a^2b)^3\cdot (a^3b^2)^2\)
+%		\item  \((2ab^3)^2\cdot a\cdot b(a^2b)^3\)
+%		\item  \(\dfrac{x^2\cdot x^5}{x\cdot x^2}\)
+%	\end{enumerate}
+%\end{exercise}
+%
+%\begin{exercise}
+%	Trouve la valeur de \(n\) dans les égalités suivantes et fluote les notations
+%	scientifiques.
+%	\begin{enumerate} [cols=2]
+%		\item  \(12500=1,25\cdot 10^n\)
+%		\item  \(0,00125\cdot 10^n=125\)
+%		\item  \(12500=n\cdot 10^3\)
+%		\item  \(0,0001234=1,234\cdot 10^n\)
+%		\item  \(104000000=n\cdot 10^6\)
+%		\item  \(0,0001234=n\cdot 10^{-5}\)
+%	\end{enumerate}
+%\end{exercise}
+
+%\begin{exercise}
+%	Écris les nombres suivants en notation scientifique.
+%	\begin{enumerate}[cols=2]
+%		\item  \(250000000\)
+%		\item  \(0,00005\)
+%		\item  \(137\cdot 10^2\)
+%		\item  \(35,69\cdot 10^{-5}\)
+%		\item  trente sept dixièmes
+%	\end{enumerate}
+%\end{exercise}
+%
+%\newpage
+
+\begin{exercise}
+	Transforme ces mesures en mètres, et exprime le résultat en notation scientifique.
+	\begin{enumerate}[cols=3]
+		\item  \SI{2500}{km}
+		\item  \SI{13}{cm}
+		\item  \SI{3}{mm}
+		\item  \SI{150000000}{km}
+		\item  \SI{250000}{cm}
+		\item  364 milliards de km
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+	Classe les distances suivantes après les avoir écrites en notation scientifique.
+	\begin{center}
+		\begin{tblr}{hlines, vlines, row{1}={gray!40, font=\bfseries}, columns={c,.4\linewidth}}
+			Planètes        & Distance              \\
+			Terre - Soleil  & \SI{14960000}{km}     \\
+			Terre - Pluton  & \(5766\cdot 10^6\) km \\
+			Terre - Saturne & 1,425 milliards de km \\
+		\end{tblr}
+	\end{center}
+\end{exercise}
+
+\begin{exercise}
+	Calcule en utilisant les notations scientifiques. Écris ton résultat en notation scientifique.
+	\begin{enumerate}[cols=2]
+		\item  \(\num{60000}\cdot 0,002\)
+		\item  \(\num{0,000009}\cdot \num{300000000}\)
+		\item  \(\num{120000}\cdot \num{0,0002}\)
+		\item  \(12\cdot 10^5\cdot 9\cdot 10^{-2}\cdot \left(10^8\right)^3\)
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+	Un litre de yaourt contient 2 millions de bactéries. Combien de bactéries peut-on retrouver dans \SI{1250}{l} de yaourt? Écris ta réponses en notation scientifique.
+
+\end{exercise}
+
+\begin{exercise}
+	Une population de microalgues se développe dans la marre du jardin. En un jour, elle se multiplie par 10.\\
+	Si lundi, il y a 820 microalgues, combien se seront développées au bout de 7 jours ? \\
+	Écris ton résultat en écriture scientifique.
+\end{exercise}
+
+\begin{exercise}
+	La terre peut-être considérée comme une sphère de rayon de \SI{6400}{km}. L'aire \(A\) d'une sphère de rayon \(r\) est donnée par la formule
+	\begin{equation*}
+		A=4\pi r^2
+	\end{equation*}
+	Calcule, en \SI{}{km^2}, l'aire de la surface de la terre. Écris ton résultat en notation scientifique.
+
+
+\end{exercise}
+
+\begin{exercise}
+	Le cerveau humain est composé de 100 milliards de neurones. A partir de 30 ans, ce nombre baisse d'environ 100 000 par jour. \\
+	Donne les écritures décimale et scientifique du nombre de neurones qu'un humain a déjà perdu lorsqu'il atteint l'âge de 40 ans.
+\end{exercise}
+\end{document}

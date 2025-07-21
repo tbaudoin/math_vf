@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(60:3){C}
+    \tkzDefPoint(110:3){D}
+    \tkzDefPoint(145:2){G}
+    \tkzDefPoint(50:3){F}
+    \tkzInterLL(G,F)(A,D)\tkzGetPoint{H}
+    \tkzInterLL(G,F)(A,C)\tkzGetPoint{E}
+
+    \tkzDrawLines(A,D A,C G,F)
+    \tkzDrawPoints[size=2pt](A,C,D,G,F,H,E)
+    \tkzLabelPoints[right](A)
+    \tkzLabelPoints[above left](C)
+    \tkzLabelPoints[left](D)
+    \tkzLabelPoints[below](G)
+    \tkzLabelPoints[below](F)
+    \tkzLabelPoints[above right=2pt and -4pt](H)
+    \tkzLabelPoints[above left](E)
+\end{tikzpicture}

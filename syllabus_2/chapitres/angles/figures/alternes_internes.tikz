@@ -1,0 +1,21 @@
+\begin{tikzpicture}[baseline=(current bounding box.east)]
+    %basic code for two lines and a secant
+    \tkzDefPoints{0/0/A1, 3/0/A2}%first line
+    \tkzDefPoints{0/-3/B1,3/-2/B2}%second line
+    \tkzDefPoints{1.5/1/S1, 1.5/-3/S2}%secant line
+    \tkzInterLL(S1,S2)(A1,A2)\tkzGetPoint{A}
+    \tkzInterLL(S1,S2)(B1,B2)\tkzGetPoint{B}
+    %special angles
+    \tkzFillAngles[fill=red!20,size=.5](A1,A,S2 B2,B,S1)
+    \tkzFillAngles[fill=blue!20,size=.5](S2,A,A2 S1,B,B1)
+    \tkzMarkAngles[mark = |,size=.5](A1,A,S2 B2,B,S1)
+    \tkzMarkAngles[mark = ||,size=.5](S2,A,A2 S1,B,B1)
+    %draw lines, points and labels
+    \tkzDrawLines(A1,A2 B1,B2 S1,S2)
+    \tkzLabelLine[pos=1.3](A1,A2){$a$}
+    \tkzLabelLine[pos=1.3](B1,B2){$b$}
+    \tkzLabelLine[pos=-0.3](S1,S2){$s$}
+    \tkzDrawPoints(A,B)
+    \tkzLabelPoints[above right = 4pt and 1pt](A)
+    \tkzLabelPoints(B)
+\end{tikzpicture}

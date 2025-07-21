@@ -1,0 +1,573 @@
+\documentclass[../../syllabus_2.tex]{subfiles}
+\begin{document}
+\chapter{Distances et lieux}
+% \faIcon{book} Théorie pages 141 à 146 et 152 à 156.
+\section{Rappels : triangles, quadrilatères, cercles et droites remarquables}
+
+% \faIcon{book} Théorie page 54 et suivantes.
+%TODO: styliser le tableau
+\minisec{Nature d'un triangle}
+\begin{center}
+  \begin{tblr}{
+    hlines,
+    vlines,
+    hline{1}={1}{white},
+    vline{1}={1}{white},
+    colspec={lX[c]X[c]X[c]},
+    rows={m}}
+                                        & Triangle scalène                                                    & Triangle isocèle                                                    & Triangle équilatéral                                         \\
+    \rotatebox{90}{Triangle acutangle } & \includegraphics[height=2cm]{tikz/triangle_scalene_acutangle.tikz}  & \includegraphics[height=2cm]{tikz/triangle_isocele_acutangle.tikz}  & \includegraphics[height=2cm]{tikz/triangle_equilateral.tikz} \\
+    \rotatebox{90}{Triangle rectangle } & \includegraphics[height=2cm]{tikz/triangle_scalene_rectangle.tikz}  & \includegraphics[height=2cm]{tikz/triangle_isocele_rectangle.tikz}  &                                                              \\
+    \rotatebox{90}{Triangle obtusangle} & \includegraphics[height=2cm]{tikz/triangle_scalene_obtusangle.tikz} & \includegraphics[height=2cm]{tikz/triangle_isocele_obtusangle.tikz} &
+  \end{tblr}
+\end{center}
+
+\newpage
+
+\begin{exercise}
+  Donne la nature des triangles suivants.
+
+  \begin{tcolorbox}[enhanced,sidebyside, frame hidden, interior hidden,segmentation hidden]
+    \includegraphics[height=4cm]{tikz/nature_triangles.tikz}
+    \tcblower
+    \begin{enumerate}
+      \item Triangle 1 : \dotfill
+      \item Triangle 2 : \dotfill
+      \item Triangle 3 : \dotfill
+      \item Triangle 4 : \dotfill
+    \end{enumerate}
+  \end{tcolorbox}
+\end{exercise}
+
+\begin{exercise}
+  Complète par le vocabulaire adéquat.
+
+  \begin{tcolorbox}[enhanced,sidebyside, frame hidden, interior hidden,segmentation hidden, righthand width=4cm]
+    \begin{enumerate}
+      \item \(O\) est le \dotfill du cercle \(\mathcal{C}\).
+      \item \([AD]\) est un \dotfill du cercle \(\mathcal{C}\).
+      \item \([OE]\) est un \dotfill du cercle \(\mathcal{C}\).
+      \item \( [BC]\) est une \dotfill du cercle \(\mathcal{C}\).
+            % \item \dotfill est un arc du cercle \(\mathcal{C}\).
+    \end{enumerate}
+    \tcblower
+    \centering
+    \includegraphics[height=4 cm]{tikz/vocabulaire_cercle.tikz}\\
+    Colorie en vert le disque, et en rouge le cercle.
+  \end{tcolorbox}
+\end{exercise}
+
+
+\begin{exercise}
+  Dans ces deux quadrilatères, trace les médianes en vert et les diagonales en rouge. Code ton dessin.
+  \begin{center}
+    \includegraphics[width=5cm]{tikz/quadrilatere001.tikz}
+    \hfil
+    \includegraphics[width=5cm]{tikz/quadrilatere002.tikz}
+  \end{center}
+  \begin{center}
+
+  \end{center}
+\end{exercise}
+
+\newpage
+
+\begin{exercise}
+  Trace la médiane relative à \([AB]\) en bleu, la hauteur issue de \(B\) en vert et la médiatrice relative à \([BC]\) au crayon.\\
+  Code ton dessin.
+  \begin{center}
+    \includegraphics{tikz/triangle001.tikz}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  Trace la bissectrice de l'angle ci-dessous, au compas. Code ton dessin. \\
+  \begin{center}
+    \includegraphics[width=5cm]{tikz/angle001.tikz}
+  \end{center}
+\end{exercise}
+
+
+
+\section{Inégalité triangulaire}
+
+Mateo demande à Aleksi de tracer le triangle \(MAT\) dont les dimensions sont respectivement de \qty{6}{cm}, \qty{3}{cm} et \qty{2}{cm}. Trace le triangle \(MAT\).
+
+\vspace*{3cm}
+
+
+\adf[Que remarques-tu ?]{3}
+% Pour qu'un triangle soit constructible, il est nécessaire que la longueur du plus grand côté soit inférieur à la somme des longueurs des deux autres cotés.
+
+\begin{exercise}
+  Pour chacun des cas ci-dessous, détermine si nous pourrions tracer le triangle demandé.
+  Justifie par une (in)égalité.
+  \begin{enumerate}[cols=2, itemsep=2cm]
+    \item Soit le triangle \(ABC\) tel que \(|AB| = \qty{7}{cm}\), \(|AC| = \qty{4}{cm}\) et \(|BC| = \qty{13}{cm}\)
+    \item Soit le triangle suivant \\
+          \includegraphics[height=2cm]{tikz/inegalite_triangulaire001.tikz}
+    \item Soit le triangle \(ABC\) tel que \(|AB| =\qty{7}{cm}\), \(|AC| = \qty{7}{cm}\) et \(|BC| = \qty{3}{cm}\)
+    \item Soit le triangle suivant \\
+          \includegraphics[height=2cm]{tikz/inegalite_triangulaire002.tikz}
+  \end{enumerate}
+  \vspace*{2cm}
+\end{exercise}
+
+\begin{exercise}
+  Joseph veut tracer un triangle isocèle dont un des côtés mesure \qty{7}{cm} et un autre \qty{3}{cm}. Il dit alors qu'il a le choix pour la longueur de son dernier côté. Manon lui dit que son dernier côté doit obligatoirement mesurer \qty{7}{cm}. \\
+  Qui a raison~? Justifie.
+\end{exercise}
+
+\section{Position relative d'un point par rapport à une droite}
+Nathan ne sait pas bien nager, il aimerait rejoindre la plage le plus vite possible. Quel chemin doit-il choisir ? Et pourquoi ?
+
+\includegraphics[height=3cm]{img/distance_point_droite.png}
+
+\adf[la distance entre un point et une droite est]{2}
+% la distance entre ce point et le pied de la perpendiculaire à la droite passant par ce point.
+
+\begin{exercise}
+  \par
+  \includegraphics[width=.75\linewidth]{img/Ce1D3.png}
+\end{exercise}
+
+\section{Positions relatives d'une droite et d'un cercle}
+
+Quelles sont les différentes positions d'une droite et d'un cercle~?
+
+\begin{tblr}{hlines, vlines, colspec={*{3}{X[c]}}, row{1}={4cm}}
+  \includegraphics[height=2cm]{tikz/Cercle.tikz} & \includegraphics[height=2cm]{tikz/Cercle.tikz} & \includegraphics[height=2cm]{tikz/Cercle.tikz} \\
+  La droite est \textbf{extérieure} au cercle    & La droite est \textbf{tangente} au cercle      & La droite est \textbf{sécante} au cercle
+\end{tblr}
+
+Comment tracer une droite tangente à un cercle ?
+
+\tcbsidebyside[blanker,righthand ratio=.25, sidebyside gap=5mm]{%
+  \begin{enumerate}
+    \item On choisit un point quelconque sur le cercle (pour l'exemple on le nomme \(A\)).
+    \item On trace le rayon \(r\) joignant le centre du cercle au point \(A\).
+    \item On trace \(d\), la droite perpendiculaire au rayon \(r\) passant par \(A\).
+  \end{enumerate}
+}{%
+  \includegraphics{tikz/Cercle.tikz}
+}
+
+% \adf[La tangent en un point d'un cercle est ]{1}
+% %La tangente (t) en un point d’un cercle est la droite perpendiculaire au rayon aboutissant à ce point
+
+\begin{exercise}
+  Trace un cercle de centre \(A\) tangent à la droite \(d\)
+  \begin{center}
+    \includegraphics{tikz/cercle_tangent_droite.tikz}
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  Construis les tangentes \(t_1\) et \(t_2\) en deux points du cercle sachant que l'amplitude de l'angle aigu formé par ces deux droites est de \ang{55}.
+  \begin{center}
+    \includegraphics{tikz/cercle_deux_tangentes.tikz}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  Soient :
+  \begin{itemize}
+    \item \(\mathcal{C}\) un cercle de centre \(M\) et de rayon \(r\),
+    \item \(a\) une droite,
+    \item \(l\) la distance entre le centre \(M\) et la droite \(a\).
+  \end{itemize}
+
+
+  Complète le tableau suivant.
+
+  \begin{tblr}{hlines, vlines, rows={1cm, m}, row{1}={font=\bfseries\boldmath, gray!20},colspec={*{4}{X[c]}}}
+    \(r\) & \(l\) & Conditions & Position relative de la droite et du cercle \\
+    \(3\) & \(2\) &            &                                             \\
+    \(4\) & \(6\) &            &                                             \\
+          & \(5\) &            & tangente                                    \\
+    \(2\) &       &            & sécante                                     \\
+  \end{tblr}
+
+  Si tu en as besoin pour visualiser les situations, utilise le bas de cette page comme brouillon.
+  \begin{tblr}{hlines, vlines, rowsep=4cm}
+  \end{tblr}
+\end{exercise}
+
+
+\section{Positions relatives de deux cercles}
+
+Quelles sont les différentes positions possibles de deux cercles~?
+
+Sur base de leur définition, détermine à quel terme chaque situation correspond:
+\bigbreak
+
+\textbf{tangents intérieurs}\hfill
+\textbf{disjoints extérieurs}\hfill
+\textbf{concentriques}
+
+\textbf{tangents extérieurs}\hfill
+\textbf{sécants}\hfill
+\textbf{disjoints intérieurs}
+
+\bigbreak
+
+\begin{tblr}{hlines,vlines,colspec={XXX}, columns={c},row{3,6}={1cm}}
+  Les cercles n'ont aucun point d'intersection et sont extérieurs l'un à l'autre & Les cercles ont un point d'intersection et sont extérieurs l'un à l'autre & Les cercles ont deux points d'intersection \\
+  \input{tikz/DisjExt.tikz}                                                      & \input{tikz/TanExt.tikz}                                                  & \input{tikz/secants.tikz}                  \\
+                                                                                 &                                                                           &                                            \\
+\end{tblr}
+\vfil
+\begin{tblr}{hlines,vlines,colspec={XXX}, columns={c},row{3,6}={1cm}}
+  Les cercles ont un point d'intersection et sont intérieurs l'un à l'autre & Les cercles n'ont pas de point d'intersection et sont intérieurs l'un à l'autre & Les cercles ont le même centre  \\
+  \input{tikz/TanInt.tikz}                                                 & \input{tikz/DisInt.tikz}                                                        & \input{tikz/Concentriques.tikz} \\
+                                                                           &                                                                                 &
+\end{tblr}
+
+\newpage
+\begin{exercise}
+  Soient :
+  \begin{itemize}
+    \item \(\mathcal{C_1}\) un cercle de centre \(A\) et de rayon \(r_1\)
+    \item \(\mathcal{C_2}\) un cercle de centre \(B\) et de rayon \(r_2\)
+  \end{itemize}
+  Complète le tableau suivant.
+
+  \begin{tblr}{hlines, vlines, rows={1cm, m}, columns={c}, row{1}={font=\bfseries\boldmath, gray!20},colspec={*{4}{X}}}
+    \(\lvert AB \rvert\) & \(r_1\) & \(r_2\) & Position relative des deux cercles \\
+    \(4\)                & \(2\)   & \(3\)   &                                    \\
+    \(6\)                & \(2\)   & \(3\)   &                                    \\
+                         & \(3\)   & \(1\)   & concentriques                      \\
+                         & \(3\)   & \(5\)   & tangents intérieurs                \\
+  \end{tblr}
+\end{exercise}
+
+% \begin{exercise}
+%   Trace un cercle de centre \(O\) et de rayon \qty{2}{cm}. Place un point \(T\) sur le cercle. Trace ensuite la droite \(d\) tangente au cercle passant par le point \(T\).
+% \end{exercise}
+
+\begin{exercise}
+  Trace deux cercles tangents intérieurs dont la distance entre les centres vaut \qty{1}{cm}.
+\end{exercise}
+
+\section{Distance dans le plan par rapport à un point}
+
+La distance par rapport à un point se trouve à l'aide \dotfill
+
+\adf[Définition : ]{1}
+% un cercle est le lieu des points équidistants d'un point appelé le centre du cercle.
+
+
+\begin{exercise}
+  Place, à l'intérieur des cadres, en vert, le lieu des points qui respectent les conditions.
+
+  \begin{enumerate}
+    \item Les points situés à \qty{3}{cm} de \(A\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.25\linewidth,2) circle(1pt)node[above right]{\(A\)};
+            \end{tikzpicture}
+          \end{center}
+    \item Les points situés à moins de \qty{2}{cm} de \(B\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.25\linewidth,2) circle(1pt)node[above right]{\(B\)};
+            \end{tikzpicture}
+          \end{center}
+    \item Les points situés à minimum \qty{2}{cm} de \(D\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.25\linewidth,2) circle(1pt)node[above right]{\(D\)};
+            \end{tikzpicture}
+          \end{center}
+          \newpage
+    \item Les points situés à \qty{3}{cm} de \(B\) et à \qty{2,5}{cm} de \(C\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.15\linewidth,1.5) circle(1pt)node[above right]{\(C\)};
+              \draw[fill=black] (.35\linewidth,2.5) circle(1pt)node[above right]{\(B\)};
+            \end{tikzpicture}
+          \end{center}
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Deux chèvres sont attachées par une corde à un piquet. Ont-elles toutes les deux accès à l'abreuvoir ? Justifie en mobilisant la théorie que tu viens de découvrir.
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/chevres_abreuvoir.png}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  À quel(s) point(s) peut correspondre le point \(A\) pour que\\ \(\qty{2}{cm}<|AP|\le\qty{3,5}{cm}\) ?
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/nuage_points.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\section{Distance dans le plan par rapport à deux points}
+
+La distance par rapport à deux points se trouve à l'aide \dotfill
+
+\adf[Définition : ]{1}
+\adf[Propriété : ]{1}
+
+\begin{exercise}
+  Place, à l'intérieur des cadres, en vert, le lieu des points situés qui respectent les conditions.
+  \begin{enumerate}
+    \item Les points situés à égale distance de \(A\) et \(B\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.15\linewidth,1.5) circle(1pt)node[above right]{\(B\)};
+              \draw[fill=black] (.35\linewidth,1) circle(1pt)node[above right]{\(A\)};
+            \end{tikzpicture}
+          \end{center}
+    \item Les points plus proches de \(E\) que de \(B\) et à \qty{3}{cm} de \(B\).
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0,0) rectangle (.5\linewidth,4);
+              \draw[fill=black] (.15\linewidth,1.5) circle(1pt)node[above right]{\(B\)};
+              \draw[fill=black] (.35\linewidth,2.5) circle(1pt)node[above right]{\(E\)};
+            \end{tikzpicture}
+          \end{center}
+  \end{enumerate}
+\end{exercise}
+
+\newpage
+
+\begin{exercise}
+  Monsieur Debroux est chef scout. Il organise une attaque de camp que les chefs
+  doivent protéger. Il y a l'équipe A et l'équipe B. Il chercher l'endroit où il pourrait
+  placer son camp.
+
+  Ne voulant pas favoriser une équipe, les chefs décident de placer leur camp à égale
+  distance des points de départ des deux équipes. Où les chefs pourront placer le
+  camp à défendre ? Trace ces emplacements en vert sur le dessin.
+
+  \begin{center}
+    \includegraphics{tikz/scout.tikz}
+  \end{center}
+\end{exercise}
+
+\begin{exercise}
+  Trouve le centre de ce cercle en utilisant la théorie que tu viens de découvrir et les propriétés du cercle.
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0,0) circle (2cm);
+    \end{tikzpicture}
+  \end{center}
+\end{exercise}
+
+\section  {Distance dans le plan par rapport à une droite}
+
+\adf[La distance par rapport à une droite se trouve à l'aide]{1}
+% d'une droite qui lui est parallèle.
+
+\begin{exercise}
+  Place, à l'intérieur des cadres, en vert, le lieu des points qui respectent les conditions.
+  \begin{tasks}(2)
+    \task Les points situés à \qty{2}{cm} de \(d\).
+    \begin{center}
+      \includegraphics[height=3cm]{img/droited.png}
+    \end{center}
+    \task Les points situés à moins de \qty{1,5}{cm} de \(d\).
+    \begin{center}
+      \includegraphics[height=3cm]{img/droited2.png}
+    \end{center}
+    \task! Les points situés à \qty{2}{cm} ou plus de \(d\) et plus proche de \(A\) que de \(B\).
+    \begin{center}
+      \includegraphics[height=5cm]{img/droitedAB.png}
+    \end{center}
+  \end{tasks}
+\end{exercise}
+
+
+\begin{exercise}
+  \tcbsidebyside[righthand ratio=.33, blanker, sidebyside align=top]{Michel veut installer des arbres à \qty{1,5}{m} de la route.
+    Trace l'ensemble des points sur lequel Michel pourrait mettre des arbres.}
+  {\includegraphics[height=5cm]{img/route.png}}
+\end{exercise}
+
+\section{Distance dans le plan par rapport à deux droites sécantes}
+
+La distance par rapport à deux droites se trouve à l'aide \dotfill \\
+\adf[Définition :]{1}
+\adf[Propriété : ]{1}
+
+\begin{exercise}
+  Place, à l'intérieur des cadres, en vert, le lieu des points qui respectent les conditions.
+  \begin{enumerate}
+    \item Les points situés à égale distance des droites \(f\) et \(d\).
+          \begin{center}
+            \includegraphics[]{img/droitesdetf.png}
+          \end{center}\newpage
+    \item Les points situés à moins de \(3\) cm de \(A\), et à égale distance entre \(f\) et \(d\).
+          \begin{center}
+            \includegraphics[]{img/droitesdetfA.png}
+          \end{center}
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Une nouvelle antenne 4G doit être placée dans la région. Afin que le signal soit
+  optimal, elle devra être située à égale distance des deux routes et de la ligne de
+  chemin de fer. Place cette antenne sur le dessin. Sois précis et laisse tes constructions.
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/antenne_4G.png}
+  \end{center}
+\end{exercise}
+
+\section{Cercles inscrits, cercles circonscrits}
+
+% Bien coder les constructions !
+Pour tracer un \textbf{cercle inscrit} dans un triangle, autrement dit un cercle tangent aux trois côtés de ce triangle, il faut tracer les bissectrices des trois angles de ce triangle.
+\begin{itemize}[label=\(\triangle\)]
+  \item Son centre est l'intersection des bissectrices
+  \item Son rayon est la distance entre le centre et l'un de ses côtés.
+\end{itemize}
+
+\begin{center}
+  \includegraphics{tikz/Triangle pas rectangle.tikz}
+\end{center}
+
+
+% Bien coder les constructions !
+Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cercle passant par les trois sommets de ce triangle, il faut tracer les médiatrices des trois côtés de ce triangle.
+
+\begin{itemize}[label=\(\triangle\)]
+  \item Son centre est l'intersection des médiatrices
+  \item Son rayon est la distance entre le centre et l'un des sommets.
+\end{itemize}
+
+\begin{center}
+  \includegraphics{tikz/Triangle pas rectangle.tikz}
+ % \vfill
+ % \includegraphics[width=.4\linewidth]{tikz/triangle_scalene_obtusangle_2.tikz}
+\end{center}
+
+\section{Exercices issus de CE1D}
+
+\begin{exercise}
+  \begin{center}
+    \includegraphics[width=.5\linewidth]{img/CE1D1a.png}
+    % \includegraphics[]{img/Ce1D1b.png}
+  \end{center}
+  Un voilier a coulé au large de Fort Boyard.\\
+  Les secours ont reçu de l'aide de deux personnes.\\
+  Voici leurs témoignages :\\
+  \og Je l'ai vu en difficulté, plus près de la pointe Sainte-Catherine que de Fort Boyard\fg{}.\\
+  \og Lorsqu'il a cassé son mât, il était à moins de \qty{2}{km} de Fort Boyard\fg{}.
+
+  \consigne{colorie} la zone où les secours doivent orienter leurs recherches.
+\end{exercise}
+
+
+\begin{exercise}
+  \begin{center}
+    \includegraphics[width=.5\linewidth]{img/Ce1D2b.png}
+    % \includegraphics[]{img/Ce1D2a.png}\\
+  \end{center}
+  Loïc a enterré un trésor dans le parc de l'école.\\
+  Pour le trouver, il donne les indications suivantes à ses copains :\\
+  \og Le trésor se trouve à moins de \qty{4}{m} du mur et à moins de \qty{2,5}{m} du pied de l'arbre \(A\)\fg{}.
+
+  \consigne{détermine} la zone du parc où ses copains doivent chercher pour retrouver le trésor.\\
+  \consigne{laisse} tes constructions visibles.
+\end{exercise}
+
+\begin{exercise}
+  Les mesures des trois côtés d'un triangle sont des nombres entiers.\\
+  Deux côtés mesurent \qty{2}{cm} et \qty{5}{cm}.
+
+  \consigne{détermine}, en centimètres, la plus grande mesure du 3\ieme côté.\\
+  \consigne{justifie} ta réponse.\vspace*{3cm}
+
+  La plus grande mesure entière du 3\ieme côté vaut \blank[width=2cm]{} cm.
+\end{exercise}
+
+\begin{exercise}
+  Charles affirme que les dimensions d'un des triangles sont incorrectes.
+
+  \consigne{justifie} son affirmation.
+
+  \includegraphics[width=.25\linewidth]{img/Ce1D5.png}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  Un dauphin est repéré à \qty{250}{m} de la côte, à \qty{400}{m} du phare et à moins de \qty{300}{m} du voilier.
+
+  \consigne{marque} en vert la position du dauphin.\\
+  \consigne{Laisse} tes constructions visibles.
+  \begin{center}
+    \includegraphics[width=.8\linewidth]{img/Ce1D6b.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  Le croquis ci-dessous représente une rivière et deux villages \(A\) et \(B\).\\
+  Sur la rivière, on veut construire un pont \(P\) situé à égale distance de deux villages et le plus près possible de chacun d'eux.
+
+  \consigne{détermine} la position de ce pont \(P\) sur la figure.\\
+  \consigne{laisse} tes constructions visibles.
+  \begin{center}
+    \includegraphics[width=.5\linewidth]{img/Ce1D7.png}
+  \end{center}
+\end{exercise}
+
+
+\begin{exercise}
+  Un bateau se trouve à \qty{300}{m} du quai et à \qty{250}{m} du phare.
+
+  \consigne{Marque} en vert les positions possibles de ce bateau.\\
+  \consigne{Laisse} tes constructions visibles.
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/Ce1D8.png}
+  \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  \consigne{Marque} le point \(P\) situé à égale distance des côtés de l'angle \(\widehat{BAC}\) et équidistant des points \(R\) et \(T\).\\
+  \consigne{Laisse} tes constructions visibles.
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/Ce1D9.png}
+  \end{center}
+\end{exercise}
+
+
+\begin{exercise}
+  La figure ci-dessous a été réalisée à main levée.\\
+  Pourtant elle ne peut pas être réellement tracée aux instruments.
+  \begin{center}
+    \includegraphics[width=.5\linewidth]{img/Ce1D10.png}
+  \end{center}
+  \consigne{Énonce} la propriété qui justifie cette impossibilité.
+\end{exercise}
+
+\newpage
+\begin{exercise}
+  La bibliothèque \(B\) est située à égale distance :
+  \begin{itemize}[label=\(\bullet\)]
+    \item du parc \(P\);
+    \item de la gare \(G\);
+    \item du marché \(M\).
+  \end{itemize}
+  Sur le plan de la ville, les emplacements \(P\), \(G\) et \(M\) ont été indiqués.
+
+  \consigne{Complète} le plan en indiquant l'emplacement de la bibliothèque \(B\).\\
+  \consigne{laisse} tes constructions visibles.
+  \begin{center}
+    \includegraphics[width=.75\linewidth]{img/Ce1D11b.png}
+  \end{center}
+\end{exercise}
+
+
+\end{document}

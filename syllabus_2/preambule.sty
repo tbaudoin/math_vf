@@ -1,0 +1,292 @@
+% boost compilation ? 
+%\pdfcompresslevel=0
+%\pdfobjcompresslevel=0
+% \usepackage{showframe}
+\usepackage[french]{babel}
+%\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+% \usepackage[margin=1in]{geometry}
+% \usepackage{cmbright}
+\usepackage[sfmath,light]{kpfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathtools, amssymb}
+\usepackage{mathrsfs} % fir 
+\usepackage[export]{adjustbox}
+\usepackage[locale=FR,group-minimum-digits=3]{siunitx}
+\usepackage{array, booktabs, tabularx, makecell}
+\usepackage{tabularray}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage{fontawesome5}
+\usepackage[np]{numprint}
+\usepackage{pdflscape}
+\usepackage{calc}
+\usepackage{setspace}
+\usepackage{calrsfs} % pour le C rond (notation pour les cercles). Utiliser $\mathcal{C}$.
+\usepackage{xlop}
+\opset{decimalsepsymbol={,}}
+\usepackage{enumitem}
+\usepackage{multicol}
+\setlist[enumerate]{label=\textbf{\alph*)}}
+\SetEnumitemKey{cols}
+{
+    itemsep= 1em,
+    before = \begin{multicols}{#1},
+        after = \end{multicols},
+}
+\usepackage{stmaryrd} %\sslash pour faire le symbole du parallélisme //
+\usepackage{tikzscale}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds, math, calc,positioning,decorations.pathmorphing, tikzmark, babel}
+\usepackage{tkz-base}
+\usepackage{tkz-euclide}
+\pgfkeys{/pgf/number format/.cd,
+    use comma,
+    /pgf/number format/fixed}
+\usepackage[many]{tcolorbox}
+\usepackage{xparse}
+\usepackage{centernot}
+\usepackage[normalem]{ulem}
+\usepackage{tasks}
+\settasks{label-width=15pt,label-format=\bfseries}
+\usepackage[no-files, use-aux]{xsim}
+\xsimsetup{%
+    path = xsim,
+    load-style = syllabus-template,
+    exercise/template = mytemplate,
+    solution/template = mytemplate,
+    exercise/within = chapter,
+    exercise/the-counter= \arabic{exercise},
+    blank/blank-style = \dotuline{#1},
+}
+
+%===============================================================================
+% Multiple choice environnement
+%===============================================================================
+% how to use it : 
+%\begin{qcm}[number of column (optionnal, by default = 3)]
+%	content 
+%\end{qcm}
+%===============================================================================
+\newcommand*\correct{\item[\faCheckSquare]}
+\newcommand*{\choice}{\item}
+\newlist{choices}{itemize}{1}
+\setlist[choices]{label=\faIcon[regular]{square}}
+
+\newenvironment{qcm}[1][3]
+{%
+    \begin{multicols}{#1}%
+        \begin{choices}
+            }
+            {%
+        \end{choices}
+    \end{multicols}
+}
+%===============================================================================
+% Exemple style
+%===============================================================================
+\newcommand{\exemple}{Exemple : }
+\newcommand{\exemples}{Exemples : }
+%===============================================================================
+% Exemple style
+%===============================================================================
+\newcommand{\illu}{Illustration : }
+\newcommand{\illus}{Illustrations : }
+%===============================================================================
+% Vertical space in a tabular
+%===============================================================================
+\setcellgapes{2pt}
+\makegapedcells
+%===============================================================================
+% Boites d'une taille donnée (1cm par défaut) remplies par des pointillés
+%===============================================================================
+\newcommand{\dotfillbox}[1][1 cm]{\makebox[#1]{\dotfill}}
+%===============================================================================
+% symbole parallèle et non parallèle
+%===============================================================================
+\newcommand{\parallelsum}{\mathbin{\!/\mkern-5mu/\!}}
+\newcommand{\bnot}[1]{%
+    \mathrel%
+    {%
+        \ooalign{\hidewidth$\backslash$\hidewidth\cr$#1$}%
+    }%
+}
+\newcommand{\nparallelsum}{\bnot{\parallelsum}}
+%==================================================
+\NewDocumentCommand{\dotsforanswer}{m o O{1ex}}%
+{%
+    \IfNoValueTF{#2}%
+    {
+        \par
+        \foreach \i in {1,...,#1}{\dotfill\vskip #3}
+    }
+    {
+        #2\dotfill\vskip #3
+        \foreach \i in {2,...,#1}{\dotfill\vskip #3}
+    }
+}
+%===============================================================================
+% \adf est l'abréviation de answer dotfill. La commande permet de créer une zone
+% de réponse pour les élèves
+% Utilisation : \adf{nombre de lignes} ou \adf[text]{nombre de lignes}
+%===============================================================================
+\NewDocumentCommand{\adf}{o m O{1 cm}}%
+{%
+    %
+    \IfValueTF{#1}%
+    %if True
+    {%
+        \begin{tikzpicture}[y=#3, baseline=(current bounding box.north)]%
+            \node[inner sep=0,text width=\linewidth] at (0,0){#1 \dotfill};
+            \foreach \y in {-1,...,-#2}{\node[text width=\linewidth, inner sep=0] at (0,\y){\dotfill};}
+        \end{tikzpicture}\bigbreak%
+    }%
+    %if False
+    {%
+        \par%
+        \begin{tikzpicture}[y=#3,baseline=(current bounding box.north)]%
+            \foreach \y in {-1,...,-#2}{\node[text  width=\linewidth, inner sep=0] at (0,\y){\dotfill};}
+        \end{tikzpicture}\bigbreak%
+    }%
+    %
+}
+%==============================================================================
+% boite pour les définitions.
+%==============================================================================
+\newtcbox{\mybox}{
+    on line,
+    arc=7pt,
+    colback=white,
+    colframe=black,
+    before upper={\rule[-3pt]{0pt}{10pt}},
+    boxrule=1pt,
+    boxsep=10pt,
+    left=6pt,
+    right=6pt,
+    top=2pt,
+    bottom=2pt}
+%==============================================================================
+% style des chapitres et retrait du numéro de chapitre devant les sections.
+%==============================================================================
+\renewcommand\chapterlinesformat[3]%
+{%
+    %
+    \begin{tcolorbox}[enhanced,
+            colback=white,
+            boxrule=2 pt,
+            colframe=black,
+            arc=0pt,
+            outer arc=0pt,
+            leftrule=0pt,
+            rightrule=0pt,
+            fontupper=\sffamily\bfseries\huge,
+            enlarge left by=-1in-\hoffset-\oddsidemargin,
+            enlarge right by=-\paperwidth+1in+\hoffset+\oddsidemargin+\textwidth,
+            width=\paperwidth,
+            left=1in+\hoffset+\oddsidemargin,
+            right=\paperwidth-1in-\hoffset-\oddsidemargin-\textwidth,
+            top=1cm,
+            bottom=1cm,
+            overlay={\node[fill=black,
+                        draw=white,
+                        rounded corners=0.5cm,
+                        line width=0.15cm,
+                        inner sep=0pt,
+                        text width=1.7cm,
+                        minimum height=1.7cm,
+                        align=center,
+                        font=\color{white}\sffamily\bfseries\fontsize{30}{36}\selectfont
+                    ]
+                    (chapname) at ([xshift=-4cm] frame.north east){\thechapter};
+                    \node[font=\small,anchor=south,inner sep=2pt] at (chapname.north){\MakeUppercase\chaptername};}]
+        #3
+    \end{tcolorbox}
+
+}
+\renewcommand{\thesection}{\arabic{section}}
+
+\newcommand{\corcolor}{white}
+
+\newcommand{\tikzspace}{\vspace{.5 cm}}
+
+% avec l'option pencil draw, cela donne l'effet de dessin à main levée
+\tikzset{pencil draw/.style={
+            draw,
+            decorate,
+            decoration={random steps,segment length=3mm,amplitude=0.2mm}
+        }
+}
+
+% ajout d'une nouvelle commande pour que la barre de fractions soit plus large (utile pour les fractions de fractions)
+\DeclareRobustCommand{\widefrac}[3][4pt]{%
+    \dfrac{\hspace{#1}#2\hspace{#1}}{\hspace{#1}#3\hspace{#1}}}
+
+\newlength{\xlen}
+\AtBeginDocument{\setlength{\xlen}{\fontcharht\font`x}}   %% height of x
+
+% Balance en tikz pour les équations
+\NewDocumentCommand{\balance}{O{2} m m}{
+    \begin{tikzpicture}
+        \def\l{#1}
+        \coordinate (L) at (-\l, 0);
+        \coordinate (R) at (\l,0);
+        \coordinate (M) at (0,-0.02);
+        \coordinate (LP) at (-\l,.25);
+        \coordinate (RP) at (\l,.25);
+        \coordinate (A) at (-120:0.75);
+        \coordinate (B) at (-60:0.75);
+        \draw (LP) -- (L) -- (R) -- (RP);
+
+        % le triangle 
+        \draw (A) -- (B) -- (M) -- cycle;
+        \node at (barycentric cs:A=1,B=1,M=1){=};
+
+        % plateau de gauche
+        \node[anchor=south, inner sep=0pt] (LM) at (LP){#2};
+        \draw ($(LM.south west) - (.25,0)$) -- ($(LM.south east) + (.25,0)$);
+        % plateau de droite
+        \node[anchor=south, inner sep=0pt] (RM) at (RP){#3};
+        \draw ($(RM.south west) - (.25,0)$) -- ($(RM.south east) + (.25,0)$);
+        %debug tool 
+        %\draw (current bounding box.north west) rectangle (current bounding box.south east);
+    \end{tikzpicture}
+}
+
+
+
+\usepackage{subfiles}
+
+
+% Pour des lettres ou du texte entouré par un cercle.
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+        \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+% un essaie pour que les exercices ne s'étale pas sur plusieurs pages
+% \BeforeBeginEnvironment{exercise}{%
+%     %   \vspace{3.5ex plus 1ex minus .2ex}
+%     \noindent\begin{minipage}{\linewidth}%
+%         }
+%         \AfterEndEnvironment{exercise}{%
+%     \end{minipage}\par
+% }
+
+% nouvelle page pour chaque section sauf pour la section 1
+\makeatletter
+\renewcommand\sectionlinesformat[4]{%
+    \Ifstr{#1}{section}{%
+        \ifnum\value{section}=1
+            #3#4
+        \else
+            \clearpage #3#4
+        \fi
+    }{%
+    #3#4}
+}
+\makeatother
+
+
+
+\newcounter{mycounterlist}
+
+\usepackage{pdfpages}
+
+\newcommand{\consigne}[1]{{\bfseries\MakeUppercase{#1}}}
