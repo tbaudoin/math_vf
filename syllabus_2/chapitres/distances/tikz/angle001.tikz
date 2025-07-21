@@ -1,8 +1,0 @@
-\begin{tikzpicture}
-    \tkzDefPoint(0,0){A}
-    \tkzDefPoint(190:3){B}
-    \tkzDefPoint(120:3){C}
-    \tkzDrawSegments(B,A A,C)
-    \tkzMarkAngle(C,A,B)
-    \tkzLabelPoints[below right](A)
-\end{tikzpicture}

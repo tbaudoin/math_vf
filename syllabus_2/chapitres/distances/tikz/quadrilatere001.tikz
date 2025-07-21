@@ -1,7 +1,0 @@
-\begin{tikzpicture}
-    \tkzDefPoint(0,0){A}
-    \tkzDefPoint(0:3){B}
-    \tkzDefPoint(70:1.6){D}
-    \tkzDefShiftPoint[B](130:2){C}
-    \tkzDrawPolygon(A,B,C,D)
-\end{tikzpicture}

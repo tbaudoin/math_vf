@@ -1,5 +1,0 @@
-\begin{tikzpicture}
-    \tkzDefPoints{0/0/A, 0/2/B, 3/0/C}
-    \tkzDrawPolygon(A,B,C)
-    \tkzMarkRightAngle(B,A,C)
-\end{tikzpicture}

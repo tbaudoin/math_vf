@@ -1,9 +1,0 @@
-\begin{tikzpicture}
-    \tkzDefPoints{0/0/A, 0/-2/B, 4/-2/C, 3/-0.5/D}
-    \tkzDefPointsBy[rotation=center A angle 90](A,B,C,D){}
-    \tkzDrawPolygon[color=\corcolor](A',B',C',D')
-    \tkzDrawPolygon(A,B,C,D)
-    \tkzDrawPoints(A,B,C,D)
-    \tkzLabelPoints[left](A,B)
-    \tkzLabelPoints[right](C,D)
-\end{tikzpicture}
