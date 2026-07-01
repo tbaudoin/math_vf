@@ -1,0 +1,44 @@
+\documentclass[../../syllabus_1.tex]{subfiles}
+\begin{document}
+
+\chapter{Angles}
+\section{Définition}
+Un angle est une région du plan délimitée par deux demi-droites issues d'un point.
+
+Un angle est saillant lorsqu'il peut etre contenu dans un angle plat.
+\begin{center}
+    \begin{tikzpicture}[baseline=(current bounding box.north)]
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(30:2){B}
+        \tkzDefPoint(2,0){C}
+        \tkzFillAngle[blue!30](C,A,B)
+        \tkzDrawLines[add=0 and 0.2](A,B A,C)
+        \tkzDrawPoints(A,B,C)
+    \end{tikzpicture}
+    \hfil
+    \begin{tikzpicture}[baseline=(current bounding box.north)]
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(30:2){B}
+        \tkzDefPoint(2,0){C}
+        \tkzFillAngle[blue!30](B,A,C)
+        \tkzDrawLines[add=0 and 0.2](A,B A,C)
+        \tkzDrawPoints(C,B,A)
+    \end{tikzpicture}
+\end{center}
+
+Le point dont sont issues les deux demi-droites est appelé sommet de l'angle et es demi-droites sont appelées cotés de l'angle.
+\begin{center}
+    \begin{tikzpicture}[baseline=(current bounding box.north)]
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(30:2){B}
+        \tkzDefPoint(2,0){C}
+        \tkzDrawLines[add=0 and 0.2](A,B A,C)
+        \tkzDrawPoints(A,B,C)
+        \node (sommet) at (-1,-1){Sommet};
+        \draw[->] (A) to[bend right] (sommet.north);
+        \node (cotes) at (15:5){Cotés de l'angle};
+        \draw [->] ($(A)!.5!(B)$) to[bend left] (cotes.north);
+        \draw [->] ($(A)!.5!(C)$) to[bend right] (cotes.south);
+    \end{tikzpicture}
+\end{center}
+\end{document}
