@@ -3,13 +3,47 @@
 
 \chapter{Diviseurs et multiples}
 
-%\faBookOpen~ pages 34 à 40.
+\section*{Matières}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+      \item Caractères de divisibilité.
+      \item Les diviseurs.
+      \item Les puissances.
+      \item Nombres premiers et nombres carrés.
+      \item La décomposition en facteurs premiers.
+      \item Les multiples d’un nombre.
+\end{enumerate}
 
+\section{L'histoire du "TikTok Challenge" le plus cher du monde}
+Lucas, un élève de 12 ans pas très fan des devoirs, supplie son père de lui donner de l'argent de poche pour s'acheter la dernière console de jeux.
+Son père, qui adore les défis et les mathématiques, lui sourit et lui dit : "D'accord Lucas. Je te propose un marché pour tout le mois de juin (qui dure 30 jours) :  je te donne 1 centime aujourd'hui. Demain, je double cette somme et je te donne 2 centimes. 
+Le troisième jour, je double encore et je te donne 4 centimes. 
+Chaque jour, je te donne le double du jour précédent jusqu'au 30e jour."
+
+Lucas, qui calcule très vite dans sa tête, se dit : "1 centime, puis 2, puis 4, puis 8... Au bout de dix jours, ça va faire à peine quelques pièces de monnaie. Mon père est complètement radin, il essaie de m'arnaquer !"
+
+Lucas accepte le défi en ricanant, persuadé qu'il va devoir s'acheter une console d'occasion.
+
+Ce qui s'est réellement passé :
+\begin{itemize}
+      \item Le jour 1 : Lucas reçoit 1 centime ($2^0$).
+      \item Le jour 2 : Il reçoit 2 centimes ($2^1$).
+      \item Le jour 5 : Il reçoit 16 centimes ($2^2$). 
+      \item Le jour 10 : Il reçoit 512 centimes, soit 5,12 € ($2^9$). Lucas commence à s'ennuyer.
+      \item Le jour 15 : Le montant continue de grandir \dots Lucas reçoit 163,84 €. Il commence à regarder les prix des consoles neuves avec un grand sourire.
+      \item Le jour 20 : C'est le choc. Le père doit lui donner 5242,88 € ($2^{19}$). Le père commence à transpirer et ne rigole plus du tout.
+      \item Le jour 30 (le grand final) : Pour ce seul et unique jour, le père doit verser à Lucas la somme de 5 368 709,12 € ($2^{29}$).
+\end{itemize}
+
+Le 30e jour, Lucas tend la main. Son père arrive dans la chambre avec une feuille de calcul et lui dit textuellement : "Fiston, j'ai dû vendre la maison, la voiture et je crois que je te dois aussi ton poids en lingots d'or." 
+Pour la seule journée du jour 30, le père devait à Lucas 5 368 709,12 € ! Si on additionne tous les jours précédents, Lucas se retrouve à la fin du mois avec plus de 10 millions d'euros.
+
+La morale de l'histoire : ne sous-estimez jamais un petit nombre qui a "le bras long" (un exposant). La multiplication répétée ne grandit pas sagement comme une addition, elle explose !
+
+\newpage
 \section{Rappel des caractères de divisibilité}
 
 Les caractères de divisibilité permettent de reconnaitre si un nombre est divisible par un autre sans devoir effectuer la division.
 
-\vfil
 \includegraphics[width=1\linewidth]{figures/caracteres_de_divisibilite.pdf}
 
 \newpage
@@ -73,6 +107,74 @@ Les caractères de divisibilité permettent de reconnaitre si un nombre est divi
             \item \(74\bullet 2\) est divisible par \(5\) si  $\bullet=$
             \item \(17\bullet 7\) est divisible par \(9\) si  $\bullet=$
             \item \(2861\bullet \) est divisible par \(6\) si  $\bullet=$
+      \end{enumerate}
+\end{exercise}
+
+\section{Puissance d'un nombre}
+
+\textbf{Première approche}
+
+Deux élèves ont vu une des questions de l'examen de français. Ils décident de la partager chacunn avec leurs deux meilleurs amis. Ceux-ci font la même chose avec leurs deux meilleurs amis. 
+
+Combien de personnes ont-elles été mises au courant au total ? \dotsforanswer{1}
+Comment peux-tu représenter ce nombre sous forme d'une puissance ? \dotsforanswer{1}
+
+\textbf{Deuxième approche}
+
+Une fleur de tournesol peut produire environ 100 graines. Si on replante toutes les graines, combien de plantes aura-t-on : 
+\begin{itemize}
+      \item à la première génération : \dotsforanswer{1}
+      \item à la deuxième génération : \dotsforanswer{1}
+      \item à la troisième génération : \dotsforanswer{1}
+\end{itemize}
+
+Les puissances de 10 sont utiles pour écrire les grands nombres. Prenons l'exemple du système métrique :
+\begin{itemize}
+      \item 1 mètre - \dotsforanswer{1}
+      \item 1 décamètre - \dotsforanswer{1}
+      \item 1 hectomètre - \dotsforanswer{1}
+      \item 1 kilomètre - \dotsforanswer{1}
+      \item 1 mégamètre - \dotsforanswer{1}
+      \item 1 gigamètre - \dotsforanswer{1}
+\end{itemize}
+
+Les préfixes kilo, méga et giga sont beaucoup utilisés pour représenter de grandes quantités, notamment en informatique.
+Imagine que tu as un Iphone de 128 Go (gigaoctets) et que tu souhaites le remplir avec des fichiers de 20 Mo (mégaoctets). Combien de fichiers peux-tu stocker ?
+\vspace{3cm}
+
+Une \textbf{puissances} est un produit de facteurs identiques, qui s'écrit sous la forme d'une \textbf{base} et d'un \textbf{exposant}. 
+
+Exemple : \(2 \cdot 2 \cdot 2 \cdot 2 \) est un produit de 4 facteurs égaux (2). Il s'écrit sous forme de puissance \dotsforanswer{1}
+
+$3^2$ peut s'exprimer comme "3 au carré". C'est l'aire d'un carré de 3 cm de côté.
+
+$3^3$ peut s'exprimer comme "3 au cube". C'est le volume d'un cube de 3 cm de côté.
+
+Remarque : $4^1 = 1$ et $4^0 = 0$.
+
+\begin{exercise}
+      Écris les énoncés suivants sous la forme d'une multiplication ou d'une puissance (si possible).
+      \begin{enumerate} [cols=2, itemsep=1cm]
+            \item \(5 + 5 + 5 = \)
+            \item \(5 \cdot 5 \cdot 5 \cdot 5 \)
+            \item Le double de 6.
+            \item Le cube de 5.
+            \item \(7 + 7 + 7 + 7 + 7 = \)
+            \item \(8 \cdot 8 \cdot 8 \cdot 8 \cdot 8 \cdot 8 = \)
+            \item Le triple de 10.
+            \item Le carré de 7.
+      \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+      Calcule les puissances suivantes.
+      \begin{enumerate} [cols=2, itemsep=1cm]
+            \item $2^2$=
+            \item $4^2$=
+            \item $3^3$=
+            \item $4^3$=
+            \item $8^2$=
+            \item $5^3$=
       \end{enumerate}
 \end{exercise}
 
@@ -754,4 +856,74 @@ $6 \cdot 2 = 12$ signifie que \parbox[t]{10cm}{
       \end{enumerate}
 \end{exercise}
 
+\newpage
+\section{Je me teste}
+\setcounter{exercise}{0}
+
+\begin{exercise}
+      Calcule.
+ \begin{enumerate}[cols=2]
+      \item $3^2$ =
+      \item $11^2$ =
+      \item $12^2$ =
+      \item $13^2$ =
+      \item $14^2$ =
+      \item $15^2$ =
+      \item $16^2$ =
+      \item $17^2$ =
+      \item $18^2$ =
+      \item $19^2$ =
+      \item $4^0$ =
+      \item $2^5$ =
+      \item $4^3$ =
+      \item $1245^1$ =
+ \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+      Décompose les nombres suivants en un produit de facteurs premiers.
+      \begin{enumerate}
+            \item 160
+            \item 522
+            \item 126
+            \vspace{6cm}
+      \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+      Écris sous forme mathématiques les éléments suivants. 
+      \begin{enumerate}
+            \item L'ensemble des diviseurs de 64.
+            \vspace{1cm}
+            \item L'ensemble des diviseurs de 128.
+            \vspace{1cm}
+            \item L'ensemble des multiples de 11.
+            \vspace{1cm}
+      \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Cite les 20 premiers nombres premiers.
+\end{exercise}
+
+\newpage
+\section*{Mots-clés}
+\begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
+      \item Base
+      \item Diviseur
+      \item Exposant
+      \item Multiple
+      \item Nombre carré
+      \item Nombre premier/facteur premier
+      \item Puissance
+\end{enumerate}
+
+\section*{Attendus}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Associer 10 à $10^1$, 100 à 10², 1 000 à 10³ et au préfixe kilo, 1 000 000 à $10^6$ et au préfixe méga, $10^9$ au préfixe giga.
+    \item Dans un contexte numérique, associer une opération à ses composantes et son résultat ; puissance, base et exposant.
+    \item Définir une puissance à exposant naturel, la base étant positive.
+    \item Énoncer les carrés des quinze premiers nombres naturels.
+    \item Calculer une puissance dont la base et l’exposant sont des nombres naturels.
+\end{enumerate}
 \end{document}
