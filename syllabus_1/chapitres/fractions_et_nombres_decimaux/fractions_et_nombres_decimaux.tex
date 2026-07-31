@@ -12,8 +12,147 @@
     \item Addition et soustraction de fractions de même dénominateur.
     \item Placement sur une droite graduée.
 \end{enumerate}
- 
-\section{Á la découverte des fractions égyptiennes}
+
+\section{Vocabulaire et types de nombres}
+
+Depuis le primaire, tu connais déjà plusieurs ensembles de nombres :
+\begin{itemize}
+    \item les \textbf{nombres naturels} ($\mathbb{N}$) : $0, 1, 2, 3, \dots$
+    \item les \textbf{nombres entiers} ($\mathbb{Z}$) : les naturels et leurs opposés, comme $-3, -2, -1, 0, 1, 2, 3, \dots$
+\end{itemize}
+
+Cette année, tu rencontres un nouvel ensemble : les \textbf{nombres rationnels} ($\mathbb{Q}$), qui regroupe tous les nombres qui peuvent s'écrire sous la forme d'une fraction $\dfrac{a}{b}$, avec $a$ et $b$ des entiers et $b \neq 0$.
+
+\textbf{Propriété :} une fraction peut toujours être interprétée comme le \textbf{quotient} de son numérateur par son dénominateur.
+\begin{equation*}
+    \frac{69}{4} = 69 : 4
+\end{equation*}
+
+\begin{center}
+    \begin{tikzpicture}[every node/.style={draw, minimum width=3.5cm, minimum height=1.6cm, align=center}]
+        \node[circle, minimum width=7cm, minimum height=7cm] (Q) at (0,0) {};
+        \node at (0,2.8) {$\mathbb{Q}$ (rationnels)};
+        \node[circle, minimum width=4.5cm, minimum height=4.5cm] (Z) at (0,-0.5) {};
+        \node at (0,1.4) {$\mathbb{Z}$ (entiers)};
+        \node[circle, minimum width=2.3cm, minimum height=2.3cm] (N) at (0,-0.8) {};
+        \node at (0,0.1) {$\mathbb{N}$};
+    \end{tikzpicture}
+\end{center}
+
+\begin{exercise}
+    Classe les nombres suivants dans le(s) bon(s) ensemble(s) ($\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$). Attention, un nombre peut appartenir à plusieurs ensembles à la fois !
+    \begin{enumerate}[cols=2, itemsep=1cm]
+        \item $7$
+        \item $-5$
+        \item $\dfrac{3}{4}$
+        \item $-\dfrac{8}{2}$
+        \item $0$
+        \item $2{,}5$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Écris les quotients suivants sous la forme d'une fraction.
+    \begin{enumerate}[cols=3, itemsep=1cm]
+        \item $17 : 5 = $
+        \item $9 : 2 = $
+        \item $-14 : 3 = $
+    \end{enumerate}
+\end{exercise}
+
+\section{Différentes écritures d'un même nombre}
+
+Un même nombre rationnel peut s'écrire de plusieurs façons : sous forme \textbf{fractionnaire}, sous forme \textbf{décimale}, ou encore sous forme de \textbf{pourcentage}.
+
+Pour passer de l'écriture fractionnaire à l'écriture décimale, il suffit d'effectuer la division écrite du numérateur par le dénominateur.
+
+\textbf{Exemple :}
+\begin{equation*}
+    \frac{7}{4} = 1{,}75 \qquad \text{écriture décimale \textbf{limitée}}
+\end{equation*}
+\begin{equation*}
+    \frac{1}{3} = 0{,}3333\dots \qquad \text{écriture décimale \textbf{illimitée périodique}}
+\end{equation*}
+
+Certaines fractions donnent donc une écriture décimale qui s'arrête (limitée), d'autres donnent une écriture décimale qui continue indéfiniment en répétant le même motif (illimitée périodique).
+
+\begin{exercise}
+    À l'aide de la division écrite, transforme les fractions suivantes en écriture décimale. Indique si l'écriture est limitée ou illimitée périodique.
+    \begin{enumerate}[cols=2, itemsep=2cm]
+        \item $\dfrac{3}{4} = $
+        \item $\dfrac{2}{3} = $
+        \item $\dfrac{5}{8} = $
+        \item $\dfrac{1}{6} = $
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Complète le tableau en donnant, pour chaque nombre, ses trois écritures.
+    \begin{center}
+        \begin{tblr}{
+                    hlines,
+                    vlines,
+                    colspec={X[c]X[c]X[c]},
+                    rows={1cm, m},
+                    row{1}={gray!40, font=\bfseries}
+              }
+              Fraction & Décimale & Pourcentage \\
+              $\dfrac{1}{2}$ &  &  \\
+               & $0{,}25$ &  \\
+               &  & $10\,\%$ \\
+        \end{tblr}
+    \end{center}
+\end{exercise}
+
+\section{Calculer avec des nombres décimaux}
+
+Lors d'un calcul comportant plusieurs opérations sur des nombres décimaux, on respecte les mêmes \textbf{priorités} que pour les nombres naturels :
+\begin{enumerate}
+    \item on effectue d'abord les calculs entre \textbf{parenthèses} ;
+    \item puis les \textbf{multiplications et divisions}, de gauche à droite ;
+    \item enfin les \textbf{additions et soustractions}, de gauche à droite.
+\end{enumerate}
+
+\textbf{Rappel — la distributivité :} pour multiplier un nombre par une somme (ou une différence), on peut multiplier ce nombre par chaque terme, puis additionner (ou soustraire) les résultats.
+
+\begin{exercise}
+    Effectue les calculs suivants.
+    \begin{enumerate}[cols=2, itemsep=1cm]
+        \item $4{,}5 + 3{,}2 = $
+        \item $9{,}7 - 2{,}35 = $
+        \item $3{,}4 \times 2{,}5 = $
+        \item $12{,}6 - 4{,}15 + 2{,}3 = $
+        \item $0{,}25 \times 8 = $
+        \item $15{,}3 - 6{,}45 - 1{,}2 = $
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Effectue les calculs suivants en respectant la priorité des parenthèses.
+    \begin{enumerate}[cols=2, itemsep=1.5cm]
+        \item $\left(4{,}5 + 3{,}2\right) \times 2 = $
+        \item $10 - \left(3{,}4 + 1{,}25\right) = $
+        \item $\left(7{,}6 - 2{,}1\right) \times \left(1{,}5 + 0{,}5\right) = $
+        \item $5 \times \left(2{,}3 + 1{,}7\right) - 4 = $
+        \item $\left(12{,}5 - 4{,}5\right) : 2 = $
+        \item $3{,}2 + \left(5 - 1{,}8\right) \times 2 = $
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Effectue les calculs suivants. Quand c'est possible, utilise la distributivité pour calculer plus rapidement.
+    \begin{enumerate}[cols=1, itemsep=2cm]
+        \item $4 \times \left(2{,}5 + 1{,}5\right) = $ \\
+        \item $2{,}5 \times 3{,}2 + 2{,}5 \times 6{,}8 = $ \\ 
+        \item $8 \times 4{,}5 - 8 \times 2{,}5 = $ \\
+        \item $3 \times \left(5{,}2 - 2{,}2\right) + \left(7{,}5 - 3{,}5\right) \times 2 = $ \\
+        \\
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Les fractions}
+\subsection{Á la découverte des fractions égyptiennes}
  
 Dans l'Égypte antique (il y a plus de $4\,000$ ans), les scribes utilisaient un système numérique fascinant. Pour représenter des parts, ils n'utilisaient que des fractions unitaires (dont le numérateur est toujours $1$), à l'exception notable de $\frac{2}{3}$.
  
@@ -23,8 +162,7 @@ Ainsi, pour partager $5$ pains entre $6$ personnes, ils n'écrivaient pas $\frac
 \end{equation*}
 Cela signifiait concrètement : on donne d'abord un demi-pain à chacun ($\frac{1}{2} \times 6 = 3$ pains utilisés), puis un tiers de pain à chacun ($\frac{1}{3} \times 6 = 2$ pains utilisés). Le compte est bon !
  
-\newpage
-\section{Vocabulaire et représentation}
+\subsection{Vocabulaire et représentation}
  
 Une fraction représente un partage équitable (en parts parfaitement égales) d'une grandeur ou d'une unité.
  
@@ -52,17 +190,12 @@ où $a$ et $b$ sont des nombres entiers, avec $b \neq 0$ (car la division par z�
     \item La \textbf{barre de fraction} symbolise l'opération de division.
 \end{itemize}
  
+\newpage
 Par exemple, prenons une tablette de chocolat rectangulaire de $12$ carrés. Si Sarah mange $\frac{3}{4}$ de la tablette :
 \begin{itemize}
     \item le dénominateur ($4$) indique qu'on doit couper la tablette en $4$ blocs égaux (chaque bloc contiendra $12 \div 4 = 3$ carrés) ;
     \item le numérateur ($3$) indique que Sarah prend $3$ de ces blocs, soit $3 \times 3 = 9$ carrés de chocolat au total.
 \end{itemize}
- 
-En mathémartiques, nous parlons aussi souvent de \textbf{l'inverse} d'un nombre. Par définition, l'inverse d'un nombre non nul est le nombre qui, lorsqu'on le multiplie par le nombre de départ, donne un résultat égal à $1$. 
-
-Par exemple, l'inverse de $4$ est \(\frac{1}{4}\) (car \(4 \times \frac{1}{4} = 1\)) et l'inverse de \(\frac{2}{3}\) est \(\frac{3}{2}\).
-
-En résumé, il faut inverser le numérateur et le dénominateur.
 
 NB : Lorsqu'il n'y a pas de dénominateur, c'est qu'il est égal à $1$. Dans ce cas-là, il n'est pas nécessaire de l'écrire (\(4 = \frac{4}{1}\)).
 \begin{exercise}
@@ -82,8 +215,54 @@ NB : Lorsqu'il n'y a pas de dénominateur, c'est qu'il est égal à $1$. Dans ce
         \item $60^\circ$ \dotfill
     \end{enumerate}
 \end{exercise}
+
+\subsection{Opposé et inverse d'un nombre}
+
+Pour rappel, l'opposé d'un nombre est le nombre symétrique par rapport à $0$ sur la droite graduée. On note l'opposé de $a$ par $-a$.
+\begin{equation*}
+    \text{L'opposé de } \frac{9}{8} \text{ se note } -\frac{9}{8} = \frac{-9}{8}
+\end{equation*}
+
+\begin{center}
+    \begin{tikzpicture}[scale=1]
+        \draw[->] (-3.5,0) -- (3.5,0);
+        \foreach \i in {-3,...,3} {
+            \draw (\i,0.1) -- (\i,-0.1);
+            \node[below] at (\i,-0.3) {$\i$};
+        }
+        \filldraw (1.5,0) circle (2pt) node[above]{$\frac{3}{2}$};
+        \filldraw (-1.5,0) circle (2pt) node[above]{$-\frac{3}{2}$};
+        \draw[dashed] (1.5,0.6) -- (1.5,-0.6);
+        \draw[dashed] (-1.5,0.6) -- (-1.5,-0.6);
+    \end{tikzpicture}
+\end{center}
+
+\textbf{L'inverse} d'un nombre non nul $a$ est le nombre par lequel il faut multiplier $a$ pour obtenir $1$. On l'écrit $\dfrac{1}{a}$.
+\begin{equation*}
+    \text{L'inverse de } 2 \text{ est } \frac{1}{2} \qquad \text{car} \qquad 2 \times \frac{1}{2} = 1
+\end{equation*}
+
+\newpage
+\begin{exercise}
+    Pour chaque nombre, donne son opposé et son inverse (quand il existe).
+    \begin{center}
+        \begin{tblr}{
+                    hlines,
+                    vlines,
+                    colspec={X[c]X[c]X[c]},
+                    rows={1cm, m},
+                    row{1}={gray!40, font=\bfseries}
+              }
+              Nombre & Opposé & Inverse \\
+              $5$ &  &  \\
+              $\dfrac{3}{7}$ &  &  \\
+              $-4$ &  &  \\
+              $-\dfrac{2}{9}$ &  &  \\
+        \end{tblr}
+    \end{center}
+\end{exercise}
  
-\section{Fractions équivalentes}
+\subsection{Fractions équivalentes}
  
 Deux fractions sont équivalentes (égales) si elles représentent exactement la même proportion de l'unité.
  
@@ -114,9 +293,8 @@ On a divisé le haut et le bas par $5$.
         \item Série B : \quad $\dfrac{3}{4} \ ; \quad \dfrac{9}{12} \ ; \quad \dfrac{15}{20} \ ; \quad \dfrac{30}{40} \ ; \quad \dfrac{12}{18}$
     \end{enumerate}
 \end{exercise}
- 
-\newpage
-\section{Simplification et fractions irréductibles}
+
+\subsection{Simplification et fractions irréductibles}
  
 Simplifier une fraction signifie trouver une fraction équivalente avec un numérateur et un dénominateur plus petits.
  
@@ -125,7 +303,7 @@ Une fraction est dite \textbf{irréductible} lorsqu'il est impossible de la simp
 \textbf{Méthode pour rendre une fraction irréductible :}
     Divise successivement le numérateur et le dénominateur par des critères de divisibilité visibles ($2$, $3$, $5$, \dots) jusqu'à ce que ce ne soit plus possible.
  
-\textbf{Exemple de cheminement :} rendre irréductible la fraction $\dfrac{24}{36}$.
+Exemple de cheminement : rendre irréductible la fraction $\dfrac{24}{36}$.
 \begin{center}
     \begin{tikzpicture}[node distance=1.5cm]
         \node (a) {$\dfrac{24}{36}$};
@@ -158,7 +336,7 @@ Une fraction est dite \textbf{irréductible} lorsqu'il est impossible de la simp
 \end{exercise}
  
 \newpage
-\section{Addition et soustraction de fractions de même dénominateur}
+\subsection{Addition et soustraction de fractions de même dénominateur}
  
 Lorsque l'on travaille sur une même grandeur, on peut facilement combiner les parts si elles ont la même taille (le même dénominateur).
  
@@ -196,7 +374,7 @@ L'erreur classique est d'additionner le tout. Il ne faut jamais additionner ou s
 \end{exercise}
  
 \newpage
-\section{Placement sur une droite graduée}
+\subsection{Placement sur une droite graduée}
  
 Pour placer des nombres sur une droite graduée, il faut repérer l'origine ($0$), l'unité (souvent $1$), et subdiviser l'intervalle entre chaque entier en fonction du dénominateur.
  
@@ -248,7 +426,6 @@ Exemple : $4$ au dénominateur, chaque unité est découpée en $4$ morceaux ég
     \end{enumerate}
 \end{exercise}
  
-\newpage
 \begin{exercise}
     Sur la droite graduée ci-dessous, place le plus précisément possible les nombres suivants :
     \begin{center}
@@ -269,8 +446,136 @@ Exemple : $4$ au dénominateur, chaque unité est découpée en $4$ morceaux ég
 \end{exercise}
  
 \newpage
+
+\section{Comparer, encadrer, ordonner}
+
+Pour comparer deux nombres rationnels, on utilise les symboles $<$ (est plus petit que), $>$ (est plus grand que) et $=$ (est égal à).
+
+\textbf{Encadrer} un nombre, c'est trouver les deux nombres entre lesquels il se situe, à une précision donnée (à l'unité, au dixième, au centième près).
+\begin{equation*}
+    2 < 2,3 < 3 \qquad \text{(encadrement à l'unité près)}
+\end{equation*}
+
+\begin{exercise}
+    Compare les nombres suivants en utilisant le symbole adéquat ($<$, $>$ ou $=$).
+    \begin{enumerate}[cols=2itemsep=1.5cm]
+        \item $\dfrac{3}{4} \ \dots \ \dfrac{5}{8}$
+        \item $-2{,}5 \ \dots \ -3$
+        \item $\dfrac{6}{2} \ \dots \ 3$
+        \item $0{,}75 \ \dots \ \dfrac{4}{5}$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Encadre les nombres suivants à l'unité, puis au dixième près.
+    \begin{enumerate}[itemsep=1.5cm]
+        \item $\dfrac{17}{5} = 3{,}4 \qquad \dots < \dfrac{17}{5} < \dots \quad (\text{unité}) \qquad \dots < \dfrac{17}{5} < \dots \quad (\text{dixième})$
+        \item $7{,}283 \qquad \dots < 7{,}283 < \dots \quad (\text{unité}) \qquad \dots < 7{,}283 < \dots \quad (\text{dixième})$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Ordonne les nombres suivants sur une droite graduée par ordre croissant.
+    \begin{center}
+        $\dfrac{3}{2} \qquad -1{,}5 \qquad 0 \qquad \dfrac{7}{4} \qquad -2 \qquad 1{,}2$
+    \end{center}
+    \vspace{2cm}
+\end{exercise}
+
+\begin{exercise}
+    Compare les fractions suivantes en utilisant le symbole adéquat ($<$, $>$ ou $=$).
+    \begin{enumerate}[cols=2, itemsep=1cm]
+        \item $\dfrac{3}{4} \ \dots \ \dfrac{5}{8}$
+        \item $\dfrac{2}{3} \ \dots \ \dfrac{7}{9}$
+        \item $\dfrac{5}{6} \ \dots \ \dfrac{9}{10}$
+        \item $\dfrac{7}{2} \ \dots \ \dfrac{21}{6}$
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Valeurs approchées et arrondis}
+
+La \textbf{valeur exacte} d'un nombre est son écriture complète. La \textbf{valeur approchée} est une valeur proche, utilisée quand l'écriture exacte est trop longue ou illimitée.
+
+\begin{itemize}
+    \item Une valeur approchée \textbf{par défaut} est légèrement inférieure au nombre exact.
+    \item Une valeur approchée \textbf{par excès} est légèrement supérieure au nombre exact.
+\end{itemize}
+
+\textbf{Exemple :}
+\begin{equation*}
+    6,8 \text{ est la valeur exacte de } \frac{34}{5}
+\end{equation*}
+\begin{equation*}
+    6 \text{ est la valeur approchée par défaut à } l'unité près \text{ de } \frac{34}{5}
+\end{equation*}
+\begin{equation*}
+    7 \text{ est la valeur approchée par excès à } l'unité près \text{ de } \frac{34}{5}
+\end{equation*}
+
+\textbf{Attention :} méfie-toi de l'écran de ta calculatrice ! Elle n'affiche souvent qu'une valeur approchée, jamais la valeur exacte d'un nombre à écriture illimitée.
+
+\begin{exercise}
+    Donne la valeur approchée par défaut, puis par excès, au centième près, des nombres suivants.
+    \begin{enumerate}[cols=2, itemsep=1.5cm]
+        \item $\dfrac{1}{3} = 0{,}3333\dots$
+        \item $\dfrac{22}{7} = 3{,}142857\dots$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Ta calculatrice affiche $0{,}6666667$ lorsque tu calcules $\dfrac{2}{3}$. Explique pourquoi ce résultat n'est pas la valeur exacte de $\dfrac{2}{3}$, et donne son écriture exacte.
+    \vspace{2cm}
+\end{exercise}
+
+\begin{exercise}
+    Pour chaque nombre, donne une valeur approchée par défaut et une valeur approchée par excès, à la précision indiquée entre parenthèses.
+    \begin{enumerate}[itemsep=1cm]
+        \item $7{,}283$ \quad (au dixième près) \qquad défaut : \dotfill \quad excès : \dotfill
+        \item $12{,}647$ \quad (au centième près) \qquad défaut : \dotfill \quad excès : \dotfill
+        \item $5{,}5$ \quad (à l'unité près) \qquad défaut : \dotfill \quad excès : \dotfill
+        \item $\dfrac{1}{3} = 0{,}3333\dots$ \quad (au centième près) \qquad défaut : \dotfill \quad excès : \dotfill
+    \end{enumerate}
+\end{exercise}
+
+\newpage
 \section{Exercices mélangés}
 \setcounter{exercise}{0}
+
+\begin{exercise}
+    Compare les nombres décimaux et fractionnaires suivants en utilisant le symbole adéquat ($<$, $>$ ou $=$).
+    \begin{enumerate}[cols=2]
+        \item $0{,}75 \ \dots \ \dfrac{4}{5}$
+        \item $\dfrac{9}{4} \ \dots \ 2{,}3$
+        \item $1{,}2 \ \dots \ \dfrac{6}{5}$
+        \item $\dfrac{11}{20} \ \dots \ 0{,}6$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Un menuisier mesure une planche de bois avec un mètre gradué au millimètre. Il lit une longueur de $214{,}6$ cm, mais son instrument ne lui permet d'être sûr qu'au centimètre près.
+    \begin{enumerate}
+        \item Donne la valeur approchée par défaut, au centimètre près.
+        \item Donne la valeur approchée par excès, au centimètre près.
+        \item Entre quelles deux valeurs la longueur réelle de la planche se situe-t-elle nécessairement ?
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Effectue les calculs suivants. Respecte la priorité des opérations et utilise la distributivité quand c'est utile.
+    \begin{enumerate}[cols=2]
+        \item $4{,}5 + 3{,}2 - 1{,}7 = $
+        \item $\left(6{,}8 - 2{,}3\right) + 1{,}5 = $
+        \item $3 \times \left(2{,}5 + 1{,}5\right) = $
+        \item $10{,}4 - \left(3{,}2 + 2{,}1\right) = $
+        \item $2{,}5 \times 4 + 2{,}5 \times 6 = $
+        \item $\left(9{,}6 - 4{,}6\right) \times 2 = $
+        \item $8{,}75 - 3{,}25 + \left(1{,}5 - 0{,}5\right) = $
+        \item $5 \times \left(3{,}4 - 1{,}4\right) + 2{,}2 = $
+        \item $6 \times 7{,}5 - 6 \times 2{,}5 = $
+        \item $\left(4{,}2 + 1{,}8\right) - \left(2{,}5 - 0{,}5\right) = $
+    \end{enumerate}
+\end{exercise}
 
 \begin{exercise}
 Rends les fractions suivantes irréductibles. Écris les différentes étapes lorsque cela est nécessaire.
@@ -289,9 +594,9 @@ Rends les fractions suivantes irréductibles. Écris les différentes étapes lo
 \end{enumerate}
 \end{exercise}
 
+\newpage
 \begin{exercise}
 Calcule puis simplifie le résultat lorsque c'est possible.
-
 \begin{enumerate}[cols=3]
 \item $\dfrac{3}{8}+\dfrac{2}{8}=$
 \item $\dfrac{7}{9}+\dfrac{1}{9}=$
@@ -316,7 +621,6 @@ Calcule puis simplifie le résultat lorsque c'est possible.
 \end{enumerate}
 \end{exercise}
 
-\newpage
 \begin{exercise}
 Pour chaque droite graduée :
 \begin{itemize}
@@ -473,6 +777,7 @@ $J=$\dotfill \hfill Place $\dfrac7{20}$
 \end{enumerate}
 \end{exercise}
 
+\newpage
 \begin{exercise}
 Place les fractions suivantes sur les droites graduées.
 
@@ -589,23 +894,18 @@ Place les fractions suivantes sur les droites graduées.
  
     Au total, quelle part (fraction) du volume global du vase est maintenant remplie d'eau ? Explique ton raisonnement par un calcul ou un graphique complet.
 \end{exercise}
- 
-\begin{exercise}
-    Si tu as bien compris comment simplifier des nombres, tente de simplifier ces expressions avec des lettres (où $a$, $b$ et $c$ sont des nombres entiers non nuls).
-    \begin{enumerate}[cols=1, itemsep=1.5cm]
-        \item $\dfrac{3 \cdot b}{7 \cdot b} = $
-        \item $\dfrac{16 \cdot a}{8 \cdot a} = $
-        \item $\dfrac{a \cdot b \cdot c}{a \cdot b \cdot d} = $
-    \end{enumerate}
-\end{exercise}
 
 \newpage
 \section*{Mots-clès}
 \begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
+    \item Rationnel
+    \item Valeurs approchées
+    \item Excès
+    \item Défaut
+    \item Encadrement
     \item Fraction
     \item Numérateur
     \item Dénominateur
-    \item Division
     \item Simplification
     \item Réduire
     \item Droite graduée
@@ -618,7 +918,7 @@ Place les fractions suivantes sur les droites graduées.
     \item Placer sur la droite graduée des nombres décimaux positifs et leurs opposés.
     \item Identifier un nombre naturel, un nombre entier, un nombre rationnel positif ou négatif (écrit sous la forme fractionnaire, décimale).
     \item Associer la fraction nombre à un quotient ($69 : 4 = \frac{69}{4}$).
-    \item Associer différentes écritures d’un même nombre : décimale, fractionnaire, pourcentage.
+    \item Associer différentes écritures d’un même nombre : décimale, fractionnaire.
     \item Associer l’expression « inverse d’un nombre » à son écriture mathématique. Ex. : l'inverse de $2$ est $\frac{1}{2}$.
     \item Expliquer les notions de valeur exacte, de valeurs approchées (par excès et par défaut) et d’arrondi.
     \item Interpréter l’écriture décimale fournie par un outil numérique.
