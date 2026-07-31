@@ -3,19 +3,31 @@
 
 \chapter{Traitement de données et pourcentages}
 
-%\faBookOpen~ pages 41 à 46
+\section*{Matières}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Population, variable statistique, modalités.
+    \item Variable qualitative et quantitative discrète.
+    \item Effectifs et fréquences.
+    \item Tableau de distribution.
+    \item Diagrammes statistiques.
+    \item Moyenne arithmétique.
+    \item Étendue.
+    \item Pourcentages.
+\end{enumerate}
+
 \section{Pourcentages}
 \subsection{Découverte}
 
 \begin{exercise}
-    En 2018, \SI{40}{\%} des déchets des Européens ont été recyclés ou compostés.
-    \begin{enumerate}[itemsep=1.2cm]
+    En 2025, \SI{45}{\%} des déchets des belges ont été recyclés ou compostés.
+    \begin{enumerate}[itemsep=2cm]
         \item Sur 100 kg de déchets, combien ont été recyclés ou compostés?
-        \item Sachant que les Européens ont généré en moyenne 524 kg de déchets par habitant en 2018, calcule la masse des déchets recyclés ou compostés par habitant.
+        \item Sachant que les belges ont généré en moyenne 699 kg de déchets par habitant en 2025, calcule la masse des déchets recyclés ou compostés par habitant.
     \end{enumerate}
     \vspace{1.7cm}
 \end{exercise}
 
+\newpage
 \begin{exercise}
     Dans un tableur, on a indiqué la répartition du traitement des déchets générés en un an par habitant en Allemagne.
     \begin{center}
@@ -42,7 +54,6 @@
     \end{enumerate}
 \end{exercise}
 
-\newpage
 \begin{exercise}
     Voici les données pour d'autres pays concernant la gestion des déchets.
     \begin{center}
@@ -58,49 +69,39 @@
                 vline{1}={1}{white}
             }
                         & Mise en décharge en \% & Incinérés en \% & Recyclés en \% & Compostés en \% & Total en kg \\
-            Belgique    & 5                      & 36              & 35             & 24              & 493         \\
             France      & 36                     & 32              & 18             & 14              & 543         \\
             Irlande     & 62                     & 3               & 32             & 3               & 733         \\
             Royaume-Uni & 55                     & 10              & 23             & 12              & 565         \\
         \end{tblr}
     \end{center}
     Détermine le nombre de kg non recyclés ni compostés pour chaque pays.
-    \begin{enumerate}[cols=2, itemsep=4cm]
-        \item Belgique
+    \begin{enumerate}[cols=2, itemsep=2cm]
         \item France
         \item Irlande
         \item Royaume-Uni
     \end{enumerate}
-    \vspace*{4cm}
-\end{exercise}
-
-\begin{exercise}
-    Dans l'école Prévert, il y a $637$ élèves, dont $217$ qui font du sport dans une équipe de l'école. \\
-    Dans l'école Rimbaud, il y a $480$ élèves, dont $157$ qui sont dans des associations sportives. \\
-    Quelle est l'école la plus sportive? Justifie en t'aidant des pourcentages.
 \end{exercise}
 
 \newpage
 \subsection{Méthodes de calcul}
-\subsubsection{Exemple 1}
-Sur une tablette de chocolat noir, on peut lire \og\textit{\SI{54}{\%} de cacao}\fg. Calcule la masse de cacao contenue dans une tablette de 250 g.
+Calculer $p\,\%$ d'une quantité $N$, c'est calculer :
+\begin{equation*}
+    \frac{p}{100} \times N
+\end{equation*}
 
-\vfil
+\textbf{Exemple 1 :} Sur une tablette de chocolat noir, on peut lire « $54\,\%$ de cacao ». Quelle est la masse de cacao dans une tablette de $250$ g ?
+\begin{equation*}
+    \frac{54}{100} \times 250 = 135 \text{ g de cacao}
+\end{equation*}
 
-\subsubsection{Exemple 2}
-Dans un collège, trois élèves sur cinq possèdent un vélo. Quel pourcentage des élèves du collège possède un vélo?
+\textbf{Exemple 2 :} Un ordinateur reconditionné coûte $280$ € hors TVA. Quel sera son prix TVA ($21\,\%$) comprise ?
+\begin{equation*}
+    280 + \frac{21}{100} \times 280 = 280 + 58{,}8 = 338{,}8 \text{ €}
+\end{equation*}
 
-\vfil
+\textbf{Exemple 3 :} En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affiché à 40~€. Il est indiqué d'une pastille orange, ce qui signifie \og -30~\% \fg. Quel est le prix que Sonia va payer à la caisse?
+\vspace{3cm}
 
-\subsubsection{Exemple 3}
-Un ordinateur reconditionné coûte 280~€ hors TVA. quel sera son prix TVA (21~\%) comprise?
-
-\vfil
-
-\subsubsection{Exemple 4}
-En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affiché à 40~€. Il est indiqué d'une pastille orange, ce qui signifie \og -30~\% \fg. Quel est le prix que Sonia va payer à la caisse?
-
-\newpage
 \begin{exercise}
     Calcule.
     \begin{enumerate}[cols=3, itemsep=2cm]
@@ -131,10 +132,9 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
     \vspace{2cm}
 \end{exercise}
 
-\newpage
 \begin{exercise}
     Construis ci-dessous un rectangle de 6 cm de longueur et de 5 cm de largeur. Hachure ensuite 40~\% de la surface de ton rectangle.
-    \vspace{7cm}
+    \vspace{5cm}
 \end{exercise}
 
 \begin{exercise}
@@ -145,10 +145,9 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
 
 \begin{exercise}
     Joanna veut acheter une nouvelle voiture qui coûte \num{12000}~€. Puisqu'elle paye directement, le vendeur veut bien lui accorder une réduction de 12~\% sur le prix total. Quel sera le prix à payer pour la voiture~? \\ Laisse ta démarche visible.
-    \vspace{3cm}
+    \vspace{4cm}
 \end{exercise}
 
-\newpage
 \begin{exercise}
     Voici quatre situations de réductions ou d'augmentation de prix. Calcule le prix final en une seule étape.
     \begin{enumerate}[cols=2, itemsep=3cm]
@@ -157,6 +156,23 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
         \item Un intérêt de 3~\% sur un placement de \num{1000}~€
         \item Une remise de 5~\% sur un achat de 25~€
     \end{enumerate}
+    \vspace{4cm}
+\end{exercise}
+
+\begin{exercise}
+    Charlotte travaille dans un magasin où elle reçoit un salaire mensuel de \num{1400}~€. Comme elle travaille bien, son patron décide de l'augmenter, et Charlotte reçoit 6~\% de plus pour son salaire mensuel. Que gagne Charlotte chaque mois~? \\ Laisse ta démarche visible.
+\end{exercise}
+\vfil
+
+\newpage
+\subsection{Comparer des offres}
+
+Pour comparer deux situations, il est souvent utile de tout ramener à un pourcentage ou à une même unité de comparaison.
+
+\begin{exercise}
+    Dans l'école Prévert, il y a $637$ élèves, dont $217$ qui font du sport dans une équipe de l'école. Dans l'école Rimbaud, il y a $480$ élèves, dont $157$ qui sont dans des associations sportives.
+
+    Quelle est l'école la plus sportive ? Justifie en t'aidant des pourcentages.
     \vspace{3cm}
 \end{exercise}
 
@@ -171,13 +187,23 @@ En faisant ses courses pendant les soldes, Sonia achète un blouson qui est affi
 \end{exercise}
 
 \newpage
-\begin{exercise}
-    Charlotte travaille dans un magasin où elle reçoit un salaire mensuel de \num{1400}~€. Comme elle travaille bien, son patron décide de l'augmenter, et Charlotte reçoit 6~\% de plus pour son salaire mensuel. Que gagne Charlotte chaque mois~? \\ Laisse ta démarche visible.
-\end{exercise}
-\vfil
+\subsection{Pourcentages successifs}
+Lorsqu'on applique deux pourcentages l'un après l'autre, on ne peut pas simplement les additionner ! Chaque pourcentage se calcule sur le montant obtenu après la première opération.
 
 \begin{exercise}
-    Yousra a placé de l'argent en banque~: \num{3000}~€. Comme elle a placé son argent pendant 1 an, elle a reçu un intérêt de 7~\%. Mais ensuite, les impôts arrivent et elle doit payer une taxe de 2~\% sur le nouveau montant qu'elle a en banque. De quel montant Yousra dispose-t-elle à la fin de ces deux opérations~? \\ Laisse ta démarche visible.
+    Yousra a placé $3\,000$ € en banque. Après $1$ an, elle reçoit un intérêt de $7\,\%$. Ensuite, les impôts arrivent et elle doit payer une taxe de $2\,\%$ sur le nouveau montant qu'elle a en banque.
+
+    De quel montant Yousra dispose-t-elle à la fin de ces deux opérations ? Laisse ta démarche visible.
+    \vspace{4cm}
+\end{exercise}
+
+\begin{exercise}
+    Un magasin propose d'abord une réduction de $10\,\%$ sur un article de $80$ €, puis, la semaine suivante, une réduction supplémentaire de $20\,\%$ sur le nouveau prix.
+    \begin{enumerate}[itemsep=1cm]
+        \item Quel est le prix après la première réduction ?
+        \item Quel est le prix final après la seconde réduction ?
+        \item Ce prix final correspond-il à une réduction totale de $30\,\%$ sur le prix de départ ? Justifie.
+    \end{enumerate}
 \end{exercise}
 
 \newpage
@@ -193,18 +219,6 @@ Pour repérer un point sur un plan, nous avons besoin de plusieurs informations.
     \columnbreak
     Exemple 4\\\includegraphics[rotate=-90,width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple3.png}
 \end{multicols}
-% \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple4.png}
-
-% \begin{enumerate}[cols=2, label=\ ]
-%     \item Exemple 1 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple1.png}
-%     \item Exemple 2 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple2.png}
-% \end{enumerate}
-% \begin{enumerate}[label=\ ]
-%     \item Exemple 3 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple3.png}
-%           \newpage
-%     \item Exemple 4 \\ \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple4.png}
-%     \item Exemple 5 \\ \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple5.png}
-% \end{enumerate}
 
 \newpage
 Pour placer ou repérer un point dans un repère cartésien \emph{(exemple 3)}, nous avons besoin des coordonnées de ce point. \\
@@ -228,13 +242,6 @@ Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant l
     \begin{center}
         \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/ex_reperage1.tikz}
     \end{center}
-    % \begin{enumerate}[cols=5, label=\ ]
-    %     \item $A\left(\ldots; \ldots\right)$
-    %     \item $B\left(\ldots; \ldots\right)$
-    %     \item $C\left(\ldots; \ldots\right)$
-    %     \item $D\left(\ldots; \ldots\right)$
-    %     \item $E\left(\ldots; \ldots\right)$
-    % \end{enumerate}
 \end{exercise}
 
 \newpage
@@ -376,20 +383,6 @@ Dans ce chapitre, nous rencontrerons 3 types de graphique qui permettent de visu
             6 & \\
         \end{tblr}
     }
-
-
-
-    %     \begin{tblr}{
-    %         hlines,
-    %         vlines,
-    %         column{1}={gray!40, font=\bfseries},
-    %         rows={1cm, m},
-    %         columns={1cm, c},
-    %         column{1}={6cm, c}
-    %     }
-    %      & 1 & 2 & 3 & 4 & 5 & 6 \\
-    %      &   &   &   &   &   &   \\
-    % \end{tblr}
 \end{exercise}
 
 \begin{exercise}
@@ -518,14 +511,45 @@ Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu
                   \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
               \end{center}
     \end{enumerate}
-
-    % \tcbsidebyside[sidebyside adapt=left, blanker]%
-    % {%
-    %     \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
-    % }
-    % {%
-    %     \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
-    % }
 \end{exercise}
+
+\newpage
+\newpage
+\section*{Mots-clès}
+\begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
+    \item Population
+    \item Variable statistique
+    \item Modalité
+    \item Variable qualitative
+    \item Variable quantitative
+    \item Variable quantitative discrète
+    \item Effectif, effectif total
+    \item Fréquence
+    \item Tableau de distribution
+    \item Diagramme en bâtonnets
+    \item Diagramme à bandes
+    \item Diagramme circulaire
+    \item Moyenne arithmétique
+    \item Étendue
+    \item Pourcentage
+\end{enumerate}
+
+\section*{Attendus}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Identifier la population, la variable, les modalités, les effectifs, les fréquences et l'étendue.
+    \item Caractériser la variable étudiée (qualitative ou quantitative discrète).
+    \item Identifier le diagramme donné : diagramme en bâtonnets (variable quantitative discrète), diagramme à bandes (variable qualitative) ou diagramme circulaire.
+    \item Décrire le concept de moyenne arithmétique (variable discrète).
+    \item À partir d'une situation en français, d'un tableau de distribution ou d'un diagramme statistique : décrire la population et la variable étudiées, les caractériser, et déterminer l'effectif total, l'effectif d'une modalité ou sa fréquence.
+    \item Calculer la moyenne arithmétique d'une variable quantitative discrète.
+    \item Relier entre elles différentes présentations d'une même situation (liste de données, tableau de distribution, diagrammes).
+    \item Présenter une liste de données à l'aide d'un diagramme en bâtonnets ou à bandes.
+    \item Interpréter une valeur obtenue en lien avec le caractère étudié et le contexte.
+    \item Lire des informations présentées à partir de supports différents pour répondre à des questions.
+    \item Choisir, parmi un ensemble d'informations (moyenne, effectifs, fréquence, diagrammes, tableau de distribution), l'élément pertinent pour répondre à une question posée.
+    \item Calculer un pourcentage en situation contextualisée.
+    \item Comparer des offres faisant intervenir des pourcentages afin d'en déterminer la plus avantageuse.
+    \item Exploiter une situation faisant intervenir des pourcentages successifs.
+\end{enumerate}
 
 \end{document}
