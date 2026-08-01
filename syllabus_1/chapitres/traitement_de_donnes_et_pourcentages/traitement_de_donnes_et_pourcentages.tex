@@ -321,222 +321,340 @@ Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant \
 
 \newpage
 
-\section{Lecture de graphiques, analyse de données}
-Dans ce chapitre, nous rencontrerons 3 types de graphique qui permettent de visualiser des données.
-\begin{enumerate}
-    \item Le graphique évolutif. Ce type de graphique s'utilise pour montrer l'évolution d'une grandeur par rapport à une autre.
-          \begin{center}
-              \includegraphics{tikz/diagramme_evolutif_theorie.tikz}
-          \end{center}
-    \item Le diagramme en bâton.Ce diagramme s'utilise pour comparer des données.
-          \begin{center}
-              \includegraphics{tikz/diagramme_baton_theorie.tikz}
-          \end{center}
-    \item Le diagramme circulaire. Ce diagramme s'utilise pour représenter des données dont on connaît la répartition par rapport à un tout.
-          \begin{center}
-              \includegraphics{tikz/diagramme_circulaire_theorie.tikz}
-          \end{center}
+\section{Les statistiques}
+\subsection{Les réseaux sociaux préférés}
+
+D'après une enquête réalisée auprès de $200$ jeunes belges âgés de $13$ ans, voici le réseau social qu'ils déclarent utiliser le plus souvent.
+
+\begin{center}
+    \begin{tikzpicture}[scale=1]
+        \fill[blue!55]   (0,0) -- (180:3) arc (180:108:3) -- cycle;
+        \fill[pink!70]   (0,0) -- (108:3) arc (108:54:3)  -- cycle;
+        \fill[yellow!70] (0,0) -- (54:3)  arc (54:18:3)   -- cycle;
+        \fill[red!60]    (0,0) -- (18:3)  arc (18:0:3)    -- cycle;
+        \draw (-3,0) -- (3,0);
+        \draw (0,0) -- (180:3) arc (180:0:3) -- cycle;
+
+        \node at (144:3.6) {\shortstack{TikTok \\ $40\,\%$}};
+        \node at (81:3.6)  {\shortstack{Instagram \\ $30\,\%$}};
+        \node at (36:3.6)  {\shortstack{Snapchat \\ $20\,\%$}};
+        \node at (9:3.9)   {\shortstack{YouTube \\ $10\,\%$}};
+    \end{tikzpicture}
+\end{center}
+
+Avant de lire la suite du chapitre, essaie de répondre à ces questions avec tes propres mots, en t'aidant du diagramme ci-dessus.
+\begin{enumerate}[itemsep=0.8cm]
+    \item Combien de jeunes, sur les $200$ interrogés, utilisent principalement TikTok ?
+    \item Quel est le réseau social le moins utilisé par ce groupe de jeunes ?
+    \item Penses-tu que ce diagramme représenterait bien la situation d'une classe d'adultes de $50$ ans ? Pourquoi ?
 \end{enumerate}
 
-\newpage
-
-\begin{exercise}
-    Un concessionnaire automobile a vendu ce mois-ci 85 véhicules de tous types. En voici un descriptif partiel.
-    \begin{center}
-        \begin{tblr}{
-                colspec={CCCCC},
-                hlines,
-                vlines,
-                row{1}={gray!40, font = \bfseries},
-                column{1}={gray!40,font = \bfseries},
-                rows={1cm, m}}
-            Vendeurs & Citadines & Sportives & Routières & Totaux \\
-            Paul     & 3         & 5         &           & 17     \\
-            Denis    & 4         &           & 6         & 15     \\
-            Henri    & 3         &           & 8         &        \\
-            Steeve   &           & 4         &           & 18     \\
-            Eliess   & 5         &           & 2         & 16     \\
-            Totaux   &           & 31        & 30        & 85     \\
-        \end{tblr}
-    \end{center}
-    \begin{enumerate}[itemsep=1em]
-        \item Complète le tableau.
-        \item Combien de voitures Henri a-t-il vendu?
-        \item Combien de citadines ont été vendues dans cette concession?
-        \item Quel est le vendeur qui a vendu le plus de sportives?
-        \item Denis est persuadé d'avoir vendu autant de sportives que de routières. A-t-il raison?
-        \item Qui est le meilleur vendeur?
-    \end{enumerate}
-\end{exercise}
-
-\begin{exercise}
-    Un agriculteur a réalisé le diagramme circulaire suivant illustrant l'utilisation des terres de son exploitation.
-
-    \tcbsidebyside[sidebyside adapt=right,
-        blanker,sidebyside gap=1cm
-    ]{%
-        \begin{enumerate}[itemsep=1cm]
-            \item Quel type de culture occupe la moitié de ses terres?
-            \item Quel type de culture est la moins répandue sur ses terres?
-            \item Quelles sont les cultures qui occupent la même surface?
-        \end{enumerate}
-    }{%
-        \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees2.tikz}
-    }
-\end{exercise}
+\vspace{3cm}
+A ton avis, pourquoi les statistiques sont-elles si importantes dans notre monde actuel ? Pourquoi faut-il les maitriser ?
 
 \newpage
-\begin{exercise}
-    Observe le graphique évolutif ci-dessous illustrant le prix de location d'une planche à voile, et complète le tableau en commençant par donner un nom aux têtes de colonnes.
+\subsection{Vocabulaire}
+Pour découvrir le vocabulaire, nous allons vivre une véritable étude statistique. Voici la question posée : 
 
-    \tcbsidebyside[
-        sidebyside adapt=left,
-        blanker,
-        sidebyside gap=1cm
-    ]{%
-        \includegraphics[width=10cm]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees3.tikz}
-    }{%
-        \begin{tblr}{hlines, vlines, rows={1cm, m}, columns={2cm, c}, row{1}={2cm, m}}
-              & \\
-            1 & \\
-            2 & \\
-            3 & \\
-            4 & \\
-            5 & \\
-            6 & \\
-        \end{tblr}
-    }
-\end{exercise}
+De combien d'enfants sont formées les familles des élèves de la classe ?
 
-\begin{exercise}
-    Le diagramme circulaire suivant montre la répartition des élèves de la même classe en fonction du nombre de sports pratiqués régulièrement.
+\vspace{1cm}
 
-    \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees4.tikz}
-
-    \begin{enumerate}[cols=2]
-        \item Si tu sais que 3 élèves ne pratiquent aucun sport régulièrement, détermine le nombre d'élèves de la classe.\columnbreak
-        \item Combien de personnes pratiquent plus de un sport régulièrement~?
-    \end{enumerate}
-
-
-\end{exercise}
+Réorganisation des réponses :
+\begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={4cm, c},
+            rows={1cm,m},
+            row{1}={gray!40, font=\bfseries},
+        }
+         &  & \\
+         &  & \\
+         &  & \\
+         &  & \\
+         &  & \\
+         &  & \\
+         &  & \\
+         &  & \\
+         &  & \\
+    \end{tblr}
+\end{center}
 
 \newpage
-\section{Construction de graphiques}
-Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu le choix entre plusieurs options : il en a 30 qui sont en informatique, 25 qui suivent le latin, 40 qui font un renforcement math et le reste qui sont en activité complémentaire d'expression corporelle. Représente la répartition des élèves sur un diagramme circulaire. \par \par
-\emph{Pour réaliser ce type de diagramme, nous allons devoir déterminer dans un premier temps le pourcentage que chaque option représente par rapport à l'ensemble des élèves de 1\iere{} années, puis transformer cela en amplitudes pour pouvoir le placer dans le diagramme.}
+Sur base de ces réponses, complète le tableau suivant.
 
 \begin{center}
     \begin{tblr}{
             hlines,
             vlines,
-            colspec={CCCC},
-            rows={1cm, m},
-            column{1}={gray!40, font=\bfseries},
-            row{1}={2cm, gray!40, font=\bfseries},
+            colspec={lX[c]l},
+            rows={2cm,m},
+            row{1}={c, 1cm, gray!40, font=\bfseries},
+            column{2}={7cm},
         }
-        Option                & Nombre d'élèves & Pourcentage & Amplitude \\
-        Informatique          &                 &             &           \\
-        Latin                 &                 &             &           \\
-        Renforcement math     &                 &             &           \\
-        Expression corporelle &                 &             &           \\
-        Total                 &                 &             &           \\
+        Mot                & Définition & Dans notre exemple \\
+        Variable/caractère &            &                    \\
+        Modalité           &            &                    \\
+        Population         &            &                    \\
+        Échantillon        &            &                    \\
+        Effectif           &            &                    \\
+        Effectif total     &            &                    \\
+        Fréquence          &            &                    \\
+        Mode               &            &                    \\
+        Étendue            &            &                    \\
     \end{tblr}
 \end{center}
 
-\emph{Représente maintenant les répartitions des élèves dans un diagramme circulaire. Fais une légende de ton diagramme.} \\
+% \textbf{Définitions :}
+% \begin{itemize}
+%     \item La \textbf{population} est l'ensemble des individus sur lesquels porte une étude statistique.
+%     \item La \textbf{variable statistique} est la caractéristique étudiée sur cette population.
+%     \item Les \textbf{modalités} sont les différentes valeurs ou catégories que peut prendre la variable statistique.
+%     \item L'\textbf{effectif} d'une modalité est le nombre d'individus qui présentent cette modalité. L'\textbf{effectif total} est le nombre total d'individus de la population.
+%     \item La \textbf{fréquence} d'une modalité est la proportion de son effectif par rapport à l'effectif total : $\text{fréquence} = \dfrac{\text{effectif de la modalité}}{\text{effectif total}}$.
+%     \item L'\textbf{étendue} d'une série de valeurs numériques est l'écart entre la plus grande et la plus petite valeur : $\text{étendue} = \text{valeur maximale} - \text{valeur minimale}$.
+% \end{itemize}
 
-\includegraphics[width=6cm]{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
-
-\newpage
-\begin{exercise}
-    En Belgique, sur 12 millions d'habitants, 6,6 millions parlent néerlandais comme première langue, 0,5 millions parlent allemand et 3,7 millions ont le français comme langue maternelle. Quel est pourcentage de la population qui ne parle aucune de ces 3 langues ? Représente la situation dans un diagramme circulaire. \\
-    \emph{Note : retranscris d'abord tes données sous la forme d'un tableau.}
-
-    \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
-\end{exercise}
-\vfill
-\begin{exercise}
-    Éléanore a relevé les températures dehors au cours de la journée. Elle les écrit comme suit.
-    \tcbsidebyside[
-        sidebyside adapt=left,
-        blanker,
-        sidebyside gap=1cm
-    ]{%
-        \begin{tblr}{
-                hlines,
-                vlines,
-                rowsep={1em}
-            }
-            \SI{8}{\hour}  & \SI{10}{\degreeCelsius} \\
-            \SI{10}{\hour} & \SI{11}{\degreeCelsius} \\
-            \SI{12}{\hour} & \SI{12}{\degreeCelsius} \\
-            \SI{14}{\hour} & \SI{17}{\degreeCelsius} \\
-            \SI{16}{\hour} & \SI{15}{\degreeCelsius} \\
-            \SI{18}{\hour} & \SI{11}{\degreeCelsius} \\
-        \end{tblr}
-    }{%
-        \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
-    }
-
-    Trace le graphique évolutif qui correspond à la situation.
-\end{exercise}
+% \textbf{Exemple :} reprenons l'enquête sur les réseaux sociaux (activité d'introduction).
+% \begin{itemize}
+%     \item Population : les $200$ jeunes de $13$ ans interrogés.
+%     \item Variable statistique : le réseau social le plus utilisé.
+%     \item Modalités : TikTok, Instagram, Snapchat, YouTube.
+%     \item Effectif de la modalité « TikTok » : $80$ jeunes (soit $40\,\%$ de $200$).
+%     \item Fréquence de la modalité « TikTok » : $\dfrac{80}{200} = 0{,}4 = 40\,\%$.
+% \end{itemize}
 
 \newpage
 \begin{exercise}
-    Lorsque le robinet de ma terrasse reste ouvert au maximum, il remplit trois seaux de 10 litres en une minute. \\ Complète le tableau et construis le graphique.
+    Une enquête est menée parmi les $28$ élèves d'une classe pour connaitre leur nombre d'animaux de compagnie. Voici les résultats :
     \begin{center}
-        \begin{tblr}{
-                hlines,
-                vlines,
-                columns={2cm, c},
-                rows={1cm, m},
-                column{1}={3cm, gray!40, font=\bfseries}
-            }
-            Temps en minutes         & 1 & 2 & 3 & 7 & 15 \\
-            Quantité d'eau en litres &   &   &   &   &    \\
-        \end{tblr}
+        $1, 2, 0, 1, 3, 1, 2, 0, 1, 1, 4, 2, 1, 0, 1, 2, 3, 1, 0, 2, 1, 1, 2, 0, 1, 3, 2, 1$
     \end{center}
-
-    Titre du graphique : \dotfill
-
-    \begin{center}
-        \includegraphics[height=15cm]{chapitres/traitement_de_donnes_et_pourcentages/figures/robinet.tikz}
-    \end{center}
+    \begin{enumerate}[itemsep=1cm]
+        \item Quelle est la population étudiée ?
+        \item Quelle est la variable statistique étudiée ?
+        \item Quelles sont les modalités observées ?
+        \item Quel est l'effectif total de la population ?
+        \item Quel est l'effectif de la modalité $1$ animal de compagnie  ?
+        \item Quelle est la fréquence de la modalité $0$ animal de compagnie (en \%) ?
+        \item Quelle est l'étendue de cette série de valeurs ?
+    \end{enumerate}
+    \vspace{1cm}
 \end{exercise}
+
+\subsection{Caractériser une variable statistique}
+
+\textbf{Définitions :}
+\begin{itemize}
+    \item Une variable est \textbf{qualitative} lorsque ses modalités ne sont pas des nombres (une couleur, un avis, une marque\dots).
+    \item Une variable est \textbf{quantitative} lorsque ses modalités sont des nombres. En 1re secondaire, nous étudions les variables quantitatives \textbf{discrètes} : leurs valeurs peuvent être comptées une par une (un nombre d'enfants, un nombre de buts\dots).
+\end{itemize}
 
 \newpage
 \begin{exercise}
-    Lors d'une enquête menée par Anais parmi les élèves de 3\ieme{} maternelle, elle a noté les couleurs préférées des enfants.
-    \begin{center}
-        \begin{tblr}{
-                hlines,
-                vlines,
-                columns={1.5cm, c},
-                rows={.7cm, m},
-                row{1}={gray!40, font=\bfseries}
-            }
-            Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre & Total \\
-            3     & 2     & 5    & 2    & 7    & 5      & 3     &       \\
-        \end{tblr}
-    \end{center}
-    \vfill
+    Pour chaque situation, précise la population, la variable statistique étudiée, puis caractérise cette variable (qualitative ou quantitative).
+    \begin{enumerate}[itemsep=1.2cm]
+        \item On demande à $150$ clients d'un cinéma quel film ils sont venus voir.
+        \item On compte, pour chacune des $22$ familles d'un immeuble, le nombre de voitures qu'elle possède.
+        \item On relève, pour $40$ élèves, leur moyen de transport pour venir à l'école.
+        \item On relève, pour $18$ athlètes, le nombre de médailles remportées cette saison.
+    \end{enumerate}
+\end{exercise}
 
-    \begin{enumerate}
-        \item Combien d'enfants se trouvent dans la classe?
-        \item Détermine le pourcentage d'enfants qui préfèrent le bleu.
-        \item Construis un diagramme circulaire qui représente la situation.
-              \begin{center}
-                  \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
-              \end{center}
-        \item Construis un diagramme en bâtonnets qui représente la situation.\bigbreak
-              \begin{center}
-                  \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
-              \end{center}
+\subsection{Les diagrammes statistiques}
+
+Il existe plusieurs façons de représenter visuellement une distribution statistique. Le choix du diagramme dépend du \textbf{type de variable} étudiée.
+\begin{itemize}
+    \item Le \textbf{diagramme en bâtonnets} s'utilise pour une variable \textbf{quantitative discrète} : chaque modalité est représentée par un trait vertical dont la hauteur correspond à l'effectif.
+    \item Le \textbf{diagramme à bandes} s'utilise pour une variable \textbf{qualitative} : chaque modalité est représentée par un rectangle (une bande) dont la hauteur ou la longueur correspond à l'effectif.
+    \item Le \textbf{diagramme circulaire} (camembert) s'utilise pour représenter la répartition des modalités par rapport à un tout : chaque modalité occupe une portion du cercle proportionnelle à sa fréquence.
+\end{itemize}
+\vspace{0.8cm}
+
+\newpage
+\begin{exercise}
+    Pour chaque variable statistique ci-dessous, indique quel diagramme est le plus adapté pour la représenter : diagramme en bâtonnets, diagramme à bandes, ou diagramme circulaire. Justifie chaque fois ton choix en une phrase.
+    \begin{enumerate}[itemsep=1.2cm]
+        \item La marque de smartphone préférée d'un groupe d'élèves.
+        \item Le nombre de buts marqués par chaque équipe lors d'un tournoi.
+        \item La répartition, en pourcentage, des différentes options choisies dans une école.
+        \item Le nombre de livres lus par chaque élève d'une classe durant l'été.
+    \end{enumerate}
+\end{exercise}
+\vspace{0.8cm}
+
+\begin{exercise}
+    Trois diagrammes ci-dessous représentent la même série de données : le nombre d'élèves ayant $0$, $1$, $2$ ou $3$ animaux de compagnie à la maison. Un seul de ces diagrammes est correctement construit pour ce type de variable. Identifie-le et explique ce qui ne va pas dans les deux autres.
+    \begin{center}
+        \begin{tikzpicture}[scale=0.85]
+            \draw[->] (-0.5,0) -- (5,0) node[right]{\footnotesize modalités};
+            \draw[->] (0,-0.5) -- (0,4.5) node[above]{\footnotesize effectif};
+            \foreach \x/\h/\lbl in {1/2/0, 2/4/1, 3/3/2, 4/1/3} {
+                \draw[thick] (\x,0) -- (\x,\h);
+                \filldraw (\x,\h) circle (2pt);
+                \node[below] at (\x,-0.2) {\lbl};
+            }
+            \node[below=0.6cm] at (2.2,-0.6) {Diagramme A};
+        \end{tikzpicture}
+        \hfil
+        \begin{tikzpicture}[scale=0.85]
+            \draw[->] (-0.5,0) -- (5,0) node[right]{\footnotesize modalités};
+            \draw[->] (0,-0.5) -- (0,4.5) node[above]{\footnotesize effectif};
+            \foreach \x/\h/\lbl in {1/2/0, 2/4/1, 3/3/2, 4/1/3} {
+                \draw[fill=gray!30, thick] (\x-0.3,0) rectangle (\x+0.3,\h);
+                \node[below] at (\x,-0.2) {\lbl};
+            }
+            \node[below=0.6cm] at (2.2,-0.6) {Diagramme B};
+        \end{tikzpicture}
+        \hfil
+        \begin{tikzpicture}[scale=0.6]
+            \fill[gray!50]  (0,0) -- (90:2)  arc (90:18:2)   -- cycle;
+            \fill[blue!45]  (0,0) -- (18:2)  arc (18:-126:2) -- cycle;
+            \fill[pink!60]  (0,0) -- (-126:2) arc (-126:-234:2) -- cycle;
+            \fill[yellow!70](0,0) -- (-234:2) arc (-234:-270:2) -- cycle;
+            \draw (0,0) circle (2);
+            \node[below=1.4cm] at (0,-2) {Diagramme C};
+        \end{tikzpicture}
+    \end{center}
+    \vspace{2cm}
+\end{exercise}
+
+\newpage
+\subsection{Moyenne arithmétique}
+
+La \textbf{moyenne arithmétique} d'une série de valeurs est un nombre qui résume, en une seule valeur, l'ensemble des données. Elle s'obtient en additionnant toutes les valeurs, puis en divisant cette somme par le nombre de valeurs.
+\begin{equation*}
+    \text{moyenne} = \frac{\text{somme des valeurs}}{\text{nombre de valeurs}}
+\end{equation*}
+
+\textbf{Remarque :} la moyenne n'est pas forcément une valeur observée dans la série, et elle ne correspond pas toujours à un nombre entier, même si la variable étudiée est quantitative discrète.
+
+\begin{exercise}
+    Voici le nombre de messages envoyés par jour par $10$ élèves d'une même classe :
+    \begin{center}
+        $45, 60, 30, 80, 55, 40, 70, 65, 50, 35$
+    \end{center}
+    \begin{enumerate}[itemsep=1cm]
+        \item Calcule la moyenne du nombre de messages envoyés par jour. Laisse ta démarche visible.
+        \item Calcule l'étendue de cette série.
+        \item Un élève envoie $80$ messages par jour. Cette valeur est-elle proche ou éloignée de la moyenne du groupe ? Que peux-tu en déduire ?
     \end{enumerate}
 \end{exercise}
 
 \newpage
+\subsection{Lire et interpréter une situation statistique}
+
+Une même situation statistique peut t'être présentée de différentes façons : par un \textbf{texte}, par un \textbf{tableau de distribution}, ou par un \textbf{diagramme}. Il faut être capable d'en extraire les informations utiles, quel que soit le support.
+
+\begin{exercise}
+    \textbf{Situation présentée en français.} Lors d'un contrôle de sciences, les $24$ élèves d'une classe ont obtenu des résultats répartis comme suit : $4$ élèves ont un résultat « insuffisant », $9$ élèves ont un résultat « satisfaisant », $8$ élèves ont un résultat « bien », et le reste des élèves ont un résultat « excellent ».
+    \begin{enumerate}[itemsep=1cm]
+        \item Décris la population et la variable statistique étudiées.
+        \item Cette variable est-elle qualitative ou quantitative ? Justifie.
+        \item Détermine l'effectif de la modalité « excellent ».
+        \item Détermine la fréquence de la modalité « bien » (en \%).
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    \textbf{Situation présentée par un tableau de distribution.} Voici la répartition des moyens de transport utilisés par les élèves d'une école pour venir en classe.
+    \begin{center}
+        \begin{tblr}{
+                    hlines,
+                    vlines,
+                    colspec={X[c]*{5}{X[c]}},
+                    rows={0.9cm, m},
+                    row{1}={gray!40, font=\bfseries}
+              }
+              & À pied & Vélo & Bus & Voiture & Total \\
+              Effectif & 45 & 30 & 60 & 15 & 150 \\
+        \end{tblr}
+    \end{center}
+    \begin{enumerate}[itemsep=1cm]
+        \item Quelle information ce tableau donne-t-il sur la population étudiée ?
+        \item Quelle est la fréquence des élèves qui viennent en bus ?
+        \item Un article du journal de l'école affirme : « Plus d'un tiers des élèves viennent à pied. » Cette affirmation est-elle correcte ? Justifie par un calcul.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    \textbf{Situation présentée par un diagramme.} Le diagramme circulaire ci-dessous représente les $80$ réponses obtenues à la question « Quel est ton animal préféré ? » posée aux élèves d'une école primaire.
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \fill[blue!45]   (0,0) -- (90:2.2)   arc (90:-90:2.2)    -- cycle;
+            \fill[pink!60]   (0,0) -- (-90:2.2)  arc (-90:-180:2.2)  -- cycle;
+            \fill[yellow!70] (0,0) -- (-180:2.2) arc (-180:-234:2.2) -- cycle;
+            \fill[gray!50]   (0,0) -- (-234:2.2) arc (-234:-270:2.2) -- cycle;
+            \draw (0,0) circle (2.2);
+            \node at (0:2.9)    {\shortstack{Chien \\ $50\,\%$}};
+            \node at (-135:2.9) {\shortstack{Chat \\ $25\,\%$}};
+            \node at (153:3.1)  {\shortstack{Lapin \\ $15\,\%$}};
+            \node at (108:3.1)  {\shortstack{Autre \\ $10\,\%$}};
+        \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}[itemsep=1cm]
+        \item Parmi les informations suivantes, laquelle te permet de calculer directement l'effectif de la modalité « Chat » : l'effectif total, la fréquence de « Chat », ou l'étendue de la série ? Utilise-la pour calculer cet effectif.
+        \item Une élève affirme : « Un peu plus de la moitié des élèves préfèrent les chiens ou les chats. » A-t-elle raison ? Justifie.
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\subsection{Relier les différentes présentations d'une même situation}
+
+Une liste de données brutes, un tableau de distribution et un diagramme représentent souvent \textbf{une seule et même situation}, simplement présentée différemment. Savoir passer de l'une à l'autre est une compétence essentielle.
+
+\begin{exercise}
+    Voici les résultats obtenus par $16$ élèves lors d'un concours de tir à l'arc (nombre de flèches sur la cible, sur un maximum de $5$) :
+    \begin{center}
+        $3, 4, 2, 5, 3, 4, 3, 2, 4, 5, 3, 3, 4, 2, 3, 4$
+    \end{center}
+    \begin{enumerate}[itemsep=1.5cm]
+        \item Construis le tableau de distribution de cette série (modalités, effectifs, fréquences en \%).
+        \item Construis le diagramme en bâtonnets correspondant à cette distribution.
+        \item Cette variable est-elle qualitative ou quantitative ? Le diagramme choisi est-il donc adapté ?
+    \end{enumerate}
+    \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+            \draw[->] (-0.5,0) -- (7,0) node[right]{modalités};
+            \draw[->] (0,-0.5) -- (0,7.5) node[above]{effectif};
+            \foreach \i in {0,...,7} {
+                \draw (-0.1,\i) -- (0.1,\i);
+                \node[left] at (-0.15,\i) {$\i$};
+            }
+            \foreach \x/\lbl in {1/2, 2/3, 3/4, 4/5} {
+                \node[below] at (\x,-0.2) {\lbl};
+            }
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Un club sportif a interrogé ses membres sur leur sport préféré parmi le football, la natation, le tennis et le basketball. Voici le diagramme à bandes obtenu.
+    \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+            \draw[->] (-0.5,0) -- (6,0) node[right]{modalités};
+            \draw[->] (0,-0.5) -- (0,6.5) node[above]{effectif};
+            \foreach \i in {0,2,4,6} {
+                \draw (-0.1,\i) -- (0.1,\i);
+                \node[left] at (-0.15,\i) {$\i$};
+            }
+            \draw[fill=blue!40] (0.7,0) rectangle (1.5,5);
+            \draw[fill=blue!40] (1.9,0) rectangle (2.7,3);
+            \draw[fill=blue!40] (3.1,0) rectangle (3.9,6);
+            \draw[fill=blue!40] (4.3,0) rectangle (5.1,2);
+            \node[below] at (1.1,-0.2) {Football};
+            \node[below] at (2.3,-0.2) {Natation};
+            \node[below] at (3.5,-0.2) {Tennis};
+            \node[below] at (4.7,-0.2) {Basket};
+        \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}[itemsep=1cm]
+        \item Construis le tableau de distribution correspondant à ce diagramme (modalités, effectifs, fréquences en \%).
+        \item Écris, sous forme d'une liste de données brutes, une série de résultats individuels qui correspondrait à ce diagramme (comme dans l'exercice précédent).
+    \end{enumerate}
+\end{exercise}
+
 \newpage
 \section*{Mots-clès}
 \begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
@@ -583,3 +701,219 @@ Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu
 \end{enumerate}
 
 \end{document}
+
+
+% \section{Lecture de graphiques, analyse de données}
+% Dans ce chapitre, nous rencontrerons 3 types de graphique qui permettent de visualiser des données.
+% \begin{enumerate}
+%     \item Le graphique évolutif. Ce type de graphique s'utilise pour montrer l'évolution d'une grandeur par rapport à une autre.
+%           \begin{center}
+%               \includegraphics{tikz/diagramme_evolutif_theorie.tikz}
+%           \end{center}
+%     \item Le diagramme en bâton.Ce diagramme s'utilise pour comparer des données.
+%           \begin{center}
+%               \includegraphics{tikz/diagramme_baton_theorie.tikz}
+%           \end{center}
+%     \item Le diagramme circulaire. Ce diagramme s'utilise pour représenter des données dont on connaît la répartition par rapport à un tout.
+%           \begin{center}
+%               \includegraphics{tikz/diagramme_circulaire_theorie.tikz}
+%           \end{center}
+% \end{enumerate}
+
+% \newpage
+
+% \begin{exercise}
+%     Un concessionnaire automobile a vendu ce mois-ci 85 véhicules de tous types. En voici un descriptif partiel.
+%     \begin{center}
+%         \begin{tblr}{
+%                 colspec={CCCCC},
+%                 hlines,
+%                 vlines,
+%                 row{1}={gray!40, font = \bfseries},
+%                 column{1}={gray!40,font = \bfseries},
+%                 rows={1cm, m}}
+%             Vendeurs & Citadines & Sportives & Routières & Totaux \\
+%             Paul     & 3         & 5         &           & 17     \\
+%             Denis    & 4         &           & 6         & 15     \\
+%             Henri    & 3         &           & 8         &        \\
+%             Steeve   &           & 4         &           & 18     \\
+%             Eliess   & 5         &           & 2         & 16     \\
+%             Totaux   &           & 31        & 30        & 85     \\
+%         \end{tblr}
+%     \end{center}
+%     \begin{enumerate}[itemsep=1em]
+%         \item Complète le tableau.
+%         \item Combien de voitures Henri a-t-il vendu?
+%         \item Combien de citadines ont été vendues dans cette concession?
+%         \item Quel est le vendeur qui a vendu le plus de sportives?
+%         \item Denis est persuadé d'avoir vendu autant de sportives que de routières. A-t-il raison?
+%         \item Qui est le meilleur vendeur?
+%     \end{enumerate}
+% \end{exercise}
+
+% \begin{exercise}
+%     Un agriculteur a réalisé le diagramme circulaire suivant illustrant l'utilisation des terres de son exploitation.
+
+%     \tcbsidebyside[sidebyside adapt=right,
+%         blanker,sidebyside gap=1cm
+%     ]{%
+%         \begin{enumerate}[itemsep=1cm]
+%             \item Quel type de culture occupe la moitié de ses terres?
+%             \item Quel type de culture est la moins répandue sur ses terres?
+%             \item Quelles sont les cultures qui occupent la même surface?
+%         \end{enumerate}
+%     }{%
+%         \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees2.tikz}
+%     }
+% \end{exercise}
+
+% \newpage
+% \begin{exercise}
+%     Observe le graphique évolutif ci-dessous illustrant le prix de location d'une planche à voile, et complète le tableau en commençant par donner un nom aux têtes de colonnes.
+
+%     \tcbsidebyside[
+%         sidebyside adapt=left,
+%         blanker,
+%         sidebyside gap=1cm
+%     ]{%
+%         \includegraphics[width=10cm]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees3.tikz}
+%     }{%
+%         \begin{tblr}{hlines, vlines, rows={1cm, m}, columns={2cm, c}, row{1}={2cm, m}}
+%               & \\
+%             1 & \\
+%             2 & \\
+%             3 & \\
+%             4 & \\
+%             5 & \\
+%             6 & \\
+%         \end{tblr}
+%     }
+% \end{exercise}
+
+% \begin{exercise}
+%     Le diagramme circulaire suivant montre la répartition des élèves de la même classe en fonction du nombre de sports pratiqués régulièrement.
+
+%     \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/lecture_de_donnees4.tikz}
+
+%     \begin{enumerate}[cols=2]
+%         \item Si tu sais que 3 élèves ne pratiquent aucun sport régulièrement, détermine le nombre d'élèves de la classe.\columnbreak
+%         \item Combien de personnes pratiquent plus de un sport régulièrement~?
+%     \end{enumerate}
+
+
+% \end{exercise}
+
+% \newpage
+% \section{Construction de graphiques}
+% Dans une école de Wallonie, en 1\iere{} année, il y a 120 élèves. Ils ont eu le choix entre plusieurs options : il en a 30 qui sont en informatique, 25 qui suivent le latin, 40 qui font un renforcement math et le reste qui sont en activité complémentaire d'expression corporelle. Représente la répartition des élèves sur un diagramme circulaire. \par \par
+% \emph{Pour réaliser ce type de diagramme, nous allons devoir déterminer dans un premier temps le pourcentage que chaque option représente par rapport à l'ensemble des élèves de 1\iere{} années, puis transformer cela en amplitudes pour pouvoir le placer dans le diagramme.}
+
+% \begin{center}
+%     \begin{tblr}{
+%             hlines,
+%             vlines,
+%             colspec={CCCC},
+%             rows={1cm, m},
+%             column{1}={gray!40, font=\bfseries},
+%             row{1}={2cm, gray!40, font=\bfseries},
+%         }
+%         Option                & Nombre d'élèves & Pourcentage & Amplitude \\
+%         Informatique          &                 &             &           \\
+%         Latin                 &                 &             &           \\
+%         Renforcement math     &                 &             &           \\
+%         Expression corporelle &                 &             &           \\
+%         Total                 &                 &             &           \\
+%     \end{tblr}
+% \end{center}
+
+% \emph{Représente maintenant les répartitions des élèves dans un diagramme circulaire. Fais une légende de ton diagramme.} \\
+
+% \includegraphics[width=6cm]{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
+
+% \newpage
+% \begin{exercise}
+%     En Belgique, sur 12 millions d'habitants, 6,6 millions parlent néerlandais comme première langue, 0,5 millions parlent allemand et 3,7 millions ont le français comme langue maternelle. Quel est pourcentage de la population qui ne parle aucune de ces 3 langues ? Représente la situation dans un diagramme circulaire. \\
+%     \emph{Note : retranscris d'abord tes données sous la forme d'un tableau.}
+
+%     \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
+% \end{exercise}
+% \vfill
+% \begin{exercise}
+%     Éléanore a relevé les températures dehors au cours de la journée. Elle les écrit comme suit.
+%     \tcbsidebyside[
+%         sidebyside adapt=left,
+%         blanker,
+%         sidebyside gap=1cm
+%     ]{%
+%         \begin{tblr}{
+%                 hlines,
+%                 vlines,
+%                 rowsep={1em}
+%             }
+%             \SI{8}{\hour}  & \SI{10}{\degreeCelsius} \\
+%             \SI{10}{\hour} & \SI{11}{\degreeCelsius} \\
+%             \SI{12}{\hour} & \SI{12}{\degreeCelsius} \\
+%             \SI{14}{\hour} & \SI{17}{\degreeCelsius} \\
+%             \SI{16}{\hour} & \SI{15}{\degreeCelsius} \\
+%             \SI{18}{\hour} & \SI{11}{\degreeCelsius} \\
+%         \end{tblr}
+%     }{%
+%         \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
+%     }
+
+%     Trace le graphique évolutif qui correspond à la situation.
+% \end{exercise}
+
+% \newpage
+% \begin{exercise}
+%     Lorsque le robinet de ma terrasse reste ouvert au maximum, il remplit trois seaux de 10 litres en une minute. \\ Complète le tableau et construis le graphique.
+%     \begin{center}
+%         \begin{tblr}{
+%                 hlines,
+%                 vlines,
+%                 columns={2cm, c},
+%                 rows={1cm, m},
+%                 column{1}={3cm, gray!40, font=\bfseries}
+%             }
+%             Temps en minutes         & 1 & 2 & 3 & 7 & 15 \\
+%             Quantité d'eau en litres &   &   &   &   &    \\
+%         \end{tblr}
+%     \end{center}
+
+%     Titre du graphique : \dotfill
+
+%     \begin{center}
+%         \includegraphics[height=15cm]{chapitres/traitement_de_donnes_et_pourcentages/figures/robinet.tikz}
+%     \end{center}
+% \end{exercise}
+
+% \newpage
+% \begin{exercise}
+%     Lors d'une enquête menée par Anais parmi les élèves de 3\ieme{} maternelle, elle a noté les couleurs préférées des enfants.
+%     \begin{center}
+%         \begin{tblr}{
+%                 hlines,
+%                 vlines,
+%                 columns={1.5cm, c},
+%                 rows={.7cm, m},
+%                 row{1}={gray!40, font=\bfseries}
+%             }
+%             Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre & Total \\
+%             3     & 2     & 5    & 2    & 7    & 5      & 3     &       \\
+%         \end{tblr}
+%     \end{center}
+%     \vfill
+
+%     \begin{enumerate}
+%         \item Combien d'enfants se trouvent dans la classe?
+%         \item Détermine le pourcentage d'enfants qui préfèrent le bleu.
+%         \item Construis un diagramme circulaire qui représente la situation.
+%               \begin{center}
+%                   \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/cercle.tikz}
+%               \end{center}
+%         \item Construis un diagramme en bâtonnets qui représente la situation.\bigbreak
+%               \begin{center}
+%                   \includegraphics[width=.5\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadri2.tikz}
+%               \end{center}
+%     \end{enumerate}
+% \end{exercise}
