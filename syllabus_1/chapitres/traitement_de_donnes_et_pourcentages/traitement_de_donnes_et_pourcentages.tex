@@ -12,6 +12,7 @@
     \item Diagrammes statistiques.
     \item Moyenne arithmétique.
     \item Étendue.
+    \item Mode
     \item Pourcentages.
     \item Repère orthonormé.
 \end{enumerate}
@@ -523,23 +524,77 @@ Il existe plusieurs façons de représenter visuellement une distribution statis
 \newpage
 \subsection{Moyenne arithmétique}
 
-La \textbf{moyenne arithmétique} d'une série de valeurs est un nombre qui résume, en une seule valeur, l'ensemble des données. Elle s'obtient en additionnant toutes les valeurs, puis en divisant cette somme par le nombre de valeurs.
+Lors de la dernière évaluation de mathématiques (sur $10$), les $8$ élèves du groupe de Nora ont obtenu les résultats suivants :
+\begin{center}
+    $6, \ 8, \ 5, \ 9, \ 7, \ 6, \ 8, \ 7$
+\end{center}
+Le titulaire veut donner, lors du conseil de classe, un seul nombre qui résume la performance globale du groupe.
+
+\begin{enumerate}[itemsep=1cm]
+    \item À ton avis, quel nombre pourrait-on choisir pour représenter au mieux ce groupe de résultats ? Explique ta démarche.
+    \item Le professeur d'un autre groupe annonce que la « moyenne » de sa classe est de $6{,}5$. Sais-tu déjà comment il a pu obtenir ce nombre à partir des notes de ses élèves ?
+    \item Essaie, avec tes propres mots (ou un calcul), de trouver ce fameux nombre pour le groupe de Nora.
+\end{enumerate}
+
+\newpage
+
+La \textbf{moyenne arithmétique} d'une série de valeurs est le nombre qui résume, en une seule valeur, l'ensemble de ces données. Elle s'obtient en additionnant toutes les valeurs, puis en divisant cette somme par le nombre de valeurs.
 \begin{equation*}
     \text{moyenne} = \frac{\text{somme des valeurs}}{\text{nombre de valeurs}}
 \end{equation*}
 
-\textbf{Remarque :} la moyenne n'est pas forcément une valeur observée dans la série, et elle ne correspond pas toujours à un nombre entier, même si la variable étudiée est quantitative discrète.
+\textbf{Application à l'activité :} pour le groupe de Nora,
+\begin{equation*}
+    \text{moyenne} = \frac{6+8+5+9+7+6+8+7}{8} = \frac{56}{8} = 7
+\end{equation*}
 
 \begin{exercise}
-    Voici le nombre de messages envoyés par jour par $10$ élèves d'une même classe :
+    Lors des $6$ derniers matchs de la saison, un attaquant a marqué le nombre de buts suivant :
     \begin{center}
-        $45, 60, 30, 80, 55, 40, 70, 65, 50, 35$
+        $2, \ 0, \ 1, \ 3, \ 1, \ 1$
+    \end{center}
+    Calcule le nombre moyen de buts marqués par match. Laisse ta démarche visible.
+    \vspace{2.5cm}
+\end{exercise}
+
+\begin{exercise}
+    Voici les températures maximales relevées chaque jour durant une semaine.
+    \begin{center}
+        \begin{tblr}{
+                    hlines,
+                    vlines,
+                    colspec={X[c]*{7}{X[c]}},
+                    rows={0.9cm, m},
+                    row{1}={gray!40, font=\bfseries}
+              }
+              Jour & Lundi & Mardi & Mercredi & Jeudi & Vendredi & Samedi & Dimanche \\
+              ($^\circ$C) & 18 & 21 & 19 & 23 & 20 & 17 & 22 \\
+        \end{tblr}
+    \end{center}
+    Calcule la température moyenne de la semaine. Laisse ta démarche visible.
+    \vspace{2.5cm}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Pendant les vacances, Léo a compté le nombre de messages reçus sur son téléphone chaque jour :
+    \begin{center}
+        $12, \ 8, \ 15, \ 20, \ 10$
     \end{center}
     \begin{enumerate}[itemsep=1cm]
-        \item Calcule la moyenne du nombre de messages envoyés par jour. Laisse ta démarche visible.
-        \item Calcule l'étendue de cette série.
-        \item Un élève envoie $80$ messages par jour. Cette valeur est-elle proche ou éloignée de la moyenne du groupe ? Que peux-tu en déduire ?
+        \item Calcule le nombre moyen de messages reçus par jour.
+        \item Le premier jour des vacances, Léo avait reçu $35$ messages. Recalcule la nouvelle moyenne en tenant compte de cette donnée supplémentaire.
+        \item Compare les deux moyennes obtenues. Qu'observes-tu ? Explique pourquoi.
     \end{enumerate}
+\end{exercise}
+\vspace{2cm}
+
+\begin{exercise}
+    Reprenons les derniers résultats sur $20$ en mathématiques de Monsieur Crobeddu lorsqu'il avait 13 ans...
+    \begin{center}
+        $19, \ 2, \ 8, \ 4, \ 7, \ 12, \ 13, \ 18$
+    \end{center}
+    Calcule la moyenne de Monsieur Crobeddu en mathématiques.
 \end{exercise}
 
 \newpage
@@ -548,7 +603,7 @@ La \textbf{moyenne arithmétique} d'une série de valeurs est un nombre qui rés
 Une même situation statistique peut t'être présentée de différentes façons : par un \textbf{texte}, par un \textbf{tableau de distribution}, ou par un \textbf{diagramme}. Il faut être capable d'en extraire les informations utiles, quel que soit le support.
 
 \begin{exercise}
-    \textbf{Situation présentée en français.} Lors d'un contrôle de sciences, les $24$ élèves d'une classe ont obtenu des résultats répartis comme suit : $4$ élèves ont un résultat « insuffisant », $9$ élèves ont un résultat « satisfaisant », $8$ élèves ont un résultat « bien », et le reste des élèves ont un résultat « excellent ».
+    Lors d'un contrôle de sciences, les $24$ élèves d'une classe ont obtenu des résultats répartis comme suit : $4$ élèves ont un résultat « insuffisant », $9$ élèves ont un résultat « satisfaisant », $8$ élèves ont un résultat « bien », et le reste des élèves ont un résultat « excellent ».
     \begin{enumerate}[itemsep=1cm]
         \item Décris la population et la variable statistique étudiées.
         \item Cette variable est-elle qualitative ou quantitative ? Justifie.
@@ -556,9 +611,10 @@ Une même situation statistique peut t'être présentée de différentes façons
         \item Détermine la fréquence de la modalité « bien » (en \%).
     \end{enumerate}
 \end{exercise}
+\vspace{1cm}
 
 \begin{exercise}
-    \textbf{Situation présentée par un tableau de distribution.} Voici la répartition des moyens de transport utilisés par les élèves d'une école pour venir en classe.
+    Voici la répartition des moyens de transport utilisés par les élèves d'une école pour venir en classe.
     \begin{center}
         \begin{tblr}{
                     hlines,
@@ -578,8 +634,9 @@ Une même situation statistique peut t'être présentée de différentes façons
     \end{enumerate}
 \end{exercise}
 
+\newpage
 \begin{exercise}
-    \textbf{Situation présentée par un diagramme.} Le diagramme circulaire ci-dessous représente les $80$ réponses obtenues à la question « Quel est ton animal préféré ? » posée aux élèves d'une école primaire.
+    Le diagramme circulaire ci-dessous représente les $80$ réponses obtenues à la question « Quel est ton animal préféré ? » posée aux élèves d'une école primaire.
     \begin{center}
         \begin{tikzpicture}[scale=1]
             \fill[blue!45]   (0,0) -- (90:2.2)   arc (90:-90:2.2)    -- cycle;
@@ -599,35 +656,54 @@ Une même situation statistique peut t'être présentée de différentes façons
     \end{enumerate}
 \end{exercise}
 
-\newpage
-\subsection{Relier les différentes présentations d'une même situation}
-
-Une liste de données brutes, un tableau de distribution et un diagramme représentent souvent \textbf{une seule et même situation}, simplement présentée différemment. Savoir passer de l'une à l'autre est une compétence essentielle.
-
 \begin{exercise}
-    Voici les résultats obtenus par $16$ élèves lors d'un concours de tir à l'arc (nombre de flèches sur la cible, sur un maximum de $5$) :
+    Lors d'une enquête menée auprès des $40$ élèves de 1re année, on a demandé à chacun quelle est sa matière préférée parmi le Français, les Mathématiques, les Sciences et l'éducation physique.
+    Le compte rendu de l'enquête indique : « $12$ élèves ont choisi le Français, ce qui représente une fréquence de $30\,\%$. ».
+    Voici également le diagramme à bandes et le tableau de distribution (incomplet) construits à partir des résultats de cette enquête.
+
     \begin{center}
-        $3, 4, 2, 5, 3, 4, 3, 2, 4, 5, 3, 3, 4, 2, 3, 4$
-    \end{center}
-    \begin{enumerate}[itemsep=1.5cm]
-        \item Construis le tableau de distribution de cette série (modalités, effectifs, fréquences en \%).
-        \item Construis le diagramme en bâtonnets correspondant à cette distribution.
-        \item Cette variable est-elle qualitative ou quantitative ? Le diagramme choisi est-il donc adapté ?
-    \end{enumerate}
-    \begin{center}
-        \begin{tikzpicture}[scale=1.5]
-            \draw[->] (-0.5,0) -- (7,0) node[right]{modalités};
-            \draw[->] (0,-0.5) -- (0,7.5) node[above]{effectif};
-            \foreach \i in {0,...,7} {
-                \draw (-0.1,\i) -- (0.1,\i);
-                \node[left] at (-0.15,\i) {$\i$};
+        \begin{tikzpicture}[scale=1]
+            \draw[->] (-0.5,0) -- (7,0) node[right]{\footnotesize matière};
+            \draw[->] (0,-0.5) -- (0,6.5) node[above]{\footnotesize effectif};
+            \foreach \i in {0,2,4,6,8,10} {
+                \draw ({-0.1},{\i*0.55}) -- (0.1,{\i*0.55});
+                \node[left] at ({-0.15},{\i*0.55}) {\i};
             }
-            \foreach \x/\lbl in {1/2, 2/3, 3/4, 4/5} {
-                \node[below] at (\x,-0.2) {\lbl};
-            }
+            \draw[fill=blue!40] (0.7,0) rectangle (1.5,{10*0.55});
+            \draw[fill=blue!40] (2.1,0) rectangle (2.9,{8*0.55});
+            \node[below] at (1.1,-0.2) {Maths};
+            \node[below] at (2.5,-0.2) {Sciences};
         \end{tikzpicture}
     \end{center}
+
+    \begin{center}
+        \begin{tblr}{
+                    hlines,
+                    vlines,
+                    colspec={X[c]X[c]X[c]},
+                    rows={0.9cm, m},
+                    row{1}={gray!40, font=\bfseries}
+              }
+              Matière préférée & Effectif & Fréquence (\%) \\
+              Français         &          &                \\
+              Mathématiques    &          &                \\
+              Sciences         &          & 20             \\
+              Éd physique      &          &                \\
+              \textbf{Total}   & 40       &                \\
+        \end{tblr}
+    \end{center}
+
+    \begin{enumerate}[itemsep=1.5cm]
+        \item Décris la population et la variable statistique étudiées.
+        \item Cette variable est-elle qualitative ou quantitative ? Justifie.
+        \item Complète entièrement le tableau de distribution ci-dessus, en utilisant les trois supports (texte, diagramme, tableau).
+        \item Quel support (le texte, le diagramme ou le tableau) permet de lire directement l'effectif des élèves préférant les sciences ?
+        \item Comment as-tu obtenu l'effectif des élèves préférant l'éducation physique ? Explique ta démarche.
+        \item Un élève affirme : « Plus d'un quart des élèves préfèrent les mathématiques. » A-t-il raison ? Justifie ta réponse par un calcul.
+    \end{enumerate}
 \end{exercise}
+
+\newpage
 
 \begin{exercise}
     Un club sportif a interrogé ses membres sur leur sport préféré parmi le football, la natation, le tennis et le basketball. Voici le diagramme à bandes obtenu.
@@ -649,9 +725,195 @@ Une liste de données brutes, un tableau de distribution et un diagramme représ
             \node[below] at (4.7,-0.2) {Basket};
         \end{tikzpicture}
     \end{center}
-    \begin{enumerate}[itemsep=1cm]
+    \begin{enumerate}[itemsep=6cm]
         \item Construis le tableau de distribution correspondant à ce diagramme (modalités, effectifs, fréquences en \%).
-        \item Écris, sous forme d'une liste de données brutes, une série de résultats individuels qui correspondrait à ce diagramme (comme dans l'exercice précédent).
+        \item Écris, sous forme d'une liste de données brutes, une série de résultats individuels qui correspondrait à ce diagramme.
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Exercices mélangés}
+\setcounter{exercise}{0}
+
+\begin{exercise}
+    Léna achète un jeu vidéo affiché à $45$ €. Un bandeau annonce « $-20\,\%$ ».
+    \begin{enumerate}
+        \item Quel est le prix du jeu après la réduction ?
+        \item Léna paie avec une carte cadeau de $10$ €. Combien lui reste-t-il à payer en espèces ?
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    \textit{(A faire sur la feuille directement)} Place, dans le repère orthonormé ci-dessous, les points suivants.
+    \begin{center}
+        $J\left(2;3\right) \hfill K\left(-3;1\right) \hfill L\left(3;0\right) \hfill M\left(-2;-3\right) \hfill N\left(0;-2\right)$
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \draw[step=1, gray!40, thin] (-4.5,-4.5) grid (4.5,4.5);
+            \draw[->] (-4.5,0) -- (4.5,0) node[right]{$x$};
+            \draw[->] (0,-4.5) -- (0,4.5) node[above]{$y$};
+            \foreach \i in {-4,...,4} {
+                \node[below] at (\i,0) {\footnotesize \i};
+                \node[left] at (0,\i) {\footnotesize \i};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}
+        \item Quel point est situé exactement sur l'axe des abscisses ?
+        \item Quel point a une abscisse et une ordonnée toutes deux négatives ?
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Lors d'une enquête menée parmi $20$ élèves, on leur a demandé combien de livres ils avaient lus pendant les grandes vacances. Voici les résultats :
+    \begin{center}
+        $2, 3, 1, 0, 2, 4, 3, 2, 1, 2, 0, 3, 2, 1, 4, 2, 3, 1, 2, 0$
+    \end{center}
+    \begin{enumerate}
+        \item Quelle est la population étudiée ? Quelle est la variable statistique étudiée ?
+        \item Quelles sont les modalités observées ?
+        \item Quel est l'effectif total de la population ?
+        \item Quel est l'effectif de la modalité « $2$ livres » ?
+        \item Quelle est la fréquence de la modalité « $2$ livres » (en \%) ?
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Voici le diagramme à bandes représentant l'instrument de musique préféré de $50$ élèves d'une école.
+    \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+            \draw[->] (-0.5,0) -- (6,0) node[right]{\footnotesize instrument};
+            \draw[->] (0,-0.5) -- (0,5.5) node[above]{\footnotesize effectif};
+            \foreach \i in {0,5,10,15,20} {
+                \draw ({-0.1},{\i*0.25}) -- (0.1,{\i*0.25});
+                \node[left] at ({-0.15},{\i*0.25}) {\i};
+            }
+            \draw[fill=blue!40] (0.7,0) rectangle (1.5,{15*0.25});
+            \draw[fill=blue!40] (1.9,0) rectangle (2.7,{20*0.25});
+            \draw[fill=blue!40] (3.1,0) rectangle (3.9,{5*0.25});
+            \draw[fill=blue!40] (4.3,0) rectangle (5.1,{10*0.25});
+            \node[below] at (1.1,-0.2) {Piano};
+            \node[below] at (2.3,-0.2) {Guitare};
+            \node[below] at (3.5,-0.2) {Violon};
+            \node[below] at (4.7,-0.2) {Batterie};
+        \end{tikzpicture}
+    \end{center}
+    Construis le tableau de distribution correspondant (modalités, effectifs, fréquences en \%).
+\end{exercise}
+
+\begin{exercise}
+    Voici les notes obtenues (sur $20$) par $6$ élèves lors d'un test d'anglais :
+    \begin{center}
+        $12, \ 14, \ 10, \ 16, \ 8, \ 12$
+    \end{center}
+    \begin{enumerate}
+        \item Calcule la moyenne du groupe. Laisse ta démarche visible.
+        \item Calcule l'étendue de cette série.
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Je me teste}
+\setcounter{exercise}{0}
+\begin{exercise}
+    Un magasin d'électroménager affiche un lave-linge à $480$ €. Pendant les soldes, il propose d'abord une remise de $15\,\%$, puis, si le client paie comptant, une remise supplémentaire de $5\,\%$ sur le nouveau prix obtenu.
+
+    Un second magasin propose directement le même lave-linge à $400$ €, sans réduction supplémentaire possible.
+    \begin{enumerate}
+        \item Quel est le prix du lave-linge dans le premier magasin après les deux remises successives ?
+        \item Dans quel magasin est-il le plus avantageux d'acheter ce lave-linge ? Justifie.
+        \item Le vendeur du premier magasin affirme : « Au final, vous bénéficiez d'une réduction totale de $20\,\%$ ! ». A-t-il raison ? Calcule le pourcentage de réduction réellement obtenu et compare.
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Voici les notes obtenues (sur $20$) par $8$ élèves d'une classe lors d'un contrôle de mathématiques, numérotés de $1$ à $8$ :
+    \begin{center}
+        \begin{tblr}{
+                    hlines,
+                    vlines,
+                    colspec={X[c]*{8}{X[c]}},
+                    rows={0.9cm, m},
+                    row{1}={gray!40, font=\bfseries}
+              }
+              Élève n° & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+              Note        & 8 & 14 & 16 & 10 & 18 & 12 & 9 & 14 \\
+        \end{tblr}
+    \end{center}
+    \begin{enumerate}
+        \item Calcule la moyenne de la classe. Laisse ta démarche visible.
+        \item Calcule l'étendue de cette série.
+        \item Quel est le mode de cette série de notes ? (rappel : le mode est la valeur qui apparait le plus souvent)
+        \item Dans le repère ci-dessous, place les $8$ points de coordonnées (numéro de l'élève ; note), puis trace une droite horizontale représentant la moyenne de la classe.
+    \end{enumerate}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.6]
+            \draw[step=1, gray!30, thin] (0,0) grid (9,20);
+            \draw[->] (0,0) -- (9.5,0) node[right]{\footnotesize élève};
+            \draw[->] (0,0) -- (0,21) node[above]{\footnotesize note};
+            \foreach \i in {1,...,8} {
+                \node[below] at (\i,0) {\footnotesize \i};
+            }
+            \foreach \i in {0,5,10,15,20} {
+                \node[left] at (0,\i) {\footnotesize \i};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}[resume]
+        \item En observant ton graphique, combien d'élèves ont obtenu une note supérieure à la moyenne de la classe ?
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Lors de la kermesse de l'école, $250$ personnes ont acheté un ticket d'entrée à $4$ €. Les enfants de moins de $12$ ans bénéficient d'une réduction de $25\,\%$ sur ce prix. Parmi les $250$ visiteurs, $40\,\%$ sont des enfants de moins de $12$ ans.
+    \begin{enumerate}
+        \item Combien de visiteurs sont des enfants de moins de $12$ ans ? Combien sont des adultes ?
+        \item Quel prix un enfant paie-t-il pour entrer à la kermesse ?
+        \item Calcule la recette totale de la billetterie (entrées adultes $+$ entrées enfants).
+    \end{enumerate}
+    On a aussi demandé aux $250$ visiteurs quelle était leur activité préférée. Voici le diagramme obtenu.
+    \begin{center}
+        \begin{tikzpicture}[scale=1.8]
+            \draw[->] (-0.5,0) -- (6,0) node[right]{\footnotesize activité};
+            \draw[->] (0,-0.5) -- (0,5.5) node[above]{\footnotesize effectif};
+            \foreach \i in {0,20,40,60,80} {
+                \draw ({-0.1},{\i*0.06}) -- (0.1,{\i*0.06});
+                \node[left] at ({-0.15},{\i*0.06}) {\i};
+            }
+            \draw[fill=blue!40] (0.7,0) rectangle (1.5,{60*0.06});
+            \draw[fill=blue!40] (1.9,0) rectangle (2.7,{90*0.06});
+            \draw[fill=blue!40] (3.1,0) rectangle (3.9,{75*0.06});
+            \draw[fill=blue!40] (4.3,0) rectangle (5.1,{25*0.06});
+            \node[below] at (1.1,-0.2) {\footnotesize Stand de tir};
+            \node[below] at (2.3,-0.2) {\footnotesize Manège};
+            \node[below] at (3.5,-0.2) {\footnotesize Pêche aux canards};
+            \node[below] at (4.7,-0.2) {\footnotesize Autre};
+        \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}[resume]
+        \item Complète le tableau de distribution (effectifs, fréquences en \%) correspondant à ce diagramme.
+        \item Quelle est l'activité la plus demandée (le mode) ?
+    \end{enumerate}
+    Sur le plan de la kermesse, place dans le repère orthonormé dont l'entrée se situe à l'origine, le stand de tir se trouve au point $\left(3;5\right)$, le manège au point $\left(-2;4\right)$, et la pêche aux canards au point $\left(1;-3\right)$.
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \draw[step=1, gray!30, thin] (-4.5,-4.5) grid (4.5,5.5);
+            \draw[->] (-4.5,0) -- (4.5,0) node[right]{$x$};
+            \draw[->] (0,-4.5) -- (0,5.5) node[above]{$y$};
+            \foreach \i in {-4,...,4} {
+                \node[below] at (\i,0) {\footnotesize \i};
+                \node[left] at (0,\i) {\footnotesize \i};
+            }
+            \node[left] at (0,5) {\footnotesize 5};
+        \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}[resume]
+        \item Place les $3$ stands dans le repère ci-dessus.
+        \item Parmi toutes les informations récoltées dans cet exercice (nombre de visiteurs, recette totale, activité la plus demandée, position des stands), laquelle utiliserais-tu pour décider où installer un stand de boissons supplémentaire ? Justifie ton choix.
     \end{enumerate}
 \end{exercise}
 
@@ -660,18 +922,15 @@ Une liste de données brutes, un tableau de distribution et un diagramme représ
 \begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
     \item Population
     \item Modalité
-    \item Variable qualitative
-    \item Variable quantitative
+    \item Variable qualitative et quantitative
     \item Effectif, effectif total
     \item Fréquence
     \item Tableau de distribution
-    \item Diagramme en bâtonnets
-    \item Diagramme à bandes
-    \item Diagramme circulaire
+    \item Diagramme en bâtonnets, à bandes et circulaire
     \item Moyenne arithmétique
     \item Étendue
     \item Pourcentage
-    \item Repère
+    \item Repère orthonormé
     \item Abscisse
     \item Ordonnée
 \end{enumerate}
@@ -688,7 +947,7 @@ Une liste de données brutes, un tableau de distribution et un diagramme représ
     \item Présenter une liste de données à l'aide d'un diagramme en bâtonnets ou à bandes.
     \item Interpréter une valeur obtenue en lien avec le caractère étudié et le contexte.
     \item Lire des informations présentées à partir de supports différents pour répondre à des questions.
-    \item Choisir, parmi un ensemble d'informations (moyenne, effectifs, fréquence, diagrammes, tableau de distribution), l'élément pertinent pour répondre à une question posée.
+    \item Choisir, parmi un ensemble d'informations l'élément pertinent pour répondre à une question posée.
     \item Calculer un pourcentage en situation contextualisée.
     \item Comparer des offres faisant intervenir des pourcentages afin d'en déterminer la plus avantageuse.
     \item Exploiter une situation faisant intervenir des pourcentages successifs.
@@ -697,11 +956,10 @@ Une liste de données brutes, un tableau de distribution et un diagramme représ
     \item Écrire, avec le symbolisme adéquat, les coordonnées d’un point.
     \item Déterminer les coordonnées d’un point placé dans un repère orthonormé.
     \item Placer, dans un repère orthonormé, un point dont les coordonnées sont données.
-    \item Placer un ensemble de points qui vérifient une condition exprimant, en langage courant, une relation entre abscisse et ordonnée. Ex. : l’ordonnée est le double de l’abscisse.
+    \item Placer un ensemble de points qui vérifient une condition exprimant, en langage courant, une relation entre abscisse et ordonnée.
 \end{enumerate}
 
 \end{document}
-
 
 % \section{Lecture de graphiques, analyse de données}
 % Dans ce chapitre, nous rencontrerons 3 types de graphique qui permettent de visualiser des données.
