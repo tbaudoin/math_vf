@@ -1,0 +1,4 @@
+\begin{tikzpicture}
+    \draw[fill=black] (0,0) circle(1pt); % le centre
+    \draw (0,0) circle (3cm);
+\end{tikzpicture}

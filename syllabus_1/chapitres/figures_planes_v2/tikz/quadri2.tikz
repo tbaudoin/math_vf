@@ -1,0 +1,3 @@
+\begin{tikzpicture}
+    \draw[color=gray!40] (0,0) grid (20,20);
+\end{tikzpicture}

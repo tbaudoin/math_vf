@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+    \tkzInit[xmin=0, xmax=8, ymin=0, ymax=120, ystep=10]
+    \tkzGrid[sub, color=gray, subxstep=1, subystep=5]
+    \tkzDrawY[label=Tarif en €, above left]
+    \tkzLabelY
+    \tkzDrawX[label=\parbox{3cm}{\centering Nombre de jours\\ de location}, below right]
+    \tkzLabelX
+    \tkzDefPoints{0/0/O, 3/75/A, 6/105/B}
+    \tkzDrawSegment(O,A)
+    \tkzDrawLine[add=0 and .5](A,B)
+  \end{tikzpicture}
