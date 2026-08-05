@@ -80,10 +80,20 @@ Cela signifie que tous les nombres naturels sont des nombres entiers. Mais l'inv
 
 Lorsque l'on repère un point sur une droite graduée, on le repère grâce à un nombre, appelé dans ce contexte l'abscisse du point. Attention, elle n'est pas toujours un nombre entier.
 
-Par exemple, le point $F$ sur la droite graduée suivante a comme abscisse $0,25$ qui sera notée $abs~F = 0,25$ ou $F(0,25)$.
+Par exemple, le point $F$ sur la droite graduée suivante a comme abscisse $3$ qui sera notée $abs~F = 3$ ou $F(3)$.
 
 \begin{center}
-    \includegraphics[width=\linewidth]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/droite_graduee_0_5.tikz}
+    \begin{tikzpicture}[scale=1.3]
+        \draw[->] (-0.7,0) -- (8.7,0);
+        \foreach \i in {0,...,8} {
+            \draw (\i,0.1) -- (\i,-0.1);
+            \node[below] at (\i,-0.3) {$\i$};
+        }
+        \filldraw (0,0) circle (2pt) node[above=3pt]{$N$};
+        \filldraw (3,0) circle (2pt) node[above=3pt]{$F$};
+        \filldraw (4,0) circle (2pt) node[above=3pt]{$A$};
+        \filldraw (8,0) circle (2pt) node[above=3pt]{$T$};
+    \end{tikzpicture}
 \end{center}
 
 Donne l'abscisse des points suivants.
@@ -104,14 +114,33 @@ Donne l'abscisse des points suivants.
         \item $abs~X= -1$
         \item $abs~Y= 4$
     \end{enumerate}
-\begin{center}
-    \includegraphics[width=\linewidth]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/droite_graduee_-3_6.tikz}
-\end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \draw[->] (-3.7,0) -- (6.7,0);
+            \foreach \i in {-3,...,6} {
+                \draw (\i,0.1) -- (\i,-0.1);
+                \node[below] at (\i,-0.3) {$\i$};
+            }
+        \end{tikzpicture}
+    \end{center}
 \end{exercise}
 
 \begin{exercise}
-    Donne l'abscisse des points suivants. \\
-    \includegraphics[width=\linewidth]{chapitres/addition_et_soustraction_avec_les_nombres_entiers/figures/droite_graduee_-5_4.tikz}
+    Donne l'abscisse des points suivants.
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \draw[->] (-5.7,0) -- (4.7,0);
+            \foreach \i in {-5,...,4} {
+                \draw (\i,0.1) -- (\i,-0.1);
+                \node[below] at (\i,-0.3) {$\i$};
+            }
+            \filldraw (-4,0) circle (2pt) node[above=3pt]{$A$};
+            \filldraw (-2,0) circle (2pt) node[above=3pt]{$B$};
+            \filldraw (0,0)  circle (2pt) node[above=3pt]{$C$};
+            \filldraw (2,0)  circle (2pt) node[above=3pt]{$D$};
+            \filldraw (4,0)  circle (2pt) node[above=3pt]{$E$};
+        \end{tikzpicture}
+    \end{center}
     \begin{enumerate}[cols=5, label=\ ]
         \item $abs~A= $
         \item $abs~B= $
@@ -199,7 +228,7 @@ Donne l'abscisse des points suivants.
 \section{Addition et soustraction d'entiers }
 \subsection{Somme de deux termes}
 \setcounter{exercise}{0}
-Pierre-Yves participe à un jeu de hasard. Il se joue en deux manches~; à chaque manche un gain ou une perte d'argent est notée.
+Pierre-Yves participe à un jeu de hasard. Il se joue en deux manches : à chaque manche, un gain ou une perte d'argent est noté.
 
 \begin{enumerate}
     \item Donne le bilan de chacune des parties suivantes en écrivant l'opération à effectuer.
@@ -616,7 +645,7 @@ En te basant sur tes observations de la page précédente, réponds aux question
 \end{exercise}
 
 \begin{exercise}
-    Trouve la valeur manquante pour que le calcul soit correcte.
+    Trouve la valeur manquante pour que le calcul soit correct.
     \begin{enumerate}[cols=2]
         \item \(\dots + (+6) = 11 \)
         \item \((-4) + \dots = 3 \)
@@ -647,20 +676,21 @@ En te basant sur tes observations de la page précédente, réponds aux question
     \end{center}
     \begin{enumerate}
         \item Trace une droite graduée (verticale) et place chacun de ces lieux au bon endroit en choisissant une échelle adaptée. 
-        \item Quels sont les lieux situés en dessous du niveau de la mer ? 
+        \item Quels sont les lieux situés en-dessous du niveau de la mer ? 
         \item Quel est le lieu le plus élevé ? 
         \item Quel est le lieu le plus profond ?
-        \item Classe ces lieux du plus bas au plus haut « n utilisant des notations mathématiques adaptées.  
+        \item Classe ces lieux du plus bas au plus haut en utilisant des notations mathématiques adaptées.  
     \end{enumerate}
 \end{exercise}
 
 \newpage
-\section*{Mots-clès}
+\section*{Mots-clés}
 \begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
     \item Abscisse
     \item Nombres opposés
     \item Valeur absolue
-    \item Entiers
+    \item Nombres entiers
+    \item 
 \end{enumerate}
 
 \section*{Attendus}
@@ -671,9 +701,9 @@ En te basant sur tes observations de la page précédente, réponds aux question
     \item Associer les symboles d’ordre ( <, >, = ) aux expressions « est plus petit que », « est plus grand que », « est égal à » et à leurs positions respectives sur une droite orientée graduée.
     \item Placer un nombre (naturel, entier) sur une droite graduée.
     \item Comparer deux nombres (entiers) en utilisant le symbole adéquat ( <, >, = ).
-    \item Encadrer un nombre entier à l'unit", au dixième ou au centième près.
+    \item Encadrer un nombre entier à l'unité, au dixième ou au centième près.
     \item Ordonner des nombres entiers par ordre croissant ou décroissant.
-    \item Associer à l’addition et à la soustraction de deux nombres entiers un déplacement ou écart sur la droite numérique.
+    \item Associer à l’addition et à la soustraction de deux nombres entiers un déplacement ou un écart sur la droite numérique.
     \item Calculer une somme et une différence de nombres entiers.
     \item Calculer en utilisant les propriétés des opérations (commutativité, associativité, neutre, absorbant) et la distributivité.
     \item Calculer en utilisant les priorités des opérations.
