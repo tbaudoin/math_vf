@@ -61,3 +61,8 @@
 % commandes pour les guillemet
 \NewDocumentCommand{\g}{m}{\og #1 \fg{}}
 
+% commandes pour l'amplitude d'un angle
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\NewDocumentCommand{\longueur}{m}{\abs{\mkern2mu#1\mkern2mu}}
+\NewDocumentCommand{\amp}{m}{\longueur{\widehat{#1}}}
+

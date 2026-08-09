@@ -1,20 +1,27 @@
 \documentclass[../../syllabus_1.tex]{subfiles}
 \begin{document}
-
+\raggedbottom
 \chapter{Figures planes}
 
 \section{Repérage d'un point dans un plan}
 Pour repérer un point sur un plan, nous avons besoin de plusieurs informations. Explique oralement, dans chacun des exemples suivants, comment repérer la croix.
-\begin{multicols}{2}
-    Exemple 1\\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple1.png}
+\begin{tblr}{colspec={XX}}
+    {Exemple
+    1             \\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple1.png}}
+     & {Exemple 2 \\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple2.png}}\\
+    {Exemple 3    \\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple5.png}} & {Exemple 4\\\centering\includegraphics[rotate=-90,width=.5\linewidth]{chapitres/figures_planes_v2/img/exemple3.png}}\\
+\end{tblr}
 
-    Exemple 2\\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple2.png}
+% \begin{multicols}{2}
+%     Exemple 1\\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple1.png}
 
-    Exemple 3\\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple5.png}
+%     Exemple 2\\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple2.png}
 
-    \columnbreak
-    Exemple 4\\\includegraphics[rotate=-90,width=\linewidth]{chapitres/figures_planes_v2/img/exemple3.png}
-\end{multicols}
+%     Exemple 3\\\includegraphics[width=\linewidth]{chapitres/figures_planes_v2/img/exemple5.png}
+
+%     \columnbreak
+%     Exemple 4\\\includegraphics[rotate=-90,width=\linewidth]{chapitres/figures_planes_v2/img/exemple3.png}
+% \end{multicols}
 
 \newpage
 En mathématiques, pour repérer un point sur un plan, nous utilisons majoritairement un repère dit \textbf{orthonormé} (appartenant à la famille des repères cartésiens). Un repère orthonormé possède deux caractéristiques majeures: ses axes sont perpendiculaires et ils ont les mêmes normes. L'intersection des deux axes se nomme \textbf{l'origine du repère}.
@@ -95,6 +102,10 @@ Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant \
 \end{exercise}
 
 \section{Le langage géométrique}
+Soit acti du programme soit celle de croc math (la même mais revisité).
+
+Revoir ce que croc math fait avec la position relative des droites et reprendre
+dans le rappel de géométrie.
 
 \section{L'équerre multifonction}
 
@@ -123,144 +134,177 @@ zones :
     \tkzRappEquerre[Largeur=8]
 \end{tikzpicture}
 
-\begin{description}
-    \item[\textbf{Le zéro central ($0$) :}] Il se trouve \textbf{au milieu} du grand côté (l'hypoténuse). C'est le point de repère principal pour toutes les mesures de longueur et le centrage lors de la mesure des angles.
-    \item[\textbf{Le bord gradué (Grande règle) :}] Gradué en millimètres et centimètres de part et d'autre du zéro central (par exemple de $0$ à $7$~cm vers la gauche, et de $0$ à $7$~cm vers la droite).
-    \item[\textbf{La ligne d'orthogonalité (ou ligne de hauteur) :}] C'est la ligne perpendiculaire au grand côté qui passe par le sommet du triangle ($90^\circ$) et rejoint le zéro central. Elle sert à tracer des perpendiculaires.
-    \item[\textbf{Le demi-cercle gradué (Rapporteur) :}] Gradué de $0^\circ$ à $180^\circ$. Attention : il possède souvent deux échelles de lecture (jaune/transparente ou horaire/anti-horaire) pour mesurer les angles ouverts vers la gauche ou vers la droite.
-    \item[\textbf{Les lignes de parallélisme :}] Ce sont les lignes horizontales gravées parallèlement au grand côté gradué. Elles permettent de tracer des droites parallèles distantes de quelques millimètres ou centimètres.
-\end{description}
+
+
+
+\textbf{Le zéro central ($0$)}\par
+Il se trouve \textbf{au milieu} du grand côté (l'hypoténuse). C'est le point de repère principal pour toutes les mesures de longueur et le centrage lors de la mesure des angles.
+
+\textbf{Le bord gradué (Grande règle)}\par
+Gradué en millimètres et centimètres de part et d'autre du zéro central (par exemple de $0$ à $7$~cm vers la gauche, et de $0$ à $7$~cm vers la droite).
+
+\textbf{La ligne d'orthogonalité (ou ligne de hauteur)}\par
+C'est la ligne perpendiculaire au grand côté qui passe par le sommet du triangle ($90^\circ$) et rejoint le zéro central. Elle sert à tracer des perpendiculaires.
+
+\textbf{Le demi-cercle gradué (Rapporteur)}\par
+Gradué de $0^\circ$ à $180^\circ$. Attention : il possède souvent deux échelles de lecture (jaune/transparente ou horaire/anti-horaire) pour mesurer les angles ouverts vers la gauche ou vers la droite.
+
+\textbf{Les lignes de parallélisme}\par
+Ce sont les lignes horizontales gravées parallèlement au grand côté gradué. Elles permettent de tracer des droites parallèles distantes de quelques millimètres ou centimètres.
 
 
 \subsection{Comment réaliser les tracés de base ?}
 
-\textbf{Tracer une droite perpendiculaire à une droite $d$ passant par un point $P$}
+\begin{tcolorbox}[title=Perpendiculaire ($\perp$)]
+    Tracer une droite perpendiculaire à une droite $d$ passant par un point $P$.
+    \begin{tikzpicture}
+        \clip (0,-1) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 4/2/B}
+        \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d$}
+        \tkzDrawPoints(P)
+        \tkzLabelPoints[above right ](P)
+        \tkzDefLine[orthogonal=through P](A,B)\tkzGetPoint{C}
+        % \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,-1) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 4/2/B}
+        \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d$}
+        \tkzDrawPoints(P)
+        \tkzLabelPoints[above right ](P)
+        \coordinate (C) at ($(P)!1.5cm!90:(A)$);
+        \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,-1) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 4/2/B}
+        \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d$}
+        \tkzDrawPoints(P)
+        \tkzLabelPoints[above right ](P)
+        \coordinate (C) at ($(P)!1.5cm!90:(A)$);
+        \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
+        \coordinate (D) at ($(P)!-1.5cm!90:(A)$);
+        \tkzDrawSegment[red, line width=1pt](D,C)
+        \tkzCrayon[Origine=C, Echelle=0.5, Rotation=-10]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,-1) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 4/2/B}
+        \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d$}
+        \tkzDrawPoints(P)
+        \tkzLabelPoints[above right ](P)
+        \coordinate (C) at ($(P)!1.5cm!90:(A)$);
+        \coordinate (D) at ($(P)!-1.5cm!90:(A)$);
+        \tkzDrawSegment[red, line width=1pt](D,C)
+        \tkzMarkRightAngle[draw=red, size=0.3](C,P,B)
+    \end{tikzpicture}
+    \begin{enumerate}
+        \item Place le zéro central de l'équerre exactement sur le point $P$ et la
+              ligne d'orthogonalité sur la droite $d$.
+        \item Trace la droite le long du grand bord gradué (tu peux la prolonger si
+              nécessaire, elle n'a pas de fin).
+        \item N'oublie pas de coder l'angle droit obtenu.
+    \end{enumerate}
+\end{tcolorbox}
 
-\begin{tikzpicture}
-   \clip (0,-1) rectangle (3,4);
-    \tkzDefPoints{0/1/A, 4/2/B}
-    \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
-    \tkzDrawSegment(A,B)
-    \tkzLabelLine[pos=0,below right](A,B){$d$}
-    \tkzDrawPoints(P)
-    \tkzLabelPoints[above right ](P)
-    \tkzDefLine[orthogonal=through P](A,B)\tkzGetPoint{C}
-    % \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
-\end{tikzpicture}
-\hfill
-\begin{tikzpicture}
-    \clip (0,-1) rectangle (3,4);
-    \tkzDefPoints{0/1/A, 4/2/B}
-    \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
-    \tkzDrawSegment(A,B)
-    \tkzLabelLine[pos=0,below right](A,B){$d$}
-    \tkzDrawPoints(P)
-    \tkzLabelPoints[above right ](P)
-    \coordinate (C) at ($(P)!1.5cm!90:(A)$);
-    \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
-\end{tikzpicture}
-\hfill
-\begin{tikzpicture}
-   \clip (0,-1) rectangle (3,4);
-    \tkzDefPoints{0/1/A, 4/2/B}
-    \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
-    \tkzDrawSegment(A,B)
-    \tkzLabelLine[pos=0,below right](A,B){$d$}
-    \tkzDrawPoints(P)
-    \tkzLabelPoints[above right ](P)
-    \coordinate (C) at ($(P)!1.5cm!90:(A)$);
-    \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
-    \coordinate (D) at ($(P)!-1.5cm!90:(A)$);
-    \tkzDrawSegment[red, line width=1pt](D,C)
-    \tkzCrayon[Origine=C, Echelle=0.5, Rotation=-10]
-\end{tikzpicture}
-\hfill
-\begin{tikzpicture}
-   \clip (0,-1) rectangle (3,4);
-    \tkzDefPoints{0/1/A, 4/2/B}
-    \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
-    \tkzDrawSegment(A,B)
-    \tkzLabelLine[pos=0,below right](A,B){$d$}
-    \tkzDrawPoints(P)
-    \tkzLabelPoints[above right ](P)
-    \coordinate (C) at ($(P)!1.5cm!90:(A)$);
-    \coordinate (D) at ($(P)!-1.5cm!90:(A)$);
-    \tkzDrawSegment[red, line width=1pt](D,C)
-    \tkzMarkRightAngle[draw=red, size=0.3](C,P,B)
-\end{tikzpicture}
+\begin{exercise}
+    Trace la droite perpendiculaire à la droite $d$ passant par le point $P$.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/A, 3/1/B}
+            \tkzDrawLine(A,B)
+            \tkzLabelLine[pos=0,below left](A,B){$d$}
+            \tkzDefPointOnLine[pos=0.3](A,B)\tkzGetPoint{P}
+            \tkzDrawPoints(P)
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
 
-\begin{enumerate}
-    \item Place le zéro central de l'équerre exactement sur le point $P$ et la
-    ligne d'orthogonalité sur la droite $d$.
-    \item Trace la droite le long du grand bord gradué (tu peux la prolonger si
-    nécessaire, elle n'a pas de fin). 
-    \item N'oublie pas de coder l'angle droit obtenu.
-\end{enumerate}
+\begin{tcolorbox}[title=Parallèle ($\varparallel$)]
+    Tracer une droite $d_2$ parallèle à une droite $d_1$ à une distance de
+    \qty{2}{cm}.
 
+    \begin{tikzpicture}
+        \clip (0,0) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 3/3/B}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d_1$}
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,0) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d_1$}
+        \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
+        % \tkzDrawSegment(C,D)
+        \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
+        \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,0) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d_1$}
+        \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
+        % \tkzDrawSegment(C,D)
+        \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
+        \tkzDefPointOnLine[pos=0.1](C,D)\tkzGetPoint{X}
+        \tkzDefPointOnLine[pos=0.9](C,D)\tkzGetPoint{Y}
+        \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
+        \tkzDrawSegment[red, line width=1pt](X,Y)
+        \tkzCrayon[Origine=Y, Echelle=0.5, Rotation=90]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,0) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d_1$}
+        \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
+        % \tkzDrawSegment(C,D)
+        \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
+        \tkzDefPointOnLine[pos=0.1](C,D)\tkzGetPoint{X}
+        \tkzDefPointOnLine[pos=0.9](C,D)\tkzGetPoint{Y}
+        % \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
+        \tkzDrawSegment[red, line width=1pt](X,Y)
+        \tkzLabelSegment[red, pos=0.9, above](X,Y){$d_2$}
+        % \tkzCrayon[Origine=Y, Echelle=0.5, Rotation=-10]
+    \end{tikzpicture}
+    \begin{enumerate}
+        \item Repère la graduation de parallélisme correspondant à $2\text{ cm}$ ($20\text{ mm}$) sur ton équerre.
+        \item Superpose cette ligne de parallélisme exactement sur la droite $d_1$.
+        \item Trace la nouvelle droite $d_2$ le long du grand bord gradué.
+        \item Les droites $d_1$ et $d_2$ sont strictement parallèles ($d_1 \varparallel d_2$).
+    \end{enumerate}
+\end{tcolorbox}
 
+\begin{exercise}
+    Trace une droite $d_2$ parallèle à la droite $d_1$ à une distance de \qty{3}{cm}.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/A, 3/1/B,0/3/P}
+            \tkzDrawLine(A,B)
+            \tkzLabelLine[pos=0,below left](A,B){$d$}
+            \tkzDefLine[parallel=through P](A,B)\tkzGetPoint{C}
+            \tkzDrawLine[white](P,C)
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
 
-\textbf{Tracer une droite $d_2$ parallèle à une droite $d_1$ à une distance de \qty{2}{cm}}
-
-\begin{tikzpicture}
-   \clip (0,0) rectangle (3,4);
-    \tkzDefPoints{0/1/A, 3/3/B}
-    \tkzDrawSegment(A,B)
-    \tkzLabelLine[pos=0,below right](A,B){$d_1$}
-\end{tikzpicture}
-\hfill
-\begin{tikzpicture}
-   \clip (0,0) rectangle (3,4);
-    \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
-    \tkzDrawSegment(A,B)
-    \tkzLabelLine[pos=0,below right](A,B){$d_1$}
-    \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
-    % \tkzDrawSegment(C,D)
-    \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
-    \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
-\end{tikzpicture}
-\hfill
-\begin{tikzpicture}
-   \clip (0,0) rectangle (3,4);
-    \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
-    \tkzDrawSegment(A,B)
-    \tkzLabelLine[pos=0,below right](A,B){$d_1$}
-    \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
-    % \tkzDrawSegment(C,D)
-    \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
-    \tkzDefPointOnLine[pos=0.1](C,D)\tkzGetPoint{X}
-    \tkzDefPointOnLine[pos=0.9](C,D)\tkzGetPoint{Y}
-    \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
-    \tkzDrawSegment[red, line width=1pt](X,Y)
-    \tkzCrayon[Origine=Y, Echelle=0.5, Rotation=90]
-\end{tikzpicture}
-\hfill
-\begin{tikzpicture}
-   \clip (0,0) rectangle (3,4);
-    \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
-    \tkzDrawSegment(A,B)
-    \tkzLabelLine[pos=0,below right](A,B){$d_1$}
-    \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
-    % \tkzDrawSegment(C,D)
-    \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
-    \tkzDefPointOnLine[pos=0.1](C,D)\tkzGetPoint{X}
-    \tkzDefPointOnLine[pos=0.9](C,D)\tkzGetPoint{Y}
-    % \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
-    \tkzDrawSegment[red, line width=1pt](X,Y)
-    \tkzLabelSegment[red, pos=0.9, above](X,Y){$d_2$}
-    % \tkzCrayon[Origine=Y, Echelle=0.5, Rotation=-10]
-\end{tikzpicture}
-
-\begin{enumerate}
-    \item Repère la graduation de parallélisme correspondant à $2\text{ cm}$ ($20\text{ mm}$) sur ton équerre.
-    \item Superpose cette ligne de parallélisme exactement sur la droite $d_1$.
-    \item Trace la nouvelle droite $d_2$ le long du grand bord gradué.
-    \item Les droites $d_1$ et $d_2$ sont strictement parallèles ($d_1 \varparallel d_2$).
-\end{enumerate}
-
-
-
-\textbf{Mesurer l'amplitude d'un angle $\widehat{ABC}$}
-
+\begin{tcolorbox}[title=Mesurer un angle]
 \begin{tikzpicture}
     \tkzDefPoint(0,0){B}
     \tkzDefPoint(10:2){C}
@@ -315,120 +359,814 @@ zones :
 \begin{enumerate}
     \item Place le \textbf{zéro central} de l'équerre exactement sur le sommet $B$ de l'angle.
     \item Aligne le grand bord gradué de l'équerre sur l'un des côtés de l'angle (le sommet $B$ reste bloqué sur le zéro).
-    \item Observe où le second côté de l'angle coupe le demi-cercle gradué de l'équerre.
+    \item Observe où le second côté de l'angle coupe le demi-cercle gradué de
+          l'équerre. Tu peux prolonger la droite si cela est nécessaire.
     \item Lis l'amplitude en degrés ($^\circ$) en choisissant la bonne graduation (vérifie si l'angle est aigu ou obtus pour ne pas confondre, par exemple, $40^\circ$ et $140^\circ$).
 \end{enumerate}
+\end{tcolorbox}
 
-\textbf{Tracer un angle $\widehat{ABC}$ d'amplitude donnée}
-\begin{center}    
-\begin{tikzpicture}
-    \clip (-2,-2) rectangle (3,2);
-    \tkzDefPoint(0,0){B}
-    \tkzDefPoint(10:2){C}
-    \tkzDefPoint(70:2){A}
-    \tkzDrawLines[add=0pt and 5pt](B,C)
-    \tkzDrawPoints(B,C)
-    \tkzLabelPoints[left](B)
-    \tkzLabelPoints[below](C)
-\end{tikzpicture}
-\hfill
-\begin{tikzpicture}
-    \clip (-2,-2) rectangle (3,2);
-    \tkzDefPoint(0,0){B}
-    \tkzDefPoint(10:2){C}
-    \tkzDefPoint(70:2){A}
-    \tkzDrawLines[add=0pt and 5pt](B,C)
-    \tkzDrawPoints(B,C)
-    \tkzLabelPoints[left](B)
-    \tkzLabelPoints[below](C)
-    \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/C]
-\end{tikzpicture}
-\hfill
-\begin{tikzpicture}
-    \clip (-2,-2) rectangle (3,2);
-    \tkzDefPoint(0,0){B}
-    \tkzDefPoint(10:2){C}
-    \tkzDefPoint(70:2){A}
-    \tkzDrawLines[add=0pt and 5pt](B,C)
-    \tkzDrawPoints(B,C)
-    \tkzLabelPoints[left](B)
-    \tkzLabelPoints[below](C)
-    \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/A]
-\end{tikzpicture}
 
-\begin{tikzpicture}
-    \clip (-2,-2) rectangle (3,2);
-    \tkzDefPoint(0,0){B}
-    \tkzDefPoint(10:2){C}
-    \tkzDefPoint(70:1.5){A}
-    \tkzDrawLines[add=0pt and 5pt](B,C)
-    \tkzDrawPoints(B,C)
-    \tkzLabelPoints[left](B)
-    \tkzLabelPoints[below](C)
-    \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/A]
-    \tkzDrawSegment[red, line width=1pt](B,A)
-    \tkzCrayon[Origine=A, Echelle=0.5, Rotation=120]
-\end{tikzpicture}
-\hfil
-\begin{tikzpicture}
-    \clip (-2,-2) rectangle (3,2);
-    \tkzDefPoint(0,0){B}
-    \tkzDefPoint(10:2){C}
-    \tkzDefPoint(70:2){A}
-    \tkzDrawLines[add=0pt and 5pt](B,C)
-    \tkzDrawPoints(B,C)
-    \tkzLabelPoints[left](B)
-    \tkzLabelPoints[below](C)
-    \tkzDrawLine[add=0pt and 5pt, red, line width=1pt](B,A)
-\end{tikzpicture}
+\begin{exercise}
+    Mesure l'amplitude de l'angle $\widehat{ABC}$ et note sa valeur en utilisant
+    les bonnes notations.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoint(0,0){B}
+            \tkzDefPoint(0:2){C}
+            \tkzDefPoint(120:2){A}
+            \tkzDrawLines[add=0pt and 5pt](B,C B,A)
+            \tkzMarkAngle(C,B,A)
+            \tkzDrawPoints(B,C,A)
+            \tkzLabelPoints[left](A)
+            \tkzLabelPoints[below left](B)
+            \tkzLabelPoints[below](C)
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\begin{tcolorbox}[title=Tracer un angle]
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/C]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/A]
+    \end{tikzpicture}
+    
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:1.5){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/A]
+        \tkzDrawSegment[red, line width=1pt](B,A)
+        \tkzCrayon[Origine=A, Echelle=0.5, Rotation=120]
+    \end{tikzpicture}
+    \hfil
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzDrawLine[add=0pt and 5pt, red, line width=1pt](B,A)
+        \tkzDrawPoint[red](A)
+        \tkzLabelPoints[left, red](A)
+    \end{tikzpicture}
+    \begin{enumerate}
+        \item Place le zéro central de l'équerre exactement sur le sommet $B$ de l'angle.
+        \item Aligne le grand bord gradué de l'équerre sur l'un des côtés de l'angle (le sommet $B$ reste bloqué sur le zéro).
+        \item Fais tourner l'équerre jusqu'à ce que la demi droite $[BC$ coupe la graduation correspondant à l'amplitude de l'angle souhaité.
+        \item Trace la demi droite $[BA$ le long du grand bord gradué de l'équerre.
+        \item Place le point $A$ sur la demi droite que tu viens de créer.
+    \end{enumerate}
+\end{tcolorbox}
+
+
+\begin{exercise}
+    Trace un angle $\widehat{ABC}$ de $\ang{80}$.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/B, 3/0/C}
+            \tkzDrawLine[add=0pt and 5pt](B,C)
+            \tkzDrawPoints(B,C)
+            \tkzLabelPoints[below left](B)
+            \tkzLabelPoints[below](C)
+            \tkzDefPoint(80:3){A}
+            \tkzDrawPoint[white](A)
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\newpage
+\section{Les angles}
+Un angle est une portion du plan délimitée par deux demi-droites ayant la même
+origine.
+
+Ces deux demi-droites déterminent deux régions du plan, une région « intérieure »
+(l'angle saillant) et une région « extérieure » (l'angle rentrant). On
+l'explique souvent en traçant un petit arc de cercle pour préciser de quel
+secteur du plan on parle.
+
+\faIcon{pencil-alt}~Annotons le schéma ci-dessous avec le vocabulaire relatif
+aux angles.
+\vfil
+
+\begin{center}
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(-10:3){B}
+        \tkzDefPoint(50:3){C}
+        \tkzDrawLines[add=0pt and 20pt](A,B A,C)
+        \tkzDrawPoints(A,B,C)
+        \tkzLabelPoints[left](A)
+        \tkzLabelPoints[below](B)
+        \tkzLabelPoints[above](C)
+        \tkzMarkAngle(C,A,B)
+        \tkzMarkAngle(B,A,C)
+    \end{tikzpicture}
+\end{center}
+\vfil
+
+L'amplitude d'un angle représente la mesure de son ouverture. Elle ne
+dépend pas de la longueur des côtés dessinés, mais uniquement de l'écartement
+des deux demi-droites. Elle se mesure en degrés et se note avec le symbole
+\(^\circ\).
+
+\faIcon{pencil-alt}~Mesure l'amplitude de l'angle \(\widehat{BAC}\) et note sa
+valeur en utilisant les bonnes notations : 
+
+\newpage
+En fonction de la valeur de cette amplitude ($\alpha$), on peut nommer les angles.
+\begin{center}
+    \begin{tblr}{hlines, vlines, rows={2cm, m}, row{1}={1em}}
+        Nom de l'angle & Caractéristique & Exemple de dessin \\
+        Angle nul & \(\alpha = \ang{0}\) &\\
+        Angle aigu & \(\ang{0} < \alpha < \ang{90}\)& \\
+        Angle droit & \(\alpha = \ang{90}\) &\\
+        Angle obtus & \(\ang{90} < \alpha < \ang{180}\)& \\
+        Angle plat & \(\alpha = \ang{180}\) &\\
+        Angle rentrant & \(\ang{180} < \alpha < \ang{360}\)& \\
+        Angle plein & \(\alpha = \ang{360}\) &\\
+    \end{tblr}
 \end{center}
 
-\section{Exercices d'application}
+\begin{exercise}
+        Observons l'angle dessiné ci-dessous :
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \tkzDefPoint(0,0){O}
+            \tkzDefPoint(15:3){M}
+            \tkzDefPoint(110:2.5){N}
+            
+            \tkzDrawSegment[thick, add=0 and 0.2](O,M)
+            \tkzDrawSegment[thick, add=0 and 0.2](O,N)
+            \tkzDrawPoints[size=4, fill=black](O,M,N)
+            
+            \tkzLabelPoint[left](O){$O$}
+            \tkzLabelPoint[below](M){$M$}
+            \tkzLabelPoint[left](N){$N$}
+            
+            \tkzMarkAngle[size=0.6cm, mark=none](M,O,N)
+        \end{tikzpicture}
+    \end{center}
+     Complète les phrases suivantes :
+    \begin{enumerate}
+        \item Le sommet de cet angle est le point :
+        \item Les deux côtés de cet angle sont les demi-droites :
+        \item L'amplitude de cet angle est :
+        \item Le nom de cet angle : 
+    \end{enumerate}
+\end{exercise}
 
 \begin{exercise}
-Sur ta feuille, trace un segment $[AB]$ de $6\text{ cm}$ de long.
-\begin{enumerate}
-    \item Utilisez l'équerre multifonction pour placer le point $M$, milieu du segment $[AB]$, en exploitant le zéro central.
-    \item Trace la droite $d$ perpendiculaire à $[AB]$ passant par le point $M$. Comment appelle-t-on cette droite particulière ?
-\end{enumerate}
+     Associe chaque amplitude à la nature de l'angle correspondant :
+    \begin{center}
+        \begin{tblr}{width=.5\linewidth,colspec={rX[l]X[r]l}}
+            \ang{180} & $\bullet$ & $\bullet$ & Angle obtus \\
+            \ang{42}  & $\bullet$ & $\bullet$ & Angle plein \\
+            \ang{215} & $\bullet$ & $\bullet$ & Angle plat \\
+            \ang{90}  & $\bullet$ & $\bullet$ & Angle aigu \\
+            \ang{135} & $\bullet$ & $\bullet$ & Angle droit \\
+            \ang{360} & $\bullet$ & $\bullet$ & Angle rentrant \\
+        \end{tblr}
+    \end{center}
+\end{exercise}
+
+\subsection{Angles particuliers}
+Certains couples d'angles entretiennent des relations géométriques remarquables.
+Il est important de savoir les reconnaître et de connaître leurs propriétés.
+
+\begin{center}
+    \begin{tblr}{hlines, vlines, rows={2cm, m}, row{1}={1em}}
+        Relation entre les angles  & Caractéristique & Exemple de dessin \\
+        Deux angles adjacents & {Même sommet \\et un côté commun} & \\
+        Deux angles complémentaires & $\alpha + \beta = \ang{90}$& \\
+        Deux angles supplémentaires & $\alpha + \beta = \ang{180}$& \\
+        Deux angles opposés par le sommet & {$\alpha = \beta$\\$\gamma = \delta$} &\\
+    \end{tblr}
+\end{center}
+Remaques : 
+\begin{itemize}
+    \item Deux angles adjacents complémentaires forment un angle droit.
+    \item Deux angles adjacents supplémentaires forment un angle plat.
+\end{itemize}
+
+
+\begin{exercise}
+    Retrouve les paires d'angles complémentaires. Entoure-les dans la même couleur.
+    \begin{center}
+        \includegraphics{chapitres/figures_planes/img/anglescompl.png}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Complète le tableau ci-dessous.
+    \begin{center}
+        \begin{tblr}{
+                hlines,
+                vlines,
+                columns={2cm, c},
+                rows={1cm,m},
+                row{1}={gray!40, font=\bfseries},
+                column{1}={4cm, gray!40, font=\bfseries},
+            }
+            Types d'angles  & Angle $\widehat{A}$ & Angle $\widehat{B}$ \\
+            Supplémentaires & $63\degres$         &                     \\
+            Complémentaires &                     & $63\degres$         \\
+            Complémentaires &                     & $81\degres$         \\
+            Supplémentaires & $112\degres$        &                     \\
+            Supplémentaires &                     & $13,5\degres$       \\
+        \end{tblr}
+    \end{center}
+\end{exercise}
+
+
+\section{Triangles}
+\section{Les triangles}
+
+\subsection{Définition et vocabulaire}
+
+Un triangle est un polygone à trois côtés. Le mot "triangle" vient du latin triangulus : tri- (trois) et angulus (angle). On peut retenir l'astuce TRI : triangle, c'est trois angles, trois sommets et trois côtés.
+
+\begin{center}
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(4,0){B}
+        \tkzDefPoint(1.5,2.5){C}
+        \tkzDrawPolygon[thick](A,B,C)
+        \tkzDrawPoints[size=4, fill=black](A,B,C)
+        \tkzLabelPoint[below left](A){$A$}
+        \tkzLabelPoint[below right](B){$B$}
+        \tkzLabelPoint[above](C){$C$}
+        \tkzMarkAngle[size=0.5cm, mark=none](B,A,C)
+        \tkzMarkAngle[size=0.5cm, mark=none](C,B,A)
+        \tkzMarkAngle[size=0.5cm, mark=none](A,C,B)
+    \end{tikzpicture}
+\end{center}
+
+Vocabulaire à connaître :
+\begin{itemize}
+    \item Les sommets sont les trois points : $A$, $B$ et $C$.
+    \item Les côtés sont les trois segments : $[AB]$, $[BC]$ et $[CA]$.
+    \item Les angles du triangle sont : $\widehat{A}$ (ou $\widehat{BAC}$), $\widehat{B}$ (ou $\widehat{ABC}$) et $\widehat{C}$ (ou $\widehat{BCA}$).
+    \item Le sommet opposé à un côté est le sommet qui n'appartient pas à ce côté.
+    \item Deux sommets adjacents sont deux sommets reliés par un côté.
+    \item Le côté opposé à un sommet est le côté qui ne contient pas ce sommet.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\begin{exercise}
+    Vocabulaire du triangle
+    
+    \begin{center}
+        \begin{tikzpicture}[scale=0.9]
+            \tkzDefPoint(0,0){P}
+            \tkzDefPoint(4.5,0){Q}
+            \tkzDefPoint(1.5,3){R}
+            \tkzDrawPolygon[thick](P,Q,R)
+            \tkzDrawPoints[size=4, fill=black](P,Q,R)
+            \tkzLabelPoint[below left](P){$P$}
+            \tkzLabelPoint[below right](Q){$Q$}
+            \tkzLabelPoint[above](R){$R$}
+        \end{tikzpicture}
+    \end{center}
+
+    En observant le triangle $PQR$ ci-dessus, réponds aux questions suivantes :
+    \begin{enumerate}
+        \item Quels sont les trois sommets du triangle ?
+        \item Quels sont les trois côtés du triangle ?
+        \item Quel est le côté opposé au sommet $P$ ?
+        \item Quel est le sommet opposé au côté $[QR]$ ?
+        \item Cite deux sommets adjacents.
+        \item Complète la phrase : « Le côté $[PQ]$ est adjacent au sommet \dots\ et au sommet \dots\ »
+        \item Complète la phrase : « L'angle $\widehat{R}$ a pour sommet le point \dots\ et ses côtés sont les demi-droites \dots\ et \dots\ »
+    \end{enumerate}
 \end{exercise}
 
 \begin{solution}
-\begin{enumerate}
-    \item Pour placer le milieu $M$, aligne le grand bord gradué sur le segment $[AB]$ de manière à ce que le point $A$ soit sur la graduation $3\text{ cm}$ (à gauche) et le point $B$ soit sur la graduation $3\text{ cm}$ (à droite). Le point situé en face du \textbf{zéro central} est le milieu $M$ du segment $[AB]$. Ainsi, $AM = MB = 3\text{ cm}$.
-    \item En maintenant le zéro central sur $M$, superpose la \textbf{ligne d'orthogonalité} sur le segment $[AB]$ et trace la droite $d$ le long du bord gradué. La droite $d$ passe par le milieu de $[AB]$ et lui est perpendiculaire : c'est la \textbf{médiatrice} du segment $[AB]$.
-\end{enumerate}
+    \begin{enumerate}
+        \item Les sommets sont $P$, $Q$ et $R$.
+        \item Les côtés sont $[PQ]$, $[QR]$ et $[RP]$.
+        \item Le côté opposé au sommet $P$ est $[QR]$.
+        \item Le sommet opposé au côté $[QR]$ est $P$.
+        \item $P$ et $Q$, $Q$ et $R$, ou $P$ et $R$.
+        \item Le côté $[PQ]$ est adjacent au sommet $P$ et au sommet $Q$.
+        \item L'angle $\widehat{R}$ a pour sommet le point $R$ et ses côtés sont les demi-droites $[RP)$ et $[RQ)$.
+    \end{enumerate}
 \end{solution}
 
+\newpage
+
+\subsection{Nature des triangles}
+
+On peut classer les triangles selon deux critères : la longueur de leurs côtés
+et l'amplitude de leurs angles.
+
+
+\faIcon{pencil-alt}~En analysant les mots suivants, essaye de les mettre dans la bonne case :
+\begin{center} 
+    acutangle
+    \hfil
+    rectangle
+    \hfil
+    isocèle
+    \hfil
+    obtusangle
+    \hfil
+    scalène
+    \hfil
+    équilatéral
+\end{center}
+
+\begin{center}
+    \begin{tblr}{hlines, vlines, rows={2cm, m}, row{1}={1.5em}, colspec={Q[c, m, 3cm] Q[c, m, 5cm] Q[c, m, 5cm]}}
+        Critère & Caractéristiques                     & Nom du triangle      \\
+        \SetCell[r=3]{m} Longueur des côtés
+                & $3$ côtés de longueurs différentes.  &      \\
+                & Au moins $2$ côtés de même longueur. &      \\
+                & $3$ côtés de même longueur.          &  \\
+        \SetCell[r=3]{m} Amplitude des angles
+                & $3$ angles aigus ($< \ang{90}$).     &    \\
+                & $1$ angle droit ($= \ang{90}$).      &    \\
+                & $1$ angle obtus ($> \ang{90}$).      &   \\
+    \end{tblr}
+\end{center}
+
+La nature d'un triangle est la combinaison du critère longueur des côtés et
+amplitudes des angles. On dira par exemple qu'un triangle est isocèle acutangle.
+
 \begin{exercise}
-Soit une droite $k$.
-\begin{enumerate}
-    \item Trace une droite $m$ parallèle à $k$ située à une distance de $1,5\text{ cm}$.
-    \item Trace ensuite une droite $n$ parallèle à $m$ située à une distance de $2\text{ cm}$ (du côté opposé à la droite $k$).
-    \item Quelle est la distance séparant la droite $k$ de la droite $n$ ? Justifie ta réponse.
-\end{enumerate}
+    Complète le tableau suivant en traçant une croix dans chaque case lorsque le triangle correspondant existe. Justifie brièvement les cases que tu as laissées vides.
+    
+    \begin{center}
+        \begin{tblr}{hlines, vlines, colspec={*{4}{X[c]}}, rows={1cm,m},
+        vline{1}={1}{white}, hline{1}={1}{white}}
+                    & Triangle scalène & Triangle isocèle & Triangle équilatéral \\
+            Triangle acutangle   &                  &                  &                      \\
+            Triangle rectangle   &                  &                  &                      \\
+            Triangle obtusangle  &                  &                  &                      \\
+        \end{tblr}
+    \end{center}
 \end{exercise}
 
 \begin{solution}
-\begin{enumerate}
-    \item Alignez la repère de parallélisme $1,5\text{ cm}$ de l'équerre sur la droite $k$ et tracez la droite $m$.
-    \item Placez la ligne de parallélisme $2\text{ cm}$ sur la droite $m$ (du côté opposé à $k$) et tracez la droite $n$.
-    \item Les droites $k$, $m$ et $n$ étant toutes parallèles entre elles et la droite $m$ se situant entre $k$ et $n$, les distances s'additionnent. La distance entre $k$ et $n$ est donc de $1,5\text{ cm} + 2\text{ cm} = 3,5\text{ cm}$.
-\end{enumerate}
+    \begin{center}
+        \begin{tblr}{hlines, vlines, rows={1.5cm, m}, row{1}={1.2em}, colspec={Q[c, m, 3cm] Q[c, m, 3cm] Q[c, m, 3cm] Q[c, m, 3cm]}}
+                    & Triangle scalène & Triangle isocèle & Triangle équilatéral \\
+            Triangle acutangle   & \checkmark       & \checkmark       & \checkmark          \\
+            Triangle rectangle   & \checkmark       & \checkmark       &                     \\
+            Triangle obtusangle  & \checkmark       & \checkmark       &                     \\
+        \end{tblr}
+    \end{center}
+    
+    Justifications :
+    \begin{itemize}
+        \item Un triangle équilatéral a toujours ses trois angles de $\ang{60}$, il est donc toujours acutangle. Il ne peut pas être rectangle (sinon un angle vaudrait $\ang{90}$) ni obtusangle (sinon un angle dépasserait $\ang{90}$), car la somme des angles resterait supérieure à $\ang{180}$.
+        \item Toutes les autres combinaisons sont possibles. Par exemple, un triangle scalène peut être acutangle, rectangle ou obtusangle. Un triangle isocèle peut également être acutangle, rectangle (isocèle rectangle avec angles de $\ang{90}$, $\ang{45}$, $\ang{45}$) ou obtusangle.
+    \end{itemize}
 \end{solution}
 
+
 \begin{exercise}
-Un élève souhaite construire un angle $\widehat{XYZ}$ d'une amplitude de $50^\circ$. Il a placé le zéro central sur le sommet $Y$ et aligné le demi-droite $[YX)$ sur le bord de l'équerre. En lisant la graduation, il hésite entre deux repères : $50^\circ$ et $130^\circ$.
-\begin{enumerate}
-    \item L'angle de $50^\circ$ est-il un angle aigu, droit ou obtus ?
-    \item Quelle graduation l'élève doit-il choisir et pourquoi ?
-\end{enumerate}
+    Identifier la nature d'un triangle
+    
+    Pour chacun des triangles décrits ci-dessous, donne sa nature.
+    
+    \begin{enumerate}
+        \item Triangle $ABC$ : $\longueur{AB} = \qty{5}{cm}$, $\longueur{BC} = \qty{5}{cm}$, $\longueur{CA} = \qty{3}{cm}$.
+        \item Triangle $DEF$ : $\amp{D} = \ang{90}$, $\amp{E} = \ang{45}$, $\amp{F} = \ang{45}$.
+        \item Triangle $GHI$ : $\longueur{GH} = \longueur{HI} = \longueur{IG} = \qty{6}{cm}$.
+        \item Triangle $JKL$ : $\amp{J} = \ang{110}$, $\amp{K} = \ang{40}$, $\amp{L} = \ang{30}$.
+    \end{enumerate}
 \end{exercise}
 
 \begin{solution}
-\begin{enumerate}
-    \item Un angle dont l'amplitude est comprise entre $0^\circ$ et $90^\circ$ est un \textbf{angle aigu}. L'angle de $50^\circ$ est donc un angle aigu.
-    \item L'élève doit choisir la graduation $50^\circ$. La graduation $130^\circ$ correspondrait à un angle obtus (plus grand qu'un angle droit de $90^\circ$). Pour ne pas se tromper, l'élève doit toujours vérifier visuellement si son angle est "fermé" (aigu, $<90^\circ$) ou "ouvert" (obtus, $>90^\circ$).
-\end{enumerate}
+    \begin{enumerate}
+        \item Triangle $ABC$ : isocèle (deux côtés de $\qty{5}{cm}$) et acutangle (tous les angles sont aigus).
+        \item Triangle $DEF$ : scalène (côtés de longueurs différentes) et rectangle (un angle droit en $D$). Il est aussi isocèle car les angles $\widehat{E}$ et $\widehat{F}$ sont égaux, donc les côtés opposés $[DF]$ et $[DE]$ sont de même longueur.
+        \item Triangle $GHI$ : équilatéral (trois côtés égaux) et acutangle (trois angles de $\ang{60}$).
+        \item Triangle $JKL$ : scalène (côtés de longueurs différentes) et obtusangle (un angle obtus de $\ang{110}$ en $J$).
+    \end{enumerate}
 \end{solution}
+
+\subsection{Amplitudes des angles d'un triangle}
+Sur une feuille :
+\begin{itemize}
+    \item dessine un triangle,
+    \item colorie ses trois angles en trois couleurs différentes,
+    \item découpe ceux-ci. 
+\end{itemize}
+Place tes angles côte à côte et colle-les ici.
+\vspace{3cm}
+
+Quelle est la nature de l'angle que tu
+obtiens ? \dotfill.
+
+Que peux-tu en déduire ? \dotfill.
+
+\begin{tcolorbox}[title=Somme des amplitudes des angles d'un triangle]
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 3/0/B, 2/2/C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkAngles[size=0.5](B,A,C A,C,B C,B,A)
+\end{tikzpicture}
+\end{tcolorbox}
+
+Les angles d'un triangle ont d'autres propriétés que tu dois connaître également
+!
+\begin{tcolorbox}[title=Amplitude des angles dans un triangle équilatéral]
+    Un triangle équilatéral possède trois angles de même amplitude.
+    \begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 3/0/B}
+    \tkzDefPoint(60:3){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkAngles[size=0.5, mark=|](B,A,C A,C,B C,B,A)
+\end{tikzpicture}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Amplitude des angles dans un triangle isocèle]
+    Un triangle isocèle possède deux angles de même amplitude qu'on nomme les
+    angles à la base.
+    
+    \begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 2/0/B}
+    \tkzDefTriangle[two angles=70 and 70](A,B)\tkzGetPoint{C}
+
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkAngles[size=0.5, mark=|](B,A,C C,B,A)
+    \tkzMarkAngle[size=0.5](A,C,B)
+\end{tikzpicture}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Amplitude des angles dans un triangle rectangle]
+    \begin{tikzpicture}[scale=0.7]
+    \tkzDefPoints{0/0/A, 3/0/B, 0/4/C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkRightAngle(B,A,C)
+    \tkzMarkAngles[size=0.5](A,C,B C,B,A)
+\end{tikzpicture}
+\end{tcolorbox}
+
+\begin{exercise}
+    Détermine l'amplitude de l'angle demandé dans chacun des cas suivants. Explique brièvement ton raisonnement en citant la propriété utilisée.
+    
+    \begin{enumerate}[itemsep=2cm]
+        \item Dans le triangle $ABC$, on sait que $\amp{A} = \ang{52}$ et $\amp{B} = \ang{73}$. Calcule $\amp{C}$.
+        
+        \item Le triangle $DEF$ est équilatéral. Quelle est l'amplitude de l'angle $\amp{E}$ ?
+        
+        \item Le triangle $GHI$ est isocèle en $G$ et $\amp{G}=\ang{40}$. Calcule $\amp{H}$ et $\amp{I}$.
+        
+        \item Le triangle $JKL$ est rectangle en $J$. L'angle $\widehat{K}$ mesure $\ang{35}$. Calcule $\amp{L}$.
+        
+        \item Le triangle $MNP$ est isocèle en $M$. L'angle à la base $\widehat{N}$ mesure $\ang{72}$. Calcule $\amp{M}$ et $\amp{P}$.
+        
+        \item Le triangle $QRS$ est rectangle et isocèle en $Q$. Calcule $\amp{R}$ et $\amp{S}$.
+        
+        \item Dans le triangle $TUV$, $\amp{T} = \ang{35}$ et $\amp{U} = \ang{110}$. Calcule $\amp{V}$. Quelle est la nature du triangle $TUV$ selon ses angles ?
+        
+        \item Dans le triangle $WXY$, $\amp{W} = \ang{28}$ et $\amp{X} = \ang{62}$. Calcule $\amp{Y}$. Quelle est la nature du triangle $WXY$ selon ses angles ?
+    \end{enumerate}
+    \vspace*{2cm}
+\end{exercise}
+
+\begin{solution}
+    \begin{enumerate}
+        \item $\amp{C} = \ang{180} - \ang{52} - \ang{73} = \ang{55}$. Propriété : la somme des amplitudes des angles d'un triangle vaut $\ang{180}$.
+        
+        \item $\amp{E} = \ang{60}$. Propriété : les trois angles d'un triangle équilatéral sont égaux et leur somme vaut $\ang{180}$, donc chacun mesure $\ang{60}$.
+        
+        \item $\amp{H} = \amp{I} = (\ang{180} - \ang{40}) \div 2 = \ang{140} \div 2 = \ang{70}$. Propriétés : somme des angles d'un triangle et égalité des angles à la base dans un triangle isocèle.
+        
+        \item $\amp{L} = \ang{90} - \ang{35} = \ang{55}$. Propriété : dans un triangle rectangle, les deux angles aigus sont complémentaires.
+        
+        \item $\amp{P} = \amp{N} = \ang{72}$ (angles à la base égaux). $\amp{M} = \ang{180} - \ang{72} - \ang{72} = \ang{36}$. Propriétés : somme des angles et égalité des angles à la base dans un triangle isocèle.
+        
+        \item Le triangle est rectangle en $Q$, donc $\amp{Q} = \ang{90}$. Il est aussi isocèle en $Q$, donc $QR = QS$ et les angles à la base $\amp{R}$ et $\amp{S}$ sont égaux. $\amp{R} = \amp{S} = (\ang{180} - \ang{90}) \div 2 = \ang{90} \div 2 = \ang{45}$. Propriétés : somme des angles, triangle rectangle et triangle isocèle.
+        
+        \item $\amp{V} = \ang{180} - \ang{35} - \ang{110} = \ang{35}$. Le triangle $TUV$ possède un angle obtus ($\ang{110}$), il est donc obtusangle. De plus, $\amp{T} = \amp{V} = \ang{35}$, le triangle est donc isocèle en $U$. Nature complète : triangle isocèle obtusangle.
+        
+        \item $\amp{Y} = \ang{180} - \ang{28} - \ang{62} = \ang{90}$. Le triangle possède un angle droit, il est donc rectangle. Nature complète : triangle rectangle (et scalène car tous les angles sont différents).
+    \end{enumerate}
+\end{solution}
+
+\begin{exercise}
+    Les points $B$, $D$ et $E$ sont alignés. Détermine l'amplitude de l'angle
+    $\widehat{DCE}$. Note tout ton raisonnement.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/A, 2/0/B}
+            \tkzDefPoint(60:2){C}
+            \tkzDrawPolygon(A,B,C)
+            \tkzDefShiftPoint[B](70:2){D}
+            \tkzDrawPolygon(B,C,D)
+            \tkzInterLC(B,D)(D,C)
+            \tkzGetPoints{E}{F}
+            \tkzDrawPolygon(C,D,F)
+            \tkzMarkSegments[mark=|](A,B B,C C,A B,D)
+            \tkzMarkSegments[mark=||](C,D D,F)
+            \tkzLabelPoints[below left](A)
+            \tkzLabelPoints[below](B)
+            \tkzLabelPoints[above left](C)
+            \tkzLabelPoints[right](D)
+            \tkzLabelPoint[above](F){E}
+            \tkzMarkAngle[size=0.5](D,C,F)
+            \tkzLabelAngle[pos=0.75](D,C,F){$?$}
+            \tkzMarkAngle[size=0.5](D,B,C)
+            \tkzLabelAngle[pos=0.75](D,B,C){\scriptsize$\ang{50}$}
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+
+
+\subsection{Droites remarquables dans le triangle}
+
+pour moi ça n'a pas de sens de voir le cercle incsrit et circonscirt dans ce
+chapitre...
+
+
+
+\subsection{Construction de triangles}
+
+\begin{exercise}
+    Construis un triangle $BAE$ dont les dimensions des côtés sont \SI{3}{cm}, \SI{4}{cm} et \SI{6}{cm}.
+    \vspace{4cm}
+\end{exercise}
+
+\begin{exercise}
+    Trace un triangle $SVP$, rectangle en $V$, si tu sais que $\overline{SV}=$\SI{2}{cm} et $\overline{VP}=$\SI{3}{cm}.
+    \vspace{4cm}
+\end{exercise}
+
+\begin{exercise}
+    Construis le triangle $MER$ si tu sais que $\overline{ME}=$\SI{4}{cm}, $|\widehat{M}|=40\degres$ et $|\widehat{E}|= 55\degres$.
+    \vspace{7cm}
+\end{exercise}
+
+\begin{exercise}
+    Construis, si possible, le triangle $BIC$ si tu sais que $\overline{BI}=$\SI{3}{cm}, $\overline{IC}=$\SI{3}{cm} et $\overline{CB}=$\SI{7}{cm}.
+    \vspace{7cm}
+\end{exercise}
+
+\begin{exercise}
+    Complète les phrases ci-dessous en langage mathématiques.
+    \begin{enumerate}[itemsep=.7cm]
+        \item Si le triangle \(DEF\) est rectangle en \(F\), alors
+        \item Si le triangle \(RST\) est isocèle en \(T\), alors
+        \item Si le triangle \(MNP\) est équilatéral, alors
+        \item Si le triangle \(ABC\) est isocèle rectangle en \(C\), alors
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+
+\section{Quadrilatères}
+\tcbsidebyside[blanker]
+{
+    \dotsforanswer{4}[Qu'est-ce qu'un quadrilatère~?][1em]
+}{
+    \includegraphics[]{chapitres/figures_planes/img/quadri.png}
+}
+\begin{enumerate}[itemsep=1cm, label= ]
+    \item \(A,\ B,\ C,\ D\) sont les \dotfill
+    \item \(\lbrack AB\rbrack,\lbrack BC\rbrack,\lbrack CD\rbrack,\lbrack DA\rbrack\) sont les \dotfill
+    \item \(\lbrack AB\rbrack\) et \(\lbrack BC\rbrack\) sont \dotfill
+    \item \(\lbrack AD\rbrack\) et \(\lbrack BC\rbrack\) sont \dotfill
+    \item \(\widehat{A}\) et \(\widehat{C}\) sont \dotfill
+    \item \(\widehat{A}\ \)et ~\(\widehat{D}\) sont \dotfill
+\end{enumerate}
+
+\emph{Attention à l'ordre des lettres lorsqu'on nomme un
+    polygone ! On nomme toujours un polygone en citant les sommets dans le sens horloger ou anti-horloger.}
+\begin{center}
+    \includegraphics[width=9cm]{chapitres/figures_planes/img/nommerpolygone.png}
+\end{center}
+
+\newpage
+\textbf{Arbre des quadrilatères}
+\newpage
+\begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            columns={4,5cm, c},
+            rows={2cm,m},
+            row{1}={gray!40, font=\bfseries},
+        }
+        Je suis \dots      & \dots si j'avais en plus \dots          & \dots je serais aussi \dots \\
+        un parallélogramme & un angle droit                          &                             \\
+        un trapèze         & mes côtés parallèles deux à deux        &                             \\
+        un rectangle       &                                         & un carré                    \\
+        un trapèze         & les côtés opposés isométriques          &                             \\
+        un trapèze         & 4 côtés isométriques                    &                             \\
+                           & 4 angles droits et 4 cotés isométriques & un carré                    \\
+        un trapèze         & les angles \dotfill                     & un parallélogramme          \\
+                           & les angles droits                       & un carré                    \\
+                           & les côtés isométriques                  & un carré                    \\
+    \end{tblr}
+\end{center}
+
+\newpage
+\begin{exercise}
+    Code les figures suivantes pour prouver que
+    \begin{enumerate}[label=\ , cols=2]
+        \item \(ABCD\) est un carré
+        \item [\label=\ ] \begin{center} \includegraphics{chapitres/figures_planes/img/carreacoder.png} \end{center}
+        \item \(PMNO\) est un losange
+        \item [\label=\ ] \begin{center} \includegraphics{chapitres/figures_planes/img/losangeacoder.png}\end{center}
+        \item \(JILK\) est un parallélogramme
+        \item [\label=\ ] \begin{center} \includegraphics{chapitres/figures_planes/img/parallelogrammeacoder.png}\end{center}
+        \item \(EHGF\) est un rectangle
+        \item [\label=\ ] \begin{center} \includegraphics{chapitres/figures_planes/img/rectangleacoder.png}\end{center}
+    \end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+    Vrai ou faux? Justifie dans tous les cas.
+    \begin{enumerate}[itemsep=2cm]
+        \item Un cercle est un polygone.
+        \item Un carré est un losange.
+        \item Un losange est un carré.
+        \item Un losange est un rectangle.
+        \item Un trapèze ne peut jamais avoir deux côtés isométriques.
+        \item Un parallélogramme est un trapèze.
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Les codages suivants suffisent-ils pour pouver qu'il s'agit d'un \dots
+    \begin{enumerate}[itemsep=5cm]
+        \item \dots carré? \\ \includegraphics{chapitres/figures_planes/img/codagecarre.png}
+        \item \dots losange? \\ \includegraphics{chapitres/figures_planes/img/codagelosange.png}
+    \end{enumerate}
+    \vspace{4cm}
+\end{exercise}
+
+\newpage
+\section{Les droites remarquables}
+\subsection{Droites remarquables dans un triangle}
+%\faBookOpen~ Page 59
+
+\begin{exercise}
+    Trace, dans le triangle suivant, les éléments demandés. Laisse tes constructions visibles.
+    \begin{enumerate}[cols=2, label=$\ast$]
+        \item La hauteur relative à \(\lbrack BA\rbrack\) en vert.
+        \item La bissectrice de \(\widehat{C}\) en rouge.
+        \item La médiane issue de \(B\) en noir.
+        \item La médiatrice de \(\lbrack AC\rbrack\) en bleu.
+        \item La hauteur issue de \(B\) au crayon.
+    \end{enumerate}
+    \vspace{2cm}
+    \begin{center}
+        \includegraphics[width=\linewidth]{chapitres/figures_planes/img/triangle.png}
+    \end{center}
+    \vspace{2cm}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Trace un triangle \(TRI\) dont voici une médiane \(\lbrack ET\rbrack\). Caractérise le triangle obtenu.
+    \vspace{2cm}
+    \begin{center}
+        \includegraphics{chapitres/figures_planes/img/TRI.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+\subsection{Droites remarquables dans un quadrilatère}
+
+\dotsforanswer{3}[Qu'est-ce qu'une diagonale dans un quadrilatère? ]
+
+Exemple : \\
+\includegraphics[]{chapitres/figures_planes/img/quadri.png}
+
+\dotsforanswer{3}[Qu'est-ce qu'une médiane dans un quadrilatère? ]
+
+Exemple : \\
+\includegraphics[]{chapitres/figures_planes/img/quadri.png}
+
+\begin{exercise}
+    Pour chacun des quadrilatères suivants, trace en vert les médianes et en rouge les diagonales. Code ton dessin.
+    \begin{center}
+        \includegraphics[width=\linewidth]{chapitres/figures_planes/img/2quadr.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+\textbf{Arbre des quadrilatères - diagonales et médianes}
+
+\newpage
+\begin{exercise}
+    Qui suis-je?
+    \begin{enumerate}[itemsep=1cm]
+        \item Mes diagonales se coupent en leur milieu, sont isométriques et ne sont pas perpendiculaires. Je suis
+        \item Mes diagonales se coupent perpendiculairement en leur milieu, mais ne sont pas isométriques. Je suis
+        \item Mes côtés opposés sont parallèles et mes diagonales sont perpendiculaires. Je suis
+        \item J'ai deux côtés isométriques, mes diagonales sont isométriques mais ne se coupent pas en leur milieu. Je suis
+        \item Mes médianes sont perpendiculaires, isométriques et se coupent en leur milieu. Je suis
+    \end{enumerate}
+    \vspace{1cm}
+\end{exercise}
+
+\begin{exercise}
+    Trace un rectangle $BISE$ dont l'angle obtu entre les diagonales mesure $130\degres$ et dont les diagonales mesurent $5cm$.
+    \vspace{4cm}
+\end{exercise}
+
+\begin{exercise}
+    Trace un losange $TRAC$ si tu sais que $\overline{TR}=4cm$.
+    \vspace{4cm}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Trace $LAET$, un carré, si tu sais que $\overline{LE}=3cm$.
+    \vspace{4cm}
+\end{exercise}
+
+\begin{exercise}
+    Sur une île des Caraïbes, le pirate Barberousse, épuisé et à bout de force, a enterré son trésor afin que presque personne ne puisse le trouver. Seule une vieille carte peut nous aider. Les renseignements suivants y sont inscrits :
+    \begin{center}
+        \og\emph{Le point \(B\) désigne le bateau, le point \(C\) le cratère de feu et le point \(L\) le lac bouillant.\\ Le trésor se situe à l'instersection des diagonales du parallélogramme \(BCLP\).} \fg
+    \end{center}
+    Où se trouve le trésor sur cette carte? Nomme-le avec la lettre $T$ et laisse tes constructions visibles.
+    \begin{center}
+        \includegraphics{chapitres/figures_planes/img/cartetresor.png}
+    \end{center}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Complète les phrases suivantes.
+    \begin{enumerate}[itemsep=1cm]
+        \item Si \(|AB| = |BC| = |CD| = |AD|\), alors le quadrilatère \(ABCD\) est un
+        \item Si \(\left| \widehat{A} \right| = \left| \widehat{B} \right| = \left| \widehat{C} \right| = \left| \widehat{D} \right| = 90{^\circ}\), alors le quadrilatère \(ABCD\) est un
+        \item Si \(\lbrack AB\rbrack\text{//}\lbrack DC\rbrack\), alors le quadrilatère \(ABCD\) est un
+    \end{enumerate}
+    \vspace{1cm}
+\end{exercise}
+
+\begin{exercise}
+    Complète la construction si tu sais que \(ABCD\) est un losange et que la demi-droite \(\lbrack AM\) porte une de ses diagonales. Laisse tes constructions visibles.
+    \vspace{1cm}
+    \begin{center}
+        \includegraphics{chapitres/figures_planes/img/ABM.png}
+    \end{center}
+    \vspace{1cm}
+\end{exercise}
+
+\newpage
+
 \end{document}
