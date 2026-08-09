@@ -228,100 +228,7 @@ Lorsqu'on applique deux pourcentages l'un après l'autre, on ne peut pas simplem
     \end{enumerate}
 \end{exercise}
 
-% \newpage
-% \section{Repérage d'un point dans un plan}
-% Pour repérer un point sur un plan, nous avons besoin de plusieurs informations. Explique oralement, dans chacun des exemples suivants, comment repérer la croix.
-% \begin{multicols}{2}
-%     Exemple 1\\\includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple1.png}
-
-%     Exemple 2\\\includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple2.png}
-
-%     Exemple 3\\\includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple5.png}
-
-%     \columnbreak
-%     Exemple 4\\\includegraphics[rotate=-90,width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/exemple3.png}
-% \end{multicols}
-
-% \newpage
-% En mathématiques, pour repérer un point sur un plan, nous utilisons majoritairement un repère dit \textbf{orthonormé} (appartenant à la famille des repères cartésiens). Un repère orthonormé possède deux caractéristiques majeures: ses axes sont perpendiculaires et ils ont les mêmes normes. L'intersection des deux axes se nomme \textbf{l'origine du repère}.
-
-% Pour placer ou repérer un point dans un repère orthonormé \emph{(exemple 3)}, nous avons besoin des \textbf{coordonnées} de ce point. \\
-
-% Ces coordonnées sont données dans un ordre précis~: tout d'abord en donnant \textbf{l'abscisse} du point ($x$), qui est son repérage sur l'axe horizontal (axe des abscisses), et en donnant ensuite \textbf{l'ordonnée} du point ($y$), qui est son repérage sur l'axe vertical (axe des ordonnées).
-
-% \tcbsidebyside[sidebyside adapt=right,
-%     blanker,sidebyside gap=5mm
-% ]{%
-%     Les coordonnées se notent toujours sous la forme $(x;y)$.
-%     \bigbreak
-%     Par exemple, le point $A$ a comme abscisse 4, et comme ordonnée 2. On notera alors $A(4;2)$.
-%     \bigbreak
-%     Note les coordonnées des points $B$, $C$ et $D$.
-% }{%
-%     \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/axes.tikz}
-% }
-
-% \begin{exercise}
-%     Note correctement les coordonnées des points suivants en dessous du repère.
-%     \begin{center}
-%         \includegraphics{chapitres/traitement_de_donnes_et_pourcentages/figures/ex_reperage1.tikz}
-%     \end{center}
-% \end{exercise}
-
-% \newpage
-% \begin{exercise}
-%     Place dans le repère suivant les points dont voici les coordonnées.
-
-%     $D\left(-2;3\right)$
-%     \hfill
-%     $A\left(3;0\right)$
-%     \hfill
-%     $N\left(2;-2\right)$
-%     \hfill
-%     $I\left(1;1\right)$
-%     \hfill
-%     $E\left(4;3\right)$
-%     \hfill
-%     $L\left(-3;-2\right)$
-
-%     \begin{center}
-%         \includegraphics[width=\linewidth]{chapitres/traitement_de_donnes_et_pourcentages/figures/ex_reperage2.tikz}
-%     \end{center}
-% \end{exercise}
-
-% \begin{exercise}
-%     Donne les coordonnées des points qui satisfont les conditions ci-dessous.
-%     \begin{enumerate}[itemsep=\fill]
-%         \item Mon abscisse vaut 4 et mon ordonnée vaut la moitié de mon abscisse.
-%         \item Mon abscisse est un multiple de 3. Mon ordonnée est un multiple de 4. La somme de mes coordonnées vaut 10.
-%         \item Mon ordonnée vaut 3 et mon abscisse vaut 6.
-%         \item Mon ordonnée vaut 6 et mon abscisse vaut le tiers de mon ordonnée.
-%         \item Mon abscisse vaut 3 et mon ordonnée vaut son carré.
-%     \end{enumerate}
-% \end{exercise}
-
-% \newpage
-% \begin{exercise}
-%     Dans le quadrillage suivant, construis un repère cartésien. Tu utiliseras comme échelle \emph{1 carré = 1 unité}. Ton axe des abscisses sera gradué de $-4$ à $4$ et ton axe des ordonnées de $-2$ à $5$.\\
-%     Place ensuite les points suivants.
-
-%     $I\left(-1;-1\right)$
-%     \hfill
-%     $L\left(-3;1\right)$
-%     \hfill
-%     $S\left(2;0\right)$
-%     \hfill
-%     $A\left(3;4\right)$
-%     \hfill
-%     $E\left(-4;4\right)$
-
-%     \begin{center}
-%         \includegraphics[]{chapitres/traitement_de_donnes_et_pourcentages/figures/quadrillage.tikz}
-%     \end{center}
-% \end{exercise}
-
-% \newpage
-
+\newpage
 \section{Les statistiques}
 \subsection{Les réseaux sociaux préférés}
 
@@ -563,11 +470,11 @@ La \textbf{moyenne arithmétique} d'une série de valeurs est le nombre qui rés
         \begin{tblr}{
                     hlines,
                     vlines,
-                    colspec={X[c]*{7}{X[c]}},
+                    colspec={*{8}{X[c]}},
                     rows={0.9cm, m},
                     row{1}={gray!40, font=\bfseries}
               }
-              Jour & Lundi & Mardi & Mercredi & Jeudi & Vendredi & Samedi & Dimanche \\
+              Jour & Lu & Ma & Me & Je & Ve & Sa & Di \\
               ($^\circ$C) & 18 & 21 & 19 & 23 & 20 & 17 & 22 \\
         \end{tblr}
     \end{center}
@@ -579,7 +486,7 @@ La \textbf{moyenne arithmétique} d'une série de valeurs est le nombre qui rés
 \begin{exercise}
     Pendant les vacances, Léo a compté le nombre de messages reçus sur son téléphone chaque jour :
     \begin{center}
-        $12, \ 8, \ 15, \ 20, \ 10$
+        \numlist{12;8;15;20;10}
     \end{center}
     \begin{enumerate}[itemsep=1cm]
         \item Calcule le nombre moyen de messages reçus par jour.
@@ -592,7 +499,7 @@ La \textbf{moyenne arithmétique} d'une série de valeurs est le nombre qui rés
 \begin{exercise}
     Reprenons les derniers résultats sur $20$ en mathématiques de Monsieur Crobeddu lorsqu'il avait 13 ans...
     \begin{center}
-        $19, \ 2, \ 8, \ 4, \ 7, \ 12, \ 13, \ 18$
+        \numlist{19;2;8;4;7;12;13;18}
     \end{center}
     Calcule la moyenne de Monsieur Crobeddu en mathématiques.
 \end{exercise}
@@ -619,11 +526,11 @@ Une même situation statistique peut t'être présentée de différentes façons
         \begin{tblr}{
                     hlines,
                     vlines,
-                    colspec={X[c]*{5}{X[c]}},
+                    colspec={*{6}{X[c]}},
                     rows={0.9cm, m},
                     row{1}={gray!40, font=\bfseries}
               }
-              & À pied & En Vélo & En Bus & En Voiture & Total \\
+              {Moyen de \\ transport}& À pied & En Vélo & En Bus & En Voiture & Total \\
               Effectif & 45 & 30 & 60 & 15 & 150 \\
         \end{tblr}
     \end{center}
@@ -653,6 +560,7 @@ Une même situation statistique peut t'être présentée de différentes façons
     \begin{enumerate}[itemsep=1cm]
         \item Parmi les informations suivantes, laquelle te permet de calculer directement l'effectif de la modalité « Chat » : l'effectif total, la fréquence de « Chat », ou l'étendue de la série ? Utilise-la pour calculer cet effectif.
         \item Une élève affirme : « Un peu plus de la moitié des élèves préfèrent les chiens ou les chats. » A-t-elle raison ? Justifie.
+        \vspace{0.4cm}
     \end{enumerate}
 \end{exercise}
 
@@ -815,7 +723,9 @@ Une même situation statistique peut t'être présentée de différentes façons
 
 \newpage
 \section{Je me teste}
+\faIcon{exclamation-triangle}~Cette partie doit être réalisée sur une feuille annexe.
 \setcounter{exercise}{0}
+
 \begin{exercise}
     Un magasin d'électroménager affiche un lave-linge à $480$ €. Pendant les soldes, il propose d'abord une remise de $15\,\%$, puis, si le client paie comptant, une remise supplémentaire de $5\,\%$ sur le nouveau prix obtenu.
 
@@ -825,6 +735,56 @@ Une même situation statistique peut t'être présentée de différentes façons
         \item Dans quel magasin est-il le plus avantageux d'acheter ce lave-linge ? Justifie.
         \item Le vendeur du premier magasin affirme : « Au final, vous bénéficiez d'une réduction totale de $20\,\%$ ! ». A-t-il raison ? Calcule le pourcentage de réduction réellement obtenu et compare.
     \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Lors de la kermesse de l'école, $250$ personnes ont acheté un ticket d'entrée à $4$ €. Les enfants de moins de $12$ ans bénéficient d'une réduction de $25\,\%$ sur ce prix. Parmi les $250$ visiteurs, $40\,\%$ sont des enfants de moins de $12$ ans.
+    \begin{enumerate}
+        \item Combien de visiteurs sont des enfants de moins de $12$ ans ? Combien sont des adultes ?
+        \item Quel prix un enfant paie-t-il pour entrer à la kermesse ?
+        \item Calcule la recette totale de la billetterie (entrées adultes $+$ entrées enfants).
+    \end{enumerate}
+    On a aussi demandé aux $250$ visiteurs quelle était leur activité préférée. Voici le diagramme obtenu.
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \draw[->] (-0.5,0) -- (6,0) node[right]{\footnotesize activité};
+            \draw[->] (0,-0.5) -- (0,5.5) node[above]{\footnotesize effectif};
+            \foreach \i in {20,40,60,80} {
+                \draw (0,0) node[below left]{$0$};
+                \draw ({-0.1},{\i*0.06}) -- (0.1,{\i*0.06});
+                \node[left] at ({-0.15},{\i*0.06}) {\i};
+            }
+            \draw[fill=blue!40] (0.7,0) rectangle (1.5,{60*0.06});
+            \draw[fill=blue!40] (1.9,0) rectangle (2.7,{90*0.06});
+            \draw[fill=blue!40] (3.1,0) rectangle (3.9,{75*0.06});
+            \draw[fill=blue!40] (4.3,0) rectangle (5.1,{25*0.06});
+            \node[below, rotate=45, anchor=east] at (1.1,-0.2) {\footnotesize Stand de tir};
+            \node[below, rotate=45, anchor=east] at (2.3,-0.2) {\footnotesize Manège};
+            \node[below, rotate=45, anchor=east] at (3.5,-0.2) {\footnotesize Pêche aux canards};
+            \node[below, rotate=45, anchor=east] at (4.7,-0.2) {\footnotesize Autre};
+        \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}[resume]
+        \item Complète le tableau de distribution (effectifs, fréquences en \%) correspondant à ce diagramme.
+        \item Quelle est l'activité la plus demandée (le mode) ?
+    \end{enumerate}
+%    Sur le plan de la kermesse, place dans le repère orthonormé dont l'entrée se situe à l'origine, le stand de tir se trouve au point $\left(3;5\right)$, le manège au point $\left(-2;4\right)$, et la pêche aux canards au point $\left(1;-3\right)$.
+%    \begin{center}
+%        \begin{tikzpicture}[scale=0.8]
+%            \draw[step=1, gray!30, thin] (-4.5,-4.5) grid (4.5,5.5);
+%            \draw[->] (-4.5,0) -- (4.5,0) node[right]{$x$};
+%            \draw[->] (0,-4.5) -- (0,5.5) node[above]{$y$};
+%            \foreach \i in {-4,...,4} {
+%                \node[below] at (\i,0) {\footnotesize \i};
+%                \node[left] at (0,\i) {\footnotesize \i};
+%            }
+%            \node[left] at (0,5) {\footnotesize 5};
+%        \end{tikzpicture}
+%    \end{center}
+%    \begin{enumerate}[resume]
+%        \item Place les $3$ stands dans le repère ci-dessus.
+%        \item Parmi toutes les informations récoltées dans cet exercice (nombre de visiteurs, recette totale, activité la plus demandée, position des stands), laquelle utiliserais-tu pour décider où installer un stand de boissons supplémentaire ? Justifie ton choix.
+%    \end{enumerate}
 \end{exercise}
 
 \newpage
@@ -864,56 +824,6 @@ Une même situation statistique peut t'être présentée de différentes façons
     \begin{enumerate}[resume]
         \item En observant ton graphique, combien d'élèves ont obtenu une note supérieure à la moyenne de la classe ?
     \end{enumerate}
-\end{exercise}
-
-\newpage
-\begin{exercise}
-    Lors de la kermesse de l'école, $250$ personnes ont acheté un ticket d'entrée à $4$ €. Les enfants de moins de $12$ ans bénéficient d'une réduction de $25\,\%$ sur ce prix. Parmi les $250$ visiteurs, $40\,\%$ sont des enfants de moins de $12$ ans.
-    \begin{enumerate}
-        \item Combien de visiteurs sont des enfants de moins de $12$ ans ? Combien sont des adultes ?
-        \item Quel prix un enfant paie-t-il pour entrer à la kermesse ?
-        \item Calcule la recette totale de la billetterie (entrées adultes $+$ entrées enfants).
-    \end{enumerate}
-    On a aussi demandé aux $250$ visiteurs quelle était leur activité préférée. Voici le diagramme obtenu.
-    \begin{center}
-        \begin{tikzpicture}[scale=1.8]
-            \draw[->] (-0.5,0) -- (6,0) node[right]{\footnotesize activité};
-            \draw[->] (0,-0.5) -- (0,5.5) node[above]{\footnotesize effectif};
-            \foreach \i in {0,20,40,60,80} {
-                \draw ({-0.1},{\i*0.06}) -- (0.1,{\i*0.06});
-                \node[left] at ({-0.15},{\i*0.06}) {\i};
-            }
-            \draw[fill=blue!40] (0.7,0) rectangle (1.5,{60*0.06});
-            \draw[fill=blue!40] (1.9,0) rectangle (2.7,{90*0.06});
-            \draw[fill=blue!40] (3.1,0) rectangle (3.9,{75*0.06});
-            \draw[fill=blue!40] (4.3,0) rectangle (5.1,{25*0.06});
-            \node[below] at (1.1,-0.2) {\footnotesize Stand de tir};
-            \node[below] at (2.3,-0.2) {\footnotesize Manège};
-            \node[below] at (3.5,-0.2) {\footnotesize Pêche aux canards};
-            \node[below] at (4.7,-0.2) {\footnotesize Autre};
-        \end{tikzpicture}
-    \end{center}
-    \begin{enumerate}[resume]
-        \item Complète le tableau de distribution (effectifs, fréquences en \%) correspondant à ce diagramme.
-        \item Quelle est l'activité la plus demandée (le mode) ?
-    \end{enumerate}
-%    Sur le plan de la kermesse, place dans le repère orthonormé dont l'entrée se situe à l'origine, le stand de tir se trouve au point $\left(3;5\right)$, le manège au point $\left(-2;4\right)$, et la pêche aux canards au point $\left(1;-3\right)$.
-%    \begin{center}
-%        \begin{tikzpicture}[scale=0.8]
-%            \draw[step=1, gray!30, thin] (-4.5,-4.5) grid (4.5,5.5);
-%            \draw[->] (-4.5,0) -- (4.5,0) node[right]{$x$};
-%            \draw[->] (0,-4.5) -- (0,5.5) node[above]{$y$};
-%            \foreach \i in {-4,...,4} {
-%                \node[below] at (\i,0) {\footnotesize \i};
-%                \node[left] at (0,\i) {\footnotesize \i};
-%            }
-%            \node[left] at (0,5) {\footnotesize 5};
-%        \end{tikzpicture}
-%    \end{center}
-%    \begin{enumerate}[resume]
-%        \item Place les $3$ stands dans le repère ci-dessus.
-%        \item Parmi toutes les informations récoltées dans cet exercice (nombre de visiteurs, recette totale, activité la plus demandée, position des stands), laquelle utiliserais-tu pour décider où installer un stand de boissons supplémentaire ? Justifie ton choix.
-%    \end{enumerate}
 \end{exercise}
 
 \newpage
