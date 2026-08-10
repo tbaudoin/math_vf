@@ -7,9 +7,798 @@
 \begin{enumerate}[label=\textbf{\arabic*.}]
     \item Le cercle et le disque.
     \item Les polygones.
+    \item Les droites remarquables dans un triangle.
     \item Formules de périmètre.    
     \item Formules d'aire.
 \end{enumerate}
+
+\section{Les polygones autour de nous}
+
+Depuis l'Antiquité, les êtres humains utilisent les polygones pour construire, mesurer, décorer et représenter le monde qui les entoure.
+
+Les Égyptiens utilisaient des figures géométriques pour construire
+leurs monuments. Les Grecs de l'Antiquité ont étudié les propriétés
+des polygones réguliers et les ont utilisés dans leurs constructions
+géométriques.
+
+Aujourd'hui encore, les polygones sont omniprésents :
+architecture, urbanisme, design, informatique, jeux vidéo,
+cartographie ou encore construction de structures complexes.
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw[thick] (0,0) -- (4,0) -- (4,2.5) -- (0,2.5) -- cycle;
+        \draw[thick] (1,0) -- (2,1.5) -- (3,0);
+        \draw[thick] (0,2.5) -- (2,4) -- (4,2.5);
+        \draw[thick] (1.3,0) -- (1.3,2.5);
+        \draw[thick] (2.7,0) -- (2.7,2.5);
+    \end{tikzpicture}
+\end{center}
+
+\begin{exercise}
+    Observe les différentes parties de la construction ci-dessus.
+    \begin{enumerate}[itemsep=1cm]
+        \item Cite trois polygones que tu peux identifier dans cette figure.
+        \item Combien de côtés possède chacun de ces polygones ?
+        \item Certains de ces polygones sont-ils réguliers ? Justifie.
+        \item Donne un exemple d'utilisation des polygones dans
+        l'architecture actuelle.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Les ruches sont constituées de cellules en forme d'hexagone régulier.
+    \begin{enumerate}[itemsep=1cm]
+        \item Combien de côtés possède un hexagone ?
+        \item Pourquoi les hexagones permettent-ils de recouvrir une
+        surface sans laisser de trous ?
+        \item Dessine un pavage constitué uniquement d'hexagones réguliers.
+        \item Cite une autre situation dans laquelle on utilise un
+        pavage géométrique.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Les architectes et ingénieurs utilisent des polygones pour
+    représenter ou construire des structures.
+
+    Recherche dans ton environnement une construction faisant
+    apparaître au moins trois polygones différents.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Réalise un croquis de cette construction.
+        \item Entoure les différents polygones.
+        \item Nomme-les.
+        \item Explique pourquoi ces formes ont pu être choisies.
+    \end{enumerate}
+\end{exercise}
+
+
+% ============================================================
+% 2. POLYGONES
+% ============================================================
+
+\newpage
+\section{Les polygones et les polygones réguliers}
+
+\subsection{Vocabulaire}
+
+Un \textbf{polygone} est une figure plane fermée constituée
+uniquement de segments de droite.
+
+Les segments qui constituent le polygone sont ses \textbf{côtés}.
+Les extrémités des côtés sont ses \textbf{sommets}.
+Les angles formés par deux côtés consécutifs sont ses \textbf{angles
+intérieurs}.
+
+Un polygone est \textbf{régulier} lorsque tous ses côtés ont la même
+longueur et que tous ses angles intérieurs ont la même amplitude.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Triangle
+    \draw[thick] (0,0) -- (2,0) -- (1,1.7) -- cycle;
+    \node at (1,-0.4) {Triangle};
+
+    % Carré
+    \draw[thick] (4,0) rectangle (6,2);
+    \node at (5,-0.4) {Carré};
+
+    % Pentagone
+    \draw[thick] (9,0)
+        -- (10.5,1.1)
+        -- (9.9,2.8)
+        -- (8.1,2.8)
+        -- (7.5,1.1)
+        -- cycle;
+    \node at (9,-0.4) {Pentagone};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Reconnaître un polygone régulier}
+
+Pour déterminer si un polygone est régulier, il faut vérifier :
+\begin{itemize}
+    \item que tous ses côtés ont la même longueur ;
+    \item que tous ses angles ont la même amplitude.
+\end{itemize}
+
+\begin{exercise}
+    Pour chacune des figures proposées par ton professeur, indique
+    s'il s'agit ou non d'un polygone régulier.
+
+    Justifie chaque réponse en utilisant les longueurs des côtés
+    et les amplitudes des angles.
+\end{exercise}
+
+\begin{exercise}
+    Construis les polygones suivants :
+
+    \begin{enumerate}[cols=2, itemsep=1cm]
+        \item un triangle équilatéral de côté $4\,cm$ ;
+        \item un carré de côté $4\,cm$ ;
+        \item un hexagone régulier de côté $3\,cm$ ;
+        \item un octogone régulier de côté $3\,cm$.
+    \end{enumerate}
+
+    Laisse apparaître les étapes de construction.
+\end{exercise}
+
+\begin{exercise}
+    Complète le tableau suivant.
+
+    \begin{center}
+    \begin{tblr}{
+        hlines,
+        vlines,
+        columns={c},
+        row{1}={font=\bfseries}
+    }
+        Polygone & Nombre de côtés & Nombre de sommets & Régulier possible ? \\
+        Triangle & & & \\
+        Quadrilatère & & & \\
+        Pentagone & & & \\
+        Hexagone & & & \\
+        Octogone & & &
+    \end{tblr}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Construis un polygone régulier de ton choix possédant au moins
+    cinq côtés.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Nomme le polygone obtenu.
+        \item Indique son nombre de côtés.
+        \item Mesure un côté.
+        \item Mesure deux de ses angles.
+        \item Explique pourquoi tu peux considérer cette figure comme
+        un polygone régulier.
+    \end{enumerate}
+\end{exercise}
+
+
+% ============================================================
+% 3. CERCLE ET DISQUE
+% ============================================================
+
+\newpage
+\section{Le cercle et le disque}
+
+\subsection{Vocabulaire}
+
+Un \textbf{cercle} est l'ensemble des points situés à une même
+distance d'un point appelé \textbf{centre}.
+
+Cette distance est appelée le \textbf{rayon} du cercle.
+
+Le segment qui relie deux points du cercle en passant par le centre
+est un \textbf{diamètre}.
+
+On a :
+
+\[
+d = 2r
+\]
+
+où $d$ désigne le diamètre et $r$ le rayon.
+
+Le \textbf{disque} est la surface délimitée par un cercle.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+    \draw[thick] (0,0) circle (2);
+    \fill (0,0) circle (2pt);
+    \draw[thick] (0,0) -- (2,0);
+    \draw[thick] (-2,0) -- (2,0);
+    \node[below] at (1,0) {$r$};
+    \node[above] at (0,0) {$O$};
+    \node[above] at (1.2,0.15) {$d$};
+\end{tikzpicture}
+\end{center}
+
+\begin{exercise}
+    Sur le cercle ci-dessous, place et nomme :
+
+    \begin{enumerate}[itemsep=0.8cm]
+        \item le centre $O$ ;
+        \item un rayon ;
+        \item un diamètre ;
+        \item une corde.
+    \end{enumerate}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \draw[thick] (0,0) circle (2.5);
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Complète les phrases suivantes.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Le segment reliant le centre à un point du cercle est un
+        \dotfill
+        \item Un segment reliant deux points du cercle en passant par
+        le centre est un \dotfill
+        \item Le diamètre d'un cercle de rayon $5\,cm$ mesure \dotfill
+        \item Le rayon d'un cercle de diamètre $12\,cm$ mesure \dotfill
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Construis :
+
+    \begin{enumerate}[itemsep=1cm]
+        \item un cercle de centre $O$ et de rayon $3\,cm$ ;
+        \item un cercle de centre $A$ et de diamètre $8\,cm$ ;
+        \item un disque de centre $B$ et de rayon $2,5\,cm$.
+    \end{enumerate}
+
+    Code les rayons et les diamètres lorsqu'ils sont présents.
+\end{exercise}
+
+\begin{exercise}
+    On considère un cercle de centre $O$ et de rayon $4\,cm$.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Place un point $A$ du cercle.
+        \item Construis le rayon $[OA]$.
+        \item Construis un diamètre passant par $A$.
+        \item Place un point $B$ à l'intérieur du disque.
+        \item Place un point $C$ à l'extérieur du disque.
+        \end{enumerate}
+
+        Explique la différence entre le cercle et le disque.
+\end{exercise}
+
+
+% ============================================================
+% 4. DROITES REMARQUABLES
+% ============================================================
+
+\newpage
+\section{Les droites remarquables dans un triangle}
+
+\subsection{La médiatrice}
+
+La \textbf{médiatrice} d'un segment est la droite perpendiculaire
+à ce segment qui passe par son milieu.
+
+Tout point de la médiatrice d'un segment est équidistant des
+extrémités de ce segment.
+
+\subsection{La médiane}
+
+Une \textbf{médiane} d'un triangle est un segment qui relie un sommet
+au milieu du côté opposé.
+
+Les trois médianes d'un triangle sont concourantes en un point appelé
+\textbf{centre de gravité}.
+
+\subsection{La hauteur}
+
+Une \textbf{hauteur} d'un triangle est une droite passant par un
+sommet et perpendiculaire au côté opposé.
+
+\subsection{La bissectrice}
+
+La \textbf{bissectrice} d'un angle est la demi-droite qui partage
+l'angle en deux angles de même amplitude.
+
+Les trois bissectrices d'un triangle sont concourantes en un point
+appelé \textbf{centre du cercle inscrit}.
+
+\begin{exercise}
+    Trace dans le triangle suivant :
+
+    \begin{enumerate}[cols=2, label=$\ast$]
+        \item une hauteur ;
+        \item une médiane ;
+        \item une médiatrice ;
+        \item une bissectrice.
+    \end{enumerate}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (5,0);
+            \coordinate (C) at (1.5,3);
+            \draw[thick] (A)--(B)--(C)--cycle;
+            \node[below left] at (A) {$A$};
+            \node[below right] at (B) {$B$};
+            \node[above] at (C) {$C$};
+        \end{tikzpicture}
+    \end{center}
+
+    Laisse visibles tes constructions.
+\end{exercise}
+
+\begin{exercise}
+    Pour chaque proposition, indique s'il s'agit d'une médiane,
+    d'une hauteur, d'une médiatrice ou d'une bissectrice.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Droite passant par un sommet et le milieu du côté opposé.
+        \item Droite perpendiculaire à un segment et passant par son milieu.
+        \item Droite passant par un sommet et perpendiculaire au côté opposé.
+        \item Droite partageant un angle en deux angles de même amplitude.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Construis le cercle inscrit dans le triangle suivant.
+
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (6,0);
+            \coordinate (C) at (2,4);
+            \draw[thick] (A)--(B)--(C)--cycle;
+            \node[below left] at (A) {$A$};
+            \node[below right] at (B) {$B$};
+            \node[above] at (C) {$C$};
+        \end{tikzpicture}
+    \end{center}
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Construis deux bissectrices du triangle.
+        \item Repère leur point d'intersection.
+        \item Construis le cercle inscrit.
+        \item Laisse visibles les constructions.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Construis le cercle circonscrit au triangle suivant.
+
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (5,0);
+            \coordinate (C) at (2,3.5);
+            \draw[thick] (A)--(B)--(C)--cycle;
+            \node[below left] at (A) {$A$};
+            \node[below right] at (B) {$B$};
+            \node[above] at (C) {$C$};
+        \end{tikzpicture}
+    \end{center}
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Construis les médiatrices de deux côtés du triangle.
+        \item Repère leur point d'intersection.
+        \item Construis le cercle passant par les trois sommets.
+        \item Explique pourquoi ce cercle est appelé cercle circonscrit.
+    \end{enumerate}
+\end{exercise}
+
+
+% ============================================================
+% 5. PÉRIMÈTRES
+% ============================================================
+
+\newpage
+\section{Les périmètres}
+
+Le \textbf{périmètre} d'une figure est la longueur de son contour.
+
+\subsection{Périmètre des polygones}
+
+Pour calculer le périmètre d'un polygone, on additionne les longueurs
+de tous ses côtés.
+
+Pour un polygone régulier à $n$ côtés de longueur $c$ :
+
+\[
+P=n\times c
+\]
+
+Ainsi, pour un carré de côté $c$ :
+
+\[
+P=4c
+\]
+
+et pour un triangle équilatéral :
+
+\[
+P=3c.
+\]
+
+\subsection{Périmètre du cercle}
+
+Le périmètre d'un cercle est appelé \textbf{circonférence}.
+
+On utilise :
+
+\[
+P=2\pi r
+\]
+
+ou
+
+\[
+P=\pi d.
+\]
+
+\begin{exercise}
+    Calcule le périmètre des figures suivantes.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item un triangle équilatéral de côté $7\,cm$ ;
+        \item un carré de côté $5,5\,cm$ ;
+        \item un pentagone régulier de côté $4\,cm$ ;
+        \item un hexagone régulier de côté $3,2\,cm$.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Détermine la longueur du côté de chaque polygone régulier.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item triangle équilatéral de périmètre $27\,cm$ ;
+        \item carré de périmètre $36\,cm$ ;
+        \item hexagone régulier de périmètre $42\,cm$ ;
+        \item décagone régulier de périmètre $80\,cm$.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Calcule le périmètre des cercles suivants.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item rayon $r=3\,cm$ ;
+        \item rayon $r=7,5\,cm$ ;
+        \item diamètre $d=10\,cm$ ;
+        \item diamètre $d=24\,cm$.
+    \end{enumerate}
+
+    Donne une valeur exacte en fonction de $\pi$ puis une valeur
+    approchée au dixième de centimètre près.
+\end{exercise}
+
+\begin{exercise}
+    Un jardin rectangulaire mesure $12\,m$ de longueur et $7\,m$
+    de largeur.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Calcule son périmètre.
+        \item Le propriétaire souhaite placer une clôture tout autour
+        du jardin. Quelle longueur de clôture doit-il acheter ?
+        \item La clôture coûte $18\,€$ par mètre. Calcule le prix total.
+    \end{enumerate}
+\end{exercise}
+
+
+% ============================================================
+% 6. AIRES
+% ============================================================
+
+\newpage
+\section{Les aires}
+
+L'\textbf{aire} d'une figure correspond à la mesure de la surface
+qu'elle occupe.
+
+L'unité de base est le mètre carré :
+
+\[
+1\,m^2=1\,m\times1\,m.
+\]
+
+\subsection{Formules d'aire}
+
+Pour un rectangle :
+
+\[
+A=L\times l.
+\]
+
+Pour un carré :
+
+\[
+A=c^2.
+\]
+
+Pour un parallélogramme :
+
+\[
+A=b\times h.
+\]
+
+Pour un triangle :
+
+\[
+A=\frac{b\times h}{2}.
+\]
+
+Pour un trapèze :
+
+\[
+A=\frac{(B+b)\times h}{2}.
+\]
+
+Pour un losange :
+
+\[
+A=\frac{D\times d}{2}.
+\]
+
+Pour un disque :
+
+\[
+A=\pi r^2.
+\]
+
+\subsection{Construire les formules}
+
+Les formules d'aire peuvent être retrouvées en décomposant ou en
+transformant les figures.
+
+Par exemple, un triangle peut être associé à un rectangle de même
+base et de même hauteur : le triangle représente la moitié de ce
+rectangle.
+
+\begin{exercise}
+    Calcule l'aire des figures suivantes.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item rectangle de longueur $8\,cm$ et largeur $5\,cm$ ;
+        \item carré de côté $6\,cm$ ;
+        \item parallélogramme de base $7\,cm$ et de hauteur $4\,cm$ ;
+        \item triangle de base $9\,cm$ et de hauteur $5\,cm$.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Calcule l'aire des figures suivantes.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item trapèze de bases $8\,cm$ et $14\,cm$, de hauteur $5\,cm$ ;
+        \item losange dont les diagonales mesurent $8\,cm$ et $12\,cm$ ;
+        \item disque de rayon $4\,cm$ ;
+        \item disque de diamètre $10\,cm$.
+    \end{enumerate}
+
+    Donne une valeur exacte lorsque cela est possible.
+\end{exercise}
+
+\begin{exercise}
+    Une figure complexe est constituée d'un rectangle de
+    $10\,cm\times6\,cm$ auquel on ajoute un demi-disque de rayon
+    $3\,cm$.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Réalise un schéma de la figure.
+        \item Décompose la figure en surfaces connues.
+        \item Calcule l'aire du rectangle.
+        \item Calcule l'aire du demi-disque.
+        \item Déduis-en l'aire totale de la figure.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    On souhaite représenter un triangle et un rectangle ayant la
+    même aire.
+
+    Le triangle possède une base de $8\,cm$ et une hauteur de $5\,cm$.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Calcule son aire.
+        \item Propose les dimensions d'un rectangle ayant la même aire.
+        \item Construis ce rectangle.
+        \item Explique pourquoi les deux figures ont la même aire.
+    \end{enumerate}
+\end{exercise}
+
+
+% ============================================================
+% 7. FIGURES COMPLEXES ET PROBLÈMES
+% ============================================================
+
+\newpage
+\section{Figures complexes et problèmes}
+
+Pour calculer le périmètre ou l'aire d'une figure complexe, il faut
+souvent la décomposer en plusieurs figures simples.
+
+La démarche peut être résumée ainsi :
+
+\begin{enumerate}
+    \item identifier les figures simples ;
+    \item repérer les dimensions utiles ;
+    \item calculer les périmètres ou les aires ;
+    \item assembler les résultats.
+\end{enumerate}
+
+\begin{exercise}
+    Une terrasse est constituée d'un rectangle de $8\,m\times5\,m$
+    auquel est accolé un carré de côté $3\,m$.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Réalise un schéma.
+        \item Calcule l'aire de chaque partie.
+        \item Déduis-en l'aire totale de la terrasse.
+        \item Calcule son périmètre extérieur.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Une piste circulaire possède un diamètre extérieur de $20\,m$
+    et un diamètre intérieur de $12\,m$.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Représente la situation.
+        \item Calcule l'aire du grand disque.
+        \item Calcule l'aire du petit disque.
+        \item Déduis-en l'aire de la piste.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Un terrain est constitué d'un rectangle de $30\,m\times18\,m$
+    surmonté d'un triangle dont la base mesure $30\,m$ et la hauteur
+    $12\,m$.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Calcule l'aire du rectangle.
+        \item Calcule l'aire du triangle.
+        \item Déduis-en l'aire totale du terrain.
+        \item Le propriétaire souhaite semer du gazon à raison de
+        $5\,€$ par mètre carré. Quel sera le coût total ?
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Une entreprise doit fabriquer une plaque métallique ayant la
+    forme suivante : un rectangle de $16\,cm\times10\,cm$ auquel on
+    retire un disque de rayon $3\,cm$.
+
+    \begin{enumerate}[itemsep=1cm]
+        \item Réalise un schéma de la plaque.
+        \item Calcule l'aire du rectangle.
+        \item Calcule l'aire du disque retiré.
+        \item Calcule l'aire de métal restante.
+    \end{enumerate}
+\end{exercise}
+
+
+% ============================================================
+% TABLEAU DE SYNTHÈSE
+% ============================================================
+
+\newpage
+\section{Synthèse : périmètres et aires}
+
+\begin{center}
+\begin{tblr}{
+    hlines,
+    vlines,
+    width=\linewidth,
+    colspec={X[1.5,l] X[2,l] X[3,l]},
+    row{1}={font=\bfseries},
+}
+    \textbf{Figure} & \textbf{Périmètre} & \textbf{Aire} \\
+
+    Triangle
+    &
+    $P=a+b+c$
+    &
+    $\displaystyle A=\frac{b\times h}{2}$
+    \\
+
+    Triangle équilatéral
+    &
+    $P=3c$
+    &
+    $\displaystyle A=\frac{b\times h}{2}$
+    \\
+
+    Carré
+    &
+    $P=4c$
+    &
+    $A=c^2$
+    \\
+
+    Rectangle
+    &
+    $P=2(L+l)$
+    &
+    $A=L\times l$
+    \\
+
+    Parallélogramme
+    &
+    $P=2(a+b)$
+    &
+    $A=b\times h$
+    \\
+
+    Losange
+    &
+    $P=4c$
+    &
+    $\displaystyle A=\frac{D\times d}{2}$
+    \\
+
+    Trapèze
+    &
+    $P=a+b+c+d$
+    &
+    $\displaystyle A=\frac{(B+b)\times h}{2}$
+    \\
+
+    Polygone régulier
+    &
+    $P=n\times c$
+    &
+    selon la figure
+    \\
+
+    Cercle
+    &
+    $\displaystyle P=2\pi r=\pi d$
+    &
+    --- 
+    \\
+
+    Disque
+    &
+    ---
+    &
+    $\displaystyle A=\pi r^2$
+    \\
+\end{tblr}
+\end{center}
+
+
+\section{Les Polygones}
+\dotsforanswer{2}[Qu'est-ce qu'un polygone~?]
+
+\begin{exercise}
+    Colorie, parmi les figures suivantes, celles qui sont des polygones.
+    \begin{center}
+        \includegraphics[width=13cm]{chapitres/polygone_cercle_perimetre_aire/img/polygones.png}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Comment appelle-t-on un polygone à \dots
+    \begin{enumerate}[cols=3, itemsep=2em]
+        \item 3 côtés ?
+        \item 4 côtés ?
+        \item 5 côtés ?
+        \item 6 côtés ?
+        \item 7 côtés ?
+        \item 8 côtés ?
+        \item 9 côtés ?
+        \item 10 côtés ?
+        \item 12 côtés ?
+    \end{enumerate}
+\end{exercise}
 
 
 
@@ -23,8 +812,10 @@
     \item Cercle inscrit
     \item Cercle circonscrit
     \item Polygone
+    \item Polygone régulier
     \item Aire
     \item Périmètre
+    \item Surface
 \end{enumerate}
 
 \section*{Attendus}
