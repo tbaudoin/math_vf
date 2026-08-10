@@ -45,7 +45,7 @@ Vocabulaire à connaître :
 \newpage
 \begin{exercise}
     Vocabulaire du triangle
-    
+
     \begin{center}
         \begin{tikzpicture}[scale=0.9]
             \tkzDefPoint(0,0){P}
@@ -66,8 +66,8 @@ Vocabulaire à connaître :
         \item Quel est le côté opposé au sommet $P$ ?
         \item Quel est le sommet opposé au côté $[QR]$ ?
         \item Cite deux sommets adjacents.
-        \item Complète la phrase : « Le côté $[PQ]$ est adjacent au sommet \dots\ et au sommet \dots\ »
-        \item Complète la phrase : « L'angle $\widehat{R}$ a pour sommet le point \dots\ et ses côtés sont les demi-droites \dots\ et \dots\ »
+        \item Complète la phrase : « Le côté $[PQ]$ est adjacent au sommet \blank[width=1cm]{} et au sommet \blank[width=1cm]{} »
+        \item Complète la phrase : « L'angle $\widehat{R}$ a pour sommet le point \blank[width=1cm]{} et ses côtés sont les demi-droites \blank[width=1cm]{} et \blank[width=1cm]{} »
     \end{enumerate}
 \end{exercise}
 
@@ -83,6 +83,7 @@ Vocabulaire à connaître :
     \end{enumerate}
 \end{solution}
 
+\newpage
 \section{Nature des triangles}
 
 On peut classer les triangles selon deux critères : la longueur de leurs côtés
@@ -90,7 +91,7 @@ et l'amplitude de leurs angles.
 
 
 \faIcon{pencil-alt}~En analysant les mots suivants, essaye de les mettre dans la bonne case :
-\begin{center} 
+\begin{center}
     acutangle
     \hfil
     rectangle
@@ -105,65 +106,69 @@ et l'amplitude de leurs angles.
 \end{center}
 
 \begin{center}
-    \begin{tblr}{hlines, vlines, rows={2cm, m}, row{1}={1.5em}, colspec={Q[c, m, 3cm] Q[c, m, 5cm] Q[c, m, 5cm]}}
-        Critère & Caractéristiques                     & Nom du triangle      \\
+    \begin{tblr}{hlines, vlines, rows={1cm, m}, row{1}={blue!30, font=\bfseries}, colspec={lXX}}
+        Critère & Caractéristiques                     & Nom du triangle \\
         \SetCell[r=3]{m} Longueur des côtés
-                & $3$ côtés de longueurs différentes.  &      \\
-                & Au moins $2$ côtés de même longueur. &      \\
-                & $3$ côtés de même longueur.          &  \\
+                & $3$ côtés de longueurs différentes.  &                 \\
+                & Au moins $2$ côtés de même longueur. &                 \\
+                & $3$ côtés de même longueur.          &                 \\
         \SetCell[r=3]{m} Amplitude des angles
-                & $3$ angles aigus ($< \ang{90}$).     &    \\
-                & $1$ angle droit ($= \ang{90}$).      &    \\
-                & $1$ angle obtus ($> \ang{90}$).      &   \\
+                & $3$ angles aigus ($< \ang{90}$).     &                 \\
+                & $1$ angle droit ($= \ang{90}$).      &                 \\
+                & $1$ angle obtus ($> \ang{90}$).      &                 \\
     \end{tblr}
 \end{center}
 
 La nature d'un triangle est la combinaison du critère longueur des côtés et
 amplitudes des angles. On dira par exemple qu'un triangle est isocèle acutangle.
 
-\begin{exercise}
-    Complète le tableau suivant en traçant une croix dans chaque case lorsque le triangle correspondant existe. Justifie brièvement les cases que tu as laissées vides.
-    
-    \begin{center}
-        \begin{tblr}{hlines, vlines, colspec={*{4}{X[c]}}, rows={1cm,m},
-        vline{1}={1}{white}, hline{1}={1}{white}}
-                    & Triangle scalène & Triangle isocèle & Triangle équilatéral \\
-            Triangle acutangle   &                  &                  &                      \\
-            Triangle rectangle   &                  &                  &                      \\
-            Triangle obtusangle  &                  &                  &                      \\
-        \end{tblr}
-    \end{center}
-\end{exercise}
-
-\begin{solution}
-    \begin{center}
-        \begin{tblr}{hlines, vlines, rows={1.5cm, m}, row{1}={1.2em}, colspec={Q[c, m, 3cm] Q[c, m, 3cm] Q[c, m, 3cm] Q[c, m, 3cm]}}
-                    & Triangle scalène & Triangle isocèle & Triangle équilatéral \\
-            Triangle acutangle   & \checkmark       & \checkmark       & \checkmark          \\
-            Triangle rectangle   & \checkmark       & \checkmark       &                     \\
-            Triangle obtusangle  & \checkmark       & \checkmark       &                     \\
-        \end{tblr}
-    \end{center}
-    
-    Justifications :
-    \begin{itemize}
-        \item Un triangle équilatéral a toujours ses trois angles de $\ang{60}$, il est donc toujours acutangle. Il ne peut pas être rectangle (sinon un angle vaudrait $\ang{90}$) ni obtusangle (sinon un angle dépasserait $\ang{90}$), car la somme des angles resterait supérieure à $\ang{180}$.
-        \item Toutes les autres combinaisons sont possibles. Par exemple, un triangle scalène peut être acutangle, rectangle ou obtusangle. Un triangle isocèle peut également être acutangle, rectangle (isocèle rectangle avec angles de $\ang{90}$, $\ang{45}$, $\ang{45}$) ou obtusangle.
-    \end{itemize}
-\end{solution}
+Dans chaque case, si cela est possible, dessine le triangle correspondant.
+\begin{center}
+    \begin{tblr}{hlines, vlines, colspec={*{4}{X[c]}},
+            rows={2cm,m},row{1}={1em, blue!30},column{1}={blue!30},
+            vline{1}={1}{white}, hline{1}={1}{white}, cell{1}{1}={white}}
+                            & Triangle scalène & Triangle isocèle & Triangle équilatéral \\
+        Triangle acutangle  &                  &                  &                      \\
+        Triangle rectangle  &                  &                  &                      \\
+        Triangle obtusangle &                  &                  &                      \\
+    \end{tblr}
+\end{center}
 
 
 \begin{exercise}
-    Identifier la nature d'un triangle
-    
-    Pour chacun des triangles décrits ci-dessous, donne sa nature.
-    
+    Détermine la nature de chaque triangle et justifie en langage mathématiques.
     \begin{enumerate}
+        \item
+              \begin{tikzpicture}[baseline=(current bounding box.north)]
+                  \tkzDefPoints{0/0/A, 3/0/B}
+                  \tkzDefTriangle[equilateral](A,B)
+                  \tkzGetPoint{C}
+                  \tkzDrawPolygon(A,B,C)
+                  \foreach \p/\l in {A/below left, B/below right,
+                          C/above}{\tkzLabelPoints[\l](\p)}
+                  \tkzMarkSegments[mark=|](A,B B,C A,C)
+              \end{tikzpicture}
+        \item
+              \begin{tikzpicture}[baseline=(current bounding box.north)]
+                  \tkzDefPoints{0/0/Z, 3/0/I, 0/4/P}
+                  \tkzDrawPolygon(Z,I,P)
+                  \foreach \p/\l in {Z/below left, I/below right,
+                          P/above}{\tkzLabelPoints[\l](\p)}
+                  \tkzMarkAngles[mark=|](P,I,Z Z,P,I)
+                  \tkzMarkRightAngle(P,Z,I)
+              \end{tikzpicture}
+    \end{enumerate}
+\end{exercise}
+\begin{exercise}
+    Pour chacun des triangles décrits ci-dessous, donne sa nature.
+
+    \begin{enumerate}[itemsep=2cm]
         \item Triangle $ABC$ : $\longueur{AB} = \qty{5}{cm}$, $\longueur{BC} = \qty{5}{cm}$, $\longueur{CA} = \qty{3}{cm}$.
         \item Triangle $DEF$ : $\amp{D} = \ang{90}$, $\amp{E} = \ang{45}$, $\amp{F} = \ang{45}$.
         \item Triangle $GHI$ : $\longueur{GH} = \longueur{HI} = \longueur{IG} = \qty{6}{cm}$.
         \item Triangle $JKL$ : $\amp{J} = \ang{110}$, $\amp{K} = \ang{40}$, $\amp{L} = \ang{30}$.
     \end{enumerate}
+    \vspace*{2cm}
 \end{exercise}
 
 \begin{solution}
@@ -180,7 +185,7 @@ Sur une feuille :
 \begin{itemize}
     \item dessine un triangle,
     \item colorie ses trois angles en trois couleurs différentes,
-    \item découpe ceux-ci. 
+    \item découpe ceux-ci.
 \end{itemize}
 Place tes angles côte à côte et colle-les ici.
 \vspace{3cm}
@@ -191,14 +196,14 @@ obtiens ? \dotfill.
 Que peux-tu en déduire ? \dotfill.
 
 \begin{tcolorbox}[title=Somme des amplitudes des angles d'un triangle]
-\begin{tikzpicture}
-    \tkzDefPoints{0/0/A, 3/0/B, 2/2/C}
-    \tkzDrawPolygon(A,B,C)
-    \tkzLabelPoints[below left](A)
-    \tkzLabelPoints[below right](B)
-    \tkzLabelPoints[above](C)
-    \tkzMarkAngles[size=0.5](B,A,C A,C,B C,B,A)
-\end{tikzpicture}
+    \begin{tikzpicture}
+        \tkzDefPoints{0/0/A, 3/0/B, 2/2/C}
+        \tkzDrawPolygon(A,B,C)
+        \tkzLabelPoints[below left](A)
+        \tkzLabelPoints[below right](B)
+        \tkzLabelPoints[above](C)
+        \tkzMarkAngles[size=0.5](B,A,C A,C,B C,B,A)
+    \end{tikzpicture}
 \end{tcolorbox}
 
 Les angles d'un triangle ont d'autres propriétés que tu dois connaître également
@@ -206,63 +211,63 @@ Les angles d'un triangle ont d'autres propriétés que tu dois connaître égale
 \begin{tcolorbox}[title=Amplitude des angles dans un triangle équilatéral]
     Un triangle équilatéral possède trois angles de même amplitude.
     \begin{tikzpicture}
-    \tkzDefPoints{0/0/A, 3/0/B}
-    \tkzDefPoint(60:3){C}
-    \tkzDrawPolygon(A,B,C)
-    \tkzLabelPoints[below left](A)
-    \tkzLabelPoints[below right](B)
-    \tkzLabelPoints[above](C)
-    \tkzMarkAngles[size=0.5, mark=|](B,A,C A,C,B C,B,A)
-\end{tikzpicture}
+        \tkzDefPoints{0/0/A, 3/0/B}
+        \tkzDefPoint(60:3){C}
+        \tkzDrawPolygon(A,B,C)
+        \tkzLabelPoints[below left](A)
+        \tkzLabelPoints[below right](B)
+        \tkzLabelPoints[above](C)
+        \tkzMarkAngles[size=0.5, mark=|](B,A,C A,C,B C,B,A)
+    \end{tikzpicture}
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=Amplitude des angles dans un triangle isocèle]
     Un triangle isocèle possède deux angles de même amplitude qu'on nomme les
     angles à la base.
-    
-    \begin{tikzpicture}
-    \tkzDefPoints{0/0/A, 2/0/B}
-    \tkzDefTriangle[two angles=70 and 70](A,B)\tkzGetPoint{C}
 
-    \tkzDrawPolygon(A,B,C)
-    \tkzLabelPoints[below left](A)
-    \tkzLabelPoints[below right](B)
-    \tkzLabelPoints[above](C)
-    \tkzMarkAngles[size=0.5, mark=|](B,A,C C,B,A)
-    \tkzMarkAngle[size=0.5](A,C,B)
-\end{tikzpicture}
+    \begin{tikzpicture}
+        \tkzDefPoints{0/0/A, 2/0/B}
+        \tkzDefTriangle[two angles=70 and 70](A,B)\tkzGetPoint{C}
+
+        \tkzDrawPolygon(A,B,C)
+        \tkzLabelPoints[below left](A)
+        \tkzLabelPoints[below right](B)
+        \tkzLabelPoints[above](C)
+        \tkzMarkAngles[size=0.5, mark=|](B,A,C C,B,A)
+        \tkzMarkAngle[size=0.5](A,C,B)
+    \end{tikzpicture}
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=Amplitude des angles dans un triangle rectangle]
     \begin{tikzpicture}[scale=0.7]
-    \tkzDefPoints{0/0/A, 3/0/B, 0/4/C}
-    \tkzDrawPolygon(A,B,C)
-    \tkzLabelPoints[below left](A)
-    \tkzLabelPoints[below right](B)
-    \tkzLabelPoints[above](C)
-    \tkzMarkRightAngle(B,A,C)
-    \tkzMarkAngles[size=0.5](A,C,B C,B,A)
-\end{tikzpicture}
+        \tkzDefPoints{0/0/A, 3/0/B, 0/4/C}
+        \tkzDrawPolygon(A,B,C)
+        \tkzLabelPoints[below left](A)
+        \tkzLabelPoints[below right](B)
+        \tkzLabelPoints[above](C)
+        \tkzMarkRightAngle(B,A,C)
+        \tkzMarkAngles[size=0.5](A,C,B C,B,A)
+    \end{tikzpicture}
 \end{tcolorbox}
 
 \begin{exercise}
     Détermine l'amplitude de l'angle demandé dans chacun des cas suivants. Explique brièvement ton raisonnement en citant la propriété utilisée.
-    
+
     \begin{enumerate}[itemsep=2cm]
         \item Dans le triangle $ABC$, on sait que $\amp{A} = \ang{52}$ et $\amp{B} = \ang{73}$. Calcule $\amp{C}$.
-        
+
         \item Le triangle $DEF$ est équilatéral. Quelle est l'amplitude de l'angle $\amp{E}$ ?
-        
+
         \item Le triangle $GHI$ est isocèle en $G$ et $\amp{G}=\ang{40}$. Calcule $\amp{H}$ et $\amp{I}$.
-        
+
         \item Le triangle $JKL$ est rectangle en $J$. L'angle $\widehat{K}$ mesure $\ang{35}$. Calcule $\amp{L}$.
-        
+
         \item Le triangle $MNP$ est isocèle en $M$. L'angle à la base $\widehat{N}$ mesure $\ang{72}$. Calcule $\amp{M}$ et $\amp{P}$.
-        
+
         \item Le triangle $QRS$ est rectangle et isocèle en $Q$. Calcule $\amp{R}$ et $\amp{S}$.
-        
+
         \item Dans le triangle $TUV$, $\amp{T} = \ang{35}$ et $\amp{U} = \ang{110}$. Calcule $\amp{V}$. Quelle est la nature du triangle $TUV$ selon ses angles ?
-        
+
         \item Dans le triangle $WXY$, $\amp{W} = \ang{28}$ et $\amp{X} = \ang{62}$. Calcule $\amp{Y}$. Quelle est la nature du triangle $WXY$ selon ses angles ?
     \end{enumerate}
     \vspace*{2cm}
@@ -271,19 +276,19 @@ Les angles d'un triangle ont d'autres propriétés que tu dois connaître égale
 \begin{solution}
     \begin{enumerate}
         \item $\amp{C} = \ang{180} - \ang{52} - \ang{73} = \ang{55}$. Propriété : la somme des amplitudes des angles d'un triangle vaut $\ang{180}$.
-        
+
         \item $\amp{E} = \ang{60}$. Propriété : les trois angles d'un triangle équilatéral sont égaux et leur somme vaut $\ang{180}$, donc chacun mesure $\ang{60}$.
-        
+
         \item $\amp{H} = \amp{I} = (\ang{180} - \ang{40}) \div 2 = \ang{140} \div 2 = \ang{70}$. Propriétés : somme des angles d'un triangle et égalité des angles à la base dans un triangle isocèle.
-        
+
         \item $\amp{L} = \ang{90} - \ang{35} = \ang{55}$. Propriété : dans un triangle rectangle, les deux angles aigus sont complémentaires.
-        
+
         \item $\amp{P} = \amp{N} = \ang{72}$ (angles à la base égaux). $\amp{M} = \ang{180} - \ang{72} - \ang{72} = \ang{36}$. Propriétés : somme des angles et égalité des angles à la base dans un triangle isocèle.
-        
+
         \item Le triangle est rectangle en $Q$, donc $\amp{Q} = \ang{90}$. Il est aussi isocèle en $Q$, donc $QR = QS$ et les angles à la base $\amp{R}$ et $\amp{S}$ sont égaux. $\amp{R} = \amp{S} = (\ang{180} - \ang{90}) \div 2 = \ang{90} \div 2 = \ang{45}$. Propriétés : somme des angles, triangle rectangle et triangle isocèle.
-        
+
         \item $\amp{V} = \ang{180} - \ang{35} - \ang{110} = \ang{35}$. Le triangle $TUV$ possède un angle obtus ($\ang{110}$), il est donc obtusangle. De plus, $\amp{T} = \amp{V} = \ang{35}$, le triangle est donc isocèle en $U$. Nature complète : triangle isocèle obtusangle.
-        
+
         \item $\amp{Y} = \ang{180} - \ang{28} - \ang{62} = \ang{90}$. Le triangle possède un angle droit, il est donc rectangle. Nature complète : triangle rectangle (et scalène car tous les angles sont différents).
     \end{enumerate}
 \end{solution}
@@ -291,12 +296,12 @@ Les angles d'un triangle ont d'autres propriétés que tu dois connaître égale
 \begin{exercise}
     Les points $B$, $D$ et $E$ sont alignés. Détermine l'amplitude de l'angle
     $\widehat{DCE}$. Note tout ton raisonnement.
-    \begin{center}
+    
         \begin{tikzpicture}
-            \tkzDefPoints{0/0/A, 2/0/B}
-            \tkzDefPoint(60:2){C}
+            \tkzDefPoints{0/0/A, 3/0/B}
+            \tkzDefPoint(60:3){C}
             \tkzDrawPolygon(A,B,C)
-            \tkzDefShiftPoint[B](70:2){D}
+            \tkzDefShiftPoint[B](90:3){D}
             \tkzDrawPolygon(B,C,D)
             \tkzInterLC(B,D)(D,C)
             \tkzGetPoints{E}{F}
@@ -310,16 +315,102 @@ Les angles d'un triangle ont d'autres propriétés que tu dois connaître égale
             \tkzLabelPoint[above](F){E}
             \tkzMarkAngle[size=0.5](D,C,F)
             \tkzLabelAngle[pos=0.75](D,C,F){$?$}
-            \tkzMarkAngle[size=0.5](D,B,C)
-            \tkzLabelAngle[pos=0.75](D,B,C){\scriptsize$\ang{50}$}
+            \tkzMarkRightAngle(A,B,D)
         \end{tikzpicture}
-    \end{center}
 \end{exercise}
 
+\newpage
 \section{Droites remarquables dans le triangle}
 
-pour moi ça n'a pas de sens de voir le cercle incsrit et circonscirt dans ce
-chapitre...
+Tu connais déjà les médiatrices et les bissectrices. Observons maintenant ce qui se passe lorsqu'on trace ces droites dans un triangle.
+
+\faIcon{pencil-alt}~Trace les trois médiatrices de ce triangle.
+\begin{center}
+    \begin{tikzpicture}[scale=0.7]
+        \tkzDefPoints{0/0/A, 3/4/B, -2/2/C}
+        \tkzDrawPolygon(A,B,C)
+        \tkzLabelPoints[below](A)
+        \tkzLabelPoints[above right](B)
+        \tkzLabelPoints[above left](C)
+        \tkzDefTriangleCenter[circum](A,B,C)
+        \tkzDrawCircle[draw=none](tkzPointResult,A)
+    \end{tikzpicture}
+\end{center}
+\begin{tcolorbox}[height=4cm, title=Observations et déductions]
+    
+\end{tcolorbox}
+
+\faIcon{pencil-alt}~Trace les trois bissectrices de ce triangle.
+\begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        \tkzDefPoints{0/0/A, 3/3/B, -2/3/C}
+        \tkzDrawPolygon(A,B,C)
+        \tkzLabelPoints[below](A)
+        \tkzLabelPoints[above right](B)
+        \tkzLabelPoints[above left](C)
+    \end{tikzpicture}
+\end{center}
+\begin{tcolorbox}[height=4cm, title=Observations et déductions]
+    
+\end{tcolorbox}
+
+Tu connais également une autre droite remarquable dans le triangle : la hauteur.
+
+Dans un triangle une hauteur est une droite qui passe par un sommet et qui est perpendiculaire au côté opposé. 
+
+\faIcon{pencil-alt}\~Trace les trois hauteurs de ce triangle. 
+
+\begin{center} 
+    \begin{tikzpicture}[scale=1] 
+        \tkzDefPoints{0/0/A, 3/4/B, -2/2/C} 
+        \tkzDrawPolygon(A,B,C) 
+        \tkzLabelPoints[below](A)
+         \tkzLabelPoints[above right](B) 
+         \tkzLabelPoints[above left](C) 
+        \end{tikzpicture}
+     \end{center} 
+     \begin{tcolorbox}[height=3cm, title=Observations] 
+    \end{tcolorbox} 
+
+\faIcon{puzzle-piece}~Découpe un triangle dans un morceau de carton. Ton
+objectif est de le faire tenir sur ton doigt en équilibre.
+
+Et si les mathématiques te permettaient d'y arriver à chaque fois, et pour n'importe quel triangle ? Ce serait fou !
+
+Dans un triangle une médiane est une droite qui passe par un sommet et le milieu du côté opposé.
+\begin{center}
+    \faIcon{brain}~\textbf{M}ediane où \textbf{M}= milieu
+\end{center}
+
+Sur ton triangle en carton, trace les trois médianes. Que remarques-tu ? 
+\vspace*{1cm}
+
+Place ce point sur ton doigt. Ton triangle tient-il en équilibre ?
+\vspace*{1cm}
+
+\newpage
+\minisec{Résumons}
+
+Dans un triangle, il existe quatre familles de droites remarquables :
+les médiatrices, les bissectrices, les hauteurs et les médianes.
+
+\begin{center}
+\begin{tblr}{
+    colspec = {X[l] X[l]},
+    row{1} = {font=\bfseries},
+    hlines, vlines,
+    row{1}={blue!30, font=\bfseries}
+}
+Droites remarquables & Point d'intersection \\
+Médiatrices & Centre du cercle circonscrit \\
+Bissectrices & Centre du cercle inscrit \\
+Hauteurs & Orthocentre \\
+Médianes & Centre de gravité
+\end{tblr}
+\end{center}
+
+Les trois droites de chacune des quatre familles de droites remarquables
+sont \textbf{concourantes} : elles se coupent en un même point.
 
 \section{Construction de triangles}
 
@@ -339,23 +430,58 @@ chapitre...
 \end{exercise}
 
 \begin{exercise}
-    Construis, si possible, le triangle $BIC$ si tu sais que $\overline{BI}=$\SI{3}{cm}, $\overline{IC}=$\SI{3}{cm} et $\overline{CB}=$\SI{7}{cm}.
-    \vspace{7cm}
+    Construis un triangle $SPA$ isocèle en $A$ tel que $\amp{PAS}=\ang{40}$ et $\longueur{AP}= \qty{2}{cm}$.
 \end{exercise}
 
 \begin{exercise}
-    Complète les phrases ci-dessous en langage mathématiques.
-    \begin{enumerate}[itemsep=.7cm]
-        \item Si le triangle \(DEF\) est rectangle en \(F\), alors
-        \item Si le triangle \(RST\) est isocèle en \(T\), alors
-        \item Si le triangle \(MNP\) est équilatéral, alors
-        \item Si le triangle \(ABC\) est isocèle rectangle en \(C\), alors
-    \end{enumerate}
+    Termine la construction de ce triangle en sachant que $A$ est un sommet et
+    que $d_1$ et $d_2$ sont des médiatrices du triangle.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/A,-3/-1/B, -2/-4/C}
+            \tkzDrawPoint(A)
+            \tkzLabelPoints[below right](A)
+            \tkzDefLine[mediator](A,B)\tkzGetPoints{a}{b}
+            \tkzDrawLine[add=0pt and -1cm](a,b)
+            \tkzLabelLine[pos=0.85, right](a,b){$d_1$}
+            \tkzDefLine[mediator](B,C)\tkzGetPoints{a}{b}
+            \tkzDrawLine[add=0pt and -1cm](a,b)
+            \tkzLabelLine[pos=0,below](a,b){$d_2$}
+
+        \end{tikzpicture}
+    \end{center}
 \end{exercise}
 
+\begin{exercise}
+    Termine la construction du triangle $ABC$ en sachant que $\amp{BAC}=\ang{70}$ et que $d_1$ et $d_2$ sont des bissectrices du triangle.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/A,6/1/B, 2/3/C}
+            \tkzDrawPoint(A)
+            % \tkzDrawPolygon(A,B,C)
+            \tkzLabelPoints[below left](A)
+            \tkzDefLine[bisector](C,A,B)
+            \tkzGetPoint{a}
+            \tkzDrawLine[add=1cm and 5pt](a,A)
+            \tkzLabelLine[pos=-0.3, below](a,A){$d_1$}
+            \tkzDefLine[bisector](A,C,B)
+            
+            \tkzGetPoint{a}
+            \tkzDrawLine(a,C)
+            \tkzLabelLine[pos=1.2, right](a,C){$d_2$}
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+% \includepdf[pages=-]{animaux_geometrie/hibou.pdf}
+% \includepdf[pages=-]{animaux_geometrie/elephant.pdf}
+% \includepdf[pages=-]{animaux_geometrie/crocodile.pdf}
+% \includepdf[pages=-]{animaux_geometrie/hippopotame.pdf}
+% \includepdf[pages=-]{animaux_geometrie/lion.pdf}
+% \includepdf[pages=-]{animaux_geometrie/tortue_de_mer.pdf}
 \newpage
 \section*{Mots-clés}
-\begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
+\begin{enumerate}[cols=4, label=\textbf{\arabic*.}]
     \item Angles
     \item Triangle
     \item Scalène
@@ -367,25 +493,33 @@ chapitre...
     \item Base
     \item Côté
     \item Bissectrice
+    \item Médiatrice
+    \item Médiane
+    \item Hauteur
+    \item Concourantes
 \end{enumerate}
 
 \section*{Attendus}
 \begin{enumerate}[label=\textbf{\arabic*.}]
-   \item Identifier des figures simples (triangle, quadrilatère) sur base de caractéristiques : les côtés (nombre, longueur, parallélisme, perpendicularité) ; les angles (amplitude).
-    \item Construire un triangle connaissant :\\
-    - la longueur d'un côté et l'amplitude de ses deux angles adjacents ;\\
-    - la longueur de deux côtés et l'amplitude de l'angle compris entre eux ;
-    - la longueur des trois côtés.
-    \item Construire un triangle isocèle ou équilatéral :\\
-    - à la latte et au compas ;\\
-    - à la latte et au rapporteur.
+    \item Identifier des figures simples (triangle, quadrilatère) sur base de caractéristiques : les côtés (nombre, longueur, parallélisme, perpendicularité) ; les angles (amplitude).
+    \item Construire un triangle connaissant :
+    \begin{itemize}
+        \item la longueur d'un côté et l'amplitude de ses deux angles adjacents ;
+        \item la longueur de deux côtés et l'amplitude de l'angle compris entre eux ;
+        \item la longueur des trois côtés.
+    \end{itemize}
+    \item Construire un triangle isocèle ou équilatéral :
+    \begin{itemize}
+        \item à la latte et au compas ;
+        \item à la latte et au rapporteur.
+    \end{itemize}
+          
     \item Énoncer la propriété de la somme des amplitudes des angles intérieurs d'un triangle et d'un quadrilatère.
     \item Déterminer l'amplitude d'un angle en utilisant la propriété relative à la somme des amplitudes des angles intérieurs d'un triangle et d'un quadrilatère.
     \item Construire un triangle dont deux médiatrices et un sommet sont donnés.
     \item Construire un triangle dont deux bissectrices, un sommet (appartenant à l'une d'elles) et l'amplitude de l'angle en ce sommet sont donnés.
     \item Construire un triangle isocèle dont une médiatrice (ou une bissectrice) et un sommet ou l'amplitude d'un angle ou la longueur d'un côté sont donnés.
     \item Construire un triangle équilatéral dont une médiatrice (ou une bissectrice) et un sommet ou la longueur d'un côté sont donnés.
-    \item 
 \end{enumerate}
 
 \end{document}

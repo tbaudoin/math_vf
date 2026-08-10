@@ -8,6 +8,7 @@
 \begin{enumerate}[cols=2, label=\textbf{\arabic*.}]
     \item Les différents quadrilatères.
     \item Les droites remarquables dans les quadrilatères.
+          \columnbreak
     \item Construction de quadrilatères.
 \end{enumerate}
 
@@ -18,7 +19,7 @@
 }{
     \includegraphics[]{chapitres/figures_planes/img/quadri.png}
 }
-\begin{enumerate}[itemsep=1cm, label= ]
+\begin{enumerate}[leftmargin=0pt,itemsep=1em, label= ]
     \item \(A,\ B,\ C,\ D\) sont les \dotfill
     \item \(\lbrack AB\rbrack,\lbrack BC\rbrack,\lbrack CD\rbrack,\lbrack DA\rbrack\) sont les \dotfill
     \item \(\lbrack AB\rbrack\) et \(\lbrack BC\rbrack\) sont \dotfill
@@ -27,11 +28,13 @@
     \item \(\widehat{A}\ \)et ~\(\widehat{D}\) sont \dotfill
 \end{enumerate}
 
-\emph{Attention à l'ordre des lettres lorsqu'on nomme un
-    polygone ! On nomme toujours un polygone en citant les sommets dans le sens horloger ou anti-horloger.}
-\begin{center}
-    \includegraphics[width=9cm]{chapitres/figures_planes/img/nommerpolygone.png}
-\end{center}
+
+\parbox{.68\linewidth}{\emph{Attention à l'ordre des lettres lorsqu'on nomme un
+        polygone ! On nomme toujours un polygone en citant les sommets dans le sens horloger ou anti-horloger.}}
+\hfill
+\parbox{.3\linewidth}{\includegraphics[width=\linewidth]{chapitres/figures_planes/img/nommerpolygone.png}
+}
+\enlargethispage{1cm}
 
 \newpage
 \textbf{Arbre des quadrilatères}
@@ -95,6 +98,91 @@
     \vspace{4cm}
 \end{exercise}
 
+\begin{exercise}
+    Indique une croix si le quadrilatère possède la propriété donnée.
+
+    \begin{tblr}{
+            colspec={l*{6}{X}},
+            hlines,
+            vlines,
+            hline{1-2}={1}{white},
+            vline{1}={1-2}{white},
+            row{2}={font=\scriptsize,m,c},
+            cell{2}{2-7}={blue!30},
+            cell{3-7}{1}={blue!30},
+            cell{1}{2}={r=1,c=6}{c,blue!30}
+        }
+                                  & Propriétés                                                                          \\
+                                  & a seulement 2 côtés opposés parallèles & a 2 paires de côtés opposés
+        parallèles                & a 4 angles droits                      & a 4 côté isométriques       & a des angles
+        opposés de même amplitude & a des côtés opposés isométriques                                                    \\
+        Carré                     &                                                                                     \\
+        Trapèze                   &                                                                                     \\
+        Losange                   &                                                                                     \\
+        Parallélogramme           &                                                                                     \\
+        Rectangle                 &
+    \end{tblr}
+\end{exercise}
+
+\newpage
+\section{Amplitude des angles d'un quadrilatère}
+Sur une feuille :
+\begin{itemize}
+    \item dessine un quadrilatère,
+    \item colorie ses quatre angles en quatre couleurs différentes,
+    \item découpe ceux-ci.
+\end{itemize}
+Place tes angles côte à côte et colle-les ici.
+\vspace{3cm}
+
+Quelle est la nature de l'angle que tu
+obtiens ? \dotfill.
+
+Que peux-tu en déduire ? \dotfill.
+
+\begin{tcolorbox}[title=Somme des amplitudes des angles d'un quadrilatère]
+    \begin{tikzpicture}
+        \tkzDefPoints{0/0/A, 3/0/B, 2/2/C, -1/1/D}
+        \tkzDrawPolygon(A,B,C,D)
+        \tkzLabelPoints[below left](A)
+        \tkzLabelPoints[below right](B)
+        \tkzLabelPoints[above](C)
+        \tkzLabelPoints[above](D)
+        \tkzMarkAngles[size=0.5](D,C,B C,B,A A,D,C B,A,D)
+    \end{tikzpicture}
+\end{tcolorbox}
+
+\subsection{Propriétés des angles selon la famille du quadrilatère}
+Réalise un schéma qui illustre les propriétés des angles pour chaque
+quadrilatère de l'arbre des quadrilatères.
+
+\newpage
+
+\begin{exercise}
+    Déterminez l'amplitude de l'angle manquant dans chacun des quadrilatères suivants :
+    \begin{enumerate}[itemsep=2cm]
+        \item $ABCD$ est un quadrilatère quelconque où $\amp{A} = \ang{110}$, $\amp{B} = \ang{70}$ et $\amp{C} = \ang{85}$. 
+        
+        \item $EFGH$ est un parallélogramme où $\amp{E} = \ang{65}$.
+        
+        \item $IJKL$ est un losange où $\amp{I} = \ang{115}$. 
+        
+        \item $MNOP$ est un trapèze dont les bases sont $[MN]$ et $[OP]$.\\Sachant que $\amp{M} = \ang{120}$ et $\amp{N} = \ang{75}$.
+    \end{enumerate}
+\end{exercise}
+
+\vspace{1cm}
+
+\begin{exercise}
+    \textbf{Vrai ou faux ?} Cochez la bonne réponse et justifiez par une propriété du cours.
+    \begin{enumerate}[itemsep=1cm]
+        \item Un quadrilatère peut posséder exactement trois angles droits.
+        \item La somme de deux angles opposés d'un rectangle vaut $\ang{180}$.
+        \item Dans un losange, les diagonales se coupent en formant quatre angles droits.
+        \item Dans un trapèze, la somme des quatre angles est toujours égale à $\ang{360}$.
+        \item Deux angles consécutifs d'un parallélogramme sont toujours égaux.
+    \end{enumerate}
+\end{exercise}
 \newpage
 \section{Les droites remarquables}
 \subsection{Droites remarquables dans un triangle}
