@@ -1,5 +1,352 @@
 \documentclass[../../syllabus_1.tex]{subfiles}
 \begin{document}
 \raggedbottom
-\chapter{Triangles}
+\section{Les triangles}
+
+\subsection{Définition et vocabulaire}
+
+Un triangle est un polygone à trois côtés. Le mot "triangle" vient du latin triangulus : tri- (trois) et angulus (angle). On peut retenir l'astuce TRI : triangle, c'est trois angles, trois sommets et trois côtés.
+
+\begin{center}
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(4,0){B}
+        \tkzDefPoint(1.5,2.5){C}
+        \tkzDrawPolygon[thick](A,B,C)
+        \tkzDrawPoints[size=4, fill=black](A,B,C)
+        \tkzLabelPoint[below left](A){$A$}
+        \tkzLabelPoint[below right](B){$B$}
+        \tkzLabelPoint[above](C){$C$}
+        \tkzMarkAngle[size=0.5cm, mark=none](B,A,C)
+        \tkzMarkAngle[size=0.5cm, mark=none](C,B,A)
+        \tkzMarkAngle[size=0.5cm, mark=none](A,C,B)
+    \end{tikzpicture}
+\end{center}
+
+Vocabulaire à connaître :
+\begin{itemize}
+    \item Les sommets sont les trois points : $A$, $B$ et $C$.
+    \item Les côtés sont les trois segments : $[AB]$, $[BC]$ et $[CA]$.
+    \item Les angles du triangle sont : $\widehat{A}$ (ou $\widehat{BAC}$), $\widehat{B}$ (ou $\widehat{ABC}$) et $\widehat{C}$ (ou $\widehat{BCA}$).
+    \item Le sommet opposé à un côté est le sommet qui n'appartient pas à ce côté.
+    \item Deux sommets adjacents sont deux sommets reliés par un côté.
+    \item Le côté opposé à un sommet est le côté qui ne contient pas ce sommet.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\begin{exercise}
+    Vocabulaire du triangle
+    
+    \begin{center}
+        \begin{tikzpicture}[scale=0.9]
+            \tkzDefPoint(0,0){P}
+            \tkzDefPoint(4.5,0){Q}
+            \tkzDefPoint(1.5,3){R}
+            \tkzDrawPolygon[thick](P,Q,R)
+            \tkzDrawPoints[size=4, fill=black](P,Q,R)
+            \tkzLabelPoint[below left](P){$P$}
+            \tkzLabelPoint[below right](Q){$Q$}
+            \tkzLabelPoint[above](R){$R$}
+        \end{tikzpicture}
+    \end{center}
+
+    En observant le triangle $PQR$ ci-dessus, réponds aux questions suivantes :
+    \begin{enumerate}
+        \item Quels sont les trois sommets du triangle ?
+        \item Quels sont les trois côtés du triangle ?
+        \item Quel est le côté opposé au sommet $P$ ?
+        \item Quel est le sommet opposé au côté $[QR]$ ?
+        \item Cite deux sommets adjacents.
+        \item Complète la phrase : « Le côté $[PQ]$ est adjacent au sommet \dots\ et au sommet \dots\ »
+        \item Complète la phrase : « L'angle $\widehat{R}$ a pour sommet le point \dots\ et ses côtés sont les demi-droites \dots\ et \dots\ »
+    \end{enumerate}
+\end{exercise}
+
+\begin{solution}
+    \begin{enumerate}
+        \item Les sommets sont $P$, $Q$ et $R$.
+        \item Les côtés sont $[PQ]$, $[QR]$ et $[RP]$.
+        \item Le côté opposé au sommet $P$ est $[QR]$.
+        \item Le sommet opposé au côté $[QR]$ est $P$.
+        \item $P$ et $Q$, $Q$ et $R$, ou $P$ et $R$.
+        \item Le côté $[PQ]$ est adjacent au sommet $P$ et au sommet $Q$.
+        \item L'angle $\widehat{R}$ a pour sommet le point $R$ et ses côtés sont les demi-droites $[RP)$ et $[RQ)$.
+    \end{enumerate}
+\end{solution}
+
+\newpage
+
+\subsection{Nature des triangles}
+
+On peut classer les triangles selon deux critères : la longueur de leurs côtés
+et l'amplitude de leurs angles.
+
+
+\faIcon{pencil-alt}~En analysant les mots suivants, essaye de les mettre dans la bonne case :
+\begin{center} 
+    acutangle
+    \hfil
+    rectangle
+    \hfil
+    isocèle
+    \hfil
+    obtusangle
+    \hfil
+    scalène
+    \hfil
+    équilatéral
+\end{center}
+
+\begin{center}
+    \begin{tblr}{hlines, vlines, rows={2cm, m}, row{1}={1.5em}, colspec={Q[c, m, 3cm] Q[c, m, 5cm] Q[c, m, 5cm]}}
+        Critère & Caractéristiques                     & Nom du triangle      \\
+        \SetCell[r=3]{m} Longueur des côtés
+                & $3$ côtés de longueurs différentes.  &      \\
+                & Au moins $2$ côtés de même longueur. &      \\
+                & $3$ côtés de même longueur.          &  \\
+        \SetCell[r=3]{m} Amplitude des angles
+                & $3$ angles aigus ($< \ang{90}$).     &    \\
+                & $1$ angle droit ($= \ang{90}$).      &    \\
+                & $1$ angle obtus ($> \ang{90}$).      &   \\
+    \end{tblr}
+\end{center}
+
+La nature d'un triangle est la combinaison du critère longueur des côtés et
+amplitudes des angles. On dira par exemple qu'un triangle est isocèle acutangle.
+
+\begin{exercise}
+    Complète le tableau suivant en traçant une croix dans chaque case lorsque le triangle correspondant existe. Justifie brièvement les cases que tu as laissées vides.
+    
+    \begin{center}
+        \begin{tblr}{hlines, vlines, colspec={*{4}{X[c]}}, rows={1cm,m},
+        vline{1}={1}{white}, hline{1}={1}{white}}
+                    & Triangle scalène & Triangle isocèle & Triangle équilatéral \\
+            Triangle acutangle   &                  &                  &                      \\
+            Triangle rectangle   &                  &                  &                      \\
+            Triangle obtusangle  &                  &                  &                      \\
+        \end{tblr}
+    \end{center}
+\end{exercise}
+
+\begin{solution}
+    \begin{center}
+        \begin{tblr}{hlines, vlines, rows={1.5cm, m}, row{1}={1.2em}, colspec={Q[c, m, 3cm] Q[c, m, 3cm] Q[c, m, 3cm] Q[c, m, 3cm]}}
+                    & Triangle scalène & Triangle isocèle & Triangle équilatéral \\
+            Triangle acutangle   & \checkmark       & \checkmark       & \checkmark          \\
+            Triangle rectangle   & \checkmark       & \checkmark       &                     \\
+            Triangle obtusangle  & \checkmark       & \checkmark       &                     \\
+        \end{tblr}
+    \end{center}
+    
+    Justifications :
+    \begin{itemize}
+        \item Un triangle équilatéral a toujours ses trois angles de $\ang{60}$, il est donc toujours acutangle. Il ne peut pas être rectangle (sinon un angle vaudrait $\ang{90}$) ni obtusangle (sinon un angle dépasserait $\ang{90}$), car la somme des angles resterait supérieure à $\ang{180}$.
+        \item Toutes les autres combinaisons sont possibles. Par exemple, un triangle scalène peut être acutangle, rectangle ou obtusangle. Un triangle isocèle peut également être acutangle, rectangle (isocèle rectangle avec angles de $\ang{90}$, $\ang{45}$, $\ang{45}$) ou obtusangle.
+    \end{itemize}
+\end{solution}
+
+
+\begin{exercise}
+    Identifier la nature d'un triangle
+    
+    Pour chacun des triangles décrits ci-dessous, donne sa nature.
+    
+    \begin{enumerate}
+        \item Triangle $ABC$ : $\longueur{AB} = \qty{5}{cm}$, $\longueur{BC} = \qty{5}{cm}$, $\longueur{CA} = \qty{3}{cm}$.
+        \item Triangle $DEF$ : $\amp{D} = \ang{90}$, $\amp{E} = \ang{45}$, $\amp{F} = \ang{45}$.
+        \item Triangle $GHI$ : $\longueur{GH} = \longueur{HI} = \longueur{IG} = \qty{6}{cm}$.
+        \item Triangle $JKL$ : $\amp{J} = \ang{110}$, $\amp{K} = \ang{40}$, $\amp{L} = \ang{30}$.
+    \end{enumerate}
+\end{exercise}
+
+\begin{solution}
+    \begin{enumerate}
+        \item Triangle $ABC$ : isocèle (deux côtés de $\qty{5}{cm}$) et acutangle (tous les angles sont aigus).
+        \item Triangle $DEF$ : scalène (côtés de longueurs différentes) et rectangle (un angle droit en $D$). Il est aussi isocèle car les angles $\widehat{E}$ et $\widehat{F}$ sont égaux, donc les côtés opposés $[DF]$ et $[DE]$ sont de même longueur.
+        \item Triangle $GHI$ : équilatéral (trois côtés égaux) et acutangle (trois angles de $\ang{60}$).
+        \item Triangle $JKL$ : scalène (côtés de longueurs différentes) et obtusangle (un angle obtus de $\ang{110}$ en $J$).
+    \end{enumerate}
+\end{solution}
+
+\subsection{Amplitudes des angles d'un triangle}
+Sur une feuille :
+\begin{itemize}
+    \item dessine un triangle,
+    \item colorie ses trois angles en trois couleurs différentes,
+    \item découpe ceux-ci. 
+\end{itemize}
+Place tes angles côte à côte et colle-les ici.
+\vspace{3cm}
+
+Quelle est la nature de l'angle que tu
+obtiens ? \dotfill.
+
+Que peux-tu en déduire ? \dotfill.
+
+\begin{tcolorbox}[title=Somme des amplitudes des angles d'un triangle]
+\begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 3/0/B, 2/2/C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkAngles[size=0.5](B,A,C A,C,B C,B,A)
+\end{tikzpicture}
+\end{tcolorbox}
+
+Les angles d'un triangle ont d'autres propriétés que tu dois connaître également
+!
+\begin{tcolorbox}[title=Amplitude des angles dans un triangle équilatéral]
+    Un triangle équilatéral possède trois angles de même amplitude.
+    \begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 3/0/B}
+    \tkzDefPoint(60:3){C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkAngles[size=0.5, mark=|](B,A,C A,C,B C,B,A)
+\end{tikzpicture}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Amplitude des angles dans un triangle isocèle]
+    Un triangle isocèle possède deux angles de même amplitude qu'on nomme les
+    angles à la base.
+    
+    \begin{tikzpicture}
+    \tkzDefPoints{0/0/A, 2/0/B}
+    \tkzDefTriangle[two angles=70 and 70](A,B)\tkzGetPoint{C}
+
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkAngles[size=0.5, mark=|](B,A,C C,B,A)
+    \tkzMarkAngle[size=0.5](A,C,B)
+\end{tikzpicture}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Amplitude des angles dans un triangle rectangle]
+    \begin{tikzpicture}[scale=0.7]
+    \tkzDefPoints{0/0/A, 3/0/B, 0/4/C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above](C)
+    \tkzMarkRightAngle(B,A,C)
+    \tkzMarkAngles[size=0.5](A,C,B C,B,A)
+\end{tikzpicture}
+\end{tcolorbox}
+
+\begin{exercise}
+    Détermine l'amplitude de l'angle demandé dans chacun des cas suivants. Explique brièvement ton raisonnement en citant la propriété utilisée.
+    
+    \begin{enumerate}[itemsep=2cm]
+        \item Dans le triangle $ABC$, on sait que $\amp{A} = \ang{52}$ et $\amp{B} = \ang{73}$. Calcule $\amp{C}$.
+        
+        \item Le triangle $DEF$ est équilatéral. Quelle est l'amplitude de l'angle $\amp{E}$ ?
+        
+        \item Le triangle $GHI$ est isocèle en $G$ et $\amp{G}=\ang{40}$. Calcule $\amp{H}$ et $\amp{I}$.
+        
+        \item Le triangle $JKL$ est rectangle en $J$. L'angle $\widehat{K}$ mesure $\ang{35}$. Calcule $\amp{L}$.
+        
+        \item Le triangle $MNP$ est isocèle en $M$. L'angle à la base $\widehat{N}$ mesure $\ang{72}$. Calcule $\amp{M}$ et $\amp{P}$.
+        
+        \item Le triangle $QRS$ est rectangle et isocèle en $Q$. Calcule $\amp{R}$ et $\amp{S}$.
+        
+        \item Dans le triangle $TUV$, $\amp{T} = \ang{35}$ et $\amp{U} = \ang{110}$. Calcule $\amp{V}$. Quelle est la nature du triangle $TUV$ selon ses angles ?
+        
+        \item Dans le triangle $WXY$, $\amp{W} = \ang{28}$ et $\amp{X} = \ang{62}$. Calcule $\amp{Y}$. Quelle est la nature du triangle $WXY$ selon ses angles ?
+    \end{enumerate}
+    \vspace*{2cm}
+\end{exercise}
+
+\begin{solution}
+    \begin{enumerate}
+        \item $\amp{C} = \ang{180} - \ang{52} - \ang{73} = \ang{55}$. Propriété : la somme des amplitudes des angles d'un triangle vaut $\ang{180}$.
+        
+        \item $\amp{E} = \ang{60}$. Propriété : les trois angles d'un triangle équilatéral sont égaux et leur somme vaut $\ang{180}$, donc chacun mesure $\ang{60}$.
+        
+        \item $\amp{H} = \amp{I} = (\ang{180} - \ang{40}) \div 2 = \ang{140} \div 2 = \ang{70}$. Propriétés : somme des angles d'un triangle et égalité des angles à la base dans un triangle isocèle.
+        
+        \item $\amp{L} = \ang{90} - \ang{35} = \ang{55}$. Propriété : dans un triangle rectangle, les deux angles aigus sont complémentaires.
+        
+        \item $\amp{P} = \amp{N} = \ang{72}$ (angles à la base égaux). $\amp{M} = \ang{180} - \ang{72} - \ang{72} = \ang{36}$. Propriétés : somme des angles et égalité des angles à la base dans un triangle isocèle.
+        
+        \item Le triangle est rectangle en $Q$, donc $\amp{Q} = \ang{90}$. Il est aussi isocèle en $Q$, donc $QR = QS$ et les angles à la base $\amp{R}$ et $\amp{S}$ sont égaux. $\amp{R} = \amp{S} = (\ang{180} - \ang{90}) \div 2 = \ang{90} \div 2 = \ang{45}$. Propriétés : somme des angles, triangle rectangle et triangle isocèle.
+        
+        \item $\amp{V} = \ang{180} - \ang{35} - \ang{110} = \ang{35}$. Le triangle $TUV$ possède un angle obtus ($\ang{110}$), il est donc obtusangle. De plus, $\amp{T} = \amp{V} = \ang{35}$, le triangle est donc isocèle en $U$. Nature complète : triangle isocèle obtusangle.
+        
+        \item $\amp{Y} = \ang{180} - \ang{28} - \ang{62} = \ang{90}$. Le triangle possède un angle droit, il est donc rectangle. Nature complète : triangle rectangle (et scalène car tous les angles sont différents).
+    \end{enumerate}
+\end{solution}
+
+\begin{exercise}
+    Les points $B$, $D$ et $E$ sont alignés. Détermine l'amplitude de l'angle
+    $\widehat{DCE}$. Note tout ton raisonnement.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/A, 2/0/B}
+            \tkzDefPoint(60:2){C}
+            \tkzDrawPolygon(A,B,C)
+            \tkzDefShiftPoint[B](70:2){D}
+            \tkzDrawPolygon(B,C,D)
+            \tkzInterLC(B,D)(D,C)
+            \tkzGetPoints{E}{F}
+            \tkzDrawPolygon(C,D,F)
+            \tkzMarkSegments[mark=|](A,B B,C C,A B,D)
+            \tkzMarkSegments[mark=||](C,D D,F)
+            \tkzLabelPoints[below left](A)
+            \tkzLabelPoints[below](B)
+            \tkzLabelPoints[above left](C)
+            \tkzLabelPoints[right](D)
+            \tkzLabelPoint[above](F){E}
+            \tkzMarkAngle[size=0.5](D,C,F)
+            \tkzLabelAngle[pos=0.75](D,C,F){$?$}
+            \tkzMarkAngle[size=0.5](D,B,C)
+            \tkzLabelAngle[pos=0.75](D,B,C){\scriptsize$\ang{50}$}
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\subsection{Droites remarquables dans le triangle}
+
+pour moi ça n'a pas de sens de voir le cercle incsrit et circonscirt dans ce
+chapitre...
+
+\subsection{Construction de triangles}
+
+\begin{exercise}
+    Construis un triangle $BAE$ dont les dimensions des côtés sont \SI{3}{cm}, \SI{4}{cm} et \SI{6}{cm}.
+    \vspace{4cm}
+\end{exercise}
+
+\begin{exercise}
+    Trace un triangle $SVP$, rectangle en $V$, si tu sais que $\overline{SV}=$\SI{2}{cm} et $\overline{VP}=$\SI{3}{cm}.
+    \vspace{4cm}
+\end{exercise}
+
+\begin{exercise}
+    Construis le triangle $MER$ si tu sais que $\overline{ME}=$\SI{4}{cm}, $|\widehat{M}|=40\degres$ et $|\widehat{E}|= 55\degres$.
+    \vspace{7cm}
+\end{exercise}
+
+\begin{exercise}
+    Construis, si possible, le triangle $BIC$ si tu sais que $\overline{BI}=$\SI{3}{cm}, $\overline{IC}=$\SI{3}{cm} et $\overline{CB}=$\SI{7}{cm}.
+    \vspace{7cm}
+\end{exercise}
+
+\begin{exercise}
+    Complète les phrases ci-dessous en langage mathématiques.
+    \begin{enumerate}[itemsep=.7cm]
+        \item Si le triangle \(DEF\) est rectangle en \(F\), alors
+        \item Si le triangle \(RST\) est isocèle en \(T\), alors
+        \item Si le triangle \(MNP\) est équilatéral, alors
+        \item Si le triangle \(ABC\) est isocèle rectangle en \(C\), alors
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+
 \end{document}
