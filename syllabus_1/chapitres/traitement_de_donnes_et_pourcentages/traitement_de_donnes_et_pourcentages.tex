@@ -38,8 +38,8 @@
                 vlines,
                 colspec={lCCCCC},
                 rows={.7cm, m},
-                column{1}={gray!40, font=\bfseries},
-                row{1}={gray!40, font=\bfseries},
+                column{1}={blue!30, font=\bfseries},
+                row{1}={blue!30, font=\bfseries},
                 cell{1}{1}={white},
                 hline{1}={1}{white},
                 vline{1}={1}{white}
@@ -64,8 +64,8 @@
                 vlines,
                 colspec={lCCCCC},
                 rows={.7cm, m},
-                column{1}={gray!40, font=\bfseries},
-                row{1}={gray!40, font=\bfseries},
+                column{1}={blue!30, font=\bfseries},
+                row{1}={blue!30, font=\bfseries},
                 cell{1}{1}={white},
                 hline{1}={1}{white},
                 vline{1}={1}{white}
@@ -275,7 +275,7 @@ Réorganisation des réponses :
             vlines,
             columns={4cm, c},
             rows={1cm,m},
-            row{1}={gray!40, font=\bfseries},
+            row{1}={blue!30, font=\bfseries},
         }
          &  & \\
          &  & \\
@@ -298,7 +298,7 @@ Sur base de ces réponses, complète le tableau suivant.
             vlines,
             colspec={lX[c]l},
             rows={2cm,m},
-            row{1}={c, 1cm, gray!40, font=\bfseries},
+            row{1}={c, 1cm, blue!30, font=\bfseries},
             column{2}={7cm},
         }
         Mot                & Définition & Dans notre exemple \\
@@ -410,7 +410,7 @@ Il existe plusieurs façons de représenter visuellement une distribution statis
             \draw[->] (-0.5,0) -- (5,0) node[right]{\footnotesize modalités};
             \draw[->] (0,-0.5) -- (0,4.5) node[above]{\footnotesize effectif};
             \foreach \x/\h/\lbl in {1/2/0, 2/4/1, 3/3/2, 4/1/3} {
-                \draw[fill=gray!30, thick] (\x-0.3,0) rectangle (\x+0.3,\h);
+                \draw[fill=blue!30, thick] (\x-0.3,0) rectangle (\x+0.3,\h);
                 \node[below] at (\x,-0.2) {\lbl};
             }
             \node[below=0.6cm] at (2.2,-0.6) {Diagramme B};
@@ -472,7 +472,7 @@ La \textbf{moyenne arithmétique} d'une série de valeurs est le nombre qui rés
                     vlines,
                     colspec={*{8}{X[c]}},
                     rows={0.9cm, m},
-                    row{1}={gray!40, font=\bfseries}
+                    row{1}={blue!30, font=\bfseries}
               }
               Jour & Lu & Ma & Me & Je & Ve & Sa & Di \\
               ($^\circ$C) & 18 & 21 & 19 & 23 & 20 & 17 & 22 \\
@@ -528,7 +528,7 @@ Une même situation statistique peut t'être présentée de différentes façons
                     vlines,
                     colspec={*{6}{X[c]}},
                     rows={0.9cm, m},
-                    row{1}={gray!40, font=\bfseries}
+                    row{1}={blue!30, font=\bfseries}
               }
               {Moyen de \\ transport}& À pied & En Vélo & En Bus & En Voiture & Total \\
               Effectif & 45 & 30 & 60 & 15 & 150 \\
@@ -590,7 +590,7 @@ Une même situation statistique peut t'être présentée de différentes façons
                     vlines,
                     colspec={X[c]X[c]X[c]},
                     rows={0.9cm, m},
-                    row{1}={gray!40, font=\bfseries}
+                    row{1}={blue!30, font=\bfseries}
               }
               Matière préférée & Effectif & Fréquence (\%) \\
               Français         &          &                \\
@@ -659,7 +659,7 @@ Une même situation statistique peut t'être présentée de différentes façons
 %    \end{center}
 %    \begin{center}
 %        \begin{tikzpicture}[scale=0.8]
-%            \draw[step=1, gray!40, thin] (-4.5,-4.5) grid (4.5,4.5);
+%            \draw[step=1, blue!30, thin] (-4.5,-4.5) grid (4.5,4.5);
 %            \draw[->] (-4.5,0) -- (4.5,0) node[right]{$x$};
 %            \draw[->] (0,-4.5) -- (0,4.5) node[above]{$y$};
 %            \foreach \i in {-4,...,4} {
@@ -772,7 +772,7 @@ Une même situation statistique peut t'être présentée de différentes façons
 %    Sur le plan de la kermesse, place dans le repère orthonormé dont l'entrée se situe à l'origine, le stand de tir se trouve au point $\left(3;5\right)$, le manège au point $\left(-2;4\right)$, et la pêche aux canards au point $\left(1;-3\right)$.
 %    \begin{center}
 %        \begin{tikzpicture}[scale=0.8]
-%            \draw[step=1, gray!30, thin] (-4.5,-4.5) grid (4.5,5.5);
+%            \draw[step=1, blue!30, thin] (-4.5,-4.5) grid (4.5,5.5);
 %            \draw[->] (-4.5,0) -- (4.5,0) node[right]{$x$};
 %            \draw[->] (0,-4.5) -- (0,5.5) node[above]{$y$};
 %            \foreach \i in {-4,...,4} {
@@ -797,7 +797,7 @@ Une même situation statistique peut t'être présentée de différentes façons
                     vlines,
                     colspec={X[c]*{8}{X[c]}},
                     rows={0.9cm, m},
-                    row{1}={gray!40, font=\bfseries}
+                    row{1}={blue!30, font=\bfseries}
               }
               Élève n° & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
               Note        & 8 & 14 & 16 & 10 & 18 & 12 & 9 & 14 \\
@@ -811,7 +811,7 @@ Une même situation statistique peut t'être présentée de différentes façons
     \end{enumerate}
     \begin{center}
         \begin{tikzpicture}[scale=0.6]
-            \draw[step=1, gray!30, thin] (0,0) grid (9,20);
+            \draw[step=1, blue!30, thin] (0,0) grid (9,20);
             \draw[->] (0,0) -- (9.5,0) node[right]{\footnotesize élève};
             \draw[->] (0,0) -- (0,21) node[above]{\footnotesize note};
             \foreach \i in {1,...,8} {
@@ -897,8 +897,8 @@ Une même situation statistique peut t'être présentée de différentes façons
 %                 colspec={CCCCC},
 %                 hlines,
 %                 vlines,
-%                 row{1}={gray!40, font = \bfseries},
-%                 column{1}={gray!40,font = \bfseries},
+%                 row{1}={blue!30, font = \bfseries},
+%                 column{1}={blue!30,font = \bfseries},
 %                 rows={1cm, m}}
 %             Vendeurs & Citadines & Sportives & Routières & Totaux \\
 %             Paul     & 3         & 5         &           & 17     \\
@@ -982,8 +982,8 @@ Une même situation statistique peut t'être présentée de différentes façons
 %             vlines,
 %             colspec={CCCC},
 %             rows={1cm, m},
-%             column{1}={gray!40, font=\bfseries},
-%             row{1}={2cm, gray!40, font=\bfseries},
+%             column{1}={blue!30, font=\bfseries},
+%             row{1}={2cm, blue!30, font=\bfseries},
 %         }
 %         Option                & Nombre d'élèves & Pourcentage & Amplitude \\
 %         Informatique          &                 &             &           \\
@@ -1041,7 +1041,7 @@ Une même situation statistique peut t'être présentée de différentes façons
 %                 vlines,
 %                 columns={2cm, c},
 %                 rows={1cm, m},
-%                 column{1}={3cm, gray!40, font=\bfseries}
+%                 column{1}={3cm, blue!30, font=\bfseries}
 %             }
 %             Temps en minutes         & 1 & 2 & 3 & 7 & 15 \\
 %             Quantité d'eau en litres &   &   &   &   &    \\
@@ -1064,7 +1064,7 @@ Une même situation statistique peut t'être présentée de différentes façons
 %                 vlines,
 %                 columns={1.5cm, c},
 %                 rows={.7cm, m},
-%                 row{1}={gray!40, font=\bfseries}
+%                 row{1}={blue!30, font=\bfseries}
 %             }
 %             Jaune & Rouge & Rose & Vert & Bleu & Orange & Autre & Total \\
 %             3     & 2     & 5    & 2    & 7    & 5      & 3     &       \\
