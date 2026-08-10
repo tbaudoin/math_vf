@@ -21,7 +21,6 @@
 %==============================================================================
 \renewcommand\chapterlinesformat[3]%
 {%
-    %\tikzexternaldisable%
     \begin{tcolorbox}[enhanced,
             colback=white,
             boxrule=2 pt,
@@ -38,21 +37,24 @@
             right=\paperwidth-1in-\hoffset-\oddsidemargin-\textwidth,
             top=0.6cm,
             bottom=0.6cm,
-            overlay={\node[fill=black,
-                        draw=white,
-                        rounded corners=0.5cm,
-                        line width=0.15cm,
-                        inner sep=0pt,
-                        text width=1.7cm,
-                        minimum height=1.7cm,
-                        align=center,
-                        font=\color{white}\sffamily\bfseries\fontsize{30}{36}\selectfont
-                    ]
-                    (chapname) at ([xshift=-4cm] frame.north east){\thechapter};
-                    \node[font=\small,anchor=south,inner sep=2pt] at (chapname.north){\MakeUppercase\chaptername};}]
+            overlay={%
+                \ifx\relax#2\relax\else % Si #2 n'est pas vide (chapitre numéroté)
+                    \node[fill=black,
+                            draw=white,
+                            rounded corners=0.5cm,
+                            line width=0.15cm,
+                            inner sep=0pt,
+                            text width=1.7cm,
+                            minimum height=1.7cm,
+                            align=center,
+                            font=\color{white}\sffamily\bfseries\fontsize{30}{36}\selectfont
+                        ]
+                        (chapname) at ([xshift=-4cm] frame.north east){\thechapter};
+                        \node[font=\small,anchor=south,inner sep=2pt] at (chapname.north){\MakeUppercase\chaptername};
+                \fi%
+            }]
         #3
-    \end{tcolorbox}
-    %\tikzexternalenable
+    \end{tcolorbox}%
 }
 \renewcommand{\thesection}{\arabic{section}}
 
