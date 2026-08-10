@@ -2,4 +2,949 @@
 \begin{document}
 \raggedbottom
 \chapter{Base en géometrie}
+
+\section{Vocabulaire et notations}
+
+
+\begin{tblr}{hlines, vlines, colspec={X[1,l]X[2,l]X[1,l]},
+    row{1}={blue!30,font=\bfseries}, column{1}={font=\bfseries}}
+    Objet                                              & Convention                                                                                                   & Exemple \\
+    Point                                              & Un point se note à l'aide d'une lettre majuscule.                                                            &         \\
+    Droite                                             & Une droite se note à l'aide soit d'une lettre minuscule, soit de
+    deux lettres majuscules. Une droite est illimitée. &                                                                                                                        \\
+    Demi-droite                                        & Une demi-droite se note à l'aide de deux lettres majuscules
+    avec un crochet qui montre l'origine de la droite. &                                                                                                                        \\
+    Un segment de droite                               & Un segment de droite se note à l'aide de deux lettres
+    majuscules entre crochet.                          &                                                                                                                        \\
+    Droites parallèles                                 & Deux droites parallèles sont des droites qui n'ont pas
+    de point d'intersection.                           &                                                                                                                        \\
+    Droites sécantes                                   & Deux droites sécantes sont des droites qui possèdent un
+    point d'intersection.                                                                                                                                                       \\
+    Droites perpendiculaires                           & Deux droites perpendiculaires sont deux droites
+    sécantes en angle droit ($=\ang{90}$).             &                                                                                                                        \\
+    Notion d'appartenance                              & Un point appartient à une droite (à un segment, à une demi-droite, \ldots) s'il fait partie de cette droite. &         \\
+\end{tblr}
+
+\newpage
+\begin{exercise}
+    Trace les élements suivant en respectant les couleurs.
+
+    \tcbsidebyside[lefthand ratio=0.25,blanker]{
+        \begin{itemize}
+            \item \(AD\) en rouge,
+            \item \(\lbrack CD\rbrack\) en vert,
+            \item \(AB\rbrack\) en gris,
+            \item \(\lbrack BC\rbrack\) en noir,
+            \item \(\lbrack EC\) en bleu.
+        \end{itemize}
+    }{
+        \begin{tikzpicture}[scale=2]
+            \tkzInit[xmin=-0.4, xmax=4.4, ymin=-0.4, ymax=3.4]
+            \tkzGrid[sub, subxstep=0.2, subystep=0.2]
+            \tkzDefPoints{0/2/A, 1/0/E, 2/0/C, 4/0.25/D,3/3/B}
+            \tkzDrawPoints(A,...,E)
+            \tkzLabelPoints[below left](A,...,E)
+        \end{tikzpicture}
+    }
+
+
+    Nomme \(X\) l'intersection entre \(AD\) et \(\lbrack EC\) puis complète les
+    phrases suivantes.
+
+    \begin{enumerate}[itemsep=2em]
+        \item \(AD\) représente \dotfill.
+        \item \(\lbrack CD\rbrack\) représente \dotfill.
+        \item \(AB\rbrack\) représente \dotfill.
+        \item \(\lbrack EC\ \) représente \dotfill.
+        \item \(X\) est un point de \(AD\). On dit que \(X\) \dotfill à \(AD\). Cela
+              se note \(X\)\makebox[1cm]{\dotfill} \(AD.\).
+        \item \(X\) n'est pas un point de \(AB\rbrack\). On dit que \(X\) \dotfill à
+              \(AB\rbrack\). \par
+              Cela se note \(X\) \makebox[1cm]{\dotfill} \(AB]\).
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Complète les pointillés à l'aide du symbole adéquat concernant la position
+    relative de deux droites.
+    \tcbsidebyside[blanker]{
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/B, 4/0/C, 0/3/A, 4/3/D}
+            \tkzDefMidPoint(A,D)\tkzGetPoint{E}
+            \tkzInterLL(B,E)(D,C)\tkzGetPoint{F}
+            \tkzDrawLines(B,C A,D B,F C,F B,A)
+            \tkzMarkRightAngles(C,B,A B,A,D A,D,C D,C,B)
+            \tkzDrawPoints(A,...,F)
+            \foreach \p/\l in {%
+                    A/below left,
+                    B/above left,
+                    C/below right,
+                    D/above right,
+                    E/above left,
+                    F/left}{
+                    \tkzLabelPoints[\l](\p)
+                }
+            \tkzLabelLine[pos=1.2, left](C,F){$d$}
+        \end{tikzpicture}
+    }{
+        \begin{enumerate}[itemsep=1cm, cols=2]
+            \item \(d \blank[width=1cm]{} AB\)
+            \item \(BF \blank[width=1cm]{} d\)
+            \item \(AB \blank[width=1cm]{} CD\)
+            \item \(AD] \blank[width=1cm]{} CD\)
+            \item \(BE \blank[width=1cm]{} BC\)
+            \item \(AD \blank[width=1cm]{} d\)
+            \item \(FC \blank[width=1cm]{} AB\)
+            \item \(EF \blank[width=1cm]{} BC\)
+        \end{enumerate}
+    }
+\end{exercise}
+
+
+\begin{exercise}
+    Complète les pointillés à l'aide des symboles \(\in\) et \(\notin\).
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoint(0,0){G}
+            \tkzDefPoint(3,0){B}
+            \tkzDefPoint(0,3){F}
+            \tkzDefPoint(7,0){H}
+            \tkzDefPointOnLine[pos=0.5](F,H)\tkzGetPoint{A}
+            \tkzDrawLine[add=1cm and 4cm](G,A)
+            \tkzDrawLine[add=0cm and 1cm](F,H)
+            \tkzDrawPoints(A,B,F,G,H)
+            \tkzLabelLine[pos=2, above](G,A){d}
+            \tkzLabelPoints(A)
+            \tkzLabelPoints(B)
+            \tkzLabelPoints(F)
+            \tkzLabelPoints(G)
+            \tkzLabelPoints(H)
+        \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}[itemsep=1cm, cols=4]
+        \item \(F \blank[width=1cm]{} [AH\)
+        \item \(B \blank[width=1cm]{} d\)
+        \item \(G \blank[width=1cm]{} AG\)
+        \item \(H \blank[width=1cm]{} [FA\)
+        \item \(A \blank[width=1cm]{} d\)
+        \item \(H \blank[width=1cm]{} [AF\)
+        \item \(G \blank[width=1cm]{} d\)
+        \item \(H \blank[width=1cm]{} [AH]\)
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{L'équerre multifonction}
+\subsection{Un couteau suisse dans ton plumier !}
+
+Imagine un outil magique qui remplacerait à lui seul quatre instruments de géométrie différents... Bonne nouvelle : cet outil existe déjà et il se trouve dans ton plumier ! C'est \textbf{l'équerre multifonction}, aussi appelée très souvent \textbf{équerre Aristo}.
+
+Au lieu d'encombrer ta table avec plusieurs outils, l'équerre multifonction combine :
+\begin{enumerate}
+    \item \textbf{Une règle graduée} pour mesurer et tracer des segments.
+    \item \textbf{Une équerre classique} (triangle rectangle) pour vérifier et tracer des angles droits.
+    \item \textbf{Un rapporteur} pour mesurer et construire des angles de $0^\circ$ à $180^\circ$.
+    \item \textbf{Un réseau de lignes parallèles} pour tracer directement des droites parallèles sans bouger de règle additionnelle.
+\end{enumerate}
+
+Apprendre à la maîtriser, c'est gagner un temps précieux et réaliser des tracés d'une grande précision !
+
+
+\subsection{Anatomie de l'équerre multifonction}
+
+Pour bien utiliser ton équerre, il faut d'abord apprendre à lire ses différentes
+zones :
+
+\begin{wrapfigure}{r}{0.45\textwidth} % r = à droite, largeur réservée = 45% du texte
+    \centering
+    \begin{tikzpicture}[scale=0.35] % Échelle légèrement réduite pour bien s'insérer
+        \tkzRappEquerre[Largeur=8]
+    \end{tikzpicture}
+\end{wrapfigure}
+
+\textbf{Le zéro central ($0$)}\par
+Il se trouve \textbf{au milieu} du grand côté (l'hypoténuse). C'est le point de repère principal pour toutes les mesures de longueur et le centrage lors de la mesure des angles.
+
+\textbf{Le bord gradué (Grande règle)}\par
+Gradué en millimètres et centimètres de part et d'autre du zéro central (par exemple de $0$ à $7$~cm vers la gauche, et de $0$ à $7$~cm vers la droite).
+
+\textbf{La ligne d'orthogonalité (ou ligne de hauteur)}\par
+C'est la ligne perpendiculaire au grand côté qui passe par le sommet du triangle ($90^\circ$) et rejoint le zéro central. Elle sert à tracer des perpendiculaires.
+
+\textbf{Le demi-cercle gradué (Rapporteur)}\par
+Gradué de $0^\circ$ à $180^\circ$. Attention : il possède souvent deux échelles de lecture (jaune/transparente ou horaire/anti-horaire) pour mesurer les angles ouverts vers la gauche ou vers la droite.
+
+\textbf{Les lignes de parallélisme}\par
+Ce sont les lignes horizontales gravées parallèlement au grand côté gradué. Elles permettent de tracer des droites parallèles distantes de quelques millimètres ou centimètres.
+
+
+\subsection{Comment réaliser les tracés de base ?}
+
+\begin{tcolorbox}[title=Perpendiculaire ($\perp$)]
+    Tracer une droite perpendiculaire à une droite $d$ passant par un point $P$.
+    \begin{tikzpicture}
+        \clip (0,-1) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 4/2/B}
+        \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d$}
+        \tkzDrawPoints(P)
+        \tkzLabelPoints[above right ](P)
+        \tkzDefLine[orthogonal=through P](A,B)\tkzGetPoint{C}
+        % \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,-1) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 4/2/B}
+        \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d$}
+        \tkzDrawPoints(P)
+        \tkzLabelPoints[above right ](P)
+        \coordinate (C) at ($(P)!1.5cm!90:(A)$);
+        \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,-1) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 4/2/B}
+        \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d$}
+        \tkzDrawPoints(P)
+        \tkzLabelPoints[above right ](P)
+        \coordinate (C) at ($(P)!1.5cm!90:(A)$);
+        \tkzRappEquerre[Echelle=0.3, Origine=P, Rotation=auto/C]
+        \coordinate (D) at ($(P)!-1.5cm!90:(A)$);
+        \tkzDrawSegment[red, line width=1pt](D,C)
+        \tkzCrayon[Origine=C, Echelle=0.5, Rotation=-10]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,-1) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 4/2/B}
+        \tkzDefPointOnLine[pos=0.5](A,B)\tkzGetPoint{P}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d$}
+        \tkzDrawPoints(P)
+        \tkzLabelPoints[above right ](P)
+        \coordinate (C) at ($(P)!1.5cm!90:(A)$);
+        \coordinate (D) at ($(P)!-1.5cm!90:(A)$);
+        \tkzDrawSegment[red, line width=1pt](D,C)
+        \tkzMarkRightAngle[draw=red, size=0.3](C,P,B)
+    \end{tikzpicture}
+    \begin{enumerate}
+        \item Place le zéro central de l'équerre exactement sur le point $P$ et la
+              ligne d'orthogonalité sur la droite $d$.
+        \item Trace la droite le long du grand bord gradué (tu peux la prolonger si
+              nécessaire, elle n'a pas de fin).
+        \item N'oublie pas de coder l'angle droit obtenu.
+    \end{enumerate}
+\end{tcolorbox}
+
+\begin{exercise}
+    Trace la droite perpendiculaire à la droite $d$ passant par le point $P$.
+    \vfil
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/A, 3/1/B}
+            \tkzDrawLine(A,B)
+            \tkzLabelLine[pos=0,below left](A,B){$d$}
+            \tkzDefPointOnLine[pos=0.3](A,B)\tkzGetPoint{P}
+            \tkzDrawPoints(P)
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\newpage
+\begin{tcolorbox}[title=Parallèle ($\varparallel$)]
+    Tracer une droite $d_2$ parallèle à une droite $d_1$ à une distance de
+    \qty{2}{cm}.
+
+    \begin{tikzpicture}
+        \clip (0,0) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 3/3/B}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d_1$}
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,0) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d_1$}
+        \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
+        % \tkzDrawSegment(C,D)
+        \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
+        \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,0) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d_1$}
+        \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
+        % \tkzDrawSegment(C,D)
+        \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
+        \tkzDefPointOnLine[pos=0.1](C,D)\tkzGetPoint{X}
+        \tkzDefPointOnLine[pos=0.9](C,D)\tkzGetPoint{Y}
+        \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
+        \tkzDrawSegment[red, line width=1pt](X,Y)
+        \tkzCrayon[Origine=Y, Echelle=0.5, Rotation=90]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \clip (0,0) rectangle (3,4);
+        \tkzDefPoints{0/1/A, 3/3/B, 0/1.72/C}
+        \tkzDrawSegment(A,B)
+        \tkzLabelLine[pos=0,below right](A,B){$d_1$}
+        \tkzDefLine[parallel=through C](A,B)\tkzGetPoint{D}
+        % \tkzDrawSegment(C,D)
+        \tkzDefPointOnLine[pos=0.5](C,D)\tkzGetPoint{M}
+        \tkzDefPointOnLine[pos=0.1](C,D)\tkzGetPoint{X}
+        \tkzDefPointOnLine[pos=0.9](C,D)\tkzGetPoint{Y}
+        % \tkzRappEquerre[Echelle=0.3, Origine=M, Rotation=auto/D]
+        \tkzDrawSegment[red, line width=1pt](X,Y)
+        \tkzLabelSegment[red, pos=0.9, above](X,Y){$d_2$}
+        % \tkzCrayon[Origine=Y, Echelle=0.5, Rotation=-10]
+    \end{tikzpicture}
+    \begin{enumerate}
+        \item Repère la graduation de parallélisme correspondant à $2\text{ cm}$ ($20\text{ mm}$) sur ton équerre.
+        \item Superpose cette ligne de parallélisme exactement sur la droite $d_1$.
+        \item Trace la nouvelle droite $d_2$ le long du grand bord gradué.
+        \item Les droites $d_1$ et $d_2$ sont strictement parallèles ($d_1 \varparallel d_2$).
+    \end{enumerate}
+\end{tcolorbox}
+
+\begin{exercise}
+    Trace une droite $d_2$ parallèle à la droite $d_1$ à une distance de \qty{3}{cm}.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/A, 3/1/B,0/3/P}
+            \tkzDrawLine(A,B)
+            \tkzLabelLine[pos=0,below left](A,B){$d$}
+            \tkzDefLine[parallel=through P](A,B)\tkzGetPoint{C}
+            \tkzDrawLine[white](P,C)
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\newpage
+\begin{tcolorbox}[title=Mesurer un angle]
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(50:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C B,A)
+        \tkzMarkAngle(C,B,A)
+        \tkzDrawPoints(B,C,A)
+        \tkzLabelPoints[above](A)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(50:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C B,A)
+        \tkzMarkAngle(C,B,A)
+        \tkzDrawPoints(B,C,A)
+        \tkzLabelPoints[above](A)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=180]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(50:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C B,A)
+        \tkzMarkAngle(C,B,A)
+        \tkzDrawPoints(B,C,A)
+        \tkzLabelPoints[above](A)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=190]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(50:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C B,A)
+        \tkzMarkAngle(C,B,A)
+        \tkzDrawPoints(B,C,A)
+        \tkzLabelPoints[above](A)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzLabelAngle[pos=1.4](C,B,A){$\ang{40}$}
+    \end{tikzpicture}
+
+    \begin{enumerate}
+        \item Place le \textbf{zéro central} de l'équerre exactement sur le sommet $B$ de l'angle.
+        \item Aligne le grand bord gradué de l'équerre sur l'un des côtés de l'angle (le sommet $B$ reste bloqué sur le zéro).
+        \item Observe où le second côté de l'angle coupe le demi-cercle gradué de
+              l'équerre. Tu peux prolonger la droite si cela est nécessaire.
+        \item Lis l'amplitude en degrés ($^\circ$) en choisissant la bonne graduation (vérifie si l'angle est aigu ou obtus pour ne pas confondre, par exemple, $40^\circ$ et $140^\circ$).
+    \end{enumerate}
+\end{tcolorbox}
+
+
+\begin{exercise}
+    Mesure l'amplitude de l'angle $\widehat{ABC}$ et note sa valeur en utilisant
+    les bonnes notations.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoint(0,0){B}
+            \tkzDefPoint(0:2){C}
+            \tkzDefPoint(120:2){A}
+            \tkzDrawLines[add=0pt and 5pt](B,C B,A)
+            \tkzMarkAngle(C,B,A)
+            \tkzDrawPoints(B,C,A)
+            \tkzLabelPoints[left](A)
+            \tkzLabelPoints[below left](B)
+            \tkzLabelPoints[below](C)
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\newpage
+\begin{tcolorbox}[title=Tracer un angle]
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/C]
+    \end{tikzpicture}
+    \hfill
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/A]
+    \end{tikzpicture}
+
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:1.5){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzRappEquerre[Echelle=0.3, Origine=B, Rotation=auto/A]
+        \tkzDrawSegment[red, line width=1pt](B,A)
+        \tkzCrayon[Origine=A, Echelle=0.5, Rotation=120]
+    \end{tikzpicture}
+    \hfil
+    \begin{tikzpicture}[scale=0.8]
+        \clip (-2,-2) rectangle (3,2);
+        \tkzDefPoint(0,0){B}
+        \tkzDefPoint(10:2){C}
+        \tkzDefPoint(70:2){A}
+        \tkzDrawLines[add=0pt and 5pt](B,C)
+        \tkzDrawPoints(B,C)
+        \tkzLabelPoints[left](B)
+        \tkzLabelPoints[below](C)
+        \tkzDrawLine[add=0pt and 5pt, red, line width=1pt](B,A)
+        \tkzDrawPoint[red](A)
+        \tkzLabelPoints[left, red](A)
+    \end{tikzpicture}
+    \begin{enumerate}
+        \item Place le zéro central de l'équerre exactement sur le sommet $B$ de l'angle.
+        \item Aligne le grand bord gradué de l'équerre sur l'un des côtés de l'angle (le sommet $B$ reste bloqué sur le zéro).
+        \item Fais tourner l'équerre jusqu'à ce que la demi droite $[BC$ coupe la graduation correspondant à l'amplitude de l'angle souhaité.
+        \item Trace la demi droite $[BA$ le long du grand bord gradué de l'équerre.
+        \item Place le point $A$ sur la demi droite que tu viens de créer.
+    \end{enumerate}
+\end{tcolorbox}
+
+
+\begin{exercise}
+    Trace un angle $\widehat{ABC}$ de $\ang{80}$.
+    \begin{center}
+        \begin{tikzpicture}
+            \tkzDefPoints{0/0/B, 3/0/C}
+            \tkzDrawLine[add=0pt and 5pt](B,C)
+            \tkzDrawPoints(B,C)
+            \tkzLabelPoints[below left](B)
+            \tkzLabelPoints[below](C)
+            \tkzDefPoint(80:3){A}
+            \tkzDrawPoint[white](A)
+        \end{tikzpicture}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Construis la droite demandée.
+    \tcbsidebyside[blanker]{
+        Construis $d$ tel que $d \bot a$ et $C \in d$
+        \bigbreak
+        \includegraphics{tikz/droite_construction.tikz}
+    }{
+        Construis $f$ tel que $f \sslash AB$ et $C \notin f$
+        \bigbreak
+        \includegraphics{tikz/droite_construction.tikz}
+    }
+\end{exercise}
+
+\begin{exercise}
+    Place trois points non alignés \(A,\ B\ C\). Trace les éléments suivants~:
+    \begin{enumerate}
+        \item \(AB\)
+        \item \([BC\)
+        \item \([AC]\)
+        \item La droite \(d\) perpendiculaire à \(AB\) passant par \(A\)
+        \item La droite \(d'\) parallèle à \(AB\) passant par \(C\)
+    \end{enumerate}
+\end{exercise}
+\vfil
+\begin{exercise}
+    Construis une demi-droite que tu nommes \(\lbrack AC\). \\
+    Trace \(e\), parallèle à \(\lbrack AC\) à \(2cm\) de \(\lbrack AC\). \\
+    Place \(F\), tel que \(F \in \lbrack AC\ \)et \(|AF| = 1,5\ cm\)
+\end{exercise}
+
+\newpage
+\section{La médiatrice d'un segment}
+
+La médiatrice d'un segment est une droite qui coupe un segment
+perpendiculairement en son milieu.
+
+\begin{center}
+    \faIcon{brain}~\textbf{MED}ia\textbf{T}rice où \textbf{M = milieu} et \textbf{T = perpendiculaire}.
+\end{center}
+
+On peut la tracer de deux façons différentes : avec son équerre ou avec un
+compas.
+
+\begin{tcolorbox}[title= Avec l'équerre, width=.49\linewidth,
+        nobeforeafter,equal height group=A]
+    \begin{minipage}[t][12cm]{\linewidth}
+        \begin{enumerate}
+            \item Place le milieu du segment.
+            \item Trace la droite perpendiculaire à la droite donnée passant par le milieu.
+        \end{enumerate}
+        \vfil
+        \begin{center}
+            \begin{tikzpicture}
+                \tkzDefPoints{0/0/A, 5/0/B}
+                \tkzDrawSegment(A,B)
+                \tkzDrawPoints(A,B)
+                \tkzLabelPoints(A,B)
+            \end{tikzpicture}
+        \end{center}
+    \end{minipage}
+    \tcblower
+    Cette méthode est plus rapide mais moins précise car elle demande une mesure.
+\end{tcolorbox}
+\hfill
+\begin{tcolorbox}[title= Avec le compas, width=.49\linewidth, nobeforeafter,equal height group=A]
+    \begin{minipage}[t][12cm]{\linewidth}
+        \begin{enumerate}
+            \item Trace un arc de cercle dont le centre est l'extrémité du segment
+                  et dont le rayon est supérieur à la moitié de la longueur du segment.
+            \item Sans changer l'ouverture, trace un arc de cercle depuis l'autre extrémité.
+            \item Trace la droite passant par l'intersection des deux arcs de cercles.
+        \end{enumerate}
+        \vfil
+        \begin{center}
+            \begin{tikzpicture}
+                \tkzDefPoints{0/0/A, 5/0/B}
+                \tkzDrawSegment(A,B)
+                \tkzDrawPoints(A,B)
+                \tkzLabelPoints(A,B)
+            \end{tikzpicture}
+        \end{center}
+    \end{minipage}
+    \tcblower
+    Cette méthode est un peu plus longue mais plus précise car elle ne demande
+    pas de mesure.
+
+    Tu peux facilement l'utiliser dans la réalité à l'aide d'une corde !
+\end{tcolorbox}
+
+\newpage
+
+\begin{exercise}
+    Maxime a tracé trois médiatrices. Laquelle est correcte~? Explique pourquoi les deux autres ne le sont pas.
+    \begin{center}
+        \includegraphics[]{img/med.png}
+    \end{center}
+    \dotsforanswer{3}[]
+\end{exercise}
+
+\begin{exercise}
+    Trace la médiatrice des segments ci-dessous.
+    \begin{enumerate}[cols=2]
+        \item \begin{tikzpicture}[baseline=(current bounding box.north)]
+                  \tkzDefPoints{0/0/A, 3/1/B}
+                  \tkzDrawSegment(A,B)
+                  \tkzDrawPoints(A,B)
+                  \tkzLabelPoints[below](A,B)
+                  \tkzDefLine[mediator](A,B)
+                  \tkzGetPoints{C}{D}
+                  \tkzDrawLine[draw=none](C,D)
+              \end{tikzpicture}
+        \item \begin{tikzpicture}[baseline=(current bounding box.north)]
+                  \tkzDefPoints{0/0/A, 0/4/B}
+                  \tkzDrawSegment(A,B)
+                  \tkzDrawPoints(A,B)
+                  \tkzLabelPoints[left](A,B)
+                  \tkzDefLine[mediator](A,B)
+                  \tkzGetPoints{C}{D}
+                  \tkzDrawLine[draw=none](C,D)
+              \end{tikzpicture}
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\section{Les angles}
+Un angle est une portion du plan délimitée par deux demi-droites ayant la même
+origine.
+
+Ces deux demi-droites déterminent deux régions du plan, une région « intérieure »
+(l'angle saillant) et une région « extérieure » (l'angle rentrant). On
+l'explique souvent en traçant un petit arc de cercle pour préciser de quel
+secteur du plan on parle.
+
+\faIcon{pencil-alt}~Annotons le schéma ci-dessous avec le vocabulaire relatif
+aux angles.
+\vfil
+
+\begin{center}
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(-10:3){B}
+        \tkzDefPoint(50:3){C}
+        \tkzDrawLines[add=0pt and 20pt](A,B A,C)
+        \tkzDrawPoints(A,B,C)
+        \tkzLabelPoints[left](A)
+        \tkzLabelPoints[below](B)
+        \tkzLabelPoints[above](C)
+        \tkzMarkAngle(C,A,B)
+        \tkzMarkAngle(B,A,C)
+    \end{tikzpicture}
+\end{center}
+\vfil
+
+L'amplitude d'un angle représente la mesure de son ouverture. Elle ne
+dépend pas de la longueur des côtés dessinés, mais uniquement de l'écartement
+des deux demi-droites. Elle se mesure en degrés et se note avec le symbole
+\(^\circ\).
+
+\faIcon{pencil-alt}~Mesure l'amplitude de l'angle \(\widehat{BAC}\) et note sa
+valeur en utilisant les bonnes notations :
+
+\newpage
+En fonction de la valeur de cette amplitude ($\alpha$), on peut nommer les angles.
+\begin{center}
+    \begin{tblr}{hlines, vlines, rows={2cm, m}, row{1}={1em, blue!30}}
+        Nom de l'angle & Caractéristique                    & Exemple de dessin \\
+        Angle nul      & \(\alpha = \ang{0}\)               &                   \\
+        Angle aigu     & \(\ang{0} < \alpha < \ang{90}\)    &                   \\
+        Angle droit    & \(\alpha = \ang{90}\)              &                   \\
+        Angle obtus    & \(\ang{90} < \alpha < \ang{180}\)  &                   \\
+        Angle plat     & \(\alpha = \ang{180}\)             &                   \\
+        Angle rentrant & \(\ang{180} < \alpha < \ang{360}\) &                   \\
+        Angle plein    & \(\alpha = \ang{360}\)             &                   \\
+    \end{tblr}
+\end{center}
+
+\begin{exercise}
+    Observons l'angle dessiné ci-dessous :
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \tkzDefPoint(0,0){O}
+            \tkzDefPoint(15:3){M}
+            \tkzDefPoint(110:2.5){N}
+
+            \tkzDrawSegment[thick, add=0 and 0.2](O,M)
+            \tkzDrawSegment[thick, add=0 and 0.2](O,N)
+            \tkzDrawPoints[size=4, fill=black](O,M,N)
+
+            \tkzLabelPoint[left](O){$O$}
+            \tkzLabelPoint[below](M){$M$}
+            \tkzLabelPoint[left](N){$N$}
+
+            \tkzMarkAngle[size=0.6cm, mark=none](M,O,N)
+        \end{tikzpicture}
+    \end{center}
+    Complète les phrases suivantes :
+    \begin{enumerate}
+        \item Le sommet de cet angle est le point :
+        \item Les deux côtés de cet angle sont les demi-droites :
+        \item L'amplitude de cet angle est :
+        \item Le nom de cet angle :
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Associe chaque amplitude à la nature de l'angle correspondant :
+    \begin{center}
+        \begin{tblr}{width=.5\linewidth,colspec={rX[l]X[r]l}}
+            \ang{180} & $\bullet$ & $\bullet$ & Angle obtus    \\
+            \ang{42}  & $\bullet$ & $\bullet$ & Angle plein    \\
+            \ang{215} & $\bullet$ & $\bullet$ & Angle plat     \\
+            \ang{90}  & $\bullet$ & $\bullet$ & Angle aigu     \\
+            \ang{135} & $\bullet$ & $\bullet$ & Angle droit    \\
+            \ang{360} & $\bullet$ & $\bullet$ & Angle rentrant \\
+        \end{tblr}
+    \end{center}
+\end{exercise}
+
+\subsection{Angles particuliers}
+Certains couples d'angles entretiennent des relations géométriques remarquables.
+Il est important de savoir les reconnaître et de connaître leurs propriétés.
+
+\begin{center}
+    \begin{tblr}{hlines, vlines, rows={2cm, m}, row{1}={1em, blue!30}}
+        Relation entre les angles         & Caractéristique              & Exemple de dessin \\
+        Deux angles adjacents             & {Même sommet                                     \\et un côté commun} & \\
+        Deux angles complémentaires       & $\alpha + \beta = \ang{90}$  &                   \\
+        Deux angles supplémentaires       & $\alpha + \beta = \ang{180}$ &                   \\
+        Deux angles opposés par le sommet & {$\alpha = \beta$                                \\$\gamma = \delta$} &\\
+    \end{tblr}
+\end{center}
+Remaques :
+\begin{itemize}
+    \item Deux angles adjacents complémentaires forment un angle droit.
+    \item Deux angles adjacents supplémentaires forment un angle plat.
+\end{itemize}
+
+\newpage
+\begin{exercise}
+    Retrouve les paires d'angles complémentaires. Entoure-les dans la même couleur.
+    \begin{center}
+        \includegraphics[width=\linewidth]{chapitres/figures_planes/img/anglescompl.png}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Complète le tableau ci-dessous.
+    \begin{center}
+        \begin{tblr}{
+                hlines,
+                vlines,
+                columns={2cm, c},
+                rows={1cm,m},
+                row{1}={blue!30, font=\bfseries},
+                column{1}={4cm, blue!30, font=\bfseries},
+            }
+            Types d'angles  & Angle $\widehat{A}$ & Angle $\widehat{B}$ \\
+            Supplémentaires & $63\degres$         &                     \\
+            Complémentaires &                     & $63\degres$         \\
+            Complémentaires &                     & $81\degres$         \\
+            Supplémentaires & $112\degres$        &                     \\
+            Supplémentaires &                     & $13,5\degres$       \\
+        \end{tblr}
+    \end{center}
+\end{exercise}
+
+\begin{exercise}
+    Après avoir été programmé, un robot se déplace de la manière suivante~:
+    \begin{multicols}{2}
+        \includegraphics[]{img/robot.png}
+        À l'aide des instruments adéquats, mesure l'amplitude des angles grisés.
+        \begin{enumerate}[itemsep=1cm, label= ]
+            \item \(\amp{P_1} =\)
+            \item \(\amp{P_2} =\)
+            \item \(\amp{P_3} =\)
+        \end{enumerate}
+    \end{multicols}
+\end{exercise}
+
+\begin{exercise}
+    Trace les angles dont les amplitudes sont données ci-dessous.
+    \begin{enumerate}[cols=2, itemsep=3cm, label= ]
+        \item \(\amp{O}=\ang{111}\)
+        \item \(\amp{B}=\ang{50}\)
+        \item \(\amp{BAC}=\ang{62}\)
+        \item \(\amp{SPI}=\ang{250}\)
+    \end{enumerate}
+    \vspace{3cm}
+\end{exercise}
+
+\begin{exercise}
+    Dans chaque cas, coche la nature des angles marqués.
+    \begin{center}
+        \includegraphics[width=\linewidth]{img/angles_particuliers.jpg}
+    \end{center}
+\end{exercise}
+\newpage
+\section{La bissectrice}
+
+La bissectrice d'un angle est une droite qui coupe cet angle en deux angles de
+même amplitude.
+
+\begin{center}
+    \faIcon{brain}~\textbf{BI}ssectrice où \textbf{BI}=deux.
+\end{center}
+
+On peut la tracer de deux façons différentes : avec son équerre ou avec un
+compas.
+
+
+\begin{tcolorbox}[title= Avec l'équerre, width=.49\linewidth,
+        nobeforeafter,equal height group=A]
+    \begin{minipage}[t][12cm]{\linewidth}
+        \begin{enumerate}
+            \item Mesure l'amplitude de l'angle et place un point à la moitié de celle-ci ($P$).
+            \item Trace la droite passant par le sommet de l'angle et par $P$.
+        \end{enumerate}
+        \vfil
+        \begin{center}
+            \begin{tikzpicture}
+                \tkzDefPoints{0/0/A, 5/0/B}
+                \tkzDefPoint(60:5){C}
+                \tkzDrawLines[add=0pt and 5pt](A,B A,C)
+                \tkzDrawPoints(A,B,C)
+                \tkzLabelPoints[below left](A)
+                \tkzLabelPoints[below](B)
+                \tkzLabelPoints[above left](C)
+                \tkzMarkAngle(B,A,C)
+            \end{tikzpicture}
+        \end{center}
+    \end{minipage}
+    \tcblower
+    Cette méthode est plus rapide mais moins précise car elle demande une mesure.
+\end{tcolorbox}
+\hfill
+\begin{tcolorbox}[title= Avec le compas, width=.49\linewidth, nobeforeafter,equal height group=A]
+    \begin{minipage}[t][12cm]{\linewidth}
+        \begin{enumerate}
+            \item Trace un arc dont le centre est le sommet de l'angle ($A$). Cet arc
+                  coupe les côtés de l'angle en $D$ et $E$.
+            \item Trace deux arc de cercles de même rayon dont les centres sont
+                  $D$ et $E$. Ils se coupent en $F$.
+            \item Trace la droite $AF$.
+        \end{enumerate}
+        \vfil
+        \begin{center}
+            \begin{tikzpicture}
+                \tkzDefPoints{0/0/A, 5/0/B}
+                \tkzDefPoint(60:5){C}
+                \tkzDrawLines[add=0pt and 5pt](A,B A,C)
+                \tkzDrawPoints(A,B,C)
+                \tkzLabelPoints[below left](A)
+                \tkzLabelPoints[below](B)
+                \tkzLabelPoints[above left](C)
+                \tkzMarkAngle(B,A,C)
+            \end{tikzpicture}
+        \end{center}
+    \end{minipage}
+    \tcblower
+    Cette méthode est un peu plus longue mais plus précise car elle ne demande
+    pas de mesure.
+
+    Tu peux facilement l'utiliser dans la réalité à l'aide d'une corde !
+\end{tcolorbox}
+
+\newpage
+\begin{exercise}
+    Suis le protocole de construction ci-dessous.
+    \begin{itemize}
+        \item  Trace un angle \(\widehat{POM}\) tel que \(|\widehat{POM}|=150\degres\). \\
+        \item Trace au compas la bissectrice (\(b\)) de cet angle. \\
+        \item Place le point \(K \in b\) tel que \(\overline{KO}=2cm\). \\
+        \item Trace \(a\), perpendiculaire à \([OP\) passant par \(K\).
+    \end{itemize}
+
+\end{exercise}
+
+\newpage
+\section{Exercices mélangés}
+\faIcon{exclamation-triangle}~Cette partie doit être réalisée sur une feuille annexe.
+\setcounter{exercise}{0}
+
+\begin{exercise}
+    Décode les notations géométriques suivantes.
+    \begin{enumerate}[cols=4]
+        \item \(\lbrack CD\)
+        \item \(D\)
+        \item \(\widehat{SEV}\)
+        \item \(F\  \in \lbrack BV\rbrack\)
+        \item \(\overline{CD}\)
+        \item \(MN\  \nvarparallel BC\)
+        \item \(|\widehat{PME}|=80\degres\)
+        \item \(S\  \in RI\)
+        \item \(CD\rbrack\)
+        \item \(|CD|\)
+        \item \(M\  \notin m\)
+        \item \(d \bot p\)
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Vrai ou faux? Lorsque c'est faux, justifie ou donne un contre-exemple.
+    \begin{enumerate}
+        \item Un angle aigu a toujours une amplitude plus petite que celle d'un angle plat.
+        \item Un angle plein est un angle nul.
+        \item La somme de deux angles aigus donne toujours un angle obtus.
+        \item Si on additionne l'amplitude d'un angle aigu à celle d'un angle obtus, on obtient toujours un angle plat.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+
+    \begin{enumerate}[label= $\ast $]
+        \item Trace une droite $f$.
+        \item Place un point $R$ tel que $R \notin f$.
+        \item Trace $a$ tel que $a \varparallel f$.
+        \item Trace $CD$ tel que $CD \varparallel a \varparallel f$.
+        \item Trace $[RD]$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Place trois points non alignés que tu appelleras $R$, $A$ et $Y$.
+    \begin{enumerate}[label= $\ast$]
+        \item Trace $AR$ en vert
+        \item Trace $RY]$ en bleu
+        \item Trace $a$, parallèle à $AR$ et passant par $Y$.
+        \item Trace $d$, perpendiculaire à $RY]$ ne passant pas par $A$
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Trace un segment \([AB]\) qui mesurera \qty{5,5}{cm}. Trace ensuite, au compas, sa médiatrice.
+\end{exercise}
+
+\begin{exercise}
+    Trace les angles demandés ainsi que leurs bissectrices (au compas).
+    \begin{enumerate}[cols=2]
+        \item \(\amp{LUI}=\ang{260}\)
+        \item \(\amp{MOI}=\ang{75}\)
+        \item \(\amp{EUX}=\ang{11}\)
+        \item \(\amp{TOI}=\ang{195}\)
+    \end{enumerate}
+\end{exercise}
 \end{document}
