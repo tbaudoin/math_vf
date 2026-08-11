@@ -5,8 +5,8 @@
 
 \section*{Matières}
 \begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Les polygones.    
     \item Le cercle et le disque.
-    \item Les polygones.
     \item Les droites remarquables dans un triangle.
     \item Formules de périmètre.    
     \item Formules d'aire.
@@ -127,7 +127,7 @@ Pour rappel :
 \begin{exercise}
     Sur le cercle ci-dessous, place et nomme :
 
-    \begin{enumerate}[cols=2, itemsep=0.8cm]
+    \begin{enumerate}[cols=4, itemsep=0.8cm]
         \item le centre $T$
         \item un rayon
         \item un diamètre
@@ -142,7 +142,7 @@ Pour rappel :
 \end{exercise}
 
 \begin{exercise}
-    On considère un cercle de centre $O$ et de rayon $4\,cm$.
+    On considère un cercle de centre $O$ et de rayon $2\,cm$.
     \begin{enumerate}
         \item Place un point $A$ sur le cercle.
         \item Construis le rayon $[OA]$.
@@ -164,6 +164,7 @@ Pour tracer un \textbf{cercle inscrit} dans un triangle, autrement dit un cercle
 \begin{center}
   \includegraphics{tikz/Triangle pas rectangle.tikz}
 \end{center}
+\vspace{4cm}
 
 Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cercle passant par les trois sommets de ce triangle, il faut tracer les médiatrices des trois côtés de ce triangle.
 
@@ -176,6 +177,7 @@ Pour tracer un \textbf{cercle circonscrit} à un triangle, autrement dit un cerc
   \includegraphics{tikz/Triangle pas rectangle.tikz}
 \end{center}
 
+\newpage
 Pour trouver le \textbf{centre de gravité} dans un triangle, autrement dit le point où le triangle tient en équilibre sur une mine de crayon, il faut tracer les médianes des trois côtés de ce triangle.
 \begin{itemize}[label=\(\triangle\)]
   \item Le centre de gravité d'un triangle, noté G, est le point d'intersection de ses trois médianes. Il se trouve exactement aux deux tiers de chaque médiane en partant du sommet, ou encore à un tiers en partant du côté opposé.
@@ -215,7 +217,7 @@ Si l'on fait rouler une roue de diamètre $d = 1\text{ unit\'e}$ sur un tour com
     \foreach \x in {0, 1, 2, 3} {
         \draw (\x,0.1) -- (\x,-0.1) node[below, font=\small] {\x};
     }
-    \draw[red, thick] (3.14,0.1) -- (3.14,-0.1) node[below, font=\small, red] {$\pi \approx 3{,}14$};
+    \draw[red, thick] (3.14,0.1) -- (3.14,-1.0) node[below, font=\small, red] {$\pi \approx 3{,}14$};
 
     % Distance déroulée au sol
     \draw[red, line width=1.2pt] (0,0) -- (3.14,0);
@@ -253,7 +255,7 @@ P=2\pi r
 ou
 
 \[
-P=\pi d.
+P=\pi d
 \]
 
 \newpage
@@ -269,70 +271,121 @@ L'unité de base est le mètre carré :
 \]
 
 \subsection{L'aire du disque}
+
 \begin{tcolorbox}[title=Point historique : la formule de l'aire du disque]
-Pour comprendre d'où vient la formule de l'aire d'un disque, on peut découper le disque en plusieurs secteurs circulaires (comme des parts de pizza) et les réagencer tête-bêche.
+Pour comprendre l'origine de la formule de l'aire d'un disque, on découpe le disque en secteurs circulaires que l'on réordonne côte à côte.
 
 \smallskip
-\textbf{L'expérience du découpage :}
-
-Plus on découpe le disque en parts fines, plus la figure obtenue se rapproche d'un rectangle.
+\textbf{La démonstration en 3 étapes :}
 
 \begin{center}
-\begin{tikzpicture}[scale=1]
-    % Disque découpé à gauche
-    \fill[blue!15] (0,0) circle (0.8);
-    \draw[thick] (0,0) circle (0.8);
-    \foreach \a in {0, 45, 90, 135, 180, 225, 270, 315} {
-        \draw (0,0) -- (\a:0.8);
-    }
-    \node[below, font=\small] at (0,-1) {Disque en 8 parts};
+\begin{tikzpicture}[scale=0.95]
 
-    % Flèche de transition
-    \draw[->, thick] (1.3,0) -- (2.1,0) node[midway, above, font=\small] {Découpe};
-
-    % Secteurs réarrangés à droite
-    \begin{scope}[xshift=2.6cm, yshift=-0.4cm]
-        \fill[blue!15] (0,0) -- (0,0.8) -- (2.4,0.8) -- (2.4,0) -- cycle;
-        \draw[thick] (0,0) -- (0,0.8) -- (2.4,0.8) -- (2.4,0) -- cycle;
+    \begin{scope}[xshift=0cm, yshift=0cm]
+        % Secteurs alternés (bleu et gris)
+        \foreach \i in {0,2,4,6} {
+            \fill[blue!30] (0,0) -- (\i*45:0.8) arc (\i*45:(\i+1)*45:0.8) -- cycle;
+        }
+        \foreach \i in {1,3,5,7} {
+            \fill[gray!20] (0,0) -- (\i*45:0.8) arc (\i*45:(\i+1)*45:0.8) -- cycle;
+        }
+        \draw[thick] (0,0) circle (0.8);
+        \foreach \a in {0,45,...,315} { \draw (0,0) -- (\a:0.8); }
         
-        % Séparations des parts
-        \foreach \x in {0.3, 0.9, 1.5, 2.1} {
-            \draw (\x,0) -- (\x,0.8);
+        % Indication du rayon
+        \draw[thick, <->] (0,0) -- (0.8,0) node[midway, above, font=\tiny] {$r$};
+        
+        \node[below, font=\small\bfseries] at (0,-0.7) {1. Disque découpé};
+    \end{scope}
+
+    \draw[->, thick] (1.1,0) -- (1.8,0);
+
+    \begin{scope}[xshift=2.1cm, yshift=-0.4cm]
+        % Secteurs vers le haut (bleus)
+        \foreach \x in {0.2, 0.6, 1.0, 1.4} {
+            \fill[blue!30] (\x,0) -- (\x-0.2,0.77) arc (105:75:0.8) -- cycle;
+            \draw[thick] (\x,0) -- (\x-0.2,0.77) arc (105:75:0.8) -- cycle;
+        }
+        % Secteurs vers le bas (gris)
+        \foreach \x in {0.4, 0.8, 1.2, 1.6} {
+            \fill[gray!20] (\x,0.8) -- (\x-0.2,0.03) arc (255:285:0.8) -- cycle;
+            \draw[thick] (\x,0.8) -- (\x-0.2,0.03) arc (255:285:0.8) -- cycle;
         }
 
-        % Indications des dimensions
-        \draw[<->] (-0.2,0) -- (-0.2,0.8) node[midway, left, font=\small] {$r$};
-        \draw[<->] (0,-0.2) -- (2.4,-0.2) node[midway, below, font=\small] {$\pi \times r$};
+        \node[below, font=\small\bfseries] at (0.9,-1) {2. Parts imbriquées};
+    \end{scope}
+
+    \draw[->, thick] (4.1,0) -- (4.8,0);
+
+    \begin{scope}[xshift=5.1cm, yshift=-0.4cm]
+        % Fond bleu
+        \fill[blue!30] (0,0) rectangle (2.0,0.8);
+
+        % Tracé de multiples petites parts très fines
+        \foreach \x in {0, 0.2, ..., 1.8} {
+            \fill[gray!20] (\x+0.1,0.8) -- (\x+0.2,0) -- (\x+0.2,0.8) -- cycle;
+            \draw[gray!60, ultra thin] (\x,0) -- (\x+0.1,0.8) -- (\x+0.2,0);
+        }
+        \draw[thick] (0,0) rectangle (2.0,0.8);
+
+        % Dimensions (hauteur r placée à droite)
+        \draw[<->] (2.2,0) -- (2.2,0.8) node[midway, right, font=\small] {$r$};
+        \draw[<->] (0,-0.25) -- (2.0,-0.25) node[midway, below, font=\small] {$\pi \times r$};
+
+        \node[below, font=\small\bfseries] at (1.0,-1.7) {3. Rectangle parfait};
     \end{scope}
 \end{tikzpicture}
 \end{center}
 
-Ce rectangle équivalent a pour dimensions :
+\textbf{Que remarque-t-on ?}
+\begin{enumerate}
+    \item En disposant les $8$ parts tête-bêche, la figure ressemble à un parallélogramme dont les bords supérieur et inférieur sont ondulés.
+    \item Si l'on découpe le disque en une \textbf{infinité de parts très fines}, les ondulations s'effacent complètement et la figure devient un \textbf{rectangle parfait}.
+\end{enumerate}
+
+Ce rectangle a pour dimensions :
 \begin{itemize}
     \item une \textbf{hauteur} égale au rayon $r$ du disque ;
-    \item une \textbf{largeur} égale à la moitié du périmètre, soit $\pi \times r$.
+    \item une \textbf{largeur} égale au demi-périmètre du disque, soit $\pi \times r$.
 \end{itemize}
 
-L'aire s'obtient donc en multipliant la base par la hauteur :
+L'aire du disque s'obtient donc en calculant l'aire de ce rectangle :
 \[
-\text{Aire du disque} = (\pi \times r) \times r = \pi \times r^2
+\text{Aire du disque} = \text{largeur} \times \text{hauteur} = (\pi \times r) \times r = \pi \times r^2
 \]
 
-C'est une fois de plus Archimède qui a démontré cette relation avec rigueur grâce à sa méthode d'épuisement.
+Cette méthode rigoureuse, appelée \textit{méthode d'épuisement}, a été développée par Archimède.
 \end{tcolorbox}
 
-\subsection{Tableau de synhtèse sur les formules de périmètre et d'aire}
-
-
-
-
-
-
-
 \newpage
+\subsection{Tableau de synhtèse sur les formules de périmètre et d'aire}
+\begin{center}
+    \begin{tblr}{
+        hlines,
+        vlines,
+        width=\linewidth,
+        colspec={X[1.5,c] X[2,c] X[3,c]},
+        row{1}={blue!30, font=\bfseries, c, m},
+        row{2-Z}={c, m},
+        rowsep=4pt,
+        }
+        \textbf{Figure} & \textbf{Périmètre} & \textbf{Aire} \\
+        Triangle & $P=a+b+c$ & $\displaystyle A=\frac{b\times h}{2}$ \\
+        Triangle équilatéral & $P=3c$ & $\displaystyle A=\frac{b\times h}{2}$ \\
+        Carré & $P=4c$ & $A=c^2$ \\
+        Rectangle & $P=2(L+l)$ & $A=L\times l$ \\
+        Parallélogramme & $P=2(a+b)$ & $A=b\times h$ \\
+        Losange & $P=4c$ & $\displaystyle A=\frac{D\times d}{2}$ \\
+        Trapèze & $P=a+b+c+d$ & $\displaystyle A=\frac{(B+b)\times h}{2}$ \\
+        Polygone régulier & $P=n\times c$ & selon la figure \\
+        Cercle & $\displaystyle P=2\pi r=\pi d$ & --- \\
+        Disque & --- & $\displaystyle A=\pi r^2$ \\
+    \end{tblr}
+\end{center}
+
 \begin{exercise}
     Calcule le périmètre des figures suivantes.
-    \begin{enumerate}[itemsep=1cm]
+    \begin{enumerate}[itemsep=1.5cm]
         \item un triangle équilatéral de côté $7\,cm$ ;
         \item un carré de côté $5,5\,cm$ ;
         \item un pentagone régulier de côté $4\,cm$ ;
@@ -341,123 +394,95 @@ C'est une fois de plus Archimède qui a démontré cette relation avec rigueur g
     \end{enumerate}
 \end{exercise}
 
+\newpage
 \begin{exercise}
     Détermine la longueur du côté de chaque polygone régulier.
-    \begin{enumerate}[itemsep=1cm]
+    \begin{enumerate}[itemsep=1.5cm]
         \item triangle équilatéral de périmètre $27\,cm$ ;
         \item carré de périmètre $36\,cm$ ;
         \item hexagone régulier de périmètre $42\,cm$ ;
         \item décagone régulier de périmètre $80\,cm$.
-        \vspace{1em}
+        \vspace{1cm}
     \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
     Calcule le périmètre des cercles suivants.
-    \begin{enumerate}[itemsep=1cm]
+    \begin{enumerate}[itemsep=1.5cm]
         \item rayon $r=3\,cm$ ;
         \item rayon $r=7,5\,cm$ ;
         \item diamètre $d=24\,cm$.
-        \vspace{1em}
+        \vspace{1cm}
     \end{enumerate}
-
 \end{exercise}
 
 \begin{exercise}
     Un jardin rectangulaire mesure $12\,m$ de longueur et $7\,m$
     de largeur.
 
-    \begin{enumerate}[itemsep=1cm]
+    \begin{enumerate}[itemsep=1.5cm]
         \item Calcule son périmètre.
         \item Le propriétaire souhaite placer une clôture tout autour
         du jardin en laissant un trou de 2 mètres pour y placer une porte. La clôture coûte $18\,$ € par mètre. Calcule le prix total.
     \end{enumerate}
 \end{exercise}
 
-\subsection{Construire les formules}
-
-Les formules d'aire peuvent être retrouvées en décomposant ou en
-transformant les figures.
-
-Par exemple, un triangle peut être associé à un rectangle de même
-base et de même hauteur : le triangle représente la moitié de ce
-rectangle.
-
+\newpage
 \begin{exercise}
-    Calcule l'aire des figures suivantes.
+    On considère la figure suivante. Calcule l'aire totale de la figure.
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (8,0);
+            \coordinate (C) at (8,5);
+            \coordinate (D) at (5,5);
+            \coordinate (E) at (4,8);
+            \coordinate (F) at (3,5);
+            \coordinate (G) at (0,5);
 
-    \begin{enumerate}[itemsep=1cm]
-        \item rectangle de longueur $8\,cm$ et largeur $5\,cm$ ;
-        \item carré de côté $6\,cm$ ;
-        \item parallélogramme de base $7\,cm$ et de hauteur $4\,cm$ ;
-        \item triangle de base $9\,cm$ et de hauteur $5\,cm$.
-    \end{enumerate}
+            \draw[thick] (A)--(B)--(C)--(D)--(E)--(F)--(G)--cycle;
+            \draw[<->] (0,-0.5) -- (8,-0.5)
+                node[midway,below] {$8\,cm$};
+            \draw[<->] (-0.5,0) -- (-0.5,5)
+                node[midway,left] {$5\,cm$};
+            \draw[<->] (8.5,0) -- (8.5,8)
+                node[midway,right] {$8\,cm$};
+            \draw[<->] (3,5.5) -- (5,5.5)
+                node[midway,above] {$2\,cm$};
+        \end{tikzpicture}
+    \end{center}
+    \vspace{4cm}
 \end{exercise}
 
-\begin{exercise}
-    Calcule l'aire des figures suivantes.
-
-    \begin{enumerate}[itemsep=1cm]
-        \item trapèze de bases $8\,cm$ et $14\,cm$, de hauteur $5\,cm$ ;
-        \item losange dont les diagonales mesurent $8\,cm$ et $12\,cm$ ;
-        \item disque de rayon $4\,cm$ ;
-        \item disque de diamètre $10\,cm$.
-    \end{enumerate}
-
-    Donne une valeur exacte lorsque cela est possible.
-\end{exercise}
 
 \begin{exercise}
-    Une figure complexe est constituée d'un rectangle de
-    $10\,cm\times6\,cm$ auquel on ajoute un demi-disque de rayon
-    $3\,cm$.
-
-    \begin{enumerate}[itemsep=1cm]
-        \item Réalise un schéma de la figure.
-        \item Décompose la figure en surfaces connues.
-        \item Calcule l'aire du rectangle.
-        \item Calcule l'aire du demi-disque.
-        \item Déduis-en l'aire totale de la figure.
-    \end{enumerate}
-\end{exercise}
-
-\begin{exercise}
-    On souhaite représenter un triangle et un rectangle ayant la
-    même aire.
-
-    Le triangle possède une base de $8\,cm$ et une hauteur de $5\,cm$.
-
-    \begin{enumerate}[itemsep=1cm]
-        \item Calcule son aire.
-        \item Propose les dimensions d'un rectangle ayant la même aire.
-        \item Construis ce rectangle.
-        \item Explique pourquoi les deux figures ont la même aire.
-    \end{enumerate}
+    On considère la figure suivante, composée d'un rectangle et
+    d'un demi-disque. Calcule l'aire totale de la figure.
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7]
+            \draw[thick] (0,0) rectangle (8,4);
+            \draw[thick] (0,4) arc (180:0:4);
+            \draw[<->] (0,-0.5) -- (8,-0.5)
+                node[midway,below] {$8\,cm$};
+            \draw[<->] (-0.5,0) -- (-0.5,4)
+                node[midway,left] {$4\,cm$};
+            \draw[<->] (4,4) -- (4,8)
+                node[midway,right] {$4\,cm$};
+        \end{tikzpicture}
+    \end{center}
 \end{exercise}
 
 \newpage
-\section{Figures complexes et problèmes}
-
-Pour calculer le périmètre ou l'aire d'une figure complexe, il faut
-souvent la décomposer en plusieurs figures simples.
-
-La démarche peut être résumée ainsi :
-
-\begin{enumerate}
-    \item identifier les figures simples ;
-    \item repérer les dimensions utiles ;
-    \item calculer les périmètres ou les aires ;
-    \item assembler les résultats.
-\end{enumerate}
-
+\section{Exercices mélangés}
+\setcounter{exercise}{0}
+\faIcon{exclamation-triangle}~Cette partie doit être réalisée sur une feuille annexe.
 \begin{exercise}
     Une terrasse est constituée d'un rectangle de $8\,m\times5\,m$
     auquel est accolé un carré de côté $3\,m$.
 
-    \begin{enumerate}[itemsep=1cm]
+    \begin{enumerate}
         \item Réalise un schéma.
-        \item Calcule l'aire de chaque partie.
-        \item Déduis-en l'aire totale de la terrasse.
+        \item Calcule l'aire totale de la terrasse.
         \item Calcule son périmètre extérieur.
     \end{enumerate}
 \end{exercise}
@@ -466,11 +491,9 @@ La démarche peut être résumée ainsi :
     Une piste circulaire possède un diamètre extérieur de $20\,m$
     et un diamètre intérieur de $12\,m$.
 
-    \begin{enumerate}[itemsep=1cm]
+    \begin{enumerate}
         \item Représente la situation.
-        \item Calcule l'aire du grand disque.
-        \item Calcule l'aire du petit disque.
-        \item Déduis-en l'aire de la piste.
+        \item Calcule l'aire de la piste.
     \end{enumerate}
 \end{exercise}
 
@@ -479,10 +502,8 @@ La démarche peut être résumée ainsi :
     surmonté d'un triangle dont la base mesure $30\,m$ et la hauteur
     $12\,m$.
 
-    \begin{enumerate}[itemsep=1cm]
-        \item Calcule l'aire du rectangle.
-        \item Calcule l'aire du triangle.
-        \item Déduis-en l'aire totale du terrain.
+    \begin{enumerate}
+        \item Calcule l'aire totale du terrain.
         \item Le propriétaire souhaite semer du gazon à raison de
         $5\,$ € par mètre carré. Quel sera le coût total ?
     \end{enumerate}
@@ -491,14 +512,163 @@ La démarche peut être résumée ainsi :
 \begin{exercise}
     Une entreprise doit fabriquer une plaque métallique ayant la
     forme suivante : un rectangle de $16\,cm\times10\,cm$ auquel on
-    retire un disque de rayon $3\,cm$.
+    retire un disque de rayon $3\,cm$. Calcule l'aire de métal restante.
+\end{exercise}
 
-    \begin{enumerate}[itemsep=1cm]
-        \item Réalise un schéma de la plaque.
-        \item Calcule l'aire du rectangle.
-        \item Calcule l'aire du disque retiré.
-        \item Calcule l'aire de métal restante.
+\begin{exercise}
+    On souhaite construire une figure composée d'un carré et d'un
+    triangle équilatéral. Construis la en respectant les étapes suivantes :
+
+%    \begin{center}
+%        \begin{tikzpicture}[scale=0.7]
+%            \coordinate (A) at (0,0);
+%            \coordinate (B) at (6,0);
+%            \coordinate (C) at (6,6);
+%            \coordinate (D) at (0,6);
+%            \coordinate (E) at (3,10.5);
+%            \draw[thick] (A)--(B)--(C)--(D)--cycle;
+%            \draw[thick] (D)--(E)--(C);
+%            \node[below left] at (A) {$A$};
+%            \node[below right] at (B) {$B$};
+%            \node[above right] at (C) {$C$};
+%            \node[above left] at (D) {$D$};
+%            \node[above] at (E) {$E$};
+%        \end{tikzpicture}
+%    \end{center}
+
+    \begin{enumerate}
+        \item Construis un carré $ABCD$ de côté $6\,cm$.
+        \item Construis le milieu $M$ du segment $[DC]$.
+        \item Construis la médiatrice de $[DC]$.
+        \item Place le point $E$ sur cette médiatrice de telle sorte que
+        $DE=EC=6\,cm$.
+        \item Relie $E$ à $D$ et $E$ à $C$.
+        \item Laisse visibles les traits de construction.
     \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    On souhaite construire une figure composée d'un rectangle,
+    d'un triangle et d'un demi-cercle. Construis la en respectant les étapes suivantes :
+
+%    \begin{center}
+%        \begin{tikzpicture}[scale=0.65]
+%            \coordinate (A) at (0,0);
+%            \coordinate (B) at (8,0);
+%            \coordinate (C) at (8,5);
+%            \coordinate (D) at (0,5);
+%            \draw[thick] (A)--(B)--(C)--(D)--cycle;
+%            \draw[thick] (0,5) -- (4,8) -- (8,5);
+%            \draw[thick] (0,5) arc (180:360:4);
+%            \node[below left] at (A) {$A$};
+%            \node[below right] at (B) {$B$};
+%            \node[above right] at (C) {$C$};
+%            \node[above left] at (D) {$D$};
+%        \end{tikzpicture}
+%    \end{center}
+
+    \begin{enumerate}
+        \item Construis un rectangle $ABCD$ tel que
+        $AB=8\,cm$ et $AD=5\,cm$.
+        \item Construis la médiatrice du segment $[DC]$.
+        \item Place le point $E$ sur cette médiatrice tel que
+        $ED=EC=5\,cm$.
+        \item Relie $E$ à $D$ et $E$ à $C$.
+        \item Construis le demi-cercle de diamètre $[DC]$,
+        situé à l'intérieur du rectangle.
+        \item Repasse en traits épais le contour extérieur de la figure.
+    \end{enumerate}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    La figure ci-dessous est composée d'un carré, d'un triangle
+    équilatéral et d'un cercle.
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.65]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (6,0);
+            \coordinate (C) at (6,6);
+            \coordinate (D) at (0,6);
+            \coordinate (E) at (3,10.5);
+            \draw[thick] (A)--(B)--(C)--(D)--cycle;
+            \draw[thick] (D)--(E)--(C);
+            \coordinate (O) at (3,3);
+            \draw[thick] (O) circle (3);
+            \fill (O) circle (2pt);
+            \node[below left] at (A) {$A$};
+            \node[below right] at (B) {$B$};
+            \node[above right] at (C) {$C$};
+            \node[above left] at (D) {$D$};
+            \node[above] at (E) {$E$};
+            \node[below] at (O) {$O$};
+        \end{tikzpicture}
+    \end{center}
+
+    Rédige, dans l'ordre, les différentes étapes permettant
+        de construire cette figure.
+    Tes étapes de construction doivent préciser :
+        \begin{itemize}
+            \item les figures simples à construire ;
+            \item les instruments nécessaires ;
+            \item l'ordre dans lequel les constructions doivent être
+            réalisées.
+        \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+    Un parc communal a la forme d'un octogone régulier de côté $3,5\,m$.
+    \begin{enumerate}
+        \item Rappelle la condition pour qu'un polygone soit régulier.
+        \item Calcule le périmètre de ce parc.
+        \item On souhaite entourer le parc d'une clôture décorative coûtant $22\,$€ le mètre. Calcule le prix total de la clôture.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+    Une aire de jeux est composée d'un rectangle de $10\,m$ sur $6\,m$, prolongé par un demi-disque construit sur l'un des côtés de $6\,m$. Calcule l'aire totale de cette aire de jeux.
+    \begin{center}
+        \begin{tikzpicture}[scale=0.6]
+            \draw[thick] (0,0) rectangle (10,6);
+            \draw[thick] (10,0) arc (-90:90:3);
+            \draw[<->] (0,-0.6) -- (10,-0.6) node[midway,below]{$10\,m$};
+            \draw[<->] (-0.6,0) -- (-0.6,6) node[midway,left]{$6\,m$};
+        \end{tikzpicture}
+    \end{center}
+    \vspace{2cm}
+\end{exercise}
+
+\newpage
+\begin{exercise}
+    Construis le cercle inscrit et le cercle circonscrit à un triangle équilatéral.
+\end{exercise}
+
+\begin{exercise}
+    La figure ci-dessous est composée d'un carré $ABCD$ et de son cercle circonscrit (passant par les $4$ sommets du carré).
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (6,0);
+            \coordinate (C) at (6,6);
+            \coordinate (D) at (0,6);
+            \coordinate (O) at (3,3);
+            \draw[thick] (A) -- (B) -- (C) -- (D) -- cycle;
+            \draw[thick] (O) circle (4.243);
+            \fill (O) circle (2pt);
+            \node[below left] at (A) {$A$};
+            \node[below right] at (B) {$B$};
+            \node[above right] at (C) {$C$};
+            \node[above left] at (D) {$D$};
+            \node[below] at (O) {$O$};
+        \end{tikzpicture}
+    \end{center}
+    Rédige, dans l'ordre, les différentes étapes permettant de construire cette figure. Tes étapes de construction doivent préciser :
+    \begin{itemize}
+        \item les figures simples à construire ;
+        \item les instruments nécessaires ;
+        \item l'ordre dans lequel les constructions doivent être réalisées.
+    \end{itemize}
 \end{exercise}
 
 \newpage
