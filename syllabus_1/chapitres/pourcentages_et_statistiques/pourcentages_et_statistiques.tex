@@ -18,6 +18,67 @@
 \end{enumerate}
 
 \section{Pourcentages}
+
+\subsection{Arrondir un nombre}
+
+Dans la vie courante, il est souvent inutile de garder tous les chiffres d'un nombre décimal. On l'arrondit : on le remplace par une valeur proche, plus simple à lire et à utiliser.
+
+Dans ce chapitre, on arrondit toujours à \textbf{deux chiffres après la virgule} (c'est-à-dire au centième). Pour cela, on regarde le 3\textsuperscript{e} chiffre après la virgule.
+
+\begin{center}
+    \begin{tikzpicture}[scale=1.2]
+        \node (a) at (0,0)   {\Huge $7$};
+        \node      at (0.5,-0.1) {\Huge ,};
+        \node (b) at (1,0)   {\Huge $3$};
+        \node (c) at (2,0)   {\Huge $8$};
+        \node (d) at (3,0)   {\Huge $4$};
+        \node (e) at (4,0)   {\Huge $6$};
+
+        \draw[blue, thick, rounded corners] (2.55,-0.55) rectangle (3.45,0.55);
+
+        \draw[red, very thick, dashed] (2.5,-1.1) -- (2.5,0.9);
+        \node[red, anchor=east] at (2.4,1.0) {\small coupure};
+
+        \draw[decorate, decoration={brace, mirror, amplitude=6pt}, thick]
+            (-0.3,-0.8) -- (2.3,-0.8) node[midway, below=8pt, align=center]
+            {\small on garde \\ \small ces chiffres};
+        \draw[decorate, decoration={brace, mirror, amplitude=6pt}, thick]
+            (2.7,-0.8) -- (4.3,-0.8) node[midway, below=8pt, align=center]
+            {\small on supprime \\ \small ces chiffres};
+
+        \node[blue, align=center] (txt) at (3,2) {\small 3\textsuperscript{e} chiffre après la virgule \\ \small (c'est lui qui décide)};
+        \draw[blue, ->, thick] (txt.south) -- (3,0.6);
+    \end{tikzpicture}
+\end{center}
+
+\begin{center}
+    \begin{tblr}{
+            hlines,
+            vlines,
+            colspec={X[c]X[c]},
+            rows={1.1cm, m},
+            row{1}={gray!40, font=\bfseries}
+        }
+        3\textsuperscript{e} chiffre : $0, 1, 2, 3, 4$ & 3\textsuperscript{e} chiffre : $5, 6, 7, 8, 9$ \\
+        On arrondit \textbf{en dessous} & On arrondit \textbf{au-dessus} \\
+        Les deux chiffres gardés ne changent pas & On ajoute $1$ au 2\textsuperscript{e} chiffre après la virgule \\
+    \end{tblr}
+\end{center}
+
+\textbf{Exemple 1 :} arrondir $5{,}2347$ à deux chiffres après la virgule.
+\begin{itemize}
+    \item On coupe après le 2\textsuperscript{e} chiffre après la virgule : $5{,}23\,|\,47$.
+    \item Le 3\textsuperscript{e} chiffre après la virgule est $4$, donc on arrondit \textbf{en dessous}.
+    \item Résultat : $5{,}2347 \approx 5{,}23$.
+\end{itemize}
+
+\textbf{Exemple 2 :} arrondir $8{,}6759$ à deux chiffres après la virgule.
+\begin{itemize}
+    \item On coupe après le 2\textsuperscript{e} chiffre après la virgule : $8{,}67\,|\,59$.
+    \item Le 3\textsuperscript{e} chiffre après la virgule est $5$, donc on arrondit \textbf{au-dessus} : le $7$ devient $8$.
+    \item Résultat : $8{,}6759 \approx 8{,}68$.
+\end{itemize}
+
 \subsection{Découverte}
 
 \begin{exercise}
@@ -311,6 +372,7 @@ Sur base de ces réponses, complète le tableau suivant.
         Fréquence          &            &                    \\
         Mode               &            &                    \\
         Étendue            &            &                    \\
+        Moyenne            &            &                    \\
     \end{tblr}
 \end{center}
 
@@ -348,7 +410,6 @@ Sur base de ces réponses, complète le tableau suivant.
         \item Quelle est la fréquence de la modalité $0$ animal de compagnie (en \%) ?
         \item Quelle est l'étendue de cette série de valeurs ?
     \end{enumerate}
-    \vspace{1cm}
 \end{exercise}
 
 \subsection{Caractériser une variable statistique}
@@ -358,6 +419,35 @@ Sur base de ces réponses, complète le tableau suivant.
     \item Une variable est \textbf{qualitative} lorsque ses modalités ne sont pas des nombres (une couleur, un avis, une marque\dots).
     \item Une variable est \textbf{quantitative} lorsque ses modalités sont des nombres. En 1re secondaire, nous étudions les variables quantitatives \textbf{discrètes} : leurs valeurs peuvent être comptées une par une (un nombre d'enfants, un nombre de buts\dots).
 \end{itemize}
+
+\begin{center}
+    \begin{tikzpicture}[
+            >=latex,
+            box/.style={draw, rounded corners=3pt, thick, align=center,
+                        minimum height=0.9cm, inner sep=6pt},
+            niv1/.style={box, fill=blue!10},
+            niv2/.style={box, fill=orange!15},
+            niv3/.style={box, fill=green!15},
+            sibling distance=5cm
+        ]
+        % Racine
+        \node[niv1] (var) at (0,0) {\textbf{Variable}};
+ 
+        % Niveau 1
+        \node[niv2] (qual) at (-3.5,-2.2) {Variable\\\textbf{qualitative}};
+        \node[niv2] (quant) at (3.5,-2.2) {Variable\\\textbf{quantitative}};
+ 
+        % Niveau 2
+        \node[niv3] (disc) at (1.5,-4.4) {\textbf{Discrète}};
+        \node[niv3] (cont) at (5.5,-4.4) {\textbf{Continue}};
+ 
+        % Flèches
+        \draw[->, thick] (var.south) -- (qual.north);
+        \draw[->, thick] (var.south) -- (quant.north);
+        \draw[->, thick] (quant.south) -- (disc.north);
+        \draw[->, thick] (quant.south) -- (cont.north);
+    \end{tikzpicture}
+\end{center}
 
 \newpage
 \begin{exercise}
